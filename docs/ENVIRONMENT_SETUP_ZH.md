@@ -23,3 +23,7 @@ Conda 使用 `.conda/isaac-apfg` 绝对 prefix；Conda 包缓存、pip/UV/Torch/
 当前系统级阻塞：直接调用系统 `libcuda.so.1` 返回 `cuInit(0)=999`；`/dev/nvidia-uvm` 存在且权限允许，但 `open(O_RDWR)` 返回 errno 5 / EIO。`strace` 确认失败发生在驱动设备打开阶段；清除 LD_LIBRARY_PATH 后仍失败。用户态库、内核模块均报告 535.230.02，设备 major 与 `/proc/devices` 一致，尚不能据此确定根因。Headless Kit 日志记录 `Failed to query CUDA device count` 和 `No device could be created`。
 
 需要服务器管理员在维护窗口检查并恢复 NVIDIA UVM/CUDA 状态；是否重载模块或重启应由管理员根据桌面占用决定。项目没有自动执行这些操作。恢复后先运行 `python scripts/check_cuda.py`，再执行完整 M0。仅 `nvidia-smi` 成功不能证明 CUDA 或 RTX 渲染正常。
+
+最终独立 Conda prefix 的 pip check 通过；AppLauncher 导入通过，仿真启动仍 BLOCKED。注意 binary setup 会优先引入官方预打包 NumPy 1.26.0 / ImageIO 2.22.2，而独立环境安装为 1.26.4 / 2.38.0。Kit 预打包目录并不是一个完整独立的 pip 环境，对其元数据执行 pip check 有缺失/冲突，原始输出已保留。没有额外安装 usd-core 来覆盖 Kit 的 USD ABI。
+
+验证子进程的系统调用跟踪区分持久文件与 SDK POSIX 共享内存：持久文件写入均在项目内；Carbonite 还会使用 RAM-backed `/dev/shm` 的共享内存和信号量，已单独记录，没有删除或改动其他会话的 IPC。外部桌面 GLCache 的并发变化不归因给本项目。安装历史与成功 GPU 渲染不在该跟踪区间内。OpenGL shader cache 另显式配置 `__GL_SHADER_DISK_CACHE_PATH` 指向项目内目录。

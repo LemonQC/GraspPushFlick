@@ -78,6 +78,7 @@ def run_simulation(args, app, out):
     from isaacsim.core.api.objects import DynamicCuboid, FixedCuboid
     from isaacsim.core.prims import SingleArticulation, SingleRigidPrim, SingleXFormPrim, RigidPrim
     from isaacsim.core.utils.stage import add_reference_to_stage, get_current_stage
+    from isaacsim.core.utils.semantics import add_update_semantics
     from isaacsim.core.utils.types import ArticulationAction
     from isaacsim.sensors.camera import Camera
     from apfg.visualization.recording import Recorder, save_rgbd, pointcloud_from_depth, write_ply
@@ -113,6 +114,7 @@ def run_simulation(args, app, out):
         for i, entry in enumerate(selected):
             path = f'/World/Object_{i}'
             add_reference_to_stage(str(ROOT/entry['usd_path']), path)
+            add_update_semantics(stage.GetPrimAtPath(path), entry['asset_id'])
             # Initial positions are non-overlapping. All settling thereafter uses PhysX.
             xy = [.35+.23*(i%3), -.22+.32*(i//3)]
             z = 1.05
@@ -204,12 +206,15 @@ def run_simulation(args, app, out):
             frame = camera.get_current_frame()
             segmentation = frame.get('instance_segmentation')
             if segmentation is not None:
-                np.save(out/(name+'_instance_segmentation.npy'), segmentation['data'])
+                ids = np.asarray(segmentation['data']).squeeze()
+                np.save(out/(name+'_instance_segmentation.npy'), ids)
+                label_rgb = np.stack([(ids*37)%256, (ids*73)%256, (ids*19)%256],axis=-1).astype(np.uint8)
+                Image.fromarray(label_rgb).save(out/(name+'_instance_segmentation.png'))
                 (out/(name+'_instance_labels.json')).write_text(json.dumps(segmentation['info'], default=str, indent=2))
                 labels = segmentation['info'].get('idToLabels', {})
                 target_ids = [int(k) for k, v in labels.items() if '/World/Object_0' in str(v)]
                 if name == 'fixed' and target_ids:
-                    points, colors = pointcloud_from_depth(depth, rgb, camera.get_intrinsics_matrix(), np.isin(segmentation['data'], target_ids))
+                    points, colors = pointcloud_from_depth(depth, rgb, camera.get_intrinsics_matrix(), np.isin(ids, target_ids))
                     write_ply(out/'target_camera_frame.ply', points, colors)
                     point_count = len(points)
             else:

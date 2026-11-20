@@ -8,7 +8,9 @@
   "shell_syntax": "PASS",
   "usd_dependencies": "PASS",
   "pip_check": {
-    "status": "NOT_RUN"
+    "returncode": 0,
+    "stdout": "No broken requirements found.\n",
+    "stderr": ""
   },
   "gpu_physics_camera_control": "BLOCKED"
 }

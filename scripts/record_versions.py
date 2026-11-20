@@ -31,11 +31,15 @@ with warnings.catch_warnings(record=True) as recorded:
     result['torch_cuda_runtime']=torch.version.cuda
     result['cuda_warnings']=[str(w.message) for w in recorded]
 result['simulation_startup']='BLOCKED' if not result['torch_cuda_available'] else 'NOT_RUN'
-try:
-    from isaaclab.app import AppLauncher
-    result['app_launcher_import']='PASS'
-except Exception as e:
-    result['app_launcher_import']='FAILED';result['app_launcher_import_error']=str(e);result['installation_status']='FAILED'
+probe=subprocess.run(['bash',str(ROOT/'scripts/python.sh'),'-c',
+    'from isaaclab.app import AppLauncher; import numpy,imageio,torch,json; print(json.dumps({"numpy":numpy.__version__,"imageio":imageio.__version__,"torch":torch.__version__}))'],capture_output=True,text=True)
+result['app_launcher_import']='PASS' if probe.returncode==0 else 'FAILED'
+if probe.returncode==0:
+    result['binary_runtime_import_versions']=json.loads(probe.stdout.splitlines()[-1])
+    result['binary_runtime_note']='Official binary setup adds vendor prebundles to PYTHONPATH. Runtime NumPy/ImageIO differ from clean Conda versions. pip_check above audits the isolated Conda prefix; it does not certify vendor prebundled dependency metadata or successful Kit startup.'
+else:
+    result['app_launcher_import_error']=probe.stderr
+    result['installation_status']='FAILED'
 (OUT/'environment_versions.json').write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps(result,indent=2))
 raise SystemExit(0 if result['installation_status']=='PASS' else 1)

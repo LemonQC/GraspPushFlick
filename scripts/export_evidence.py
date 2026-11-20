@@ -21,12 +21,16 @@ evidence={'status':summary['status'],'APFG_M0_READY':summary['APFG_M0_READY'],'g
           'gpu':'NVIDIA GeForce RTX 3090 24 GiB','driver':'535.230.02','os':'Ubuntu 20.04.6','glibc':'2.31',
           'installation_status':versions['installation_status'],'installed_packages':versions.get('packages',{}),
           'python':versions.get('python'),'isaac_sim_binary_version':versions.get('isaac_sim_binary_version'),
+          'binary_runtime_import_versions':versions.get('binary_runtime_import_versions'),
+          'binary_runtime_note':versions.get('binary_runtime_note'),
           'isaac_lab_release_tag':'v2.0.2','isaac_lab_commit':'b5fa0eb031a2413c182eeb54fa3a9295e8fd867c',
           'cuda_init':cuda.get('cuInit_returncode'),'uvm_open_errno':cuda.get('uvm_errno'),
           'video_count':len(video_paths),'keyframe_count':len(image_paths),
           'storage':{'project_allocated_bytes':storage['project_allocated_bytes'],'free_bytes':storage['free_bytes'],
                      'outside_observed_changed_count':len(storage['outside_scope_changed_files']),
-                     'audit_scope':storage['scope']},
+                     'audit_scope':storage['scope'],
+                     'own_process_persistent_write_events':storage['own_process_write_audit']['persistent_filesystem_write_events'],
+                     'sdk_ram_ipc_events':storage['own_process_write_audit']['posix_shared_memory_events']},
           'runs':runs,'note':'Installation and static asset checks do not establish runtime physics or camera success.'}
 (EVIDENCE/'m0_status.json').write_text(json.dumps(evidence,indent=2)+'\n')
 artifacts=[]

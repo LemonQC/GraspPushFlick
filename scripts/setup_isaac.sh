@@ -20,9 +20,16 @@ if [[ ! -d third_party/IsaacLab/.git ]]; then
 fi
 test "$(git -C third_party/IsaacLab describe --tags --exact-match)" = v2.0.2
 ln -sfn "$ISAAC_PATH" third_party/IsaacLab/_isaac_sim
+install_fingerprint="$(sha256sum configs/constraints.txt | cut -d' ' -f1)-$(git -C third_party/IsaacLab rev-parse HEAD)"
+if [[ -f .conda/isaac-apfg/.apfg_install_fingerprint ]] && [[ "$(cat .conda/isaac-apfg/.apfg_install_fingerprint)" == "$install_fingerprint" ]]; then
+  "$APFG_PYTHON" -m pip check
+  echo 'Pinned environment already installed and verified; skipping installation.'
+  exit 0
+fi
 "$APFG_PYTHON" -m pip install --retries 4 --timeout 60 'pip<26' wheel 'setuptools<81'
 "$APFG_PYTHON" -m pip install --retries 4 --resume-retries 4 --timeout 60 --find-links "$PROJECT_ROOT/cache/wheels" -c configs/constraints.txt torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu118
 "$APFG_PYTHON" -m pip install --retries 4 --resume-retries 4 --timeout 60 -c configs/constraints.txt -e third_party/IsaacLab/source/isaaclab -e third_party/IsaacLab/source/isaaclab_assets imageio imageio-ffmpeg scipy pytest
 "$APFG_PYTHON" -m pip check
 "$APFG_PYTHON" -m pip freeze > outputs/environment_check/pip_freeze.txt
 git -C third_party/IsaacLab rev-parse HEAD > outputs/environment_check/isaaclab_commit.txt
+printf '%s\n' "$install_fingerprint" > .conda/isaac-apfg/.apfg_install_fingerprint

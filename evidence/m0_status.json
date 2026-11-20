@@ -14,8 +14,8 @@
     "local_usd_dependencies": "PASS",
     "storage_audit": "PASS",
     "gpu_compute_and_rendering": "BLOCKED",
-    "installation": "NOT_RUN",
-    "github_sync": "NOT_RUN"
+    "installation": "PASS",
+    "github_sync": "PASS"
   },
   "canonical_ycb_count": 30,
   "physically_verified_ycb_count": 0,
@@ -23,10 +23,27 @@
   "driver": "535.230.02",
   "os": "Ubuntu 20.04.6",
   "glibc": "2.31",
-  "installation_status": "NOT_RUN",
-  "installed_packages": {},
-  "python": null,
-  "isaac_sim_binary_version": null,
+  "installation_status": "PASS",
+  "installed_packages": {
+    "pip": "25.3",
+    "torch": "2.5.1+cu118",
+    "torchvision": "0.20.1+cu118",
+    "isaaclab": "0.34.9",
+    "isaaclab_assets": "0.2.1",
+    "numpy": "1.26.4",
+    "pillow": "11.0.0",
+    "imageio": "2.38.0",
+    "imageio-ffmpeg": "0.8.1",
+    "warp-lang": "1.5.0"
+  },
+  "python": "3.10.22",
+  "isaac_sim_binary_version": "4.5.0-rc.36+release.19112.f59b3005.gl",
+  "binary_runtime_import_versions": {
+    "numpy": "1.26.0",
+    "imageio": "2.22.2",
+    "torch": "2.5.1+cu118"
+  },
+  "binary_runtime_note": "Official binary setup adds vendor prebundles to PYTHONPATH. Runtime NumPy/ImageIO differ from clean Conda versions. pip_check above audits the isolated Conda prefix; it does not certify vendor prebundled dependency metadata or successful Kit startup.",
   "isaac_lab_release_tag": "v2.0.2",
   "isaac_lab_commit": "b5fa0eb031a2413c182eeb54fa3a9295e8fd867c",
   "cuda_init": 999,
@@ -34,10 +51,12 @@
   "video_count": 0,
   "keyframe_count": 0,
   "storage": {
-    "project_allocated_bytes": 30025916416,
-    "free_bytes": 3387627933696,
-    "outside_observed_changed_count": 0,
-    "audit_scope": "Observed changes in current-user files under known external cache paths and /tmp since saved baseline; concurrent user activity cannot be attributed. Not a whole-filesystem syscall audit."
+    "project_allocated_bytes": 30867685376,
+    "free_bytes": 3386786164736,
+    "outside_observed_changed_count": 6,
+    "audit_scope": "Observed changes in current-user files under known external cache paths and /tmp since saved baseline; concurrent user activity cannot be attributed. Not a whole-filesystem syscall audit.",
+    "own_process_persistent_write_events": 86,
+    "sdk_ram_ipc_events": 40
   },
   "runs": [
     {
@@ -59,6 +78,72 @@
       "seed": 20261120,
       "status": "BLOCKED",
       "artifacts_directory": "outputs/environment_check/runs/20261120T090937Z_f546c447",
+      "cuda_init_returncode": 999,
+      "reason": "cuInit(0)=999; GPU rendering unavailable. Check /dev/nvidia-uvm before retrying."
+    },
+    {
+      "run_id": "20261120T092038Z_17df746e",
+      "test": "camera",
+      "mode": "headless",
+      "scene": "s1",
+      "seed": 20261120,
+      "status": "BLOCKED",
+      "artifacts_directory": "outputs/environment_check/runs/20261120T092038Z_17df746e",
+      "cuda_init_returncode": 999,
+      "reason": "cuInit(0)=999; GPU rendering unavailable. Check /dev/nvidia-uvm before retrying."
+    },
+    {
+      "run_id": "20261120T092038Z_6e2ecac2",
+      "test": "physics",
+      "mode": "headless",
+      "scene": "s1",
+      "seed": 20261120,
+      "status": "BLOCKED",
+      "artifacts_directory": "outputs/environment_check/runs/20261120T092038Z_6e2ecac2",
+      "cuda_init_returncode": 999,
+      "reason": "cuInit(0)=999; GPU rendering unavailable. Check /dev/nvidia-uvm before retrying."
+    },
+    {
+      "run_id": "20261120T092038Z_81992528",
+      "test": "robot",
+      "mode": "headless",
+      "scene": "s1",
+      "seed": 20261120,
+      "status": "BLOCKED",
+      "artifacts_directory": "outputs/environment_check/runs/20261120T092038Z_81992528",
+      "cuda_init_returncode": 999,
+      "reason": "cuInit(0)=999; GPU rendering unavailable. Check /dev/nvidia-uvm before retrying."
+    },
+    {
+      "run_id": "20261120T092038Z_b132d322",
+      "test": "physics",
+      "mode": "gui",
+      "scene": "s1",
+      "seed": 20261120,
+      "status": "BLOCKED",
+      "artifacts_directory": "outputs/environment_check/runs/20261120T092038Z_b132d322",
+      "cuda_init_returncode": 999,
+      "reason": "cuInit(0)=999; GPU rendering unavailable. Check /dev/nvidia-uvm before retrying."
+    },
+    {
+      "run_id": "20261120T092217Z_8bad218c",
+      "test": "physics",
+      "mode": "headless",
+      "scene": "s1",
+      "seed": 20261120,
+      "status": "BLOCKED",
+      "artifacts_directory": "outputs/environment_check/runs/20261120T092217Z_8bad218c",
+      "cuda_init_returncode": 999,
+      "reason": "cuInit(0)=999; GPU rendering unavailable. Check /dev/nvidia-uvm before retrying."
+    },
+    {
+      "run_id": "20261120T092217Z_b3e39702",
+      "test": "physics",
+      "mode": "gui",
+      "scene": "s1",
+      "seed": 20261120,
+      "status": "BLOCKED",
+      "artifacts_directory": "outputs/environment_check/runs/20261120T092217Z_b3e39702",
       "cuda_init_returncode": 999,
       "reason": "cuInit(0)=999; GPU rendering unavailable. Check /dev/nvidia-uvm before retrying."
     }
