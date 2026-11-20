@@ -1,0 +1,14 @@
+.conda/
+.runtime_home/
+cache/
+tmp/
+third_party/
+outputs/
+assets/*/
+!assets/manifests/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+*.mp4
+*.log

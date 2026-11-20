@@ -1,0 +1,102 @@
+{
+  "artifacts": [
+    {
+      "path": "outputs/environment_check/storage_audit.json",
+      "bytes": 667,
+      "sha256": "f11659fd6da0b8ccd368a7553d3e1ac712d70d89234e02364da1ec4a1029100e",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/headless_physics_smoke.json",
+      "bytes": 521,
+      "sha256": "667ea533af582670f771e743585718baf44a382cd6105a4560f6a122b4527478",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/system_preflight.json",
+      "bytes": 53919,
+      "sha256": "35a924da7e9ab677cdb6d109fa66a39273f3c6c723f805e1a5923debe5816320",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/asset_summary.json",
+      "bytes": 287,
+      "sha256": "ebee67dee18dfb477f8de983c4dab94cdc176d7c4387138be896e08deb0205eb",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/object_smoke.json",
+      "bytes": 169,
+      "sha256": "705e22e86b87566697cc2f0868a0a1608604e15d4dc8d5ee60fd3b21fc312af7",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/camera_smoke.json",
+      "bytes": 169,
+      "sha256": "705e22e86b87566697cc2f0868a0a1608604e15d4dc8d5ee60fd3b21fc312af7",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/offline_asset_check.json",
+      "bytes": 28245,
+      "sha256": "ebbd08d7582296ff17fba371ae1bef165584167384fb25d75262baaaabeed884",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/gpu_check.json",
+      "bytes": 460,
+      "sha256": "0057af92f11dba838583daa938ebe0c74431d88d309e0198e8aec0316711ea52",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/gui_smoke.json",
+      "bytes": 769,
+      "sha256": "a4758405a8b4bc357ec2afbecbddf4ef8ec12a493d5f90576e1e9d12213c488e",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/m0_summary.json",
+      "bytes": 1967,
+      "sha256": "e169d34a9fe600d5c2c07268b9e24337b97c1ba879c2c2c4b3676cbd86c52ad9",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/robot_smoke.json",
+      "bytes": 169,
+      "sha256": "705e22e86b87566697cc2f0868a0a1608604e15d4dc8d5ee60fd3b21fc312af7",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/gui_physics_smoke.json",
+      "bytes": 498,
+      "sha256": "827bf6c46f1237d73a8d5550564a7a67ea9edbae7e862ae7cbfc056088516cb7",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/headless_smoke.json",
+      "bytes": 707,
+      "sha256": "e1f146910746b5affdd427a8b7c2e045e442a7f69f93cd16e331df86c766c6ec",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/cuda_driver_check.json",
+      "bytes": 251,
+      "sha256": "a320cb0f836effaca3b49fffba3a98cf17046b6ce40941b94f37e8793609a64d",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/runs/20261120T090937Z_f546c447/result.json",
+      "bytes": 498,
+      "sha256": "827bf6c46f1237d73a8d5550564a7a67ea9edbae7e862ae7cbfc056088516cb7",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
+      "path": "outputs/environment_check/runs/20261120T090937Z_babac9c1/result.json",
+      "bytes": 521,
+      "sha256": "667ea533af582670f771e743585718baf44a382cd6105a4560f6a122b4527478",
+      "availability": "project-local; contents not uploaded"
+    }
+  ],
+  "videos": [],
+  "keyframes": []
+}

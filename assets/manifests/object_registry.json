@@ -1,0 +1,1745 @@
+{
+  "schema_version": 1,
+  "objects": [
+    {
+      "asset_id": "ycb:002_master_chef_can",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/002_master_chef_can_google_16k.tgz",
+      "sha256": "2f8dcc63e243911c546058476c35276448601997f5e658296ccdf4a83af24c10",
+      "bytes": 11741544,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/002_master_chef_can/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/002_master_chef_can.usda",
+      "usd_sha256": "0213079513f00a3f65574727c0c9e05128e9a4cd627e2cfc9108264d671b7e80",
+      "mesh_sha256": "2d179b0ae197312e8868a8eb08de11231b79c9aaa0e289799b6b56b2cf4ecd56",
+      "geometry_dimensions_m": [
+        0.10252900000000001,
+        0.102377,
+        0.140177
+      ],
+      "mesh_to_body_translation_m": [
+        0.017048499999999998,
+        0.009760500000000002,
+        -0.0699015
+      ],
+      "mass_kg": 0.18392293760545514,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.00046180967407433946,
+        0.00046228704164474394,
+        0.00032176162238969024
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:003_cracker_box",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/003_cracker_box_google_16k.tgz",
+      "sha256": "0f084b0212274700d416384b9bc290521257d2b15ab66f68768a6a22806226b6",
+      "bytes": 11434893,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/003_cracker_box/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/003_cracker_box.usda",
+      "usd_sha256": "64a0ab9e9d2cc27e5d42085878cb9b52c55e3748a37371d9f436b94a5f22385b",
+      "mesh_sha256": "387d3c0e36330051e7e24a5c2859bd5651a739b1b1bad1f536d56227ed2d002a",
+      "geometry_dimensions_m": [
+        0.0718,
+        0.16403600000000002,
+        0.213437
+      ],
+      "mesh_to_body_translation_m": [
+        0.012885,
+        0.014141999999999995,
+        -0.1034755
+      ],
+      "mass_kg": 0.3142268817947,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.0018974894602928599,
+        0.0013278859585507587,
+        0.000839589333425986
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:004_sugar_box",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/004_sugar_box_google_16k.tgz",
+      "sha256": "38e5820b942e7db501ba105cfb42ba8b470f27540dbab95324105a52de8617c6",
+      "bytes": 12636314,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/004_sugar_box/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/004_sugar_box.usda",
+      "usd_sha256": "f2a44a022b53e11f9a87060321d971e9da0acdbbcd443b7c2596fe04886d4c84",
+      "mesh_sha256": "b7333f94bf81703ea5d58b1403544cf5565a8e301f4c52791454c1391bab0be9",
+      "geometry_dimensions_m": [
+        0.049496,
+        0.094162,
+        0.176015
+      ],
+      "mesh_to_body_translation_m": [
+        0.007467,
+        0.016712,
+        -0.0880385
+      ],
+      "mass_kg": 0.10254287044841,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.0003405086620431401,
+        0.0002856770389515222,
+        9.670080025498536e-05
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:005_tomato_soup_can",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/005_tomato_soup_can_google_16k.tgz",
+      "sha256": "264f28559475e8e548b20420a7b6db944b4b27471039a73733d2c08a4ba2cc3d",
+      "bytes": 10606298,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/005_tomato_soup_can/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/005_tomato_soup_can.usda",
+      "usd_sha256": "0525f1f3844f024aade7dad03f5e9adb02545804380ed0a852ba89b66919297f",
+      "mesh_sha256": "0da7d8ca01caefa1e85d1aad5eb198aa2298eca5c2a903dfb4c9d2fb0814c39d",
+      "geometry_dimensions_m": [
+        0.067911,
+        0.067743,
+        0.101855
+      ],
+      "mesh_to_body_translation_m": [
+        0.009168500000000001,
+        -0.0840175,
+        -0.051006499999999996
+      ],
+      "mass_kg": 0.058572925661176875,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        7.303826658136067e-05,
+        7.314950570456765e-05,
+        4.491087846366354e-05
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:006_mustard_bottle",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/006_mustard_bottle_google_16k.tgz",
+      "sha256": "992621f78a4fa6267da71418e530cd547bd066775da0242e578ddfb561d7cb5d",
+      "bytes": 10703139,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/006_mustard_bottle/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/006_mustard_bottle.usda",
+      "usd_sha256": "2db14d310ab5be160bedab2e06f2ede78f219e155c8efe8cb4762c8bdcf26e09",
+      "mesh_sha256": "aa81d47a5c37431c7c0b602e78982091af97219bff03ad5a63dc0f7e94153b19",
+      "geometry_dimensions_m": [
+        0.09719799999999999,
+        0.066621,
+        0.191301
+      ],
+      "mesh_to_body_translation_m": [
+        0.015338999999999998,
+        0.0234985,
+        -0.09249750000000001
+      ],
+      "mass_kg": 0.15484448047416974,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.0005294962526980041,
+        0.0005941321268987744,
+        0.00017917840471397132
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:007_tuna_fish_can",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/007_tuna_fish_can_google_16k.tgz",
+      "sha256": "b44bde265f9ebab879680ad843fafedb9c6549c7414f7325c66faa49207cd502",
+      "bytes": 8938529,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/007_tuna_fish_can/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/007_tuna_fish_can.usda",
+      "usd_sha256": "0a1abd05143cabf2d2ff01740e5a9c4874eeb3a3400c756746041c5bf37a7932",
+      "mesh_sha256": "b1c1e69b902d29b7b5a9c056fdd7f6daee6e1b9a116bcadbdb98c92999571076",
+      "geometry_dimensions_m": [
+        0.085559,
+        0.08554,
+        0.033538
+      ],
+      "mesh_to_body_translation_m": [
+        0.026048500000000002,
+        0.022132,
+        -0.013551
+      ],
+      "mass_kg": 0.030681890756334998,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        2.1584426452092445e-05,
+        2.1592738383401096e-05,
+        3.7425346118858063e-05
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:008_pudding_box",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/008_pudding_box_google_16k.tgz",
+      "sha256": "3c7ea25076552304a570abef26146ee5621e0a7b432ec435b42d0aabe8273440",
+      "bytes": 10164954,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/008_pudding_box/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/008_pudding_box.usda",
+      "usd_sha256": "ed4634efbd148d027972ef80c934064bd866f4e631f0174c94400f703baebcec",
+      "mesh_sha256": "8e72a0e501429e17d2b80f902a8ae59803051dcf37475633825169657c3bce40",
+      "geometry_dimensions_m": [
+        0.137938,
+        0.128756,
+        0.038889
+      ],
+      "mesh_to_body_translation_m": [
+        -0.0005049999999999985,
+        -0.019123000000000005,
+        -0.018947500000000003
+      ],
+      "mass_kg": 0.08633525771034901,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.00013015372387694454,
+        0.00014777175923596443,
+        0.00025616389977075975
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:009_gelatin_box",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/009_gelatin_box_google_16k.tgz",
+      "sha256": "426b76c4a63c7ec719d0c78a9570871c2cdad7671a47b3a831b303740083c5b5",
+      "bytes": 9815773,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/009_gelatin_box/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/009_gelatin_box.usda",
+      "usd_sha256": "dcb2f08878975ca3bb5bcd786bdd9932bfff1d5394905d84dd2942109ce6dd4b",
+      "mesh_sha256": "85ed671e61720e722b3e283afb5843666b76c89c7788d32ab8fc1baad718dc51",
+      "geometry_dimensions_m": [
+        0.089404,
+        0.101108,
+        0.030074
+      ],
+      "mesh_to_body_translation_m": [
+        0.022774999999999997,
+        0.008244999999999999,
+        -0.014492
+      ],
+      "mass_kg": 0.033981588621596004,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        3.1510201526967906e-05,
+        2.5195990658973517e-05,
+        5.158377650325883e-05
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:010_potted_meat_can",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/010_potted_meat_can_google_16k.tgz",
+      "sha256": "197f0741d40c740e94bccb11dec6be7a4d6473dd3d140f500a0b4357efcab604",
+      "bytes": 9656325,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/010_potted_meat_can/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/010_potted_meat_can.usda",
+      "usd_sha256": "ebd8d4071341c78b7fec18071fd4b5728af10a88687a81ba9ed793228b733532",
+      "mesh_sha256": "07c0d2c0dcc12c5e0e7ce7284c438c8077651aeec8ba1938f676aadfddc4f5ff",
+      "geometry_dimensions_m": [
+        0.102085,
+        0.060103000000000004,
+        0.08354299999999999
+      ],
+      "mesh_to_body_translation_m": [
+        0.0327845,
+        0.0265525,
+        -0.0385835
+      ],
+      "mass_kg": 0.06407345793462063,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        5.655445610982769e-05,
+        9.29106791750853e-05,
+        7.493240244192785e-05
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:011_banana",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/011_banana_google_16k.tgz",
+      "sha256": "bad03e98066dec02ea1536ff2fa58f068efa97e9dbc89fceb4418f1ec633c881",
+      "bytes": 5715660,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/011_banana/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/011_banana.usda",
+      "usd_sha256": "c112b5677e845eb9446750f5a33e151e4c09adf50d0e26cd5f9a28d2ac4631c3",
+      "mesh_sha256": "6f9bc2218bf6ff483e8397c664ddb6c25603a37d9ffb7f4127ea66ee99e61619",
+      "geometry_dimensions_m": [
+        0.10894200000000001,
+        0.178447,
+        0.036739999999999995
+      ],
+      "mesh_to_body_translation_m": [
+        -0.011476000000000004,
+        0.007343500000000003,
+        -0.017963
+      ],
+      "mass_kg": 0.08927991334234499,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.0002469568662995136,
+        9.834321555740285e-05,
+        0.00032521466666439886
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:012_strawberry",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/012_strawberry_google_16k.tgz",
+      "sha256": "377955b6d931541fd5dc082eefbdd686ea835cbea7f5e3ab6c1bfb8c60499012",
+      "bytes": 6888074,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/012_strawberry/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/012_strawberry.usda",
+      "usd_sha256": "1f50840906930b58354339b378d6c621847fa7bee203f14a3c1d25c941db114b",
+      "mesh_sha256": "41e1dc4d6d8b5608f3da0b3828c7d1ecee4a18f3a99f01e2ba577791ba63121a",
+      "geometry_dimensions_m": [
+        0.045224,
+        0.045286,
+        0.045675
+      ],
+      "mesh_to_body_translation_m": [
+        0.0008629999999999992,
+        -0.015777000000000003,
+        -0.022620499999999998
+      ],
+      "mass_kg": 0.02,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        6.895045701666667e-06,
+        6.885693001666667e-06,
+        6.826719953333332e-06
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:013_apple",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/013_apple_google_16k.tgz",
+      "sha256": "46249b76379bae26a6f78861b5568ceed25cf1e397530a313430b1d94d57320c",
+      "bytes": 5950199,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/013_apple/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/013_apple.usda",
+      "usd_sha256": "9ea6539bcb2a847e8a100e8c2cbe27ec54d8fe511f19afa27a170df9e7e49ec8",
+      "mesh_sha256": "f32e694c0473b6858fcfb6f5b53a742e9cdedce2fb488bd5a5666d37354f87df",
+      "geometry_dimensions_m": [
+        0.075448,
+        0.074871,
+        0.07188900000000001
+      ],
+      "mesh_to_body_translation_m": [
+        -0.0008589999999999987,
+        0.0037844999999999997,
+        -0.0355515
+      ],
+      "mass_kg": 0.050761426839489,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        4.557401071704452e-05,
+        4.594090611650003e-05,
+        4.779216824673643e-05
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:014_lemon",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/014_lemon_google_16k.tgz",
+      "sha256": "5b18a5c7b097893cbd1a5c12ef8ee03aa0b62d300a9610377f1b131575da5a45",
+      "bytes": 5501313,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/014_lemon/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/014_lemon.usda",
+      "usd_sha256": "f64a62a52cfcbfd27a78499718ad4dfa8c3fa5a3b3374e48568990b32eaa11f3",
+      "mesh_sha256": "3c70b40ef12a5fad1da5701b8c49df3ffbf964b5a2f23ae4bd8008dcc3b6a1b1",
+      "geometry_dimensions_m": [
+        0.060588,
+        0.059299000000000004,
+        0.053017
+      ],
+      "mesh_to_body_translation_m": [
+        0.010579,
+        -0.0216535,
+        -0.0262735
+      ],
+      "mass_kg": 0.023809986471100504,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.2554159996600255e-05,
+        1.2860781714612789e-05,
+        1.4260747632208321e-05
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:015_peach",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/015_peach_google_16k.tgz",
+      "sha256": "f0079b7f6ca8b8413cf38e6859a059453c2d12c76e5089c0c2dff6c68f9718bd",
+      "bytes": 4789671,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/015_peach/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/015_peach.usda",
+      "usd_sha256": "4312ce041df10bf5824c15afd5b1365dd2e5aae911f0e58d97a13fc1f1d0c1c2",
+      "mesh_sha256": "03d80a048febe93fa6b749ccb2e2ed71d2f2a553e5b815a2e49681b4c0217ece",
+      "geometry_dimensions_m": [
+        0.062123,
+        0.06263200000000001,
+        0.058645
+      ],
+      "mesh_to_body_translation_m": [
+        0.014270499999999998,
+        -0.005633000000000001,
+        -0.0291075
+      ],
+      "mass_kg": 0.028522638909715,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.7498647168991957e-05,
+        1.7347714170246506e-05,
+        1.8497013461512032e-05
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:019_pitcher_base",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/019_pitcher_base_google_16k.tgz",
+      "sha256": "cba78f0521f38b98d43b648bf68fd788373b43628f1941f476a5adb35819a8aa",
+      "bytes": 7017301,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/019_pitcher_base/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/019_pitcher_base.usda",
+      "usd_sha256": "9ee40b28751c49b5b1f4a4317bb20012bb8bfc08ffaba43f9e66906c6ce9ead4",
+      "mesh_sha256": "0642b636f2e7e80d8f0f8f573754e7347dfaec28f4bfb936fb6531db70873c20",
+      "geometry_dimensions_m": [
+        0.149134,
+        0.14482899999999999,
+        0.242387
+      ],
+      "mesh_to_body_translation_m": [
+        0.005829000000000001,
+        -0.0400515,
+        -0.1183715
+      ],
+      "mass_kg": 0.6544124227476601,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.004347855985872273,
+        0.004416869813623629,
+        0.0023567784964012143
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:021_bleach_cleanser",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/021_bleach_cleanser_google_16k.tgz",
+      "sha256": "2d71162158f5b51089a08ea12180d47a6480f4ba986af0c887a93ad5fc867588",
+      "bytes": 10668522,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/021_bleach_cleanser/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/021_bleach_cleanser.usda",
+      "usd_sha256": "cbd4e65b98a48d2a0ff077cd52a482644da9268c02fc190c21feb81540653b3b",
+      "mesh_sha256": "79c290ba3a53067082d3fcfd439c2085869a7fa0d77f5c075817ad4d8310fad0",
+      "geometry_dimensions_m": [
+        0.102433,
+        0.06769900000000001,
+        0.25058
+      ],
+      "mesh_to_body_translation_m": [
+        0.021663500000000002,
+        -0.011709500000000001,
+        -0.124838
+      ],
+      "mass_kg": 0.21720937393960754,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.0012195128167044164,
+        0.001326476937346348,
+        0.00027288147756720523
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:024_bowl",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/024_bowl_google_16k.tgz",
+      "sha256": "ac73b566d4f17c3cd5956684875c3a20dd4c8777821df62f5fee81f6b7751868",
+      "bytes": 7253020,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/024_bowl/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/024_bowl.usda",
+      "usd_sha256": "510a95fbfcb67883c1f8b116f75c0f7ac88047a5f09d42ad6067dc4c0d58971f",
+      "mesh_sha256": "0f134a66c903353a157d8bb10c901c824462438e4dbf7b72d800d535190f0c35",
+      "geometry_dimensions_m": [
+        0.16146300000000002,
+        0.161164,
+        0.055009
+      ],
+      "mesh_to_body_translation_m": [
+        0.014839499999999999,
+        0.043689000000000006,
+        -0.0269745
+      ],
+      "mass_kg": 0.17893068243329854,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.0004324132061317356,
+        0.0004338515922079974,
+        0.0007760243866347794
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:025_mug",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/025_mug_google_16k.tgz",
+      "sha256": "4b640afc1baaa940b66948d1e59426d8da2c5a16558c7c7a118bbe28d0737de5",
+      "bytes": 7658239,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/025_mug/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/025_mug.usda",
+      "usd_sha256": "ce87a0077d74bd8cfe1c3520ed1168d3af7c4fa93fdd0f17efc21b1ff83e9f89",
+      "mesh_sha256": "2d40b407e9e97402de788bebaa703ff03d682da95318db5ff9bfa1aa083b3a57",
+      "geometry_dimensions_m": [
+        0.116984,
+        0.093131,
+        0.081303
+      ],
+      "mesh_to_body_translation_m": [
+        0.008857000000000004,
+        -0.0173395,
+        -0.040119499999999995
+      ],
+      "mass_kg": 0.110722865600739,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.00014101997226516753,
+        0.00018726405152397123,
+        0.00020630105226532305
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:035_power_drill",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/035_power_drill_google_16k.tgz",
+      "sha256": "23d00071cab2161b99f21d8d317c516977e32f1f893e37d8bc4edc71a3ffe02c",
+      "bytes": 7352747,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/035_power_drill/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/035_power_drill.usda",
+      "usd_sha256": "05980d0933ea84b6955c0dba979b65f0d91591ac4d79a6a95f5ba3232069962b",
+      "mesh_sha256": "35d0cc4e55366c363f1fe9da2339895ee1e513f053e1525126db00538b729732",
+      "geometry_dimensions_m": [
+        0.18420699999999998,
+        0.187515,
+        0.057293000000000004
+      ],
+      "mesh_to_body_translation_m": [
+        0.045955499999999996,
+        -0.0105875,
+        -0.0254735
+      ],
+      "mass_kg": 0.2473738113921581,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.0007925107183466102,
+        0.0007671619863104613,
+        0.0014243391163144754
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:036_wood_block",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/036_wood_block_google_16k.tgz",
+      "sha256": "df2d86634812e5d3aeecfbfc18f134921538c0093176eaa8247524ea0e684075",
+      "bytes": 11493368,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/036_wood_block/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/036_wood_block.usda",
+      "usd_sha256": "7832e5bc2b0d25215cf2c73a59e568854a1cd9727681f2c2b545686f682d93f2",
+      "mesh_sha256": "a1cccc1d4be3fa5ef3b12b780edf15d4f8978bfae93ecfb0265314ce1d7c4e0c",
+      "geometry_dimensions_m": [
+        0.103917,
+        0.103464,
+        0.206003
+      ],
+      "mesh_to_body_translation_m": [
+        -0.023789499999999998,
+        0.009884999999999998,
+        -0.1029445
+      ],
+      "mass_kg": 0.276859495441683,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.0012260730901072004,
+        0.0012282405214203635,
+        0.0004961216532956704
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:037_scissors",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/037_scissors_google_16k.tgz",
+      "sha256": "a70d2be8fae0d79c398ffd360385c885eff32ac5eb608ff4f2ada4f585a994b8",
+      "bytes": 4725522,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/037_scissors/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/037_scissors.usda",
+      "usd_sha256": "6b628aecd8b8044fb2ca46e073c3f8176ec98709b7b12ecdc706e038e3565423",
+      "mesh_sha256": "57e86a1f6424b29aa44ba498b1d43a9c0728e42a8e0e729f8780cd7fb4ccb43b",
+      "geometry_dimensions_m": [
+        0.09608,
+        0.20152399999999998,
+        0.015671
+      ],
+      "mesh_to_body_translation_m": [
+        -0.010022,
+        -0.03593899999999999,
+        -0.0074735
+      ],
+      "mass_kg": 0.037928572074040004,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.00012913889502998973,
+        2.995392114291665e-05,
+        0.0001575403981944516
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:040_large_marker",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/040_large_marker_google_16k.tgz",
+      "sha256": "393d956da5f6cfe50614829faf4755bdb786c7db95abc1488f3b60505b1e2740",
+      "bytes": 4902250,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/040_large_marker/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/040_large_marker.usda",
+      "usd_sha256": "a7899181b25a214dcf88b89829206836ca7480774ad1bd01569c38591249d473",
+      "mesh_sha256": "7297294d2f21a60bf358024fab89eddcfc489301a363490b11b92563b7eaf037",
+      "geometry_dimensions_m": [
+        0.021022,
+        0.120969,
+        0.018895
+      ],
+      "mesh_to_body_translation_m": [
+        0.03569,
+        0.0050825,
+        -0.0091745
+      ],
+      "mass_kg": 0.02,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        2.4984199976666662e-05,
+        1.3315758483333332e-06,
+        2.5125705741666663e-05
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:042_adjustable_wrench",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/042_adjustable_wrench_google_16k.tgz",
+      "sha256": "160596775fab6f1a63c271b561a4f60bdbde57cc30601506fb28174610238f9c",
+      "bytes": 6744461,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/042_adjustable_wrench/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/042_adjustable_wrench.usda",
+      "usd_sha256": "3e529cd1ef884f29341e9d60f8c2b21bd83054765475669de3525e08966a2194",
+      "mesh_sha256": "254ee81d5f461cb4ad16e0b7ee6a299329263cc44bbd9171a518c0a3c8afd0ce",
+      "geometry_dimensions_m": [
+        0.124799,
+        0.181093,
+        0.014654
+      ],
+      "mesh_to_body_translation_m": [
+        0.003487500000000001,
+        0.012345499999999995,
+        -0.004345999999999999
+      ],
+      "mass_kg": 0.041397962706097254,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.00011387687540269842,
+        5.447119824419712e-05,
+        0.0001668664425211479
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:044_flat_screwdriver",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/044_flat_screwdriver_google_16k.tgz",
+      "sha256": "145589358015d641b1b0998dd8685dc01ed1b6a40535dd18f2063df84f69af91",
+      "bytes": 5147902,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/044_flat_screwdriver/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/044_flat_screwdriver.usda",
+      "usd_sha256": "53310c18f6b58672eb6bd4900bf945c0495f01765e0809a18150e8662af60890",
+      "mesh_sha256": "fb7c48e65cad5c8d4a93405c0d16ea4386026d8fc51e0c082a2de9941f6549e3",
+      "geometry_dimensions_m": [
+        0.161871,
+        0.156885,
+        0.035040999999999996
+      ],
+      "mesh_to_body_translation_m": [
+        0.012492499999999997,
+        -0.011665499999999995,
+        -0.0171135
+      ],
+      "mass_kg": 0.11123385182877935,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.00023953074391957032,
+        0.00025426290208292377,
+        0.0004710301632309761
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:048_hammer",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/048_hammer_google_16k.tgz",
+      "sha256": "4745093ebe83e71e4ec80f5fa438a42a7175a0df6e5e2c6964a23085bc6ae195",
+      "bytes": 6172350,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/048_hammer/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/048_hammer.usda",
+      "usd_sha256": "a174d05b24f609bd4d249d772d14ab3ad6f306707ed637bcb8495054e915ea5d",
+      "mesh_sha256": "cece40fcb2da1f9414d0c8bd02e910015b42ff0080fe1be37b0aafbe3f283430",
+      "geometry_dimensions_m": [
+        0.1822,
+        0.33272199999999996,
+        0.032862
+      ],
+      "mesh_to_body_translation_m": [
+        0.03772299999999999,
+        0.022710999999999995,
+        -0.015792
+      ],
+      "mass_kg": 0.2490198085401,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.002319699209696305,
+        0.0007112991651961293,
+        0.0029861785013228985
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:051_large_clamp",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/051_large_clamp_google_16k.tgz",
+      "sha256": "c032105498949c61b71a7c9893d2bed9ce617ed62b89085808ab3deff1311f62",
+      "bytes": 5665272,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/051_large_clamp/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/051_large_clamp.usda",
+      "usd_sha256": "f8d44ae6983948bf5fa4a38e07b3e0d379f0937ef893854f7b3c94de6c7bc5dc",
+      "mesh_sha256": "114e4394390e0faae3b913c9fe6086b7e741bd3aaeb6add8d95a86332e492773",
+      "geometry_dimensions_m": [
+        0.12004100000000001,
+        0.171074,
+        0.039172
+      ],
+      "mesh_to_body_translation_m": [
+        0.014593499999999999,
+        0.008210999999999996,
+        -0.019234
+      ],
+      "mass_kg": 0.10055400513748101,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.00025809497372979623,
+        0.00013360516196319027,
+        0.0003659843608368664
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:052_extra_large_clamp",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/052_extra_large_clamp_google_16k.tgz",
+      "sha256": "326015ef227c0eb21e9bd4080449f442335f26cbd3c2cc09929984804a5b796c",
+      "bytes": 7603758,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/052_extra_large_clamp/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/052_extra_large_clamp.usda",
+      "usd_sha256": "0b3af19b6f021e1341afee4e42e335237309e16a1a7a41a1b5e36e6015546a32",
+      "mesh_sha256": "c2274b0a1053bab2259da20945bd0109d08cfcbfb1083196ed81d8c76cd66c9b",
+      "geometry_dimensions_m": [
+        0.209954,
+        0.164344,
+        0.036316999999999995
+      ],
+      "mesh_to_body_translation_m": [
+        0.019705,
+        0.025086999999999998,
+        -0.0177595
+      ],
+      "mass_kg": 0.15663830874397394,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.00036976920024158296,
+        0.0005926097996874123,
+        0.0009279466497093338
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:061_foam_brick",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/061_foam_brick_google_16k.tgz",
+      "sha256": "945de5118d459a02ae65db06725fc08fdb84c66ae3efefb97cffd599fef679fa",
+      "bytes": 5906030,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/061_foam_brick/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/061_foam_brick.usda",
+      "usd_sha256": "9c2139db257ded93c6cb077b23b89f05c0852626574cb17a7d3e03391e5c473f",
+      "mesh_sha256": "04a5b79997a874638c3ad71044b1ed50fae16148f9bd29629fe37caab3a71d86",
+      "geometry_dimensions_m": [
+        0.052559999999999996,
+        0.077874,
+        0.051193
+      ],
+      "mesh_to_body_translation_m": [
+        0.018261,
+        -0.0172,
+        -0.025250500000000002
+      ],
+      "mass_kg": 0.02619198619074,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        1.8956631439619084e-05,
+        1.1749892740828194e-05,
+        1.9266199655854063e-05
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:065-c_cups",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/065-c_cups_google_16k.tgz",
+      "sha256": "d0b2d22a95f8d11715aabcd7ed3cfbf57f1569c4162c9df53a2f58de1b2aeaed",
+      "bytes": 6936476,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/065-c_cups/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/065-c_cups.usda",
+      "usd_sha256": "c5834c3a59d32af9cc0bd2567f18ec966473e31dbf50390afd97f8f6472f5c6a",
+      "mesh_sha256": "3e8b8bd37b45c99302372f44900e1a30dff3bcf52e081d9a9f5b57b1b5fdb1ab",
+      "geometry_dimensions_m": [
+        0.064974,
+        0.06510300000000001,
+        0.06655599999999999
+      ],
+      "mesh_to_body_translation_m": [
+        0.015507000000000002,
+        0.06751850000000001,
+        -0.032726
+      ],
+      "mass_kg": 0.035191504317879,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        2.542029499891517e-05,
+        2.5371085741863223e-05,
+        2.481007296503548e-05
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    },
+    {
+      "asset_id": "ycb:072-a_toy_airplane",
+      "dataset": "YCB",
+      "source": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+      "license": "CC-BY-4.0",
+      "scale": 1.0,
+      "units": "meters",
+      "status": "PASS",
+      "url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/072-a_toy_airplane_google_16k.tgz",
+      "sha256": "a44254c7180f0dfeed69c7b3c5313df60f9f71c5ac2108430926541a61ee1419",
+      "bytes": 8357444,
+      "integrity": "local_sha256_and_content_length",
+      "mesh_path": "assets/ycb/models/072-a_toy_airplane/google_16k/textured.obj",
+      "usd_path": "assets/converted_usd/072-a_toy_airplane.usda",
+      "usd_sha256": "d20db0d6e3c9a4f73cc49b4011b692562cd9bc7fd64f7221dab186c046ec067e",
+      "mesh_sha256": "0aa9967cf711d603a9af6ab8856bb52dc6759766a1c64155d7804c2ec9341c5f",
+      "geometry_dimensions_m": [
+        0.25518399999999997,
+        0.262932,
+        0.183438
+      ],
+      "mesh_to_body_translation_m": [
+        -0.03358599999999999,
+        -0.006103999999999998,
+        -0.09096699999999999
+      ],
+      "mass_kg": 1.5384954114499678,
+      "center_of_mass_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "diagonal_inertia_kg_m2": [
+        0.013177564036024105,
+        0.012662890811152136,
+        0.017212187995912846
+      ],
+      "principal_axes_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_friction": 0.6,
+      "dynamic_friction": 0.5,
+      "restitution": 0.02,
+      "collision_approximation": "convexDecomposition",
+      "physical_parameter_source": {
+        "status": "estimated",
+        "mass": "bounding volume * fill fraction .25 * density 500 kg/m3; clamped .02..2 kg",
+        "inertia": "uniform bounding cuboid approximation; not measured",
+        "com": "bounding extent midpoint; not measured",
+        "friction_restitution": "M0 defaults; not measured"
+      },
+      "collision_review": "NOT_RUN: cup/bowl cavities and thin tools require inspection and contact tests",
+      "conversion_status": "PASS",
+      "physics_validation": "NOT_RUN"
+    }
+  ]
+}

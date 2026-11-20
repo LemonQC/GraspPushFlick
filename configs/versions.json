@@ -1,0 +1,6 @@
+{
+  "requested": {"isaac_sim": "5.1.0", "isaac_lab": "2.3.1", "python": "3.11", "torch": "2.7.0", "cuda_wheel": "cu128"},
+  "selected": {"isaac_sim": "4.5.0", "isaac_lab": "2.0.2", "python": "3.10", "torch": "2.5.1", "torchvision": "0.20.1", "cuda_wheel": "cu118", "installation": "local official binary distribution"},
+  "reason": "User confirmed RTX 3090. Host Ubuntu 20.04 / GLIBC 2.31 / NVIDIA 535.230.02 cannot use requested 5.1 pip stack. Reuse local 4.5 binary; verify actual runtime before acceptance.",
+  "sources": ["https://github.com/isaac-sim/IsaacLab/tree/v2.0.2", "https://raw.githubusercontent.com/isaac-sim/IsaacLab/v2.0.2/source/isaaclab/setup.py", "https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/requirements.html"]
+}

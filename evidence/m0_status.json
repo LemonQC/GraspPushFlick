@@ -1,0 +1,67 @@
+{
+  "status": "BLOCKED",
+  "APFG_M0_READY": false,
+  "gates": {
+    "headless_physics": "BLOCKED",
+    "gui_physics": "BLOCKED",
+    "franka_control_and_gripper": "BLOCKED",
+    "fixed_and_wrist_rgbd": "BLOCKED",
+    "twelve_independent_ycb_drops": "BLOCKED",
+    "s1_headless": "BLOCKED",
+    "s2_headless": "BLOCKED",
+    "s1_gui": "BLOCKED",
+    "s2_gui": "BLOCKED",
+    "local_usd_dependencies": "PASS",
+    "storage_audit": "PASS",
+    "gpu_compute_and_rendering": "BLOCKED",
+    "installation": "NOT_RUN",
+    "github_sync": "NOT_RUN"
+  },
+  "canonical_ycb_count": 30,
+  "physically_verified_ycb_count": 0,
+  "gpu": "NVIDIA GeForce RTX 3090 24 GiB",
+  "driver": "535.230.02",
+  "os": "Ubuntu 20.04.6",
+  "glibc": "2.31",
+  "installation_status": "NOT_RUN",
+  "installed_packages": {},
+  "python": null,
+  "isaac_sim_binary_version": null,
+  "isaac_lab_release_tag": "v2.0.2",
+  "isaac_lab_commit": "b5fa0eb031a2413c182eeb54fa3a9295e8fd867c",
+  "cuda_init": 999,
+  "uvm_open_errno": 5,
+  "video_count": 0,
+  "keyframe_count": 0,
+  "storage": {
+    "project_allocated_bytes": 30025916416,
+    "free_bytes": 3387627933696,
+    "outside_observed_changed_count": 0,
+    "audit_scope": "Observed changes in current-user files under known external cache paths and /tmp since saved baseline; concurrent user activity cannot be attributed. Not a whole-filesystem syscall audit."
+  },
+  "runs": [
+    {
+      "run_id": "20261120T090937Z_babac9c1",
+      "test": "physics",
+      "mode": "headless",
+      "scene": "s1",
+      "seed": 20261120,
+      "status": "BLOCKED",
+      "artifacts_directory": "outputs/environment_check/runs/20261120T090937Z_babac9c1",
+      "cuda_init_returncode": 999,
+      "reason": "cuInit(0)=999; GPU rendering unavailable. Check /dev/nvidia-uvm before retrying."
+    },
+    {
+      "run_id": "20261120T090937Z_f546c447",
+      "test": "physics",
+      "mode": "gui",
+      "scene": "s1",
+      "seed": 20261120,
+      "status": "BLOCKED",
+      "artifacts_directory": "outputs/environment_check/runs/20261120T090937Z_f546c447",
+      "cuda_init_returncode": 999,
+      "reason": "cuInit(0)=999; GPU rendering unavailable. Check /dev/nvidia-uvm before retrying."
+    }
+  ],
+  "note": "Installation and static asset checks do not establish runtime physics or camera success."
+}

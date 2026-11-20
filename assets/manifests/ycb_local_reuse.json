@@ -1,0 +1,31 @@
+{
+  "source": "existing user archive YCB.zip",
+  "archive_sha256": "7ec5933ef6363c9a63682b195ce242e65511b71e7c1f80a3891f6bc8279f26d0",
+  "license": "UNVERIFIED local repack; canonical YCB data CC-BY-4.0, see official index",
+  "objects": [
+    "002_master_chef_can",
+    "003_cracker_box",
+    "004_sugar_box",
+    "005_tomato_soup_can",
+    "006_mustard_bottle",
+    "007_tuna_fish_can",
+    "008_pudding_box",
+    "009_gelatin_box",
+    "010_potted_meat_can",
+    "011_banana",
+    "021_bleach_cleanser",
+    "024_bowl",
+    "025_mug",
+    "035_power_drill",
+    "037_scissors",
+    "052_extra_large_clamp"
+  ],
+  "object_count": 16,
+  "extracted_types": [
+    "OBJ",
+    "MTL",
+    "PNG",
+    "SDF"
+  ],
+  "note": "Original archive untouched; no grasp labels loaded; mesh provenance needs canonical comparison"
+}

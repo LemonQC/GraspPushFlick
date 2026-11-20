@@ -1,0 +1,10 @@
+{
+  "source": "https://graspnet.net/datasets",
+  "physical_identity_overlap": [
+    {"graspnet_ids_inclusive": [0, 32], "dataset_family": "YCB", "unseen_object_eligible": false},
+    {"graspnet_id": 71, "dataset_family": "YCB", "unseen_object_eligible": false},
+    {"graspnet_id": 45, "dataset_family": "YCB pitcher cap", "unseen_object_eligible": false}
+  ],
+  "individual_ycb_asset_id_mapping": "NOT_RUN: exact cross-scan identity must be verified against downloaded models before splitting data",
+  "policy": "Duplicate scans of a physical object are one identity. Conservatively exclude the full known YCB group from unseen-object splits until exact mapping is verified. Geometry hash equality alone cannot establish cross-scan novelty."
+}

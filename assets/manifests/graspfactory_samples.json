@@ -1,0 +1,59 @@
+{
+  "source": "https://github.com/AutodeskRoboticsLab/graspfactory",
+  "license": "MIT repository; mesh redistribution terms require review",
+  "mesh_count": 5,
+  "objects": [
+    {
+      "url": "https://raw.githubusercontent.com/AutodeskRoboticsLab/graspfactory/8fa99b92032803fd49668ea2bcabda2458aa73cc/sample_data/panda/meshes/00000051_666139e3bff64d4e8a6ce183_step_000_0004.obj",
+      "sha256": "23ffa64a4f99951aa692ce996c9650c15af26e9ab75d18a88339113e33fd3d4a",
+      "bytes": 370347,
+      "integrity": "local_sha256_and_content_length",
+      "path": "assets/graspfactory/00000051_666139e3bff64d4e8a6ce183_step_000_0004.obj",
+      "git_blob_sha1": "260e54e18d206241138b358a8c7a9989fb08f087",
+      "status": "PASS",
+      "source_tree_sha": "8fa99b92032803fd49668ea2bcabda2458aa73cc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/AutodeskRoboticsLab/graspfactory/8fa99b92032803fd49668ea2bcabda2458aa73cc/sample_data/panda/meshes/00000146_1d9ece3a9c8348a5a11e7153_step_000_0000.obj",
+      "sha256": "1bc749cba919b61a5a866fc25868047f34f4c1cdefbe32238ca2297df6bc1b9b",
+      "bytes": 73918,
+      "integrity": "local_sha256_and_content_length",
+      "path": "assets/graspfactory/00000146_1d9ece3a9c8348a5a11e7153_step_000_0000.obj",
+      "git_blob_sha1": "733fd2dc58c9028a39b7ff212cf26dc6131d798d",
+      "status": "PASS",
+      "source_tree_sha": "8fa99b92032803fd49668ea2bcabda2458aa73cc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/AutodeskRoboticsLab/graspfactory/8fa99b92032803fd49668ea2bcabda2458aa73cc/sample_data/panda/meshes/00000836_889a065d51a24bb8ad704c69_step_007_0011.obj",
+      "sha256": "86bf7421ea5372416c4e7c44988765ccd367239e87403d252252dfcba641bdd8",
+      "bytes": 2627821,
+      "integrity": "local_sha256_and_content_length",
+      "path": "assets/graspfactory/00000836_889a065d51a24bb8ad704c69_step_007_0011.obj",
+      "git_blob_sha1": "3e6af1c447c59efac0dedf6db24b5d5335707e25",
+      "status": "PASS",
+      "source_tree_sha": "8fa99b92032803fd49668ea2bcabda2458aa73cc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/AutodeskRoboticsLab/graspfactory/8fa99b92032803fd49668ea2bcabda2458aa73cc/sample_data/panda/meshes/00000948_f297a24e1a4446cf9d74efd9_step_007_0000.obj",
+      "sha256": "35c76c9d5ce806ac8899941b841b74110e16c83b9c2a9d484cb3a62dc55b2d56",
+      "bytes": 2919293,
+      "integrity": "local_sha256_and_content_length",
+      "path": "assets/graspfactory/00000948_f297a24e1a4446cf9d74efd9_step_007_0000.obj",
+      "git_blob_sha1": "bb495f7cec03cc7e8f138d2931d207180effafa1",
+      "status": "PASS",
+      "source_tree_sha": "8fa99b92032803fd49668ea2bcabda2458aa73cc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/AutodeskRoboticsLab/graspfactory/8fa99b92032803fd49668ea2bcabda2458aa73cc/sample_data/panda/meshes/00000992_c86d74df1abc406caa125cbf_step_000_0000.obj",
+      "sha256": "8fdaafd6824f76c80286b52b7cfd30ab6cd39909bb7360430183186573205914",
+      "bytes": 4272925,
+      "integrity": "local_sha256_and_content_length",
+      "path": "assets/graspfactory/00000992_c86d74df1abc406caa125cbf_step_000_0000.obj",
+      "git_blob_sha1": "a3e148056ccee15a0aca3054a59aa2e8a275932f",
+      "status": "PASS",
+      "source_tree_sha": "8fa99b92032803fd49668ea2bcabda2458aa73cc"
+    }
+  ],
+  "physics_validation": "NOT_RUN",
+  "labels_downloaded": false
+}

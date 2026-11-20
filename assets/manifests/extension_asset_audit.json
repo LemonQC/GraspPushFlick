@@ -1,0 +1,38 @@
+{
+  "audit_date": "2026-11-20",
+  "graspnet": {
+    "status": "BLOCKED",
+    "source": "https://graspnet.net/datasets",
+    "requested_component": "Object 3D Models only",
+    "published_size_gb": 4.3,
+    "disk_capacity": "PASS: over 3 TiB available, 20 GiB reserve retained",
+    "jbox_url": "https://jbox.sjtu.edu.cn/l/jFF3no",
+    "jbox_result": "HEAD request timed out after 15 seconds; no model bytes downloaded",
+    "google_drive_url": "https://drive.google.com/file/d/1Gxwu2C5wRQ0QwjdA8CbMXx-bYf_wwPT5/view",
+    "google_drive_result": "Browser fetch exposed only sign-in; no authorized direct archive obtained",
+    "models_downloaded": 0,
+    "training_scenes_or_labels_downloaded": false
+  },
+  "dexgraspnet2": {
+    "status": "NOT_RUN",
+    "interface_audit": "PASS",
+    "source": "https://pku-epic.github.io/DexGraspNet2.0/",
+    "dataset": "https://huggingface.co/datasets/lhrlhr/DexGraspNet2.0",
+    "api": "https://huggingface.co/api/datasets/lhrlhr/DexGraspNet2.0/tree/main",
+    "license": "CC-BY-NC-4.0",
+    "meshdata_archive_bytes": 4617887647,
+    "decision": "Published top-level interface supplies meshdata.tar.gz as a bulk archive, not a verified per-object endpoint. Do not download full dataset for 3-5 samples in M0.",
+    "dexterous_labels_used_as_parallel_gripper_labels": false
+  },
+  "graspfactory": {
+    "status": "PASS",
+    "interface_audit": "PASS",
+    "source": "https://github.com/AutodeskRoboticsLab/graspfactory",
+    "sample_endpoint": "sample_data/panda/meshes/",
+    "selected_mesh_count": 5,
+    "decision": "Download only five official sample OBJ meshes; verify Git blob hashes. See graspfactory_samples.json for actual transfer status.",
+    "labels_downloaded": false,
+    "physical_validation": "NOT_RUN",
+    "downloaded_mesh_count": 5
+  }
+}

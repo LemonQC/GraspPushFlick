@@ -1,0 +1,14 @@
+{
+  "cpu_unit_tests": {
+    "status": "PASS",
+    "count": 3,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "python_compile": "PASS",
+  "shell_syntax": "PASS",
+  "usd_dependencies": "PASS",
+  "pip_check": {
+    "status": "NOT_RUN"
+  },
+  "gpu_physics_camera_control": "BLOCKED"
+}
