@@ -116,10 +116,9 @@ def main():
                                'arm_kp':20000,'arm_kd':500,'jaw_kp':8000,'jaw_kd':100,'jaw_force_limit_n':model.config['finger_force_n'],
                                'joint_friction':0,'note':'Isaac drive tuning differs from PyBullet damping; source URDF unchanged'},
                      status='PASS' if all(checks.values()) else 'FAILED')
-        for name in ['robot_sr5_pgia_d435i.usd']:
-            link = root/name
-            if link.is_symlink(): link.unlink()
-            if not link.exists(): link.symlink_to(os.path.relpath(usd, root))
+        if audit['status']=='PASS':
+            from apfg.robots.sr5_usd import write_forwarding_asset
+            write_forwarding_asset(usd,root/'robot_sr5_pgia_d435i.usd')
         snapshot = out/'source_config';snapshot.mkdir()
         for name in ['assembly_current.json','sr5_tool_current.json','export_report.json']:
             (snapshot/name).write_bytes((model.snapshot/name).read_bytes())

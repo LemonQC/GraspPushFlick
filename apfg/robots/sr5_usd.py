@@ -3,6 +3,34 @@ import numpy as np
 from scipy.spatial.transform import Rotation
 
 
+def write_forwarding_asset(source, destination):
+    """A real USD entry layer preserves relative references across symlinks.
+
+Symlinking a .usd file changes its layer anchor directory in the USD resolver.
+Reference the original layer instead, so its configuration/ dependencies keep
+their original anchor. Only replace this function's own generated entry files.
+"""
+    import os
+    from pathlib import Path
+    from pxr import Usd,UsdGeom
+    source,destination=Path(source).resolve(),Path(destination).absolute()
+    original=Usd.Stage.Open(str(source))
+    if destination.is_symlink():
+        if destination.resolve()!=source:raise ValueError('Unrecognized USD symlink; refusing replacement')
+        destination.unlink()
+    elif destination.exists():
+        existing=Usd.Stage.Open(str(destination))
+        if not existing.GetRootLayer().customLayerData.get('apfg_generated_forwarder'):
+            raise ValueError('Refusing to overwrite a non-generated USD entry file')
+    stage=Usd.Stage.CreateInMemory()
+    UsdGeom.SetStageMetersPerUnit(stage,1.);UsdGeom.SetStageUpAxis(stage,UsdGeom.Tokens.z)
+    prim=stage.DefinePrim('/'+original.GetDefaultPrim().GetName(),'Xform')
+    prim.GetReferences().AddReference(os.path.relpath(source,destination.parent))
+    stage.SetDefaultPrim(prim)
+    stage.GetRootLayer().customLayerData={'apfg_generated_forwarder':True,'purpose':'Project-local entry layer; source import and configuration remain immutable'}
+    stage.GetRootLayer().Export(str(destination))
+
+
 def audit_import(stage, model, link_paths):
     from pxr import UsdPhysics, UsdUtils
     from apfg.robots.sr5 import ARM, JAWS, origin

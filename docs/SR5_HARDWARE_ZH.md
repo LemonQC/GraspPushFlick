@@ -66,7 +66,7 @@ NPZ 包含 `filtered` (N×17) 和 `T_world_optical` (4×4)，并需匹配当前�
 
 ## 证据与复现
 
-每次运行保存在唯一 `outputs/isaac_sr5_hardware/runs/<run_id>/`，包括原始相机 MP4、逐帧遥测/指令、物体/末端位姿、接触回调、RGB-D 与标定、测试结果及场景 USD。导入文件保存在独立 `imports/<run_id>/`；顶层 `robot_sr5_pgia_d435i.usd` 指向当前成功导入。`assembly_audit.json` 记录源哈希、单位、近似项和完整验证。完整模型、视频及源快照仅留服务器；GitHub 仅保存代码、文档、轻量结果和真实预览。
+每次运行保存在唯一 `outputs/isaac_sr5_hardware/runs/<run_id>/`，包括原始相机 MP4、逐帧遥测/指令、物体/末端位姿、接触回调、RGB-D 与标定、测试结果及场景 USD。导入文件保存在独立 `imports/<run_id>/`；顶层 `robot_sr5_pgia_d435i.usd` 是相对引用当前成功导入的真正 USD 入口层，保留原层的配置依赖锚点，不使用会破坏相对引用的文件软链接。`assembly_audit.json` 记录源哈希、单位、近似项和完整验证。完整模型、视频及源快照仅留服务器；GitHub 仅保存代码、文档、轻量结果和真实预览。
 
 当前实际验收见 `evidence/sr5_hardware/summary.json` 与 `outputs/isaac_sr5_hardware/README_RUN.md`。失败和旧渲染问题的运行不会删除；仅最终相同配置的重复运行计入验收。
 

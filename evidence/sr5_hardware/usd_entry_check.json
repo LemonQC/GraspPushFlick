@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "entry_path": "outputs/isaac_sr5_hardware/robot_sr5_pgia_d435i.usd",
+  "entry_sha256": "aa09887254e6f0ba7ec539da50581096676aecd5c53f022acd6cf7c1f36ff95f",
+  "source_path": "outputs/isaac_sr5_hardware/imports/20261121T072157Z_4cb756d5/robot_sr5_pgia_d435i.usd",
+  "composed_prims": 84,
+  "unresolved_except_local_bundled_mdl": []
+}
