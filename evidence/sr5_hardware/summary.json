@@ -1,0 +1,1371 @@
+{
+  "status": "PASS",
+  "scope": "SR5 hardware fixture verification; H6 GraspNet model inference remains NOT_RUN",
+  "timestamp_utc": "2026-11-21T07:37:02.994814+00:00",
+  "gates": {
+    "H0": "PASS",
+    "H1": "PASS",
+    "H2": "PASS",
+    "H3": "PASS",
+    "H4": "PASS",
+    "H5": "PASS",
+    "H7": "PASS",
+    "render_state_sync": "PASS",
+    "simulation_clock": "PASS",
+    "rgbd": "PASS",
+    "H8": "PASS",
+    "H6": "NOT_RUN"
+  },
+  "repeatability": {
+    "status": "PASS",
+    "run_ids": [
+      "20261121T073140Z_1cc305cc",
+      "20261121T073346Z_dc62fe18"
+    ],
+    "same_seed_initial_config_tick_count_and_usd": true,
+    "max_joint_trajectory_delta_rad_or_m": 0.0,
+    "max_object_trajectory_position_delta_m": 0.0,
+    "wall_times_s": [
+      115.72030773900042,
+      121.06424063300074
+    ],
+    "simulated_times_s": [
+      66.97083682613447,
+      66.97083682613447
+    ]
+  },
+  "versions": {
+    "isaac_sim_binary": "4.5.0-rc.36+release.19112.f59b3005.gl",
+    "isaac_lab_release": "v2.0.2",
+    "isaac_lab_commit": "b5fa0eb031a2413c182eeb54fa3a9295e8fd867c",
+    "python": "3.10.22",
+    "gpu_and_driver": "NVIDIA GeForce RTX 3090, 535.230.02",
+    "physics": "PhysX CPU / MBP / TGS, verified from saved physicsScene; 480 Hz; RTX 3090 rendering; USD publication; fixed base; self collision enabled",
+    "simulation_dependencies": "project .conda/isaac-apfg and third_party/isaacsim; no original PyBullet server dependency"
+  },
+  "recording_validation": [
+    {
+      "run_id": "20261121T073140Z_1cc305cc",
+      "group": "joints",
+      "status": "PASS",
+      "frames_per_view": 376,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073140Z_1cc305cc",
+      "group": "gripper",
+      "status": "PASS",
+      "frames_per_view": 135,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073140Z_1cc305cc",
+      "group": "camera",
+      "status": "PASS",
+      "frames_per_view": 152,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073140Z_1cc305cc",
+      "group": "grasp",
+      "status": "PASS",
+      "frames_per_view": 717,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073140Z_1cc305cc",
+      "group": "push",
+      "status": "PASS",
+      "frames_per_view": 599,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073346Z_dc62fe18",
+      "group": "joints",
+      "status": "PASS",
+      "frames_per_view": 376,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073346Z_dc62fe18",
+      "group": "gripper",
+      "status": "PASS",
+      "frames_per_view": 135,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073346Z_dc62fe18",
+      "group": "camera",
+      "status": "PASS",
+      "frames_per_view": 152,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073346Z_dc62fe18",
+      "group": "grasp",
+      "status": "PASS",
+      "frames_per_view": 717,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073346Z_dc62fe18",
+      "group": "push",
+      "status": "PASS",
+      "frames_per_view": 599,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073141Z_b7341988",
+      "group": "joints",
+      "status": "PASS",
+      "frames_per_view": 376,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073141Z_b7341988",
+      "group": "gripper",
+      "status": "PASS",
+      "frames_per_view": 135,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073141Z_b7341988",
+      "group": "camera",
+      "status": "PASS",
+      "frames_per_view": 152,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073141Z_b7341988",
+      "group": "grasp",
+      "status": "PASS",
+      "frames_per_view": 717,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    },
+    {
+      "run_id": "20261121T073141Z_b7341988",
+      "group": "push",
+      "status": "PASS",
+      "frames_per_view": 599,
+      "max_cadence_error_s": 1.7384688064114862e-09
+    }
+  ],
+  "coordinate_interface_validation": {
+    "status": "PASS",
+    "positive_run_id": "20261121T073556Z_167928a6",
+    "positive_results": {
+      "status": "PASS",
+      "results": [
+        {
+          "index": 0,
+          "op": "move_tcp",
+          "result": {
+            "max_joint_error_rad": 5.6047612889464915e-05,
+            "actual_xyz_m": [
+              0.4499922525972144,
+              0.039998432122781875,
+              0.31994833723525995
+            ],
+            "position_error_m": 5.226396224435799e-05,
+            "orientation_error_rad": 7.355442994383773e-05
+          }
+        },
+        {
+          "index": 1,
+          "op": "set_opening",
+          "result": [
+            0.019999809563159943,
+            0.020000215619802475
+          ]
+        },
+        {
+          "index": 2,
+          "op": "move_tcp",
+          "result": {
+            "max_joint_error_rad": 4.523967489999947e-05,
+            "actual_xyz_m": [
+              0.3999763644761316,
+              6.966073309470036e-06,
+              0.2999605155645356
+            ],
+            "position_error_m": 4.654229055200176e-05,
+            "orientation_error_rad": 0.00011655121711509373
+          }
+        },
+        {
+          "index": 3,
+          "op": "set_opening",
+          "result": [
+            0.03999994322657585,
+            0.03999985381960869
+          ]
+        }
+      ],
+      "input_sha256": "11dced3e8d5900998eb7427787c02359b2b70ac56695a55f39660cdc8cbc22d2"
+    },
+    "unreachable_run_id": "20261121T073458Z_9b1545d3",
+    "unreachable_request_result": {
+      "status": "FAILED",
+      "reason": "IK_UNREACHABLE: position=4.110866m orientation=1.247797rad"
+    },
+    "rejected_move_commands_executed": 0
+  },
+  "source_urdf_sha256": "3844cc26d5a37536ea462279889a59fc79e9f5b921917c512a93ceed19fe75f8",
+  "usd_sha256": "22f0c952ca2caa62a34bb0a60fb69d3bc0baf12583dde9c1834b3751f4402eb4",
+  "usd_path": "outputs/isaac_sr5_hardware/imports/20261121T072157Z_4cb756d5/robot_sr5_pgia_d435i.usd",
+  "assumption_status": {
+    "arm": "SOURCE_SNAPSHOT: vendor geometry/inertia/axes retained; not real-world recalibrated",
+    "plate": "REAL_CAD_APPROX_MOUNT: source mesh-local transform retained once",
+    "gripper": "APPROX: source box housing and fingers, not manufacturer CAD",
+    "camera": "APPROX: source box housing and uncalibrated optical extrinsics, 58deg vertical FOV",
+    "tcp": "APPROX: source fixed frame, not measured hardware TCP",
+    "drives_friction": "ISAAC_SIM_TUNED_NOT_HARDWARE_CALIBRATION"
+  },
+  "graspnet_pose_interface": {
+    "status": "PASS",
+    "validation": "Two executed CPU tests for upstream optical/TCP axis mapping and invalid width/rotation rejection; model inference NOT_RUN"
+  },
+  "cpu_tests": {
+    "status": "PASS",
+    "count": 13,
+    "log_sha256": "4e4628d7aa20426afd915765ae8febb3ea51d3ed2802081a33e32aba71440301"
+  },
+  "runs": [
+    {
+      "status": "PASS",
+      "checks": {
+        "H2": {
+          "status": "PASS",
+          "moves": [
+            {
+              "max_joint_error_rad": 4.5835689302720084e-05
+            },
+            {
+              "max_joint_error_rad": 4.5001224275864615e-05
+            },
+            {
+              "max_joint_error_rad": 4.452438711766149e-05
+            },
+            {
+              "max_joint_error_rad": 4.5954898592270865e-05
+            },
+            {
+              "max_joint_error_rad": 4.54901205321212e-05
+            },
+            {
+              "max_joint_error_rad": 4.523964285496618e-05
+            },
+            {
+              "max_joint_error_rad": 4.619331717137243e-05
+            },
+            {
+              "max_joint_error_rad": 4.5835689302720084e-05
+            },
+            {
+              "max_joint_error_rad": 4.4882014986313834e-05
+            },
+            {
+              "max_joint_error_rad": 4.5954898592270865e-05
+            },
+            {
+              "max_joint_error_rad": 4.5835689302720084e-05
+            },
+            {
+              "max_joint_error_rad": 4.5954898592270865e-05
+            }
+          ]
+        },
+        "H3": {
+          "status": "PASS",
+          "openings": [
+            {
+              "command_m": 0.08,
+              "actual_inner_gap_m": 0.07999962037699758,
+              "joint_positions": [
+                0.03999960422515869,
+                0.03999999910593033
+              ]
+            },
+            {
+              "command_m": 0.0,
+              "actual_inner_gap_m": 3.223651814862616e-07,
+              "joint_positions": [
+                1.758952872243924e-09,
+                3.198102547230519e-07
+              ]
+            },
+            {
+              "command_m": 0.08,
+              "actual_inner_gap_m": 0.07999967997154869,
+              "joint_positions": [
+                0.03999968245625496,
+                0.03999999910593033
+              ]
+            }
+          ]
+        },
+        "H4": {
+          "status": "PASS",
+          "tcp_50mm_delta_m": [
+            0.05000180006027222,
+            -2.453600473018014e-06,
+            -1.1533498764038086e-05
+          ],
+          "camera_attachment_matrix_error": 3.179673824963793e-08,
+          "camera": {
+            "status": "PASS",
+            "target_pixels": 2884,
+            "surface_distance_p95_m": 0.00041986978179955577,
+            "depth_definition": "optical axis +Z metres",
+            "optical_convention": "+X right, +Y down, +Z forward",
+            "T_world_optical": [
+              [
+                3.0177388569371072e-05,
+                0.9999999982756568,
+                -5.0378682833835656e-05,
+                0.3999954164028168
+              ],
+              [
+                0.9999999994975447,
+                -3.0176899477588787e-05,
+                9.709040159683777e-06,
+                0.07500087469816208
+              ],
+              [
+                9.707519870494367e-06,
+                -5.037897580200015e-05,
+                -0.9999999986838616,
+                0.38196155428886414
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "K": [
+              [
+                432.9714660644531,
+                0.0,
+                320.0
+              ],
+              [
+                0.0,
+                432.9714660644531,
+                240.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "geometry": "known 40mm cube, actual physics pose; GT only for evaluation"
+          },
+          "move": {
+            "max_joint_error_rad": 5.6146505373388944e-05,
+            "actual_xyz_m": [
+              0.4499909220548686,
+              -9.896042047827375e-07,
+              0.2999494132126885
+            ],
+            "position_error_m": 5.140439139597726e-05,
+            "orientation_error_rad": 7.318342464966747e-05
+          }
+        },
+        "H5": {
+          "status": "PASS",
+          "initial_object_xyz_m": [
+            0.4000000059604645,
+            -3.594515518567931e-10,
+            0.019999997690320015
+          ],
+          "held_object_xyz_m": [
+            0.40024808049201965,
+            -1.6418866835010704e-06,
+            0.1699914187192917
+          ],
+          "minimum_sustained_lift_m": 0.1499908547848463,
+          "hold_duration_s": 1.0,
+          "bilateral_contact_frames": 30,
+          "hold_frames": 30,
+          "object_tcp_relative_position_drift_m": 0.003200634178401124,
+          "control_information": "KNOWN_CENTRED_ORACLE_FIXTURE; no learned grasp prediction or object pose fed to controller",
+          "artificial_attachment": false
+        },
+        "H7": {
+          "status": "PASS",
+          "initial_xyz_m": [
+            0.39994508028030396,
+            -6.744199936292716e-07,
+            0.01999996230006218
+          ],
+          "final_xyz_m": [
+            0.5419369339942932,
+            -0.0004925054963678122,
+            0.02000090666115284
+          ],
+          "delta_m": [
+            0.14199185371398926,
+            -0.0004918311024084687,
+            9.443610906600952e-07
+          ],
+          "physical_robot_object_contact": true,
+          "object_pose_resets_after_initialization": 0
+        },
+        "H0": {
+          "status": "PASS",
+          "source_urdf_sha256": "3844cc26d5a37536ea462279889a59fc79e9f5b921917c512a93ceed19fe75f8",
+          "usd_path": "outputs/isaac_sr5_hardware/imports/20261121T072157Z_4cb756d5/robot_sr5_pgia_d435i.usd"
+        },
+        "H1": {
+          "status": "PASS",
+          "actual_jaw_camera_abs_cosine": 0.9999999999999999,
+          "max_source_FK_vs_USD_position_error_m": 4.734161033149996e-07,
+          "max_source_FK_vs_USD_angle_error_rad": 1.0096903568282521e-06,
+          "geometry_fidelity": "SR5 vendor source and real plate CAD; PGIA/D435i source APPROX boxes; mount extrinsics not calibrated"
+        },
+        "H6": {
+          "status": "NOT_RUN",
+          "reason": "No GraspNet checkpoint/inference worker in the supplied hardware snapshot. Hardware fixture actions are explicitly known-centred."
+        },
+        "render_state_sync": {
+          "status": "PASS",
+          "max_tcp_Usd_vs_PhysX_position_error_m": 0.0,
+          "max_object_Usd_vs_PhysX_position_error_m": 0.0,
+          "mode": "PhysX USD publication enabled; Fabric disabled; no commanded visual transforms"
+        },
+        "simulation_clock": {
+          "status": "PASS",
+          "measured_steps": 32144,
+          "measured_time_s": 66.9666701592505,
+          "recorded_control_ticks": 2009
+        },
+        "rgbd": {
+          "status": "PASS"
+        }
+      },
+      "seed": 20261121,
+      "robot": "SR5-5/0.9C + source PGIA-140-80-W/D435i approximation + real plate",
+      "physics_hz": 480,
+      "control_and_video_hz": 30,
+      "joint_speed_limit_rad_s": 0.15,
+      "simulated_time_s": 66.97083682613447,
+      "wall_time_s": 115.72030773900042,
+      "physics_steps": 32146,
+      "camera_capture_gaps": [],
+      "videos": {
+        "joints": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/joints/third.mp4",
+            "frames": 376,
+            "duration_s": 12.533333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/joints/fixed.mp4",
+            "frames": 376,
+            "duration_s": 12.533333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/joints/wrist.mp4",
+            "frames": 376,
+            "duration_s": 12.533333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "gripper": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/gripper/third.mp4",
+            "frames": 135,
+            "duration_s": 4.5,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/gripper/fixed.mp4",
+            "frames": 135,
+            "duration_s": 4.5,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/gripper/wrist.mp4",
+            "frames": 135,
+            "duration_s": 4.5,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "camera": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/camera/third.mp4",
+            "frames": 152,
+            "duration_s": 5.066666666666666,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/camera/fixed.mp4",
+            "frames": 152,
+            "duration_s": 5.066666666666666,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/camera/wrist.mp4",
+            "frames": 152,
+            "duration_s": 5.066666666666666,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "grasp": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/grasp/third.mp4",
+            "frames": 717,
+            "duration_s": 23.9,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/grasp/fixed.mp4",
+            "frames": 717,
+            "duration_s": 23.9,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/grasp/wrist.mp4",
+            "frames": 717,
+            "duration_s": 23.9,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "push": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/push/third.mp4",
+            "frames": 599,
+            "duration_s": 19.966666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/push/fixed.mp4",
+            "frames": 599,
+            "duration_s": 19.966666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/push/wrist.mp4",
+            "frames": 599,
+            "duration_s": 19.966666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "initial_config": {
+        "q_home_rad": [
+          -0.2453100898473198,
+          0.333077329541562,
+          -1.7992433908426797,
+          -6.4731068466173934e-18,
+          -1.0092719332055515,
+          1.325486236947577
+        ],
+        "object_xyz_m": [
+          0.4,
+          0.0,
+          0.025
+        ],
+        "cube_size_m": 0.04,
+        "cube_mass_kg": 0.1,
+        "base_xyz_m": [
+          -0.16,
+          0.0,
+          0.0
+        ]
+      },
+      "coordinate_interface": "metres/radians; world or base position; quaternion XYZW; TCP=source ral_tcp",
+      "test_scope": "hardware contact primitive validation; no new push/grasp algorithm, no training",
+      "run_id": "20261121T073140Z_1cc305cc",
+      "mode": "headless",
+      "artifacts_directory": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc",
+      "actual_command": [
+        "/data/GraspPushFlicks/scripts/isaac_sr5_smoke.py",
+        "--headless",
+        "--test",
+        "all"
+      ]
+    },
+    {
+      "status": "PASS",
+      "checks": {
+        "H2": {
+          "status": "PASS",
+          "moves": [
+            {
+              "max_joint_error_rad": 4.5835689302720084e-05
+            },
+            {
+              "max_joint_error_rad": 4.5001224275864615e-05
+            },
+            {
+              "max_joint_error_rad": 4.452438711766149e-05
+            },
+            {
+              "max_joint_error_rad": 4.5954898592270865e-05
+            },
+            {
+              "max_joint_error_rad": 4.54901205321212e-05
+            },
+            {
+              "max_joint_error_rad": 4.523964285496618e-05
+            },
+            {
+              "max_joint_error_rad": 4.619331717137243e-05
+            },
+            {
+              "max_joint_error_rad": 4.5835689302720084e-05
+            },
+            {
+              "max_joint_error_rad": 4.4882014986313834e-05
+            },
+            {
+              "max_joint_error_rad": 4.5954898592270865e-05
+            },
+            {
+              "max_joint_error_rad": 4.5835689302720084e-05
+            },
+            {
+              "max_joint_error_rad": 4.5954898592270865e-05
+            }
+          ]
+        },
+        "H3": {
+          "status": "PASS",
+          "openings": [
+            {
+              "command_m": 0.08,
+              "actual_inner_gap_m": 0.07999962037699758,
+              "joint_positions": [
+                0.03999960422515869,
+                0.03999999910593033
+              ]
+            },
+            {
+              "command_m": 0.0,
+              "actual_inner_gap_m": 3.223651814862616e-07,
+              "joint_positions": [
+                1.758952872243924e-09,
+                3.198102547230519e-07
+              ]
+            },
+            {
+              "command_m": 0.08,
+              "actual_inner_gap_m": 0.07999967997154869,
+              "joint_positions": [
+                0.03999968245625496,
+                0.03999999910593033
+              ]
+            }
+          ]
+        },
+        "H4": {
+          "status": "PASS",
+          "tcp_50mm_delta_m": [
+            0.05000180006027222,
+            -2.453600473018014e-06,
+            -1.1533498764038086e-05
+          ],
+          "camera_attachment_matrix_error": 3.179673824963793e-08,
+          "camera": {
+            "status": "PASS",
+            "target_pixels": 2884,
+            "surface_distance_p95_m": 0.00041986978179955577,
+            "depth_definition": "optical axis +Z metres",
+            "optical_convention": "+X right, +Y down, +Z forward",
+            "T_world_optical": [
+              [
+                3.0177388569371072e-05,
+                0.9999999982756568,
+                -5.0378682833835656e-05,
+                0.3999954164028168
+              ],
+              [
+                0.9999999994975447,
+                -3.0176899477588787e-05,
+                9.709040159683777e-06,
+                0.07500087469816208
+              ],
+              [
+                9.707519870494367e-06,
+                -5.037897580200015e-05,
+                -0.9999999986838616,
+                0.38196155428886414
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "K": [
+              [
+                432.9714660644531,
+                0.0,
+                320.0
+              ],
+              [
+                0.0,
+                432.9714660644531,
+                240.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "geometry": "known 40mm cube, actual physics pose; GT only for evaluation"
+          },
+          "move": {
+            "max_joint_error_rad": 5.6146505373388944e-05,
+            "actual_xyz_m": [
+              0.4499909220548686,
+              -9.896042047827375e-07,
+              0.2999494132126885
+            ],
+            "position_error_m": 5.140439139597726e-05,
+            "orientation_error_rad": 7.318342464966747e-05
+          }
+        },
+        "H5": {
+          "status": "PASS",
+          "initial_object_xyz_m": [
+            0.4000000059604645,
+            -3.594515518567931e-10,
+            0.019999997690320015
+          ],
+          "held_object_xyz_m": [
+            0.40024808049201965,
+            -1.6418866835010704e-06,
+            0.1699914187192917
+          ],
+          "minimum_sustained_lift_m": 0.1499908547848463,
+          "hold_duration_s": 1.0,
+          "bilateral_contact_frames": 30,
+          "hold_frames": 30,
+          "object_tcp_relative_position_drift_m": 0.003200634178401124,
+          "control_information": "KNOWN_CENTRED_ORACLE_FIXTURE; no learned grasp prediction or object pose fed to controller",
+          "artificial_attachment": false
+        },
+        "H7": {
+          "status": "PASS",
+          "initial_xyz_m": [
+            0.39994508028030396,
+            -6.744199936292716e-07,
+            0.01999996230006218
+          ],
+          "final_xyz_m": [
+            0.5419369339942932,
+            -0.0004925054963678122,
+            0.02000090666115284
+          ],
+          "delta_m": [
+            0.14199185371398926,
+            -0.0004918311024084687,
+            9.443610906600952e-07
+          ],
+          "physical_robot_object_contact": true,
+          "object_pose_resets_after_initialization": 0
+        },
+        "H0": {
+          "status": "PASS",
+          "source_urdf_sha256": "3844cc26d5a37536ea462279889a59fc79e9f5b921917c512a93ceed19fe75f8",
+          "usd_path": "outputs/isaac_sr5_hardware/imports/20261121T072157Z_4cb756d5/robot_sr5_pgia_d435i.usd"
+        },
+        "H1": {
+          "status": "PASS",
+          "actual_jaw_camera_abs_cosine": 0.9999999999999999,
+          "max_source_FK_vs_USD_position_error_m": 4.734161033149996e-07,
+          "max_source_FK_vs_USD_angle_error_rad": 1.0096903568282521e-06,
+          "geometry_fidelity": "SR5 vendor source and real plate CAD; PGIA/D435i source APPROX boxes; mount extrinsics not calibrated"
+        },
+        "H6": {
+          "status": "NOT_RUN",
+          "reason": "No GraspNet checkpoint/inference worker in the supplied hardware snapshot. Hardware fixture actions are explicitly known-centred."
+        },
+        "render_state_sync": {
+          "status": "PASS",
+          "max_tcp_Usd_vs_PhysX_position_error_m": 0.0,
+          "max_object_Usd_vs_PhysX_position_error_m": 0.0,
+          "mode": "PhysX USD publication enabled; Fabric disabled; no commanded visual transforms"
+        },
+        "simulation_clock": {
+          "status": "PASS",
+          "measured_steps": 32144,
+          "measured_time_s": 66.9666701592505,
+          "recorded_control_ticks": 2009
+        },
+        "rgbd": {
+          "status": "PASS"
+        }
+      },
+      "seed": 20261121,
+      "robot": "SR5-5/0.9C + source PGIA-140-80-W/D435i approximation + real plate",
+      "physics_hz": 480,
+      "control_and_video_hz": 30,
+      "joint_speed_limit_rad_s": 0.15,
+      "simulated_time_s": 66.97083682613447,
+      "wall_time_s": 121.06424063300074,
+      "physics_steps": 32146,
+      "camera_capture_gaps": [],
+      "videos": {
+        "joints": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/joints/third.mp4",
+            "frames": 376,
+            "duration_s": 12.533333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/joints/fixed.mp4",
+            "frames": 376,
+            "duration_s": 12.533333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/joints/wrist.mp4",
+            "frames": 376,
+            "duration_s": 12.533333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "gripper": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/gripper/third.mp4",
+            "frames": 135,
+            "duration_s": 4.5,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/gripper/fixed.mp4",
+            "frames": 135,
+            "duration_s": 4.5,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/gripper/wrist.mp4",
+            "frames": 135,
+            "duration_s": 4.5,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "camera": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/camera/third.mp4",
+            "frames": 152,
+            "duration_s": 5.066666666666666,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/camera/fixed.mp4",
+            "frames": 152,
+            "duration_s": 5.066666666666666,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/camera/wrist.mp4",
+            "frames": 152,
+            "duration_s": 5.066666666666666,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "grasp": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/grasp/third.mp4",
+            "frames": 717,
+            "duration_s": 23.9,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/grasp/fixed.mp4",
+            "frames": 717,
+            "duration_s": 23.9,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/grasp/wrist.mp4",
+            "frames": 717,
+            "duration_s": 23.9,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "push": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/push/third.mp4",
+            "frames": 599,
+            "duration_s": 19.966666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/push/fixed.mp4",
+            "frames": 599,
+            "duration_s": 19.966666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/push/wrist.mp4",
+            "frames": 599,
+            "duration_s": 19.966666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "initial_config": {
+        "q_home_rad": [
+          -0.2453100898473198,
+          0.333077329541562,
+          -1.7992433908426797,
+          -6.4731068466173934e-18,
+          -1.0092719332055515,
+          1.325486236947577
+        ],
+        "object_xyz_m": [
+          0.4,
+          0.0,
+          0.025
+        ],
+        "cube_size_m": 0.04,
+        "cube_mass_kg": 0.1,
+        "base_xyz_m": [
+          -0.16,
+          0.0,
+          0.0
+        ]
+      },
+      "coordinate_interface": "metres/radians; world or base position; quaternion XYZW; TCP=source ral_tcp",
+      "test_scope": "hardware contact primitive validation; no new push/grasp algorithm, no training",
+      "run_id": "20261121T073346Z_dc62fe18",
+      "mode": "headless",
+      "artifacts_directory": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18",
+      "actual_command": [
+        "/data/GraspPushFlicks/scripts/isaac_sr5_smoke.py",
+        "--headless",
+        "--test",
+        "all"
+      ]
+    },
+    {
+      "status": "PASS",
+      "checks": {
+        "H2": {
+          "status": "PASS",
+          "moves": [
+            {
+              "max_joint_error_rad": 4.5835689302720084e-05
+            },
+            {
+              "max_joint_error_rad": 4.5001224275864615e-05
+            },
+            {
+              "max_joint_error_rad": 4.452438711766149e-05
+            },
+            {
+              "max_joint_error_rad": 4.5954898592270865e-05
+            },
+            {
+              "max_joint_error_rad": 4.54901205321212e-05
+            },
+            {
+              "max_joint_error_rad": 4.523964285496618e-05
+            },
+            {
+              "max_joint_error_rad": 4.619331717137243e-05
+            },
+            {
+              "max_joint_error_rad": 4.5835689302720084e-05
+            },
+            {
+              "max_joint_error_rad": 4.4882014986313834e-05
+            },
+            {
+              "max_joint_error_rad": 4.5954898592270865e-05
+            },
+            {
+              "max_joint_error_rad": 4.5835689302720084e-05
+            },
+            {
+              "max_joint_error_rad": 4.5954898592270865e-05
+            }
+          ]
+        },
+        "H3": {
+          "status": "PASS",
+          "openings": [
+            {
+              "command_m": 0.08,
+              "actual_inner_gap_m": 0.07999962037699758,
+              "joint_positions": [
+                0.03999960422515869,
+                0.03999999910593033
+              ]
+            },
+            {
+              "command_m": 0.0,
+              "actual_inner_gap_m": 3.223651814862616e-07,
+              "joint_positions": [
+                1.758952872243924e-09,
+                3.198102547230519e-07
+              ]
+            },
+            {
+              "command_m": 0.08,
+              "actual_inner_gap_m": 0.07999967997154869,
+              "joint_positions": [
+                0.03999968245625496,
+                0.03999999910593033
+              ]
+            }
+          ]
+        },
+        "H4": {
+          "status": "PASS",
+          "tcp_50mm_delta_m": [
+            0.05000180006027222,
+            -2.453600473018014e-06,
+            -1.1533498764038086e-05
+          ],
+          "camera_attachment_matrix_error": 3.179673824963793e-08,
+          "camera": {
+            "status": "PASS",
+            "target_pixels": 2884,
+            "surface_distance_p95_m": 0.00041987679850012964,
+            "depth_definition": "optical axis +Z metres",
+            "optical_convention": "+X right, +Y down, +Z forward",
+            "T_world_optical": [
+              [
+                3.0177388569371072e-05,
+                0.9999999982756568,
+                -5.0378682833835656e-05,
+                0.3999954164028168
+              ],
+              [
+                0.9999999994975447,
+                -3.0176899477588787e-05,
+                9.709040159683777e-06,
+                0.07500087469816208
+              ],
+              [
+                9.707519870494367e-06,
+                -5.037897580200015e-05,
+                -0.9999999986838616,
+                0.38196155428886414
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "K": [
+              [
+                432.9714660644531,
+                0.0,
+                320.0
+              ],
+              [
+                0.0,
+                432.9714660644531,
+                240.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "geometry": "known 40mm cube, actual physics pose; GT only for evaluation"
+          },
+          "move": {
+            "max_joint_error_rad": 5.6146505373388944e-05,
+            "actual_xyz_m": [
+              0.4499909220548686,
+              -9.896042047827375e-07,
+              0.2999494132126885
+            ],
+            "position_error_m": 5.140439139597726e-05,
+            "orientation_error_rad": 7.318342464966747e-05
+          }
+        },
+        "H5": {
+          "status": "PASS",
+          "initial_object_xyz_m": [
+            0.4000000059604645,
+            -3.594515518567931e-10,
+            0.019999997690320015
+          ],
+          "held_object_xyz_m": [
+            0.40024808049201965,
+            -1.6418866835010704e-06,
+            0.1699914187192917
+          ],
+          "minimum_sustained_lift_m": 0.1499908547848463,
+          "hold_duration_s": 1.0,
+          "bilateral_contact_frames": 30,
+          "hold_frames": 30,
+          "object_tcp_relative_position_drift_m": 0.003200634178401124,
+          "control_information": "KNOWN_CENTRED_ORACLE_FIXTURE; no learned grasp prediction or object pose fed to controller",
+          "artificial_attachment": false
+        },
+        "H7": {
+          "status": "PASS",
+          "initial_xyz_m": [
+            0.39994508028030396,
+            -6.744199936292716e-07,
+            0.01999996230006218
+          ],
+          "final_xyz_m": [
+            0.5419369339942932,
+            -0.0004925054963678122,
+            0.02000090666115284
+          ],
+          "delta_m": [
+            0.14199185371398926,
+            -0.0004918311024084687,
+            9.443610906600952e-07
+          ],
+          "physical_robot_object_contact": true,
+          "object_pose_resets_after_initialization": 0
+        },
+        "H0": {
+          "status": "PASS",
+          "source_urdf_sha256": "3844cc26d5a37536ea462279889a59fc79e9f5b921917c512a93ceed19fe75f8",
+          "usd_path": "outputs/isaac_sr5_hardware/imports/20261121T072157Z_4cb756d5/robot_sr5_pgia_d435i.usd"
+        },
+        "H1": {
+          "status": "PASS",
+          "actual_jaw_camera_abs_cosine": 0.9999999999999999,
+          "max_source_FK_vs_USD_position_error_m": 4.734161033149996e-07,
+          "max_source_FK_vs_USD_angle_error_rad": 1.0096903568282521e-06,
+          "geometry_fidelity": "SR5 vendor source and real plate CAD; PGIA/D435i source APPROX boxes; mount extrinsics not calibrated"
+        },
+        "H6": {
+          "status": "NOT_RUN",
+          "reason": "No GraspNet checkpoint/inference worker in the supplied hardware snapshot. Hardware fixture actions are explicitly known-centred."
+        },
+        "render_state_sync": {
+          "status": "PASS",
+          "max_tcp_Usd_vs_PhysX_position_error_m": 0.0,
+          "max_object_Usd_vs_PhysX_position_error_m": 0.0,
+          "mode": "PhysX USD publication enabled; Fabric disabled; no commanded visual transforms"
+        },
+        "simulation_clock": {
+          "status": "PASS",
+          "measured_steps": 32144,
+          "measured_time_s": 66.9666701592505,
+          "recorded_control_ticks": 2009
+        },
+        "rgbd": {
+          "status": "PASS"
+        }
+      },
+      "seed": 20261121,
+      "robot": "SR5-5/0.9C + source PGIA-140-80-W/D435i approximation + real plate",
+      "physics_hz": 480,
+      "control_and_video_hz": 30,
+      "joint_speed_limit_rad_s": 0.15,
+      "simulated_time_s": 66.97083682613447,
+      "wall_time_s": 142.59956233599223,
+      "physics_steps": 32146,
+      "camera_capture_gaps": [],
+      "videos": {
+        "joints": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/joints/third.mp4",
+            "frames": 376,
+            "duration_s": 12.533333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/joints/fixed.mp4",
+            "frames": 376,
+            "duration_s": 12.533333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/joints/wrist.mp4",
+            "frames": 376,
+            "duration_s": 12.533333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "gripper": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/gripper/third.mp4",
+            "frames": 135,
+            "duration_s": 4.5,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/gripper/fixed.mp4",
+            "frames": 135,
+            "duration_s": 4.5,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/gripper/wrist.mp4",
+            "frames": 135,
+            "duration_s": 4.5,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "camera": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/camera/third.mp4",
+            "frames": 152,
+            "duration_s": 5.066666666666666,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/camera/fixed.mp4",
+            "frames": 152,
+            "duration_s": 5.066666666666666,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/camera/wrist.mp4",
+            "frames": 152,
+            "duration_s": 5.066666666666666,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "grasp": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/grasp/third.mp4",
+            "frames": 717,
+            "duration_s": 23.9,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/grasp/fixed.mp4",
+            "frames": 717,
+            "duration_s": 23.9,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/grasp/wrist.mp4",
+            "frames": 717,
+            "duration_s": 23.9,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        },
+        "push": {
+          "third": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/push/third.mp4",
+            "frames": 599,
+            "duration_s": 19.966666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/push/fixed.mp4",
+            "frames": 599,
+            "duration_s": 19.966666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "/data/GraspPushFlicks/outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/push/wrist.mp4",
+            "frames": 599,
+            "duration_s": 19.966666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "initial_config": {
+        "q_home_rad": [
+          -0.2453100898473198,
+          0.333077329541562,
+          -1.7992433908426797,
+          -6.4731068466173934e-18,
+          -1.0092719332055515,
+          1.325486236947577
+        ],
+        "object_xyz_m": [
+          0.4,
+          0.0,
+          0.025
+        ],
+        "cube_size_m": 0.04,
+        "cube_mass_kg": 0.1,
+        "base_xyz_m": [
+          -0.16,
+          0.0,
+          0.0
+        ]
+      },
+      "coordinate_interface": "metres/radians; world or base position; quaternion XYZW; TCP=source ral_tcp",
+      "test_scope": "hardware contact primitive validation; no new push/grasp algorithm, no training",
+      "run_id": "20261121T073141Z_b7341988",
+      "mode": "gui",
+      "artifacts_directory": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988",
+      "actual_command": [
+        "/data/GraspPushFlicks/scripts/isaac_sr5_smoke.py",
+        "--gui",
+        "--test",
+        "all",
+        "--interactive"
+      ]
+    }
+  ],
+  "historical_run_counts": {
+    "total_with_smoke_results": 17,
+    "failed_with_smoke_results": 9
+  },
+  "limitations": [
+    "PGIA and D435i source box approximations; mount/TCP/optical extrinsics uncalibrated",
+    "SR5 mesh convex hull collisions; no real-world friction/force identification",
+    "Known-centred 40mm/100g fixture, not general learned grasp or clutter extraction",
+    "No GraspNet checkpoint or inference worker in hardware snapshot; pose mapping interface only"
+  ]
+}

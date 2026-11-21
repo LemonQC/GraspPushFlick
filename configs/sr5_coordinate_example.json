@@ -1,0 +1,6 @@
+[
+  {"op":"move_tcp","xyz":[0.45,0.04,0.32],"quat_xyzw":[1,0,0,0],"frame":"world"},
+  {"op":"set_opening","opening_m":0.04},
+  {"op":"move_tcp","xyz":[0.56,0.0,0.30],"quat_xyzw":[1,0,0,0],"frame":"base"},
+  {"op":"set_opening","opening_m":0.08}
+]

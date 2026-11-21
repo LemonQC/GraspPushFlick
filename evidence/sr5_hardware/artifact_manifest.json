@@ -1,0 +1,1370 @@
+[
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/smoke_results.json",
+    "bytes": 10825,
+    "sha256": "265b1e2e62553b8ad0c7a58c996c5abf85016fd1fc042301a17b1a86b2aed6af",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/telemetry.json",
+    "bytes": 9176153,
+    "sha256": "80f4f540a5b9aa83865440eccd9700c9df66fdc405c96c148c985318602cdb86",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/commands.json",
+    "bytes": 15486,
+    "sha256": "f09beb1f0609e0208338d0818949026c51398b817e63bd470e7449555f66c71e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/contacts.json",
+    "bytes": 16166201,
+    "sha256": "e55cd622f2bff46f291d0e1bb35b95d1c3dcb4e44164d706a4b7dcf84f622fd9",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/camera_validation.npz",
+    "bytes": 84752,
+    "sha256": "803f06f6b7441ab60f2ae9f95399ce906cac7e8ef5ef25e1e7c1c503b0b4a5bc",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/run_config.json",
+    "bytes": 742,
+    "sha256": "f118789484631199d919916d760d1f8db085a52f9f5f541af8f18f98e5dd422e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/scene_snapshot.usd",
+    "bytes": 12050243,
+    "sha256": "503535d4a5aba3bd128fb18c22ca767c4482034e5b49364f7d418dc7e015e96a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/camera/fixed.mp4",
+    "bytes": 275625,
+    "sha256": "4efe95ab188ea9c69a1a808815b26df39b7753b8476c8c3e8736b5dedfd376d2",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/camera/third.mp4",
+    "bytes": 206824,
+    "sha256": "2fba6803d343dea0e81b753376ac2f7e6b839d10dd49dbada9bee28c6aca49b7",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/camera/timing.json",
+    "bytes": 19313,
+    "sha256": "57c479a3fbc3fc5940f94e6c5b926048a68456f417fa6fee581afe478a50ead1",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/camera/wrist.mp4",
+    "bytes": 325814,
+    "sha256": "8d489170405a866839f5d287083db838456ce112a888ace60cff0a97fb7c75fd",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/grasp/fixed.mp4",
+    "bytes": 1296837,
+    "sha256": "d5c8f748f0013d688854e73752f406d0645edd2ccd781dda47c3d188c4744b71",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/grasp/third.mp4",
+    "bytes": 989350,
+    "sha256": "2f95a8201db68c66be5d684718caa3bbacb4a66f204ed0544001915907de82fb",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/grasp/timing.json",
+    "bytes": 88376,
+    "sha256": "e7d50ec614fbba26d948c6b00d0b4db7683e94d3057bfe7b9778c3f1dd0b3eb7",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/grasp/wrist.mp4",
+    "bytes": 1880282,
+    "sha256": "32cbab8dd855cfb9a2919a0073d6e60db7356dbe1350704adc5212b86030e722",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/gripper/fixed.mp4",
+    "bytes": 196119,
+    "sha256": "80c586370d14f7d4965244cf4184b4721f0bb3d13584ca17e9176e203f4b8724",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/gripper/third.mp4",
+    "bytes": 165333,
+    "sha256": "bbb5b5b1e6f55546ff7dae02218371f048fb28c3244f8ee7ce4ba57cf837f39b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/gripper/timing.json",
+    "bytes": 17158,
+    "sha256": "f5cb36db8b2c7f6557e8730744def6fa74fa332d252d7672e5ecaad31aded893",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/gripper/wrist.mp4",
+    "bytes": 224159,
+    "sha256": "4a05c6d2c6886f52e1158d8c1748a96c0cff08538661dadc89481d332514e03a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/joints/fixed.mp4",
+    "bytes": 674336,
+    "sha256": "bff74e0e89c681f8f59d50bd7faf702ae6ad5027f61902325c82fcc56101eb9a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/joints/third.mp4",
+    "bytes": 555345,
+    "sha256": "9d6473b9b52041a35da975665cb64779bb2baa52c45032a8770f27283f47011a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/joints/timing.json",
+    "bytes": 46322,
+    "sha256": "d5b12b4354ab63257c9c65a665f7fd3d12261f916bdd41f4817f30743390847d",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/joints/wrist.mp4",
+    "bytes": 957993,
+    "sha256": "32d69482dea3bebf3e6065061cf8bdc76dbc55c16206c83d0877c19b38701ac0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/push/fixed.mp4",
+    "bytes": 1084077,
+    "sha256": "40acf4c1f4217b54f06c9e38e24d5bbc4966c7a397e92eaf7ede79b03b50e086",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/push/third.mp4",
+    "bytes": 823652,
+    "sha256": "a6a738a1c2259bc90e155c8ba4a2b6f799447b5a9bc5d6424df4eee3b6e68a46",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/push/timing.json",
+    "bytes": 73869,
+    "sha256": "4511246d09544a7f0400b51f14dce1c9da99427ca3f23c8294f112ff936f5abf",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/videos/push/wrist.mp4",
+    "bytes": 1537974,
+    "sha256": "508b7dbaae265077ca86ace013900af81015bfbf122a9a6b1db6eda8d2b7b828",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/camera_calibration.json",
+    "bytes": 589,
+    "sha256": "368cf27e1d4d8a6d0c9b689d75293f266de30e40759a00c92fa1791a284f3ae3",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/camera_depth.png",
+    "bytes": 1932,
+    "sha256": "c68533336d55ce94d58f5ba0199a6b73accc8002819c81f837b37b50a6cd6d07",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/camera_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "83db5008f97a286bd3602c5502ec92d66197062864b62a9a61d9c34a278d4064",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/camera_rgb.png",
+    "bytes": 235284,
+    "sha256": "799e52ae1dd9a96afe911ee8f901c7ffd3a9bf5a65d7326e2302725520b48a72",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/front_calibration.json",
+    "bytes": 578,
+    "sha256": "54cef035e52ea2578d24ff5c3b074e73c2c88e35e961a7cae3b55330c876777a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/front_depth.png",
+    "bytes": 14557,
+    "sha256": "0538a244e1f9690f502094fe97b6196c85641fa078e18ec1f683cc746efcc0c5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/front_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "d90bc47d63c2bd1e01577c88c43af0d8821f5b294381dd0a4e7715ca969cae63",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/front_rgb.png",
+    "bytes": 174695,
+    "sha256": "973f5ad1a1e7171d1922f1bb664d33d23df68164c1fd790b2a9b32f5edd8ce7a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/grasp_lifted_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/grasp_lifted_depth.png",
+    "bytes": 14550,
+    "sha256": "98ffa9aa8f8f3c0f5d23355cccb87c5eeca85b425944a3f70ecfc07bab5acfb7",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/grasp_lifted_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "6ecdc0102c59938bf7c5ae9c025bff2b0f73ea31085cb01e54bf44df5025f09a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/grasp_lifted_rgb.png",
+    "bytes": 163825,
+    "sha256": "a9977abda8a8cb37c5b9c71d0acdf50d4eb043de2e29534aa4b0390689c17b1b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_closed_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_closed_depth.png",
+    "bytes": 14521,
+    "sha256": "fb1a8dd00c2033e1370b6122e18ac0184d6a7e71bc6f9d632aac8df282df99b4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_closed_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "62170705a5563a0e07abe74147a9abacc294c513c3c2902786a59c8ff98e383f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_closed_rgb.png",
+    "bytes": 177910,
+    "sha256": "002a59a0c79f73a126af1e94a749ac400462637fc2a6899c24f86db902975303",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_open_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_open_depth.png",
+    "bytes": 14581,
+    "sha256": "6cc683265ec2480910d86b01d4a1fd2311009fa4a3563a78a032aeec9368f04a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_open_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "96e00074813c303331d0bf8d5758eef666e685471f4c10bf6db5f938490ce209",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_open_rgb.png",
+    "bytes": 179504,
+    "sha256": "5732171c51ffc0cbfdc0d6368cb6a24ef7405d350fe8e498a81f023be38f3721",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_reopen_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_reopen_depth.png",
+    "bytes": 14576,
+    "sha256": "88d72446114cb660c88a7e7b1850eeeb9416d6ae1a1a71119b1151d8d2351a5b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_reopen_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "4533a0f3077a6e5602c390bf7cf04eef91cf032d81b4cb391f573f1c3a7b25d0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/gripper_reopen_rgb.png",
+    "bytes": 173083,
+    "sha256": "0de45b892b14ede173ffcf925db360ac58db8edeb05363476be04cccccfa14c8",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/push_final_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/push_final_depth.png",
+    "bytes": 13912,
+    "sha256": "9480489536fcc1c99adeeddd0a798c0631f80c34d6cb7004d97a5eff9bb6f639",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/push_final_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "1211acb990355ff520e6c8be1f6992f502c425589482ff9e001b48a92196f49e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/push_final_rgb.png",
+    "bytes": 161619,
+    "sha256": "66f73a157b9de9eb1101378bd26b50fd48eb5b43990d72c21a7a7ca63fcaed4f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/side_calibration.json",
+    "bytes": 536,
+    "sha256": "dc0bccc721e6ac10d341dbcba37ffa397507a36bf3bd7b84692dccad9b14695a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/side_depth.png",
+    "bytes": 17244,
+    "sha256": "9c21a44c941f52089e4e5e9580412917c4446b6f15225403c3fdac7ef2b1aa08",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/side_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "71f3ed7eba988efeda8b49c4ccbdef10c58aa55eeda248d8bedc9f1136221bdc",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/side_rgb.png",
+    "bytes": 188299,
+    "sha256": "a0d60e49f4e367de0d6fdb21f0e07e49909bb28d9ff1b2f94eda26e3a6732d01",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tcp_axes_calibration.json",
+    "bytes": 581,
+    "sha256": "f2b3a11ec29729de4a0d0a0c3a4a89fb296cd9c499839f0886aca27a3e42fb3e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tcp_axes_depth.png",
+    "bytes": 23635,
+    "sha256": "5069831d17ff4815cd5bad2cd69bf89363a0b066165e127b56f10c58dca490f0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tcp_axes_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "999a602d7e774d35dfded00d2ef0947c256fd189874f1e70b0ef1a2866593d0c",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tcp_axes_rgb.png",
+    "bytes": 159063,
+    "sha256": "746ad710c81ea264deb7b038b97597438d9d0a708ed6827e8aa20525e596a9f8",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tcp_moved_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tcp_moved_depth.png",
+    "bytes": 14584,
+    "sha256": "43232cd09be988a362349b66a48b9e52f7291241bc5e4f2c0e01425bd68502a3",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tcp_moved_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "8f3918469b69c5000892763340fced7b7ff770fa9eb78695b1d6d7c105f0246b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tcp_moved_rgb.png",
+    "bytes": 191817,
+    "sha256": "30df35c12c4b3040055aa377c5edd13db6d3bde8a1b5b21f67a05d61c00ea9da",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tool_closeup_calibration.json",
+    "bytes": 581,
+    "sha256": "f2b3a11ec29729de4a0d0a0c3a4a89fb296cd9c499839f0886aca27a3e42fb3e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tool_closeup_depth.png",
+    "bytes": 23009,
+    "sha256": "4163d0998940c6f828a3f5eb11572a74772943ad44ae9975ceaa62f295ef3cd0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tool_closeup_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "911d01c356ef3cffa1e8804852bfed8f9328a16430bd5659aace226daba6aacf",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/tool_closeup_rgb.png",
+    "bytes": 155654,
+    "sha256": "cf8cb39575275c0b891e0b1ee8cdbd4a7483989e499123b519493069d6aa91c5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/top_calibration.json",
+    "bytes": 568,
+    "sha256": "c3c962d7e4e189b5a023d2f91d4942ab8e533df0b31d5d062dd41a2607f8cfb4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/top_depth.png",
+    "bytes": 11787,
+    "sha256": "85d04786fb45fac70006fbd58a32d3828d6b39fb944ed5629535707c680eb0bc",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/top_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "859f1e4dd506540e062aaecbefea144a2695b931f90266022717812f7f7a0157",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073140Z_1cc305cc/images/top_rgb.png",
+    "bytes": 227134,
+    "sha256": "437ec4222f44ed72f9274fdd56e5716b7e9e2ad62d32e1b82f973a2abe7b9b8c",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/smoke_results.json",
+    "bytes": 10825,
+    "sha256": "72c669d6486cf6a3fdb81ee5aa6fc294e59ec8f17be3626bceee92aa5a29e6da",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/telemetry.json",
+    "bytes": 9176153,
+    "sha256": "80f4f540a5b9aa83865440eccd9700c9df66fdc405c96c148c985318602cdb86",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/commands.json",
+    "bytes": 15486,
+    "sha256": "f09beb1f0609e0208338d0818949026c51398b817e63bd470e7449555f66c71e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/contacts.json",
+    "bytes": 16166201,
+    "sha256": "e55cd622f2bff46f291d0e1bb35b95d1c3dcb4e44164d706a4b7dcf84f622fd9",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/camera_validation.npz",
+    "bytes": 84753,
+    "sha256": "860743733e53002ebdaa9a234ae4d808703a07a1a565061c2da349ca510116ae",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/run_config.json",
+    "bytes": 742,
+    "sha256": "cfc6d5e269cb9454eaaf5b176ccf38cbfa2774d04121ea23fcad3e3d6b902138",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/scene_snapshot.usd",
+    "bytes": 12050209,
+    "sha256": "06cd7018577f5279ab39e8c24f4bc8e4772c879760acd60ba08576629e16755d",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/camera/fixed.mp4",
+    "bytes": 277574,
+    "sha256": "96a88f8817b832b1f9654bdf627e2484efc6c4e62c536895417e2866a26ef142",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/camera/third.mp4",
+    "bytes": 205745,
+    "sha256": "fbbdd2c51bfae65828786fcfb94b58461066b8f185038a6a5fea810fb184ce83",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/camera/timing.json",
+    "bytes": 19315,
+    "sha256": "60a3ed5ff1713501f35b5c5085e0e9ca2b1e3923d65aec9b2bbb5fa7ceab2cf1",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/camera/wrist.mp4",
+    "bytes": 327176,
+    "sha256": "97c9a2c8ff8d7345cf07990ebdb8e118e35d70b1c035244bb9122acaa97cb53f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/grasp/fixed.mp4",
+    "bytes": 1303537,
+    "sha256": "f55c7b78c9b840a653bedb8e64fb72d850e5a932f41722f04513d70f10b9b33f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/grasp/third.mp4",
+    "bytes": 993084,
+    "sha256": "a412313dc24bdff87ff829e999742d074fb64f738946f526d62daabd78ddba56",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/grasp/timing.json",
+    "bytes": 88386,
+    "sha256": "f087e58d921f5e5b0fe386005300108c53c0b5efdc9b24f146b76fcc84f16e6c",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/grasp/wrist.mp4",
+    "bytes": 1867646,
+    "sha256": "001528f1e805b2a21d14e1938eb4804cd751b02ced0cef99b59ec0d5188702f6",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/gripper/fixed.mp4",
+    "bytes": 196455,
+    "sha256": "0f80a0af39237bf18374b49c6d0841295a687a0bef1748c1fabf041f7c591e45",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/gripper/third.mp4",
+    "bytes": 167048,
+    "sha256": "89a522978b86860d51b477708b98a5bd2a2c053829f5889d20f209ed2a529735",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/gripper/timing.json",
+    "bytes": 17158,
+    "sha256": "74c2e08ccf708877f22b9dfb5d461b9f8900bed44e2ae6897336fc0d8ea0a93d",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/gripper/wrist.mp4",
+    "bytes": 223571,
+    "sha256": "ed98e22a9ebc426007ea30368ce054823571cb868d440273ab4c2d0818d07877",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/joints/fixed.mp4",
+    "bytes": 671357,
+    "sha256": "f78719af23f572751d353735ad0545ffa0b7d3abfecedca924b6e74272b218b8",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/joints/third.mp4",
+    "bytes": 551396,
+    "sha256": "aeb7540d5be38cc7cafce51c5a10f02c51c4a8f2fc3fff615048071c9d3eb419",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/joints/timing.json",
+    "bytes": 46315,
+    "sha256": "6fd70c6c59ab4541f36b3047d03f69f60db78c93b56a1676833664496d731d94",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/joints/wrist.mp4",
+    "bytes": 961538,
+    "sha256": "3059f8ce4e8b11883b243583866260b068107e219932ba3ff02e98e21f41e312",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/push/fixed.mp4",
+    "bytes": 1085530,
+    "sha256": "8cecef29209e08af7ed208d419535859992fb2aa14b3e41213c8062a4c28a22d",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/push/third.mp4",
+    "bytes": 819910,
+    "sha256": "513246cbddeb799d38bb4842be1c94ec7960b322d8a4369f0c05e17397b2ab6f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/push/timing.json",
+    "bytes": 73884,
+    "sha256": "ab723b4b733479516a7be2552915dbecb9b55773f88d0b6683a5ace4a3f393c6",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/videos/push/wrist.mp4",
+    "bytes": 1530354,
+    "sha256": "a0a323bb543b5d8e81e266985c6de7cf26e3d82995759ff28adf09be25a87d9e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/camera_calibration.json",
+    "bytes": 589,
+    "sha256": "368cf27e1d4d8a6d0c9b689d75293f266de30e40759a00c92fa1791a284f3ae3",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/camera_depth.png",
+    "bytes": 1932,
+    "sha256": "c68533336d55ce94d58f5ba0199a6b73accc8002819c81f837b37b50a6cd6d07",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/camera_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "83db5008f97a286bd3602c5502ec92d66197062864b62a9a61d9c34a278d4064",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/camera_rgb.png",
+    "bytes": 235877,
+    "sha256": "080b5d9f6b65a208619caeaed99cc5fc5c38e5113be9a0f5655c781458c8b704",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/front_calibration.json",
+    "bytes": 578,
+    "sha256": "54cef035e52ea2578d24ff5c3b074e73c2c88e35e961a7cae3b55330c876777a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/front_depth.png",
+    "bytes": 14557,
+    "sha256": "0538a244e1f9690f502094fe97b6196c85641fa078e18ec1f683cc746efcc0c5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/front_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "d90bc47d63c2bd1e01577c88c43af0d8821f5b294381dd0a4e7715ca969cae63",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/front_rgb.png",
+    "bytes": 174532,
+    "sha256": "854f461f76edc9629175739318024e93f325c6bfeb381de14dceeed2ba1d3cbb",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/grasp_lifted_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/grasp_lifted_depth.png",
+    "bytes": 14550,
+    "sha256": "98ffa9aa8f8f3c0f5d23355cccb87c5eeca85b425944a3f70ecfc07bab5acfb7",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/grasp_lifted_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "6ecdc0102c59938bf7c5ae9c025bff2b0f73ea31085cb01e54bf44df5025f09a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/grasp_lifted_rgb.png",
+    "bytes": 163935,
+    "sha256": "cb79f3db3fb2a3f675829bc64d574a29ec95b8350cc1d49ceb30e955ba3fcb62",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_closed_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_closed_depth.png",
+    "bytes": 14521,
+    "sha256": "fb1a8dd00c2033e1370b6122e18ac0184d6a7e71bc6f9d632aac8df282df99b4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_closed_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "62170705a5563a0e07abe74147a9abacc294c513c3c2902786a59c8ff98e383f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_closed_rgb.png",
+    "bytes": 178269,
+    "sha256": "708962d91f8d2b6c598ccde564e5672bc6c1d130cd8bbef9d9d0d531f758dd81",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_open_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_open_depth.png",
+    "bytes": 14581,
+    "sha256": "6cc683265ec2480910d86b01d4a1fd2311009fa4a3563a78a032aeec9368f04a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_open_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "96e00074813c303331d0bf8d5758eef666e685471f4c10bf6db5f938490ce209",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_open_rgb.png",
+    "bytes": 178711,
+    "sha256": "814b32f7f07fdea1984e6a87a06e5cffba29fd4e12281fcfe6067121e596ef51",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_reopen_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_reopen_depth.png",
+    "bytes": 14576,
+    "sha256": "88d72446114cb660c88a7e7b1850eeeb9416d6ae1a1a71119b1151d8d2351a5b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_reopen_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "4533a0f3077a6e5602c390bf7cf04eef91cf032d81b4cb391f573f1c3a7b25d0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/gripper_reopen_rgb.png",
+    "bytes": 173084,
+    "sha256": "96d44ae4ecb03960a8067ebce941f2852fd77b42006092c1080d73b08268e0fd",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/push_final_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/push_final_depth.png",
+    "bytes": 13912,
+    "sha256": "9480489536fcc1c99adeeddd0a798c0631f80c34d6cb7004d97a5eff9bb6f639",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/push_final_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "1211acb990355ff520e6c8be1f6992f502c425589482ff9e001b48a92196f49e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/push_final_rgb.png",
+    "bytes": 161620,
+    "sha256": "f8fd780ccb0f1adbc9972924e69446fbdcd8b7d8aedacd0f9e3d168b9194af9d",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/side_calibration.json",
+    "bytes": 536,
+    "sha256": "dc0bccc721e6ac10d341dbcba37ffa397507a36bf3bd7b84692dccad9b14695a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/side_depth.png",
+    "bytes": 17244,
+    "sha256": "9c21a44c941f52089e4e5e9580412917c4446b6f15225403c3fdac7ef2b1aa08",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/side_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "71f3ed7eba988efeda8b49c4ccbdef10c58aa55eeda248d8bedc9f1136221bdc",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/side_rgb.png",
+    "bytes": 188029,
+    "sha256": "0d6644d89007c8f5dcd447f0445a32a852450017441aca03c26a352e1139e2cc",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tcp_axes_calibration.json",
+    "bytes": 581,
+    "sha256": "f2b3a11ec29729de4a0d0a0c3a4a89fb296cd9c499839f0886aca27a3e42fb3e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tcp_axes_depth.png",
+    "bytes": 23635,
+    "sha256": "5069831d17ff4815cd5bad2cd69bf89363a0b066165e127b56f10c58dca490f0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tcp_axes_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "999a602d7e774d35dfded00d2ef0947c256fd189874f1e70b0ef1a2866593d0c",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tcp_axes_rgb.png",
+    "bytes": 158818,
+    "sha256": "ba7d217eeb9fff55318e90e3d3aeb1d007c3fd8b9fb6d3af94982851efb7cecc",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tcp_moved_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tcp_moved_depth.png",
+    "bytes": 14584,
+    "sha256": "43232cd09be988a362349b66a48b9e52f7291241bc5e4f2c0e01425bd68502a3",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tcp_moved_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "8f3918469b69c5000892763340fced7b7ff770fa9eb78695b1d6d7c105f0246b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tcp_moved_rgb.png",
+    "bytes": 191656,
+    "sha256": "f33ff681cebf649ccfd63aaaeac77522c46f0a288a7241079b0fce2a5a796fd8",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tool_closeup_calibration.json",
+    "bytes": 581,
+    "sha256": "f2b3a11ec29729de4a0d0a0c3a4a89fb296cd9c499839f0886aca27a3e42fb3e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tool_closeup_depth.png",
+    "bytes": 23009,
+    "sha256": "4163d0998940c6f828a3f5eb11572a74772943ad44ae9975ceaa62f295ef3cd0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tool_closeup_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "911d01c356ef3cffa1e8804852bfed8f9328a16430bd5659aace226daba6aacf",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tool_closeup_rgb.png",
+    "bytes": 155819,
+    "sha256": "242101025616f93cfe31bf9a5467c057d9653a94ef91cd97747cad407a2bc783",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/top_calibration.json",
+    "bytes": 568,
+    "sha256": "c3c962d7e4e189b5a023d2f91d4942ab8e533df0b31d5d062dd41a2607f8cfb4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/top_depth.png",
+    "bytes": 11787,
+    "sha256": "85d04786fb45fac70006fbd58a32d3828d6b39fb944ed5629535707c680eb0bc",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/top_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "859f1e4dd506540e062aaecbefea144a2695b931f90266022717812f7f7a0157",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/top_rgb.png",
+    "bytes": 227875,
+    "sha256": "b8fd1b3cf6c2be197b7d806920acf22c5f60ca4f62dc448bf54dc3ef161a00de",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/smoke_results.json",
+    "bytes": 10825,
+    "sha256": "6148c20a8bd6f13598060872dca4e7e4d4e1b6a993876790007801a5a0d185c2",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/telemetry.json",
+    "bytes": 9176153,
+    "sha256": "80f4f540a5b9aa83865440eccd9700c9df66fdc405c96c148c985318602cdb86",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/commands.json",
+    "bytes": 15486,
+    "sha256": "f09beb1f0609e0208338d0818949026c51398b817e63bd470e7449555f66c71e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/contacts.json",
+    "bytes": 16166201,
+    "sha256": "e55cd622f2bff46f291d0e1bb35b95d1c3dcb4e44164d706a4b7dcf84f622fd9",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/camera_validation.npz",
+    "bytes": 77090,
+    "sha256": "6e112bbcaccc1a68981f9fd1b295c502686ff5e4e3c455322cfeb8967023c9a7",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/run_config.json",
+    "bytes": 757,
+    "sha256": "94699c2d4b1ae3d5581130fc72933dcb0f3d91d64c3fe5115aad6f8b80c11b8e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/scene_snapshot.usd",
+    "bytes": 12050276,
+    "sha256": "d724a72cd235e3824cca2397a44234201909332cb0629a83155b30a014a77b4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/camera/fixed.mp4",
+    "bytes": 275740,
+    "sha256": "dd47dd778d0b74e9ff289379cf3f4abff7f47741048ad1dd570fe2eb1827ffc2",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/camera/third.mp4",
+    "bytes": 205791,
+    "sha256": "c2002b0acea34fc9e91851efc16d6e24b58ab43d1b6a9b55112886c6bc06cf2f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/camera/timing.json",
+    "bytes": 19311,
+    "sha256": "a6a4c5874052256574756458b95b9043fcfa0976ed1c846d10b35ee780be5365",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/camera/wrist.mp4",
+    "bytes": 325022,
+    "sha256": "292b45c40f8d641727939facc9e9ae59ebdcf761a125253c9c454163721c0480",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/grasp/fixed.mp4",
+    "bytes": 1298042,
+    "sha256": "ecccff884ec432508f3f0911e6d8c3f8d8e78334981563771c2e85aeeb3744f3",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/grasp/third.mp4",
+    "bytes": 990619,
+    "sha256": "718f57c2ed66d0d7a537404764f04d4f92e9fb98802725696fd4fe4866b7de3e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/grasp/timing.json",
+    "bytes": 88385,
+    "sha256": "08dfb6f321536a640c263cd4a49391a2dda2013df61f8eeec24ef25423df13c0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/grasp/wrist.mp4",
+    "bytes": 1885690,
+    "sha256": "510040e714eb66288a77d4c87f840490e476cec9312c3acf41b390c00cd8d11c",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/gripper/fixed.mp4",
+    "bytes": 193645,
+    "sha256": "90270b2badc3bd43167d1ded6db24227768d10faa7d35e25b273b92dd977c3c7",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/gripper/third.mp4",
+    "bytes": 168318,
+    "sha256": "5ade38cc81a191d592547917da0c42f729a4b9cedaec72442eaf035bb2c52e6e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/gripper/timing.json",
+    "bytes": 17155,
+    "sha256": "d4447dc3e77b25ad6cd816a4c6c30c5c8adf72a8d113e2464085b519095094fb",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/gripper/wrist.mp4",
+    "bytes": 226450,
+    "sha256": "40b73c636a81b7f8e7d5537461ced83b0ac55d76f0e2e91252ab07f840604778",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/joints/fixed.mp4",
+    "bytes": 672078,
+    "sha256": "d87b327edc908b343b8ed7b7b6ea2904c29ecffcc4f0ef16ddc2693c319187d3",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/joints/third.mp4",
+    "bytes": 552939,
+    "sha256": "864b1aca567a622d4c08b1bbd01006f3250a0cf36b74c82830c4253606e4ef6a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/joints/timing.json",
+    "bytes": 46329,
+    "sha256": "a8faad28fcd0c0eb28fe30d6d21a051d5d8ae9343e7295125ec879d9a34cb159",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/joints/wrist.mp4",
+    "bytes": 952283,
+    "sha256": "04e988af057de48d67354ec44d1abf280565f82a4123c75b8c8338367b9c3ce0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/push/fixed.mp4",
+    "bytes": 1085122,
+    "sha256": "55db12cbc1d8601cb056a32b67b4bbed2ae6178d9057736d009a5553d9dc23b4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/push/third.mp4",
+    "bytes": 820561,
+    "sha256": "9d058417014413e76e7b3421e2182800c05746ccf425e932e9db0b7625d35577",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/push/timing.json",
+    "bytes": 73873,
+    "sha256": "e1cdfc655628628d4c7859cfe714d10c61b19535e55bd93fadbd9ee38980b9d7",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/videos/push/wrist.mp4",
+    "bytes": 1525688,
+    "sha256": "fa024eaf73171d53c8bd4f27a885c0a6950d6c6c746b179b49c937dcc9b82d0c",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/camera_calibration.json",
+    "bytes": 589,
+    "sha256": "368cf27e1d4d8a6d0c9b689d75293f266de30e40759a00c92fa1791a284f3ae3",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/camera_depth.png",
+    "bytes": 1932,
+    "sha256": "c68533336d55ce94d58f5ba0199a6b73accc8002819c81f837b37b50a6cd6d07",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/camera_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "000656b27540aca021b79111220b8d903d48cd194b3e16621ea1d2083eb4f3bc",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/camera_rgb.png",
+    "bytes": 235784,
+    "sha256": "396ab5292bbb0b42c69dda3c10418a21d10daef86ac91ca74cbcc63574e1e4fa",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/front_calibration.json",
+    "bytes": 578,
+    "sha256": "54cef035e52ea2578d24ff5c3b074e73c2c88e35e961a7cae3b55330c876777a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/front_depth.png",
+    "bytes": 14557,
+    "sha256": "0538a244e1f9690f502094fe97b6196c85641fa078e18ec1f683cc746efcc0c5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/front_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "643802444cb6bad56eae309dcabc19942803d33224ff473dc1db31a13a8fa90d",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/front_rgb.png",
+    "bytes": 177676,
+    "sha256": "0ae620139c898abf997a647ea8892915c3f0a39d4638f70112d6ba1b4d0443ca",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/grasp_lifted_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/grasp_lifted_depth.png",
+    "bytes": 14550,
+    "sha256": "83853e5b6220379fa1d8c423bea2a1969f5306ca129fca97312c5e2d00ec688f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/grasp_lifted_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "14e04e20dfc46bbd8965912cae031f02c557f2675271df7f24a3e60fc123d53e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/grasp_lifted_rgb.png",
+    "bytes": 169629,
+    "sha256": "ac992aa19347d29cebe510728360b54ad47065333de2078e5c56a5d5707a214d",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_closed_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_closed_depth.png",
+    "bytes": 14521,
+    "sha256": "fb1a8dd00c2033e1370b6122e18ac0184d6a7e71bc6f9d632aac8df282df99b4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_closed_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "12ca2de7b20298751a720c679d424ab2e89c5bde7a075afae1ef37164c588d46",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_closed_rgb.png",
+    "bytes": 194873,
+    "sha256": "a0c74d5d1cf1b54c6bdc0136747ae4e786dee2ad3aed47eae6cc2abb9a8c1141",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_open_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_open_depth.png",
+    "bytes": 14581,
+    "sha256": "6cc683265ec2480910d86b01d4a1fd2311009fa4a3563a78a032aeec9368f04a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_open_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "96e00074813c303331d0bf8d5758eef666e685471f4c10bf6db5f938490ce209",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_open_rgb.png",
+    "bytes": 168073,
+    "sha256": "d2f41993c02aee0bd3df544d9c1c7c006918ee8b4f56d39bb0b08583faa050b3",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_reopen_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_reopen_depth.png",
+    "bytes": 14576,
+    "sha256": "88d72446114cb660c88a7e7b1850eeeb9416d6ae1a1a71119b1151d8d2351a5b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_reopen_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "0a867bac5a0006785b5ee269d32de85f4f0b97868c1e894767276b6674f94baf",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/gripper_reopen_rgb.png",
+    "bytes": 194407,
+    "sha256": "91bbcc7f66568aee2d2d371fb457dc59687742190b49326dcd53a64116da5631",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/push_final_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/push_final_depth.png",
+    "bytes": 13912,
+    "sha256": "9480489536fcc1c99adeeddd0a798c0631f80c34d6cb7004d97a5eff9bb6f639",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/push_final_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "722d079ef38bbf36357b15931edb5ee26c9c2c964fdb4c3da1ecd23aa447b7f1",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/push_final_rgb.png",
+    "bytes": 168552,
+    "sha256": "85bd9c8c4c699b824f32f80c8db26192bab36ffd5f9889501f2035b4e5b7784a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/side_calibration.json",
+    "bytes": 536,
+    "sha256": "dc0bccc721e6ac10d341dbcba37ffa397507a36bf3bd7b84692dccad9b14695a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/side_depth.png",
+    "bytes": 17244,
+    "sha256": "9c21a44c941f52089e4e5e9580412917c4446b6f15225403c3fdac7ef2b1aa08",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/side_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "d220c3cce1febbdbd02ad7be11e5ce8b13a895b9185403636a45441a333c5bff",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/side_rgb.png",
+    "bytes": 147855,
+    "sha256": "0280ac1be37daaca5b54049c6a91ab6c9af77bf6bb7048bd5ba3dfce019b2806",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tcp_axes_calibration.json",
+    "bytes": 581,
+    "sha256": "f2b3a11ec29729de4a0d0a0c3a4a89fb296cd9c499839f0886aca27a3e42fb3e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tcp_axes_depth.png",
+    "bytes": 23635,
+    "sha256": "589cb42d886897d463683885e89c4916397b61c20dd6eb9d429577c5263765fb",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tcp_axes_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "1db46acaa2f245c8b40c80dc266ba518f7e617975f4c1e2a35714620eeb8a9a7",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tcp_axes_rgb.png",
+    "bytes": 161782,
+    "sha256": "558f89a643601d51b97eace9d3b8ee193784d60c7f18092726a65cee3db3ae0f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tcp_moved_calibration.json",
+    "bytes": 578,
+    "sha256": "672228b80845e3f41f53e6d1557e3459446392c6988a1e7ed2c36bd5077dbe4b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tcp_moved_depth.png",
+    "bytes": 14580,
+    "sha256": "8040c00bc5ee161839514d3bd18c143860d34aa0a1c57db5fb9f7c32acecc1ba",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tcp_moved_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "5f2c4fdbb1ec531ba4100c4651c74dbd09e40e018e21219f072df85a5d851dab",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tcp_moved_rgb.png",
+    "bytes": 191815,
+    "sha256": "adea5590661a76a905e692b879277ef5398646164899c58e3f4b23d3c23a53f1",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tool_closeup_calibration.json",
+    "bytes": 581,
+    "sha256": "f2b3a11ec29729de4a0d0a0c3a4a89fb296cd9c499839f0886aca27a3e42fb3e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tool_closeup_depth.png",
+    "bytes": 23010,
+    "sha256": "d0bb10ea21c3e796cf9ba4b4d8850f6081f0ff2734e9eef197624890a091a4fa",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tool_closeup_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "9a415e81bd32f29b66c71d33ccee7361aa06d93ab1118062d16a9f8ef1eaec45",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/tool_closeup_rgb.png",
+    "bytes": 169155,
+    "sha256": "b5dc3a4f21da901280f0839c68efbf0ae280a0e9924c5b438da2d87bbf6d6bf9",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/top_calibration.json",
+    "bytes": 568,
+    "sha256": "c3c962d7e4e189b5a023d2f91d4942ab8e533df0b31d5d062dd41a2607f8cfb4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/top_depth.png",
+    "bytes": 11817,
+    "sha256": "1f22f7aa7b839f972dd472bc9fd544f1f98a5da8205a9c0e28a23a06d351d8ec",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/top_depth_m.npy",
+    "bytes": 1228928,
+    "sha256": "a4468d4cbc81aa5fbe0e08da8df7fa91aeeecf431e8331168ef09994731a4bac",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/runs/20261121T073141Z_b7341988/images/top_rgb.png",
+    "bytes": 228066,
+    "sha256": "f5a686c8d168125de47b93c52dbcd0909e6c707a1135ca2adaff79c2e4a855cd",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/assembly_audit.json",
+    "bytes": 10934,
+    "sha256": "edbf32c0f09600fbe63f066f9cf7977fb511bea31c4ba7a98c748f46953c91ad",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/imports/20261121T072157Z_4cb756d5/robot_sr5_pgia_d435i.usd",
+    "bytes": 3118,
+    "sha256": "22f0c952ca2caa62a34bb0a60fb69d3bc0baf12583dde9c1834b3751f4402eb4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/isaac_sr5_hardware/unit_tests.txt",
+    "bytes": 1180,
+    "sha256": "4e4628d7aa20426afd915765ae8febb3ea51d3ed2802081a33e32aba71440301",
+    "availability": "project-local; full artifact not uploaded"
+  }
+]

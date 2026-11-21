@@ -1,0 +1,158 @@
+{
+  "model": "SR5-5/0.9C + PGIA-140-80-W + D435i",
+  "source_urdf": "assets/imported_sr5/isaac_sr5_export/robot/assembled_portable.urdf",
+  "source_urdf_sha256": "3844cc26d5a37536ea462279889a59fc79e9f5b921917c512a93ceed19fe75f8",
+  "vendor_source_sha256": "e3512f71077a813932abcb8db212bf55992cc3ebc08f56ba79f00564c6623213",
+  "plate_source_sha256": "16b67e37818540b0c48a6f08cc11d21f988ab33c1110fe422a25c2487926bd81",
+  "source_to_usd": {
+    "status": "PASS",
+    "checks": {
+      "source_joint_limits": true,
+      "source_joint_axes": true,
+      "source_mass_com_inertia": true,
+      "project_local_dependencies": true
+    },
+    "joints": [
+      {
+        "joint": "joint1",
+        "limit_error_rad_or_m": 3.1175052672693937e-07,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "joint2",
+        "limit_error_rad_or_m": 9.473608253429688e-08,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "joint3",
+        "limit_error_rad_or_m": 3.24193288214758e-07,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "joint4",
+        "limit_error_rad_or_m": 3.1175052672693937e-07,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "joint5",
+        "limit_error_rad_or_m": 3.1175052672693937e-07,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "joint6",
+        "limit_error_rad_or_m": 3.1175052672693937e-07,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "ral_left_jaw",
+        "limit_error_rad_or_m": 8.940696724635266e-10,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "ral_right_jaw",
+        "limit_error_rad_or_m": 8.940696724635266e-10,
+        "parent_axis_error": 0.0
+      }
+    ],
+    "inertials": [
+      {
+        "link": "xMateSR5_base",
+        "mass_error_kg": 0.0,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 2.2351741811588166e-10
+      },
+      {
+        "link": "xMateSR5_link1",
+        "mass_error_kg": 5.531311053630361e-08,
+        "com_error_m": 4.429878366076426e-09,
+        "inertia_matrix_max_error_kg_m2": 2.2861066963086873e-09
+      },
+      {
+        "link": "xMateSR5_link2",
+        "mass_error_kg": 1.1062622107260722e-07,
+        "com_error_m": 1.9006084645539588e-09,
+        "inertia_matrix_max_error_kg_m2": 2.49750532477222e-08
+      },
+      {
+        "link": "xMateSR5_link3",
+        "mass_error_kg": 1.1253356912988011e-07,
+        "com_error_m": 2.485085170824874e-09,
+        "inertia_matrix_max_error_kg_m2": 9.177916794611551e-10
+      },
+      {
+        "link": "xMateSR5_link4",
+        "mass_error_kg": 1.1444091807533141e-07,
+        "com_error_m": 1.249713798451024e-09,
+        "inertia_matrix_max_error_kg_m2": 8.245904254550185e-10
+      },
+      {
+        "link": "xMateSR5_link5",
+        "mass_error_kg": 3.0517578020194946e-08,
+        "com_error_m": 2.5073119347578703e-10,
+        "inertia_matrix_max_error_kg_m2": 3.9712036783989824e-10
+      },
+      {
+        "link": "xMateSR5_link6",
+        "mass_error_kg": 3.3378600994282692e-09,
+        "com_error_m": 1.832965821608691e-09,
+        "inertia_matrix_max_error_kg_m2": 1.4376932934087594e-10
+      },
+      {
+        "link": "ral_plate",
+        "mass_error_kg": 7.152557379708213e-09,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_gripper",
+        "mass_error_kg": 0.0,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_left_finger",
+        "mass_error_kg": 8.940696724635266e-10,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_right_finger",
+        "mass_error_kg": 8.940696724635266e-10,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_tcp",
+        "mass_error_kg": 4.749745128457272e-11,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_camera",
+        "mass_error_kg": 2.980232241545089e-09,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_optical",
+        "mass_error_kg": 4.749745128457272e-11,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      }
+    ],
+    "dependency_count": 5,
+    "unresolved": [],
+    "bundled_mdl": {}
+  },
+  "local_usd": "outputs/isaac_sr5_hardware/imports/20261121T072157Z_4cb756d5/robot_sr5_pgia_d435i.usd",
+  "local_usd_sha256": "22f0c952ca2caa62a34bb0a60fb69d3bc0baf12583dde9c1834b3751f4402eb4",
+  "assumption_status": {
+    "arm": "SOURCE_SNAPSHOT: vendor geometry/inertia/axes retained; not real-world recalibrated",
+    "plate": "REAL_CAD_APPROX_MOUNT: source mesh-local transform retained once",
+    "gripper": "APPROX: source box housing and fingers, not manufacturer CAD",
+    "camera": "APPROX: source box housing and uncalibrated optical extrinsics, 58deg vertical FOV",
+    "tcp": "APPROX: source fixed frame, not measured hardware TCP",
+    "drives_friction": "ISAAC_SIM_TUNED_NOT_HARDWARE_CALIBRATION"
+  },
+  "redistribution": "Meshes, URDF snapshot and USD kept project-local; upstream redistribution rights not inferred from supplied snapshot"
+}

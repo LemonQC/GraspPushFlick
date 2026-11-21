@@ -12,3 +12,6 @@ __pycache__/
 .pytest_cache/
 *.mp4
 *.log
+# Supplied private hardware handoff: meshes/CAD are server-local inputs.
+Isaac_SR5_PGIA_D435i_Handoff_v1.0/
+Isaac_SR5_PGIA_D435i_Handoff_v1.0.zip

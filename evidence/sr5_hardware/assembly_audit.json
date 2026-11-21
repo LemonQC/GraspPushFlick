@@ -1,0 +1,303 @@
+{
+  "status": "PASS",
+  "checks": {
+    "urdf_sha256": true,
+    "mesh_hashes": true,
+    "relative_mesh_paths": true,
+    "six_vendor_revolute": true,
+    "two_jaw_prismatic": true,
+    "jaw_limits": true,
+    "config_consistent": true,
+    "flange": true,
+    "jaw_parallel_camera_long_edge": true,
+    "plate_meter_scale": true,
+    "plate_hash": true
+  },
+  "source_urdf": "assets/imported_sr5/isaac_sr5_export/robot/assembled_portable.urdf",
+  "source_urdf_sha256": "3844cc26d5a37536ea462279889a59fc79e9f5b921917c512a93ceed19fe75f8",
+  "meshes": [
+    {
+      "path": "assets/imported_sr5/isaac_sr5_export/robot/meshes/b9478e76c8d1b0_xMateSR5_base.stl",
+      "sha256": "b9478e76c8d1b0d24fe12d882dbb9ba1ac6e57705508ebff100a1bdc11ff112c",
+      "expected_sha256": "b9478e76c8d1b0d24fe12d882dbb9ba1ac6e57705508ebff100a1bdc11ff112c",
+      "bytes": 1198284
+    },
+    {
+      "path": "assets/imported_sr5/isaac_sr5_export/robot/meshes/86852a57cff012_xMateSR5_link1.stl",
+      "sha256": "86852a57cff01290e9edbd629ca3a71814f72431d111aab320a1c5aadae13e4b",
+      "expected_sha256": "86852a57cff01290e9edbd629ca3a71814f72431d111aab320a1c5aadae13e4b",
+      "bytes": 1051384
+    },
+    {
+      "path": "assets/imported_sr5/isaac_sr5_export/robot/meshes/b38d698ebbc7a4_xMateSR5_link2.stl",
+      "sha256": "b38d698ebbc7a477e16aefd229bdfa5901d58124c3970fe22f73dc2bcd59e7af",
+      "expected_sha256": "b38d698ebbc7a477e16aefd229bdfa5901d58124c3970fe22f73dc2bcd59e7af",
+      "bytes": 2085984
+    },
+    {
+      "path": "assets/imported_sr5/isaac_sr5_export/robot/meshes/4baef261ecd000_xMateSR5_link3.stl",
+      "sha256": "4baef261ecd000e2fcf9e5756e4e4098bdac83c0344d4bc3a7866ac16f18f844",
+      "expected_sha256": "4baef261ecd000e2fcf9e5756e4e4098bdac83c0344d4bc3a7866ac16f18f844",
+      "bytes": 1191884
+    },
+    {
+      "path": "assets/imported_sr5/isaac_sr5_export/robot/meshes/b9cc7f7afdd208_xMateSR5_link4.stl",
+      "sha256": "b9cc7f7afdd20880f10b2d0068e2bd9fcb60539a0fc70df2aa6fed489cab59fd",
+      "expected_sha256": "b9cc7f7afdd20880f10b2d0068e2bd9fcb60539a0fc70df2aa6fed489cab59fd",
+      "bytes": 748384
+    },
+    {
+      "path": "assets/imported_sr5/isaac_sr5_export/robot/meshes/36e443698f8440_xMateSR5_link5.stl",
+      "sha256": "36e443698f8440557650eb2baf2406aa64ce3f157d8b32388d43f82769780a74",
+      "expected_sha256": "36e443698f8440557650eb2baf2406aa64ce3f157d8b32388d43f82769780a74",
+      "bytes": 1094884
+    },
+    {
+      "path": "assets/imported_sr5/isaac_sr5_export/robot/meshes/bc1ef9ee293c35_xMateSR5_link6.stl",
+      "sha256": "bc1ef9ee293c350ffa3118bf97893130079e8da6fc2f6d73f2679bce93e9f16a",
+      "expected_sha256": "bc1ef9ee293c350ffa3118bf97893130079e8da6fc2f6d73f2679bce93e9f16a",
+      "bytes": 611584
+    },
+    {
+      "path": "assets/imported_sr5/isaac_sr5_export/robot/meshes/16b67e37818540_adapter_plate_m.stl",
+      "sha256": "16b67e37818540b0c48a6f08cc11d21f988ab33c1110fe422a25c2487926bd81",
+      "expected_sha256": "16b67e37818540b0c48a6f08cc11d21f988ab33c1110fe422a25c2487926bd81",
+      "bytes": 364484
+    }
+  ],
+  "mesh_reference_count": 15,
+  "jaw_camera_long_axis_abs_cosine": 1.0,
+  "plate_source_bounds_m": [
+    [
+      -0.04398632422089577,
+      0.0,
+      -0.054999999701976776
+    ],
+    [
+      0.10499999672174454,
+      0.007000000216066837,
+      0.05499611794948578
+    ]
+  ],
+  "flange": "xMateSR5_link6",
+  "arm_joints": [
+    "joint1",
+    "joint2",
+    "joint3",
+    "joint4",
+    "joint5",
+    "joint6"
+  ],
+  "jaw_joints": [
+    "ral_left_jaw",
+    "ral_right_jaw"
+  ],
+  "assumption_status": {
+    "arm": "SOURCE_SNAPSHOT: vendor geometry/inertia/axes retained; not real-world recalibrated",
+    "plate": "REAL_CAD_APPROX_MOUNT: source mesh-local transform retained once",
+    "gripper": "APPROX: source box housing and fingers, not manufacturer CAD",
+    "camera": "APPROX: source box housing and uncalibrated optical extrinsics, 58deg vertical FOV",
+    "tcp": "APPROX: source fixed frame, not measured hardware TCP",
+    "drives_friction": "ISAAC_SIM_TUNED_NOT_HARDWARE_CALIBRATION"
+  },
+  "importer_filename_workaround": {
+    "reason": "4.5 importer rejects digit-leading hashed STL basenames as USD prim identifiers",
+    "filename_only_map": {
+      "meshes/b9478e76c8d1b0_xMateSR5_base.stl": "meshes/m_b9478e76c8d1b0_xMateSR5_base.stl",
+      "meshes/86852a57cff012_xMateSR5_link1.stl": "meshes/m_86852a57cff012_xMateSR5_link1.stl",
+      "meshes/b38d698ebbc7a4_xMateSR5_link2.stl": "meshes/m_b38d698ebbc7a4_xMateSR5_link2.stl",
+      "meshes/4baef261ecd000_xMateSR5_link3.stl": "meshes/m_4baef261ecd000_xMateSR5_link3.stl",
+      "meshes/b9cc7f7afdd208_xMateSR5_link4.stl": "meshes/m_b9cc7f7afdd208_xMateSR5_link4.stl",
+      "meshes/36e443698f8440_xMateSR5_link5.stl": "meshes/m_36e443698f8440_xMateSR5_link5.stl",
+      "meshes/bc1ef9ee293c35_xMateSR5_link6.stl": "meshes/m_bc1ef9ee293c35_xMateSR5_link6.stl",
+      "meshes/16b67e37818540_adapter_plate_m.stl": "meshes/m_16b67e37818540_adapter_plate_m.stl"
+    },
+    "original_urdf_unchanged": true,
+    "import_copy_sha256": "3767fd5bb914e7e29afa4e4f5c52d0de305e2dc33f0f7c2c116f32a01fb90459"
+  },
+  "source_to_usd": {
+    "status": "PASS",
+    "checks": {
+      "source_joint_limits": true,
+      "source_joint_axes": true,
+      "source_mass_com_inertia": true,
+      "project_local_dependencies": true
+    },
+    "joints": [
+      {
+        "joint": "joint1",
+        "limit_error_rad_or_m": 3.1175052672693937e-07,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "joint2",
+        "limit_error_rad_or_m": 9.473608253429688e-08,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "joint3",
+        "limit_error_rad_or_m": 3.24193288214758e-07,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "joint4",
+        "limit_error_rad_or_m": 3.1175052672693937e-07,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "joint5",
+        "limit_error_rad_or_m": 3.1175052672693937e-07,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "joint6",
+        "limit_error_rad_or_m": 3.1175052672693937e-07,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "ral_left_jaw",
+        "limit_error_rad_or_m": 8.940696724635266e-10,
+        "parent_axis_error": 0.0
+      },
+      {
+        "joint": "ral_right_jaw",
+        "limit_error_rad_or_m": 8.940696724635266e-10,
+        "parent_axis_error": 0.0
+      }
+    ],
+    "inertials": [
+      {
+        "link": "xMateSR5_base",
+        "mass_error_kg": 0.0,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 2.2351741811588166e-10
+      },
+      {
+        "link": "xMateSR5_link1",
+        "mass_error_kg": 5.531311053630361e-08,
+        "com_error_m": 4.429878366076426e-09,
+        "inertia_matrix_max_error_kg_m2": 2.2861066963086873e-09
+      },
+      {
+        "link": "xMateSR5_link2",
+        "mass_error_kg": 1.1062622107260722e-07,
+        "com_error_m": 1.9006084645539588e-09,
+        "inertia_matrix_max_error_kg_m2": 2.49750532477222e-08
+      },
+      {
+        "link": "xMateSR5_link3",
+        "mass_error_kg": 1.1253356912988011e-07,
+        "com_error_m": 2.485085170824874e-09,
+        "inertia_matrix_max_error_kg_m2": 9.177916794611551e-10
+      },
+      {
+        "link": "xMateSR5_link4",
+        "mass_error_kg": 1.1444091807533141e-07,
+        "com_error_m": 1.249713798451024e-09,
+        "inertia_matrix_max_error_kg_m2": 8.245904254550185e-10
+      },
+      {
+        "link": "xMateSR5_link5",
+        "mass_error_kg": 3.0517578020194946e-08,
+        "com_error_m": 2.5073119347578703e-10,
+        "inertia_matrix_max_error_kg_m2": 3.9712036783989824e-10
+      },
+      {
+        "link": "xMateSR5_link6",
+        "mass_error_kg": 3.3378600994282692e-09,
+        "com_error_m": 1.832965821608691e-09,
+        "inertia_matrix_max_error_kg_m2": 1.4376932934087594e-10
+      },
+      {
+        "link": "ral_plate",
+        "mass_error_kg": 7.152557379708213e-09,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_gripper",
+        "mass_error_kg": 0.0,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_left_finger",
+        "mass_error_kg": 8.940696724635266e-10,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_right_finger",
+        "mass_error_kg": 8.940696724635266e-10,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_tcp",
+        "mass_error_kg": 4.749745128457272e-11,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_camera",
+        "mass_error_kg": 2.980232241545089e-09,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      },
+      {
+        "link": "ral_optical",
+        "mass_error_kg": 4.749745128457272e-11,
+        "com_error_m": 0.0,
+        "inertia_matrix_max_error_kg_m2": 5.052424976873318e-12
+      }
+    ],
+    "dependency_count": 5,
+    "unresolved": [],
+    "bundled_mdl": {}
+  },
+  "usd_path": "outputs/isaac_sr5_hardware/imports/20261121T072157Z_4cb756d5/robot_sr5_pgia_d435i.usd",
+  "usd_sha256": "22f0c952ca2caa62a34bb0a60fb69d3bc0baf12583dde9c1834b3751f4402eb4",
+  "link_paths": {
+    "world": "/xMateSR5/world",
+    "xMateSR5_base": "/xMateSR5/xMateSR5_base",
+    "xMateSR5_link1": "/xMateSR5/xMateSR5_link1",
+    "xMateSR5_link2": "/xMateSR5/xMateSR5_link2",
+    "xMateSR5_link3": "/xMateSR5/xMateSR5_link3",
+    "xMateSR5_link4": "/xMateSR5/xMateSR5_link4",
+    "xMateSR5_link5": "/xMateSR5/xMateSR5_link5",
+    "xMateSR5_link6": "/xMateSR5/xMateSR5_link6",
+    "ral_plate": "/xMateSR5/ral_plate",
+    "ral_camera": "/xMateSR5/ral_camera",
+    "ral_optical": "/xMateSR5/ral_optical",
+    "ral_gripper": "/xMateSR5/ral_gripper",
+    "ral_left_finger": "/xMateSR5/ral_left_finger",
+    "ral_right_finger": "/xMateSR5/ral_right_finger",
+    "ral_tcp": "/xMateSR5/ral_tcp"
+  },
+  "articulation_roots": [
+    "/xMateSR5/root_joint"
+  ],
+  "importer_checks": {
+    "single_articulation": true,
+    "eight_dofs": true,
+    "all_source_links_retained": true,
+    "names": true,
+    "source_to_usd": true
+  },
+  "importer": {
+    "extension": "isaacsim.asset.importer.urdf 2.3.10",
+    "fixed_base": true,
+    "merge_fixed_joints": false,
+    "self_collision": true,
+    "convex_decomp": false,
+    "collision_mesh": "source mesh convex hull; box primitives unchanged",
+    "inertia": "source tensor imported",
+    "arm_kp": 20000,
+    "arm_kd": 500,
+    "jaw_kp": 8000,
+    "jaw_kd": 100,
+    "jaw_force_limit_n": 80,
+    "joint_friction": 0,
+    "note": "Isaac drive tuning differs from PyBullet damping; source URDF unchanged"
+  }
+}

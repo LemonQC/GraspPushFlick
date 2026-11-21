@@ -1,0 +1,44 @@
+[
+  {
+    "path": "evidence/sr5_hardware/assembly.jpg",
+    "sha256": "87d1efbcff033a23df2d523e40cc9829b99be5cabce7133ffba4ece65dd98d24",
+    "source_path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/front_rgb.png",
+    "source_sha256": "854f461f76edc9629175739318024e93f325c6bfeb381de14dceeed2ba1d3cbb",
+    "encoding": "JPEG85 from actual sensor RGB"
+  },
+  {
+    "path": "evidence/sr5_hardware/tool.jpg",
+    "sha256": "c06146e4ab7808628002e884e3bb6b85f879521de351cb51a5fae7c4f83fb72e",
+    "source_path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tool_closeup_rgb.png",
+    "source_sha256": "242101025616f93cfe31bf9a5467c057d9653a94ef91cd97747cad407a2bc783",
+    "encoding": "JPEG85 from actual sensor RGB"
+  },
+  {
+    "path": "evidence/sr5_hardware/tcp_axes.jpg",
+    "sha256": "b89d950da293ed945f081f42a76eac3555e2cc5a48cb6d80733a165b32cc45b8",
+    "source_path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/tcp_axes_rgb.png",
+    "source_sha256": "ba7d217eeb9fff55318e90e3d3aeb1d007c3fd8b9fb6d3af94982851efb7cecc",
+    "encoding": "JPEG85 from actual sensor RGB"
+  },
+  {
+    "path": "evidence/sr5_hardware/grasp.jpg",
+    "sha256": "33d7d9f2538d8469fd49b3703087d10e28e85439be52caa13a1b8491c18a4995",
+    "source_path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/grasp_lifted_rgb.png",
+    "source_sha256": "cb79f3db3fb2a3f675829bc64d574a29ec95b8350cc1d49ceb30e955ba3fcb62",
+    "encoding": "JPEG85 from actual sensor RGB"
+  },
+  {
+    "path": "evidence/sr5_hardware/push.jpg",
+    "sha256": "4b8dc32a8c7bfac81997d85af200373d417e16716e000616a72fc2325800bfe0",
+    "source_path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/push_final_rgb.png",
+    "source_sha256": "f8fd780ccb0f1adbc9972924e69446fbdcd8b7d8aedacd0f9e3d168b9194af9d",
+    "encoding": "JPEG85 from actual sensor RGB"
+  },
+  {
+    "path": "evidence/sr5_hardware/wrist.jpg",
+    "sha256": "154a27e505407eb253f739677d6ed930a011c42998023ce956cf42a521db0568",
+    "source_path": "outputs/isaac_sr5_hardware/runs/20261121T073346Z_dc62fe18/images/camera_rgb.png",
+    "source_sha256": "080b5d9f6b65a208619caeaed99cc5fc5c38e5113be9a0f5655c781458c8b704",
+    "encoding": "JPEG85 from actual sensor RGB"
+  }
+]
