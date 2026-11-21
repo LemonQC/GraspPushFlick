@@ -8,8 +8,8 @@
     },
     {
       "path": "outputs/environment_check/github_sync.json",
-      "bytes": 351,
-      "sha256": "8b3114bbc30aa66aa8abf0f65afdcab1bc03fda2280e260b2426fe29e877fc3c",
+      "bytes": 305,
+      "sha256": "392222d1784811608594a35028a7a41dc4ab0b6d54b03f4ed752447a340ce064",
       "availability": "project-local; contents not uploaded"
     },
     {
@@ -103,9 +103,15 @@
       "availability": "project-local; contents not uploaded"
     },
     {
+      "path": "outputs/environment_check/gui_window_check.json",
+      "bytes": 98,
+      "sha256": "62fd95d4a3d59b885a2e9851b3ea33427df10dc8918677f1547279dee20b9560",
+      "availability": "project-local; contents not uploaded"
+    },
+    {
       "path": "outputs/environment_check/m0_summary.json",
-      "bytes": 361859,
-      "sha256": "40699ee4a9187185603abdb47858c061e0100311916f2feb83d7b303a4953c3d",
+      "bytes": 361852,
+      "sha256": "112ddb93b442f21a9912dea1f8960386b26229a36a54c9cea25d43857a4e0722",
       "availability": "project-local; contents not uploaded"
     },
     {

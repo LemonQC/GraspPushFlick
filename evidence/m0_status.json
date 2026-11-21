@@ -1,6 +1,6 @@
 {
-  "status": "BLOCKED",
-  "APFG_M0_READY": false,
+  "status": "PASS",
+  "APFG_M0_READY": true,
   "gates": {
     "headless_physics": "PASS",
     "gui_physics": "PASS",
@@ -15,7 +15,7 @@
     "storage_audit": "PASS",
     "gpu_compute_and_rendering": "PASS",
     "installation": "PASS",
-    "github_sync": "NOT_RUN"
+    "github_sync": "PASS"
   },
   "canonical_ycb_count": 30,
   "physically_verified_ycb_count": 13,

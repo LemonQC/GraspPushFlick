@@ -2,21 +2,21 @@
   {
     "path": "evidence/previews/tabletop.jpg",
     "sha256": "fbaeb26eda22378358775bfd91ffd1ed6b5f9a13c3b7a4da4c9991562a4f3c7b",
-    "source_path": "outputs/environment_check/ycb_tabletop_scene.png",
+    "source_path": "outputs/environment_check/runs/20261121T015853Z_2a521009/third_camera_rgb.png",
     "source_sha256": "dc8373d3ebb18d12cec923a1fa4fb61eea0f653d3a3b307b58d27244ff47417c",
     "encoding": "JPEG quality 85, max 800x600, actual rendered sensor frame"
   },
   {
     "path": "evidence/previews/pile.jpg",
     "sha256": "355474cf224d66efae7b63d856fba8a218849f240e333243b0f5915f16bdf38b",
-    "source_path": "outputs/environment_check/ycb_pile_scene.png",
+    "source_path": "outputs/environment_check/runs/20261121T020050Z_2eb22380/fixed_camera_rgb.png",
     "source_sha256": "3c4d231f449de8a28164fd5d5b29566c326e15e460a0cd835f2ef0686ab363ff",
     "encoding": "JPEG quality 85, max 800x600, actual rendered sensor frame"
   },
   {
     "path": "evidence/previews/wrist.jpg",
     "sha256": "d2719112fe7d18ce59829a838a4f9ec169ea43fe7ef6927a413f14f7a89ea722",
-    "source_path": "outputs/environment_check/wrist_camera_rgb.png",
+    "source_path": "outputs/environment_check/runs/20261121T020853Z_2ba98b0c/wrist_camera_rgb.png",
     "source_sha256": "650e506eec72815f4cb6f98e48537657a5ce6cf69449ed49f1e7a0f5853a3b7e",
     "encoding": "JPEG quality 85, max 800x600, actual rendered sensor frame"
   }

@@ -29,3 +29,6 @@ Research target: IEEE T-RO, active perception, pushing, physical flipping/reorie
 M1 unified controller and scene generation; M2 Active; M3 Push; M4 Flip (toppling/rolling, not merely yaw); M5 Grasp and complete extraction; M6 cooperative decision; M7 published baselines and scientific contribution assessment. Physical actions must use actual joint/gripper control and physics stepping; no state resets during rollout or artificial grasp constraints. First validate primitives separately. Do not start later stages before M0 validation is complete.
 
 This file records the agreed research and engineering requirements, not an implemented simulator or completed experiment. M0 status at repository initialization: NOT_RUN.
+
+## Measured M0 status (UTC 2026-11-21)
+The RTX 3090 / Sim 4.5 binary + Lab v2.0.2 fallback has actual physics, robot/gripper, RGB-D, 13 independent YCB objects and S1/S2 GUI/headless evidence. Use evidence/m0_status.json and docs/M0_REPORT_ZH.md for the current measured gates. Earlier CUDA/UVM blockers are historical; do not assume they persist without probing. Keep later stages out of scope until separately requested.

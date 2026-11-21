@@ -1,6 +1,6 @@
 # M0 实际执行报告
 
-复测时间：UTC 2026-11-21（服务器当地 2026-11-20 晚）。项目 `/data/GraspPushFlicks`。当前所有仿真、资产和存储核心验收项 PASS；GitHub 新版本同步核对完成后才标记 APFG_M0_READY。最终机器可读状态见 `evidence/m0_status.json`。
+复测时间：UTC 2026-11-21（服务器当地 2026-11-20 晚）。项目 `/data/GraspPushFlicks`。当前 **APFG_M0_READY=true**。全部核心验收项与 GitHub 同步均 PASS；源代码和真实实验证据里程碑提交 `6806e1b2138421ea86b361d3a011b1d66e8d1be7` 已实际核对远程 SHA。最终机器可读状态见 `evidence/m0_status.json`。
 
 实际组合：RTX 3090 24 GiB、NVIDIA 535.230.02、Ubuntu 20.04.6 / GLIBC 2.31；Isaac Sim `4.5.0-rc.36+release.19112.f59b3005.gl`；Isaac Lab release v2.0.2，commit `b5fa0eb031a2413c182eeb54fa3a9295e8fd867c`（Python 包名 isaaclab 0.34.9）；Python 3.10.22、torch 2.5.1+cu118、torchvision 0.20.1+cu118。这属于本机二进制兼容验证组合，不代表原定 5.1/2.3.1 通过验收。
 
@@ -21,7 +21,7 @@
 | storage_audit | PASS |
 | gpu_compute_and_rendering | PASS |
 | installation | PASS |
-| github_sync | NOT_RUN |
+| github_sync | PASS |
 
 | 当前正式运行 | Run ID | 结果 | 实测物理步 |
 |---|---|---|---|

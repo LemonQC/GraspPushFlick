@@ -2,7 +2,7 @@
 
 指定目标的三维杂乱环境取出研究：Active、Push、真实 Flip、6-DoF Grasp。本轮只完成 M0 环境与资产基线，不训练模型或宣称最终算法贡献。
 
-**M0 核心实测全部 PASS；最终 GitHub 同步正在核对。** 最新验收状态见 `evidence/m0_status.json` 和 [M0 报告](docs/M0_REPORT_ZH.md)。此前 CUDA/UVM 故障已在本次复查中恢复，项目没有升级或重载驱动。
+**APFG_M0_READY：RTX 3090 / Isaac Sim 4.5 替代组合的 M0 核心验收与 GitHub 同步均已通过。** 最新验收状态见 `evidence/m0_status.json` 和 [M0 报告](docs/M0_REPORT_ZH.md)。此前 CUDA/UVM 故障已在本次复查中恢复，项目没有升级或重载驱动。
 
 实际验证组合：RTX 3090 24 GiB、Isaac Sim 4.5 二进制、Isaac Lab v2.0.2、Python 3.10.22、PyTorch 2.5.1/cu118。原定 5.1 pip 组合受本机 Ubuntu 20.04 / GLIBC 2.31 限制，不能把本轮结果称为 5.1 验证。
 
