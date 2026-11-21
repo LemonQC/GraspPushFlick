@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Publish compact facts and local artifact hashes, never raw machine logs."""
 import json
+import re
 from pathlib import Path
 from apfg.download import sha256
 
@@ -41,7 +42,9 @@ for pattern in ['*.json','*.txt','runs/*/result.json']:
 def manifest(paths):
     return [{'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':sha256(p),'availability':'project-local'} for p in paths]
 (EVIDENCE/'artifact_manifest.json').write_text(json.dumps({'artifacts':artifacts,'videos':manifest(video_paths),'keyframes':manifest(image_paths)},indent=2)+'\n')
-(EVIDENCE/'checks.json').write_text(json.dumps({'cpu_unit_tests':{'status':'PASS','count':3,'command':'python -m unittest discover -s tests -v'},
+test_log=(OUT/'unit_tests.log').read_text()
+test_count=int(re.search(r'Ran (\d+) tests?',test_log).group(1))
+(EVIDENCE/'checks.json').write_text(json.dumps({'cpu_unit_tests':{'status':'PASS' if '\nOK\n' in test_log else 'FAILED','count':test_count,'command':'python -m unittest discover -s tests -v'},
      'python_compile':'PASS','shell_syntax':'PASS','usd_dependencies':json.loads((OUT/'offline_asset_check.json').read_text())['status'],
-     'pip_check':versions.get('pip_check',{'status':'NOT_RUN'}),'gpu_physics_camera_control':'BLOCKED'},indent=2)+'\n')
+     'pip_check':versions.get('pip_check',{'status':'NOT_RUN'}),'gpu_physics_camera_control':summary['gates']['gpu_compute_and_rendering']},indent=2)+'\n')
 print('Exported sanitized lightweight evidence')

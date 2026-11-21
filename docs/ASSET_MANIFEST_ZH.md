@@ -15,3 +15,5 @@
 扩展数据接口核查见 `extension_asset_audit.json`：GraspNet 官方 models.zip 为 4.3 GB，本机空间允许，但尝试的 Jbox 端点超时，浏览接口未返回可直接获取的 Google Drive 模型包；没有下载训练场景和标签。官方说明 GraspNet 0–32、71 来自 YCB，45 为其 pitcher cap，已建立保守重叠排除规则；精确逐扫描映射待模型可访问后完成。
 
 DexGraspNet 2.0 官方 Hugging Face 列表提供约 4.62 GB 的 `meshdata.tar.gz`，没有核实可按 3–5 个物体下载的接口，故不下载完整大数据集，也不将灵巧手标签当成平行夹爪标签。GraspFactory 官方仓库提供五个 Panda 示例网格，可选择性获取；下载状态、固定 source tree revision 和 Git blob 哈希在 `graspfactory_samples.json`，不下载标签。上述扩展不阻塞 YCB 首批验证，但其动态验证同样尚未运行。
+
+本轮动态复测：13 种 YCB 独立物理验收 PASS，静态依赖检查扩展到 53 条目（含本地 Grid 默认地面）。注册表中的 physics_validation=NOT_RUN 表示转换阶段尚未执行物理测试；最新实验状态以 object_smoke.json 和独立 run 记录为准。YCB 原作者署名：Berk Calli、Arjun Singh、Aaron Walsman、Siddhartha Srinivasa、Pieter Abbeel、Aaron M. Dollar，见官方模型索引及 2015 年 YCB benchmark 论文。

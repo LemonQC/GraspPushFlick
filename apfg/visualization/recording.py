@@ -30,6 +30,9 @@ class Recorder:
         reports = {}
         for name in self.writers:
             path = self.directory / (name+'.mp4')
+            if not path.exists():
+                reports[name] = {'path':str(path),'frames':0,'duration_s':0,'status':'FAILED','reason':'No sensor frames captured before exit'}
+                continue
             reader = imageio.get_reader(str(path))
             metadata = reader.get_meta_data()
             count = sum(1 for _ in reader)

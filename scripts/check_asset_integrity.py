@@ -29,6 +29,7 @@ def check(path):
 
 def main():
     targets = [ROOT/'assets/isaac/Isaac/Robots/Franka/franka.usd']
+    targets.append(ROOT/'assets/isaac/Isaac/Environments/Grid/default_environment.usd')
     targets += sorted((ROOT/'assets/isaac/Isaac/Props/YCB/Axis_Aligned').glob('*.usd'))
     targets += sorted((ROOT/'assets/converted_usd').glob('*.usda'))
     results = [check(p) if p.exists() else {'path': str(p.relative_to(ROOT)), 'status': 'FAILED', 'reason': 'missing file'} for p in targets]

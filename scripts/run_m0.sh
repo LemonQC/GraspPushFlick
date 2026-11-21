@@ -6,6 +6,9 @@ finish_m0() {
   local run_status=$?
   trap - EXIT
   local summary_status=0
+  if [[ -f outputs/environment_check/environment_versions.json ]]; then
+    python scripts/collect_m0.py || summary_status=$?
+  fi
   python scripts/summarize_m0.py > outputs/environment_check/summary_console.log || summary_status=$?
   if [[ "$run_status" == 0 ]]; then run_status=$summary_status; fi
   exit "$run_status"
@@ -14,6 +17,7 @@ trap finish_m0 EXIT
 bash scripts/check_system.sh
 bash scripts/audit_storage.sh --baseline
 bash scripts/setup_isaac.sh
+"$APFG_PYTHON" scripts/record_versions.py
 bash scripts/download_isaac_assets.sh
 bash scripts/download_ycb.sh
 bash scripts/bundled_python.sh scripts/convert_assets.py
@@ -23,6 +27,7 @@ bash scripts/run_headless.sh --test physics
 bash scripts/run_gui.sh --test physics
 bash scripts/run_robot_smoke.sh
 bash scripts/run_camera_smoke.sh
+bash scripts/run_camera_smoke.sh --offline
 bash scripts/run_object_smoke.sh
 for scene in s1 s2; do
   bash scripts/run_headless.sh --test clutter --scene "$scene"

@@ -1,7 +1,7 @@
 {
   "cpu_unit_tests": {
     "status": "PASS",
-    "count": 3,
+    "count": 7,
     "command": "python -m unittest discover -s tests -v"
   },
   "python_compile": "PASS",
@@ -12,5 +12,5 @@
     "stdout": "No broken requirements found.\n",
     "stderr": ""
   },
-  "gpu_physics_camera_control": "BLOCKED"
+  "gpu_physics_camera_control": "PASS"
 }

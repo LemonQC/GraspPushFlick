@@ -19,11 +19,14 @@ def main():
         runs.append(json.loads(p.read_text()))
     latest={}
     for r in runs:
+        if r.get('purpose')=='interactive_preview' or '--interactive' in r.get('command',[]):continue
         latest[(r['test'],r['mode'],r.get('scene'),r.get('asset_id'))]=r
     def status(test,mode=None,scene=None):
         selected=[r for r in latest.values() if r['test']==test and (mode is None or r['mode']==mode) and (scene is None or r.get('scene')==scene)]
-        return selected[-1]['status'] if selected else 'NOT_RUN'
-    object_passes={o for r in latest.values() if r['test']=='objects' and r['status']=='PASS' for o in r.get('objects',[])}
+        if not selected:return 'NOT_RUN'
+        r=selected[-1]
+        return 'NOT_RUN' if r['status']=='PASS' and not r.get('checks',{}).get('simulation_clock',False) else r['status']
+    object_passes={o for r in latest.values() if r['test']=='objects' and r['status']=='PASS' and r.get('checks',{}).get('simulation_clock',False) for o in r.get('objects',[])}
     gates={
         'headless_physics':status('physics','headless'), 'gui_physics':status('physics','gui'),
         'franka_control_and_gripper':status('robot'), 'fixed_and_wrist_rgbd':status('camera'),
@@ -36,6 +39,9 @@ def main():
         'installation':load('environment_versions.json').get('installation_status','NOT_RUN'),
         'github_sync':load('github_sync.json').get('status','NOT_RUN')}
     cuda=load('cuda_driver_check.json')
+    rendered_physics=any(r.get('status')=='PASS' and r.get('test')=='physics' and r.get('camera_rgbd_valid') for r in runs)
+    if cuda.get('cuInit_returncode')==0 and rendered_physics:
+        gates['gpu_compute_and_rendering']='PASS'
     if cuda.get('cuInit_returncode',0) != 0:
         gates['gpu_compute_and_rendering']='BLOCKED'
         for k in ['headless_physics','gui_physics','franka_control_and_gripper','fixed_and_wrist_rgbd','twelve_independent_ycb_drops',

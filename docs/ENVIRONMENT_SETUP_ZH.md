@@ -1,29 +1,25 @@
-# 环境安装与当前限制
+# 环境安装与实际验证
 
-项目路径：`/data/GraspPushFlicks`。当前 GPU 是用户确认的 RTX 3090 24 GiB；Ubuntu 20.04.6、GLIBC 2.31、NVIDIA 驱动 535.230.02。检测到有效 X11 会话，继承其显示和认证变量；工作期间没有修改远程桌面、驱动、显示管理器或用户启动脚本。
+项目 `/data/GraspPushFlicks`；实际 GPU RTX 3090 24 GiB、驱动 535.230.02、Ubuntu 20.04.6、GLIBC 2.31。继承用户实际 X11 桌面的 DISPLAY 和 XAUTHORITY，没有修改显示管理器、访问控制、用户 .bashrc 或向日葵会话。
 
-原定 Isaac Sim 5.1.0 pip 安装要求 GLIBC ≥2.35，官方系统矩阵列出 Ubuntu 22.04/24.04 和更新的驱动。因此没有强行安装 5.1。参考 [5.1 安装文档](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/install_python.html) 和 [5.1 系统要求](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/requirements.html)。
+原定 Isaac Sim 5.1 pip 安装要求 GLIBC ≥2.35，系统矩阵亦要求更新的 OS/驱动，故本机未强装该版本。参考 [官方安装说明](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/install_python.html) 和 [要求](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/requirements.html)。
 
-实际选择本机已有 Isaac Sim 4.5 二进制，复制到 `third_party/isaacsim`；配套 Isaac Lab v2.0.2，commit `b5fa0eb031a2413c182eeb54fa3a9295e8fd867c`，复制已有官方 Git 仓库并 checkout 固定 tag。没有修改原安装。完整二进制版本字符串在本地版本报告，不把它称为 5.1。
+实际使用本机已有官方 Isaac Sim 4.5 二进制副本，完整 VERSION 为 `4.5.0-rc.36+release.19112.f59b3005.gl`。Isaac Lab release v2.0.2 固定 commit `b5fa0eb031a2413c182eeb54fa3a9295e8fd867c`，其 Python 包版本为 isaaclab 0.34.9。Python 3.10.22、torch 2.5.1+cu118、torchvision 0.20.1+cu118。该组合来自 [v2.0.2 源码的依赖定义](https://github.com/isaac-sim/IsaacLab/tree/v2.0.2)，并已在本机实际执行完整核心 M0 验收；不宣称原定 5.1/2.3.1 已验证。
 
-[Lab v2.0.2 官方源码](https://github.com/isaac-sim/IsaacLab/tree/v2.0.2) 的安装配置对应 Sim 4.5、Python 3.10、Torch 2.5.1/cu118。使用二进制路线避开旧系统的 pip manylinux GLIBC 门槛。该版本官方安装说明记录其测试平台是 Ubuntu 22.04、驱动 535.129；本机 Ubuntu 20.04 的兼容性必须以实际运行证明，目前尚不能确认。没有将 README 的 Linux 平台链接当作完整验证证明。
+Conda 使用项目绝对 prefix `.conda/isaac-apfg`。Conda/pip/UV/HuggingFace/Torch/Triton/XDG/CUDA/GL/OptiX 缓存与临时下载均指向项目。OptiX 须另外设置 OPTIX_CACHE_PATH，依据 [官方 API 说明](https://raytracing-docs.nvidia.com/optix7/api/optix__host_8h.html)；初次真实 GPU 审计发现旧默认缓存路径后已修正，没有删除用户既有共享缓存。Kit portable-root 位于 `cache/omniverse/portable`，只有仿真子进程使用 `.runtime_home`。
+
+安装前可用空间约 3.1 TiB，保守峰值预算 150 GiB，另留 20 GiB。复用约 13 GiB Sim 二进制和需要的官方资产子树，没有下载完整 Isaac 资产库。默认 Anaconda 频道遇到 ToS 后改用 conda-forge，没有替用户接受额外条款。PyTorch 使用官方 cu118 wheel。全部组件安装在项目内，指纹一致且 pip check 通过时跳过重复安装。
 
 ```bash
 source scripts/project_env.sh
-APFG_ISAAC_BINARY_SOURCE=/path/to/extracted/official/isaacsim bash scripts/setup_isaac.sh
+APFG_ISAAC_BINARY_SOURCE=/path/to/official/binary bash scripts/setup_isaac.sh
 APFG_ISAAC_ASSET_SOURCE=/path/to/Isaac/4.5 bash scripts/download_isaac_assets.sh
 ```
 
-Conda 使用 `.conda/isaac-apfg` 绝对 prefix；Conda 包缓存、pip/UV/Torch/HuggingFace/Triton/XDG/NVIDIA 缓存、临时文件均指向项目目录。Anaconda 默认频道遇到未接受 ToS 后改用 conda-forge，没有替用户接受额外服务条款。Kit 使用该版本支持的 `--portable-root <project>/cache/omniverse/portable`。仿真子进程的独立 HOME 不影响父进程或桌面认证。
+独立 prefix 的 pip check 通过，AppLauncher 和实际 Sim 启动通过。官方二进制 setup 会优先加载部分预打包 NumPy 1.26.0 / ImageIO 2.22.2，而独立环境安装为 1.26.4 / 2.38.0；两种上下文分别记录。预打包目录不是完整独立 pip 环境，其元数据缺失/冲突保留在本地日志，没有为消除输出而覆盖 Kit 的 USD ABI。
 
-安装前磁盘超过 3 TiB 空闲，inode 充足；从本地复用约 13 GiB Sim 二进制，PyTorch 主 wheel 838.3 MB、cuDNN wheel 663.9 MB，其余 CUDA 运行库按官方依赖安装。保守峰值预算 150 GiB，并另留 20 GiB。没有下载完整 Isaac 资产库，也没有安装 ROS、VLA、CLIP、DINOv2 或 RL 训练框架。
+项目从固定官方 experience 派生最小 M0 配置，只启用 core/assets，排除 tasks、mimic、RL 扩展，保留 PhysX 和真正的相机渲染。未额外安装 ROS、强化学习框架、CLIP、DINOv2 或模型权重。派生配置保留 BSD 许可证。
 
-安装网络存在代理链路缓慢/停顿。先检测了官方端点的直接 HTTPS 连通性，再对安装子进程移除代理变量；没有关闭 SSL 校验或修改系统代理配置。已下载完整的 wheel 保留在项目缓存；部分下载保留 `.part` 或项目 tmp 中的文件。详情见 `setup_isaac*.log` 和下载日志。
+历史 CUDA 故障曾表现为系统 cuInit=999 和 /dev/nvidia-uvm 打开 EIO；UTC 2026-11-21 的复查为 cuInit=0、GPU 数=1，随后渲染和物理均实际通过。项目没有执行驱动维护或重启，恢复原因尚未确认。不能仅由 nvidia-smi 成功推出计算或渲染正常，实际证据见各 run。
 
-当前系统级阻塞：直接调用系统 `libcuda.so.1` 返回 `cuInit(0)=999`；`/dev/nvidia-uvm` 存在且权限允许，但 `open(O_RDWR)` 返回 errno 5 / EIO。`strace` 确认失败发生在驱动设备打开阶段；清除 LD_LIBRARY_PATH 后仍失败。用户态库、内核模块均报告 535.230.02，设备 major 与 `/proc/devices` 一致，尚不能据此确定根因。Headless Kit 日志记录 `Failed to query CUDA device count` 和 `No device could be created`。
-
-需要服务器管理员在维护窗口检查并恢复 NVIDIA UVM/CUDA 状态；是否重载模块或重启应由管理员根据桌面占用决定。项目没有自动执行这些操作。恢复后先运行 `python scripts/check_cuda.py`，再执行完整 M0。仅 `nvidia-smi` 成功不能证明 CUDA 或 RTX 渲染正常。
-
-最终独立 Conda prefix 的 pip check 通过；AppLauncher 导入通过，仿真启动仍 BLOCKED。注意 binary setup 会优先引入官方预打包 NumPy 1.26.0 / ImageIO 2.22.2，而独立环境安装为 1.26.4 / 2.38.0。Kit 预打包目录并不是一个完整独立的 pip 环境，对其元数据执行 pip check 有缺失/冲突，原始输出已保留。没有额外安装 usd-core 来覆盖 Kit 的 USD ABI。
-
-验证子进程的系统调用跟踪区分持久文件与 SDK POSIX 共享内存：持久文件写入均在项目内；Carbonite 还会使用 RAM-backed `/dev/shm` 的共享内存和信号量，已单独记录，没有删除或改动其他会话的 IPC。外部桌面 GLCache 的并发变化不归因给本项目。安装历史与成功 GPU 渲染不在该跟踪区间内。OpenGL shader cache 另显式配置 `__GL_SHADER_DISK_CACHE_PATH` 指向项目内目录。
+真实渲染期间的 strace 写入审计已执行。持久写入路径、RAM 共享内存/memfd、零字节运行控制标记、字符设备和内核线程命名分别报告。共享桌面缓存的并发变化不归因给本项目；该跟踪不覆盖全部历史安装操作。原始系统/SDK 日志仅本地保存，不上传 GitHub。

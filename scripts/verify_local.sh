@@ -9,6 +9,6 @@ cd "$PROJECT_ROOT"
 for script in scripts/*.sh; do bash -n "$script"; done
 for mode in headless gui; do
   code=0
-  bash "scripts/run_${mode}.sh" --test physics || code=$?
+  bash "scripts/run_${mode}.sh" --test physics --steps "${APFG_VERIFY_STEPS:-1200}" --width "${APFG_VERIFY_WIDTH:-1280}" --height "${APFG_VERIFY_HEIGHT:-720}" || code=$?
   if [[ "$code" != 0 && "$code" != 2 ]]; then exit "$code"; fi
 done
