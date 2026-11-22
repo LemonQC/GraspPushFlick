@@ -34,7 +34,7 @@ class HardwareScene:
         from isaacsim.core.api import World
         from isaacsim.core.api.objects import DynamicCuboid, FixedCuboid
         from isaacsim.core.api.materials import PhysicsMaterial
-        from isaacsim.core.prims import SingleArticulation, SingleXFormPrim
+        from isaacsim.core.prims import SingleArticulation, SingleXFormPrim,SingleRigidPrim
         from isaacsim.core.utils.stage import add_reference_to_stage, get_current_stage
         from isaacsim.core.utils.semantics import add_update_semantics
         from isaacsim.sensors.camera import Camera
@@ -69,10 +69,18 @@ class HardwareScene:
         self.link_paths = {n:p.replace('/xMateSR5','/World/SR5_Assembly',1) for n,p in self.audit['link_paths'].items()}
         self.frames = {n:SingleXFormPrim(self.link_paths[n]) for n in ['ral_tcp','ral_camera','ral_optical','ral_gripper','ral_left_finger','ral_right_finger','ral_plate','xMateSR5_link6']}
         # A known centred calibration fixture, identical across reproducible seeds.
-        self.object_initial = np.array([.4,0.,.025])
-        self.cube = self.world.scene.add(DynamicCuboid('/World/Object',name='test_cube',position=self.object_initial,
-            scale=np.array([.04,.04,.04]),mass=.10,color=np.array([.85,.25,.07]),physics_material=mat))
-        add_update_semantics(self.stage.GetPrimAtPath('/World/Object'),'hardware_test_cube')
+        self.target_asset=getattr(args,'asset_id',None)
+        if self.target_asset:
+            entries=json.loads((ROOT/'assets/manifests/object_registry.json').read_text())['objects']
+            entry=next(e for e in entries if e['asset_id']==self.target_asset)
+            self.object_initial=np.array([.4,0.,entry['geometry_dimensions_m'][2]/2+.008])
+            add_reference_to_stage(str(ROOT/entry['usd_path']),'/World/Object')
+            self.cube=self.world.scene.add(SingleRigidPrim('/World/Object',name='observed_ycb',position=self.object_initial))
+        else:
+            self.object_initial = np.array([.4,0.,.025])
+            self.cube = self.world.scene.add(DynamicCuboid('/World/Object',name='test_cube',position=self.object_initial,
+                scale=np.array([.04,.04,.04]),mass=.10,color=np.array([.85,.25,.07]),physics_material=mat))
+        add_update_semantics(self.stage.GetPrimAtPath('/World/Object'),self.target_asset or 'hardware_test_cube')
         self.cameras = {}
         for name,pos,target in [('third',[1.7,-1.9,1.4],[.25,0,.42]),('fixed',[.42,0,1.7],[.4,0,0])]:
             self.cameras[name] = Camera('/World/'+name,resolution=(args.width,args.height),frequency=30,

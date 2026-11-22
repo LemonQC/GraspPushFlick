@@ -1,0 +1,410 @@
+{
+  "status": "PASS",
+  "scope": "Real RGBD GraspNet inference, native 3D pose display, single-YCB-object physical grasp; no training or general success-rate claim",
+  "timestamp_utc": "2026-11-22T03:48:18.806551+00:00",
+  "source_model": {
+    "url": "https://huggingface.co/dgrachev/a2_pretrained/resolve/7856e4e550052131b6ac5c0adb6564b04433ad9b/checkpoint-rs.tar",
+    "sha256": "60680087c61cba2b6791614fef1519071e294f6dcaf99b3f581bb95f7c51a868",
+    "bytes": 12468415,
+    "integrity": "publisher_sha256",
+    "original_model": "https://github.com/graspnet/graspnet-baseline",
+    "official_baseline_commit": "280c215129f759ed8649cb4e89fc5dfee55f4f80",
+    "mirror_repo": "dgrachev/a2_pretrained",
+    "mirror_revision": "7856e4e550052131b6ac5c0adb6564b04433ad9b",
+    "provenance": "Public community GraspNet checkpoint-rs mirror. HF LFS SHA256 verified; official Drive returned quota exceeded; equality to official Drive checksum unverified."
+  },
+  "runs": [
+    {
+      "run_id": "20261122T033838Z_f29ff73c",
+      "mode": "headless",
+      "status": "PASS",
+      "inference": "PASS",
+      "pose_visualization": "PASS",
+      "physical_grasp": "PASS",
+      "physical_evaluation": {
+        "minimum_sustained_lift_m": 0.15021628141403198,
+        "hold_frames": 30,
+        "bilateral_contact_frames": 30,
+        "initial_object_xyz_m": [
+          0.39920347929000854,
+          0.0034366094041615725,
+          0.08732309937477112
+        ],
+        "final_object_xyz_m": [
+          0.4115977883338928,
+          0.003250479232519865,
+          0.2375393807888031
+        ],
+        "artificial_attachment": false
+      },
+      "raw_candidates": 368,
+      "displayed_candidates": 20,
+      "selected_rank": 2,
+      "information_mode": "RGBD_ONLY_WORKSPACE_CROP; no target GT or instance segmentation supplied to network/selection",
+      "checkpoint_sha256": "60680087c61cba2b6791614fef1519071e294f6dcaf99b3f581bb95f7c51a868",
+      "actual_command": [
+        "/data/GraspPushFlicks/scripts/sr5_graspnet_demo.py",
+        "--headless",
+        "--joint-speed",
+        ".3"
+      ],
+      "artifacts_directory": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c",
+      "selected_candidate": {
+        "index": 102,
+        "raw_row": [
+          0.9298197031021118,
+          0.07091661542654037,
+          0.019999999552965164,
+          0.03999999910593033,
+          0.7432032227516174,
+          0.25250566005706787,
+          0.6195884943008423,
+          0.46264228224754333,
+          -0.8629274368286133,
+          -0.2032690942287445,
+          0.4833333194255829,
+          0.43771809339523315,
+          -0.7581502795219421,
+          0.00503862788900733,
+          -0.022673824802041054,
+          0.36359700560569763,
+          -1.0
+        ],
+        "tilt_from_world_down_deg": 86.95116961824904,
+        "xyz_m": [
+          0.4002087049405377,
+          -0.017922522715296634,
+          0.1274316246336367
+        ],
+        "quat_xyzw": [
+          0.1043959298759142,
+          0.7181190708163387,
+          0.6696063962455503,
+          0.15822061832222942
+        ],
+        "opening_m": 0.07091661542654037,
+        "score": 0.9298197031021118,
+        "tcp_frame": "ral_tcp",
+        "tcp_offset_m": 0.02349999910593037,
+        "calibration_status": "SOURCE_APPROX_NOT_HARDWARE_CALIBRATED",
+        "mapping": "TCP +Z=GraspNet +X approach; TCP +X=GraspNet +Y closing axis",
+        "mapping_reference": "physical finger tip = raw GraspNet translation + predicted depth * approach",
+        "physical_tip_from_tcp_m": 0.01649999999999996,
+        "predicted_depth_m": 0.03999999910593033
+      },
+      "network": {
+        "status": "PASS",
+        "architecture": "upstream GraspNet baseline; is_training=False; 300 views/12 angles/4 depths",
+        "checkpoint_sha256": "60680087c61cba2b6791614fef1519071e294f6dcaf99b3f581bb95f7c51a868",
+        "checkpoint_epoch": 18,
+        "observation_sha256": "056ca9fd322aba9a363cd8b418057ad6eebcadb37658b4093f77f8646bfd26dc",
+        "input_points": 11541,
+        "sampled_points": 20000,
+        "raw_candidates": 368,
+        "network_time_s": 0.25428446600562893,
+        "score_range": [
+          -0.017340414226055145,
+          1.1384080648422241
+        ],
+        "width_range_m": [
+          0.05157052353024483,
+          0.10000000149011612
+        ],
+        "torch": "2.5.1+cu118",
+        "cuda_runtime": "11.8",
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "information_mode": "RGBD workspace crop, no oracle instance segmentation or object pose",
+        "warning": "Checkpoint obtained from documented community mirror; its HF LFS hash is verified, upstream Drive hash unavailable"
+      },
+      "videos": {
+        "graspnet_6d": {
+          "third": {
+            "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/videos/graspnet_6d/third.mp4",
+            "frames": 1144,
+            "duration_s": 38.13333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/videos/graspnet_6d/fixed.mp4",
+            "frames": 1144,
+            "duration_s": 38.13333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/videos/graspnet_6d/wrist.mp4",
+            "frames": 1144,
+            "duration_s": 38.13333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      }
+    },
+    {
+      "run_id": "20261122T034038Z_e813e7a9",
+      "mode": "gui",
+      "status": "PASS",
+      "inference": "PASS",
+      "pose_visualization": "PASS",
+      "physical_grasp": "PASS",
+      "physical_evaluation": {
+        "minimum_sustained_lift_m": 0.14905069768428802,
+        "hold_frames": 30,
+        "bilateral_contact_frames": 30,
+        "initial_object_xyz_m": [
+          0.39920347929000854,
+          0.0034366094041615725,
+          0.08732309937477112
+        ],
+        "final_object_xyz_m": [
+          0.3876838684082031,
+          0.006047565955668688,
+          0.23638319969177246
+        ],
+        "artificial_attachment": false
+      },
+      "raw_candidates": 372,
+      "displayed_candidates": 20,
+      "selected_rank": 1,
+      "information_mode": "RGBD_ONLY_WORKSPACE_CROP; no target GT or instance segmentation supplied to network/selection",
+      "checkpoint_sha256": "60680087c61cba2b6791614fef1519071e294f6dcaf99b3f581bb95f7c51a868",
+      "actual_command": [
+        "/data/GraspPushFlicks/scripts/sr5_graspnet_demo.py",
+        "--gui",
+        "--interactive",
+        "--joint-speed",
+        ".3"
+      ],
+      "artifacts_directory": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9",
+      "selected_candidate": {
+        "index": 143,
+        "raw_row": [
+          0.9608229398727417,
+          0.07192476838827133,
+          0.019999999552965164,
+          0.029999999329447746,
+          -0.3117106556892395,
+          0.14596638083457947,
+          0.9388984441757202,
+          0.11383622884750366,
+          -0.975275993347168,
+          0.18941503763198853,
+          0.9433333277702332,
+          0.1659233421087265,
+          0.2873876392841339,
+          0.04994187131524086,
+          -0.027311960235238075,
+          0.3378657102584839,
+          -1.0
+        ],
+        "tilt_from_world_down_deg": 15.860192542720062,
+        "xyz_m": [
+          0.3908991666264853,
+          -0.013288901470362862,
+          0.16235860676424538
+        ],
+        "quat_xyzw": [
+          0.06262895504259883,
+          0.9884550177850644,
+          0.13246417514678818,
+          -0.03856856373370845
+        ],
+        "opening_m": 0.07192476838827133,
+        "score": 0.9608229398727417,
+        "tcp_frame": "ral_tcp",
+        "tcp_offset_m": 0.013499999329447787,
+        "calibration_status": "SOURCE_APPROX_NOT_HARDWARE_CALIBRATED",
+        "mapping": "TCP +Z=GraspNet +X approach; TCP +X=GraspNet +Y closing axis",
+        "mapping_reference": "physical finger tip = raw GraspNet translation + predicted depth * approach",
+        "physical_tip_from_tcp_m": 0.01649999999999996,
+        "predicted_depth_m": 0.029999999329447746
+      },
+      "network": {
+        "status": "PASS",
+        "architecture": "upstream GraspNet baseline; is_training=False; 300 views/12 angles/4 depths",
+        "checkpoint_sha256": "60680087c61cba2b6791614fef1519071e294f6dcaf99b3f581bb95f7c51a868",
+        "checkpoint_epoch": 18,
+        "observation_sha256": "4b3eb73910db532b7a887f33cc1770c0f0759c6bd102a96842e32e09da03f635",
+        "input_points": 11542,
+        "sampled_points": 20000,
+        "raw_candidates": 372,
+        "network_time_s": 0.24984997601131909,
+        "score_range": [
+          -0.06717226654291153,
+          1.172290325164795
+        ],
+        "width_range_m": [
+          0.05773536488413811,
+          0.10000000149011612
+        ],
+        "torch": "2.5.1+cu118",
+        "cuda_runtime": "11.8",
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "information_mode": "RGBD workspace crop, no oracle instance segmentation or object pose",
+        "warning": "Checkpoint obtained from documented community mirror; its HF LFS hash is verified, upstream Drive hash unavailable"
+      },
+      "videos": {
+        "graspnet_6d": {
+          "third": {
+            "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/videos/graspnet_6d/third.mp4",
+            "frames": 993,
+            "duration_s": 33.1,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/videos/graspnet_6d/fixed.mp4",
+            "frames": 993,
+            "duration_s": 33.1,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/videos/graspnet_6d/wrist.mp4",
+            "frames": 993,
+            "duration_s": 33.1,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      }
+    },
+    {
+      "run_id": "20261122T034626Z_e99eeb0e",
+      "mode": "gui",
+      "status": "PASS",
+      "inference": "PASS",
+      "pose_visualization": "PASS",
+      "physical_grasp": "NOT_RUN",
+      "physical_evaluation": null,
+      "raw_candidates": 372,
+      "displayed_candidates": 20,
+      "selected_rank": 1,
+      "information_mode": "RGBD_ONLY_WORKSPACE_CROP; no target GT or instance segmentation supplied to network/selection",
+      "checkpoint_sha256": "60680087c61cba2b6791614fef1519071e294f6dcaf99b3f581bb95f7c51a868",
+      "actual_command": [
+        "/data/GraspPushFlicks/scripts/sr5_graspnet_demo.py",
+        "--gui",
+        "--preview-only",
+        "--interactive",
+        "--joint-speed",
+        ".3"
+      ],
+      "artifacts_directory": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e",
+      "selected_candidate": {
+        "index": 143,
+        "raw_row": [
+          0.9608229398727417,
+          0.07192476838827133,
+          0.019999999552965164,
+          0.029999999329447746,
+          -0.3117106556892395,
+          0.14596638083457947,
+          0.9388984441757202,
+          0.11383622884750366,
+          -0.975275993347168,
+          0.18941503763198853,
+          0.9433333277702332,
+          0.1659233421087265,
+          0.2873876392841339,
+          0.04994187131524086,
+          -0.027311960235238075,
+          0.3378657102584839,
+          -1.0
+        ],
+        "tilt_from_world_down_deg": 15.860192542720062,
+        "xyz_m": [
+          0.3908991666264853,
+          -0.013288901470362862,
+          0.16235860676424538
+        ],
+        "quat_xyzw": [
+          0.06262895504259883,
+          0.9884550177850644,
+          0.13246417514678818,
+          -0.03856856373370845
+        ],
+        "opening_m": 0.07192476838827133,
+        "score": 0.9608229398727417,
+        "tcp_frame": "ral_tcp",
+        "tcp_offset_m": 0.013499999329447787,
+        "calibration_status": "SOURCE_APPROX_NOT_HARDWARE_CALIBRATED",
+        "mapping": "TCP +Z=GraspNet +X approach; TCP +X=GraspNet +Y closing axis",
+        "mapping_reference": "physical finger tip = raw GraspNet translation + predicted depth * approach",
+        "physical_tip_from_tcp_m": 0.01649999999999996,
+        "predicted_depth_m": 0.029999999329447746
+      },
+      "network": {
+        "status": "PASS",
+        "architecture": "upstream GraspNet baseline; is_training=False; 300 views/12 angles/4 depths",
+        "checkpoint_sha256": "60680087c61cba2b6791614fef1519071e294f6dcaf99b3f581bb95f7c51a868",
+        "checkpoint_epoch": 18,
+        "observation_sha256": "a84821d5f6b07b17441152aae9f51611da713c51a1057242c65a336cafc4afde",
+        "input_points": 11542,
+        "sampled_points": 20000,
+        "raw_candidates": 372,
+        "network_time_s": 0.26989462599158287,
+        "score_range": [
+          -0.06717226654291153,
+          1.172290325164795
+        ],
+        "width_range_m": [
+          0.05773536488413811,
+          0.10000000149011612
+        ],
+        "torch": "2.5.1+cu118",
+        "cuda_runtime": "11.8",
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "information_mode": "RGBD workspace crop, no oracle instance segmentation or object pose",
+        "warning": "Checkpoint obtained from documented community mirror; its HF LFS hash is verified, upstream Drive hash unavailable"
+      },
+      "videos": {
+        "graspnet_6d": {
+          "third": {
+            "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/videos/graspnet_6d/third.mp4",
+            "frames": 222,
+            "duration_s": 7.4,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/videos/graspnet_6d/fixed.mp4",
+            "frames": 222,
+            "duration_s": 7.4,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/videos/graspnet_6d/wrist.mp4",
+            "frames": 222,
+            "duration_s": 7.4,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      }
+    }
+  ],
+  "failed_runs_retained": [
+    {
+      "run_id": "20261122T033519Z_f295530c",
+      "mode": "headless",
+      "status": "FAILED",
+      "physical_grasp": "FAILED",
+      "reason": "JOINT_TRACKING_ERROR: 0.087403rad"
+    }
+  ],
+  "cpu_tests": {
+    "count": 15,
+    "status": "PASS",
+    "log_sha256": "4f5a94a5c6c969334774a4be564729f688e7c893eb1a89ac96c9cb5fa97f4990"
+  },
+  "limits": [
+    "Community checkpoint-rs mirror LFS hash verified; equality to inaccessible official Drive original not independently verified",
+    "Source PGIA/camera geometry and extrinsics remain approximations",
+    "Observed-cloud and fixed-table filter only; not full-arm or occluded collision certification",
+    "One prediction/action per run; displayed predictions remain at the capture-time pose"
+  ]
+}

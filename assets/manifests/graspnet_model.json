@@ -1,0 +1,11 @@
+{
+  "url": "https://huggingface.co/dgrachev/a2_pretrained/resolve/7856e4e550052131b6ac5c0adb6564b04433ad9b/checkpoint-rs.tar",
+  "sha256": "60680087c61cba2b6791614fef1519071e294f6dcaf99b3f581bb95f7c51a868",
+  "bytes": 12468415,
+  "integrity": "publisher_sha256",
+  "original_model": "https://github.com/graspnet/graspnet-baseline",
+  "official_baseline_commit": "280c215129f759ed8649cb4e89fc5dfee55f4f80",
+  "mirror_repo": "dgrachev/a2_pretrained",
+  "mirror_revision": "7856e4e550052131b6ac5c0adb6564b04433ad9b",
+  "provenance": "Public community GraspNet checkpoint-rs mirror. HF LFS SHA256 verified; official Drive returned quota exceeded; equality to official Drive checksum unverified."
+}

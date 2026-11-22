@@ -36,6 +36,26 @@ class SR5KinematicsTests(unittest.TestCase):
         for xyz in ([10,10,10],[float('nan'),0,.3]):
             with self.assertRaises(ValueError):self.model.ik(xyz,[1,0,0,0],[0,1.9,1.3,0,3.7,1.3])
 
+    def test_graspnet_predicted_tip_plane_matches_physical_finger_tips(self):
+        from apfg.perception.graspnet_candidates import aligned_tcp
+        r=Rotation.from_euler('xyz',[.3,-.6,.7]).as_matrix()
+        row=np.r_[.8,.055,.02,.03,r.ravel(),[.1,.2,.4],-1]
+        t=np.eye(4);t[:3,:3]=Rotation.from_euler('xyz',[.2,.3,-.4]).as_matrix();t[:3,3]=[.3,0,.5]
+        pose=aligned_tcp(row,t,self.model)
+        actual_tip=np.array(pose['xyz_m'])+Rotation.from_quat(pose['quat_xyzw']).apply([0,0,pose['physical_tip_from_tcp_m']])
+        predicted_tip=t[:3,:3]@(row[13:16]+row[3]*r[:,0])+t[:3,3]
+        np.testing.assert_allclose(actual_tip,predicted_tip,atol=1e-9)
+        self.assertAlmostEqual(pose['physical_tip_from_tcp_m'],.0165,places=9)
+
+    def test_camera_table_penetration_rejects_side_candidate_without_changing_pose(self):
+        from apfg.perception.graspnet_candidates import observed_collision
+        candidate={'xyz_m':[.4,0,.02],'quat_xyzw':[0,0,0,1]}
+        original=dict(candidate)
+        result=observed_collision(candidate,np.empty((0,3)),self.model)
+        self.assertTrue(result['collision'])
+        self.assertLess(result['known_table_clearance_m'],0)
+        self.assertEqual(candidate,original)
+
 
 class GraspNetMappingTests(unittest.TestCase):
     def row(self):

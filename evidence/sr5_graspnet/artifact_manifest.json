@@ -1,0 +1,554 @@
+[
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/candidates.json",
+    "bytes": 25361,
+    "sha256": "e4829fc84bf70fe59b24e4a7380b6ecb2131f4e3f67beb2e14061cee6b7db7a0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/commands.json",
+    "bytes": 6713,
+    "sha256": "8ec26104e11a2e486e23b0dd1efb19566cd66bc3d38371b88f45b4f9d08d6d12",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/contacts.json",
+    "bytes": 3597245,
+    "sha256": "f1b95db0d76b3ea56b6e830b9830d81a9a1a0e8f0bf5b036004ae1d77e8ed3c7",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/graspnet_result.json",
+    "bytes": 33044,
+    "sha256": "2e31bcb2a92407c99c97a5f6734b034a65fef09af9841d8e722052711cffd67a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/execution_final_calibration.json",
+    "bytes": 580,
+    "sha256": "ffee3e232ea2ffe5357d1dd291d760019c5e23cd69b5358e10aaff2bfe2fb7e0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/execution_final_depth.png",
+    "bytes": 23368,
+    "sha256": "4acc913bbc297b62ade433a88eac8d92f8fd925fb5f1a76f1abb15354447f44f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/execution_final_rgb.png",
+    "bytes": 209917,
+    "sha256": "a342dd4b63be49040e951daff5e65af871f32217a78574b4599b786e7b1d1a9b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/observed_wrist_calibration.json",
+    "bytes": 581,
+    "sha256": "49e659484e8bf542d4ba7eac6840f1bb63e6dacebec6b26ee60ae19815ae85f5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/observed_wrist_depth.png",
+    "bytes": 43960,
+    "sha256": "9ca90868018c1ea9c57c50b2000be95cd8b183f5e37d636338ed2200e924266b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/observed_wrist_rgb.png",
+    "bytes": 247899,
+    "sha256": "73f2f4e6efde412bd90c03a863e125ea107bfde1bfda823f165dc575760c10b5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/predicted_grasps_calibration.json",
+    "bytes": 580,
+    "sha256": "ffee3e232ea2ffe5357d1dd291d760019c5e23cd69b5358e10aaff2bfe2fb7e0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/predicted_grasps_depth.png",
+    "bytes": 25617,
+    "sha256": "df788e32f14ec3527b73f157f0664e16c973c245eac40582d3f8125cb0931c9d",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/predicted_grasps_rgb.png",
+    "bytes": 212475,
+    "sha256": "ff0c9468ad1d7158a501b118816a82d44d5c655bb61de3af87d4642044f43157",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/predicted_top_calibration.json",
+    "bytes": 568,
+    "sha256": "c3c962d7e4e189b5a023d2f91d4942ab8e533df0b31d5d062dd41a2607f8cfb4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/predicted_top_depth.png",
+    "bytes": 17435,
+    "sha256": "8c829d143815e7ba7ae9e69f11649bc60e4b9a686d4cacb616bdfb134b0e3471",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/predicted_top_rgb.png",
+    "bytes": 247144,
+    "sha256": "1bc8dd5809386c9d2e02bd3f7409134d92fbb8ab18c1d08869b864dead5c400f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/predicted_wrist_calibration.json",
+    "bytes": 581,
+    "sha256": "49e659484e8bf542d4ba7eac6840f1bb63e6dacebec6b26ee60ae19815ae85f5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/predicted_wrist_depth.png",
+    "bytes": 52916,
+    "sha256": "da8484cc249bd3141a3d1dc1f39b45ab0e351d9e5e837d5d5191b1db380b7d6f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/predicted_wrist_rgb.png",
+    "bytes": 260791,
+    "sha256": "8327e4998a00c59bf2a9ceaadf60c53927931687e285c2fc90483b6f642f40a5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/network_predictions.json",
+    "bytes": 908,
+    "sha256": "afecf76baf63bc547d358af1422ad5d33e7176ae8a4062f811965ba490a22410",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/network_predictions.npz",
+    "bytes": 62309,
+    "sha256": "c014bf4ae662ad872432790cffa36c64f9f93c14cca4ac8ec1d752f68460220a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/observation.npz",
+    "bytes": 4582683,
+    "sha256": "056ca9fd322aba9a363cd8b418057ad6eebcadb37658b4093f77f8646bfd26dc",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/observed_cloud_world.ply",
+    "bytes": 830089,
+    "sha256": "59a4630ce5214cc129be870096101e5f1780b5c0d2ae074e88fe15f4c659eaf5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/result.json",
+    "bytes": 33182,
+    "sha256": "15d8cd9e93e13293df53caff856f0ece076d565c6a0275fe8bc98ad88e2158e1",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/run_config.json",
+    "bytes": 693,
+    "sha256": "b6d55f24ea86c1cebc5ca8f7674422b13ea8e79d37e63b60b3bb8c3fe0c2da1e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/scene_snapshot.usd",
+    "bytes": 12605132,
+    "sha256": "669a0701a2ade89daecf5fd928ea954951d101c93bbe3c6cbe4b3a7287ca65f8",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/selection.json",
+    "bytes": 3734,
+    "sha256": "df2a705da65305982b434ae46f29e80b6cc8b173267ecb771a69fb3b10aaecd2",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/telemetry.json",
+    "bytes": 5164866,
+    "sha256": "b784ea3d8f104e61a3548051ce9fc4298a43f2b43f6b0cff2d3d0a47402baf78",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/videos/graspnet_6d/fixed.mp4",
+    "bytes": 2266545,
+    "sha256": "30451ffb3c9b886a4c188823b69df93b58f4214a9bcde6f92cd6f75655b4077d",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/videos/graspnet_6d/third.mp4",
+    "bytes": 2520912,
+    "sha256": "6b7cd214adde8aca1bf978ea4c47e4314d42bc3e1f3de6dda3511ba2516201db",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/videos/graspnet_6d/timing.json",
+    "bytes": 141251,
+    "sha256": "e7bac5d1cbc16fca3ed25e2ea0e4e2ed8c6293dd8c0cd2b85db53d48ee61734d",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/videos/graspnet_6d/wrist.mp4",
+    "bytes": 6275418,
+    "sha256": "1fe215e26228b99de6d177eb7a3c630eb635e5cb66e8f5d91132d47571057586",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/candidates.json",
+    "bytes": 25353,
+    "sha256": "d4b767dcd0af186d23eb47820fcd894c6ef1d38e1d1d0cef096d007e1cda40b9",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/commands.json",
+    "bytes": 6740,
+    "sha256": "3c579e525f6fde3a7def7f625f292ae01e26aa7440370e97b1177dd75f906425",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/contacts.json",
+    "bytes": 3193366,
+    "sha256": "d4f791cdbe16c7ea96602adc31373ed18d8ff6d1162c4febe999fcf6638d4643",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/graspnet_result.json",
+    "bytes": 31668,
+    "sha256": "72122d2a598fa015885e53bcd315cef868f67f083a4fbccccc81eea2f6cea505",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/execution_final_calibration.json",
+    "bytes": 580,
+    "sha256": "ffee3e232ea2ffe5357d1dd291d760019c5e23cd69b5358e10aaff2bfe2fb7e0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/execution_final_depth.png",
+    "bytes": 23469,
+    "sha256": "71bcc0b0636c96e5d0ee560cfa944a64b8e141d9c2be5950345df91b2ff47786",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/execution_final_rgb.png",
+    "bytes": 212373,
+    "sha256": "a6c425de4be81ce288991c1bd40406c295f89a98588fe71e51c384bfe840841e",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/observed_wrist_calibration.json",
+    "bytes": 581,
+    "sha256": "49e659484e8bf542d4ba7eac6840f1bb63e6dacebec6b26ee60ae19815ae85f5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/observed_wrist_depth.png",
+    "bytes": 43890,
+    "sha256": "34b4f4b07d3242756a2d0db01e76786eed53f27b70e40ae457dfc33b05cdf0b2",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/observed_wrist_rgb.png",
+    "bytes": 250222,
+    "sha256": "ca15a0f91b6d22760d2a8def3c9118e7ee4273ccdc0304ec9d46522692ea5a32",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/predicted_grasps_calibration.json",
+    "bytes": 580,
+    "sha256": "ffee3e232ea2ffe5357d1dd291d760019c5e23cd69b5358e10aaff2bfe2fb7e0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/predicted_grasps_depth.png",
+    "bytes": 25626,
+    "sha256": "3268207508dbeb74f5385a6cd8bc82c24cfb720663827c0088f6850b6d05b75f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/predicted_grasps_rgb.png",
+    "bytes": 213447,
+    "sha256": "ea2ea8713a9a1c2a400491d9e93c2156a7fa0d81b5945535d2590a21b0f263cf",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/predicted_top_calibration.json",
+    "bytes": 568,
+    "sha256": "c3c962d7e4e189b5a023d2f91d4942ab8e533df0b31d5d062dd41a2607f8cfb4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/predicted_top_depth.png",
+    "bytes": 17362,
+    "sha256": "322a3b829eef5d7102a72332302004ba1f6504909a53d5b1db19f88bae99d81f",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/predicted_top_rgb.png",
+    "bytes": 240217,
+    "sha256": "9faf2cfe3b79d0d07cda912c56e6f222796e008072e308a989599553b51c5717",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/predicted_wrist_calibration.json",
+    "bytes": 581,
+    "sha256": "49e659484e8bf542d4ba7eac6840f1bb63e6dacebec6b26ee60ae19815ae85f5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/predicted_wrist_depth.png",
+    "bytes": 53287,
+    "sha256": "ce8be975670a9d65aed2936f6f71d8468de81c0832fd314c5654d389d4d38540",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/images/predicted_wrist_rgb.png",
+    "bytes": 259680,
+    "sha256": "b54a1a4f44e9fb1055ca11c67022b45133dc9c8e1bc1c079b3d5507b9c35aa03",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/network_predictions.json",
+    "bytes": 906,
+    "sha256": "bf07c8f1ef2c107a23114c1f88ab0a8a5425eba34fe921415730c4a65cd2b09a",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/network_predictions.npz",
+    "bytes": 62795,
+    "sha256": "8566bee41c56d376bf321813d6dd104409a86b125fdf07144bed79946362a096",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/observation.npz",
+    "bytes": 4542972,
+    "sha256": "4b3eb73910db532b7a887f33cc1770c0f0759c6bd102a96842e32e09da03f635",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/observed_cloud_world.ply",
+    "bytes": 830102,
+    "sha256": "2262e2690d4d3c3d02aea997a9671b7f07a6f33650107d6ca74b69cbcaf2869b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/result.json",
+    "bytes": 31801,
+    "sha256": "792edaa9f7c49b9d24f444682fe875b47302f6146ea96708977753545b172248",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/run_config.json",
+    "bytes": 708,
+    "sha256": "64bcd29c34aba7cf007989cb6d7828b4cd7bbedb922d8925ef9011eeb12145ce",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/scene_snapshot.usd",
+    "bytes": 12605264,
+    "sha256": "fb39d97694ea116e0333d5b247b68e4e6a84c58013a116ec337280b74cd7f9e8",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/selection.json",
+    "bytes": 2483,
+    "sha256": "bb4d4e64712cc9571d2c81a6ff9880f3ef4214f12196041cd9fb730e7a6fb8a5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/telemetry.json",
+    "bytes": 4503568,
+    "sha256": "51a7e12c2447c4185efc0ae11493b93423305f86cfeb7643b36599e42b1ef765",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/videos/graspnet_6d/fixed.mp4",
+    "bytes": 1952861,
+    "sha256": "83e9adab52926f060438dd4e002ec8c037df64730d96ac98ab9a9d8b8fc08fbe",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/videos/graspnet_6d/third.mp4",
+    "bytes": 2127740,
+    "sha256": "e2d027a97cdb5c4e8071559658d3b547be24d3d5ee2087fe39265ac7ef754d70",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/videos/graspnet_6d/timing.json",
+    "bytes": 122610,
+    "sha256": "e82a507b3f00efe6f82377e84b8be64f1bfcf225b4224837417bf4bc19d5a152",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034038Z_e813e7a9/videos/graspnet_6d/wrist.mp4",
+    "bytes": 4531593,
+    "sha256": "33a465080bbdc0ae9e453efc67149eb356d4492c189c5ba6acb88c99ad100726",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/candidates.json",
+    "bytes": 25353,
+    "sha256": "d4b767dcd0af186d23eb47820fcd894c6ef1d38e1d1d0cef096d007e1cda40b9",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/commands.json",
+    "bytes": 717,
+    "sha256": "5d02487190dd16e62a50e9ee3ea69ba66ce9caaeddc18b751b1006ca1ff76403",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/contacts.json",
+    "bytes": 652906,
+    "sha256": "ba7cd81bec19e21644e777ceb454447f4a4959d64df5926e84ff84787ca42b44",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/graspnet_result.json",
+    "bytes": 31255,
+    "sha256": "b78f08d45f32207a5be196f0155c506d9327d1c695f4711f9c1b5b7bfd1c4c25",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/observed_wrist_calibration.json",
+    "bytes": 581,
+    "sha256": "49e659484e8bf542d4ba7eac6840f1bb63e6dacebec6b26ee60ae19815ae85f5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/observed_wrist_depth.png",
+    "bytes": 43890,
+    "sha256": "34b4f4b07d3242756a2d0db01e76786eed53f27b70e40ae457dfc33b05cdf0b2",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/observed_wrist_rgb.png",
+    "bytes": 250135,
+    "sha256": "21e24ccf2f817ac3c58595ca5d0e01f1a277039a490ed2ed23b188776b7d209b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/predicted_grasps_calibration.json",
+    "bytes": 580,
+    "sha256": "ffee3e232ea2ffe5357d1dd291d760019c5e23cd69b5358e10aaff2bfe2fb7e0",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/predicted_grasps_depth.png",
+    "bytes": 25122,
+    "sha256": "e264b83fbe19fe93b86645710366e47eba27901eecaf438ea711def4c16536d4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/predicted_grasps_rgb.png",
+    "bytes": 211361,
+    "sha256": "a48147fc5141586eef9dc71ec0bd9450256790a83b8954a03be004baabc11ff2",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/predicted_top_calibration.json",
+    "bytes": 568,
+    "sha256": "c3c962d7e4e189b5a023d2f91d4942ab8e533df0b31d5d062dd41a2607f8cfb4",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/predicted_top_depth.png",
+    "bytes": 17221,
+    "sha256": "b480569a8be0e10d8d4a8786f7d54eb588142ab3864c510074209df4367a2336",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/predicted_top_rgb.png",
+    "bytes": 244654,
+    "sha256": "98770350785d3437cd2258603cccc6c542d4612b54d7005f61ef24e642aca4fb",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/predicted_wrist_calibration.json",
+    "bytes": 581,
+    "sha256": "49e659484e8bf542d4ba7eac6840f1bb63e6dacebec6b26ee60ae19815ae85f5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/predicted_wrist_depth.png",
+    "bytes": 52652,
+    "sha256": "27e3c3f3e607a8f9b19207e693084757a39207e20c204b47e6db41c547ac13e7",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/predicted_wrist_rgb.png",
+    "bytes": 259011,
+    "sha256": "a02dc7ffd7cb3c6e6bcb8b58c06c3c6c0d1f8548a506268e5b51132d114d6185",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/network_predictions.json",
+    "bytes": 906,
+    "sha256": "d009e645e333e9fe0faf95ae0ff6c3a77938a6e4e08f7731c71867f3f3cd4619",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/network_predictions.npz",
+    "bytes": 62795,
+    "sha256": "8566bee41c56d376bf321813d6dd104409a86b125fdf07144bed79946362a096",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/observation.npz",
+    "bytes": 4542224,
+    "sha256": "a84821d5f6b07b17441152aae9f51611da713c51a1057242c65a336cafc4afde",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/observed_cloud_world.ply",
+    "bytes": 830110,
+    "sha256": "7d8a287646ec93fb4374dad94411cb0da2eda1c56098f02906b962eb7d7ea44b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/run_config.json",
+    "bytes": 729,
+    "sha256": "9ef5820d5122003bc9a868467264080fecf82101461b38d98d9a25c32ef3374c",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/scene_snapshot.usd",
+    "bytes": 12605747,
+    "sha256": "e815176107b5bdd0076986f5a3162fc5e436d3dd11e9d6b2f118bb9733755d28",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/selection.json",
+    "bytes": 2483,
+    "sha256": "bb4d4e64712cc9571d2c81a6ff9880f3ef4214f12196041cd9fb730e7a6fb8a5",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/telemetry.json",
+    "bytes": 1116239,
+    "sha256": "5d0620d689657beae3de50eb7f6c2655aadbb768acd73cedcf306b670f119bbd",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/videos/graspnet_6d/fixed.mp4",
+    "bytes": 461097,
+    "sha256": "8f9cf09c46ee7925ca7f4b4df3c29948dbf88deee9601f2e08f9cc41e2f9430b",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/videos/graspnet_6d/third.mp4",
+    "bytes": 386439,
+    "sha256": "7824e9b1c9798396de895babae6bc8d1e0892c1a09ba3a9d2757512d80f1acff",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/videos/graspnet_6d/timing.json",
+    "bytes": 27782,
+    "sha256": "4db39a8483e8f182da8b4730b0f29207c6679036dd1a3c3bc6aa61e94897ff75",
+    "availability": "project-local; full artifact not uploaded"
+  },
+  {
+    "path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/videos/graspnet_6d/wrist.mp4",
+    "bytes": 639164,
+    "sha256": "31906d5274a0bb13d66228da2f2afc246ccd59efbc5a500f2a370547dfef8a42",
+    "availability": "project-local; full artifact not uploaded"
+  }
+]

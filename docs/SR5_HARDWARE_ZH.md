@@ -56,7 +56,7 @@ Isaac 4.5 导入器直接把 STL 文件名用作 USD 标识符，数字开头的
 
 ## GraspNet 接口边界
 
-`apfg/perception/graspnet_pose.py` 使用规范矩阵，将 GraspNet 的 +X 接近、+Y 开合映射到 TCP +Z 接近、+X 开合。输入需为外部真实的 17 列预测和匹配的光学矩阵，不做专用位姿补偿或旋转投影修正。缺少模型权重及推理 worker 时，H6 推理验收标记 NOT_RUN。
+`apfg/perception/graspnet_pose.py` 使用规范矩阵，将 GraspNet 的 +X 接近、+Y 开合映射到 TCP +Z 接近、+X 开合。输入需为外部真实的 17 列预测和匹配的光学矩阵，不做专用位姿补偿或旋转投影修正。早先硬件测试缺少模型权重及推理 worker，因此这些历史运行的 H6 仍为 NOT_RUN。后续已单独接入真实模型、源指尖端平面对齐和三维可视化，运行 `scripts/run_sr5_graspnet.sh`，见 [GraspNet 说明](SR5_GRASPNET_ZH.md) 及独立实验记录；不要将下面的外部预测接口误认作模型推理入口。
 
 ```bash
 bash scripts/run_sr5.sh --headless --test prediction --predictions path/to/predictions.npz

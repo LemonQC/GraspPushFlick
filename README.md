@@ -2,7 +2,14 @@
 
 指定目标的三维杂乱环境取出研究：Active、Push、真实 Flip、6-DoF Grasp。已建立 M0 环境与资产基线，并按用户追加要求实现 SR5 硬件仿真和已知坐标动作接口，不训练模型或宣称最终算法贡献。
 
-SR5 + PGIA-140-80-W + D435i 的装配、坐标运动与物理夹持/推动入口见 [硬件说明](docs/SR5_HARDWARE_ZH.md)，实际分项结果见 `evidence/sr5_hardware/summary.json`。真实 SR5/转接板保持源网格；PGIA/相机外形及外参为源快照近似，GraspNet 模型推理尚未验证。
+SR5 + PGIA-140-80-W + D435i 的装配、坐标运动与物理夹持/推动入口见 [硬件说明](docs/SR5_HARDWARE_ZH.md)，实际分项结果见 `evidence/sr5_hardware/summary.json`。真实 SR5/转接板保持源网格；PGIA/相机外形及外参为源快照近似。
+
+**真实 GraspNet 6-DoF 推理和三维抓取位姿显示**使用独立入口，见 [GraspNet 说明](docs/SR5_GRASPNET_ZH.md) 与 `evidence/sr5_graspnet/summary.json`。此前的硬件 `--test grasp` 是已知坐标夹持测试，不能当作 GraspNet 感知抓取。
+
+```bash
+bash scripts/run_sr5_graspnet.sh --gui --preview-only --interactive --joint-speed .3
+bash scripts/run_sr5_graspnet.sh --gui --interactive --joint-speed .3
+```
 
 ```bash
 bash scripts/run_sr5.sh --gui --test all --interactive

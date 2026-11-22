@@ -1,0 +1,20 @@
+[
+  {
+    "path": "evidence/sr5_graspnet/candidates.jpg",
+    "sha256": "8e5a0222cd93f8c892bfad6e90caa1322f561c49a85c3be560ccb6e43022376c",
+    "source_path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/predicted_grasps_rgb.png",
+    "source_sha256": "a48147fc5141586eef9dc71ec0bd9450256790a83b8954a03be004baabc11ff2"
+  },
+  {
+    "path": "evidence/sr5_graspnet/wrist_candidates.jpg",
+    "sha256": "25f59923a0d0eaf40167ed731234158857357d86fd2456d775c4aa568ac304d7",
+    "source_path": "outputs/sr5_graspnet/20261122T034626Z_e99eeb0e/images/predicted_wrist_rgb.png",
+    "source_sha256": "a02dc7ffd7cb3c6e6bcb8b58c06c3c6c0d1f8548a506268e5b51132d114d6185"
+  },
+  {
+    "path": "evidence/sr5_graspnet/side_grasp.jpg",
+    "sha256": "c7ff58f48985eeccf5adb4d63c5d16cd933967d888c24c6835b0a3b1a025b3f5",
+    "source_path": "outputs/sr5_graspnet/20261122T033838Z_f29ff73c/images/execution_final_rgb.png",
+    "source_sha256": "a342dd4b63be49040e951daff5e65af871f32217a78574b4599b786e7b1d1a9b"
+  }
+]
