@@ -1,0 +1,180 @@
+{
+  "protocol_version": "E1-development-preregister-v2",
+  "status": "NOT_RUN",
+  "scope": "Future E1 development gate, not formal paper evaluation",
+  "supersedes": "e1_protocol_v1.json (kept immutable, all formal episodes NOT_RUN)",
+  "pilot_revision_reason": "Tighter explicit yellow-vs-red cue, bounded settling extension, dual-RGBD observed obstacle fusion and source-housing precontact clearance. Numeric physical outcome thresholds unchanged.",
+  "families": [
+    "Direct",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "seeds": [
+    2026112201,
+    2026112202
+  ],
+  "target_assets": [
+    "ycb:004_sugar_box",
+    "ycb:005_tomato_soup_can"
+  ],
+  "arms": [
+    "DIRECT_GRASP",
+    "PUSH_GRASP",
+    "FLIP_GRASP",
+    "VIEW_GRASP"
+  ],
+  "information_mode": "RGBD_POLICY",
+  "max_preparation_actions": 1,
+  "max_grasp_attempts": 1,
+  "max_candidates_checked": 8,
+  "thresholds": {
+    "settling_window_s": 1.0,
+    "settling_position_m": 0.002,
+    "settling_rotation_rad": 0.01,
+    "push_displacement_m": 0.03,
+    "flip_non_yaw_deg": 35.0,
+    "flip_horizontal_rotvec_deg": 25.0,
+    "view_max_object_motion_m": 0.002,
+    "target_entire_aabb_min_y_m": 0.3,
+    "minimum_lift_m": 0.1,
+    "bilateral_hold_s": 1.0
+  },
+  "candidate_protocol": "Fixed measured workspace, explicit visible target cue, existing GraspNet checkpoint and same source full-arm kinematic checks. No family->skill labels.",
+  "operation_costs": "All physical arm motion and network wall-time logged. Any mandatory re-observation motion must be explicit and charged.",
+  "success": "Entire designated object outside task region, real bilateral grasp, sustained lift/hold, no catastrophic distractor drop. A 6cm/15cm lift alone is not task success.",
+  "labels": "Layout family is only a generation hypothesis. Direct-success cases cannot be called push/flip-necessary. Audit and retain non-qualified scenes.",
+  "failure_retention": true,
+  "statistics": "No success-rate or novelty claim from the separate pilot subset; E2/E3 NOT_RUN",
+  "case_list": [
+    {
+      "case_id": "Direct_2026112201_004_sugar_box",
+      "family": "Direct",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "Direct_2026112201_005_tomato_soup_can",
+      "family": "Direct",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "28f73d559d4ca35f1a13c94f6f51d73a14d8011b725b9bd66bddfb4855150e95",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "Direct_2026112202_004_sugar_box",
+      "family": "Direct",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "52e5cfcc4b5cfb8a608e920a7c7ccb25ff42ebd539403915a80d8015194cfbbb",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "Direct_2026112202_005_tomato_soup_can",
+      "family": "Direct",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "2ce871aeb2b5d35bb97ef2dc21570c2c49fc88e2c095ae44cd6dc98f5878ea6d",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112201_004_sugar_box",
+      "family": "C1",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112201_005_tomato_soup_can",
+      "family": "C1",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "75b7e058c5dc34b00fc6a81a62d0b2c4769f341317b0829ed59d074bd9bf2d82",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112202_004_sugar_box",
+      "family": "C1",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "833e4c1ea9044ca6c6f89eb9e1e53c316112ce81eea57af69bf5b643efb66d6a",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112202_005_tomato_soup_can",
+      "family": "C1",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "9817cec10acd26308134cd54cbb163275a63b096f449a817981af7eacc5f2997",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112201_004_sugar_box",
+      "family": "C2",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112201_005_tomato_soup_can",
+      "family": "C2",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "0830a0645211076c8ce014a8ba79bf2a48d0a7060cb14ada70b9e252662058ae",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112202_004_sugar_box",
+      "family": "C2",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "b03b63d67ee22ddda90c6b8b6a18f28e43777f05141c185b188b7f34bb8efc63",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112202_005_tomato_soup_can",
+      "family": "C2",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "321009067a5706430ea947deba4c75e0a1efca1a6c6dbf7d182225e959cbef85",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112201_004_sugar_box",
+      "family": "C3",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112201_005_tomato_soup_can",
+      "family": "C3",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "89171e67caba41617e228f068ca3f4e5864e938a4afe5cb4a54b163b4f01952c",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112202_004_sugar_box",
+      "family": "C3",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "0a26e9dc616aa15dd3ed53876bafc06e0c4ac9b24d213ffb594c235b740edaa3",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112202_005_tomato_soup_can",
+      "family": "C3",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "409c65e3557ea762837242c9083fa08d453eb44b6c34a6e7caed4d25d98d64c4",
+      "status": "NOT_RUN"
+    }
+  ],
+  "frozen_protocol_sha256": "1fe314d1b6c90f6404828c5bae64f8db687c58ed0a7de6bf067ad3f2ba55750b"
+}

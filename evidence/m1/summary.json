@@ -1,0 +1,2467 @@
+{
+  "scope": "M1 implementation and small development pilots; no paper success-rate claim",
+  "stack": {
+    "gpu": "RTX 3090",
+    "driver": "535.230.02",
+    "isaac_sim": "4.5.0 binary",
+    "isaac_lab": "v2.0.2",
+    "python": "3.10.22",
+    "torch": "2.5.1+cu118",
+    "physics": "CPU PhysX MBP TGS 480Hz",
+    "rendering": "RTX RGB-D 640x480, recorded 30fps"
+  },
+  "scene_stability_gates": {
+    "Direct": {
+      "status": "PASS",
+      "run_id": "20261122T095317Z_45c90433"
+    },
+    "C1": {
+      "status": "PASS",
+      "run_id": "20261122T094514Z_639cae5e"
+    },
+    "C2": {
+      "status": "PASS",
+      "run_id": "20261122T094547Z_5578e311"
+    },
+    "C3": {
+      "status": "PASS",
+      "run_id": "20261122T095447Z_aa41cca7"
+    },
+    "C4": {
+      "status": "PASS",
+      "run_id": "20261122T095446Z_81d1e0be"
+    }
+  },
+  "primitive_gates": {
+    "Active": {
+      "status": "PASS",
+      "run_id": "20261122T095447Z_aa41cca7"
+    },
+    "Push": {
+      "status": "PASS",
+      "run_id": "20261122T095141Z_33fd0fc3"
+    },
+    "Flip_ORACLE_GUI": {
+      "status": "PASS",
+      "run_id": "20261122T095316Z_b417c953"
+    },
+    "Grasp_RGBD_full_retrieval": {
+      "status": "PASS",
+      "run_id": "20261122T095317Z_45c90433"
+    }
+  },
+  "GUI": {
+    "status": "PASS",
+    "run_ids": [
+      "20261122T094653Z_20726c4f",
+      "20261122T095316Z_b417c953"
+    ]
+  },
+  "Headless": {
+    "status": "PASS",
+    "run_ids": [
+      "20261122T095447Z_aa41cca7",
+      "20261122T095141Z_33fd0fc3",
+      "20261122T095317Z_45c90433"
+    ]
+  },
+  "E1": {
+    "status": "NOT_RUN",
+    "protocol": "configs/m1/e1_protocol_v2.json",
+    "cases": 16,
+    "planned_episodes": 64
+  },
+  "E2": "NOT_RUN",
+  "E3": "NOT_RUN",
+  "training": "NOT_RUN",
+  "mechanism_qualification": "NOT_RUN",
+  "CPU_validation": {
+    "status": "PASS",
+    "unit_tests": 25,
+    "command": "source scripts/project_env.sh; \"$APFG_PYTHON\" -m unittest discover -s tests -v",
+    "local_log": "outputs/environment_check/m1_unit_tests.log",
+    "log_sha256": "b3aa103a471bf6dfde60b2bcd35e7c5d992200eb6ed5d69e1cf2af3ce7ed77c8",
+    "additional_checks": [
+      "Python compileall apfg scripts",
+      "bash -n scripts/run_m1.sh"
+    ]
+  },
+  "limitations": [
+    "Scene families are unverified mechanism hypotheses; C4 is inspection only.",
+    "Active passed motion/no-object-disturbance; information or retrieval benefit is NOT_RUN. Visible cue pixels decreased in the tested move.",
+    "Flip primitive used explicit ORACLE_DIAGNOSTIC contact parameters; C2 Flip-to-Grasp is NOT_RUN.",
+    "Push displaced and toppled the target; it did not preserve upright orientation.",
+    "RGB cue/ROI is explicit task input, not general target recognition. Connected measured surfaces may merge touching objects.",
+    "Bounded source-convex-hull/multiview measured-cloud checks do not certify unobserved geometry.",
+    "PGIA/camera source boxes/extrinsics and YCB mass/friction/inertia remain approximate or estimated.",
+    "C4 cracker rocking failures retained; final C4-only front distractor is real YCB wood block, unsuitable as an 80mm-jaw target."
+  ],
+  "all_pilots": [
+    {
+      "run_id": "20261122T094344Z_017251c5",
+      "family": "Direct",
+      "seed": 2026112201,
+      "scene_generator_revision": 1,
+      "scene_sha256": "2187cdc3d424ab8eb9e5b2c7fa0f27284196d04c37069ed6bff2e129dbedc112",
+      "action": "observe",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "Direct",
+        "--action",
+        "observe"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_front": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": null,
+      "evaluation": [],
+      "initial_visible_hint_pixels": {
+        "fixed": 274,
+        "wrist": 5067
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 274,
+        "wrist": 5067
+      },
+      "costs": [],
+      "performance": null,
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T094344Z_017251c5/videos/m1/third.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T094344Z_017251c5/videos/m1/fixed.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T094344Z_017251c5/videos/m1/wrist.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T094344Z_017251c5/videos/m1/timing.json",
+          "frames": 259,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 19.53370960215942
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T094344Z_017251c5",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.0,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T094415Z_0f42b99a",
+      "family": "Direct",
+      "seed": 2026112201,
+      "scene_generator_revision": 1,
+      "scene_sha256": "2187cdc3d424ab8eb9e5b2c7fa0f27284196d04c37069ed6bff2e129dbedc112",
+      "action": "flip",
+      "mode": "headless",
+      "information_mode": "ORACLE_DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "Direct",
+        "--action",
+        "flip",
+        "--information-mode",
+        "ORACLE_DIAGNOSTIC"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_front": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": null,
+      "evaluation": [
+        {
+          "command_status": "PASS",
+          "error": null,
+          "operation": "FLIP",
+          "stable_after": {
+            "status": "PASS",
+            "coverage_s": 0.966666717082262,
+            "max_position_drift_m": 0.0,
+            "max_orientation_drift_rad": 0.0,
+            "bodies": {
+              "target": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_left": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_right": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_front": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              }
+            },
+            "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+          },
+          "actual_target_contact": true,
+          "flip": {
+            "status": "PASS",
+            "non_yaw_support_orientation_change_deg": 94.83639087782325,
+            "rotation_angle_deg": 97.27478379200645,
+            "horizontal_rotation_vector_component_deg": 95.43042817713406,
+            "initial_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                0.008921590726443978,
+                -0.04007413532161285,
+                0.9991568790220757
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "final_support": {
+              "dominant_local_up_axis": 0,
+              "sign": -1,
+              "local_up_vector": [
+                -0.9963138802822201,
+                0.043852042789083195,
+                -0.0737268628127527
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "stable_new_support": true,
+            "measured_target_contact": true,
+            "criterion": ">=35deg body-local gravity change, >=25deg horizontal rotation component, measured contact and stable end state; pure yaw rejected"
+          }
+        }
+      ],
+      "initial_visible_hint_pixels": {
+        "fixed": 275,
+        "wrist": 5069
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 460,
+        "wrist": 4038
+      },
+      "costs": [
+        {
+          "wall_time_s": 49.2166869630164,
+          "simulation_time_s": 28.466668151319027,
+          "action_count": 1
+        }
+      ],
+      "performance": null,
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T094415Z_0f42b99a/videos/m1/third.mp4",
+            "frames": 1113,
+            "duration_s": 37.1,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T094415Z_0f42b99a/videos/m1/fixed.mp4",
+            "frames": 1113,
+            "duration_s": 37.1,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T094415Z_0f42b99a/videos/m1/wrist.mp4",
+            "frames": 1113,
+            "duration_s": 37.1,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T094415Z_0f42b99a/videos/m1/timing.json",
+          "frames": 1113,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 17.73857179837199
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T094415Z_0f42b99a",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.3349229159757965,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T094513Z_fd54dd26",
+      "family": "Direct",
+      "seed": 2026112201,
+      "scene_generator_revision": 1,
+      "scene_sha256": "2187cdc3d424ab8eb9e5b2c7fa0f27284196d04c37069ed6bff2e129dbedc112",
+      "action": "grasp",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "FAILED",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "Direct",
+        "--action",
+        "grasp"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_front": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": null,
+      "evaluation": [
+        {
+          "command_status": "FAILED",
+          "error": "JOINT_TRACKING_ERROR: 0.049265rad",
+          "operation": "GRASP",
+          "stable_after": {
+            "status": "FAILED",
+            "coverage_s": 0.966666717082262,
+            "max_position_drift_m": 0.01826592988090596,
+            "max_orientation_drift_rad": 0.3838183527454534,
+            "bodies": {
+              "target": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_left": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_right": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_front": {
+                "position_drift_m": 0.01826592988090596,
+                "orientation_drift_rad": 0.3838183527454534,
+                "stable": false
+              }
+            },
+            "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+          },
+          "actual_target_contact": false,
+          "distractor_displacement_m": {
+            "far_left": 0.0,
+            "far_right": 0.0,
+            "far_front": 0.01826592988090596
+          },
+          "catastrophic_distractor_drop": false,
+          "retrieval": {
+            "status": "FAILED",
+            "hold_frames": 0,
+            "fully_extracted_contact_frames": 0,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                0.008921590726443978,
+                -0.04007413532161285,
+                0.9991568790220757
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          }
+        }
+      ],
+      "initial_visible_hint_pixels": {
+        "fixed": 275,
+        "wrist": 5061
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 304,
+        "wrist": 16623
+      },
+      "costs": [
+        {
+          "wall_time_s": 33.88802372801001,
+          "simulation_time_s": 18.333334289491177,
+          "action_count": 1
+        }
+      ],
+      "performance": null,
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T094513Z_fd54dd26/videos/m1/third.mp4",
+            "frames": 824,
+            "duration_s": 27.466666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T094513Z_fd54dd26/videos/m1/fixed.mp4",
+            "frames": 824,
+            "duration_s": 27.466666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T094513Z_fd54dd26/videos/m1/wrist.mp4",
+            "frames": 824,
+            "duration_s": 27.466666666666665,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T094513Z_fd54dd26/videos/m1/timing.json",
+          "frames": 824,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 14.992554025553742
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T094513Z_fd54dd26",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.3813257055631094,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T094514Z_639cae5e",
+      "family": "C1",
+      "seed": 2026112201,
+      "scene_generator_revision": 1,
+      "scene_sha256": "874566a7e0d1b9256725d14f478d9b4fd8aac38807b3ad606cc1f68fbe694b05",
+      "action": "observe",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "C1",
+        "--action",
+        "observe"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 7.450580596923828e-09,
+        "max_orientation_drift_rad": 9.222784123559373e-08,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 1.3877787807814457e-17,
+            "stable": true
+          },
+          "left_blocker": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "right_blocker": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "front_blocker": {
+            "position_drift_m": 7.450580596923828e-09,
+            "orientation_drift_rad": 9.222784123559373e-08,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": null,
+      "evaluation": [],
+      "initial_visible_hint_pixels": {
+        "fixed": 747,
+        "wrist": 8732
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 747,
+        "wrist": 8732
+      },
+      "costs": [],
+      "performance": null,
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T094514Z_639cae5e/videos/m1/third.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T094514Z_639cae5e/videos/m1/fixed.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T094514Z_639cae5e/videos/m1/wrist.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T094514Z_639cae5e/videos/m1/timing.json",
+          "frames": 259,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 16.146172473975287
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T094514Z_639cae5e",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.0,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T094547Z_5578e311",
+      "family": "C2",
+      "seed": 2026112201,
+      "scene_generator_revision": 1,
+      "scene_sha256": "30f89c3d29ef35b2d557ccfac54d825f2507f04493bd425f25873d6cfaed38f2",
+      "action": "observe",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "C2",
+        "--action",
+        "observe"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_front": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": null,
+      "evaluation": [],
+      "initial_visible_hint_pixels": {
+        "fixed": 530,
+        "wrist": 4065
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 530,
+        "wrist": 4065
+      },
+      "costs": [],
+      "performance": null,
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T094547Z_5578e311/videos/m1/third.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T094547Z_5578e311/videos/m1/fixed.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T094547Z_5578e311/videos/m1/wrist.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T094547Z_5578e311/videos/m1/timing.json",
+          "frames": 259,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 16.171778219865732
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T094547Z_5578e311",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.0,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T094616Z_fdff8b42",
+      "family": "C3",
+      "seed": 2026112201,
+      "scene_generator_revision": 1,
+      "scene_sha256": "62677403e79f265800b44edb373795ec92f4cefb6198bb8d60dba2749655218d",
+      "action": "observe",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "C3",
+        "--action",
+        "observe"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "visual_occluder": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": null,
+      "evaluation": [],
+      "initial_visible_hint_pixels": {
+        "fixed": 927,
+        "wrist": 10189
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 927,
+        "wrist": 10189
+      },
+      "costs": [],
+      "performance": null,
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T094616Z_fdff8b42/videos/m1/third.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T094616Z_fdff8b42/videos/m1/fixed.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T094616Z_fdff8b42/videos/m1/wrist.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T094616Z_fdff8b42/videos/m1/timing.json",
+          "frames": 259,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 20.476713397841298
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T094616Z_fdff8b42",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.0,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T094641Z_0f51ef8f",
+      "family": "C4",
+      "seed": 2026112201,
+      "scene_generator_revision": 1,
+      "scene_sha256": "f1affa8e0d96e5c95c9c73e73b4fe796c2bc644fb9ff6705404b9cf72f8d5567",
+      "action": "observe",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "FAILED",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "C4",
+        "--action",
+        "observe"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "FAILED",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.000940103696116852,
+        "max_orientation_drift_rad": 0.024525902946006657,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "left_blocker": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "right_blocker": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "front_blocker": {
+            "position_drift_m": 0.000940103696116852,
+            "orientation_drift_rad": 0.024525902946006657,
+            "stable": false
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": null,
+      "evaluation": [],
+      "initial_visible_hint_pixels": {
+        "fixed": 1001,
+        "wrist": 7798
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 1001,
+        "wrist": 7798
+      },
+      "costs": [],
+      "performance": {
+        "physics_steps": 4624,
+        "simulation_time_s": 9.633333835750818,
+        "scene_wall_time_s": 22.642715227993904,
+        "startup_and_run_wall_time_s": 29.717786730005173,
+        "rendering": "RTX RGBD 640x480 or CLI resolution, 30fps; PhysX CPU 480Hz; single simulated scene; no training throughput claim"
+      },
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T094641Z_0f51ef8f/videos/m1/third.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T094641Z_0f51ef8f/videos/m1/fixed.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T094641Z_0f51ef8f/videos/m1/wrist.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T094641Z_0f51ef8f/videos/m1/timing.json",
+          "frames": 259,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 13.219967649413118
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T094641Z_0f51ef8f",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.0,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T094652Z_0c24be58",
+      "family": "C3",
+      "seed": 2026112201,
+      "scene_generator_revision": 1,
+      "scene_sha256": "62677403e79f265800b44edb373795ec92f4cefb6198bb8d60dba2749655218d",
+      "action": "active",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "C3",
+        "--action",
+        "active"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "visual_occluder": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": null,
+      "evaluation": [
+        {
+          "command_status": "PASS",
+          "error": null,
+          "operation": "ACTIVE",
+          "stable_after": {
+            "status": "PASS",
+            "coverage_s": 0.966666717082262,
+            "max_position_drift_m": 0.0,
+            "max_orientation_drift_rad": 0.0,
+            "bodies": {
+              "target": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "visual_occluder": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_left": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_right": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              }
+            },
+            "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+          },
+          "actual_target_contact": false,
+          "distractor_displacement_m": {
+            "visual_occluder": 0.0,
+            "far_left": 0.0,
+            "far_right": 0.0
+          },
+          "catastrophic_distractor_drop": false,
+          "active": {
+            "status": "PASS",
+            "max_object_motion_m": 0.0
+          }
+        }
+      ],
+      "initial_visible_hint_pixels": {
+        "fixed": 925,
+        "wrist": 10186
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 919,
+        "wrist": 5024
+      },
+      "costs": [
+        {
+          "wall_time_s": 10.514966523973271,
+          "simulation_time_s": 5.666666962206364,
+          "action_count": 1
+        }
+      ],
+      "performance": {
+        "physics_steps": 7344,
+        "simulation_time_s": 15.300000797957182,
+        "scene_wall_time_s": 32.32774612499634,
+        "startup_and_run_wall_time_s": 40.52033698000014,
+        "rendering": "RTX RGBD 640x480 or CLI resolution, 30fps; PhysX CPU 480Hz; single simulated scene; no training throughput claim"
+      },
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T094652Z_0c24be58/videos/m1/third.mp4",
+            "frames": 429,
+            "duration_s": 14.3,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T094652Z_0c24be58/videos/m1/fixed.mp4",
+            "frames": 429,
+            "duration_s": 14.3,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T094652Z_0c24be58/videos/m1/wrist.mp4",
+            "frames": 429,
+            "duration_s": 14.3,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T094652Z_0c24be58/videos/m1/timing.json",
+          "frames": 429,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 15.17861878596233
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T094652Z_0c24be58",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.47999033348607334,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T094653Z_20726c4f",
+      "family": "C1",
+      "seed": 2026112201,
+      "scene_generator_revision": 1,
+      "scene_sha256": "874566a7e0d1b9256725d14f478d9b4fd8aac38807b3ad606cc1f68fbe694b05",
+      "action": "observe",
+      "mode": "gui",
+      "information_mode": "RGBD_POLICY",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--gui",
+        "--family",
+        "C1",
+        "--action",
+        "observe",
+        "--interactive"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 7.450580596923828e-09,
+        "max_orientation_drift_rad": 9.222784123559373e-08,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 1.3877787807814457e-17,
+            "stable": true
+          },
+          "left_blocker": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "right_blocker": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "front_blocker": {
+            "position_drift_m": 7.450580596923828e-09,
+            "orientation_drift_rad": 9.222784123559373e-08,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": null,
+      "evaluation": [],
+      "initial_visible_hint_pixels": {
+        "fixed": 753,
+        "wrist": 8741
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 753,
+        "wrist": 8741
+      },
+      "costs": [],
+      "performance": {
+        "physics_steps": 4624,
+        "simulation_time_s": 9.633333835750818,
+        "scene_wall_time_s": 22.888012369017815,
+        "startup_and_run_wall_time_s": 36.29064909499721,
+        "rendering": "RTX RGBD 640x480 or CLI resolution, 30fps; PhysX CPU 480Hz; single simulated scene; no training throughput claim"
+      },
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T094653Z_20726c4f/videos/m1/third.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T094653Z_20726c4f/videos/m1/fixed.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T094653Z_20726c4f/videos/m1/wrist.mp4",
+            "frames": 259,
+            "duration_s": 8.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T094653Z_20726c4f/videos/m1/timing.json",
+          "frames": 259,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 13.916233827629025
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T094653Z_20726c4f",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.0,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T094819Z_98ffa3f4",
+      "family": "Direct",
+      "seed": 2026112201,
+      "scene_generator_revision": 1,
+      "scene_sha256": "2187cdc3d424ab8eb9e5b2c7fa0f27284196d04c37069ed6bff2e129dbedc112",
+      "action": "grasp",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "Direct",
+        "--action",
+        "grasp"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_front": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": null,
+      "evaluation": [
+        {
+          "command_status": "PASS",
+          "error": null,
+          "operation": "GRASP",
+          "stable_after": {
+            "status": "PASS",
+            "coverage_s": 0.966666717082262,
+            "max_position_drift_m": 0.00025342996036663724,
+            "max_orientation_drift_rad": 9.642386987458323e-05,
+            "bodies": {
+              "target": {
+                "position_drift_m": 0.00025342996036663724,
+                "orientation_drift_rad": 9.642386987458323e-05,
+                "stable": true
+              },
+              "far_left": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_right": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_front": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              }
+            },
+            "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+          },
+          "actual_target_contact": true,
+          "distractor_displacement_m": {
+            "far_left": 0.0,
+            "far_right": 0.0,
+            "far_front": 0.0
+          },
+          "catastrophic_distractor_drop": false,
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                0.0687637213086035,
+                -0.0074732703907357725,
+                0.9976049823760201
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          }
+        }
+      ],
+      "initial_visible_hint_pixels": {
+        "fixed": 274,
+        "wrist": 5077
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 405,
+        "wrist": 63855
+      },
+      "costs": [
+        {
+          "operation": "GRASPNET_AND_ONCE_SWEPT_CHECK",
+          "wall_time_s": 5.184894730016822,
+          "simulation_time_s": 0.0,
+          "action_count": 0
+        },
+        {
+          "wall_time_s": 73.60744388098828,
+          "simulation_time_s": 36.03333521261811,
+          "action_count": 1
+        }
+      ],
+      "performance": {
+        "physics_steps": 22160,
+        "simulation_time_s": 46.16666907444596,
+        "scene_wall_time_s": 106.50414075900335,
+        "startup_and_run_wall_time_s": 115.65047680799034,
+        "rendering": "RTX RGBD 640x480 or CLI resolution, 30fps; PhysX CPU 480Hz; single simulated scene; no training throughput claim"
+      },
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T094819Z_98ffa3f4/videos/m1/third.mp4",
+            "frames": 1355,
+            "duration_s": 45.166666666666664,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T094819Z_98ffa3f4/videos/m1/fixed.mp4",
+            "frames": 1355,
+            "duration_s": 45.166666666666664,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T094819Z_98ffa3f4/videos/m1/wrist.mp4",
+            "frames": 1355,
+            "duration_s": 45.166666666666664,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T094819Z_98ffa3f4/videos/m1/timing.json",
+          "frames": 1355,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 13.386100571841755
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T094819Z_98ffa3f4",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.5821312148654149,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T094820Z_f3ab3300",
+      "family": "Direct",
+      "seed": 2026112201,
+      "scene_generator_revision": 1,
+      "scene_sha256": "2187cdc3d424ab8eb9e5b2c7fa0f27284196d04c37069ed6bff2e129dbedc112",
+      "action": "push",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "FAILED",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "Direct",
+        "--action",
+        "push"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_front": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": null,
+      "evaluation": [
+        {
+          "command_status": "FAILED",
+          "error": "JOINT_TRACKING_ERROR: 0.191515rad",
+          "operation": "PUSH",
+          "stable_after": {
+            "status": "FAILED",
+            "coverage_s": 0.966666717082262,
+            "max_position_drift_m": 0.0017185698392348805,
+            "max_orientation_drift_rad": 0.02099221690209027,
+            "bodies": {
+              "target": {
+                "position_drift_m": 0.0017185698392348805,
+                "orientation_drift_rad": 0.02099221690209027,
+                "stable": false
+              },
+              "far_left": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_right": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_front": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              }
+            },
+            "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+          },
+          "actual_target_contact": true,
+          "distractor_displacement_m": {
+            "far_left": 0.0,
+            "far_right": 0.0,
+            "far_front": 0.0
+          },
+          "catastrophic_distractor_drop": false,
+          "push": {
+            "status": "FAILED",
+            "delta_m": [
+              0.007827579975128174,
+              -0.002493094652891159,
+              0.0012369304895401
+            ]
+          }
+        }
+      ],
+      "initial_visible_hint_pixels": {
+        "fixed": 275,
+        "wrist": 5067
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 162,
+        "wrist": 5268
+      },
+      "costs": [
+        {
+          "wall_time_s": 24.61367717801477,
+          "simulation_time_s": 10.200000531971455,
+          "action_count": 1
+        }
+      ],
+      "performance": {
+        "physics_steps": 9520,
+        "simulation_time_s": 19.833334367722273,
+        "scene_wall_time_s": 50.489618365012575,
+        "startup_and_run_wall_time_s": 59.980380820983555,
+        "rendering": "RTX RGBD 640x480 or CLI resolution, 30fps; PhysX CPU 480Hz; single simulated scene; no training throughput claim"
+      },
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T094820Z_f3ab3300/videos/m1/third.mp4",
+            "frames": 565,
+            "duration_s": 18.833333333333332,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T094820Z_f3ab3300/videos/m1/fixed.mp4",
+            "frames": 565,
+            "duration_s": 18.833333333333332,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T094820Z_f3ab3300/videos/m1/wrist.mp4",
+            "frames": 565,
+            "duration_s": 18.833333333333332,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T094820Z_f3ab3300/videos/m1/timing.json",
+          "frames": 565,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 12.134233698066751
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T094820Z_f3ab3300",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.3891859201896445,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T095140Z_81ce7675",
+      "family": "C4",
+      "seed": 2026112201,
+      "scene_generator_revision": 2,
+      "scene_sha256": "73e1995605db0c1c262099116400089da455dfe8768bbc924a83e92381dae191",
+      "action": "observe",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "FAILED",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "C4",
+        "--action",
+        "observe"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "FAILED",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0010437067276498097,
+        "max_orientation_drift_rad": 0.028674722007335885,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "left_blocker": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "right_blocker": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "front_blocker": {
+            "position_drift_m": 0.0010437067276498097,
+            "orientation_drift_rad": 0.028674722007335885,
+            "stable": false
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": 8.0,
+      "evaluation": [],
+      "initial_visible_hint_pixels": {
+        "fixed": 782,
+        "wrist": 5826
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 782,
+        "wrist": 5826
+      },
+      "costs": [],
+      "performance": {
+        "physics_steps": 6544,
+        "simulation_time_s": 13.633334044367075,
+        "scene_wall_time_s": 35.472263978008414,
+        "startup_and_run_wall_time_s": 44.04511632700451,
+        "rendering": "RTX RGBD 640x480 or CLI resolution, 30fps; PhysX CPU 480Hz; single simulated scene; no training throughput claim"
+      },
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T095140Z_81ce7675/videos/m1/third.mp4",
+            "frames": 409,
+            "duration_s": 13.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T095140Z_81ce7675/videos/m1/fixed.mp4",
+            "frames": 409,
+            "duration_s": 13.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T095140Z_81ce7675/videos/m1/wrist.mp4",
+            "frames": 409,
+            "duration_s": 13.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T095140Z_81ce7675/videos/m1/timing.json",
+          "frames": 409,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 12.241591621746753
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T095140Z_81ce7675",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.0,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T095141Z_33fd0fc3",
+      "family": "Direct",
+      "seed": 2026112201,
+      "scene_generator_revision": 2,
+      "scene_sha256": "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+      "action": "push",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "Direct",
+        "--action",
+        "push"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_front": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": 4.0,
+      "evaluation": [
+        {
+          "command_status": "PASS",
+          "error": null,
+          "operation": "PUSH",
+          "stable_after": {
+            "status": "PASS",
+            "coverage_s": 0.966666717082262,
+            "max_position_drift_m": 0.0,
+            "max_orientation_drift_rad": 0.0,
+            "bodies": {
+              "target": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_left": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_right": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_front": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              }
+            },
+            "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+          },
+          "actual_target_contact": true,
+          "distractor_displacement_m": {
+            "far_left": 0.0,
+            "far_right": 0.0,
+            "far_front": 0.0
+          },
+          "catastrophic_distractor_drop": false,
+          "push": {
+            "status": "PASS",
+            "delta_m": [
+              0.16368332505226135,
+              -0.0009363801218569279,
+              -0.0661730170249939
+            ]
+          }
+        }
+      ],
+      "initial_visible_hint_pixels": {
+        "fixed": 276,
+        "wrist": 5003
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 328,
+        "wrist": 9348
+      },
+      "costs": [
+        {
+          "wall_time_s": 56.65027551402454,
+          "simulation_time_s": 27.966668125241995,
+          "action_count": 1
+        }
+      ],
+      "performance": {
+        "physics_steps": 18048,
+        "simulation_time_s": 37.60000196099281,
+        "scene_wall_time_s": 82.96695120100048,
+        "startup_and_run_wall_time_s": 92.94111727501149,
+        "rendering": "RTX RGBD 640x480 or CLI resolution, 30fps; PhysX CPU 480Hz; single simulated scene; no training throughput claim"
+      },
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T095141Z_33fd0fc3/videos/m1/third.mp4",
+            "frames": 1128,
+            "duration_s": 37.6,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T095141Z_33fd0fc3/videos/m1/fixed.mp4",
+            "frames": 1128,
+            "duration_s": 37.6,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T095141Z_33fd0fc3/videos/m1/wrist.mp4",
+            "frames": 1128,
+            "duration_s": 37.6,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T095141Z_33fd0fc3/videos/m1/timing.json",
+          "frames": 1128,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 13.96336593585309
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T095141Z_33fd0fc3",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.35169846135469324,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T095316Z_b417c953",
+      "family": "Direct",
+      "seed": 2026112201,
+      "scene_generator_revision": 2,
+      "scene_sha256": "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+      "action": "flip",
+      "mode": "gui",
+      "information_mode": "ORACLE_DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--gui",
+        "--family",
+        "Direct",
+        "--action",
+        "flip",
+        "--information-mode",
+        "ORACLE_DIAGNOSTIC"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_front": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": 4.0,
+      "evaluation": [
+        {
+          "command_status": "PASS",
+          "error": null,
+          "operation": "FLIP",
+          "stable_after": {
+            "status": "PASS",
+            "coverage_s": 0.966666717082262,
+            "max_position_drift_m": 0.0,
+            "max_orientation_drift_rad": 0.0,
+            "bodies": {
+              "target": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_left": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_right": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_front": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              }
+            },
+            "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+          },
+          "actual_target_contact": true,
+          "distractor_displacement_m": {
+            "far_left": 0.0,
+            "far_right": 0.0,
+            "far_front": 0.0
+          },
+          "catastrophic_distractor_drop": false,
+          "flip": {
+            "status": "PASS",
+            "non_yaw_support_orientation_change_deg": 94.83535125842864,
+            "rotation_angle_deg": 94.85804787222723,
+            "horizontal_rotation_vector_component_deg": 94.8407870344287,
+            "initial_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                0.008921590726443978,
+                -0.04007413532161285,
+                0.9991568790220757
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "final_support": {
+              "dominant_local_up_axis": 0,
+              "sign": -1,
+              "local_up_vector": [
+                -0.9963171126371643,
+                0.04380593955917821,
+                -0.0737105876091253
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "stable_new_support": true,
+            "measured_target_contact": true,
+            "criterion": ">=35deg body-local gravity change, >=25deg horizontal rotation component, measured contact and stable end state; pure yaw rejected",
+            "final_support_contact_pairs": [
+              [
+                "/World/Object",
+                "/World/Table"
+              ]
+            ],
+            "robot_released": true
+          }
+        }
+      ],
+      "initial_visible_hint_pixels": {
+        "fixed": 276,
+        "wrist": 4997
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 441,
+        "wrist": 4516
+      },
+      "costs": [
+        {
+          "wall_time_s": 161.36411468399456,
+          "simulation_time_s": 32.26666834950447,
+          "action_count": 1
+        }
+      ],
+      "performance": {
+        "physics_steps": 20112,
+        "simulation_time_s": 41.90000218525529,
+        "scene_wall_time_s": 195.37385501302197,
+        "startup_and_run_wall_time_s": 207.26592876200448,
+        "rendering": "RTX RGBD 640x480 or CLI resolution, 30fps; PhysX CPU 480Hz; single simulated scene; no training throughput claim"
+      },
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T095316Z_b417c953/videos/m1/third.mp4",
+            "frames": 1257,
+            "duration_s": 41.9,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T095316Z_b417c953/videos/m1/fixed.mp4",
+            "frames": 1257,
+            "duration_s": 41.9,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T095316Z_b417c953/videos/m1/wrist.mp4",
+            "frames": 1257,
+            "duration_s": 41.9,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T095316Z_b417c953/videos/m1/timing.json",
+          "frames": 1257,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 6.683976201557956
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T095316Z_b417c953",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.3349230100869315,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T095317Z_45c90433",
+      "family": "Direct",
+      "seed": 2026112201,
+      "scene_generator_revision": 2,
+      "scene_sha256": "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+      "action": "grasp",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "Direct",
+        "--action",
+        "grasp"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_front": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": 4.0,
+      "evaluation": [
+        {
+          "command_status": "PASS",
+          "error": null,
+          "operation": "GRASP",
+          "stable_after": {
+            "status": "PASS",
+            "coverage_s": 0.966666717082262,
+            "max_position_drift_m": 0.00025342996036663724,
+            "max_orientation_drift_rad": 9.642386987458323e-05,
+            "bodies": {
+              "target": {
+                "position_drift_m": 0.00025342996036663724,
+                "orientation_drift_rad": 9.642386987458323e-05,
+                "stable": true
+              },
+              "far_left": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_right": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_front": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              }
+            },
+            "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+          },
+          "actual_target_contact": true,
+          "distractor_displacement_m": {
+            "far_left": 0.0,
+            "far_right": 0.0,
+            "far_front": 0.0
+          },
+          "catastrophic_distractor_drop": false,
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                0.0687637213086035,
+                -0.0074732703907357725,
+                0.9976049823760201
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          }
+        }
+      ],
+      "initial_visible_hint_pixels": {
+        "fixed": 273,
+        "wrist": 5006
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 409,
+        "wrist": 63856
+      },
+      "costs": [
+        {
+          "operation": "GRASPNET_AND_ONCE_SWEPT_CHECK",
+          "wall_time_s": 5.045257309015142,
+          "simulation_time_s": 0.0,
+          "action_count": 0
+        },
+        {
+          "wall_time_s": 153.7628143710026,
+          "simulation_time_s": 36.03333521261811,
+          "action_count": 1
+        }
+      ],
+      "performance": {
+        "physics_steps": 22160,
+        "simulation_time_s": 46.16666907444596,
+        "scene_wall_time_s": 191.5585881040024,
+        "startup_and_run_wall_time_s": 201.66016841397504,
+        "rendering": "RTX RGBD 640x480 or CLI resolution, 30fps; PhysX CPU 480Hz; single simulated scene; no training throughput claim"
+      },
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T095317Z_45c90433/videos/m1/third.mp4",
+            "frames": 1385,
+            "duration_s": 46.166666666666664,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T095317Z_45c90433/videos/m1/fixed.mp4",
+            "frames": 1385,
+            "duration_s": 46.166666666666664,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T095317Z_45c90433/videos/m1/wrist.mp4",
+            "frames": 1385,
+            "duration_s": 46.166666666666664,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T095317Z_45c90433/videos/m1/timing.json",
+          "frames": 1385,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 7.567631416044717
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T095317Z_45c90433",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.5821312148654149,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T095446Z_81d1e0be",
+      "family": "C4",
+      "seed": 2026112201,
+      "scene_generator_revision": 2,
+      "scene_sha256": "38769c584db9d0a52dd01462a346637adde144f306516f1cb041f6466d242a1a",
+      "action": "observe",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "C4",
+        "--action",
+        "observe"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "left_blocker": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "right_blocker": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "front_blocker": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": 4.0,
+      "evaluation": [],
+      "initial_visible_hint_pixels": {
+        "fixed": 1380,
+        "wrist": 16627
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 1380,
+        "wrist": 16627
+      },
+      "costs": [],
+      "performance": {
+        "physics_steps": 4624,
+        "simulation_time_s": 9.633333835750818,
+        "scene_wall_time_s": 25.49326821701834,
+        "startup_and_run_wall_time_s": 189.75631126298686,
+        "rendering": "RTX RGBD 640x480 or CLI resolution, 30fps; PhysX CPU 480Hz; single simulated scene; no training throughput claim"
+      },
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T095446Z_81d1e0be/videos/m1/third.mp4",
+            "frames": 289,
+            "duration_s": 9.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T095446Z_81d1e0be/videos/m1/fixed.mp4",
+            "frames": 289,
+            "duration_s": 9.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T095446Z_81d1e0be/videos/m1/wrist.mp4",
+            "frames": 289,
+            "duration_s": 9.633333333333333,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T095446Z_81d1e0be/videos/m1/timing.json",
+          "frames": 289,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 12.558032253687294
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T095446Z_81d1e0be",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.0,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    },
+    {
+      "run_id": "20261122T095447Z_aa41cca7",
+      "family": "C3",
+      "seed": 2026112201,
+      "scene_generator_revision": 2,
+      "scene_sha256": "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+      "action": "active",
+      "mode": "headless",
+      "information_mode": "RGBD_POLICY",
+      "status": "PASS",
+      "reason": null,
+      "command": [
+        "bash",
+        "scripts/run_m1.sh",
+        "--headless",
+        "--family",
+        "C3",
+        "--action",
+        "active"
+      ],
+      "scope": "Development smoke only; not a formal E1 episode or necessity label",
+      "scene_stability": {
+        "status": "PASS",
+        "coverage_s": 0.966666717082262,
+        "max_position_drift_m": 0.0,
+        "max_orientation_drift_rad": 0.0,
+        "bodies": {
+          "target": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "visual_occluder": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_left": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          },
+          "far_right": {
+            "position_drift_m": 0.0,
+            "orientation_drift_rad": 0.0,
+            "stable": true
+          }
+        },
+        "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+      },
+      "actual_settling_duration_s": 4.0,
+      "evaluation": [
+        {
+          "command_status": "PASS",
+          "error": null,
+          "operation": "ACTIVE",
+          "stable_after": {
+            "status": "PASS",
+            "coverage_s": 0.966666717082262,
+            "max_position_drift_m": 0.0,
+            "max_orientation_drift_rad": 0.0,
+            "bodies": {
+              "target": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "visual_occluder": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_left": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              },
+              "far_right": {
+                "position_drift_m": 0.0,
+                "orientation_drift_rad": 0.0,
+                "stable": true
+              }
+            },
+            "source": "actual successive rigid poses; no sleeping-velocity shortcut"
+          },
+          "actual_target_contact": false,
+          "distractor_displacement_m": {
+            "visual_occluder": 0.0,
+            "far_left": 0.0,
+            "far_right": 0.0
+          },
+          "catastrophic_distractor_drop": false,
+          "active": {
+            "status": "PASS",
+            "max_object_motion_m": 0.0
+          }
+        }
+      ],
+      "initial_visible_hint_pixels": {
+        "fixed": 708,
+        "wrist": 8144
+      },
+      "final_visible_hint_pixels": {
+        "fixed": 707,
+        "wrist": 4012
+      },
+      "costs": [
+        {
+          "wall_time_s": 10.300101875996916,
+          "simulation_time_s": 5.666666962206364,
+          "action_count": 1
+        }
+      ],
+      "performance": {
+        "physics_steps": 7344,
+        "simulation_time_s": 15.300000797957182,
+        "scene_wall_time_s": 34.73066065501189,
+        "startup_and_run_wall_time_s": 200.5998454480141,
+        "rendering": "RTX RGBD 640x480 or CLI resolution, 30fps; PhysX CPU 480Hz; single simulated scene; no training throughput claim"
+      },
+      "videos": {
+        "m1": {
+          "third": {
+            "path": "outputs/m1/runs/20261122T095447Z_aa41cca7/videos/m1/third.mp4",
+            "frames": 459,
+            "duration_s": 15.3,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "fixed": {
+            "path": "outputs/m1/runs/20261122T095447Z_aa41cca7/videos/m1/fixed.mp4",
+            "frames": 459,
+            "duration_s": 15.3,
+            "fps": 30.0,
+            "status": "PASS"
+          },
+          "wrist": {
+            "path": "outputs/m1/runs/20261122T095447Z_aa41cca7/videos/m1/wrist.mp4",
+            "frames": 459,
+            "duration_s": 15.3,
+            "fps": 30.0,
+            "status": "PASS"
+          }
+        }
+      },
+      "capture_timing": [
+        {
+          "path": "outputs/m1/runs/20261122T095447Z_aa41cca7/videos/m1/timing.json",
+          "frames": 459,
+          "actual_simulation_capture_hz": 29.999998435378156,
+          "wall_capture_hz": 13.953193332973225
+        }
+      ],
+      "local_directory": "outputs/m1/runs/20261122T095447Z_aa41cca7",
+      "observed_wrist_camera_motion": {
+        "translation_m": 0.47999033348607334,
+        "source": "actual rendered wrist calibration poses; not object GT or information-gain score"
+      }
+    }
+  ]
+}

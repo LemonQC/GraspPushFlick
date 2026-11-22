@@ -1,0 +1,642 @@
+{
+  "Direct": {
+    "schema_version": "m1_scene_v1",
+    "generator_revision": 2,
+    "family": "Direct",
+    "seed": 2026112201,
+    "objects": [
+      {
+        "id": "target",
+        "asset_id": "ycb:004_sugar_box",
+        "role": "target",
+        "position_m": [
+          0.4178566630975849,
+          0.003149237317599465,
+          0.0960075
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          -0.04119875816541313,
+          0.9991509707374696
+        ],
+        "usd_sha256": "f2a44a022b53e11f9a87060321d971e9da0acdbbcd443b7c2596fe04886d4c84",
+        "mass_kg": 0.10254287044841,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "far_left",
+        "asset_id": "ycb:010_potted_meat_can",
+        "role": "distractor",
+        "position_m": [
+          0.19,
+          0.25,
+          0.049771499999999996
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "ebd8d4071341c78b7fec18071fd4b5728af10a88687a81ba9ed793228b733532",
+        "mass_kg": 0.06407345793462063,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "far_right",
+        "asset_id": "ycb:005_tomato_soup_can",
+        "role": "distractor",
+        "position_m": [
+          0.7,
+          0.22,
+          0.0589275
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "0525f1f3844f024aade7dad03f5e9adb02545804380ed0a852ba89b66919297f",
+        "mass_kg": 0.058572925661176875,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "far_front",
+        "asset_id": "ycb:007_tuna_fish_can",
+        "role": "distractor",
+        "position_m": [
+          0.2,
+          -0.27,
+          0.024769
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "0a1abd05143cabf2d2ff01740e5a9c4874eeb3a3400c756746041c5bf37a7932",
+        "mass_kg": 0.030681890756334998,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      }
+    ],
+    "target_suitability": {
+      "status": "CONDITIONAL",
+      "reasons": [],
+      "minimum_geometry_extent_m": 0.049496,
+      "maximum_geometry_extent_m": 0.176015,
+      "mass_kg": 0.10254287044841,
+      "physical_parameters": "estimated",
+      "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+    },
+    "mechanism_flags": {
+      "clearance": false,
+      "orientation": false,
+      "visibility": false
+    },
+    "mechanism_qualification": "UNVERIFIED: candidate layout, not a necessity/success label",
+    "table_z_m": 0.0,
+    "observation_view": "front",
+    "target_hint": {
+      "type": "visible_color_prompt",
+      "asset_id": "ycb:004_sugar_box",
+      "description": "Designated yellow sugar package; visible RGB cue, not oracle instance mask",
+      "color_rule": {
+        "red_min": 90,
+        "green_min": 80,
+        "blue_to_min_rg_max": 0.72,
+        "r_g_min": 0.75,
+        "r_g_max": 1.35
+      }
+    },
+    "retrieval_region": {
+      "target_aabb_min_y_m": 0.3,
+      "command_goal_xyz_m": [
+        0.42,
+        0.4,
+        0.35
+      ],
+      "hold_s": 1.0,
+      "minimum_rise_m": 0.1
+    },
+    "physics_hz": 480,
+    "recording_fps": 30,
+    "settle_s": 4.0,
+    "forbidden": "No per-family action labels, rollout resets, fabricated supports or policy GT",
+    "scene_content_sha256": "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805"
+  },
+  "C1": {
+    "schema_version": "m1_scene_v1",
+    "generator_revision": 2,
+    "family": "C1",
+    "seed": 2026112201,
+    "objects": [
+      {
+        "id": "target",
+        "asset_id": "ycb:004_sugar_box",
+        "role": "target",
+        "position_m": [
+          0.4178566630975849,
+          0.003149237317599465,
+          0.0960075
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          -0.04119875816541313,
+          0.9991509707374696
+        ],
+        "usd_sha256": "f2a44a022b53e11f9a87060321d971e9da0acdbbcd443b7c2596fe04886d4c84",
+        "mass_kg": 0.10254287044841,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "left_blocker",
+        "asset_id": "ycb:005_tomato_soup_can",
+        "role": "distractor",
+        "position_m": [
+          0.34836111074475273,
+          0.003149237317599465,
+          0.0589275
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "0525f1f3844f024aade7dad03f5e9adb02545804380ed0a852ba89b66919297f",
+        "mass_kg": 0.058572925661176875,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "right_blocker",
+        "asset_id": "ycb:005_tomato_soup_can",
+        "role": "distractor",
+        "position_m": [
+          0.48735221545041707,
+          0.003149237317599465,
+          0.0589275
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "0525f1f3844f024aade7dad03f5e9adb02545804380ed0a852ba89b66919297f",
+        "mass_kg": 0.058572925661176875,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "front_blocker",
+        "asset_id": "ycb:003_cracker_box",
+        "role": "distractor",
+        "position_m": [
+          0.4178566630975849,
+          -0.13982738038828993,
+          0.1147185
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "64a0ab9e9d2cc27e5d42085878cb9b52c55e3748a37371d9f436b94a5f22385b",
+        "mass_kg": 0.3142268817947,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      }
+    ],
+    "target_suitability": {
+      "status": "CONDITIONAL",
+      "reasons": [],
+      "minimum_geometry_extent_m": 0.049496,
+      "maximum_geometry_extent_m": 0.176015,
+      "mass_kg": 0.10254287044841,
+      "physical_parameters": "estimated",
+      "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+    },
+    "mechanism_flags": {
+      "clearance": true,
+      "orientation": false,
+      "visibility": false
+    },
+    "mechanism_qualification": "UNVERIFIED: candidate layout, not a necessity/success label",
+    "table_z_m": 0.0,
+    "observation_view": "front",
+    "target_hint": {
+      "type": "visible_color_prompt",
+      "asset_id": "ycb:004_sugar_box",
+      "description": "Designated yellow sugar package; visible RGB cue, not oracle instance mask",
+      "color_rule": {
+        "red_min": 90,
+        "green_min": 80,
+        "blue_to_min_rg_max": 0.72,
+        "r_g_min": 0.75,
+        "r_g_max": 1.35
+      }
+    },
+    "retrieval_region": {
+      "target_aabb_min_y_m": 0.3,
+      "command_goal_xyz_m": [
+        0.42,
+        0.4,
+        0.35
+      ],
+      "hold_s": 1.0,
+      "minimum_rise_m": 0.1
+    },
+    "physics_hz": 480,
+    "recording_fps": 30,
+    "settle_s": 4.0,
+    "forbidden": "No per-family action labels, rollout resets, fabricated supports or policy GT",
+    "scene_content_sha256": "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3"
+  },
+  "C2": {
+    "schema_version": "m1_scene_v1",
+    "generator_revision": 2,
+    "family": "C2",
+    "seed": 2026112201,
+    "objects": [
+      {
+        "id": "target",
+        "asset_id": "ycb:004_sugar_box",
+        "role": "target",
+        "position_m": [
+          0.4178566630975849,
+          0.003149237317599465,
+          0.03274800000000002
+        ],
+        "orientation_xyzw": [
+          0.02913192127522827,
+          0.7065064268375865,
+          -0.029131921275228272,
+          0.7065064268375866
+        ],
+        "usd_sha256": "f2a44a022b53e11f9a87060321d971e9da0acdbbcd443b7c2596fe04886d4c84",
+        "mass_kg": 0.10254287044841,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "far_left",
+        "asset_id": "ycb:010_potted_meat_can",
+        "role": "distractor",
+        "position_m": [
+          0.19,
+          0.25,
+          0.049771499999999996
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "ebd8d4071341c78b7fec18071fd4b5728af10a88687a81ba9ed793228b733532",
+        "mass_kg": 0.06407345793462063,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "far_right",
+        "asset_id": "ycb:005_tomato_soup_can",
+        "role": "distractor",
+        "position_m": [
+          0.7,
+          0.22,
+          0.0589275
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "0525f1f3844f024aade7dad03f5e9adb02545804380ed0a852ba89b66919297f",
+        "mass_kg": 0.058572925661176875,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "far_front",
+        "asset_id": "ycb:007_tuna_fish_can",
+        "role": "distractor",
+        "position_m": [
+          0.2,
+          -0.27,
+          0.024769
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "0a1abd05143cabf2d2ff01740e5a9c4874eeb3a3400c756746041c5bf37a7932",
+        "mass_kg": 0.030681890756334998,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      }
+    ],
+    "target_suitability": {
+      "status": "CONDITIONAL",
+      "reasons": [],
+      "minimum_geometry_extent_m": 0.049496,
+      "maximum_geometry_extent_m": 0.176015,
+      "mass_kg": 0.10254287044841,
+      "physical_parameters": "estimated",
+      "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+    },
+    "mechanism_flags": {
+      "clearance": false,
+      "orientation": true,
+      "visibility": false
+    },
+    "mechanism_qualification": "UNVERIFIED: candidate layout, not a necessity/success label",
+    "table_z_m": 0.0,
+    "observation_view": "front",
+    "target_hint": {
+      "type": "visible_color_prompt",
+      "asset_id": "ycb:004_sugar_box",
+      "description": "Designated yellow sugar package; visible RGB cue, not oracle instance mask",
+      "color_rule": {
+        "red_min": 90,
+        "green_min": 80,
+        "blue_to_min_rg_max": 0.72,
+        "r_g_min": 0.75,
+        "r_g_max": 1.35
+      }
+    },
+    "retrieval_region": {
+      "target_aabb_min_y_m": 0.3,
+      "command_goal_xyz_m": [
+        0.42,
+        0.4,
+        0.35
+      ],
+      "hold_s": 1.0,
+      "minimum_rise_m": 0.1
+    },
+    "physics_hz": 480,
+    "recording_fps": 30,
+    "settle_s": 4.0,
+    "forbidden": "No per-family action labels, rollout resets, fabricated supports or policy GT",
+    "scene_content_sha256": "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8"
+  },
+  "C3": {
+    "schema_version": "m1_scene_v1",
+    "generator_revision": 2,
+    "family": "C3",
+    "seed": 2026112201,
+    "objects": [
+      {
+        "id": "target",
+        "asset_id": "ycb:004_sugar_box",
+        "role": "target",
+        "position_m": [
+          0.4178566630975849,
+          0.003149237317599465,
+          0.0960075
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          -0.04119875816541313,
+          0.9991509707374696
+        ],
+        "usd_sha256": "f2a44a022b53e11f9a87060321d971e9da0acdbbcd443b7c2596fe04886d4c84",
+        "mass_kg": 0.10254287044841,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "visual_occluder",
+        "asset_id": "ycb:003_cracker_box",
+        "role": "distractor",
+        "position_m": [
+          0.4178566630975849,
+          -0.1438273803882899,
+          0.1147185
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "64a0ab9e9d2cc27e5d42085878cb9b52c55e3748a37371d9f436b94a5f22385b",
+        "mass_kg": 0.3142268817947,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "far_left",
+        "asset_id": "ycb:010_potted_meat_can",
+        "role": "distractor",
+        "position_m": [
+          0.19,
+          0.25,
+          0.049771499999999996
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "ebd8d4071341c78b7fec18071fd4b5728af10a88687a81ba9ed793228b733532",
+        "mass_kg": 0.06407345793462063,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "far_right",
+        "asset_id": "ycb:005_tomato_soup_can",
+        "role": "distractor",
+        "position_m": [
+          0.7,
+          0.22,
+          0.0589275
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "0525f1f3844f024aade7dad03f5e9adb02545804380ed0a852ba89b66919297f",
+        "mass_kg": 0.058572925661176875,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      }
+    ],
+    "target_suitability": {
+      "status": "CONDITIONAL",
+      "reasons": [],
+      "minimum_geometry_extent_m": 0.049496,
+      "maximum_geometry_extent_m": 0.176015,
+      "mass_kg": 0.10254287044841,
+      "physical_parameters": "estimated",
+      "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+    },
+    "mechanism_flags": {
+      "clearance": false,
+      "orientation": false,
+      "visibility": true
+    },
+    "mechanism_qualification": "UNVERIFIED: candidate layout, not a necessity/success label",
+    "table_z_m": 0.0,
+    "observation_view": "front",
+    "target_hint": {
+      "type": "visible_color_prompt",
+      "asset_id": "ycb:004_sugar_box",
+      "description": "Designated yellow sugar package; visible RGB cue, not oracle instance mask",
+      "color_rule": {
+        "red_min": 90,
+        "green_min": 80,
+        "blue_to_min_rg_max": 0.72,
+        "r_g_min": 0.75,
+        "r_g_max": 1.35
+      }
+    },
+    "retrieval_region": {
+      "target_aabb_min_y_m": 0.3,
+      "command_goal_xyz_m": [
+        0.42,
+        0.4,
+        0.35
+      ],
+      "hold_s": 1.0,
+      "minimum_rise_m": 0.1
+    },
+    "physics_hz": 480,
+    "recording_fps": 30,
+    "settle_s": 4.0,
+    "forbidden": "No per-family action labels, rollout resets, fabricated supports or policy GT",
+    "scene_content_sha256": "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e"
+  },
+  "C4": {
+    "schema_version": "m1_scene_v1",
+    "generator_revision": 2,
+    "family": "C4",
+    "seed": 2026112201,
+    "objects": [
+      {
+        "id": "target",
+        "asset_id": "ycb:004_sugar_box",
+        "role": "target",
+        "position_m": [
+          0.4178566630975849,
+          0.003149237317599465,
+          0.03274800000000002
+        ],
+        "orientation_xyzw": [
+          0.02913192127522827,
+          0.7065064268375865,
+          -0.029131921275228272,
+          0.7065064268375866
+        ],
+        "usd_sha256": "f2a44a022b53e11f9a87060321d971e9da0acdbbcd443b7c2596fe04886d4c84",
+        "mass_kg": 0.10254287044841,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "left_blocker",
+        "asset_id": "ycb:005_tomato_soup_can",
+        "role": "distractor",
+        "position_m": [
+          0.28531635620997664,
+          0.003149237317599465,
+          0.0589275
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "0525f1f3844f024aade7dad03f5e9adb02545804380ed0a852ba89b66919297f",
+        "mass_kg": 0.058572925661176875,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "right_blocker",
+        "asset_id": "ycb:005_tomato_soup_can",
+        "role": "distractor",
+        "position_m": [
+          0.5503969699851932,
+          0.003149237317599465,
+          0.0589275
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "0525f1f3844f024aade7dad03f5e9adb02545804380ed0a852ba89b66919297f",
+        "mass_kg": 0.058572925661176875,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      },
+      {
+        "id": "front_blocker",
+        "asset_id": "ycb:036_wood_block",
+        "role": "distractor",
+        "position_m": [
+          0.4178566630975849,
+          -0.11474938057068505,
+          0.1110015
+        ],
+        "orientation_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "usd_sha256": "7832e5bc2b0d25215cf2c73a59e568854a1cd9727681f2c2b545686f682d93f2",
+        "mass_kg": 0.276859495441683,
+        "parameter_provenance": "registry: estimated, not hardware calibrated"
+      }
+    ],
+    "target_suitability": {
+      "status": "CONDITIONAL",
+      "reasons": [],
+      "minimum_geometry_extent_m": 0.049496,
+      "maximum_geometry_extent_m": 0.176015,
+      "mass_kg": 0.10254287044841,
+      "physical_parameters": "estimated",
+      "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+    },
+    "mechanism_flags": {
+      "clearance": true,
+      "orientation": true,
+      "visibility": true
+    },
+    "mechanism_qualification": "UNVERIFIED: candidate layout, not a necessity/success label",
+    "table_z_m": 0.0,
+    "observation_view": "front",
+    "target_hint": {
+      "type": "visible_color_prompt",
+      "asset_id": "ycb:004_sugar_box",
+      "description": "Designated yellow sugar package; visible RGB cue, not oracle instance mask",
+      "color_rule": {
+        "red_min": 90,
+        "green_min": 80,
+        "blue_to_min_rg_max": 0.72,
+        "r_g_min": 0.75,
+        "r_g_max": 1.35
+      }
+    },
+    "retrieval_region": {
+      "target_aabb_min_y_m": 0.3,
+      "command_goal_xyz_m": [
+        0.42,
+        0.4,
+        0.35
+      ],
+      "hold_s": 1.0,
+      "minimum_rise_m": 0.1
+    },
+    "physics_hz": 480,
+    "recording_fps": 30,
+    "settle_s": 4.0,
+    "forbidden": "No per-family action labels, rollout resets, fabricated supports or policy GT",
+    "scene_content_sha256": "38769c584db9d0a52dd01462a346637adde144f306516f1cb041f6466d242a1a"
+  }
+}

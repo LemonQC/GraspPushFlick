@@ -1,0 +1,120 @@
+{
+  "scope": "Final M1 source/config/document bytes; early transient development source was not separately committed",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "857201d6b7fdd188189999dd224be17a1b6ccbc8b2dd4fdf1cbddacd85c0edac",
+      "bytes": 10758
+    },
+    {
+      "path": "README.md",
+      "sha256": "7fa5b2de7a1bbca7bf87bc45ce63d72ad771bfad3fc016c935d8dec47161a99b",
+      "bytes": 4708
+    },
+    {
+      "path": "apfg/primitives/sr5_control.py",
+      "sha256": "fbc9fe9ec6d396acea88b1d1b32c629ddff17090349e4bb343f4d069ce693bc4",
+      "bytes": 5731
+    },
+    {
+      "path": "apfg/simulation/sr5_hardware.py",
+      "sha256": "1f09f52e6a84ef7efd8e6469bf606c9dec757a6fb5c8150a94175f4ab9e08e7b",
+      "bytes": 29704
+    },
+    {
+      "path": "apfg/evaluation/m1_metrics.py",
+      "sha256": "265f66b7af7fd21f5282a92fd1b789e6fa3b65b33d100ab7df743fb0c48fc3c4",
+      "bytes": 2691
+    },
+    {
+      "path": "apfg/perception/m1_observation.py",
+      "sha256": "47e9545e726a3e170ff2a0e6b70b5a453352846b5ea51e13cc0f6e81a50d99e1",
+      "bytes": 2337
+    },
+    {
+      "path": "apfg/primitives/m1_actions.py",
+      "sha256": "7b969bac51bab26f3be235f5c6c511f6ef6fd11a40c4594afd41bce7e5e7afb1",
+      "bytes": 4024
+    },
+    {
+      "path": "apfg/primitives/swept.py",
+      "sha256": "78bbab41a26144f180f6fbf85a1b3a183c25bdd9e7ad3eb039f13394872bffab",
+      "bytes": 4918
+    },
+    {
+      "path": "apfg/scenes/m1.py",
+      "sha256": "7b5811d79fd17a47edab772b68e8dc794ecdb608c4de58ce83ea5163dd2de06e",
+      "bytes": 8061
+    },
+    {
+      "path": "apfg/simulation/m1_env.py",
+      "sha256": "1d011905be6aeac3bee9b37856795198fa64af2986569e84e42793fbc419bbb8",
+      "bytes": 17965
+    },
+    {
+      "path": "scripts/run_m1.py",
+      "sha256": "d32a0f9287598b4c50affc9df7709692cd83421306ea9bbdfcfe2ca5ece2ca35",
+      "bytes": 8250
+    },
+    {
+      "path": "scripts/run_m1.sh",
+      "sha256": "9c361ecfdc0d299634684d4a811232c51060dfce48ea1192ff69703394cc98f2",
+      "bytes": 171
+    },
+    {
+      "path": "scripts/prepare_m1.py",
+      "sha256": "ff7abcbc890aa30179f6197fcb588ce701d2772b12bfd49a03dcee1c5f895908",
+      "bytes": 4412
+    },
+    {
+      "path": "scripts/collect_m1_evidence.py",
+      "sha256": "ac74e3dabd4c032702cc18cf3f63af786a9bff109b8b76c0cdecce8a71062f94",
+      "bytes": 9828
+    },
+    {
+      "path": "tests/test_m1.py",
+      "sha256": "bfd5c14358a64cc16f4ab19daebe0430388a045bc1edee7722f9c3b8abb8278f",
+      "bytes": 4349
+    },
+    {
+      "path": "docs/M1_REPORT_ZH.md",
+      "sha256": "41494abcd26b3af19d7c25bb2fcd43594fe1455bb83303d1b17af7180891bac3",
+      "bytes": 10538
+    },
+    {
+      "path": "docs/E1_PROTOCOL_ZH.md",
+      "sha256": "6f27b64255a12e2fd5491b200ac4cfe40a99bfeb925a88c800d163e4779a2ac1",
+      "bytes": 3379
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "sha256": "2e710b7849042dff8dbf7edf31106365152841381b7e59a1d87bc58893774750",
+      "bytes": 5303
+    },
+    {
+      "path": "configs/m1/development_smoke_budget.json",
+      "sha256": "96d32b3795d668ead3f70230900934dac5055a7bcc1eac69bbdb8d706a672ce1",
+      "bytes": 817
+    },
+    {
+      "path": "configs/m1/e1_protocol_v1.json",
+      "sha256": "bd472f48d9a298d949f01bcbd32f4c2c3d71f8cc40984bc35314f1c66e15183c",
+      "bytes": 6244
+    },
+    {
+      "path": "configs/m1/e1_protocol_v2.json",
+      "sha256": "65e2b698f7547958825b23c3c6bd9756af661a9904bf25ab83d8bec59a672827",
+      "bytes": 6546
+    },
+    {
+      "path": "configs/m1/scene_examples.json",
+      "sha256": "7ef48afc1b60883374e0075c9ac1bf09ac82a6cc9b7f7aa50dab419e9de304d4",
+      "bytes": 18976
+    },
+    {
+      "path": "configs/m1/target_suitability.json",
+      "sha256": "08ed5ffc98c79206784f4ef79f454da876a6ae1e8bc6cf1084642efc79437e91",
+      "bytes": 3358
+    }
+  ]
+}

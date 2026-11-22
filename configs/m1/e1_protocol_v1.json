@@ -1,0 +1,178 @@
+{
+  "protocol_version": "E1-development-preregister-v1",
+  "status": "NOT_RUN",
+  "scope": "Future E1 development gate, not formal paper evaluation",
+  "families": [
+    "Direct",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "seeds": [
+    2026112201,
+    2026112202
+  ],
+  "target_assets": [
+    "ycb:004_sugar_box",
+    "ycb:005_tomato_soup_can"
+  ],
+  "arms": [
+    "DIRECT_GRASP",
+    "PUSH_GRASP",
+    "FLIP_GRASP",
+    "VIEW_GRASP"
+  ],
+  "information_mode": "RGBD_POLICY",
+  "max_preparation_actions": 1,
+  "max_grasp_attempts": 1,
+  "max_candidates_checked": 8,
+  "thresholds": {
+    "settling_window_s": 1.0,
+    "settling_position_m": 0.002,
+    "settling_rotation_rad": 0.01,
+    "push_displacement_m": 0.03,
+    "flip_non_yaw_deg": 35.0,
+    "flip_horizontal_rotvec_deg": 25.0,
+    "view_max_object_motion_m": 0.002,
+    "target_entire_aabb_min_y_m": 0.3,
+    "minimum_lift_m": 0.1,
+    "bilateral_hold_s": 1.0
+  },
+  "candidate_protocol": "Fixed measured workspace, explicit visible target cue, existing GraspNet checkpoint and same source full-arm kinematic checks. No family->skill labels.",
+  "operation_costs": "All physical arm motion and network wall-time logged. Any mandatory re-observation motion must be explicit and charged.",
+  "success": "Entire designated object outside task region, real bilateral grasp, sustained lift/hold, no catastrophic distractor drop. A 6cm/15cm lift alone is not task success.",
+  "labels": "Layout family is only a generation hypothesis. Direct-success cases cannot be called push/flip-necessary. Audit and retain non-qualified scenes.",
+  "failure_retention": true,
+  "statistics": "No success-rate or novelty claim from the separate pilot subset; E2/E3 NOT_RUN",
+  "case_list": [
+    {
+      "case_id": "Direct_2026112201_004_sugar_box",
+      "family": "Direct",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "2187cdc3d424ab8eb9e5b2c7fa0f27284196d04c37069ed6bff2e129dbedc112",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "Direct_2026112201_005_tomato_soup_can",
+      "family": "Direct",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "12fd7a56e0ed98718f2ccb1cb2ef2f50b17b8d83aa149d88ec1b7dd3abd0d44f",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "Direct_2026112202_004_sugar_box",
+      "family": "Direct",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "660df7cef1b77c985910ee8de3b8b90c25436191fb26b55b4f3c0402b8a80c08",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "Direct_2026112202_005_tomato_soup_can",
+      "family": "Direct",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "e601ab110ec8a67c4e1ae6b08b6bc9fca7d9b7b6d60d6e8bb06b2bd6f1ce5fd3",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112201_004_sugar_box",
+      "family": "C1",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "874566a7e0d1b9256725d14f478d9b4fd8aac38807b3ad606cc1f68fbe694b05",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112201_005_tomato_soup_can",
+      "family": "C1",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "1db0bdee20d86f49ee941d414c9de1934f791874957c2b13c3aefcf5e0b87842",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112202_004_sugar_box",
+      "family": "C1",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "3069f0db1cd93e7b292c07382bd60d77bc1ccf3941117dd7b53f373cc1e23bad",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112202_005_tomato_soup_can",
+      "family": "C1",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "4cb085c4d0f7ec389035e5b89af0d5e6cdf8acae8bb65ef1bc8f765db604c621",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112201_004_sugar_box",
+      "family": "C2",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "30f89c3d29ef35b2d557ccfac54d825f2507f04493bd425f25873d6cfaed38f2",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112201_005_tomato_soup_can",
+      "family": "C2",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "9d0abbbf86cd70087022ca710fa9793d59ae38fc46d5599667296f4a503efc3b",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112202_004_sugar_box",
+      "family": "C2",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "967ce4cf5dc11ec0103cfc14ecf297e021462be123575a8a18c64d1bb93b3bab",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112202_005_tomato_soup_can",
+      "family": "C2",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "3ba875077585b39192c616bfefbac49e60238f3b849dbd11913755450b5c2ed5",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112201_004_sugar_box",
+      "family": "C3",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "62677403e79f265800b44edb373795ec92f4cefb6198bb8d60dba2749655218d",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112201_005_tomato_soup_can",
+      "family": "C3",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "da03d99584417d833dd5bb0ee919f5a6f15c45965de8fefb417a06a87691d818",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112202_004_sugar_box",
+      "family": "C3",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "de34216c5efa122647cd4e0db2b5fb8e001e20d86dc8a566830362b82aef6ad3",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112202_005_tomato_soup_can",
+      "family": "C3",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "e2ac32960799018fb944ad3be234c840ecfe3e04c1d9a9242314fc7ed0d5c250",
+      "status": "NOT_RUN"
+    }
+  ],
+  "frozen_protocol_sha256": "23d60917ca3814accc44381e57c15d7cb7b948999265bd656030eb5d5e61f694"
+}

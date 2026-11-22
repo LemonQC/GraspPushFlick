@@ -1,0 +1,46 @@
+{
+  "scope": "Pilot implementation checks, not E1 arm comparison",
+  "seed": 2026112201,
+  "scene_audits": [
+    "Direct",
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "action_smokes": [
+    {
+      "family": "C3",
+      "action": "active",
+      "information_mode": "RGBD_POLICY"
+    },
+    {
+      "family": "Direct",
+      "action": "push",
+      "information_mode": "RGBD_POLICY"
+    },
+    {
+      "family": "Direct",
+      "action": "flip",
+      "information_mode": "ORACLE_DIAGNOSTIC"
+    },
+    {
+      "family": "Direct",
+      "action": "grasp",
+      "information_mode": "RGBD_POLICY"
+    }
+  ],
+  "gui_cases": [
+    {
+      "family": "C1",
+      "action": "observe"
+    },
+    {
+      "family": "Direct",
+      "action": "flip"
+    }
+  ],
+  "E2": "NOT_RUN",
+  "E3": "NOT_RUN",
+  "training": "NOT_RUN"
+}

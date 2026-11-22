@@ -69,8 +69,23 @@ class HardwareScene:
         self.link_paths = {n:p.replace('/xMateSR5','/World/SR5_Assembly',1) for n,p in self.audit['link_paths'].items()}
         self.frames = {n:SingleXFormPrim(self.link_paths[n]) for n in ['ral_tcp','ral_camera','ral_optical','ral_gripper','ral_left_finger','ral_right_finger','ral_plate','xMateSR5_link6']}
         # A known centred calibration fixture, identical across reproducible seeds.
+        self.scene_spec=getattr(args,'scene_spec',None)
+        self.m1_bodies={}
         self.target_asset=getattr(args,'asset_id',None)
-        if self.target_asset:
+        if self.scene_spec:
+            from apfg.scenes.m1 import validate,registry
+            validate(self.scene_spec);entries=registry()
+            for item in self.scene_spec['objects']:
+                entry=entries[item['asset_id']]
+                path='/World/Object' if item['role']=='target' else '/World/M1_'+item['id']
+                add_reference_to_stage(str(ROOT/entry['usd_path']),path)
+                q=item['orientation_xyzw']
+                rigid=self.world.scene.add(SingleRigidPrim(path,name='m1_'+item['id'],position=np.asarray(item['position_m']),orientation=np.r_[q[3],q[:3]]))
+                self.m1_bodies[item['id']]={'body':rigid,'path':path,'spec':item}
+                add_update_semantics(self.stage.GetPrimAtPath(path),item['asset_id'])
+                if item['role']=='target':
+                    self.cube=rigid;self.object_initial=np.asarray(item['position_m']);self.target_asset=item['asset_id']
+        elif self.target_asset:
             entries=json.loads((ROOT/'assets/manifests/object_registry.json').read_text())['objects']
             entry=next(e for e in entries if e['asset_id']==self.target_asset)
             self.object_initial=np.array([.4,0.,entry['geometry_dimensions_m'][2]/2+.008])
@@ -104,7 +119,7 @@ class HardwareScene:
         def contact(headers,data):
             for h in headers:
                 a,b=str(PhysicsSchemaTools.intToSdfPath(h.actor0)),str(PhysicsSchemaTools.intToSdfPath(h.actor1))
-                if '/World/Object' not in (a,b): continue
+                if not any(p=='/World/Object' or p.startswith('/World/M1_') for p in (a,b)):continue
                 pair=tuple(sorted([a,b]))
                 if h.num_contact_data:self.active_pairs.add(pair)
                 else:self.active_pairs.discard(pair)
@@ -134,6 +149,7 @@ class HardwareScene:
         self.rows=[];self.video_reports={};self.recorder=None;self.group='initialization';self.start_time=float(self.world.current_time)
         self.start_step=int(self.world.current_time_step_index)
         self.frame_gaps=[];self.wall_start=time.monotonic()
+        if self.scene_spec:self.begin('m1')
         self.ctrl.phase='settle';self.ctrl.hold(1.)
         if not args.headless:
             from isaacsim.core.utils.viewports import set_camera_view
@@ -164,6 +180,11 @@ class HardwareScene:
              'render_usd_tcp':np.array(UsdGeom.Xformable(self.stage.GetPrimAtPath(self.link_paths['ral_tcp'])).ComputeLocalToWorldTransform(Usd.TimeCode.Default())).T.tolist(),
              'render_usd_object':np.array(UsdGeom.Xformable(self.stage.GetPrimAtPath('/World/Object')).ComputeLocalToWorldTransform(Usd.TimeCode.Default())).T.tolist(),
              'T_world_optical':pose_matrix(*self.cameras['wrist'].get_world_pose(camera_axes='ros')).tolist()}
+        if self.m1_bodies:
+            # Evaluation log only. The M1 RGBD_POLICY boundary never receives
+            # this row or a reference to the underlying scene/rigid bodies.
+            row['m1_objects']={name:{'T_world':pose_matrix(*data['body'].get_world_pose()).tolist(),
+                'linear_velocity_m_s':data['body'].get_linear_velocity().tolist()} for name,data in self.m1_bodies.items()}
         self.rows.append(row)
         if self.recorder:
             if all(f is not None and f.ndim==3 and f.size for f in frames.values()):

@@ -1,0 +1,42 @@
+[
+  {
+    "panel": "C1",
+    "source": "outputs/m1/runs/20261122T094514Z_639cae5e/images/initial_scene_rgb.png",
+    "source_sha256": "5c2791a80e02fa42445e21d8f086c2d0ee8b86471a30f6b5c221df2653d31567"
+  },
+  {
+    "panel": "C2",
+    "source": "outputs/m1/runs/20261122T094547Z_5578e311/images/initial_scene_rgb.png",
+    "source_sha256": "0d55742fce1509c2cd03fea47066c0601dd56281e82695ca4746bc337594537a"
+  },
+  {
+    "panel": "C3",
+    "source": "outputs/m1/runs/20261122T095447Z_aa41cca7/images/initial_scene_rgb.png",
+    "source_sha256": "f805bd43c7f2fcef6093fcea43e343dac7e2409d9bd621b3921a4832faa3e831"
+  },
+  {
+    "panel": "C4",
+    "source": "outputs/m1/runs/20261122T095446Z_81d1e0be/images/initial_scene_rgb.png",
+    "source_sha256": "13551aaba9870037ba73ce3568e287aab35dd80a7a2f51bb01bd664bb8c5bb0a"
+  },
+  {
+    "panel": "Flip before ORACLE",
+    "source": "outputs/m1/runs/20261122T095316Z_b417c953/images/initial_scene_rgb.png",
+    "source_sha256": "465c8b24385e72defd87ee93929efdf37ea4be55cee513e59660998a9edd7e88"
+  },
+  {
+    "panel": "Flip after ORACLE",
+    "source": "outputs/m1/runs/20261122T095316Z_b417c953/images/final_scene_rgb.png",
+    "source_sha256": "537725efc7b9761339f30b7ed35e8daf4fb9e05b41abc2842a088c74bc7b17ec"
+  },
+  {
+    "panel": "GraspNet candidates RGBD",
+    "source": "outputs/m1/runs/20261122T095317Z_45c90433/images/grasp_candidates_rgb.png",
+    "source_sha256": "9cf86e585da28344ddb9b3119d962b314aac6d895f0078f8d86c14c37e8854ee"
+  },
+  {
+    "panel": "Complete extraction RGBD",
+    "source": "outputs/m1/runs/20261122T095317Z_45c90433/images/final_scene_rgb.png",
+    "source_sha256": "b2bdad646d1be5141711f3927d9389366a22e92c3e434439c1349e932e1f99bc"
+  }
+]

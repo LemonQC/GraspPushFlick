@@ -1,5 +1,7 @@
 # Reproducibility
 
+M1 SR5 scene/action extension (2026-11-22) uses `scripts/run_m1.sh`; see [actual commands and failures](M1_REPORT_ZH.md) and [frozen E1 protocol](E1_PROTOCOL_ZH.md). It reuses the installed environment and assets. This SR5 path runs CPU PhysX at480Hz with RTX RGB-D recording30fps and explicit PhysX-to-USD rendering publication; the original Franka M0 settings below remain historical, not SR5 settings. Save exact scene.json, run_config.json and local artifacts per unique run. Public metadata/checksums are under evidence/m1/. E1 comparison is NOT_RUN; independent development smokes cannot be counted as formal episodes.
+
 Use the current repository root as PROJECT_ROOT and source scripts/project_env.sh. The parent HOME and desktop authentication remain unchanged. Simulator children use project-local HOME and Kit portable-root; CUDA, GL and OptiX caches each have an explicit local path. No system driver upgrade or user shell edits are part of installation.
 
 The measured stack is RTX 3090 / NVIDIA 535.230.02, Ubuntu 20.04.6 / GLIBC 2.31, an existing Isaac Sim 4.5 binary distribution, Isaac Lab release v2.0.2 at b5fa0eb031a2413c182eeb54fa3a9295e8fd867c, Python 3.10.22, torch 2.5.1/cu118 and torchvision 0.20.1. Exact package and binary versions, local hashes and pip freeze are under outputs/environment_check/. This does not validate the requested 5.1/2.3.1 pip stack on this host.

@@ -1,0 +1,85 @@
+{
+  "004_sugar_box": {
+    "status": "CONDITIONAL",
+    "reasons": [],
+    "minimum_geometry_extent_m": 0.049496,
+    "maximum_geometry_extent_m": 0.176015,
+    "mass_kg": 0.10254287044841,
+    "physical_parameters": "estimated",
+    "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+  },
+  "005_tomato_soup_can": {
+    "status": "CONDITIONAL",
+    "reasons": [],
+    "minimum_geometry_extent_m": 0.067743,
+    "maximum_geometry_extent_m": 0.101855,
+    "mass_kg": 0.058572925661176875,
+    "physical_parameters": "estimated",
+    "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+  },
+  "006_mustard_bottle": {
+    "status": "CONDITIONAL",
+    "reasons": [],
+    "minimum_geometry_extent_m": 0.066621,
+    "maximum_geometry_extent_m": 0.191301,
+    "mass_kg": 0.15484448047416974,
+    "physical_parameters": "estimated",
+    "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+  },
+  "007_tuna_fish_can": {
+    "status": "CONDITIONAL",
+    "reasons": [],
+    "minimum_geometry_extent_m": 0.033538,
+    "maximum_geometry_extent_m": 0.085559,
+    "mass_kg": 0.030681890756334998,
+    "physical_parameters": "estimated",
+    "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+  },
+  "008_pudding_box": {
+    "status": "CONDITIONAL",
+    "reasons": [],
+    "minimum_geometry_extent_m": 0.038889,
+    "maximum_geometry_extent_m": 0.137938,
+    "mass_kg": 0.08633525771034901,
+    "physical_parameters": "estimated",
+    "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+  },
+  "009_gelatin_box": {
+    "status": "CONDITIONAL",
+    "reasons": [],
+    "minimum_geometry_extent_m": 0.030074,
+    "maximum_geometry_extent_m": 0.101108,
+    "mass_kg": 0.033981588621596004,
+    "physical_parameters": "estimated",
+    "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+  },
+  "010_potted_meat_can": {
+    "status": "CONDITIONAL",
+    "reasons": [],
+    "minimum_geometry_extent_m": 0.060103000000000004,
+    "maximum_geometry_extent_m": 0.102085,
+    "mass_kg": 0.06407345793462063,
+    "physical_parameters": "estimated",
+    "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+  },
+  "061_foam_brick": {
+    "status": "CONDITIONAL",
+    "reasons": [],
+    "minimum_geometry_extent_m": 0.051193,
+    "maximum_geometry_extent_m": 0.077874,
+    "mass_kg": 0.02619198619074,
+    "physical_parameters": "estimated",
+    "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+  },
+  "036_wood_block": {
+    "status": "UNSUITABLE",
+    "reasons": [
+      "No bounding-box grasp dimension below 80mm minus 6mm margin"
+    ],
+    "minimum_geometry_extent_m": 0.103464,
+    "maximum_geometry_extent_m": 0.206003,
+    "mass_kg": 0.276859495441683,
+    "physical_parameters": "estimated",
+    "note": "Extent/reach screening is not grasp feasibility; actual collision, IK, contact and extraction must be measured"
+  }
+}
