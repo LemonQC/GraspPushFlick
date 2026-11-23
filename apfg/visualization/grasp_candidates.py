@@ -3,12 +3,14 @@ import numpy as np
 from scipy.spatial.transform import Rotation
 
 
-def draw_grasps(stage,candidates,selected=None,root='/World/GraspNetPredictions'):
+def draw_grasps(stage,candidates,selected=None,root='/World/GraspNetPredictions',execution_pose=None):
     from pxr import UsdGeom,Gf,UsdShade,Sdf
     if stage.GetPrimAtPath(root):stage.RemovePrim(root)
     UsdGeom.Xform.Define(stage,root)
     for rank,candidate in enumerate(candidates):
         r=Rotation.from_quat(candidate['quat_xyzw']).as_matrix()
+        if rank==selected and execution_pose is not None:
+            r=Rotation.from_quat(execution_pose['quat_xyzw']).as_matrix()
         tcp=np.asarray(candidate['xyz_m']);half=candidate['opening_m']/2
         tip=candidate['physical_tip_from_tcp_m']
         # Wire geometry is attached to the predicted world pose, not the robot.
@@ -31,6 +33,8 @@ def draw_grasps(stage,candidates,selected=None,root='/World/GraspNetPredictions'
             UsdShade.MaterialBindingAPI.Apply(curve.GetPrim()).Bind(material)
         curve.GetPrim().SetCustomDataByKey('model_score',candidate['score'])
         curve.GetPrim().SetCustomDataByKey('source_prediction_index',candidate['index'])
+        if rank==selected and execution_pose is not None:
+            curve.GetPrim().SetCustomDataByKey('execution_jaw_roll_deg',execution_pose['jaw_roll_about_approach_deg'])
         if rank==selected:
             for i,name in enumerate(['X_jaw','Y','Z_approach']):
                 points=np.array([tcp,tcp+.045*r[:,i]])
@@ -48,16 +52,19 @@ def draw_grasps(stage,candidates,selected=None,root='/World/GraspNetPredictions'
     return root
 
 
-def information_window(candidate,counts):
+def information_window(candidate,counts,execution_pose=None):
     """Keep the returned UI window alive in the caller while the GUI is open."""
     import omni.ui as ui
-    window=ui.Window('GraspNet 6-DoF predictions',width=440,height=260)
+    window=ui.Window('GraspNet 6-DoF predictions',width=440,height=330)
     with window.frame:
         with ui.VStack(spacing=8):
             ui.Label(f'Real model output: {counts} candidates | Green = selected',word_wrap=True)
             if candidate is not None:
                 ui.Label('World TCP xyz (m): '+str([round(v,4) for v in candidate['xyz_m']]),word_wrap=True)
-                ui.Label('Quaternion XYZW: '+str([round(v,4) for v in candidate['quat_xyzw']]),word_wrap=True)
+                ui.Label('Raw quaternion XYZW: '+str([round(v,4) for v in candidate['quat_xyzw']]),word_wrap=True)
+                if execution_pose is not None:
+                    ui.Label('Execution quaternion: '+str([round(v,4) for v in execution_pose['quat_xyzw']]),word_wrap=True)
+                    ui.Label(f'Checked finger exchange: {execution_pose["jaw_roll_about_approach_deg"]} deg; axes show execution pose.',word_wrap=True)
                 ui.Label(f'Score {candidate["score"]:.4f} | opening {candidate["opening_m"]*1000:.1f} mm')
                 ui.Label(f'Approach tilt from down: {candidate["tilt_from_world_down_deg"]:.1f} deg')
             ui.Label('RGB-D workspace crop; no oracle object pose. Red X = jaw, blue Z = approach.',word_wrap=True)

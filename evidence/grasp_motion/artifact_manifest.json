@@ -1,0 +1,820 @@
+{
+  "storage": "Full videos and original data remain project-local",
+  "files": [
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/commands.json",
+      "bytes": 7288,
+      "sha256": "7ec1449dcfc6418b76ec9eeb38c552d0dc1ee0e105f5812c0f51702047c52dff"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/contacts.json",
+      "bytes": 15428536,
+      "sha256": "34550047760a3bc5c9386f5e03d367c93b332fcfe6c9d238ded678a381aaf589"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/evaluation_oracle.json",
+      "bytes": 7230,
+      "sha256": "8dd5f466fe3ada8172dc3513d6a70b6c783909dd0a2e0a580dccade1e304b340"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/final_scene_calibration.json",
+      "bytes": 578,
+      "sha256": "54cef035e52ea2578d24ff5c3b074e73c2c88e35e961a7cae3b55330c876777a"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/final_scene_depth.png",
+      "bytes": 15737,
+      "sha256": "62e9a37a33181d15a87094dc45701ddb5048d51088e55482089d5576700d13c4"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/final_scene_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "5b357897c6ba742e11d39dc784f7bc3213a6929176d83326f9ce78c5089d0218"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/final_scene_rgb.png",
+      "bytes": 180249,
+      "sha256": "b2bdad646d1be5141711f3927d9389366a22e92c3e434439c1349e932e1f99bc"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/final_wrist_calibration.json",
+      "bytes": 581,
+      "sha256": "6b6b68f119eb6302375680168712406d63887951ad28642f2f4d4577b0b05735"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/final_wrist_depth.png",
+      "bytes": 17571,
+      "sha256": "56a0bd9ca8a481e6f4255491285037f5212d1082ed8486b361f93c38c744a7c9"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/final_wrist_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "d5c7f8a6394f9e8cd68e9997391e856b15e373148b726489bc35502ce2ccf210"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/final_wrist_rgb.png",
+      "bytes": 217803,
+      "sha256": "38acc1b4ccd7c21186ff05ef16c54a5b1f71b105a71b464923c1e7bac1cb5328"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/grasp_candidates_calibration.json",
+      "bytes": 578,
+      "sha256": "54cef035e52ea2578d24ff5c3b074e73c2c88e35e961a7cae3b55330c876777a"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/grasp_candidates_depth.png",
+      "bytes": 14824,
+      "sha256": "a878589ed331e78c85c465e0010834bce0854af086f28389192d09173c9a422e"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/grasp_candidates_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "7e7b5f4858d353a6b00b0b58627f0a49a19f4b3e4801976c4e0eb883ad313a02"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/grasp_candidates_rgb.png",
+      "bytes": 172114,
+      "sha256": "9cf86e585da28344ddb9b3119d962b314aac6d895f0078f8d86c14c37e8854ee"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_fixed_calibration.json",
+      "bytes": 568,
+      "sha256": "c3c962d7e4e189b5a023d2f91d4942ab8e533df0b31d5d062dd41a2607f8cfb4"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_fixed_depth.png",
+      "bytes": 17000,
+      "sha256": "e2e40fb563b625bc727a18bf897a85587983ba068c4d552cbc1fa4ccba07c0ad"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_fixed_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "d432969f19744c72b5bd7c98caac0d11e5cd9f7cb5841be303d4676a65e349bd"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_fixed_rgb.png",
+      "bytes": 243215,
+      "sha256": "3ef6caeb0f5513866e22c2fa8bc334da58191ac4321c0f8d71e115517141e93b"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_scene_calibration.json",
+      "bytes": 578,
+      "sha256": "54cef035e52ea2578d24ff5c3b074e73c2c88e35e961a7cae3b55330c876777a"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_scene_depth.png",
+      "bytes": 14155,
+      "sha256": "d597413eda525e25f035599592ca6dc2c869a142cc0bfe9a4cc92d90ad205f81"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_scene_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "d794de508cad4099d07085bc0f89da99535b03d83c88958148834eed44ae887a"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_scene_rgb.png",
+      "bytes": 173848,
+      "sha256": "dd2cf50ad0f39079b1e028144f26b0b0cc973bffa349e6edf2ff8051c217c95a"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_wrist_calibration.json",
+      "bytes": 582,
+      "sha256": "ae7a3f1a154a3cedc7ac5e7b431f1fc80f6705d5db2eac6f765bc9b9cac38259"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_wrist_depth.png",
+      "bytes": 47476,
+      "sha256": "93848f9e9f9751fd29891eeff1e102b8e9a9f3a9f9ecdcec4e3b6ea155b6c359"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_wrist_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "8b423a6043715a73fced6047d0599fbcac9604c4cde969bd50847ee9f10292c9"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/images/initial_wrist_rgb.png",
+      "bytes": 261529,
+      "sha256": "cbc9514ce4aee64d43c516cd1344a22e282427c009a484bdf2ae0d92f46e6dba"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/perception_00/candidates.json",
+      "bytes": 20257,
+      "sha256": "f7351ec6264448c95cd2e6a9bf704a69fea8ae49ef29f19defafa2da7b07bd2c"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/perception_00/network_predictions.json",
+      "bytes": 908,
+      "sha256": "fb0d5627beb494bfa0b486b0b185a1ccee7589bb82d57f7de25116e0ea596b40"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/perception_00/network_predictions.npz",
+      "bytes": 68082,
+      "sha256": "30b1d331474a7dbacc6d41f454443e76aa8f78b868eb3518aee5b89d4ab09942"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/perception_00/observation.npz",
+      "bytes": 6173833,
+      "sha256": "2c1eb7bd560c7b71e21560c167110b138e5945743d6828d9a787ef8c0fb4a8c1"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/perception_00/selection.json",
+      "bytes": 8044,
+      "sha256": "c944a29903aa31dbf767c6d48ef56624546e4a8495f463140df8e58e7614a972"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/perception_00/worker.log",
+      "bytes": 1271,
+      "sha256": "7e5c27a2fe4e19a99d5813db42c4c0cf5e06fb6467001c1cbe82a66a2a3d5c5e"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/policy_history.json",
+      "bytes": 145,
+      "sha256": "b7d53369002e0b996498f13c34978fd47b453642b4bac6486123f2ae9c0f1674"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/result.json",
+      "bytes": 17851,
+      "sha256": "ac0357c900fa2f969d00980ec9e9eea70ffa5cf7f062ba2fddce2cdc028d6688"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/run_config.json",
+      "bytes": 667,
+      "sha256": "0ba2b9d53e759f3d1cc3b04ceb16e404f6f284c608c848541683b2daf158d3eb"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/scene.json",
+      "bytes": 3477,
+      "sha256": "9643ead2df3fef850e166356d25acf9c06efc661e88bcd08e732f81b826158b3"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/scene_snapshot.usd",
+      "bytes": 14286920,
+      "sha256": "7c8a974b0d2ce8faf00a9576dd8e15ab5ac35594a6125881a6d486725ad68d0e"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/telemetry.json",
+      "bytes": 8566146,
+      "sha256": "10c68ffe8ce80aa423594372c9c8bd25f87f74ed7e06a53b65f916d0a844a647"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/videos/m1/fixed.mp4",
+      "bytes": 2824367,
+      "sha256": "e5216bf8affc6829fd49a1fdb25a1d048240bafb274c5d72ba89fd86104625e7"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/videos/m1/third.mp4",
+      "bytes": 2068500,
+      "sha256": "47104d7960888bdd1a01797716379100610701d22052b3ed25bdca066242fc68"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/videos/m1/timing.json",
+      "bytes": 170830,
+      "sha256": "c8f8083176bb1870afa1dfa80baf184b1a674bcd9556d7c8fb9ed93c3e8e4ea7"
+    },
+    {
+      "path": "outputs/m1/runs/20261122T095317Z_45c90433/videos/m1/wrist.mp4",
+      "bytes": 7315703,
+      "sha256": "cf4b6af4edc9df5ebf9a33567187d65ebcdc4f207026a6bf2ac56e949abb1e6e"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/commands.json",
+      "bytes": 11015,
+      "sha256": "915e2e6fc886e01f3fd5af2e34167812d01990228df097b5b7a8de07a8e9f8e7"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/contacts.json",
+      "bytes": 11636813,
+      "sha256": "c9000b955bf5f60ab93c3ee7657a916ecd7593ec40d3b9876a1004d0fdc3161c"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/evaluation_oracle.json",
+      "bytes": 7222,
+      "sha256": "692b3eb5c62e3d610bed6fe7aab61feb282557c230b7834455dbb92985babe57"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/final_scene_calibration.json",
+      "bytes": 578,
+      "sha256": "54cef035e52ea2578d24ff5c3b074e73c2c88e35e961a7cae3b55330c876777a"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/final_scene_depth.png",
+      "bytes": 15763,
+      "sha256": "0001c3f37a362d6acd69fb69f78bfe6f5a95feed0a315d5d34ba41dcf4821f35"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/final_scene_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "73d496497706e5e4b78a9979d5240084b6568cef36bcc8d24cdbe5c1081c35bb"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/final_scene_rgb.png",
+      "bytes": 180853,
+      "sha256": "3972e547beba716f46aa988b95c92e50b20ce3ed454964986f0f1017fe1bbb07"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/final_wrist_calibration.json",
+      "bytes": 580,
+      "sha256": "eb4600cb5deaefba40e1944e45604008cb53bcb098aff5a296eb1d1bbdca493e"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/final_wrist_depth.png",
+      "bytes": 20658,
+      "sha256": "7c16709f84cf124d3e30ec0313e89655b54da2d6fef6522fdc706792f58ec0e1"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/final_wrist_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "9128cb4e2fed96f0927d967d08313e8d0f5a7f75ffa11acc80b0732af4c40d7b"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/final_wrist_rgb.png",
+      "bytes": 132837,
+      "sha256": "df07f658ec0f6feb5eb13ef9ab832f2662aab5a5604fa465752dab561a20fa50"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/grasp_candidates_calibration.json",
+      "bytes": 578,
+      "sha256": "54cef035e52ea2578d24ff5c3b074e73c2c88e35e961a7cae3b55330c876777a"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/grasp_candidates_depth.png",
+      "bytes": 14826,
+      "sha256": "e3c896d669df79effe3784f45c23a11685f66e4baf2c47f94f575abd5144ed94"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/grasp_candidates_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "60fe44473ac7b992305e8746f585ca039bbdc6ef4be94d7eb2976600174a91fa"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/grasp_candidates_rgb.png",
+      "bytes": 190201,
+      "sha256": "33fd035eaa18a29ac26e72c5e07336646b0b0163d5fff038a83a94691fb47388"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_fixed_calibration.json",
+      "bytes": 568,
+      "sha256": "c3c962d7e4e189b5a023d2f91d4942ab8e533df0b31d5d062dd41a2607f8cfb4"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_fixed_depth.png",
+      "bytes": 17000,
+      "sha256": "e2e40fb563b625bc727a18bf897a85587983ba068c4d552cbc1fa4ccba07c0ad"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_fixed_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "d432969f19744c72b5bd7c98caac0d11e5cd9f7cb5841be303d4676a65e349bd"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_fixed_rgb.png",
+      "bytes": 243511,
+      "sha256": "fc2b96f5b4a36f88fb0db82022331f382b640cb373d47d22f9c2e2bbee4ba763"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_scene_calibration.json",
+      "bytes": 578,
+      "sha256": "54cef035e52ea2578d24ff5c3b074e73c2c88e35e961a7cae3b55330c876777a"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_scene_depth.png",
+      "bytes": 14155,
+      "sha256": "d597413eda525e25f035599592ca6dc2c869a142cc0bfe9a4cc92d90ad205f81"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_scene_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "d794de508cad4099d07085bc0f89da99535b03d83c88958148834eed44ae887a"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_scene_rgb.png",
+      "bytes": 174026,
+      "sha256": "55cf62e52eae7883c52afad5374d13d5521aecc34c5d24e8eddf659e43502938"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_wrist_calibration.json",
+      "bytes": 582,
+      "sha256": "ae7a3f1a154a3cedc7ac5e7b431f1fc80f6705d5db2eac6f765bc9b9cac38259"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_wrist_depth.png",
+      "bytes": 47476,
+      "sha256": "93848f9e9f9751fd29891eeff1e102b8e9a9f3a9f9ecdcec4e3b6ea155b6c359"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_wrist_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "8b423a6043715a73fced6047d0599fbcac9604c4cde969bd50847ee9f10292c9"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/images/initial_wrist_rgb.png",
+      "bytes": 261094,
+      "sha256": "db56f7d4b29accfcc5996ea2f38349b827eb05f94fc33ae0d569f4e61b243c04"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/perception_00/candidates.json",
+      "bytes": 20257,
+      "sha256": "f7351ec6264448c95cd2e6a9bf704a69fea8ae49ef29f19defafa2da7b07bd2c"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/perception_00/network_predictions.json",
+      "bytes": 907,
+      "sha256": "4a0d88c55cb2ccf45324c4447e177c20bc9e6943ecc488cb0b46a084a4d1e00f"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/perception_00/network_predictions.npz",
+      "bytes": 68082,
+      "sha256": "30b1d331474a7dbacc6d41f454443e76aa8f78b868eb3518aee5b89d4ab09942"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/perception_00/observation.npz",
+      "bytes": 6173833,
+      "sha256": "2c1eb7bd560c7b71e21560c167110b138e5945743d6828d9a787ef8c0fb4a8c1"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/perception_00/selection.json",
+      "bytes": 27634,
+      "sha256": "925da219077abd182019f72f162a5b199a095e1576038166c5b0af00ae3e492c"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/perception_00/worker.log",
+      "bytes": 1270,
+      "sha256": "59e6b010139ce43b5ae72dfe76caa322493aa895abe8a1e30b5c519db2f20467"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/policy_history.json",
+      "bytes": 744,
+      "sha256": "c864601c0fda5c65e052149cfd5d1af29fca556f9aa2aedc020ea0d6f1552ea3"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/result.json",
+      "bytes": 24195,
+      "sha256": "f3cebe037dbae57f9ee8f6960bf1cfeedf937e68371faa80e4af56d0247403a6"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/run_config.json",
+      "bytes": 667,
+      "sha256": "0ba2b9d53e759f3d1cc3b04ceb16e404f6f284c608c848541683b2daf158d3eb"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/scene.json",
+      "bytes": 3477,
+      "sha256": "9643ead2df3fef850e166356d25acf9c06efc661e88bcd08e732f81b826158b3"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/scene_snapshot.usd",
+      "bytes": 14286988,
+      "sha256": "bea12e1ed95613929f41eba18fc5177504a6c43f31b8f75f988e70e133e888cf"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/telemetry.json",
+      "bytes": 6290306,
+      "sha256": "d45b52657f482a4daae9b07f2d743874bbcc50f9b3de8ba934fb0654adfd8fdc"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/videos/m1/fixed.mp4",
+      "bytes": 2129955,
+      "sha256": "5d179aeb444aaf53b74cfe2d6a045d5aa7efdc406a9c9a532208a9424e1b3aff"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/videos/m1/third.mp4",
+      "bytes": 1543349,
+      "sha256": "12a622e683c0dabe56e7344f1cdea1991c3cb34d80ee728de782c1e161e87240"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/videos/m1/timing.json",
+      "bytes": 126377,
+      "sha256": "a234dc2428a801957547cbdff3c1f3fcbfe43e5b2cdd113a18cb4c7a00592703"
+    },
+    {
+      "path": "outputs/m1/runs/20261123T093925Z_15da3e12/videos/m1/wrist.mp4",
+      "bytes": 3165407,
+      "sha256": "9ba9f9078b69376af1201d59c2a019582016f6a5f5064329ce48f57284eed333"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/candidates.json",
+      "bytes": 25353,
+      "sha256": "d4b767dcd0af186d23eb47820fcd894c6ef1d38e1d1d0cef096d007e1cda40b9"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/commands.json",
+      "bytes": 6740,
+      "sha256": "3c579e525f6fde3a7def7f625f292ae01e26aa7440370e97b1177dd75f906425"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/contacts.json",
+      "bytes": 3193366,
+      "sha256": "30cd0b434a0eb1827fa5c167e0d41c9eac0c441faf3ada3312eef1222bd6a2ef"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/graspnet_result.json",
+      "bytes": 31736,
+      "sha256": "4cbeae9dafd633b3d747dec335e1e1d12f9734fbc130a95134c8fe150249fd86"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/execution_final_calibration.json",
+      "bytes": 580,
+      "sha256": "ffee3e232ea2ffe5357d1dd291d760019c5e23cd69b5358e10aaff2bfe2fb7e0"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/execution_final_depth.png",
+      "bytes": 22647,
+      "sha256": "11aba88dd8e18c7ecede65e095c2c6c2bee7ca7a128a8a78a107aaf74e5aab5e"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/execution_final_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "2869e7eda8383b0ae927c2c053d0aa3777f4f777353fb1422ca770fb8ce5d7d4"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/execution_final_rgb.png",
+      "bytes": 209928,
+      "sha256": "0684ea0b44efd5d81a345baaab1da11f4367afc47c4902daa3ba599d9214aad1"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/observed_wrist_calibration.json",
+      "bytes": 581,
+      "sha256": "49e659484e8bf542d4ba7eac6840f1bb63e6dacebec6b26ee60ae19815ae85f5"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/observed_wrist_depth.png",
+      "bytes": 43890,
+      "sha256": "34b4f4b07d3242756a2d0db01e76786eed53f27b70e40ae457dfc33b05cdf0b2"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/observed_wrist_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "efb0648ff9dffa1e49d07129dc720dc46cebd21d7163543a1cf6ece78a5343d0"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/observed_wrist_rgb.png",
+      "bytes": 250436,
+      "sha256": "36bdabedf8b044a79e2a192022c2b3aa446466d9c239e63cfbfd725d09022af6"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_grasps_calibration.json",
+      "bytes": 580,
+      "sha256": "ffee3e232ea2ffe5357d1dd291d760019c5e23cd69b5358e10aaff2bfe2fb7e0"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_grasps_depth.png",
+      "bytes": 25122,
+      "sha256": "e264b83fbe19fe93b86645710366e47eba27901eecaf438ea711def4c16536d4"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_grasps_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "1708ad85cee65bc1ad48ce571244a52aec2af4690510f04512f452a2371130cf"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_grasps_rgb.png",
+      "bytes": 211890,
+      "sha256": "55607bd08406c694fb440fa94434b790a3e0e18bcc2edd4914f8e3405b29d1b1"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_top_calibration.json",
+      "bytes": 568,
+      "sha256": "c3c962d7e4e189b5a023d2f91d4942ab8e533df0b31d5d062dd41a2607f8cfb4"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_top_depth.png",
+      "bytes": 17221,
+      "sha256": "b480569a8be0e10d8d4a8786f7d54eb588142ab3864c510074209df4367a2336"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_top_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "8eef723009f3f72d3b8e9d1c9c9fc9ac168b5316689da267602ca3a36a6796ac"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_top_rgb.png",
+      "bytes": 242977,
+      "sha256": "f45e2a4ba8b066a11aa635535cb83287f33538d51945a93991f06f2e4f3fd610"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_wrist_calibration.json",
+      "bytes": 581,
+      "sha256": "49e659484e8bf542d4ba7eac6840f1bb63e6dacebec6b26ee60ae19815ae85f5"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_wrist_depth.png",
+      "bytes": 52652,
+      "sha256": "27e3c3f3e607a8f9b19207e693084757a39207e20c204b47e6db41c547ac13e7"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_wrist_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "a4c4d2d216fb28dc4502d35cf2539a88a0a9ad41f667cb36ae93e3be65b60d4c"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/images/predicted_wrist_rgb.png",
+      "bytes": 257083,
+      "sha256": "541ce02215a368c2eeb0fc84b7b8fb09aee9f25e7d0db7084f7016cc3097496b"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/network_predictions.json",
+      "bytes": 906,
+      "sha256": "5e70279e892650e741c6afbe9a5b236dd7e648c75e75458bff7cef5b1e4822df"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/network_predictions.npz",
+      "bytes": 62795,
+      "sha256": "8566bee41c56d376bf321813d6dd104409a86b125fdf07144bed79946362a096"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/network_worker.log",
+      "bytes": 1269,
+      "sha256": "da0b974d0bc69cf697db5a76b436233cc03937ac2b03125fa1095d8b3733f023"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/observation.npz",
+      "bytes": 4542584,
+      "sha256": "594b43f31fc02f8ba96ae14dd4e29b9ea6484c43ed17b8ab524253b2ed3a11f3"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/observed_cloud_world.ply",
+      "bytes": 830110,
+      "sha256": "d5429ab65a3316e628fe0cc2ee935a407302115f05ca5c8303603bee80acd133"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/result.json",
+      "bytes": 31869,
+      "sha256": "5b6a361351570e938b451c734a5be9f77e34bc2ae35980ab7968de69e20aec5d"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/run_config.json",
+      "bytes": 688,
+      "sha256": "56803ca372c7c76c074a8015aa8a8a324570f64ea5146c58795049ba4f3f7b65"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/scene_snapshot.usd",
+      "bytes": 12605804,
+      "sha256": "650a88d93e88149c0c3b05c153e0e04da8039c9f8d0caf1ebf785014397a5594"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/selection.json",
+      "bytes": 2483,
+      "sha256": "bb4d4e64712cc9571d2c81a6ff9880f3ef4214f12196041cd9fb730e7a6fb8a5"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/telemetry.json",
+      "bytes": 4503568,
+      "sha256": "51a7e12c2447c4185efc0ae11493b93423305f86cfeb7643b36599e42b1ef765"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/videos/graspnet_6d/fixed.mp4",
+      "bytes": 1947387,
+      "sha256": "3f467a7fb898b35d3413414e164143a14374dd63342104f7753f58b93487dd8c"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/videos/graspnet_6d/third.mp4",
+      "bytes": 2113478,
+      "sha256": "b8c44f98e123f90093d50cf7c10fb5a3a862748dc467f677e9431d4cd0d8498e"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/videos/graspnet_6d/timing.json",
+      "bytes": 122614,
+      "sha256": "9a4aebe7bcb184a837bd732ce400939dff95ebee582259a6f16e79e2182cf280"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/videos/graspnet_6d/wrist.mp4",
+      "bytes": 4433663,
+      "sha256": "41e653ef2b67f1278d627a6ccc9f808192b33e77b45b9c9db0f97065980545f4"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/candidates.json",
+      "bytes": 25353,
+      "sha256": "d4b767dcd0af186d23eb47820fcd894c6ef1d38e1d1d0cef096d007e1cda40b9"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/commands.json",
+      "bytes": 10164,
+      "sha256": "f553646867a403001c65abc974bd799b6aff1368c291782b2cf7fc46c4e4af0d"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/contacts.json",
+      "bytes": 2396186,
+      "sha256": "12dee7c6c05b7772540c2b56de0698906415021323cd2b1429196ed824d4bb61"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/execution_plan.json",
+      "bytes": 4700,
+      "sha256": "714d6ae34695950372e40bc72228d0de0adf85df07a7c0864f2bdc06750802ad"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/graspnet_result.json",
+      "bytes": 40715,
+      "sha256": "2cf3a8bf89319094d1e584dcc6e0c895c7a9c579984d08b9d8d45a02ac0fe16f"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/execution_final_calibration.json",
+      "bytes": 580,
+      "sha256": "ffee3e232ea2ffe5357d1dd291d760019c5e23cd69b5358e10aaff2bfe2fb7e0"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/execution_final_depth.png",
+      "bytes": 22489,
+      "sha256": "d8da10740ae7fb1f0ae42ae2c67fba14c1adac6b5a33c61c71c896c1d3796172"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/execution_final_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "02a4be65bcc392dcca6b450b8cfda65241869e0a83767769d7dbe5f5faa97033"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/execution_final_rgb.png",
+      "bytes": 207150,
+      "sha256": "671f1c556742cc2c9534fef31ab4f84296597006ce478c16afbed73c896dd3dd"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/observed_wrist_calibration.json",
+      "bytes": 581,
+      "sha256": "49e659484e8bf542d4ba7eac6840f1bb63e6dacebec6b26ee60ae19815ae85f5"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/observed_wrist_depth.png",
+      "bytes": 43890,
+      "sha256": "34b4f4b07d3242756a2d0db01e76786eed53f27b70e40ae457dfc33b05cdf0b2"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/observed_wrist_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "efb0648ff9dffa1e49d07129dc720dc46cebd21d7163543a1cf6ece78a5343d0"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/observed_wrist_rgb.png",
+      "bytes": 249765,
+      "sha256": "8582195e6f48ebdaa27231c1cd18c04becc4f588ea7ba936c632620a43c49f81"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_grasps_calibration.json",
+      "bytes": 580,
+      "sha256": "ffee3e232ea2ffe5357d1dd291d760019c5e23cd69b5358e10aaff2bfe2fb7e0"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_grasps_depth.png",
+      "bytes": 25156,
+      "sha256": "25d0063da10a2c51732cbbfd0356873ca7886376edb2efdeefa68f4de06f6c91"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_grasps_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "9b39243e1f859daf737504aa08d35a22e510bf6a3b4830567aaa17ea3b3a2cd8"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_grasps_rgb.png",
+      "bytes": 212799,
+      "sha256": "f0250ab63bd2d795aef9e036e19b533ca73ff799ae717e3b9a914fd3d0cf56f3"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_top_calibration.json",
+      "bytes": 568,
+      "sha256": "c3c962d7e4e189b5a023d2f91d4942ab8e533df0b31d5d062dd41a2607f8cfb4"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_top_depth.png",
+      "bytes": 17239,
+      "sha256": "f47637ddf75fc9825e24c47ce2f56a8d346e5e0de478d86935b535e6df745da3"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_top_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "bdd7e18966f28b71ca7cc1bf95ee7e48fd6dd05b218261c6e35a1caa522d2e3e"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_top_rgb.png",
+      "bytes": 238918,
+      "sha256": "67eb0c36870ed5411ebbb7c8bf89ba1d5452dd7c78428081577c14c435a22531"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_wrist_calibration.json",
+      "bytes": 581,
+      "sha256": "49e659484e8bf542d4ba7eac6840f1bb63e6dacebec6b26ee60ae19815ae85f5"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_wrist_depth.png",
+      "bytes": 52744,
+      "sha256": "fc3ad0a9056148fc1f1ca353c9a3e27b1e2a24d5882bb490f1ab442bf06c9e60"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_wrist_depth_m.npy",
+      "bytes": 1228928,
+      "sha256": "4fd9e6396485640cdafc8bdca3bc84d8905264c3bd7dd56f9fc63b861de4e416"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/predicted_wrist_rgb.png",
+      "bytes": 257410,
+      "sha256": "5f9572fc1826e43ec82895d22bb3f5bb2afc6b760774c80468bf52853e387ed9"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/network_predictions.json",
+      "bytes": 906,
+      "sha256": "048f20d6937762b5e0da1be89ba0ee6c7d5c50e30ef7be997729e30ba86a487a"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/network_predictions.npz",
+      "bytes": 62795,
+      "sha256": "8566bee41c56d376bf321813d6dd104409a86b125fdf07144bed79946362a096"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/network_worker.log",
+      "bytes": 1269,
+      "sha256": "9f88e6863e579ab9a489704a294a0da647875ea6789e14d56df9f33c8e045e25"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/observation.npz",
+      "bytes": 4542172,
+      "sha256": "3162c3703ee572e46fbae7b7027224a32b9408d4032c2e1cc669be99e5129bd6"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/observed_cloud_world.ply",
+      "bytes": 830113,
+      "sha256": "59be74a8dcc36546a20d6e5af8b72885c02f45e17599f9447f651cd6cb64f926"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/result.json",
+      "bytes": 40848,
+      "sha256": "b5e1bcf5aba7232ab789ea1d5f06ea8902168cf7756da0c1db953c9806711d9f"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/run_config.json",
+      "bytes": 688,
+      "sha256": "56803ca372c7c76c074a8015aa8a8a324570f64ea5146c58795049ba4f3f7b65"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/scene_snapshot.usd",
+      "bytes": 12605785,
+      "sha256": "2405bb62784075c02efd43802207d22c653cac6eb6a40e6a5269bef014172d2b"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/selection.json",
+      "bytes": 5028,
+      "sha256": "95f0e7bbdf20e0202a4f8ace53fcb3f9343b9e86abd63f086861e5ab61ededc0"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/telemetry.json",
+      "bytes": 3151520,
+      "sha256": "f14b3d053cb7f6e56a5807eca4609483f58d6db6cae2f1cc9cf123b0bb8175af"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/videos/graspnet_6d/fixed.mp4",
+      "bytes": 1367043,
+      "sha256": "9aa89f1071282fabab46243679b5c13bf7f6cfaf0aa204ee96d9564deb4b1f37"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/videos/graspnet_6d/third.mp4",
+      "bytes": 1467060,
+      "sha256": "befd6cfa7b7e3ef5ca23559de012aa8594d97d7e9428e7ff0580617296824e33"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/videos/graspnet_6d/timing.json",
+      "bytes": 85456,
+      "sha256": "46e170a39a6d7fee31d57ab893222fe026d58b4d1435ad12a67fdb8c60f6be1c"
+    },
+    {
+      "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/videos/graspnet_6d/wrist.mp4",
+      "bytes": 2626779,
+      "sha256": "5c29be35fbff44b4d7453e5537a58c572558152e462432f85df8fddb47d3e71d"
+    }
+  ]
+}

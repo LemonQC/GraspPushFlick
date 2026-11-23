@@ -56,7 +56,8 @@ def main():
         if args.action.endswith('grasp'):
             candidate,plan,candidates=environment.infer_grasps(observation)
             costs.append(environment.last_perception_cost)
-            draw_grasps(environment.scene.stage,candidates,candidates.index(candidate) if candidate else None)
+            draw_grasps(environment.scene.stage,candidates,candidates.index(candidate) if candidate else None,
+                        execution_pose=plan['execution_pose'] if plan else None)
             environment.scene.ctrl.phase='candidate_display';environment.scene.ctrl.hold(.5)
             environment.scene.snapshot('grasp_candidates')
             if candidate is None:raise RuntimeError('NO_TARGET_GRASP_PASSED_BOUNDED_FULL_ARM_CHECK')

@@ -21,7 +21,9 @@ def demo(args,app,out):
     from scipy.spatial.transform import Rotation
     from apfg.simulation.sr5_hardware import HardwareScene,pose_matrix
     from apfg.visualization.recording import pointcloud_from_depth,write_ply
-    from apfg.perception.graspnet_candidates import ranked_candidates,observed_collision
+    from apfg.perception.graspnet_candidates import ranked_candidates
+    from apfg.primitives.grasp_motion import plan_grasp,execute_grasp_plan
+    from apfg.primitives.swept import remove_observed_robot
     from apfg.visualization.grasp_candidates import draw_grasps,information_window
     from apfg.download import sha256
     scene=HardwareScene(args,app,out);ctrl=scene.ctrl;result={'status':'NOT_RUN'};window=None
@@ -68,32 +70,26 @@ def demo(args,app,out):
         with np.load(predicted,allow_pickle=False) as predictions:raw=predictions['raw'].copy()
         candidates,rejections=ranked_candidates(raw,transform,scene.model,args.top_k)
         if not candidates:raise RuntimeError('NO_VALID_PGIA_WIDTH_MODEL_CANDIDATES')
-        selected=None;selection=[]
+        selected=None;selection=[];selected_plan=None
+        scene_world=remove_observed_robot(world[workspace],scene.model,ctrl.joints())
+        target_world=scene_world[scene_world[:,2]>.006]
         eligible=range(min(8,len(candidates))) if args.candidate_rank is None else [args.candidate_rank]
         for rank in eligible:
             if not 0<=rank<len(candidates):raise ValueError('Candidate rank out of range')
             candidate=candidates[rank]
-            observed=observed_collision(candidate,world[workspace],scene.model)
-            record={'rank':rank,'raw_index':candidate['index'],'observed_cloud_filter':observed}
-            if observed['collision']:
-                record['status']='REJECTED_OBSERVED_COLLISION';selection.append(record);continue
-            try:
-                xyz=np.array(candidate['xyz_m']);q=candidate['quat_xyzw'];axis=Rotation.from_quat(q).apply([0.,0.,1.])
-                pre=xyz-.10*axis
-                hover=pre.copy();hover[2]=max(.35,pre[2]+.20)
-                seed=scene.model.ik(hover,q,ctrl.joints())
-                seed=scene.model.ik(pre,q,seed)
-                seed=scene.model.ik(xyz,q,seed)
-                scene.model.ik(xyz+[0,0,.15],q,seed)
-                record['status']='IK_REACHABLE';selected=rank
-            except ValueError as error:record.update(status='REJECTED_IK',reason=str(error))
+            proposed,attempts=plan_grasp(scene.model,ctrl.joints(),candidate,scene_world,target_world)
+            record={'rank':rank,'raw_index':candidate['index'],'variant_attempts':attempts,
+                    'status':'CHECKED_EXECUTION_PATH' if proposed else 'REJECTED_EXECUTION_PATH'}
+            if proposed is not None:selected=rank;selected_plan=proposed
             selection.append(record)
             if selected is not None:break
         (out/'candidates.json').write_text(json.dumps(candidates,indent=2)+'\n')
         (out/'selection.json').write_text(json.dumps(selection,indent=2)+'\n')
-        draw_grasps(scene.stage,candidates,selected)
+        (out/'execution_plan.json').write_text(json.dumps(selected_plan,indent=2)+'\n')
+        draw_grasps(scene.stage,candidates,selected,execution_pose=selected_plan['execution_pose'] if selected_plan else None)
         if not args.headless:
-            window=information_window(candidates[selected] if selected is not None else None,len(candidates))
+            window=information_window(candidates[selected] if selected is not None else None,len(candidates),
+                                      selected_plan['execution_pose'] if selected_plan else None)
             from isaacsim.core.utils.viewports import set_camera_view
             set_camera_view(eye=np.array([.95,-.85,.70]),target=np.array([.4,0,.16]))
         # Record a readable close view of actual 3D pose overlays as well as
@@ -106,23 +102,15 @@ def demo(args,app,out):
             'information_mode':'RGBD_ONLY_WORKSPACE_CROP; no target GT or instance segmentation supplied to network/selection',
             'asset_id':args.asset_id or 'known_cube','raw_candidates':len(raw),'displayed_candidates':len(candidates),'rejections':rejections,
             'selected_rank':selected,'selection':selection,'checkpoint_sha256':sha256(args.checkpoint),'observation_sha256':sha256(observation),
-            'candidate_source':'actual upstream GraspNet forward pass; unchanged raw pose rotations; explicit source finger-tip/TCP mapping',
-            'candidates':candidates}
+            'candidate_source':'actual upstream GraspNet forward pass; raw predictions unchanged; separate checked parallel-jaw execution branch',
+            'candidates':candidates,'grasp_plan':selected_plan}
         if not args.preview_only:
             if selected is None:
                 result.update(status='FAILED',physical_grasp='NOT_RUN',reason='No candidate passed one observed-cloud filter and bounded IK selection')
             else:
-                chosen=candidates[selected];xyz=np.asarray(chosen['xyz_m']);quat=chosen['quat_xyzw'];axis=Rotation.from_quat(quat).apply([0.,0.,1.])
                 initial=scene.cube.get_world_pose()[0].copy()  # evaluation only
                 try:
-                    ctrl.set_opening(.08,phase='predicted_open')
-                    pre=xyz-.10*axis;hover=pre.copy();hover[2]=max(.35,pre[2]+.20)
-                    ctrl.move_tcp(hover,quat,phase='predicted_hover')
-                    ctrl.move_tcp(pre,quat,phase='predicted_pregrasp')
-                    for u in np.linspace(.2,1.,5):ctrl.move_tcp(xyz-(1-u)*.10*axis,quat,phase='predicted_approach')
-                    ctrl.set_opening(0.,phase='predicted_close')
-                    ctrl.move_tcp(xyz+[0,0,.15],quat,phase='predicted_lift')
-                    ctrl.phase='predicted_hold';ctrl.hold(1.)
+                    execute_grasp_plan(ctrl,selected_plan,prefix='predicted')
                     held=[r for r in scene.rows if r['phase']=='predicted_hold']
                     rise=min(r['object_T_world'][2][3] for r in held)-initial[2]
                     contact=sum(all(any('/ral_'+side+'_finger' in str(p) for p in r['contacts']) for side in ['left','right']) for r in held)

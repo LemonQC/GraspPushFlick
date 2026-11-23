@@ -1,6 +1,6 @@
 """Simulation-only SR5 coordinate control through physical joint drives.
 
-One URDF IK solve per Cartesian request, then speed-limited joint interpolation.
+One URDF IK solve or a checked plan joint goal, then joint interpolation.
 No state resets, attachment constraints, shadow physics or per-step preflight.
 """
 import math
@@ -41,7 +41,9 @@ class SR5Controller:
         self.phase = phase
         start = self.joints()
         n = max(6, math.ceil(1.5*np.max(np.abs(q-start))/self.speed*30),math.ceil(minimum_duration_s*30))
-        self.commands.append({'command':'move_joints','phase':phase,'goal_rad':q.tolist(),'duration_s':n/30,'speed_limit_rad_s':self.speed})
+        self.commands.append({'command':'move_joints','phase':phase,'start_rad':start.tolist(),'goal_rad':q.tolist(),
+                              'max_joint_travel_deg':float(np.degrees(np.max(np.abs(q-start)))),
+                              'duration_s':n/30,'speed_limit_rad_s':self.speed})
         for i in range(1,n+1):
             u = i/n
             self.reference[self.arm_indices] = start+(u*u*(3-2*u))*(q-start)
@@ -52,15 +54,23 @@ class SR5Controller:
             raise MotionError(f'JOINT_TRACKING_ERROR: {error:.6f}rad')
         return {'max_joint_error_rad':error}
 
-    def move_tcp(self, xyz, quat_xyzw=None, frame='world', phase='move_tcp',speed_m_s=None):
+    def move_tcp(self, xyz, quat_xyzw=None, frame='world', phase='move_tcp',speed_m_s=None,joint_goal=None):
         xyz = np.asarray(xyz, float)
         if frame not in ('world','base'):
             raise ValueError('frame must be world or base')
         goal = xyz + self.model.base if frame=='base' else xyz.copy()
         quat = Rotation.from_matrix(self.tcp()[:3,:3]).as_quat() if quat_xyzw is None else np.asarray(quat_xyzw,float)
-        solution = self.model.ik(goal, quat, self.joints())
+        if joint_goal is None:
+            solution = self.model.ik(goal, quat, self.joints())
+        else:
+            solution=np.asarray(joint_goal,float)
+            check=self.model.fk(solution)['ral_tcp']
+            if np.linalg.norm(check[:3,3]-goal)>.001 or (Rotation.from_matrix(check[:3,:3]).inv()*Rotation.from_quat(quat)).magnitude()>.01:
+                raise ValueError('Planned joint goal does not match requested TCP pose')
+        rotation_change=float(np.degrees((Rotation.from_matrix(self.tcp()[:3,:3]).inv()*Rotation.from_quat(quat)).magnitude()))
         self.commands.append({'command':'move_tcp','phase':phase,'xyz_m':goal.tolist(),'quat_xyzw':quat.tolist(),
-                              'input_frame':frame,'method':'single_URDF_IK_then_joint_ramp_no_collision_planner'})
+                              'requested_rotation_change_deg':rotation_change,'input_frame':frame,
+                              'method':'checked_grasp_plan_joint_goal' if joint_goal is not None else 'nearest_periodic_URDF_IK_then_joint_ramp_no_collision_planner'})
         if speed_m_s is not None and not .003<=speed_m_s<=.15:raise ValueError('Nominal TCP segment speed must be .003.. .15 m/s')
         minimum=0. if speed_m_s is None else 1.5*float(np.linalg.norm(self.tcp()[:3,3]-goal))/speed_m_s
         result = self.move_joints(solution, phase,minimum_duration_s=minimum)

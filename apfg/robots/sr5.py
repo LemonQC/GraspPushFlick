@@ -31,6 +31,21 @@ def origin(element):
     return t
 
 
+def nearest_revolute_equivalent(q,seed,lower,upper):
+    """Choose limit-valid 2pi representatives without changing the FK pose."""
+    q,seed,lower,upper=map(lambda a:np.asarray(a,float),(q,seed,lower,upper))
+    if not (q.shape==seed.shape==lower.shape==upper.shape) or not np.isfinite(np.r_[q,seed,lower,upper]).all():
+        raise ValueError('Finite joint vectors with matching shapes required')
+    result=q.copy()
+    for i,value in enumerate(q):
+        first=int(np.ceil((lower[i]-value)/(2*np.pi)-1e-10))
+        last=int(np.floor((upper[i]-value)/(2*np.pi)+1e-10))
+        if first>last:raise ValueError('No equivalent joint angle within source limits')
+        k=int(np.clip(np.rint((seed[i]-value)/(2*np.pi)),first,last))
+        result[i]=np.clip(value+2*np.pi*k,lower[i],upper[i])
+    return result
+
+
 class SR5Model:
     def __init__(self, snapshot=SNAPSHOT):
         self.snapshot = Path(snapshot).resolve()
@@ -89,7 +104,7 @@ class SR5Model:
         err = residual(result.x)
         if np.linalg.norm(err[:3]) > .001 or np.linalg.norm(err[3:])/.25 > .01:
             raise ValueError(f'IK_UNREACHABLE: position={np.linalg.norm(err[:3]):.6f}m orientation={np.linalg.norm(err[3:])/.25:.6f}rad')
-        return result.x
+        return nearest_revolute_equivalent(result.x,seed,self.lower,self.upper)
 
     def audit(self):
         checks, meshes = {}, []

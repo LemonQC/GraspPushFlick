@@ -7,7 +7,6 @@ import subprocess
 import time
 
 import numpy as np
-from scipy.spatial.transform import Rotation
 from scipy.spatial import cKDTree
 from scipy.sparse import coo_matrix
 from scipy.sparse.csgraph import connected_components
@@ -34,7 +33,7 @@ class M1Environment:
         self.scene=HardwareScene(args,app,out)
         self._closed=False
         self.mode=InformationMode(args.information_mode);self.spec=spec;self.out=Path(out)
-        self.history=[];self.action_index=0;self.evaluation_records=[];self._candidate_catalog={}
+        self.history=[];self.action_index=0;self.evaluation_records=[];self._candidate_catalog={};self._grasp_plans={}
         if self.scene.recorder is None:self.scene.begin('m1')
         self.scene.ctrl.phase='scene_settle';self.scene.ctrl.hold(spec['settle_s'])
         self.initial_stability=pose_stability(self.scene.rows,list(self.scene.m1_bodies))
@@ -113,8 +112,8 @@ class M1Environment:
         return optical[keep],scene_world,target,t,visible
 
     def infer_grasps(self,observation):
-        from apfg.perception.graspnet_candidates import ranked_candidates,observed_collision
-        from apfg.primitives.swept import swept_check
+        from apfg.perception.graspnet_candidates import ranked_candidates
+        from apfg.primitives.grasp_motion import plan_grasp
         inference_start=time.monotonic()
         optical,world,target,t,visible=self._measured_clouds(observation)
         directory=self.out/f'perception_{self.action_index:02d}';directory.mkdir(exist_ok=True)
@@ -141,27 +140,15 @@ class M1Environment:
             associated.append(candidate)
         visible.grasp_candidates=associated
         self._candidate_catalog={c['index']:json.dumps(c,sort_keys=True) for c in associated}
+        self._grasp_plans={};self._grasp_context=(world,target)
         (directory/'candidates.json').write_text(json.dumps(associated,indent=2)+'\n')
         selected=None;plan=None
         for candidate in associated[:8]:
-            record={'index':candidate['index']}
-            cloud_check=observed_collision(candidate,world,self.scene.model)
-            if cloud_check['collision']:
-                record.update(reason='tool_observed_cloud_or_table',detail=cloud_check);rejections.append(record);continue
-            xyz=np.asarray(candidate['xyz_m']);quat=candidate['quat_xyzw'];axis=Rotation.from_quat(quat).apply([0,0,1])
-            pre=xyz-.10*axis;hover=pre.copy();hover[2]=max(.35,pre[2]+.20)
-            lift=xyz+[0,0,.15];extract=np.asarray(self.spec['retrieval_region']['command_goal_xyz_m'])
-            goals=[hover,pre,xyz,lift,extract]
-            path=[self.scene.ctrl.joints()]
-            try:
-                for goal in goals:path.append(self.scene.model.ik(goal,quat,path[-1]))
-            except ValueError as exc:
-                rejections.append(dict(record,reason='IK',detail=str(exc)));continue
-            grasp_tcp=np.eye(4);grasp_tcp[:3,:3]=Rotation.from_quat(quat).as_matrix();grasp_tcp[:3,3]=xyz
-            swept=swept_check(self.scene.model,path,world,target,grasp_tcp,carry_from_segment=3)
-            if swept['status']!='PASS':
-                rejections.append(dict(record,reason='full_arm_swept_check',detail=swept));continue
-            selected=candidate;plan={'goals':[p.tolist() for p in goals],'swept':swept};break
+            proposed,attempts=plan_grasp(self.scene.model,self.scene.ctrl.joints(),candidate,world,target,
+                extraction_xyz_m=self.spec['retrieval_region']['command_goal_xyz_m'])
+            if proposed is None:
+                rejections.append({'index':candidate['index'],'reason':'no_checked_execution_variant','variant_attempts':attempts});continue
+            selected=candidate;plan=proposed;self._grasp_plans[candidate['index']]=plan;break
         (directory/'selection.json').write_text(json.dumps({'rejections':rejections,'selected':selected,'plan':plan},indent=2)+'\n')
         self.last_perception_cost={'operation':'GRASPNET_AND_ONCE_SWEPT_CHECK','wall_time_s':time.monotonic()-inference_start,
                                    'simulation_time_s':0.,'action_count':0}
@@ -186,24 +173,26 @@ class M1Environment:
         action=action if isinstance(action,Action) else Action(action['type'],action.get('parameters',{}))
         self.action_index+=1;start=time.monotonic();sim_start=float(self.scene.world.current_time)
         before=self.oracle_state();begin_row=len(self.scene.rows);output={};error=None
+        if action.type!=ActionType.GRASP:self._candidate_catalog={};self._grasp_plans={}
         try:
             p=dict(action.parameters)
             if action.type==ActionType.ACTIVE:output=execute_view(self.scene.ctrl,self.scene.model,**p)
             elif action.type==ActionType.PUSH:output=execute_stroke(self.scene.ctrl,**p)
             elif action.type==ActionType.FLIP:output=execute_flip(self.scene.ctrl,**p)
             elif action.type==ActionType.GRASP:
-                candidate=p['candidate'];xyz=np.asarray(candidate['xyz_m']);q=candidate['quat_xyzw'];axis=Rotation.from_quat(q).apply([0,0,1])
+                from apfg.primitives.grasp_motion import plan_grasp,execute_grasp_plan
+                candidate=p['candidate']
                 if self.mode==InformationMode.RGBD_POLICY and self._candidate_catalog.get(candidate['index'])!=json.dumps(candidate,sort_keys=True):
                     raise ValueError('RGBD_POLICY grasp must use an unchanged candidate from the actual measured GraspNet observation')
-                approach=float(p.get('approach_m',.10));pre=xyz-approach*axis;hover=pre.copy();hover[2]=max(.35,pre[2]+.20)
-                self.scene.ctrl.set_opening(.08,phase='grasp_open')
-                self.scene.ctrl.move_tcp(hover,q,phase='grasp_hover');self.scene.ctrl.move_tcp(pre,q,phase='grasp_pre')
-                for u in np.linspace(.2,1,5):self.scene.ctrl.move_tcp(xyz-(1-u)*approach*axis,q,phase='grasp_approach')
-                self.scene.ctrl.set_opening(0.,phase='grasp_close')
-                self.scene.ctrl.move_tcp(xyz+[0,0,float(p.get('lift_m',.15))],q,phase='grasp_lift')
-                self.scene.ctrl.move_tcp(p['extraction_xyz_m'],q,phase='grasp_extract')
-                self.scene.ctrl.phase='grasp_extracted_hold';self.scene.ctrl.hold(1.)
-                output={'executed_prediction_index':candidate['index']}
+                params={'approach_m':float(p.get('approach_m',.10)),'lift_m':float(p.get('lift_m',.15)),
+                        'extraction_xyz_m':np.asarray(p['extraction_xyz_m'],float).tolist()}
+                plan=self._grasp_plans.get(candidate['index'])
+                if plan is None or plan['parameters']!=params:
+                    if not hasattr(self,'_grasp_context'):raise ValueError('Measured-cloud grasp planning context required')
+                    world,target=self._grasp_context
+                    plan,attempts=plan_grasp(self.scene.model,self.scene.ctrl.joints(),candidate,world,target,**params)
+                    if plan is None:raise ValueError('Custom grasp parameters have no checked execution branch')
+                output=execute_grasp_plan(self.scene.ctrl,plan)
         except Exception as exc:error=str(exc)
         after=self.oracle_state();rows=self.scene.rows[begin_row:]
         stable=pose_stability(self.scene.rows,list(self.scene.m1_bodies))

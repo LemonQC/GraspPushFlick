@@ -1,0 +1,1145 @@
+{
+  "scope": "Controller correction and physical regression smokes; no E1/E2/E3 comparison or training",
+  "controller_revision": "parallel_jaw_execution_v1",
+  "source_robot_changed": false,
+  "source_robot_sha256": "3844cc26d5a37536ea462279889a59fc79e9f5b921917c512a93ceed19fe75f8",
+  "software_stack": {
+    "gpu": "RTX 3090",
+    "driver": "535.230.02",
+    "isaac_sim": "4.5.0 binary",
+    "isaac_lab": "v2.0.2",
+    "python": "3.10.22",
+    "torch": "2.5.1+cu118",
+    "physics": "CPU PhysX MBP TGS 480Hz",
+    "rendering": "RTX RGB-D 640x480, recorded 30fps"
+  },
+  "source_file_sha256": {
+    "apfg/robots/sr5.py": "ba555d50999bd206f0744aa616fedb06684f15a902378317ac300ef777d24bb7",
+    "apfg/primitives/sr5_control.py": "c8b4f7e0a4045674f2cf3ac81ed638dbfb2c688494b5f506eb223a6203997b5b",
+    "apfg/primitives/grasp_motion.py": "022803be0fb14c2000449568354b10e0bb6a05c7341d3a73ac5c057307a3fc8d",
+    "apfg/simulation/m1_env.py": "b28d6e056fe145f59fb53a83d9c6dc7646bb13db136dd515c544254b622b77cd",
+    "apfg/visualization/grasp_candidates.py": "ba27ab2d50edc829d2768932d170a22e6fb139016ffcce363bf2d809203273ed",
+    "scripts/run_m1.py": "b9828ce4eabb7f535153e46815e956fca40d1ab4e2b7e47e2f54fc120e0783c5",
+    "scripts/sr5_graspnet_demo.py": "abb133b7b6180ff0007e2cd986942915a2663b0ba4788b25f41f7dd13e93073e",
+    "scripts/collect_grasp_motion_evidence.py": "0342d654c115bdeda14f49305d8059d142b5a8458d06991ec6bf88e6e24559b8",
+    "tests/test_grasp_motion.py": "8be9f999a6fd9fd6bb3cfaaf07fdc7da8717be30d07ca049b6b41fea2e6a9c50"
+  },
+  "changes": [
+    "Nearest limit-valid 2pi IK representation; no changes to requested physical pose.",
+    "Separate raw GraspNet prediction and checked parallel-jaw execution pose; approach/position preserved.",
+    "Both full source tool assemblies checked independently; camera/plate never assumed symmetric.",
+    "Executed joint goals are the same goals used by the bounded path check; no per-frame collision preflight."
+  ],
+  "unit_tests": {
+    "status": "PASS",
+    "count": 33,
+    "log_sha256": "26fc85a145cc7c80095741b9ef94028180843924d5395b5bb0f17e0cb353859e"
+  },
+  "comparisons": [
+    {
+      "case": "M1 complete retrieval",
+      "same_original_prediction_values": true,
+      "before": {
+        "run_id": "20261122T095317Z_45c90433",
+        "directory": "outputs/m1/runs/20261122T095317Z_45c90433",
+        "status": "PASS",
+        "command": [
+          "scripts/run_m1.py",
+          "--headless",
+          "--family",
+          "Direct",
+          "--action",
+          "grasp"
+        ],
+        "phase": "grasp_hover",
+        "pregrasp_duration_s": 18.800000980496407,
+        "tcp_net_rotation_deg": 178.35294865182314,
+        "tcp_cumulative_rotation_deg": 194.72271395481,
+        "joint6_net_displacement_deg": -210.7034026301724,
+        "joint6_absolute_travel_deg": 210.70340263017238,
+        "selected_prediction_index": 172,
+        "selected_raw_candidate": {
+          "index": 172,
+          "raw_row": [
+            0.5842170715332031,
+            0.07904040068387985,
+            0.019999999552965164,
+            0.029999999329447746,
+            0.7432032227516174,
+            0.25250566005706787,
+            0.6195884943008423,
+            0.46264228224754333,
+            -0.8629274368286133,
+            -0.2032690942287445,
+            0.4833333194255829,
+            0.43771809339523315,
+            -0.7581502795219421,
+            0.020664362236857414,
+            -0.021459143608808517,
+            0.3441184163093567,
+            -1.0
+          ],
+          "tilt_from_world_down_deg": 87.76683631164113,
+          "xyz_m": [
+            0.416755166626983,
+            -0.022937479721589632,
+            0.14972390650891523
+          ],
+          "quat_xyzw": [
+            0.10079463990391367,
+            0.7136690664014174,
+            0.6694155014595894,
+            0.1799994184267718
+          ],
+          "opening_m": 0.07904040068387985,
+          "score": 0.5842170715332031,
+          "tcp_frame": "ral_tcp",
+          "tcp_offset_m": 0.013499999329447787,
+          "calibration_status": "SOURCE_APPROX_NOT_HARDWARE_CALIBRATED",
+          "mapping": "TCP +Z=GraspNet +X approach; TCP +X=GraspNet +Y closing axis",
+          "mapping_reference": "physical finger tip = raw GraspNet translation + predicted depth * approach",
+          "physical_tip_from_tcp_m": 0.01649999999999996,
+          "predicted_depth_m": 0.029999999329447746
+        },
+        "execution_plan": {
+          "goals": [
+            [
+              0.37756846436355307,
+              -0.11485711160120193,
+              0.3536205256632413
+            ],
+            [
+              0.37756846436355307,
+              -0.11485711160120193,
+              0.1536205256632413
+            ],
+            [
+              0.416755166626983,
+              -0.022937479721589632,
+              0.14972390650891523
+            ],
+            [
+              0.416755166626983,
+              -0.022937479721589632,
+              0.2997239065089152
+            ],
+            [
+              0.42,
+              0.4,
+              0.35
+            ]
+          ],
+          "swept": {
+            "status": "PASS",
+            "checked_samples": 35,
+            "source_collision_links": 11,
+            "scope": "source convex collision hulls, fixed table, measured RGBD scene and transported visible target cloud; unobserved geometry not certified; no per-step scans or physics preview"
+          }
+        },
+        "physical_result": {
+          "status": "PASS",
+          "hold_frames": 30,
+          "fully_extracted_contact_frames": 30,
+          "catastrophic_distractor_drop": false,
+          "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+          "final_support": {
+            "dominant_local_up_axis": 2,
+            "sign": 1,
+            "local_up_vector": [
+              0.0687637213086035,
+              -0.0074732703907357725,
+              0.9976049823760201
+            ],
+            "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+          }
+        },
+        "videos": {
+          "m1": {
+            "third": {
+              "path": "outputs/m1/runs/20261122T095317Z_45c90433/videos/m1/third.mp4",
+              "frames": 1385,
+              "duration_s": 46.166666666666664,
+              "fps": 30.0,
+              "status": "PASS"
+            },
+            "fixed": {
+              "path": "outputs/m1/runs/20261122T095317Z_45c90433/videos/m1/fixed.mp4",
+              "frames": 1385,
+              "duration_s": 46.166666666666664,
+              "fps": 30.0,
+              "status": "PASS"
+            },
+            "wrist": {
+              "path": "outputs/m1/runs/20261122T095317Z_45c90433/videos/m1/wrist.mp4",
+              "frames": 1385,
+              "duration_s": 46.166666666666664,
+              "fps": 30.0,
+              "status": "PASS"
+            }
+          }
+        }
+      },
+      "after": {
+        "run_id": "20261123T093925Z_15da3e12",
+        "directory": "outputs/m1/runs/20261123T093925Z_15da3e12",
+        "status": "PASS",
+        "command": [
+          "scripts/run_m1.py",
+          "--headless",
+          "--family",
+          "Direct",
+          "--action",
+          "grasp"
+        ],
+        "phase": "grasp_hover",
+        "pregrasp_duration_s": 6.466667003929615,
+        "tcp_net_rotation_deg": 61.12449821610502,
+        "tcp_cumulative_rotation_deg": 64.56570757284092,
+        "joint6_net_displacement_deg": -30.707996046074776,
+        "joint6_absolute_travel_deg": 30.707996046074776,
+        "selected_prediction_index": 172,
+        "selected_raw_candidate": {
+          "index": 172,
+          "raw_row": [
+            0.5842170715332031,
+            0.07904040068387985,
+            0.019999999552965164,
+            0.029999999329447746,
+            0.7432032227516174,
+            0.25250566005706787,
+            0.6195884943008423,
+            0.46264228224754333,
+            -0.8629274368286133,
+            -0.2032690942287445,
+            0.4833333194255829,
+            0.43771809339523315,
+            -0.7581502795219421,
+            0.020664362236857414,
+            -0.021459143608808517,
+            0.3441184163093567,
+            -1.0
+          ],
+          "tilt_from_world_down_deg": 87.76683631164113,
+          "xyz_m": [
+            0.416755166626983,
+            -0.022937479721589632,
+            0.14972390650891523
+          ],
+          "quat_xyzw": [
+            0.10079463990391367,
+            0.7136690664014174,
+            0.6694155014595894,
+            0.1799994184267718
+          ],
+          "opening_m": 0.07904040068387985,
+          "score": 0.5842170715332031,
+          "tcp_frame": "ral_tcp",
+          "tcp_offset_m": 0.013499999329447787,
+          "calibration_status": "SOURCE_APPROX_NOT_HARDWARE_CALIBRATED",
+          "mapping": "TCP +Z=GraspNet +X approach; TCP +X=GraspNet +Y closing axis",
+          "mapping_reference": "physical finger tip = raw GraspNet translation + predicted depth * approach",
+          "physical_tip_from_tcp_m": 0.01649999999999996,
+          "predicted_depth_m": 0.029999999329447746
+        },
+        "execution_plan": {
+          "controller_revision": "parallel_jaw_execution_v1",
+          "raw_prediction_index": 172,
+          "raw_tcp_pose": {
+            "xyz_m": [
+              0.416755166626983,
+              -0.022937479721589632,
+              0.14972390650891523
+            ],
+            "quat_xyzw": [
+              0.10079463990391367,
+              0.7136690664014174,
+              0.6694155014595894,
+              0.1799994184267718
+            ]
+          },
+          "execution_pose": {
+            "xyz_m": [
+              0.416755166626983,
+              -0.022937479721589632,
+              0.14972390650891523
+            ],
+            "quat_xyzw": [
+              0.7136690664014174,
+              -0.10079463990391363,
+              0.17999941842677183,
+              -0.6694155014595894
+            ],
+            "jaw_roll_about_approach_deg": 180,
+            "raw_prediction_index": 172,
+            "rotation_from_current_deg": 61.123436553296685,
+            "interpretation": "Explicit left/right finger exchange; full assembly rechecked"
+          },
+          "parameters": {
+            "approach_m": 0.1,
+            "lift_m": 0.15,
+            "extraction_xyz_m": [
+              0.42,
+              0.4,
+              0.35
+            ]
+          },
+          "goals": [
+            [
+              0.37756846436355307,
+              -0.11485711160120193,
+              0.3536205256632413
+            ],
+            [
+              0.37756846436355307,
+              -0.11485711160120193,
+              0.1536205256632413
+            ],
+            [
+              0.38540580481623904,
+              -0.09647318522527948,
+              0.1528412018323761
+            ],
+            [
+              0.39324314526892507,
+              -0.07808925884935701,
+              0.1520618780015109
+            ],
+            [
+              0.40108048572161104,
+              -0.05970533247343454,
+              0.15128255417064565
+            ],
+            [
+              0.408917826174297,
+              -0.04132140609751209,
+              0.15050323033978044
+            ],
+            [
+              0.416755166626983,
+              -0.022937479721589632,
+              0.14972390650891523
+            ],
+            [
+              0.416755166626983,
+              -0.022937479721589632,
+              0.2997239065089152
+            ],
+            [
+              0.42,
+              0.4,
+              0.35
+            ]
+          ],
+          "phases": [
+            "hover",
+            "pre",
+            "approach",
+            "approach",
+            "approach",
+            "approach",
+            "approach",
+            "lift",
+            "extract"
+          ],
+          "joint_path": [
+            [
+              -0.6897736191749573,
+              0.8817035555839539,
+              -1.05299973487854,
+              0.34627553820610046,
+              -1.7036864757537842,
+              0.7976849675178528
+            ],
+            [
+              -0.6757504670277642,
+              0.47673719890781907,
+              -2.2661935712521055,
+              1.3038056753494385,
+              -1.6394362324152205,
+              0.26171991216563956
+            ],
+            [
+              -0.6782221649048994,
+              0.8727729463919478,
+              -2.1904719742553054,
+              1.2934243409370316,
+              -1.5532038891449804,
+              -0.046966192988903636
+            ],
+            [
+              -0.6317661667423647,
+              0.8687941376989633,
+              -2.205106200716086,
+              1.3399518514873066,
+              -1.547245889875087,
+              -0.05642673892249463
+            ],
+            [
+              -0.5842697368207518,
+              0.8658965258297814,
+              -2.2168560272745745,
+              1.3875623683354097,
+              -1.5424881680478004,
+              -0.0644729286145755
+            ],
+            [
+              -0.535929486919162,
+              0.8640912142149556,
+              -2.2256739157195553,
+              1.4360251719711836,
+              -1.5387386429502097,
+              -0.07097472203049106
+            ],
+            [
+              -0.48696293859151296,
+              0.8633867790875625,
+              -2.231522813944184,
+              1.4850951255291784,
+              -1.535776831933055,
+              -0.0758239502055478
+            ],
+            [
+              -0.43760334485797164,
+              0.8637880411466234,
+              -2.234377664725161,
+              1.5345175630350967,
+              -1.5333596361709096,
+              -0.07893957162279847
+            ],
+            [
+              -0.4401400099882028,
+              0.5510405254748293,
+              -2.315043931596921,
+              1.5244425538811825,
+              -1.5433940634018386,
+              0.1530482407845721
+            ],
+            [
+              0.5885268267835845,
+              0.476725437643737,
+              -2.2108668943157697,
+              2.50141521580104,
+              -1.1573646181026445,
+              0.14289925936563927
+            ]
+          ],
+          "hover_max_joint_travel_deg": 69.51088655549029,
+          "total_absolute_joint_travel_deg": 451.77940711132686,
+          "swept": {
+            "status": "PASS",
+            "checked_samples": 63,
+            "source_collision_links": 11,
+            "scope": "source convex collision hulls, fixed table, measured RGBD scene and transported visible target cloud; unobserved geometry not certified; no per-step scans or physics preview"
+          },
+          "variant_attempts": [
+            {
+              "execution_pose": {
+                "xyz_m": [
+                  0.416755166626983,
+                  -0.022937479721589632,
+                  0.14972390650891523
+                ],
+                "quat_xyzw": [
+                  0.7136690664014174,
+                  -0.10079463990391363,
+                  0.17999941842677183,
+                  -0.6694155014595894
+                ],
+                "jaw_roll_about_approach_deg": 180,
+                "raw_prediction_index": 172,
+                "rotation_from_current_deg": 61.123436553296685,
+                "interpretation": "Explicit left/right finger exchange; full assembly rechecked"
+              },
+              "status": "PASS",
+              "detail": {
+                "status": "PASS",
+                "checked_samples": 63,
+                "source_collision_links": 11,
+                "scope": "source convex collision hulls, fixed table, measured RGBD scene and transported visible target cloud; unobserved geometry not certified; no per-step scans or physics preview"
+              }
+            }
+          ]
+        },
+        "physical_result": {
+          "status": "PASS",
+          "hold_frames": 30,
+          "fully_extracted_contact_frames": 30,
+          "catastrophic_distractor_drop": false,
+          "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+          "final_support": {
+            "dominant_local_up_axis": 2,
+            "sign": 1,
+            "local_up_vector": [
+              0.05342681375646768,
+              -0.02015104886089935,
+              0.9983684243813189
+            ],
+            "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+          }
+        },
+        "videos": {
+          "m1": {
+            "third": {
+              "path": "outputs/m1/runs/20261123T093925Z_15da3e12/videos/m1/third.mp4",
+              "frames": 1015,
+              "duration_s": 33.833333333333336,
+              "fps": 30.0,
+              "width": 640,
+              "height": 480,
+              "black_frames": 0,
+              "informative_frames": 1015,
+              "black_frame_fraction": 0.0,
+              "mean_pixel_value_min": 169.790771484375,
+              "mean_pixel_value_max": 185.66888427734375,
+              "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+              "status": "PASS"
+            },
+            "fixed": {
+              "path": "outputs/m1/runs/20261123T093925Z_15da3e12/videos/m1/fixed.mp4",
+              "frames": 1015,
+              "duration_s": 33.833333333333336,
+              "fps": 30.0,
+              "width": 640,
+              "height": 480,
+              "black_frames": 0,
+              "informative_frames": 1015,
+              "black_frame_fraction": 0.0,
+              "mean_pixel_value_min": 140.48500061035156,
+              "mean_pixel_value_max": 156.7902069091797,
+              "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+              "status": "PASS"
+            },
+            "wrist": {
+              "path": "outputs/m1/runs/20261123T093925Z_15da3e12/videos/m1/wrist.mp4",
+              "frames": 1015,
+              "duration_s": 33.833333333333336,
+              "fps": 30.0,
+              "width": 640,
+              "height": 480,
+              "black_frames": 0,
+              "informative_frames": 1015,
+              "black_frame_fraction": 0.0,
+              "mean_pixel_value_min": 132.4217987060547,
+              "mean_pixel_value_max": 189.6972198486328,
+              "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+              "status": "PASS"
+            }
+          }
+        }
+      }
+    },
+    {
+      "case": "Standalone GUI grasp",
+      "same_original_prediction_values": true,
+      "before": {
+        "run_id": "20261122T084930Z_e8d15d13",
+        "directory": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13",
+        "status": "PASS",
+        "command": [
+          "scripts/sr5_graspnet_demo.py",
+          "--gui",
+          "--joint-speed",
+          ".3"
+        ],
+        "phase": "predicted_hover",
+        "pregrasp_duration_s": 13.900000724941492,
+        "tcp_net_rotation_deg": 170.19967485804852,
+        "tcp_cumulative_rotation_deg": 170.8912212187727,
+        "joint6_net_displacement_deg": -154.3478532978557,
+        "joint6_absolute_travel_deg": 154.3478532978557,
+        "selected_prediction_index": 143,
+        "selected_raw_candidate": {
+          "index": 143,
+          "raw_row": [
+            0.9608229398727417,
+            0.07192476838827133,
+            0.019999999552965164,
+            0.029999999329447746,
+            -0.3117106556892395,
+            0.14596638083457947,
+            0.9388984441757202,
+            0.11383622884750366,
+            -0.975275993347168,
+            0.18941503763198853,
+            0.9433333277702332,
+            0.1659233421087265,
+            0.2873876392841339,
+            0.04994187131524086,
+            -0.027311960235238075,
+            0.3378657102584839,
+            -1.0
+          ],
+          "tilt_from_world_down_deg": 15.860192542720062,
+          "xyz_m": [
+            0.3908991666264853,
+            -0.013288901470362862,
+            0.16235860676424538
+          ],
+          "quat_xyzw": [
+            0.06262895504259883,
+            0.9884550177850644,
+            0.13246417514678818,
+            -0.03856856373370845
+          ],
+          "opening_m": 0.07192476838827133,
+          "score": 0.9608229398727417,
+          "tcp_frame": "ral_tcp",
+          "tcp_offset_m": 0.013499999329447787,
+          "calibration_status": "SOURCE_APPROX_NOT_HARDWARE_CALIBRATED",
+          "mapping": "TCP +Z=GraspNet +X approach; TCP +X=GraspNet +Y closing axis",
+          "mapping_reference": "physical finger tip = raw GraspNet translation + predicted depth * approach",
+          "physical_tip_from_tcp_m": 0.01649999999999996,
+          "predicted_depth_m": 0.029999999329447746
+        },
+        "execution_plan": null,
+        "physical_result": {
+          "minimum_sustained_lift_m": 0.14905069768428802,
+          "hold_frames": 30,
+          "bilateral_contact_frames": 30,
+          "initial_object_xyz_m": [
+            0.39920347929000854,
+            0.0034366094041615725,
+            0.08732309937477112
+          ],
+          "final_object_xyz_m": [
+            0.3876838684082031,
+            0.006047565955668688,
+            0.23638319969177246
+          ],
+          "artificial_attachment": false
+        },
+        "videos": {
+          "graspnet_6d": {
+            "third": {
+              "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/videos/graspnet_6d/third.mp4",
+              "frames": 993,
+              "duration_s": 33.1,
+              "fps": 30.0,
+              "status": "PASS"
+            },
+            "fixed": {
+              "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/videos/graspnet_6d/fixed.mp4",
+              "frames": 993,
+              "duration_s": 33.1,
+              "fps": 30.0,
+              "status": "PASS"
+            },
+            "wrist": {
+              "path": "outputs/sr5_graspnet/20261122T084930Z_e8d15d13/videos/graspnet_6d/wrist.mp4",
+              "frames": 993,
+              "duration_s": 33.1,
+              "fps": 30.0,
+              "status": "PASS"
+            }
+          }
+        }
+      },
+      "after": {
+        "run_id": "20261123T094048Z_b931a835",
+        "directory": "outputs/sr5_graspnet/20261123T094048Z_b931a835",
+        "status": "PASS",
+        "command": [
+          "scripts/sr5_graspnet_demo.py",
+          "--gui",
+          "--joint-speed",
+          ".3"
+        ],
+        "phase": "predicted_hover",
+        "pregrasp_duration_s": 3.566666852682829,
+        "tcp_net_rotation_deg": 21.75342353407944,
+        "tcp_cumulative_rotation_deg": 22.152574905448585,
+        "joint6_net_displacement_deg": 25.647192993763216,
+        "joint6_absolute_travel_deg": 25.647192993763213,
+        "selected_prediction_index": 143,
+        "selected_raw_candidate": {
+          "index": 143,
+          "raw_row": [
+            0.9608229398727417,
+            0.07192476838827133,
+            0.019999999552965164,
+            0.029999999329447746,
+            -0.3117106556892395,
+            0.14596638083457947,
+            0.9388984441757202,
+            0.11383622884750366,
+            -0.975275993347168,
+            0.18941503763198853,
+            0.9433333277702332,
+            0.1659233421087265,
+            0.2873876392841339,
+            0.04994187131524086,
+            -0.027311960235238075,
+            0.3378657102584839,
+            -1.0
+          ],
+          "tilt_from_world_down_deg": 15.860192542720062,
+          "xyz_m": [
+            0.3908991666264853,
+            -0.013288901470362862,
+            0.16235860676424538
+          ],
+          "quat_xyzw": [
+            0.06262895504259883,
+            0.9884550177850644,
+            0.13246417514678818,
+            -0.03856856373370845
+          ],
+          "opening_m": 0.07192476838827133,
+          "score": 0.9608229398727417,
+          "tcp_frame": "ral_tcp",
+          "tcp_offset_m": 0.013499999329447787,
+          "calibration_status": "SOURCE_APPROX_NOT_HARDWARE_CALIBRATED",
+          "mapping": "TCP +Z=GraspNet +X approach; TCP +X=GraspNet +Y closing axis",
+          "mapping_reference": "physical finger tip = raw GraspNet translation + predicted depth * approach",
+          "physical_tip_from_tcp_m": 0.01649999999999996,
+          "predicted_depth_m": 0.029999999329447746
+        },
+        "execution_plan": {
+          "controller_revision": "parallel_jaw_execution_v1",
+          "raw_prediction_index": 143,
+          "raw_tcp_pose": {
+            "xyz_m": [
+              0.3908991666264853,
+              -0.013288901470362862,
+              0.16235860676424538
+            ],
+            "quat_xyzw": [
+              0.06262895504259883,
+              0.9884550177850644,
+              0.13246417514678818,
+              -0.03856856373370845
+            ]
+          },
+          "execution_pose": {
+            "xyz_m": [
+              0.3908991666264853,
+              -0.013288901470362862,
+              0.16235860676424538
+            ],
+            "quat_xyzw": [
+              0.9884550177850645,
+              -0.06262895504259879,
+              -0.03856856373370845,
+              -0.1324641751467882
+            ],
+            "jaw_roll_about_approach_deg": 180,
+            "raw_prediction_index": 143,
+            "rotation_from_current_deg": 21.758592439622646,
+            "interpretation": "Explicit left/right finger exchange; full assembly rechecked"
+          },
+          "parameters": {
+            "approach_m": 0.1,
+            "lift_m": 0.15,
+            "extraction_xyz_m": null
+          },
+          "goals": [
+            [
+              0.3968646061227501,
+              -0.039958978959310554,
+              0.4585517484030854
+            ],
+            [
+              0.3968646061227501,
+              -0.039958978959310554,
+              0.25855174840308537
+            ],
+            [
+              0.3956715182234971,
+              -0.03462496346152102,
+              0.2393131200753174
+            ],
+            [
+              0.3944784303242442,
+              -0.029290947963731478,
+              0.22007449174754937
+            ],
+            [
+              0.3932853424249912,
+              -0.023956932465941938,
+              0.20083586341978138
+            ],
+            [
+              0.39209225452573826,
+              -0.0186229169681524,
+              0.18159723509201336
+            ],
+            [
+              0.3908991666264853,
+              -0.013288901470362862,
+              0.16235860676424538
+            ],
+            [
+              0.3908991666264853,
+              -0.013288901470362862,
+              0.3123586067642454
+            ]
+          ],
+          "phases": [
+            "hover",
+            "pre",
+            "approach",
+            "approach",
+            "approach",
+            "approach",
+            "approach",
+            "lift"
+          ],
+          "joint_path": [
+            [
+              -0.6857404112815857,
+              0.9047165513038635,
+              -1.004246711730957,
+              0.3178516626358032,
+              -1.7591387033462524,
+              0.8047365546226501
+            ],
+            [
+              -0.402176901977921,
+              0.27327894815810566,
+              -1.5705044144437634,
+              0.2252274835987408,
+              -1.464640516644985,
+              1.2524072133416158
+            ],
+            [
+              -0.39988413537226525,
+              0.4194554363643632,
+              -1.8834295102840837,
+              0.26439756897032496,
+              -1.0182188036999174,
+              1.1378392388848688
+            ],
+            [
+              -0.39131287938539205,
+              0.43911186158930354,
+              -1.909480596424164,
+              0.27425862174746723,
+              -0.9724979701928704,
+              1.1305165558219774
+            ],
+            [
+              -0.38255603300816454,
+              0.46062053309635487,
+              -1.9334930517171773,
+              0.28534725842773634,
+              -0.9270631616793314,
+              1.122266209623864
+            ],
+            [
+              -0.37359148647184226,
+              0.48391156719576195,
+              -1.9555246534718145,
+              0.2978287867656951,
+              -0.881944903351594,
+              1.1129352302783975
+            ],
+            [
+              -0.36439133069328566,
+              0.5089067307277135,
+              -1.975637467613082,
+              0.3119017657309118,
+              -0.8371811191864884,
+              1.1023445242323746
+            ],
+            [
+              -0.3549199758472904,
+              0.5355182975016621,
+              -1.9939014550311018,
+              0.3278066524709044,
+              -0.7928156243463333,
+              1.090281661244945
+            ],
+            [
+              -0.35988445370922284,
+              0.3369089816062025,
+              -1.860468535903838,
+              0.2578042433794031,
+              -1.1121346296434624,
+              1.2033239789417673
+            ]
+          ],
+          "hover_max_joint_travel_deg": 36.17870968610852,
+          "total_absolute_joint_travel_deg": 276.4432675614332,
+          "swept": {
+            "status": "PASS",
+            "checked_samples": 56,
+            "source_collision_links": 11,
+            "scope": "source convex collision hulls, fixed table, measured RGBD scene and transported visible target cloud; unobserved geometry not certified; no per-step scans or physics preview"
+          },
+          "variant_attempts": [
+            {
+              "execution_pose": {
+                "xyz_m": [
+                  0.3908991666264853,
+                  -0.013288901470362862,
+                  0.16235860676424538
+                ],
+                "quat_xyzw": [
+                  0.9884550177850645,
+                  -0.06262895504259879,
+                  -0.03856856373370845,
+                  -0.1324641751467882
+                ],
+                "jaw_roll_about_approach_deg": 180,
+                "raw_prediction_index": 143,
+                "rotation_from_current_deg": 21.758592439622646,
+                "interpretation": "Explicit left/right finger exchange; full assembly rechecked"
+              },
+              "status": "PASS",
+              "detail": {
+                "status": "PASS",
+                "checked_samples": 56,
+                "source_collision_links": 11,
+                "scope": "source convex collision hulls, fixed table, measured RGBD scene and transported visible target cloud; unobserved geometry not certified; no per-step scans or physics preview"
+              }
+            }
+          ]
+        },
+        "physical_result": {
+          "minimum_sustained_lift_m": 0.14925745129585266,
+          "hold_frames": 30,
+          "bilateral_contact_frames": 30,
+          "initial_object_xyz_m": [
+            0.39920347929000854,
+            0.0034366094041615725,
+            0.08732309937477112
+          ],
+          "final_object_xyz_m": [
+            0.3880719542503357,
+            0.007090892642736435,
+            0.2365829050540924
+          ],
+          "artificial_attachment": false
+        },
+        "videos": {
+          "graspnet_6d": {
+            "third": {
+              "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/videos/graspnet_6d/third.mp4",
+              "frames": 683,
+              "duration_s": 22.766666666666666,
+              "fps": 30.0,
+              "width": 640,
+              "height": 480,
+              "black_frames": 0,
+              "informative_frames": 683,
+              "black_frame_fraction": 0.0,
+              "mean_pixel_value_min": 154.75173950195312,
+              "mean_pixel_value_max": 171.09034729003906,
+              "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+              "status": "PASS"
+            },
+            "fixed": {
+              "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/videos/graspnet_6d/fixed.mp4",
+              "frames": 683,
+              "duration_s": 22.766666666666666,
+              "fps": 30.0,
+              "width": 640,
+              "height": 480,
+              "black_frames": 0,
+              "informative_frames": 683,
+              "black_frame_fraction": 0.0,
+              "mean_pixel_value_min": 142.24423217773438,
+              "mean_pixel_value_max": 145.42750549316406,
+              "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+              "status": "PASS"
+            },
+            "wrist": {
+              "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/videos/graspnet_6d/wrist.mp4",
+              "frames": 683,
+              "duration_s": 22.766666666666666,
+              "fps": 30.0,
+              "width": 640,
+              "height": 480,
+              "black_frames": 0,
+              "informative_frames": 683,
+              "black_frame_fraction": 0.0,
+              "mean_pixel_value_min": 138.16305541992188,
+              "mean_pixel_value_max": 143.1453399658203,
+              "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+              "status": "PASS"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "preview_source": {
+    "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/images/execution_final_rgb.png",
+    "sha256": "671f1c556742cc2c9534fef31ab4f84296597006ce478c16afbed73c896dd3dd"
+  },
+  "limitations": [
+    "Necessary 6-DoF orientation changes remain; zero rotation is not guaranteed.",
+    "A shorter finger-exchange variant can be rejected by geometry; no unsafe forced symmetry.",
+    "Frozen E1 v1/v2 files and historical outcomes unchanged; preregister the controller revision before formal comparisons."
+  ],
+  "playback_copies": [
+    {
+      "path": "outputs/video_playback/12a622e683c0dabe_third/preview.webm",
+      "sha256": "2975bbe39f0858d7375ffbbe49caf8164873358ed1b893e7d17b9161491d9b87",
+      "validation": {
+        "source": "outputs/m1/runs/20261123T093925Z_15da3e12/videos/m1/third.mp4",
+        "source_sha256": "12a622e683c0dabe56e7344f1cdea1991c3cb34d80ee728de782c1e161e87240",
+        "preview": "outputs/video_playback/12a622e683c0dabe_third/preview.webm",
+        "preview_sha256": "2975bbe39f0858d7375ffbbe49caf8164873358ed1b893e7d17b9161491d9b87",
+        "original_validation": {
+          "path": "outputs/m1/runs/20261123T093925Z_15da3e12/videos/m1/third.mp4",
+          "frames": 1015,
+          "duration_s": 33.833333333333336,
+          "fps": 30.0,
+          "width": 640,
+          "height": 480,
+          "black_frames": 0,
+          "informative_frames": 1015,
+          "black_frame_fraction": 0.0,
+          "mean_pixel_value_min": 169.790771484375,
+          "mean_pixel_value_max": 185.66888427734375,
+          "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+          "status": "PASS"
+        },
+        "preview_validation": {
+          "path": "outputs/video_playback/12a622e683c0dabe_third/preview.webm",
+          "frames": 1015,
+          "duration_s": 33.833333333333336,
+          "fps": 30.0,
+          "width": 640,
+          "height": 480,
+          "black_frames": 0,
+          "informative_frames": 1015,
+          "black_frame_fraction": 0.0,
+          "mean_pixel_value_min": 169.82325744628906,
+          "mean_pixel_value_max": 185.70562744140625,
+          "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+          "status": "PASS"
+        },
+        "purpose": "Playback-compatible re-encoding of original rendered frames; not a new simulation or replacement evidence",
+        "encoder": "project-local imageio-ffmpeg, libvpx VP8 / WebM; original fps and resolution"
+      }
+    },
+    {
+      "path": "outputs/video_playback/9ba9f9078b69376a_wrist/preview.webm",
+      "sha256": "f14d1f89138236290520227d44236f823b64cf273878d6d889db2d0dde5d6ea4",
+      "validation": {
+        "source": "outputs/m1/runs/20261123T093925Z_15da3e12/videos/m1/wrist.mp4",
+        "source_sha256": "9ba9f9078b69376af1201d59c2a019582016f6a5f5064329ce48f57284eed333",
+        "preview": "outputs/video_playback/9ba9f9078b69376a_wrist/preview.webm",
+        "preview_sha256": "f14d1f89138236290520227d44236f823b64cf273878d6d889db2d0dde5d6ea4",
+        "original_validation": {
+          "path": "outputs/m1/runs/20261123T093925Z_15da3e12/videos/m1/wrist.mp4",
+          "frames": 1015,
+          "duration_s": 33.833333333333336,
+          "fps": 30.0,
+          "width": 640,
+          "height": 480,
+          "black_frames": 0,
+          "informative_frames": 1015,
+          "black_frame_fraction": 0.0,
+          "mean_pixel_value_min": 132.4217987060547,
+          "mean_pixel_value_max": 189.6972198486328,
+          "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+          "status": "PASS"
+        },
+        "preview_validation": {
+          "path": "outputs/video_playback/9ba9f9078b69376a_wrist/preview.webm",
+          "frames": 1015,
+          "duration_s": 33.833333333333336,
+          "fps": 30.0,
+          "width": 640,
+          "height": 480,
+          "black_frames": 0,
+          "informative_frames": 1015,
+          "black_frame_fraction": 0.0,
+          "mean_pixel_value_min": 132.64041137695312,
+          "mean_pixel_value_max": 189.64215087890625,
+          "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+          "status": "PASS"
+        },
+        "purpose": "Playback-compatible re-encoding of original rendered frames; not a new simulation or replacement evidence",
+        "encoder": "project-local imageio-ffmpeg, libvpx VP8 / WebM; original fps and resolution"
+      }
+    },
+    {
+      "path": "outputs/video_playback/befd6cfa7b7e3ef5_third/preview.webm",
+      "sha256": "27193c8d251fa8061d2dfdd35f1396eee3d91048df33ad4f95a139353d1bb078",
+      "validation": {
+        "source": "outputs/sr5_graspnet/20261123T094048Z_b931a835/videos/graspnet_6d/third.mp4",
+        "source_sha256": "befd6cfa7b7e3ef5ca23559de012aa8594d97d7e9428e7ff0580617296824e33",
+        "preview": "outputs/video_playback/befd6cfa7b7e3ef5_third/preview.webm",
+        "preview_sha256": "27193c8d251fa8061d2dfdd35f1396eee3d91048df33ad4f95a139353d1bb078",
+        "original_validation": {
+          "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/videos/graspnet_6d/third.mp4",
+          "frames": 683,
+          "duration_s": 22.766666666666666,
+          "fps": 30.0,
+          "width": 640,
+          "height": 480,
+          "black_frames": 0,
+          "informative_frames": 683,
+          "black_frame_fraction": 0.0,
+          "mean_pixel_value_min": 154.75173950195312,
+          "mean_pixel_value_max": 171.09034729003906,
+          "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+          "status": "PASS"
+        },
+        "preview_validation": {
+          "path": "outputs/video_playback/befd6cfa7b7e3ef5_third/preview.webm",
+          "frames": 683,
+          "duration_s": 22.766666666666666,
+          "fps": 30.0,
+          "width": 640,
+          "height": 480,
+          "black_frames": 0,
+          "informative_frames": 683,
+          "black_frame_fraction": 0.0,
+          "mean_pixel_value_min": 154.82139587402344,
+          "mean_pixel_value_max": 171.1290283203125,
+          "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+          "status": "PASS"
+        },
+        "purpose": "Playback-compatible re-encoding of original rendered frames; not a new simulation or replacement evidence",
+        "encoder": "project-local imageio-ffmpeg, libvpx VP8 / WebM; original fps and resolution"
+      }
+    },
+    {
+      "path": "outputs/video_playback/5c29be35fbff44b4_wrist/preview.webm",
+      "sha256": "5fc7e2de56ca9526aa523c171ccda2377b2519cfb94280494376ba47f583a512",
+      "validation": {
+        "source": "outputs/sr5_graspnet/20261123T094048Z_b931a835/videos/graspnet_6d/wrist.mp4",
+        "source_sha256": "5c29be35fbff44b4d7453e5537a58c572558152e462432f85df8fddb47d3e71d",
+        "preview": "outputs/video_playback/5c29be35fbff44b4_wrist/preview.webm",
+        "preview_sha256": "5fc7e2de56ca9526aa523c171ccda2377b2519cfb94280494376ba47f583a512",
+        "original_validation": {
+          "path": "outputs/sr5_graspnet/20261123T094048Z_b931a835/videos/graspnet_6d/wrist.mp4",
+          "frames": 683,
+          "duration_s": 22.766666666666666,
+          "fps": 30.0,
+          "width": 640,
+          "height": 480,
+          "black_frames": 0,
+          "informative_frames": 683,
+          "black_frame_fraction": 0.0,
+          "mean_pixel_value_min": 138.16305541992188,
+          "mean_pixel_value_max": 143.1453399658203,
+          "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+          "status": "PASS"
+        },
+        "preview_validation": {
+          "path": "outputs/video_playback/5c29be35fbff44b4_wrist/preview.webm",
+          "frames": 683,
+          "duration_s": 22.766666666666666,
+          "fps": 30.0,
+          "width": 640,
+          "height": 480,
+          "black_frames": 0,
+          "informative_frames": 683,
+          "black_frame_fraction": 0.0,
+          "mean_pixel_value_min": 138.35194396972656,
+          "mean_pixel_value_max": 143.21853637695312,
+          "content_check": "Regular pixel grid on every decoded frame; dark/flat content detected, not proof of semantic motion",
+          "status": "PASS"
+        },
+        "purpose": "Playback-compatible re-encoding of original rendered frames; not a new simulation or replacement evidence",
+        "encoder": "project-local imageio-ffmpeg, libvpx VP8 / WebM; original fps and resolution"
+      }
+    }
+  ]
+}
