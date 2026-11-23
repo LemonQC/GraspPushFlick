@@ -25,6 +25,7 @@ class Recorder:
         self.times.append({'step': step, 'simulation_time_s': simulation_time, 'wall_monotonic_s': time.monotonic()})
 
     def close(self):
+        from apfg.visualization.video_validation import validate_video
         for writer in self.writers.values():
             writer.close()
         reports = {}
@@ -33,13 +34,7 @@ class Recorder:
             if not path.exists():
                 reports[name] = {'path':str(path),'frames':0,'duration_s':0,'status':'FAILED','reason':'No sensor frames captured before exit'}
                 continue
-            reader = imageio.get_reader(str(path))
-            metadata = reader.get_meta_data()
-            count = sum(1 for _ in reader)
-            reader.close()
-            duration = count / self.fps
-            reports[name] = {'path': str(path), 'frames': count, 'duration_s': duration,
-                             'fps': metadata.get('fps'), 'status': 'PASS' if count > 1 and duration > 0 else 'FAILED'}
+            reports[name] = validate_video(path,expected_frames=len(self.times))
         (self.directory/'timing.json').write_text(json.dumps({'sampling': self.times, 'videos': reports}, indent=2)+'\n')
         return reports
 

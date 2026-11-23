@@ -15,6 +15,8 @@ bash scripts/run_m1.sh --gui --family Direct --action flip --information-mode OR
 
 每次自动记录第三人称/固定/腕部视频、RGB-D与物理遥测到项目内 `outputs/m1/runs/<run_id>/`。影片仅在服务器，GitHub含真实关键帧与哈希清单。
 
+若 Ubuntu 默认视频播放器显示黑屏：当前系统 GStreamer 缺少 H.264 解码器。使用 `bash scripts/play_video.sh` 查看最新已完成场景；也可传入具体 MP4 路径。脚本使用已有项目内 FFmpeg 生成 VP8/WebM 播放副本，以 X11 窗口播放，不改系统软件或原始录像。详见 [播放诊断与验证](docs/VIDEO_PLAYBACK_ZH.md)。
+
 SR5 + PGIA-140-80-W + D435i 的装配、坐标运动与物理夹持/推动入口见 [硬件说明](docs/SR5_HARDWARE_ZH.md)，实际分项结果见 `evidence/sr5_hardware/summary.json`。真实 SR5/转接板保持源网格；PGIA/相机外形及外参为源快照近似。
 
 **真实 GraspNet 6-DoF 推理和三维抓取位姿显示**使用独立入口，见 [GraspNet 说明](docs/SR5_GRASPNET_ZH.md) 与 `evidence/sr5_graspnet/summary.json`。此前的硬件 `--test grasp` 是已知坐标夹持测试，不能当作 GraspNet 感知抓取。
