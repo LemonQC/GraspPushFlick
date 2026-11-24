@@ -1,0 +1,26 @@
+{
+  "scene_schema": "clutter_scene_v2",
+  "perception": "rgbd_temporal_association_v2",
+  "candidate_schema": "baseline_candidate_v2_noncompatible",
+  "generator": "rgbd_candidate_pool_v2",
+  "body_count": 7,
+  "max_candidates": 32,
+  "max_raw_grasps_checked": 12,
+  "max_feasible_grasps": 3,
+  "max_execution_variants_per_grasp": 2,
+  "preparation_budget": 1,
+  "grasp_attempt_budget": 1,
+  "training": "NOT_RUN; old v1 learned feature schema incompatible",
+  "scope": "Bounded development diagnostics; not formal E1 qualification",
+  "scene_generator_revision": 5,
+  "association_implementation_revision": 6,
+  "flip_modes": [
+    "side_topple",
+    "lying_edge_lift_trial",
+    "observed_overhang_pinch_reorientation"
+  ],
+  "support_policy": "Real existing YCB potted meat can under C2; actual settle/contacts; no artificial support/attachment",
+  "grasp_association": "observed_surface_and_band_v2_1",
+  "development_episode_limit": 25,
+  "flip_release_validation": "Held cloud stops moving with robot after physical jaw release; static predicted released-cloud check"
+}

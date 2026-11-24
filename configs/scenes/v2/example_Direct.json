@@ -1,0 +1,168 @@
+{
+  "schema_version": "clutter_scene_v2",
+  "generator_revision": 5,
+  "family": "Direct",
+  "seed": 2026112401,
+  "objects": [
+    {
+      "id": "target",
+      "asset_id": "ycb:004_sugar_box",
+      "role": "target",
+      "position_m": [
+        0.42049411524353086,
+        0.0005087935520491323,
+        0.09400750000000001
+      ],
+      "orientation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "usd_sha256": "f2a44a022b53e11f9a87060321d971e9da0acdbbcd443b7c2596fe04886d4c84",
+      "mass_kg": 0.10254287044841,
+      "parameter_provenance": "Existing registry; estimated physical parameters"
+    },
+    {
+      "id": "near_left",
+      "asset_id": "ycb:005_tomato_soup_can",
+      "role": "distractor",
+      "position_m": [
+        0.3366941152435309,
+        0.0005087935520491323,
+        0.0569275
+      ],
+      "orientation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "usd_sha256": "0525f1f3844f024aade7dad03f5e9adb02545804380ed0a852ba89b66919297f",
+      "mass_kg": 0.058572925661176875,
+      "parameter_provenance": "Existing registry; estimated physical parameters"
+    },
+    {
+      "id": "near_right",
+      "asset_id": "ycb:006_mustard_bottle",
+      "role": "distractor",
+      "position_m": [
+        0.5189941152435309,
+        0.0005087935520491323,
+        0.1016505
+      ],
+      "orientation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "usd_sha256": "2db14d310ab5be160bedab2e06f2ede78f219e155c8efe8cb4762c8bdcf26e09",
+      "mass_kg": 0.15484448047416974,
+      "parameter_provenance": "Existing registry; estimated physical parameters"
+    },
+    {
+      "id": "near_front",
+      "asset_id": "ycb:010_potted_meat_can",
+      "role": "distractor",
+      "position_m": [
+        0.42049411524353086,
+        -0.09064270644795087,
+        0.047771499999999995
+      ],
+      "orientation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "usd_sha256": "ebd8d4071341c78b7fec18071fd4b5728af10a88687a81ba9ed793228b733532",
+      "mass_kg": 0.06407345793462063,
+      "parameter_provenance": "Existing registry; estimated physical parameters"
+    },
+    {
+      "id": "near_back",
+      "asset_id": "ycb:007_tuna_fish_can",
+      "role": "distractor",
+      "position_m": [
+        0.42049411524353086,
+        0.10540879355204913,
+        0.022768999999999998
+      ],
+      "orientation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "usd_sha256": "0a1abd05143cabf2d2ff01740e5a9c4874eeb3a3400c756746041c5bf37a7932",
+      "mass_kg": 0.030681890756334998,
+      "parameter_provenance": "Existing registry; estimated physical parameters"
+    },
+    {
+      "id": "diagonal_left",
+      "asset_id": "ycb:013_apple",
+      "role": "distractor",
+      "position_m": [
+        0.28349411524353085,
+        0.11850879355204913,
+        0.0419445
+      ],
+      "orientation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "usd_sha256": "9ea6539bcb2a847e8a100e8c2cbe27ec54d8fe511f19afa27a170df9e7e49ec8",
+      "mass_kg": 0.050761426839489,
+      "parameter_provenance": "Existing registry; estimated physical parameters"
+    },
+    {
+      "id": "diagonal_right",
+      "asset_id": "ycb:061_foam_brick",
+      "role": "distractor",
+      "position_m": [
+        0.5654941152435309,
+        -0.12449120644795086,
+        0.0315965
+      ],
+      "orientation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "usd_sha256": "9c2139db257ded93c6cb077b23b89f05c0852626574cb17a7d3e03391e5c473f",
+      "mass_kg": 0.02619198619074,
+      "parameter_provenance": "Existing registry; estimated physical parameters"
+    }
+  ],
+  "support_pairs": [],
+  "mechanism_qualification": "UNVERIFIED; physical paired development tests required",
+  "table_z_m": 0.0,
+  "settle_s": 4.0,
+  "physics_hz": 480,
+  "recording_fps": 30,
+  "target_hint": {
+    "type": "initial_rgbd_region",
+    "world_xy_region": [
+      0.40449411524353085,
+      0.4364941152435309,
+      -0.023491206447950868,
+      0.024508793552049133
+    ],
+    "description": "Initial explicit task cue only; later identity/position from RGBD temporal association; no asset identity supplied"
+  },
+  "retrieval_region": {
+    "target_aabb_min_y_m": 0.3,
+    "command_goal_xyz_m": [
+      0.42,
+      0.4,
+      0.35
+    ],
+    "hold_s": 1.0,
+    "minimum_rise_m": 0.1
+  },
+  "scene_content_sha256": "964422a38a880212df39d238c2ee0b836833ee735ed23cae4e1e361473449abb"
+}

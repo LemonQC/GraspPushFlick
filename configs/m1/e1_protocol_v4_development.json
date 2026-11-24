@@ -1,0 +1,114 @@
+{
+  "protocol_version": "e1_v4_development_index",
+  "status": "DEVELOPMENT_ONLY_NOT_FORMAL_E1",
+  "registration_identity": "Post-run index of independently pre-execution-registered development campaigns, NOT one retrospectively preregistered comparison",
+  "formal_E1_v4": "NOT_RUN_NOT_FROZEN",
+  "old_E1_v1_v2_v3": "UNCHANGED",
+  "scene_schema": "clutter_scene_v2",
+  "scene_generator_revision": 5,
+  "perception_schema": "rgbd_temporal_association_v2",
+  "perception_revision": 6,
+  "candidate_schema": "baseline_candidate_v2_noncompatible",
+  "controller_revision": "parallel_jaw_execution_v1",
+  "controller_source_commit": "d51265bc76aab1d1cee45a16995a510d04f61a1b",
+  "baseline_checkpoint_compatibility": "INCOMPATIBLE; no old policy checkpoint loaded",
+  "training": "NOT_RUN",
+  "larger_training": "NOT_READY",
+  "actual_development_episode_limit": 25,
+  "macro_budget": {
+    "preparations": 1,
+    "grasps": 1
+  },
+  "candidate_budget": {
+    "maximum": 32,
+    "raw_grasps_checked": 12,
+    "feasible_grasps_exposed": 3,
+    "variants_per_grasp": 2,
+    "active_ring_views": 6,
+    "observable_neighbor_components": 4,
+    "neighbor_push_directions": 2
+  },
+  "success": "Unchanged M1 full-source-extent extraction beyond y=.30m, rise>.10m, bilateral real target contact sustained1s, no catastrophic distractor drop",
+  "initial_pair_tolerances": {
+    "translation_m": 0.002,
+    "rotation_rad": 0.01
+  },
+  "cost_accounting": "Actual action simulation/wall and episode total wall; planning included in total wall, not separately instrumented in these historical runs",
+  "information_boundary": "Initial explicit task ROI; actual RGBD/K/T/proprio and action history only. GT masks/poses only private evaluator. LOST/UNCERTAIN never receive oracle recovery.",
+  "publication_only_entry_hardening": [
+    "Explicit --flip-mode filter (default any unchanged).",
+    "Post-initial-view stability gate; independent replay audit of all25 old telemetry windows PASS.",
+    "Copied initializer EOF blank line normalized; Python AST unchanged."
+  ],
+  "final_source_sha256": {
+    "apfg/scenes/clutter_v2.py": "65d9ef8570f8be92001cac91ad0653673eef2ac4be398ec3ab4b3473c73336e4",
+    "apfg/simulation/clutter_hardware.py": "a00c53e23eaa7c45f45450cc0ff88a49a47d9fdafa92428f6d60c095a89b04ce",
+    "apfg/simulation/clutter_env.py": "898e41c0055f07ef98d2e0d6b18fcc55cf9e68080cff46648b6c306fea729907",
+    "apfg/perception/target_association.py": "0b8b74d7f92841871f528ee2ad95ef8107768d66dc9f0299ec8c6c22dc7a9237",
+    "apfg/baselines/candidate_generator_v2.py": "2aeded9c3e36d627d4bbaa4850f181b4b033e1343c809b00ef097a54b0ed73c0",
+    "apfg/primitives/preparation_v2.py": "421b69f123163f9dbfb7ac293d92069cd23ec54069a13348ec765b455a433ab1",
+    "apfg/primitives/pinch_reorientation.py": "540402810baac5909dd94ac0113be6c699f31458b6e708af1c86cc8ade13060f",
+    "scripts/run_clutter_v2.py": "8a09a92812b5cc72b4b78d1235267435d47577841bf15fe59d885df2c9a043a3",
+    "apfg/evaluation/clutter_v2.py": "6cb78538f748cf12fabed05e97fb3b2c2187e2e0c1326d3a963ac58b2f5ce09d",
+    "configs/scenes/v2/common.json": "5593469736c536af7c8d708c570c2ba0b8596f5f2d1c023f8e3fcb6da4e905e3"
+  },
+  "historical_registrations": [
+    {
+      "run_id": "20261124T071346Z_b9d9420f",
+      "registration": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/development_preregistration.json",
+      "registration_sha256": "156aaaaa90b01dec431d385200267f12edae02ceaac6d0f73543694ab66da877",
+      "completed": 2,
+      "planned": 2
+    },
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "registration": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/development_preregistration.json",
+      "registration_sha256": "890218b093097b8bcc9f5b16f74c9f7796b3da0bccc27ac3daee2fabf0bf0c0d",
+      "completed": 7,
+      "planned": 7
+    },
+    {
+      "run_id": "20261124T072115Z_4e894704",
+      "registration": "outputs/clutter_v2/campaigns/20261124T072115Z_4e894704/development_preregistration.json",
+      "registration_sha256": "3fec2200c31df57b97d2a1f04e1a2dd259abc37207cfa027a245f67cd5792dd0",
+      "completed": 0,
+      "planned": 2
+    },
+    {
+      "run_id": "20261124T072632Z_124bc8c8",
+      "registration": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/development_preregistration.json",
+      "registration_sha256": "607fe49a628464dc48448a32a38aa8ecfc14b8e33b9c135b975670fde4fa1001",
+      "completed": 6,
+      "planned": 6
+    },
+    {
+      "run_id": "20261124T073128Z_1355cae2",
+      "registration": "outputs/clutter_v2/campaigns/20261124T073128Z_1355cae2/development_preregistration.json",
+      "registration_sha256": "40250ed3b0f4cec3386d7e7dc0009647710100d4ccd0305cdcb1839bb66737f4",
+      "completed": 2,
+      "planned": 2
+    },
+    {
+      "run_id": "20261124T074245Z_a709c87e",
+      "registration": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/development_preregistration.json",
+      "registration_sha256": "e827644a7b605c5910b64029c3dcd142b1c3680d73486a338e2d437e54b0827c",
+      "completed": 4,
+      "planned": 4
+    },
+    {
+      "run_id": "20261124T075922Z_9e0cf087",
+      "registration": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/development_preregistration.json",
+      "registration_sha256": "58f255557223a40c14447aacbe3f34b5f3adeea913aaad72bd6b5e3c65060237",
+      "completed": 3,
+      "planned": 3
+    },
+    {
+      "run_id": "20261124T080325Z_8b3f1892",
+      "registration": "outputs/clutter_v2/campaigns/20261124T080325Z_8b3f1892/development_preregistration.json",
+      "registration_sha256": "08eef2c57143448e7ffe36265bc131047d01cd5acc1f5ed0a3d739f6e039d018",
+      "completed": 1,
+      "planned": 1
+    }
+  ],
+  "new_gate": "Single C3 Active benefit found; C1 and C2 successful preparation instances still permit Direct. Do not launch large training; redesign and prospectively freeze a formal protocol."
+}

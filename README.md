@@ -68,3 +68,15 @@ GUI 继承当前桌面的 DISPLAY/XAUTHORITY，支持原生旋转视角、相机
 ![自然形成的三维堆叠](evidence/previews/pile.jpg)
 
 [环境](docs/ENVIRONMENT_SETUP_ZH.md) · [资产](docs/ASSET_MANIFEST_ZH.md) · [复现](docs/REPRODUCIBILITY.md) · [研究范围](docs/BASELINE_SCOPE_ZH.md)
+
+### 局部密集场景与动作后目标关联 v2（2026-11-24）
+
+新增7件真实YCB局部场景、传感器时序关联、近邻移障Push、多Grasp/Active/Flip候选；保留旧E1 v3全部冻结源码和模型。实测有Active后取出、真实移障和91.6°卧倒翻转后取出，但成功Flip场景的Direct也成功，机制资格仍未齐备，不扩大训练。详见[完整开发报告](docs/CLUTTER_V2_ASSOCIATION_REPORT_ZH.md)及[真实证据](evidence/clutter_v2/summary.json)。
+
+```bash
+bash scripts/play_clutter_v2.sh --list
+bash scripts/play_clutter_v2.sh active
+bash scripts/play_clutter_v2.sh flip --run-id 20261124T075922Z_9e0cf087 --camera fixed
+```
+
+完整视频仅在服务器 `outputs/clutter_v2/`，GitHub只有关键帧/清单；v2候选schema不兼容旧基线checkpoint，未硬加载或重训。

@@ -1,0 +1,47 @@
+[
+  {
+    "path": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/episode_001/images/initial_fixed_rgb.png",
+    "sha256": "3db57545849f04668bf6597892754b3c4b1786f168d7dce24a49b5650778e0b8",
+    "label": "C1 neighbor push / BEFORE / complete chain PASS"
+  },
+  {
+    "path": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/episode_001/images/after_01_fixed_rgb.png",
+    "sha256": "28ef44c412a3d6e6737fe330aec44744818ce80449acd870e8a431917d22d30b",
+    "label": "C1 actual obstacle moved / AFTER / complete chain PASS"
+  },
+  {
+    "path": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_002/images/after_01_fixed_rgb.png",
+    "sha256": "d28f4ab6ecdcaef167a364c42bc5ffbaffe09f62d0729d86013b0b019dbfb13a",
+    "label": "C1 after contact / target reassociated / retrieval FAILED"
+  },
+  {
+    "path": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_003/images/initial_wrist_rgb.png",
+    "sha256": "1425dd6556043f4170c576b428dcc5c169fa60236a8e2d2ca09dd2508b2c75f2",
+    "label": "C3 Active / BEFORE / zero legal grasp"
+  },
+  {
+    "path": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_003/images/after_01_wrist_rgb.png",
+    "sha256": "32947530a186351828c77922b214f3b624946361e61f968beffc17d2f71f337f",
+    "label": "C3 Active / AFTER / two legal grasps, retrieval PASS"
+  },
+  {
+    "path": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_001/images/initial_fixed_rgb.png",
+    "sha256": "a57561143ce6e3740e3815706fe8fef37aa7fbdc2a7492950287ec7293264d50",
+    "label": "C2 real support / lying BEFORE / Direct also PASS"
+  },
+  {
+    "path": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_001/images/after_01_fixed_rgb.png",
+    "sha256": "39af4b41f6980f5b9dd06395ca64ec2524604fa4d03747636036de0be5b865a4",
+    "label": "C2 actual 91.6 degree reorientation / AFTER / retrieval PASS"
+  },
+  {
+    "path": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_001/images/after_02_rgb.png",
+    "sha256": "444f6c4945f117bb11825277f06b115a2a013b365c1f949f0c8b40e804edbadd",
+    "label": "C2 GraspNet complete extraction / PASS"
+  },
+  {
+    "path": "outputs/clutter_v2/campaigns/20261124T080325Z_8b3f1892/episode_000/images/after_01_fixed_rgb.png",
+    "sha256": "814ee08055748e1cb03c00c5343a8fdf8f3a543e13ec4bfeda6b3a8c6b7ea056",
+    "label": "20261124T080325Z / C2 FLIP / after_01_fixed / FAILED"
+  }
+]

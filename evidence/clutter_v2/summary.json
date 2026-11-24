@@ -1,0 +1,3509 @@
+{
+  "scope": "Finite real GUI development; no training or paper performance claim",
+  "campaigns": [
+    {
+      "run_id": "20261124T071346Z_b9d9420f",
+      "mode": "gui",
+      "planned": 2,
+      "completed": 2,
+      "source_snapshot_validation": "PASS",
+      "source_sha256": {
+        "apfg/scenes/clutter_v2.py": "1e818d696f54e497bab5288cb4a182e2e3ae1744b80c5b451cfb33114bc52db9",
+        "apfg/simulation/clutter_hardware.py": "e3878c54bd5f5a35596f4490957af9d0d7b1a8773eb9586747be9defe55a1559",
+        "apfg/simulation/clutter_env.py": "ec951e39c129085a600b9a60e175091b9f3f3dc73fb89745dada7a98178e9cb9",
+        "apfg/perception/target_association.py": "1bb1e27cfffaaa312ad5dc68d63cd13cdfa6502c8afed2c187810e222fc3647c",
+        "apfg/baselines/candidate_generator_v2.py": "79f11fbae5c301560b2f726cf9cb9066195dc5c971dae80410273d76dfc80d7a",
+        "apfg/primitives/preparation_v2.py": "ff6d69f22fb2e656c7475a9373523c8b9cbbe388e3165b45ba6b110350753ec4",
+        "apfg/evaluation/clutter_v2.py": "6cb78538f748cf12fabed05e97fb3b2c2187e2e0c1326d3a963ac58b2f5ce09d",
+        "scripts/run_clutter_v2.py": "231d0ae7ffda4ea4fc9973dafe786510ee098e199572b0de37a83b92dc3989df",
+        "configs/scenes/v2/common.json": "f5fe344c035cc1cddf0837895001993f819cc4bdbd69671402555bad1ab0ca0e"
+      },
+      "preregistration": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/development_preregistration.json",
+      "command": [
+        "/data/GraspPushFlicks/scripts/run_clutter_v2.py",
+        "--gui",
+        "--cases",
+        "Direct:INSPECT,C1:PUSH"
+      ],
+      "status": "PASS"
+    },
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "mode": "gui",
+      "planned": 7,
+      "completed": 7,
+      "source_snapshot_validation": "PASS",
+      "source_sha256": {
+        "apfg/scenes/clutter_v2.py": "1e818d696f54e497bab5288cb4a182e2e3ae1744b80c5b451cfb33114bc52db9",
+        "apfg/simulation/clutter_hardware.py": "e3878c54bd5f5a35596f4490957af9d0d7b1a8773eb9586747be9defe55a1559",
+        "apfg/simulation/clutter_env.py": "ec951e39c129085a600b9a60e175091b9f3f3dc73fb89745dada7a98178e9cb9",
+        "apfg/perception/target_association.py": "c35d66d51f994db9e2ca4ae26c7547df5ef4f7bf6f0df14ad740eb4aa5c2717a",
+        "apfg/baselines/candidate_generator_v2.py": "bb54dea149077e06f874a71308f40c85ecf60f6797f1f8caecdbb40683af157c",
+        "apfg/primitives/preparation_v2.py": "ff6d69f22fb2e656c7475a9373523c8b9cbbe388e3165b45ba6b110350753ec4",
+        "apfg/evaluation/clutter_v2.py": "6cb78538f748cf12fabed05e97fb3b2c2187e2e0c1326d3a963ac58b2f5ce09d",
+        "scripts/run_clutter_v2.py": "7dd87c4f6c7f582707f15ec6157ae6c651b542f7de9bc6df2ac9d4f98a2c301e",
+        "configs/scenes/v2/common.json": "f5fe344c035cc1cddf0837895001993f819cc4bdbd69671402555bad1ab0ca0e"
+      },
+      "preregistration": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/development_preregistration.json",
+      "command": [
+        "/data/GraspPushFlicks/scripts/run_clutter_v2.py",
+        "--gui",
+        "--cases",
+        "C2:GRASP,C2:FLIP,C3:GRASP,C3:ACTIVE,C1:GRASP,C1:PUSH,Mixed:INSPECT"
+      ],
+      "status": "PASS"
+    },
+    {
+      "run_id": "20261124T072115Z_4e894704",
+      "mode": "gui",
+      "planned": 2,
+      "completed": 0,
+      "source_snapshot_validation": "PASS",
+      "source_sha256": {
+        "apfg/scenes/clutter_v2.py": "1e818d696f54e497bab5288cb4a182e2e3ae1744b80c5b451cfb33114bc52db9",
+        "apfg/simulation/clutter_hardware.py": "e3878c54bd5f5a35596f4490957af9d0d7b1a8773eb9586747be9defe55a1559",
+        "apfg/simulation/clutter_env.py": "822c3eed8537342821e85ad32dc0e82f76f9287d7695ac7e96550a0e9f774c50",
+        "apfg/perception/target_association.py": "0845d526bdc6ea3c1597ad074184b1509e37ff0ff65b8d782f0ae77720772786",
+        "apfg/baselines/candidate_generator_v2.py": "bb54dea149077e06f874a71308f40c85ecf60f6797f1f8caecdbb40683af157c",
+        "apfg/primitives/preparation_v2.py": "ff6d69f22fb2e656c7475a9373523c8b9cbbe388e3165b45ba6b110350753ec4",
+        "apfg/evaluation/clutter_v2.py": "6cb78538f748cf12fabed05e97fb3b2c2187e2e0c1326d3a963ac58b2f5ce09d",
+        "scripts/run_clutter_v2.py": "7dd87c4f6c7f582707f15ec6157ae6c651b542f7de9bc6df2ac9d4f98a2c301e",
+        "configs/scenes/v2/common.json": "f5fe344c035cc1cddf0837895001993f819cc4bdbd69671402555bad1ab0ca0e"
+      },
+      "preregistration": "outputs/clutter_v2/campaigns/20261124T072115Z_4e894704/development_preregistration.json",
+      "command": [
+        "/data/GraspPushFlicks/scripts/run_clutter_v2.py",
+        "--gui",
+        "--cases",
+        "C2:GRASP,C2:FLIP"
+      ],
+      "status": "NOT_RUN",
+      "not_run_reason": {
+        "status": "NOT_RUN",
+        "reason": "Queued before acquiring GPU lock; canceled to apply sensor-replay-discovered identity-switch fix before any Isaac launch or episode",
+        "physics_episodes": 0
+      }
+    },
+    {
+      "run_id": "20261124T072632Z_124bc8c8",
+      "mode": "gui",
+      "planned": 6,
+      "completed": 6,
+      "source_snapshot_validation": "PASS",
+      "source_sha256": {
+        "apfg/scenes/clutter_v2.py": "20bb4e0a7b0c1c3f2e703cd0ce3e3a30cdf99acaf18bef3381c574a507ea137d",
+        "apfg/simulation/clutter_hardware.py": "7d4a0255249f8e5fcd98851971f7d3f725daa63d63dfa0bcec6e1abdcdd66ffe",
+        "apfg/simulation/clutter_env.py": "b5aaf97c0be2a4933223d9dd9703eabce03ad41b0676adc6e174a52c90fef2ec",
+        "apfg/perception/target_association.py": "9815f61d6c1f3253d230b0cbae6083041bf260969c1de12654d83f090810e919",
+        "apfg/baselines/candidate_generator_v2.py": "bb54dea149077e06f874a71308f40c85ecf60f6797f1f8caecdbb40683af157c",
+        "apfg/primitives/preparation_v2.py": "ff6d69f22fb2e656c7475a9373523c8b9cbbe388e3165b45ba6b110350753ec4",
+        "apfg/evaluation/clutter_v2.py": "6cb78538f748cf12fabed05e97fb3b2c2187e2e0c1326d3a963ac58b2f5ce09d",
+        "scripts/run_clutter_v2.py": "110fcfcfd79393e7c42f794d5efaca6ef1193f8428a7083ade9de3423f57d317",
+        "configs/scenes/v2/common.json": "f5fe344c035cc1cddf0837895001993f819cc4bdbd69671402555bad1ab0ca0e"
+      },
+      "preregistration": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/development_preregistration.json",
+      "command": [
+        "/data/GraspPushFlicks/scripts/run_clutter_v2.py",
+        "--gui",
+        "--cases",
+        "C2:GRASP,C2:FLIP,C3:GRASP,C3:ACTIVE,C1:GRASP,C1:PUSH"
+      ],
+      "status": "PASS"
+    },
+    {
+      "run_id": "20261124T073128Z_1355cae2",
+      "mode": "gui",
+      "planned": 2,
+      "completed": 2,
+      "source_snapshot_validation": "PASS",
+      "source_sha256": {
+        "apfg/scenes/clutter_v2.py": "32c9dcfc81c47a31ffca1c4195fd71bd480dc52373366370729f979e5b563ee0",
+        "apfg/simulation/clutter_hardware.py": "7d4a0255249f8e5fcd98851971f7d3f725daa63d63dfa0bcec6e1abdcdd66ffe",
+        "apfg/simulation/clutter_env.py": "b5aaf97c0be2a4933223d9dd9703eabce03ad41b0676adc6e174a52c90fef2ec",
+        "apfg/perception/target_association.py": "9815f61d6c1f3253d230b0cbae6083041bf260969c1de12654d83f090810e919",
+        "apfg/baselines/candidate_generator_v2.py": "bb54dea149077e06f874a71308f40c85ecf60f6797f1f8caecdbb40683af157c",
+        "apfg/primitives/preparation_v2.py": "ff6d69f22fb2e656c7475a9373523c8b9cbbe388e3165b45ba6b110350753ec4",
+        "apfg/evaluation/clutter_v2.py": "6cb78538f748cf12fabed05e97fb3b2c2187e2e0c1326d3a963ac58b2f5ce09d",
+        "scripts/run_clutter_v2.py": "6db42ce49ce73ac00824146a823340e24aec1909168ab8801901af40567d8eba",
+        "configs/scenes/v2/common.json": "f5fe344c035cc1cddf0837895001993f819cc4bdbd69671402555bad1ab0ca0e"
+      },
+      "preregistration": "outputs/clutter_v2/campaigns/20261124T073128Z_1355cae2/development_preregistration.json",
+      "command": [
+        "/data/GraspPushFlicks/scripts/run_clutter_v2.py",
+        "--gui",
+        "--cases",
+        "C2:GRASP,C2:FLIP"
+      ],
+      "status": "PASS"
+    },
+    {
+      "run_id": "20261124T074245Z_a709c87e",
+      "mode": "gui",
+      "planned": 4,
+      "completed": 4,
+      "source_snapshot_validation": "PASS",
+      "source_sha256": {
+        "apfg/scenes/clutter_v2.py": "9fca29a76bd172f1550447369cc7e6fa1f3c544e7a188ce51fefcd218d929a40",
+        "apfg/simulation/clutter_hardware.py": "7d4a0255249f8e5fcd98851971f7d3f725daa63d63dfa0bcec6e1abdcdd66ffe",
+        "apfg/simulation/clutter_env.py": "6f122a320f96b90a0aa5678567197559e9115c0a0413d6f188ee4c3d61b8ab4f",
+        "apfg/perception/target_association.py": "df412d054a8088339023c315964436bdc69d409761fee1aeedbfc7851f57bc3d",
+        "apfg/baselines/candidate_generator_v2.py": "2aeded9c3e36d627d4bbaa4850f181b4b033e1343c809b00ef097a54b0ed73c0",
+        "apfg/primitives/preparation_v2.py": "421b69f123163f9dbfb7ac293d92069cd23ec54069a13348ec765b455a433ab1",
+        "apfg/primitives/pinch_reorientation.py": "af92acefc59b329e2097d7a2787b12e2c77bb1cc2d9cc0d5f834e89ab098c824",
+        "apfg/evaluation/clutter_v2.py": "6cb78538f748cf12fabed05e97fb3b2c2187e2e0c1326d3a963ac58b2f5ce09d",
+        "scripts/run_clutter_v2.py": "e6b380cd0cf0f5dda41dfd25f695c96f0e8792b09e2735579a5c02cdec62f1be",
+        "configs/scenes/v2/common.json": "181805ad37c5500d8ac63733c050f8cc26c9d9269e4d80284e5d90fe5d3fa5dc"
+      },
+      "preregistration": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/development_preregistration.json",
+      "command": [
+        "/data/GraspPushFlicks/scripts/run_clutter_v2.py",
+        "--gui",
+        "--cases",
+        "C2:GRASP,C2:FLIP,C1:PUSH,C3:ACTIVE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "run_id": "20261124T075922Z_9e0cf087",
+      "mode": "gui",
+      "planned": 3,
+      "completed": 3,
+      "source_snapshot_validation": "PASS",
+      "source_sha256": {
+        "apfg/scenes/clutter_v2.py": "65d9ef8570f8be92001cac91ad0653673eef2ac4be398ec3ab4b3473c73336e4",
+        "apfg/simulation/clutter_hardware.py": "7d4a0255249f8e5fcd98851971f7d3f725daa63d63dfa0bcec6e1abdcdd66ffe",
+        "apfg/simulation/clutter_env.py": "898e41c0055f07ef98d2e0d6b18fcc55cf9e68080cff46648b6c306fea729907",
+        "apfg/perception/target_association.py": "0b8b74d7f92841871f528ee2ad95ef8107768d66dc9f0299ec8c6c22dc7a9237",
+        "apfg/baselines/candidate_generator_v2.py": "2aeded9c3e36d627d4bbaa4850f181b4b033e1343c809b00ef097a54b0ed73c0",
+        "apfg/primitives/preparation_v2.py": "421b69f123163f9dbfb7ac293d92069cd23ec54069a13348ec765b455a433ab1",
+        "apfg/primitives/pinch_reorientation.py": "69c4b59c500f018ec006a6cfa05b5390e51d0081cb5a6bab0ace9c7858a89448",
+        "apfg/evaluation/clutter_v2.py": "6cb78538f748cf12fabed05e97fb3b2c2187e2e0c1326d3a963ac58b2f5ce09d",
+        "scripts/run_clutter_v2.py": "e6b380cd0cf0f5dda41dfd25f695c96f0e8792b09e2735579a5c02cdec62f1be",
+        "configs/scenes/v2/common.json": "66bfe2cf7687cf0a1f489befa54c785037a226c7cd361caf81c9e9840daeb3ac"
+      },
+      "preregistration": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/development_preregistration.json",
+      "command": [
+        "/data/GraspPushFlicks/scripts/run_clutter_v2.py",
+        "--gui",
+        "--cases",
+        "C2:GRASP,C2:FLIP,C3:ACTIVE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "run_id": "20261124T080325Z_8b3f1892",
+      "mode": "gui",
+      "planned": 1,
+      "completed": 1,
+      "source_snapshot_validation": "PASS",
+      "source_sha256": {
+        "apfg/scenes/clutter_v2.py": "65d9ef8570f8be92001cac91ad0653673eef2ac4be398ec3ab4b3473c73336e4",
+        "apfg/simulation/clutter_hardware.py": "7d4a0255249f8e5fcd98851971f7d3f725daa63d63dfa0bcec6e1abdcdd66ffe",
+        "apfg/simulation/clutter_env.py": "898e41c0055f07ef98d2e0d6b18fcc55cf9e68080cff46648b6c306fea729907",
+        "apfg/perception/target_association.py": "0b8b74d7f92841871f528ee2ad95ef8107768d66dc9f0299ec8c6c22dc7a9237",
+        "apfg/baselines/candidate_generator_v2.py": "2aeded9c3e36d627d4bbaa4850f181b4b033e1343c809b00ef097a54b0ed73c0",
+        "apfg/primitives/preparation_v2.py": "421b69f123163f9dbfb7ac293d92069cd23ec54069a13348ec765b455a433ab1",
+        "apfg/primitives/pinch_reorientation.py": "540402810baac5909dd94ac0113be6c699f31458b6e708af1c86cc8ade13060f",
+        "apfg/evaluation/clutter_v2.py": "6cb78538f748cf12fabed05e97fb3b2c2187e2e0c1326d3a963ac58b2f5ce09d",
+        "scripts/run_clutter_v2.py": "e6b380cd0cf0f5dda41dfd25f695c96f0e8792b09e2735579a5c02cdec62f1be",
+        "configs/scenes/v2/common.json": "5593469736c536af7c8d708c570c2ba0b8596f5f2d1c023f8e3fcb6da4e905e3"
+      },
+      "preregistration": "outputs/clutter_v2/campaigns/20261124T080325Z_8b3f1892/development_preregistration.json",
+      "command": [
+        "/data/GraspPushFlicks/scripts/run_clutter_v2.py",
+        "--gui",
+        "--cases",
+        "C2:FLIP"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "actual_episode_attempts": 25,
+  "recordings_pass": 25,
+  "retrieval_pass": 10,
+  "episodes": [
+    {
+      "run_id": "20261124T071346Z_b9d9420f",
+      "episode": 0,
+      "family": "Direct",
+      "requested": "INSPECT",
+      "seed": 2026112401,
+      "scene_revision": 1,
+      "scene_sha256": "6e7b38e67b69c4c947d1e1105ead062728c3055a14b50408a28d038854828792",
+      "status": "PASS",
+      "retrieval": "NOT_RUN",
+      "failure_reason": null,
+      "wall_s": 56.348176907980815,
+      "initial_stability": "PASS",
+      "association_revision": null,
+      "association_before": "TRACKED",
+      "association_after": null,
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 2
+      },
+      "candidates_after": null,
+      "perception_errors_before": [],
+      "perception_errors_after": null,
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 963,
+        "after_fused_gt_visible_voxels": 963,
+        "novel_visible_voxels": 0,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 681,
+            "predicted_pixels": 608,
+            "precision": 1.0,
+            "recall": 0.8928046989720999,
+            "intersection_pixels": 608
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 10224,
+            "predicted_pixels": 7455,
+            "precision": 1.0,
+            "recall": 0.7291666666666666,
+            "intersection_pixels": 7455
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 681,
+            "predicted_pixels": 608,
+            "precision": 1.0,
+            "recall": 0.8928046989720999,
+            "intersection_pixels": 608
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 10224,
+            "predicted_pixels": 7455,
+            "precision": 1.0,
+            "recall": 0.7291666666666666,
+            "intersection_pixels": 7455
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "ASSOCIATED",
+        "density_neighbors_under_4cm": 4,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [],
+      "path": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/episode_000",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.023486302748495058,
+            "center_distance_m": 0.09070273451193146
+          },
+          "near_right": {
+            "aabb_gap_m": 0.025122494688584796,
+            "center_distance_m": 0.09969654123181591
+          },
+          "near_front": {
+            "aabb_gap_m": 0.013962715110324722,
+            "center_distance_m": 0.10499459854392994
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008104202255662461,
+            "center_distance_m": 0.12357765060271274
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07652334246196181,
+            "center_distance_m": 0.1851964559868974
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.10140861528210737,
+            "center_distance_m": 0.20397312927821412
+          }
+        },
+        "neighbors_gap_under_4cm": 4,
+        "neighbors_gap_under_10cm": 5
+      }
+    },
+    {
+      "run_id": "20261124T071346Z_b9d9420f",
+      "episode": 1,
+      "family": "C1",
+      "requested": "PUSH",
+      "seed": 2026112401,
+      "scene_revision": 1,
+      "scene_sha256": "ef146ab27fd499411e2b2a4250040ff3b9069efc7efd50b8079e0176f3efcf11",
+      "status": "PASS",
+      "retrieval": "PASS",
+      "failure_reason": null,
+      "wall_s": 170.61393342301017,
+      "initial_stability": "PASS",
+      "association_revision": null,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 2
+      },
+      "candidates_after": {
+        "GRASP": 3,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 963,
+        "after_fused_gt_visible_voxels": 322,
+        "novel_visible_voxels": 322,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 678,
+            "predicted_pixels": 606,
+            "precision": 1.0,
+            "recall": 0.8938053097345132,
+            "intersection_pixels": 606
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 10224,
+            "predicted_pixels": 7483,
+            "precision": 1.0,
+            "recall": 0.7319053208137715,
+            "intersection_pixels": 7483
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 5,
+            "predicted_pixels": 529,
+            "precision": 0.0,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 59924,
+            "predicted_pixels": 4829,
+            "precision": 0.0,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "WRONG_TARGET",
+        "density_neighbors_under_4cm": 4,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "PUSH",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 55.358831667981576,
+            "simulation_s": 28.700001496821642
+          },
+          "push": {
+            "evaluated_subject": "near_right",
+            "subject_contact": true,
+            "displacement_m": [
+              0.03975623846054077,
+              0.12207662028959021,
+              -0.06136160343885422
+            ],
+            "status": "PASS"
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.1422972455617022,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        },
+        {
+          "operation": "GRASP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 44.91820302099222,
+            "simulation_s": 23.03333453461528
+          },
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                0.002796756115451047,
+                -0.02429039066492383,
+                0.9997010328476089
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.08317109183174629,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/episode_001",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.008494987739082083,
+            "center_distance_m": 0.07721389274876327
+          },
+          "near_right": {
+            "aabb_gap_m": 0.010126436148892581,
+            "center_distance_m": 0.08476478820925107
+          },
+          "near_front": {
+            "aabb_gap_m": 0.013920073699944094,
+            "center_distance_m": 0.10495462372582905
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008150777822639697,
+            "center_distance_m": 0.12361456660308236
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07654656730440143,
+            "center_distance_m": 0.18522610490092717
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.10139516753137867,
+            "center_distance_m": 0.20394304011984452
+          }
+        },
+        "neighbors_gap_under_4cm": 4,
+        "neighbors_gap_under_10cm": 5
+      }
+    },
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "episode": 0,
+      "family": "C2",
+      "requested": "GRASP",
+      "seed": 2026112401,
+      "scene_revision": 1,
+      "scene_sha256": "95123753f2c17daee0495495e671b356026b8b5b9e092011c5d4cdac9d76394c",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_GRASP",
+      "wall_s": 29.54865399101982,
+      "initial_stability": "PASS",
+      "association_revision": 2,
+      "association_before": "UNCERTAIN",
+      "association_after": null,
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 0
+      },
+      "candidates_after": null,
+      "perception_errors_before": [
+        "TARGET_UNCERTAIN"
+      ],
+      "perception_errors_after": null,
+      "observation_evaluation": {},
+      "recording_status": "PASS",
+      "actions": [],
+      "path": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_000",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.02508358607562705,
+            "center_distance_m": 0.1516826085860293
+          },
+          "near_right": {
+            "aabb_gap_m": 0.021882532414322253,
+            "center_distance_m": 0.17665140249357475
+          },
+          "near_front": {
+            "aabb_gap_m": 0.012029701981486694,
+            "center_distance_m": 0.0926454373324175
+          },
+          "near_back": {
+            "aabb_gap_m": 0.014748160489169354,
+            "center_distance_m": 0.10584546977994401
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.032408727835742494,
+            "center_distance_m": 0.1820231824027431
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.04584120337783119,
+            "center_distance_m": 0.1896584070174256
+          }
+        },
+        "neighbors_gap_under_4cm": 5,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "episode": 1,
+      "family": "C2",
+      "requested": "FLIP",
+      "seed": 2026112401,
+      "scene_revision": 1,
+      "scene_sha256": "95123753f2c17daee0495495e671b356026b8b5b9e092011c5d4cdac9d76394c",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_FLIP",
+      "wall_s": 29.1123248829972,
+      "initial_stability": "PASS",
+      "association_revision": 2,
+      "association_before": "UNCERTAIN",
+      "association_after": null,
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 0
+      },
+      "candidates_after": null,
+      "perception_errors_before": [
+        "TARGET_UNCERTAIN"
+      ],
+      "perception_errors_after": null,
+      "observation_evaluation": {},
+      "recording_status": "PASS",
+      "actions": [],
+      "path": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_001",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.02508358607562705,
+            "center_distance_m": 0.1516826085860293
+          },
+          "near_right": {
+            "aabb_gap_m": 0.021882532414322253,
+            "center_distance_m": 0.17665140249357475
+          },
+          "near_front": {
+            "aabb_gap_m": 0.012029701981486694,
+            "center_distance_m": 0.0926454373324175
+          },
+          "near_back": {
+            "aabb_gap_m": 0.014748160489169354,
+            "center_distance_m": 0.10584546977994401
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.032408727835742494,
+            "center_distance_m": 0.1820231824027431
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.04584120337783119,
+            "center_distance_m": 0.1896584070174256
+          }
+        },
+        "neighbors_gap_under_4cm": 5,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "episode": 2,
+      "family": "C3",
+      "requested": "GRASP",
+      "seed": 2026112401,
+      "scene_revision": 1,
+      "scene_sha256": "57e747331e8d2e19ac4a5db71892abc988473cfea9953519a25cf4cf26905823",
+      "status": "PASS",
+      "retrieval": "PASS",
+      "failure_reason": null,
+      "wall_s": 103.68401190399891,
+      "initial_stability": "PASS",
+      "association_revision": 2,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 0,
+        "FLIP": 2
+      },
+      "candidates_after": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 1055,
+        "after_fused_gt_visible_voxels": 329,
+        "novel_visible_voxels": 329,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 681,
+            "predicted_pixels": 680,
+            "precision": 1.0,
+            "recall": 0.9985315712187959,
+            "intersection_pixels": 680
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 11084,
+            "predicted_pixels": 10975,
+            "precision": 1.0,
+            "recall": 0.9901660050523277,
+            "intersection_pixels": 10975
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 11,
+            "predicted_pixels": 452,
+            "precision": 0.0,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 34216,
+            "predicted_pixels": 0,
+            "precision": null,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "WRONG_TARGET",
+        "density_neighbors_under_4cm": 3,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "GRASP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 35.407494993996806,
+            "simulation_s": 18.86666765064001
+          },
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                -0.10343744613846824,
+                -0.02668800604127046,
+                0.9942778510405897
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_002",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.023486302748495058,
+            "center_distance_m": 0.09070273451193146
+          },
+          "near_right": {
+            "aabb_gap_m": 0.025122494688584796,
+            "center_distance_m": 0.09969654123181591
+          },
+          "near_front": {
+            "aabb_gap_m": 0.04118780460444033,
+            "center_distance_m": 0.2299136140942349
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008104202255662461,
+            "center_distance_m": 0.12357765060271274
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07652334246196181,
+            "center_distance_m": 0.1851964559868974
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.09057646702125399,
+            "center_distance_m": 0.19616783155243112
+          }
+        },
+        "neighbors_gap_under_4cm": 3,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "episode": 3,
+      "family": "C3",
+      "requested": "ACTIVE",
+      "seed": 2026112401,
+      "scene_revision": 1,
+      "scene_sha256": "57e747331e8d2e19ac4a5db71892abc988473cfea9953519a25cf4cf26905823",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_GRASP_AFTER_ACTIVE",
+      "wall_s": 84.48098169796867,
+      "initial_stability": "PASS",
+      "association_revision": 2,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 0,
+        "FLIP": 2
+      },
+      "candidates_after": {
+        "GRASP": 0,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 1055,
+        "after_fused_gt_visible_voxels": 719,
+        "novel_visible_voxels": 325,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 681,
+            "predicted_pixels": 680,
+            "precision": 1.0,
+            "recall": 0.9985315712187959,
+            "intersection_pixels": 680
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 11084,
+            "predicted_pixels": 10972,
+            "precision": 1.0,
+            "recall": 0.9898953446409239,
+            "intersection_pixels": 10972
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 681,
+            "predicted_pixels": 693,
+            "precision": 0.0,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 8242,
+            "predicted_pixels": 9977,
+            "precision": 0.0,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "WRONG_TARGET",
+        "density_neighbors_under_4cm": 3,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "ACTIVE",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 10.952016980969347,
+            "simulation_s": 5.833333637565374
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_003",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.023486302748495058,
+            "center_distance_m": 0.09070273451193146
+          },
+          "near_right": {
+            "aabb_gap_m": 0.025122494688584796,
+            "center_distance_m": 0.09969654123181591
+          },
+          "near_front": {
+            "aabb_gap_m": 0.04118780460444033,
+            "center_distance_m": 0.2299136140942349
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008104202255662461,
+            "center_distance_m": 0.12357765060271274
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07652334246196181,
+            "center_distance_m": 0.1851964559868974
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.09057646702125399,
+            "center_distance_m": 0.19616783155243112
+          }
+        },
+        "neighbors_gap_under_4cm": 3,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "episode": 4,
+      "family": "C1",
+      "requested": "GRASP",
+      "seed": 2026112401,
+      "scene_revision": 1,
+      "scene_sha256": "ef146ab27fd499411e2b2a4250040ff3b9069efc7efd50b8079e0176f3efcf11",
+      "status": "PASS",
+      "retrieval": "PASS",
+      "failure_reason": null,
+      "wall_s": 113.89899011101807,
+      "initial_stability": "PASS",
+      "association_revision": 2,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 2
+      },
+      "candidates_after": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 5,
+        "FLIP": 2
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 963,
+        "after_fused_gt_visible_voxels": 353,
+        "novel_visible_voxels": 353,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 678,
+            "predicted_pixels": 668,
+            "precision": 1.0,
+            "recall": 0.9852507374631269,
+            "intersection_pixels": 668
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 10224,
+            "predicted_pixels": 10187,
+            "precision": 1.0,
+            "recall": 0.9963810641627543,
+            "intersection_pixels": 10187
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 28,
+            "predicted_pixels": 648,
+            "precision": 0.0,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 18908,
+            "predicted_pixels": 0,
+            "precision": null,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "WRONG_TARGET",
+        "density_neighbors_under_4cm": 4,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "GRASP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 36.199276602012105,
+            "simulation_s": 18.766667645424604
+          },
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                -0.09656925039075412,
+                -0.011151394773337476,
+                0.9952637973289177
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.01914826419310188,
+            "near_right": 0.016845552609985277,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_004",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.008494987739082083,
+            "center_distance_m": 0.07721389274876327
+          },
+          "near_right": {
+            "aabb_gap_m": 0.010126436148892581,
+            "center_distance_m": 0.08476478820925107
+          },
+          "near_front": {
+            "aabb_gap_m": 0.013920073699944094,
+            "center_distance_m": 0.10495462372582905
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008150777822639697,
+            "center_distance_m": 0.12361456660308236
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07654656730440143,
+            "center_distance_m": 0.18522610490092717
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.10139516753137867,
+            "center_distance_m": 0.20394304011984452
+          }
+        },
+        "neighbors_gap_under_4cm": 4,
+        "neighbors_gap_under_10cm": 5
+      }
+    },
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "episode": 5,
+      "family": "C1",
+      "requested": "PUSH",
+      "seed": 2026112401,
+      "scene_revision": 1,
+      "scene_sha256": "ef146ab27fd499411e2b2a4250040ff3b9069efc7efd50b8079e0176f3efcf11",
+      "status": "PASS",
+      "retrieval": "PASS",
+      "failure_reason": null,
+      "wall_s": 182.85490332200425,
+      "initial_stability": "PASS",
+      "association_revision": 2,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 2
+      },
+      "candidates_after": {
+        "GRASP": 3,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 963,
+        "after_fused_gt_visible_voxels": 758,
+        "novel_visible_voxels": 138,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 678,
+            "predicted_pixels": 668,
+            "precision": 1.0,
+            "recall": 0.9852507374631269,
+            "intersection_pixels": 668
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 10224,
+            "predicted_pixels": 10192,
+            "precision": 1.0,
+            "recall": 0.9968701095461658,
+            "intersection_pixels": 10192
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 598,
+            "predicted_pixels": 597,
+            "precision": 1.0,
+            "recall": 0.9983277591973244,
+            "intersection_pixels": 597
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 33197,
+            "predicted_pixels": 32963,
+            "precision": 1.0,
+            "recall": 0.9929511702864716,
+            "intersection_pixels": 32963
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "ASSOCIATED",
+        "density_neighbors_under_4cm": 4,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "PUSH",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 56.68713014398236,
+            "simulation_s": 29.066668182611465
+          },
+          "push": {
+            "evaluated_subject": "near_right",
+            "subject_contact": true,
+            "displacement_m": [
+              0.02620995044708252,
+              0.12928104860475287,
+              -0.06136127561330795
+            ],
+            "status": "PASS"
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.14548455992192208,
+            "near_front": 0.0,
+            "near_back": 0.002475006246921066,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        },
+        {
+          "operation": "GRASP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 47.93066530994838,
+            "simulation_s": 24.30000126734376
+          },
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                -0.023357058411086408,
+                -0.01247445706902161,
+                0.9996493563961386
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_005",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.008494987739082083,
+            "center_distance_m": 0.07721389274876327
+          },
+          "near_right": {
+            "aabb_gap_m": 0.010126436148892581,
+            "center_distance_m": 0.08476478820925107
+          },
+          "near_front": {
+            "aabb_gap_m": 0.013920073699944094,
+            "center_distance_m": 0.10495462372582905
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008150777822639697,
+            "center_distance_m": 0.12361456660308236
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07654656730440143,
+            "center_distance_m": 0.18522610490092717
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.10139516753137867,
+            "center_distance_m": 0.20394304011984452
+          }
+        },
+        "neighbors_gap_under_4cm": 4,
+        "neighbors_gap_under_10cm": 5
+      }
+    },
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "episode": 6,
+      "family": "Mixed",
+      "requested": "INSPECT",
+      "seed": 2026112401,
+      "scene_revision": 1,
+      "scene_sha256": "f3d8569a8e287cbaff251bd9d982c0793bd38dc8ce69533a3bd668cc92416456",
+      "status": "PASS",
+      "retrieval": "NOT_RUN",
+      "failure_reason": null,
+      "wall_s": 33.00327179598389,
+      "initial_stability": "PASS",
+      "association_revision": 2,
+      "association_before": "UNCERTAIN",
+      "association_after": null,
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 0
+      },
+      "candidates_after": null,
+      "perception_errors_before": [
+        "TARGET_UNCERTAIN"
+      ],
+      "perception_errors_after": null,
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 994,
+        "after_fused_gt_visible_voxels": 994,
+        "novel_visible_voxels": 0,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 2122,
+            "predicted_pixels": 0,
+            "precision": null,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 14559,
+            "predicted_pixels": 0,
+            "precision": null,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 2122,
+            "predicted_pixels": 0,
+            "precision": null,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 14559,
+            "predicted_pixels": 0,
+            "precision": null,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          }
+        },
+        "identity_before": "UNCERTAIN",
+        "identity_after": "UNCERTAIN",
+        "density_neighbors_under_4cm": 6,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [],
+      "path": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_006",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.010083541089012105,
+            "center_distance_m": 0.13700633146649194
+          },
+          "near_right": {
+            "aabb_gap_m": 0.006881975279285801,
+            "center_distance_m": 0.16317288538501412
+          },
+          "near_front": {
+            "aabb_gap_m": 0.039254791475602305,
+            "center_distance_m": 0.23001841578349785
+          },
+          "near_back": {
+            "aabb_gap_m": 0.014748160489169354,
+            "center_distance_m": 0.10584546977994401
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.032408727835742494,
+            "center_distance_m": 0.1820231824027431
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.03252179123557458,
+            "center_distance_m": 0.18148481687432735
+          }
+        },
+        "neighbors_gap_under_4cm": 6,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T072632Z_124bc8c8",
+      "episode": 0,
+      "family": "C2",
+      "requested": "GRASP",
+      "seed": 2026112401,
+      "scene_revision": 2,
+      "scene_sha256": "be16a793135b68ef46d7bc36b8816cd4a90f959e0846298cf3e54cb01215753a",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_GRASP",
+      "wall_s": 57.565675181976985,
+      "initial_stability": "PASS",
+      "association_revision": 4,
+      "association_before": "TRACKED",
+      "association_after": null,
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 3,
+        "FLIP": 0
+      },
+      "candidates_after": null,
+      "perception_errors_before": [],
+      "perception_errors_after": null,
+      "observation_evaluation": {},
+      "recording_status": "PASS",
+      "actions": [],
+      "path": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_000",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.02508358607562705,
+            "center_distance_m": 0.1516826085860293
+          },
+          "near_right": {
+            "aabb_gap_m": 0.021882532414322253,
+            "center_distance_m": 0.17665140249357475
+          },
+          "near_front": {
+            "aabb_gap_m": 0.012029701981486694,
+            "center_distance_m": 0.0926454373324175
+          },
+          "near_back": {
+            "aabb_gap_m": 0.014748160489169354,
+            "center_distance_m": 0.10584546977994401
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.032408727835742494,
+            "center_distance_m": 0.1820231824027431
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.04584120337783119,
+            "center_distance_m": 0.1896584070174256
+          }
+        },
+        "neighbors_gap_under_4cm": 5,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T072632Z_124bc8c8",
+      "episode": 1,
+      "family": "C2",
+      "requested": "FLIP",
+      "seed": 2026112401,
+      "scene_revision": 2,
+      "scene_sha256": "be16a793135b68ef46d7bc36b8816cd4a90f959e0846298cf3e54cb01215753a",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_FLIP",
+      "wall_s": 56.515720393974334,
+      "initial_stability": "PASS",
+      "association_revision": 4,
+      "association_before": "TRACKED",
+      "association_after": null,
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 3,
+        "FLIP": 0
+      },
+      "candidates_after": null,
+      "perception_errors_before": [],
+      "perception_errors_after": null,
+      "observation_evaluation": {},
+      "recording_status": "PASS",
+      "actions": [],
+      "path": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_001",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.02508358607562705,
+            "center_distance_m": 0.1516826085860293
+          },
+          "near_right": {
+            "aabb_gap_m": 0.021882532414322253,
+            "center_distance_m": 0.17665140249357475
+          },
+          "near_front": {
+            "aabb_gap_m": 0.012029701981486694,
+            "center_distance_m": 0.0926454373324175
+          },
+          "near_back": {
+            "aabb_gap_m": 0.014748160489169354,
+            "center_distance_m": 0.10584546977994401
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.032408727835742494,
+            "center_distance_m": 0.1820231824027431
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.04584120337783119,
+            "center_distance_m": 0.1896584070174256
+          }
+        },
+        "neighbors_gap_under_4cm": 5,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T072632Z_124bc8c8",
+      "episode": 2,
+      "family": "C3",
+      "requested": "GRASP",
+      "seed": 2026112401,
+      "scene_revision": 2,
+      "scene_sha256": "b89ba948c1d53c16f24a8f568c04fe3df0b4843de6b5e8c9f246ec10647d928b",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_GRASP",
+      "wall_s": 53.72518691100413,
+      "initial_stability": "PASS",
+      "association_revision": 4,
+      "association_before": "TRACKED",
+      "association_after": null,
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 0
+      },
+      "candidates_after": null,
+      "perception_errors_before": [],
+      "perception_errors_after": null,
+      "observation_evaluation": {},
+      "recording_status": "PASS",
+      "actions": [],
+      "path": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_002",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.023486302748495058,
+            "center_distance_m": 0.09070273451193146
+          },
+          "near_right": {
+            "aabb_gap_m": 0.025122494688584796,
+            "center_distance_m": 0.09969654123181591
+          },
+          "near_front": {
+            "aabb_gap_m": 0.013966487270887167,
+            "center_distance_m": 0.10546890458702138
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008104202255662461,
+            "center_distance_m": 0.12357765060271274
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07652334246196181,
+            "center_distance_m": 0.1851964559868974
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.10140861528210737,
+            "center_distance_m": 0.20397312927821412
+          }
+        },
+        "neighbors_gap_under_4cm": 4,
+        "neighbors_gap_under_10cm": 5
+      }
+    },
+    {
+      "run_id": "20261124T072632Z_124bc8c8",
+      "episode": 3,
+      "family": "C3",
+      "requested": "ACTIVE",
+      "seed": 2026112401,
+      "scene_revision": 2,
+      "scene_sha256": "b89ba948c1d53c16f24a8f568c04fe3df0b4843de6b5e8c9f246ec10647d928b",
+      "status": "PASS",
+      "retrieval": "PASS",
+      "failure_reason": null,
+      "wall_s": 164.2326057179598,
+      "initial_stability": "PASS",
+      "association_revision": 4,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 0
+      },
+      "candidates_after": {
+        "GRASP": 2,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 463,
+        "after_fused_gt_visible_voxels": 701,
+        "novel_visible_voxels": 375,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 681,
+            "predicted_pixels": 640,
+            "precision": 1.0,
+            "recall": 0.9397944199706314,
+            "intersection_pixels": 640
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 3712,
+            "predicted_pixels": 3712,
+            "precision": 1.0,
+            "recall": 1.0,
+            "intersection_pixels": 3712
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 681,
+            "predicted_pixels": 645,
+            "precision": 1.0,
+            "recall": 0.947136563876652,
+            "intersection_pixels": 645
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 5931,
+            "predicted_pixels": 5854,
+            "precision": 1.0,
+            "recall": 0.9870173663800371,
+            "intersection_pixels": 5854
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "ASSOCIATED",
+        "density_neighbors_under_4cm": 4,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "ACTIVE",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 10.750178320973646,
+            "simulation_s": 5.700000297278166
+          },
+          "active": {
+            "status": "PASS",
+            "max_object_displacement_m": 0.0
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        },
+        {
+          "operation": "GRASP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 72.13012502802303,
+            "simulation_s": 37.633335296064615
+          },
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                0.47726522958501694,
+                -0.08532536854167082,
+                0.8746070443990202
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.19888057369607684,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_003",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.023486302748495058,
+            "center_distance_m": 0.09070273451193146
+          },
+          "near_right": {
+            "aabb_gap_m": 0.025122494688584796,
+            "center_distance_m": 0.09969654123181591
+          },
+          "near_front": {
+            "aabb_gap_m": 0.013966487270887167,
+            "center_distance_m": 0.10546890458702138
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008104202255662461,
+            "center_distance_m": 0.12357765060271274
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07652334246196181,
+            "center_distance_m": 0.1851964559868974
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.10140861528210737,
+            "center_distance_m": 0.20397312927821412
+          }
+        },
+        "neighbors_gap_under_4cm": 4,
+        "neighbors_gap_under_10cm": 5
+      }
+    },
+    {
+      "run_id": "20261124T072632Z_124bc8c8",
+      "episode": 4,
+      "family": "C1",
+      "requested": "GRASP",
+      "seed": 2026112401,
+      "scene_revision": 2,
+      "scene_sha256": "f9cb29c96389178283fc55b872680871a576e1d4034a79508fa0cb802166488a",
+      "status": "PASS",
+      "retrieval": "PASS",
+      "failure_reason": null,
+      "wall_s": 106.05155481398106,
+      "initial_stability": "PASS",
+      "association_revision": 4,
+      "association_before": "TRACKED",
+      "association_after": "LOST",
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 2
+      },
+      "candidates_after": {
+        "GRASP": 0,
+        "ACTIVE": 3,
+        "PUSH": 2,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [
+        "TARGET_LOST"
+      ],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 963,
+        "after_fused_gt_visible_voxels": 372,
+        "novel_visible_voxels": 372,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 678,
+            "predicted_pixels": 667,
+            "precision": 1.0,
+            "recall": 0.9837758112094396,
+            "intersection_pixels": 667
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 10224,
+            "predicted_pixels": 10093,
+            "precision": 1.0,
+            "recall": 0.9871870109546166,
+            "intersection_pixels": 10093
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 22,
+            "predicted_pixels": 0,
+            "precision": null,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 19747,
+            "predicted_pixels": 0,
+            "precision": null,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "TARGET_LOST",
+        "density_neighbors_under_4cm": 4,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "GRASP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 36.737925074994564,
+            "simulation_s": 18.766667645424604
+          },
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                -0.09244212140753644,
+                0.008447119730914155,
+                0.995682228604049
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.022260933486336936,
+            "near_right": 0.016774707014968925,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_004",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.008494987739082083,
+            "center_distance_m": 0.07721389274876327
+          },
+          "near_right": {
+            "aabb_gap_m": 0.010126436148892581,
+            "center_distance_m": 0.08476478820925107
+          },
+          "near_front": {
+            "aabb_gap_m": 0.013920073699944094,
+            "center_distance_m": 0.10495462372582905
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008150777822639697,
+            "center_distance_m": 0.12361456660308236
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07654656730440143,
+            "center_distance_m": 0.18522610490092717
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.10139516753137867,
+            "center_distance_m": 0.20394304011984452
+          }
+        },
+        "neighbors_gap_under_4cm": 4,
+        "neighbors_gap_under_10cm": 5
+      }
+    },
+    {
+      "run_id": "20261124T072632Z_124bc8c8",
+      "episode": 5,
+      "family": "C1",
+      "requested": "PUSH",
+      "seed": 2026112401,
+      "scene_revision": 2,
+      "scene_sha256": "f9cb29c96389178283fc55b872680871a576e1d4034a79508fa0cb802166488a",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_GRASP_AFTER_PUSH",
+      "wall_s": 130.06733505195007,
+      "initial_stability": "PASS",
+      "association_revision": 4,
+      "association_before": "TRACKED",
+      "association_after": "LOST",
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 2
+      },
+      "candidates_after": {
+        "GRASP": 0,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [
+        "TARGET_LOST"
+      ],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 963,
+        "after_fused_gt_visible_voxels": 1016,
+        "novel_visible_voxels": 995,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 678,
+            "predicted_pixels": 667,
+            "precision": 1.0,
+            "recall": 0.9837758112094396,
+            "intersection_pixels": 667
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 10224,
+            "predicted_pixels": 10093,
+            "precision": 1.0,
+            "recall": 0.9871870109546166,
+            "intersection_pixels": 10093
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 1918,
+            "predicted_pixels": 0,
+            "precision": null,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 36578,
+            "predicted_pixels": 0,
+            "precision": null,
+            "recall": 0.0,
+            "intersection_pixels": 0
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "TARGET_LOST",
+        "density_neighbors_under_4cm": 4,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "PUSH",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 57.5343604980153,
+            "simulation_s": 29.166668187826872
+          },
+          "push": {
+            "evaluated_subject": "near_right",
+            "subject_contact": true,
+            "displacement_m": [
+              0.026937246322631836,
+              0.12690330011537299,
+              -0.06136031821370125
+            ],
+            "status": "PASS"
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0964649951257741,
+            "near_right": 0.14351010929863178,
+            "near_front": 0.002570369654354757,
+            "near_back": 0.004026534890314662,
+            "diagonal_left": 0.002509539749729357,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_005",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.008494987739082083,
+            "center_distance_m": 0.07721389274876327
+          },
+          "near_right": {
+            "aabb_gap_m": 0.010126436148892581,
+            "center_distance_m": 0.08476478820925107
+          },
+          "near_front": {
+            "aabb_gap_m": 0.013920073699944094,
+            "center_distance_m": 0.10495462372582905
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008150777822639697,
+            "center_distance_m": 0.12361456660308236
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07654656730440143,
+            "center_distance_m": 0.18522610490092717
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.10139516753137867,
+            "center_distance_m": 0.20394304011984452
+          }
+        },
+        "neighbors_gap_under_4cm": 4,
+        "neighbors_gap_under_10cm": 5
+      }
+    },
+    {
+      "run_id": "20261124T073128Z_1355cae2",
+      "episode": 0,
+      "family": "C2",
+      "requested": "GRASP",
+      "seed": 2026112401,
+      "scene_revision": 3,
+      "scene_sha256": "daaf74d23f0b3631b4f5adc9392ebaea68092ab6b25f1b6edd315a6059100e58",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_GRASP",
+      "wall_s": 62.886096424015705,
+      "initial_stability": "PASS",
+      "association_revision": 4,
+      "association_before": "TRACKED",
+      "association_after": null,
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 3,
+        "FLIP": 1
+      },
+      "candidates_after": null,
+      "perception_errors_before": [],
+      "perception_errors_after": null,
+      "observation_evaluation": {},
+      "recording_status": "PASS",
+      "actions": [],
+      "path": "outputs/clutter_v2/campaigns/20261124T073128Z_1355cae2/episode_000",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.02508358607562705,
+            "center_distance_m": 0.1516826085860293
+          },
+          "near_right": {
+            "aabb_gap_m": 0.021882532414322253,
+            "center_distance_m": 0.17665140249357475
+          },
+          "near_front": {
+            "aabb_gap_m": 0.04588037124353142,
+            "center_distance_m": 0.18704325865377447
+          },
+          "near_back": {
+            "aabb_gap_m": 0.05984807888876752,
+            "center_distance_m": 0.15181868892746467
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.032408727835742494,
+            "center_distance_m": 0.1820231824027431
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.06671966132003664,
+            "center_distance_m": 0.2079339098669869
+          }
+        },
+        "neighbors_gap_under_4cm": 3,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T073128Z_1355cae2",
+      "episode": 1,
+      "family": "C2",
+      "requested": "FLIP",
+      "seed": 2026112401,
+      "scene_revision": 3,
+      "scene_sha256": "daaf74d23f0b3631b4f5adc9392ebaea68092ab6b25f1b6edd315a6059100e58",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_GRASP_AFTER_FLIP",
+      "wall_s": 156.49637412000448,
+      "initial_stability": "PASS",
+      "association_revision": 4,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 3,
+        "FLIP": 1
+      },
+      "candidates_after": {
+        "GRASP": 0,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 994,
+        "after_fused_gt_visible_voxels": 1028,
+        "novel_visible_voxels": 735,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 2122,
+            "predicted_pixels": 2122,
+            "precision": 1.0,
+            "recall": 1.0,
+            "intersection_pixels": 2122
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 14559,
+            "predicted_pixels": 14314,
+            "precision": 1.0,
+            "recall": 0.9831719211484305,
+            "intersection_pixels": 14314
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 2135,
+            "predicted_pixels": 2135,
+            "precision": 1.0,
+            "recall": 1.0,
+            "intersection_pixels": 2135
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 43219,
+            "predicted_pixels": 42509,
+            "precision": 1.0,
+            "recall": 0.983572040074967,
+            "intersection_pixels": 42509
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "ASSOCIATED",
+        "density_neighbors_under_4cm": 3,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "FLIP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 70.5318837770028,
+            "simulation_s": 36.00000187754631
+          },
+          "flip": {
+            "status": "FAILED",
+            "non_yaw_support_orientation_change_deg": 0.06819059376896297,
+            "rotation_angle_deg": 0.9027827703967136,
+            "horizontal_rotation_vector_component_deg": 0.06819129515870351,
+            "initial_support": {
+              "dominant_local_up_axis": 0,
+              "sign": -1,
+              "local_up_vector": [
+                -0.9963144170160156,
+                0.043851118678754145,
+                -0.07372015895709111
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "final_support": {
+              "dominant_local_up_axis": 0,
+              "sign": -1,
+              "local_up_vector": [
+                -0.9962303152675355,
+                0.044936245135344825,
+                -0.07420170358612632
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "stable_new_support": true,
+            "measured_target_contact": true,
+            "criterion": ">=35deg body-local gravity change, >=25deg horizontal rotation component, measured contact and stable end state; pure yaw rejected",
+            "final_support_contact_pairs": [
+              [
+                "/World/Object",
+                "/World/Table"
+              ]
+            ],
+            "robot_released": true
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T073128Z_1355cae2/episode_001",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.02508358607562705,
+            "center_distance_m": 0.1516826085860293
+          },
+          "near_right": {
+            "aabb_gap_m": 0.021882532414322253,
+            "center_distance_m": 0.17665140249357475
+          },
+          "near_front": {
+            "aabb_gap_m": 0.04588037124353142,
+            "center_distance_m": 0.18704325865377447
+          },
+          "near_back": {
+            "aabb_gap_m": 0.05984807888876752,
+            "center_distance_m": 0.15181868892746467
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.032408727835742494,
+            "center_distance_m": 0.1820231824027431
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.06671966132003664,
+            "center_distance_m": 0.2079339098669869
+          }
+        },
+        "neighbors_gap_under_4cm": 3,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T074245Z_a709c87e",
+      "episode": 0,
+      "family": "C2",
+      "requested": "GRASP",
+      "seed": 2026112401,
+      "scene_revision": 4,
+      "scene_sha256": "bf5e8d639e2885a2192f9e855ae5442c6690859a6e88c2ca5d23d31f4e680748",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_GRASP",
+      "wall_s": 58.06954993196996,
+      "initial_stability": "PASS",
+      "association_revision": 5,
+      "association_before": "TRACKED",
+      "association_after": null,
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 5,
+        "FLIP": 2
+      },
+      "candidates_after": null,
+      "perception_errors_before": [],
+      "perception_errors_after": null,
+      "observation_evaluation": {},
+      "recording_status": "PASS",
+      "actions": [],
+      "path": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_000",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.04134171163097951,
+            "center_distance_m": 0.19236930186099077
+          },
+          "near_right": {
+            "aabb_gap_m": 0.01697921920482215,
+            "center_distance_m": 0.16207605727316007
+          },
+          "near_front": {
+            "aabb_gap_m": 0.03215159271717786,
+            "center_distance_m": 0.17689842317799964
+          },
+          "near_back": {
+            "aabb_gap_m": 0.0,
+            "center_distance_m": 0.040409564267289505
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.0710293941384358,
+            "center_distance_m": 0.21519872933843956
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.07119197548727921,
+            "center_distance_m": 0.21517546896556833
+          }
+        },
+        "neighbors_gap_under_4cm": 3,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T074245Z_a709c87e",
+      "episode": 1,
+      "family": "C2",
+      "requested": "FLIP",
+      "seed": 2026112401,
+      "scene_revision": 4,
+      "scene_sha256": "bf5e8d639e2885a2192f9e855ae5442c6690859a6e88c2ca5d23d31f4e680748",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_GRASP_AFTER_FLIP",
+      "wall_s": 149.08622759900754,
+      "initial_stability": "PASS",
+      "association_revision": 5,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 5,
+        "FLIP": 2
+      },
+      "candidates_after": {
+        "GRASP": 0,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 997,
+        "after_fused_gt_visible_voxels": 1033,
+        "novel_visible_voxels": 676,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 2214,
+            "predicted_pixels": 2211,
+            "precision": 1.0,
+            "recall": 0.9986449864498645,
+            "intersection_pixels": 2211
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 16927,
+            "predicted_pixels": 16927,
+            "precision": 1.0,
+            "recall": 1.0,
+            "intersection_pixels": 16927
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 2224,
+            "predicted_pixels": 2356,
+            "precision": 0.9397283531409168,
+            "recall": 0.9955035971223022,
+            "intersection_pixels": 2214
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 45987,
+            "predicted_pixels": 51163,
+            "precision": 0.8988331411371498,
+            "recall": 1.0,
+            "intersection_pixels": 45987
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "ASSOCIATED",
+        "density_neighbors_under_4cm": 3,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "FLIP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 71.32741060800618,
+            "simulation_s": 35.8666685372591
+          },
+          "flip": {
+            "status": "FAILED",
+            "non_yaw_support_orientation_change_deg": 0.7329213739221512,
+            "rotation_angle_deg": 4.883266741975658,
+            "horizontal_rotation_vector_component_deg": 0.7331382531180766,
+            "initial_support": {
+              "dominant_local_up_axis": 0,
+              "sign": -1,
+              "local_up_vector": [
+                -0.9974869011374842,
+                0.041707269102743166,
+                -0.057274652012300475
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "final_support": {
+              "dominant_local_up_axis": 0,
+              "sign": -1,
+              "local_up_vector": [
+                -0.9965213345136723,
+                0.04674803444093635,
+                -0.06899167438900311
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "stable_new_support": true,
+            "measured_target_contact": true,
+            "criterion": ">=35deg body-local gravity change, >=25deg horizontal rotation component, measured contact and stable end state; pure yaw rejected",
+            "final_support_contact_pairs": [
+              [
+                "/World/M1_near_back",
+                "/World/Object"
+              ],
+              [
+                "/World/Object",
+                "/World/Table"
+              ]
+            ],
+            "robot_released": true
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 7.65093338177743e-05,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_001",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.04134171163097951,
+            "center_distance_m": 0.19236930186099077
+          },
+          "near_right": {
+            "aabb_gap_m": 0.01697921920482215,
+            "center_distance_m": 0.16207605727316007
+          },
+          "near_front": {
+            "aabb_gap_m": 0.03215159271717786,
+            "center_distance_m": 0.17689842317799964
+          },
+          "near_back": {
+            "aabb_gap_m": 0.0,
+            "center_distance_m": 0.040409564267289505
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.0710293941384358,
+            "center_distance_m": 0.21519872933843956
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.07119197548727921,
+            "center_distance_m": 0.21517546896556833
+          }
+        },
+        "neighbors_gap_under_4cm": 3,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T074245Z_a709c87e",
+      "episode": 2,
+      "family": "C1",
+      "requested": "PUSH",
+      "seed": 2026112401,
+      "scene_revision": 4,
+      "scene_sha256": "22560b8b41d4eb502339726747b2ea50f9309a776e97ed3c7441bdd11918ecc3",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_GRASP_AFTER_PUSH",
+      "wall_s": 132.50283497700002,
+      "initial_stability": "PASS",
+      "association_revision": 5,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 2
+      },
+      "candidates_after": {
+        "GRASP": 0,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 963,
+        "after_fused_gt_visible_voxels": 1016,
+        "novel_visible_voxels": 995,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 678,
+            "predicted_pixels": 667,
+            "precision": 1.0,
+            "recall": 0.9837758112094396,
+            "intersection_pixels": 667
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 10224,
+            "predicted_pixels": 10093,
+            "precision": 1.0,
+            "recall": 0.9871870109546166,
+            "intersection_pixels": 10093
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 1918,
+            "predicted_pixels": 1338,
+            "precision": 1.0,
+            "recall": 0.6976016684045881,
+            "intersection_pixels": 1338
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 36578,
+            "predicted_pixels": 29094,
+            "precision": 0.9332508420980271,
+            "recall": 0.7423041172289354,
+            "intersection_pixels": 27152
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "ASSOCIATED",
+        "density_neighbors_under_4cm": 4,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "PUSH",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 58.09937283297768,
+            "simulation_s": 29.166668187826872
+          },
+          "push": {
+            "evaluated_subject": "near_right",
+            "subject_contact": true,
+            "displacement_m": [
+              0.026937246322631836,
+              0.12690330011537299,
+              -0.06136031821370125
+            ],
+            "status": "PASS"
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0964649951257741,
+            "near_right": 0.14351010929863178,
+            "near_front": 0.002570369654354757,
+            "near_back": 0.004026534890314662,
+            "diagonal_left": 0.002509539749729357,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_002",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.008494987739082083,
+            "center_distance_m": 0.07721389274876327
+          },
+          "near_right": {
+            "aabb_gap_m": 0.010126436148892581,
+            "center_distance_m": 0.08476478820925107
+          },
+          "near_front": {
+            "aabb_gap_m": 0.013920073699944094,
+            "center_distance_m": 0.10495462372582905
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008150777822639697,
+            "center_distance_m": 0.12361456660308236
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07654656730440143,
+            "center_distance_m": 0.18522610490092717
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.10139516753137867,
+            "center_distance_m": 0.20394304011984452
+          }
+        },
+        "neighbors_gap_under_4cm": 4,
+        "neighbors_gap_under_10cm": 5
+      }
+    },
+    {
+      "run_id": "20261124T074245Z_a709c87e",
+      "episode": 3,
+      "family": "C3",
+      "requested": "ACTIVE",
+      "seed": 2026112401,
+      "scene_revision": 4,
+      "scene_sha256": "642ca6aea0a26c52d3e9d8963cac4e730ca494a63516909426ba9b563c6a222f",
+      "status": "PASS",
+      "retrieval": "PASS",
+      "failure_reason": null,
+      "wall_s": 164.17440597497625,
+      "initial_stability": "PASS",
+      "association_revision": 5,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 0
+      },
+      "candidates_after": {
+        "GRASP": 2,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 463,
+        "after_fused_gt_visible_voxels": 701,
+        "novel_visible_voxels": 375,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 681,
+            "predicted_pixels": 640,
+            "precision": 1.0,
+            "recall": 0.9397944199706314,
+            "intersection_pixels": 640
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 3712,
+            "predicted_pixels": 3712,
+            "precision": 1.0,
+            "recall": 1.0,
+            "intersection_pixels": 3712
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 681,
+            "predicted_pixels": 645,
+            "precision": 1.0,
+            "recall": 0.947136563876652,
+            "intersection_pixels": 645
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 5931,
+            "predicted_pixels": 5854,
+            "precision": 1.0,
+            "recall": 0.9870173663800371,
+            "intersection_pixels": 5854
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "ASSOCIATED",
+        "density_neighbors_under_4cm": 4,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "ACTIVE",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 10.813685245986562,
+            "simulation_s": 5.700000297278166
+          },
+          "active": {
+            "status": "PASS",
+            "max_object_displacement_m": 0.0
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        },
+        {
+          "operation": "GRASP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 72.47041301900754,
+            "simulation_s": 37.633335296064615
+          },
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                0.47726522958501694,
+                -0.08532536854167082,
+                0.8746070443990202
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.19888057369607684,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_003",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.023486302748495058,
+            "center_distance_m": 0.09070273451193146
+          },
+          "near_right": {
+            "aabb_gap_m": 0.025122494688584796,
+            "center_distance_m": 0.09969654123181591
+          },
+          "near_front": {
+            "aabb_gap_m": 0.013966487270887167,
+            "center_distance_m": 0.10546890458702138
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008104202255662461,
+            "center_distance_m": 0.12357765060271274
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07652334246196181,
+            "center_distance_m": 0.1851964559868974
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.10140861528210737,
+            "center_distance_m": 0.20397312927821412
+          }
+        },
+        "neighbors_gap_under_4cm": 4,
+        "neighbors_gap_under_10cm": 5
+      }
+    },
+    {
+      "run_id": "20261124T075922Z_9e0cf087",
+      "episode": 0,
+      "family": "C2",
+      "requested": "GRASP",
+      "seed": 2026112401,
+      "scene_revision": 5,
+      "scene_sha256": "ad04887267ac995f3d6092c9815bb439837e00412a282b515425121b8b0dfbdb",
+      "status": "PASS",
+      "retrieval": "PASS",
+      "failure_reason": null,
+      "wall_s": 125.41666420397814,
+      "initial_stability": "PASS",
+      "association_revision": 6,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 5,
+        "FLIP": 2
+      },
+      "candidates_after": {
+        "GRASP": 0,
+        "ACTIVE": 3,
+        "PUSH": 2,
+        "FLIP": 3
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [
+        "NETWORK_ERROR: raw worker log retained"
+      ],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 1008,
+        "after_fused_gt_visible_voxels": 1021,
+        "novel_visible_voxels": 1021,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 2358,
+            "predicted_pixels": 2355,
+            "precision": 1.0,
+            "recall": 0.9987277353689568,
+            "intersection_pixels": 2355
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 19777,
+            "predicted_pixels": 19777,
+            "precision": 1.0,
+            "recall": 1.0,
+            "intersection_pixels": 19777
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 3277,
+            "predicted_pixels": 1745,
+            "precision": 1.0,
+            "recall": 0.5324992371071101,
+            "intersection_pixels": 1745
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 33696,
+            "predicted_pixels": 25781,
+            "precision": 1.0,
+            "recall": 0.7651056505223172,
+            "intersection_pixels": 25781
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "ASSOCIATED",
+        "density_neighbors_under_4cm": 2,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "GRASP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 46.519508112978656,
+            "simulation_s": 23.766667906194925
+          },
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 0,
+              "sign": -1,
+              "local_up_vector": [
+                -0.9917902962180902,
+                -0.11702670027547427,
+                -0.05154376538697869
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.0002783539164951822,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_000",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.04604512626978665,
+            "center_distance_m": 0.20532857813755184
+          },
+          "near_right": {
+            "aabb_gap_m": 0.017193253183002688,
+            "center_distance_m": 0.15837315633367957
+          },
+          "near_front": {
+            "aabb_gap_m": 0.04866477365368828,
+            "center_distance_m": 0.2049353403380436
+          },
+          "near_back": {
+            "aabb_gap_m": 0.0,
+            "center_distance_m": 0.06411596771612835
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.05759686283921267,
+            "center_distance_m": 0.21754959601409327
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.06329294459044868,
+            "center_distance_m": 0.22131333942195328
+          }
+        },
+        "neighbors_gap_under_4cm": 2,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T075922Z_9e0cf087",
+      "episode": 1,
+      "family": "C2",
+      "requested": "FLIP",
+      "seed": 2026112401,
+      "scene_revision": 5,
+      "scene_sha256": "ad04887267ac995f3d6092c9815bb439837e00412a282b515425121b8b0dfbdb",
+      "status": "PASS",
+      "retrieval": "PASS",
+      "failure_reason": null,
+      "wall_s": 198.59168893599417,
+      "initial_stability": "PASS",
+      "association_revision": 6,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 5,
+        "FLIP": 2
+      },
+      "candidates_after": {
+        "GRASP": 2,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 1008,
+        "after_fused_gt_visible_voxels": 808,
+        "novel_visible_voxels": 808,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 2358,
+            "predicted_pixels": 2355,
+            "precision": 1.0,
+            "recall": 0.9987277353689568,
+            "intersection_pixels": 2355
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 19777,
+            "predicted_pixels": 19777,
+            "precision": 1.0,
+            "recall": 1.0,
+            "intersection_pixels": 19777
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 1078,
+            "predicted_pixels": 1068,
+            "precision": 1.0,
+            "recall": 0.9907235621521335,
+            "intersection_pixels": 1068
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 20554,
+            "predicted_pixels": 20439,
+            "precision": 1.0,
+            "recall": 0.9944049819986377,
+            "intersection_pixels": 20439
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "ASSOCIATED",
+        "density_neighbors_under_4cm": 2,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "FLIP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 70.05076414201176,
+            "simulation_s": 35.63333519175649
+          },
+          "flip": {
+            "status": "PASS",
+            "non_yaw_support_orientation_change_deg": 91.59932941096737,
+            "rotation_angle_deg": 91.70552253163797,
+            "horizontal_rotation_vector_component_deg": 91.62299157088556,
+            "initial_support": {
+              "dominant_local_up_axis": 0,
+              "sign": -1,
+              "local_up_vector": [
+                -0.9968900351819208,
+                0.04771029112966213,
+                -0.06272149452390013
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "final_support": {
+              "dominant_local_up_axis": 1,
+              "sign": -1,
+              "local_up_vector": [
+                -0.02038637138011229,
+                -0.9997558894927023,
+                0.008518056504136035
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "stable_new_support": true,
+            "measured_target_contact": true,
+            "criterion": ">=35deg body-local gravity change, >=25deg horizontal rotation component, measured contact and stable end state; pure yaw rejected",
+            "final_support_contact_pairs": [
+              [
+                "/World/Object",
+                "/World/Table"
+              ]
+            ],
+            "robot_released": true
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.0002711523099978244,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        },
+        {
+          "operation": "GRASP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 42.58620746101951,
+            "simulation_s": 21.8333344720304
+          },
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 1,
+              "sign": -1,
+              "local_up_vector": [
+                0.08125816450076706,
+                -0.9850422071647986,
+                -0.15195052091344743
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.0004116537153041877,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_001",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.04604512626978665,
+            "center_distance_m": 0.20532857813755184
+          },
+          "near_right": {
+            "aabb_gap_m": 0.017193253183002688,
+            "center_distance_m": 0.15837315633367957
+          },
+          "near_front": {
+            "aabb_gap_m": 0.04866477365368828,
+            "center_distance_m": 0.2049353403380436
+          },
+          "near_back": {
+            "aabb_gap_m": 0.0,
+            "center_distance_m": 0.06411596771612835
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.05759686283921267,
+            "center_distance_m": 0.21754959601409327
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.06329294459044868,
+            "center_distance_m": 0.22131333942195328
+          }
+        },
+        "neighbors_gap_under_4cm": 2,
+        "neighbors_gap_under_10cm": 6
+      }
+    },
+    {
+      "run_id": "20261124T075922Z_9e0cf087",
+      "episode": 2,
+      "family": "C3",
+      "requested": "ACTIVE",
+      "seed": 2026112401,
+      "scene_revision": 5,
+      "scene_sha256": "fb28f7df03713b41a88c83c2ae8f9b7a4acdc11459824a3a7c71f761e220a70b",
+      "status": "PASS",
+      "retrieval": "PASS",
+      "failure_reason": null,
+      "wall_s": 164.03619272704236,
+      "initial_stability": "PASS",
+      "association_revision": 6,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 0,
+        "ACTIVE": 4,
+        "PUSH": 1,
+        "FLIP": 0
+      },
+      "candidates_after": {
+        "GRASP": 2,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 463,
+        "after_fused_gt_visible_voxels": 701,
+        "novel_visible_voxels": 375,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 681,
+            "predicted_pixels": 640,
+            "precision": 1.0,
+            "recall": 0.9397944199706314,
+            "intersection_pixels": 640
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 3712,
+            "predicted_pixels": 3712,
+            "precision": 1.0,
+            "recall": 1.0,
+            "intersection_pixels": 3712
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 681,
+            "predicted_pixels": 645,
+            "precision": 1.0,
+            "recall": 0.947136563876652,
+            "intersection_pixels": 645
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 5931,
+            "predicted_pixels": 5854,
+            "precision": 1.0,
+            "recall": 0.9870173663800371,
+            "intersection_pixels": 5854
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "ASSOCIATED",
+        "density_neighbors_under_4cm": 4,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "ACTIVE",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 10.688730041030794,
+            "simulation_s": 5.700000297278166
+          },
+          "active": {
+            "status": "PASS",
+            "max_object_displacement_m": 0.0
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        },
+        {
+          "operation": "GRASP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 72.11175766901579,
+            "simulation_s": 37.633335296064615
+          },
+          "retrieval": {
+            "status": "PASS",
+            "hold_frames": 30,
+            "fully_extracted_contact_frames": 30,
+            "catastrophic_distractor_drop": false,
+            "criterion": "entire source-extent target beyond y=.30m, >.10m rise, real bilateral target contact, sustained 1s; evaluator-only GT",
+            "final_support": {
+              "dominant_local_up_axis": 2,
+              "sign": 1,
+              "local_up_vector": [
+                0.47726522958501694,
+                -0.08532536854167082,
+                0.8746070443990202
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            }
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.19888057369607684,
+            "near_front": 0.0,
+            "near_back": 0.0,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_002",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.023486302748495058,
+            "center_distance_m": 0.09070273451193146
+          },
+          "near_right": {
+            "aabb_gap_m": 0.025122494688584796,
+            "center_distance_m": 0.09969654123181591
+          },
+          "near_front": {
+            "aabb_gap_m": 0.013966487270887167,
+            "center_distance_m": 0.10546890458702138
+          },
+          "near_back": {
+            "aabb_gap_m": 0.008104202255662461,
+            "center_distance_m": 0.12357765060271274
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.07652334246196181,
+            "center_distance_m": 0.1851964559868974
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.10140861528210737,
+            "center_distance_m": 0.20397312927821412
+          }
+        },
+        "neighbors_gap_under_4cm": 4,
+        "neighbors_gap_under_10cm": 5
+      }
+    },
+    {
+      "run_id": "20261124T080325Z_8b3f1892",
+      "episode": 0,
+      "family": "C2",
+      "requested": "FLIP",
+      "seed": 2026112401,
+      "scene_revision": 5,
+      "scene_sha256": "ad04887267ac995f3d6092c9815bb439837e00412a282b515425121b8b0dfbdb",
+      "status": "FAILED",
+      "retrieval": "NOT_RUN",
+      "failure_reason": "NO_LEGAL_GRASP_AFTER_FLIP",
+      "wall_s": 198.9015595029923,
+      "initial_stability": "PASS",
+      "association_revision": 6,
+      "association_before": "TRACKED",
+      "association_after": "TRACKED",
+      "candidates_before": {
+        "GRASP": 3,
+        "ACTIVE": 4,
+        "PUSH": 5,
+        "FLIP": 3
+      },
+      "candidates_after": {
+        "GRASP": 0,
+        "ACTIVE": 0,
+        "PUSH": 0,
+        "FLIP": 0
+      },
+      "perception_errors_before": [],
+      "perception_errors_after": [],
+      "observation_evaluation": {
+        "before_fused_gt_visible_voxels": 1008,
+        "after_fused_gt_visible_voxels": 877,
+        "novel_visible_voxels": 848,
+        "before_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 2358,
+            "predicted_pixels": 2355,
+            "precision": 1.0,
+            "recall": 0.9987277353689568,
+            "intersection_pixels": 2355
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 19777,
+            "predicted_pixels": 19777,
+            "precision": 1.0,
+            "recall": 1.0,
+            "intersection_pixels": 19777
+          }
+        },
+        "after_cameras": {
+          "fixed": {
+            "status": "PASS",
+            "gt_target_pixels": 1144,
+            "predicted_pixels": 1131,
+            "precision": 1.0,
+            "recall": 0.9886363636363636,
+            "intersection_pixels": 1131
+          },
+          "wrist": {
+            "status": "PASS",
+            "gt_target_pixels": 29063,
+            "predicted_pixels": 28964,
+            "precision": 1.0,
+            "recall": 0.9965936069917076,
+            "intersection_pixels": 28964
+          }
+        },
+        "identity_before": "ASSOCIATED",
+        "identity_after": "ASSOCIATED",
+        "density_neighbors_under_4cm": 2,
+        "body_count": 7
+      },
+      "recording_status": "PASS",
+      "actions": [
+        {
+          "operation": "FLIP",
+          "command_status": "PASS",
+          "error": null,
+          "cost": {
+            "wall_s": 126.27586121601053,
+            "simulation_s": 65.70000342652202
+          },
+          "flip": {
+            "status": "PASS",
+            "non_yaw_support_orientation_change_deg": 88.69240872161056,
+            "rotation_angle_deg": 89.19338724101247,
+            "horizontal_rotation_vector_component_deg": 88.79706628978111,
+            "initial_support": {
+              "dominant_local_up_axis": 0,
+              "sign": -1,
+              "local_up_vector": [
+                -0.9968900351819208,
+                0.04771029112966213,
+                -0.06272149452390013
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "final_support": {
+              "dominant_local_up_axis": 1,
+              "sign": 1,
+              "local_up_vector": [
+                0.02519822553794232,
+                0.9996748506768625,
+                -0.0039041457364457077
+              ],
+              "interpretation": "dominant body support-axis proxy; not an exact contact patch for irregular meshes"
+            },
+            "stable_new_support": true,
+            "measured_target_contact": true,
+            "criterion": ">=35deg body-local gravity change, >=25deg horizontal rotation component, measured contact and stable end state; pure yaw rejected",
+            "final_support_contact_pairs": [
+              [
+                "/World/M1_near_back",
+                "/World/Object"
+              ],
+              [
+                "/World/Object",
+                "/World/Table"
+              ]
+            ],
+            "robot_released": true
+          },
+          "distractor_displacement_m": {
+            "near_left": 0.0,
+            "near_right": 0.0,
+            "near_front": 0.0,
+            "near_back": 0.004926773101074928,
+            "diagonal_left": 0.0,
+            "diagonal_right": 0.0
+          }
+        }
+      ],
+      "path": "outputs/clutter_v2/campaigns/20261124T080325Z_8b3f1892/episode_000",
+      "density": {
+        "body_count": 7,
+        "neighbors": {
+          "near_left": {
+            "aabb_gap_m": 0.04604512626978665,
+            "center_distance_m": 0.20532857813755184
+          },
+          "near_right": {
+            "aabb_gap_m": 0.017193253183002688,
+            "center_distance_m": 0.15837315633367957
+          },
+          "near_front": {
+            "aabb_gap_m": 0.04866477365368828,
+            "center_distance_m": 0.2049353403380436
+          },
+          "near_back": {
+            "aabb_gap_m": 0.0,
+            "center_distance_m": 0.06411596771612835
+          },
+          "diagonal_left": {
+            "aabb_gap_m": 0.05759686283921267,
+            "center_distance_m": 0.21754959601409327
+          },
+          "diagonal_right": {
+            "aabb_gap_m": 0.06329294459044868,
+            "center_distance_m": 0.22131333942195328
+          }
+        },
+        "neighbors_gap_under_4cm": 2,
+        "neighbors_gap_under_10cm": 6
+      }
+    }
+  ],
+  "paired_initialization_audit": [
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "family": "C1",
+      "status": "PASS",
+      "max_position_delta_m": 0.0,
+      "max_orientation_delta_rad": 0.0,
+      "direct_retrieval": "PASS",
+      "prepared_retrieval": "PASS",
+      "prepared_action": "PUSH",
+      "causal_retrieval_gain": false
+    },
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "family": "C2",
+      "status": "PASS",
+      "max_position_delta_m": 0.0,
+      "max_orientation_delta_rad": 0.0,
+      "direct_retrieval": "NOT_RUN",
+      "prepared_retrieval": "NOT_RUN",
+      "prepared_action": "FLIP",
+      "causal_retrieval_gain": false
+    },
+    {
+      "run_id": "20261124T071919Z_ba015e2e",
+      "family": "C3",
+      "status": "PASS",
+      "max_position_delta_m": 0.0,
+      "max_orientation_delta_rad": 0.0,
+      "direct_retrieval": "PASS",
+      "prepared_retrieval": "NOT_RUN",
+      "prepared_action": "ACTIVE",
+      "causal_retrieval_gain": false
+    },
+    {
+      "run_id": "20261124T072632Z_124bc8c8",
+      "family": "C1",
+      "status": "PASS",
+      "max_position_delta_m": 0.0,
+      "max_orientation_delta_rad": 0.0,
+      "direct_retrieval": "PASS",
+      "prepared_retrieval": "NOT_RUN",
+      "prepared_action": "PUSH",
+      "causal_retrieval_gain": false
+    },
+    {
+      "run_id": "20261124T072632Z_124bc8c8",
+      "family": "C2",
+      "status": "PASS",
+      "max_position_delta_m": 0.0,
+      "max_orientation_delta_rad": 0.0,
+      "direct_retrieval": "NOT_RUN",
+      "prepared_retrieval": "NOT_RUN",
+      "prepared_action": "FLIP",
+      "causal_retrieval_gain": false
+    },
+    {
+      "run_id": "20261124T072632Z_124bc8c8",
+      "family": "C3",
+      "status": "PASS",
+      "max_position_delta_m": 0.0,
+      "max_orientation_delta_rad": 0.0,
+      "direct_retrieval": "NOT_RUN",
+      "prepared_retrieval": "PASS",
+      "prepared_action": "ACTIVE",
+      "causal_retrieval_gain": true
+    },
+    {
+      "run_id": "20261124T073128Z_1355cae2",
+      "family": "C2",
+      "status": "PASS",
+      "max_position_delta_m": 0.0,
+      "max_orientation_delta_rad": 0.0,
+      "direct_retrieval": "NOT_RUN",
+      "prepared_retrieval": "NOT_RUN",
+      "prepared_action": "FLIP",
+      "causal_retrieval_gain": false
+    },
+    {
+      "run_id": "20261124T074245Z_a709c87e",
+      "family": "C2",
+      "status": "PASS",
+      "max_position_delta_m": 0.0,
+      "max_orientation_delta_rad": 0.0,
+      "direct_retrieval": "NOT_RUN",
+      "prepared_retrieval": "NOT_RUN",
+      "prepared_action": "FLIP",
+      "causal_retrieval_gain": false
+    },
+    {
+      "run_id": "20261124T075922Z_9e0cf087",
+      "family": "C2",
+      "status": "PASS",
+      "max_position_delta_m": 0.0,
+      "max_orientation_delta_rad": 0.0,
+      "direct_retrieval": "PASS",
+      "prepared_retrieval": "PASS",
+      "prepared_action": "FLIP",
+      "causal_retrieval_gain": false
+    }
+  ],
+  "full_videos_data_models": "Local server paths only; no raw assets, weights or MP4 uploaded",
+  "large_scale_training": "NOT_READY",
+  "native_DP_DP3": "NOT_RUN",
+  "unit_tests": {
+    "status": "PASS",
+    "count": 80,
+    "local_log": "outputs/clutter_v2_unit_tests_final.log",
+    "log_sha256": "020444b592f21971971ae8102deb552a01463c38b1ac2b6646a576c37cfec1a8"
+  }
+}

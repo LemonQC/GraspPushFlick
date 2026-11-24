@@ -1,0 +1,9 @@
+{
+  "actual_episode_attempts": 25,
+  "completed_full_retrievals": 10,
+  "zero_selected_macro_action_episodes": 9,
+  "summed_episode_wall_s": 2781.864920503809,
+  "local_directory_bytes": 1994237075,
+  "comparison_warning": "Mixed development/failure/inspection attempts; do not interpret 10/25 as an algorithm success rate",
+  "source_E1_v3": "PASS unchanged"
+}

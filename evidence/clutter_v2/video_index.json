@@ -1,0 +1,352 @@
+[
+  {
+    "run_id": "20261124T071346Z_b9d9420f",
+    "episode": 0,
+    "family": "Direct",
+    "requested": "INSPECT",
+    "status": "PASS",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/episode_000/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/episode_000/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/episode_000/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T071346Z_b9d9420f",
+    "episode": 1,
+    "family": "C1",
+    "requested": "PUSH",
+    "status": "PASS",
+    "retrieval": "PASS",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/episode_001/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/episode_001/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T071346Z_b9d9420f/episode_001/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T071919Z_ba015e2e",
+    "episode": 0,
+    "family": "C2",
+    "requested": "GRASP",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_000/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_000/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_000/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T071919Z_ba015e2e",
+    "episode": 1,
+    "family": "C2",
+    "requested": "FLIP",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_001/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_001/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_001/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T071919Z_ba015e2e",
+    "episode": 2,
+    "family": "C3",
+    "requested": "GRASP",
+    "status": "PASS",
+    "retrieval": "PASS",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_002/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_002/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_002/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T071919Z_ba015e2e",
+    "episode": 3,
+    "family": "C3",
+    "requested": "ACTIVE",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_003/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_003/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_003/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T071919Z_ba015e2e",
+    "episode": 4,
+    "family": "C1",
+    "requested": "GRASP",
+    "status": "PASS",
+    "retrieval": "PASS",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_004/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_004/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_004/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T071919Z_ba015e2e",
+    "episode": 5,
+    "family": "C1",
+    "requested": "PUSH",
+    "status": "PASS",
+    "retrieval": "PASS",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_005/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_005/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_005/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T071919Z_ba015e2e",
+    "episode": 6,
+    "family": "Mixed",
+    "requested": "INSPECT",
+    "status": "PASS",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_006/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_006/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T071919Z_ba015e2e/episode_006/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T072632Z_124bc8c8",
+    "episode": 0,
+    "family": "C2",
+    "requested": "GRASP",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_000/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_000/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_000/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T072632Z_124bc8c8",
+    "episode": 1,
+    "family": "C2",
+    "requested": "FLIP",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_001/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_001/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_001/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T072632Z_124bc8c8",
+    "episode": 2,
+    "family": "C3",
+    "requested": "GRASP",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_002/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_002/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_002/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T072632Z_124bc8c8",
+    "episode": 3,
+    "family": "C3",
+    "requested": "ACTIVE",
+    "status": "PASS",
+    "retrieval": "PASS",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_003/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_003/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_003/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T072632Z_124bc8c8",
+    "episode": 4,
+    "family": "C1",
+    "requested": "GRASP",
+    "status": "PASS",
+    "retrieval": "PASS",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_004/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_004/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_004/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T072632Z_124bc8c8",
+    "episode": 5,
+    "family": "C1",
+    "requested": "PUSH",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_005/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_005/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T072632Z_124bc8c8/episode_005/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T073128Z_1355cae2",
+    "episode": 0,
+    "family": "C2",
+    "requested": "GRASP",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T073128Z_1355cae2/episode_000/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T073128Z_1355cae2/episode_000/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T073128Z_1355cae2/episode_000/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T073128Z_1355cae2",
+    "episode": 1,
+    "family": "C2",
+    "requested": "FLIP",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T073128Z_1355cae2/episode_001/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T073128Z_1355cae2/episode_001/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T073128Z_1355cae2/episode_001/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T074245Z_a709c87e",
+    "episode": 0,
+    "family": "C2",
+    "requested": "GRASP",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_000/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_000/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_000/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T074245Z_a709c87e",
+    "episode": 1,
+    "family": "C2",
+    "requested": "FLIP",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_001/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_001/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_001/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T074245Z_a709c87e",
+    "episode": 2,
+    "family": "C1",
+    "requested": "PUSH",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_002/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_002/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_002/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T074245Z_a709c87e",
+    "episode": 3,
+    "family": "C3",
+    "requested": "ACTIVE",
+    "status": "PASS",
+    "retrieval": "PASS",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_003/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_003/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T074245Z_a709c87e/episode_003/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T075922Z_9e0cf087",
+    "episode": 0,
+    "family": "C2",
+    "requested": "GRASP",
+    "status": "PASS",
+    "retrieval": "PASS",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_000/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_000/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_000/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T075922Z_9e0cf087",
+    "episode": 1,
+    "family": "C2",
+    "requested": "FLIP",
+    "status": "PASS",
+    "retrieval": "PASS",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_001/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_001/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_001/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T075922Z_9e0cf087",
+    "episode": 2,
+    "family": "C3",
+    "requested": "ACTIVE",
+    "status": "PASS",
+    "retrieval": "PASS",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_002/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_002/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T075922Z_9e0cf087/episode_002/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  },
+  {
+    "run_id": "20261124T080325Z_8b3f1892",
+    "episode": 0,
+    "family": "C2",
+    "requested": "FLIP",
+    "status": "FAILED",
+    "retrieval": "NOT_RUN",
+    "videos": {
+      "third": "outputs/clutter_v2/campaigns/20261124T080325Z_8b3f1892/episode_000/videos/m1/third.mp4",
+      "fixed": "outputs/clutter_v2/campaigns/20261124T080325Z_8b3f1892/episode_000/videos/m1/fixed.mp4",
+      "wrist": "outputs/clutter_v2/campaigns/20261124T080325Z_8b3f1892/episode_000/videos/m1/wrist.mp4"
+    },
+    "validation": "PASS"
+  }
+]
