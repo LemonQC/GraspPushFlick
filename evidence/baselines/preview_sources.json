@@ -1,0 +1,82 @@
+[
+  {
+    "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/images/baseline_final_rgb.png",
+    "bytes": 172770,
+    "sha256": "99b8d128af4befd4d067888648c0746147dfc107f6356d2bab4720a2d5fe1bed",
+    "panel": 0,
+    "episode_id": "episode_000",
+    "campaign": "20261123T103216Z_cf3c2efa"
+  },
+  {
+    "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/images/baseline_final_rgb.png",
+    "bytes": 190736,
+    "sha256": "6486292986f9315780553bf10331774c6744662bf09d2c6cf17ec729ca36c850",
+    "panel": 1,
+    "episode_id": "episode_000",
+    "campaign": "20261123T102827Z_fc7f02b9"
+  },
+  {
+    "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/images/baseline_final_rgb.png",
+    "bytes": 187783,
+    "sha256": "676bba927cb19f520891ac1463f833b1fc7286aae509063ff743725fda53399a",
+    "panel": 2,
+    "episode_id": "episode_000",
+    "campaign": "20261123T103731Z_f576e557"
+  },
+  {
+    "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/images/baseline_final_rgb.png",
+    "bytes": 199032,
+    "sha256": "22ac0ae0d04319ec271438e7e68e110ed50a46b9136d8c6496b7cd40f3ff2ecd",
+    "panel": 3,
+    "episode_id": "episode_001",
+    "campaign": "20261123T103731Z_f576e557"
+  },
+  {
+    "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/images/baseline_final_rgb.png",
+    "bytes": 180991,
+    "sha256": "f6d950abfc0720be3072753fc4163b49a0e6a10d13eaea5f3d19f1c0ce0e12eb",
+    "panel": 4,
+    "episode_id": "episode_000",
+    "campaign": "20261123T104151Z_50ca4097"
+  },
+  {
+    "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/images/baseline_final_rgb.png",
+    "bytes": 180251,
+    "sha256": "925d323e8606d1cf4694d607a19b8991d59d031cfe183cb8f69ace7fbc198bbf",
+    "panel": 5,
+    "episode_id": "episode_002",
+    "campaign": "20261123T104151Z_50ca4097"
+  },
+  {
+    "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/images/baseline_final_rgb.png",
+    "bytes": 174815,
+    "sha256": "5d5fd942bece7b4e80d651867e6b15e80ac7c4ee9986cdeecad240583ddaceff",
+    "panel": 6,
+    "episode_id": "episode_001",
+    "campaign": "20261124T025108Z_ab7cad4b"
+  },
+  {
+    "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/images/baseline_final_rgb.png",
+    "bytes": 203833,
+    "sha256": "77b40215d61e4c28ebce22456f59e53dd6e15c29e3cd55925d7153b1f66b7911",
+    "panel": 7,
+    "episode_id": "episode_000",
+    "campaign": "20261124T025108Z_ab7cad4b"
+  },
+  {
+    "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/images/baseline_final_rgb.png",
+    "bytes": 182962,
+    "sha256": "0ab15ee49869b5f87c804aa4792d04a2a3f2b6e224f9f9b6d6475d106148f35d",
+    "panel": 8,
+    "episode_id": "episode_000",
+    "campaign": "20261124T025638Z_c38f8690"
+  },
+  {
+    "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/images/baseline_final_rgb.png",
+    "bytes": 182951,
+    "sha256": "c6fa99d86b4dd60227c0b3544d7980a2bda24b8c168443e2c721dc398ac6c95e",
+    "panel": 9,
+    "episode_id": "episode_001",
+    "campaign": "20261124T025638Z_c38f8690"
+  }
+]

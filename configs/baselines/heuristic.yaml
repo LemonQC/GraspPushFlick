@@ -1,0 +1,9 @@
+method: heuristic
+implementation: FROM_SCRATCH
+quality_weight: 1.0
+benefit_proxy_weight: 0.25
+nominal_cost_weight: 0.10
+preparation_penalty: 0.10
+tie_break: fixed_common_candidate_order
+no_legal_candidate_action: -1
+notes: Observable proxies only; no scene family, oracle, or seed branching.

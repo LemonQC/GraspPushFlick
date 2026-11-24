@@ -1,8 +1,18 @@
 # GraspPushFlick / TRO-APFG
 
-指定目标的三维杂乱环境取出研究：Active、Push、真实 Flip、6-DoF Grasp。已建立 M0 环境与资产基线，并按用户追加要求实现 SR5 硬件仿真和已知坐标动作接口，不训练模型或宣称最终算法贡献。
+指定目标的三维杂乱环境取出研究：Active、Push、真实 Flip、6-DoF Grasp。已建立 M0 环境、SR5 硬件仿真与 M1 接口，并按 com3.md 开展 Baseline 小规模真实训练和物理测试，不宣称最终算法贡献。
 
-**M1 专家场景与统一接口已实际运行。** Direct、C1空间不足、C2不利姿态、C3信息不足，以及C4混合配置均可查看；每类是待验证的机制假设。独立推动、约94.8°真实翻转（显式ORACLE诊断）、RGBD GraspNet完整取出已通过开发smoke；主动观察只验证运动，尚未证明收益。全部17次运行含4次失败，见 [M1实测报告](docs/M1_REPORT_ZH.md)、[E1协议](docs/E1_PROTOCOL_ZH.md) 与 `evidence/m1/summary.json`。正式E1比较、E2/E3和训练均NOT_RUN。
+**Baseline 实际链路已运行，规模化训练 NOT_READY。** E1 v3 首批16次全部完成、初态配对有效，但没有准备动作的额外取出收益，剩余48次未扩展。DQN完成4次真实online交互/6条Replay/160次更新；BC和高层DP在相同6个成功episode上各完成200次更新。统一GUI的两个heldout实例结果：Grasp Only 1/2、Heuristic 1/2、Random 0/2、DQN 2/2、BC 1/2、DP 0/2。这是链路smoke，不是论文方法排名。详见 [完整报告](docs/BASELINE_PARALLEL_REPORT_ZH.md)、[实现身份矩阵](docs/BASELINE_IMPLEMENTATION_MATRIX.md) 和 `evidence/baselines/summary.json`。
+
+```bash
+# 直接查看DQN在汤罐上的真实 Active→Grasp 完整取出录像
+bash scripts/play_video.sh outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/videos/m1/third.mp4
+# 训练与物理测评入口；完整精确参数和模型路径见报告
+bash scripts/train_baseline.sh --help
+bash scripts/eval_baseline.sh --help
+```
+
+**M1 专家场景与统一接口已实际运行。** Direct、C1空间不足、C2不利姿态、C3信息不足，以及C4混合配置均可查看；每类是待验证的机制假设。独立推动、约94.8°真实翻转（显式ORACLE诊断）、RGBD GraspNet完整取出已通过开发smoke。原17次运行含4次失败，见 [历史M1报告](docs/M1_REPORT_ZH.md)、[原E1协议](docs/E1_PROTOCOL_ZH.md) 与 `evidence/m1/summary.json`。本轮新增E1v3和训练结果另存Baseline报告；E2/E3与规模化训练仍NOT_RUN。
 
 ```bash
 # 查看本轮专家设计的候选场景；也可换成 Direct / C2 / C3 / C4

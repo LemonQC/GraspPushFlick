@@ -1,0 +1,26 @@
+schema: baseline_candidate_v1
+information_mode: RGBD_POLICY
+controller_revision: parallel_jaw_execution_v1
+candidate_generator: rgbd_candidate_pool_v1
+max_candidates: 24
+max_raw_grasp_candidates: 8
+max_grasp_variants: 2
+max_preparation_actions: 1
+max_grasp_attempts: 1
+maximum_episode_simulation_s: 120
+maximum_episode_wall_s: 600
+physics_hz: 480
+width: 640
+height: 480
+video_fps: 30
+record_all_episodes: true
+gpu_parallel_jobs: 1
+observation_dimension: 32
+candidate_dimension: 24
+policy_encoder: common_sensor_geometry_and_proprio_features
+reward:
+  terminal_full_retrieval: 1.0
+  time_weight: 0.001
+  preparation_weight: 0.01
+  disturbance_weight: 0.02
+  command_failure_weight: 0.05

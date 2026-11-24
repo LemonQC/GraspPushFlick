@@ -1,0 +1,50 @@
+{
+  "audit_date": "2026-11-23",
+  "scope": "Primary-source identity/task/implementation audit only; none reproduced locally",
+  "methods": [
+    {
+      "name": "GAPG",
+      "paper": "https://arxiv.org/abs/2603.21195",
+      "official_repository": "https://github.com/xiaolijz/GAPG",
+      "inspected_head_sha": "1bfd4c040715e606ba7a2668697b9acd189dfff8",
+      "verification": "git ls-remote HEAD and official README; code/data not downloaded",
+      "status": "NOT_RUN",
+      "reason": "Native PyBullet/Python3.8 learned push/grasp evaluation and dependency/data pipeline not adapted to current SR5 shared pool."
+    },
+    {
+      "name": "GOMP graspability field",
+      "project": "https://zlicheng.com/gomp_page/",
+      "official_repository": "https://github.com/Colmar-zlicheng/GOMP",
+      "inspected_head_sha": "a7f1b99f1e87e9562246f856b77ad939a95cce92",
+      "upstream_isaaclab_sha": "e4d644f2b1ffccd184b909e8d65a83d86847a6ea",
+      "verification": "git ls-remote HEAD and official README; code/data not downloaded",
+      "status": "NOT_RUN",
+      "reason": "Native IsaacSim5.0/Python3.11 pipeline and learned graspability/teacher-student/data assets differ from installed fallback; no system reinstallation authorized."
+    },
+    {
+      "name": "MS-MEM",
+      "paper": "https://arxiv.org/html/2609.02493v1",
+      "version": "arXiv v1, 2026-09-02",
+      "official_repository": null,
+      "status": "NOT_RUN",
+      "reason": "No implementation commit verified in consulted primary sources; evidential belief and action-outcome information-gain models not implemented as MS-MEM."
+    },
+    {
+      "name": "Uni-PNP",
+      "paper": "https://arxiv.org/abs/2610.21735",
+      "project": "https://lgswdn.github.io/Uni-PNP/",
+      "official_repository": null,
+      "status": "NOT_RUN",
+      "reason": "Official project marks Code Coming soon; native pose-reaching/dynamics representation/continuous policy not available as a verified reproduction."
+    },
+    {
+      "name": "SPIN Skill Planning to INference",
+      "paper": "https://arxiv.org/html/2502.18015v3",
+      "project": "https://sites.google.com/view/skill-rrt",
+      "version": "arXiv v3, 2025-05-07; official project CoRL2025",
+      "official_repository": null,
+      "status": "NOT_RUN",
+      "reason": "No implementation commit verified on consulted official project; native IsaacGym Skill-RRT/connectors/demo distillation pipeline is not replaced by our shared-pool high-level imitation models."
+    }
+  ]
+}

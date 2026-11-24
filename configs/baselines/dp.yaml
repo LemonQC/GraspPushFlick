@@ -1,0 +1,27 @@
+method: DP_HIGH_LEVEL_ADAPTED_OFFICIAL_UNET
+schema: baseline_candidate_v1
+official_network_commit: 5ba07ac6661db573af695b419a7947ecb704690f
+official_network_license: MIT
+diffusion_scheduler: FROM_SCRATCH_DDPM_EPSILON
+observation_steps: 1
+prediction_horizon: 2
+executed_action_steps: 1
+action_dim: 24
+conditioning: sensor_features_and_legal_candidate_mean_max
+unet_channels: [32, 64]
+diffusion_step_embed_dim: 32
+diffusion_steps: 32
+beta_schedule: squaredcos_cap_v2
+variance: fixed_small_posterior
+clip_predicted_clean_sample: true
+normalization: train_success_action_minmax_center_half_range_floor_0.1
+candidate_mapping: nearest_normalized_legal_candidate
+epochs: 200
+batch_size: 16
+learning_rate: 0.001
+successful_demonstrations_only: true
+validation_fraction_by_episode: 0.2
+seed: 20261123
+device: cpu
+native_ee_trajectory_DP: NOT_RUN
+native_pointcloud_DP3: NOT_RUN

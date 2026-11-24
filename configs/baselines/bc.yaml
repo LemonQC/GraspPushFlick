@@ -1,0 +1,13 @@
+method: BC_FROM_SCRATCH
+schema: baseline_candidate_v1
+hidden: 64
+epochs: 200
+batch_size: 16
+learning_rate: 0.001
+weight_decay: 0.00001
+successful_demonstrations_only: true
+training_split: train
+validation_fraction_by_episode: 0.2
+seed: 20261123
+device: cpu
+threads: 1

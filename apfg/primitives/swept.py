@@ -31,9 +31,9 @@ def source_shapes(model):
     return shapes
 
 
-def remove_observed_robot(points,model,joints,margin=.004):
+def remove_observed_robot(points,model,joints,margin=.004,opening=.08):
     """Proprioception/source-model ego mask; no environmental GT is read."""
-    points=np.asarray(points);keep=np.ones(len(points),bool);frames=model.fk(joints,opening=.08)
+    points=np.asarray(points);keep=np.ones(len(points),bool);frames=model.fk(joints,opening=opening)
     for shape in source_shapes(model):
         transform=frames[shape['link']]@shape['origin']
         local=(points-transform[:3,3])@transform[:3,:3]
@@ -45,7 +45,7 @@ def remove_observed_robot(points,model,joints,margin=.004):
     return points[keep]
 
 
-def swept_check(model,joint_path,scene_points,target_points,grasp_tcp,carry_from_segment=3,samples=7):
+def swept_check(model,joint_path,scene_points,target_points,grasp_tcp,carry_from_segment=3,samples=7,carry_target=True,opening=.08):
     scene=np.asarray(scene_points,float);target=np.asarray(target_points,float)
     if len(scene):
         _,idx=np.unique(np.floor(scene/.006).astype(np.int64),axis=0,return_index=True);scene=scene[idx]
@@ -55,7 +55,7 @@ def swept_check(model,joint_path,scene_points,target_points,grasp_tcp,carry_from
     for segment,(start,end) in enumerate(zip(joint_path,joint_path[1:])):
         points=scene if segment<carry_from_segment else non_target
         for u in np.linspace(0,1,samples):
-            q=np.asarray(start)+u*(np.asarray(end)-start);frames=model.fk(q,opening=.08);sample_count+=1
+            q=np.asarray(start)+u*(np.asarray(end)-start);frames=model.fk(q,opening=opening);sample_count+=1
             for shape in shapes:
                 transform=frames[shape['link']]@shape['origin'];vertices=shape['vertices']@transform[:3,:3].T+transform[:3,3]
                 if vertices[:,2].min()<-.004:
@@ -67,7 +67,7 @@ def swept_check(model,joint_path,scene_points,target_points,grasp_tcp,carry_from
                     equations=shape['planes'];collisions=np.all(local[inside]@equations[:,:3].T+equations[:,3]<-.001,axis=1)
                     if collisions.sum()>2:
                         return {'status':'FAILED','reason':'observed_cloud_intersection','link':shape['link'],'segment':segment,'sample':float(u),'points':int(collisions.sum()),'checked_samples':sample_count}
-            if segment>=carry_from_segment and len(target):
+            if carry_target and segment>=carry_from_segment and len(target):
                 rel=(target-grasp_tcp[:3,3])@grasp_tcp[:3,:3]
                 moved=rel@frames['ral_tcp'][:3,:3].T+frames['ral_tcp'][:3,3]
                 if moved[:,2].min()<-.004:return {'status':'FAILED','reason':'held_observed_target_table_intersection','segment':segment}

@@ -1,0 +1,19 @@
+implementation: FROM_SCRATCH
+algorithm: candidate_conditioned_double_dqn
+seed: 20261123
+device: cpu
+updates: 120
+network:
+  hidden_dim: 96
+  learning_rate: 0.001
+  gamma: 0.98
+  batch_size: 8
+  min_replay: 2
+  replay_capacity: 1024
+  target_update_interval: 20
+  gradient_clip: 10.0
+  epsilon_start: 1.0
+  epsilon_end: 0.1
+  epsilon_decay_transitions: 100
+training_partition: train
+note: Mini replay training is a chain smoke, not large-scale online RL or a task-success claim.

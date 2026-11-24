@@ -1,0 +1,4190 @@
+{
+  "collected_utc": "2026-11-24T03:33:31.575179+00:00",
+  "scope": "Small real Baseline development chains; no paper success-rate, novelty, or large-training readiness claim",
+  "protocol": {
+    "path": "configs/m1/e1_protocol_v3.json",
+    "frozen_protocol_sha256": "6d4c2c029288d07e948f90256bbab9065275be8bdb2826c0b8bcbaf870d37c19",
+    "controller_revision": "parallel_jaw_execution_v1",
+    "controller_source_commit": "d51265bc76aab1d1cee45a16995a510d04f61a1b",
+    "cameras": {
+      "views": [
+        "fixed",
+        "wrist"
+      ],
+      "width": 640,
+      "height": 480,
+      "physics_hz": 480,
+      "sensor_frame_refresh_each_decision": true,
+      "same_initial_view": true
+    },
+    "baseline_partitions": {
+      "training": {
+        "object_ids": [
+          "ycb:006_mustard_bottle"
+        ],
+        "asset_probe_status": "PASS_LIMITED_SINGLE_ASSET",
+        "asset_probe_campaign": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa",
+        "asset_probe_result": "2/2 actual full retrieval PASS in one reused Isaac process",
+        "retained_failed_asset_probes": [
+          {
+            "object_id": "ycb:008_pudding_box",
+            "campaign": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9",
+            "episodes": 2,
+            "reason": "NO_LEGAL_GRASP"
+          },
+          {
+            "object_id": "ycb:003_cracker_box",
+            "campaign": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae",
+            "episodes": 2,
+            "reason": "INITIAL_UNSTABLE"
+          }
+        ],
+        "seeds": [
+          2026112320,
+          2026112321,
+          2026112322,
+          2026112323,
+          2026112324,
+          2026112325,
+          2026112326,
+          2026112327,
+          2026112328,
+          2026112329,
+          2026112330,
+          2026112331,
+          2026112332,
+          2026112333,
+          2026112334,
+          2026112335
+        ],
+        "demonstration_seeds": [
+          2026112320,
+          2026112321,
+          2026112322,
+          2026112323,
+          2026112324,
+          2026112325,
+          2026112326,
+          2026112327,
+          2026112328,
+          2026112329,
+          2026112330,
+          2026112331
+        ],
+        "dqn_online_seeds": [
+          2026112332,
+          2026112333,
+          2026112334,
+          2026112335
+        ],
+        "episode_budget": {
+          "demonstrations": 12,
+          "dqn_online": 4,
+          "total": 16
+        },
+        "scope": "Small chain smoke, single train asset; diversity inadequate for next-scale training. Actual manifest determines successful demonstrations; never fabricate success counts."
+      },
+      "heldout": {
+        "cases": [
+          {
+            "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+            "family": "Direct",
+            "seed": 2026112309,
+            "target_asset": "ycb:004_sugar_box"
+          },
+          {
+            "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+            "family": "Direct",
+            "seed": 2026112310,
+            "target_asset": "ycb:005_tomato_soup_can"
+          }
+        ],
+        "same_cases_for": [
+          "DQN",
+          "BC",
+          "DIFFUSION_HIGH_LEVEL"
+        ],
+        "training_label_access": false
+      },
+      "qualification": {
+        "training_label_access": false,
+        "case_ids": [
+          "Direct_2026112201_004_sugar_box",
+          "C1_2026112201_004_sugar_box",
+          "C2_2026112201_004_sugar_box",
+          "C3_2026112201_004_sugar_box"
+        ]
+      },
+      "split_invariants": [
+        "No train/holdout object or seed overlap.",
+        "BC and high-level DP use identical successful transition subset hashes.",
+        "Prior M1/grasp regression episodes are not relabeled as new E1 or new baseline training samples."
+      ]
+    }
+  },
+  "reused_software_stack": {
+    "gpu": "RTX 3090",
+    "driver": "535.230.02",
+    "isaac_sim": "4.5.0 binary",
+    "isaac_lab": "v2.0.2",
+    "python": "3.10.22",
+    "torch": "2.5.1+cu118",
+    "physics": "CPU PhysX MBP TGS 480Hz",
+    "rendering": "RTX RGB-D 640x480, recorded 30fps"
+  },
+  "campaigns": [
+    {
+      "run_id": "20261123T102827Z_fc7f02b9",
+      "mode": "probe",
+      "status": "PASS",
+      "declared_episodes": 2,
+      "recorded_episodes": 2,
+      "directory": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9",
+      "command": [
+        "scripts/run_baseline_experiments.py",
+        "--headless",
+        "--mode",
+        "probe"
+      ],
+      "summary": {
+        "mode": "probe",
+        "episodes": 2,
+        "successes": 0,
+        "records_file": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episodes.jsonl",
+        "status": "PASS",
+        "scope": "Small development baseline chain; not paper performance or final large-scale training"
+      },
+      "args": {
+        "mode": "probe",
+        "protocol": "configs/m1/e1_protocol_v3.json",
+        "output": null,
+        "episodes": 12,
+        "manifest": "outputs/baselines/dataset/manifest.jsonl",
+        "dqn_checkpoint": null,
+        "bc_checkpoint": null,
+        "dp_checkpoint": null,
+        "method": "all",
+        "joint_speed": 0.3,
+        "width": 640,
+        "height": 480,
+        "gui": false,
+        "headless": true,
+        "livestream": -1,
+        "enable_cameras": false,
+        "device": "cuda:0",
+        "cpu": false,
+        "verbose": false,
+        "info": false,
+        "experience": "",
+        "kit_args": ""
+      },
+      "record_count_status": "PASS"
+    },
+    {
+      "run_id": "20261123T103216Z_cf3c2efa",
+      "mode": "probe",
+      "status": "PASS",
+      "declared_episodes": 2,
+      "recorded_episodes": 2,
+      "directory": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa",
+      "command": [
+        "scripts/run_baseline_experiments.py",
+        "--headless",
+        "--mode",
+        "probe",
+        "--probe-asset",
+        "ycb:006_mustard_bottle"
+      ],
+      "summary": {
+        "mode": "probe",
+        "episodes": 2,
+        "successes": 2,
+        "records_file": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episodes.jsonl",
+        "status": "PASS",
+        "scope": "Small development baseline chain; not paper performance or final large-scale training"
+      },
+      "args": {
+        "mode": "probe",
+        "protocol": "configs/m1/e1_protocol_v3.json",
+        "output": null,
+        "episodes": 12,
+        "manifest": "outputs/baselines/dataset/manifest.jsonl",
+        "dqn_checkpoint": null,
+        "bc_checkpoint": null,
+        "dp_checkpoint": null,
+        "method": "all",
+        "probe_asset": "ycb:006_mustard_bottle",
+        "joint_speed": 0.3,
+        "width": 640,
+        "height": 480,
+        "gui": false,
+        "headless": true,
+        "livestream": -1,
+        "enable_cameras": false,
+        "device": "cuda:0",
+        "cpu": false,
+        "verbose": false,
+        "info": false,
+        "experience": "",
+        "kit_args": ""
+      },
+      "record_count_status": "PASS"
+    },
+    {
+      "run_id": "20261123T103421Z_40c6d1ae",
+      "mode": "probe",
+      "status": "PASS",
+      "declared_episodes": 2,
+      "recorded_episodes": 2,
+      "directory": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae",
+      "command": [
+        "scripts/run_baseline_experiments.py",
+        "--headless",
+        "--mode",
+        "probe",
+        "--probe-asset",
+        "ycb:003_cracker_box"
+      ],
+      "summary": {
+        "mode": "probe",
+        "episodes": 2,
+        "successes": 0,
+        "records_file": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episodes.jsonl",
+        "status": "PASS",
+        "scope": "Small development baseline chain; not paper performance or final large-scale training"
+      },
+      "args": {
+        "mode": "probe",
+        "protocol": "configs/m1/e1_protocol_v3.json",
+        "output": null,
+        "episodes": 12,
+        "manifest": "outputs/baselines/dataset/manifest.jsonl",
+        "dqn_checkpoint": null,
+        "bc_checkpoint": null,
+        "dp_checkpoint": null,
+        "method": "all",
+        "probe_asset": "ycb:003_cracker_box",
+        "joint_speed": 0.3,
+        "width": 640,
+        "height": 480,
+        "gui": false,
+        "headless": true,
+        "livestream": -1,
+        "enable_cameras": false,
+        "device": "cuda:0",
+        "cpu": false,
+        "verbose": false,
+        "info": false,
+        "experience": "",
+        "kit_args": ""
+      },
+      "record_count_status": "PASS"
+    },
+    {
+      "run_id": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "status": "PASS",
+      "declared_episodes": 16,
+      "recorded_episodes": 16,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557",
+      "command": [
+        "scripts/run_baseline_experiments.py",
+        "--headless",
+        "--mode",
+        "e1"
+      ],
+      "summary": {
+        "mode": "e1",
+        "episodes": 16,
+        "successes": 5,
+        "records_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episodes.jsonl",
+        "status": "PASS",
+        "scope": "Small development baseline chain; not paper performance or final large-scale training",
+        "E1": {
+          "status": "PASS",
+          "executed": 16,
+          "planned": 16,
+          "arms": [
+            "DIRECT_GRASP",
+            "PUSH_GRASP",
+            "FLIP_GRASP",
+            "VIEW_GRASP"
+          ],
+          "case_order": [
+            "Direct_2026112201_004_sugar_box",
+            "C1_2026112201_004_sugar_box",
+            "C2_2026112201_004_sugar_box",
+            "C3_2026112201_004_sugar_box"
+          ],
+          "outcome_matrix": [
+            [
+              true,
+              false,
+              false,
+              true
+            ],
+            [
+              true,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              true,
+              false,
+              false,
+              true
+            ]
+          ],
+          "cases": [
+            {
+              "case_id": "Direct_2026112201_004_sugar_box",
+              "pair_audit": {
+                "status": "PASS",
+                "pair_status": "VALID_PAIR",
+                "reasons": [],
+                "initial_state_sha256": [
+                  "0affd1e0f297b2afcc82a7a695ec13be2fcbf5397b2476828692987dfcb19591",
+                  "0affd1e0f297b2afcc82a7a695ec13be2fcbf5397b2476828692987dfcb19591",
+                  "0affd1e0f297b2afcc82a7a695ec13be2fcbf5397b2476828692987dfcb19591",
+                  "0affd1e0f297b2afcc82a7a695ec13be2fcbf5397b2476828692987dfcb19591"
+                ],
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0,
+                "per_body": {
+                  "target": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  },
+                  "far_left": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  },
+                  "far_right": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  },
+                  "far_front": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  }
+                },
+                "scene_content_sha256": [
+                  "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+                  "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+                  "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+                  "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805"
+                ],
+                "initial_observation_sha256": [
+                  "295dd14a2380e6cc9daa4214693ab08e3b58738fcfc9897749466100f73dc49e",
+                  "a671882481cb9905858cd52afef327e92a9419bd4aa08deb289d7efb3743fe43",
+                  "2983be04eb6c9e2182f52a08e77767a7dddd86f5b9a76044aab056c391ce6d44",
+                  "5596a8335df4a4a9ad3a5d89e29adb6c6a7611cc7dc2640fe136ba72e590fd60"
+                ],
+                "position_tolerance_m": 0.002,
+                "orientation_tolerance_rad": 0.01
+              },
+              "outcomes": {
+                "DIRECT_GRASP": {
+                  "status": "PASS",
+                  "success": true,
+                  "failure_reason": null
+                },
+                "PUSH_GRASP": {
+                  "status": "FAILED",
+                  "success": false,
+                  "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+                },
+                "FLIP_GRASP": {
+                  "status": "FAILED",
+                  "success": false,
+                  "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+                },
+                "VIEW_GRASP": {
+                  "status": "PASS",
+                  "success": true,
+                  "failure_reason": null
+                }
+              },
+              "observed_preparation_retrieval_benefit": false
+            },
+            {
+              "case_id": "C1_2026112201_004_sugar_box",
+              "pair_audit": {
+                "status": "PASS",
+                "pair_status": "VALID_PAIR",
+                "reasons": [],
+                "initial_state_sha256": [
+                  "e837af56149c737799c6cb3d318445d534acc63320cf6f2df00cf8ff7adf0165",
+                  "e837af56149c737799c6cb3d318445d534acc63320cf6f2df00cf8ff7adf0165",
+                  "e837af56149c737799c6cb3d318445d534acc63320cf6f2df00cf8ff7adf0165",
+                  "e837af56149c737799c6cb3d318445d534acc63320cf6f2df00cf8ff7adf0165"
+                ],
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 1.3877787807814457e-17,
+                "per_body": {
+                  "target": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 1.3877787807814457e-17
+                  },
+                  "left_blocker": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  },
+                  "right_blocker": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  },
+                  "front_blocker": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  }
+                },
+                "scene_content_sha256": [
+                  "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+                  "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+                  "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+                  "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3"
+                ],
+                "initial_observation_sha256": [
+                  "305250195cc88b7a2857b11194aefd2827e10c301a97e5bee98d7c1b1ad63344",
+                  "04085c7e92c991793b63635cb065432b2ba2c6017f5b02818daab35bf3a3c523",
+                  "cd3738c1f1b22fd4914c49d853f9df707d08825f89670b1c05037e6d18f2abe7",
+                  "dbc9bb867f05df243d15dc957ba39a627259de9df3ee0ba4e8ffa2fb98067da4"
+                ],
+                "position_tolerance_m": 0.002,
+                "orientation_tolerance_rad": 0.01
+              },
+              "outcomes": {
+                "DIRECT_GRASP": {
+                  "status": "PASS",
+                  "success": true,
+                  "failure_reason": null
+                },
+                "PUSH_GRASP": {
+                  "status": "FAILED",
+                  "success": false,
+                  "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+                },
+                "FLIP_GRASP": {
+                  "status": "FAILED",
+                  "success": false,
+                  "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+                },
+                "VIEW_GRASP": {
+                  "status": "FAILED",
+                  "success": false,
+                  "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL"
+                }
+              },
+              "observed_preparation_retrieval_benefit": false
+            },
+            {
+              "case_id": "C2_2026112201_004_sugar_box",
+              "pair_audit": {
+                "status": "PASS",
+                "pair_status": "VALID_PAIR",
+                "reasons": [],
+                "initial_state_sha256": [
+                  "f8e1e8c5df5c5ef3038ae8d8777d063a8784d2bc460fe0199f07d5c450bb018c",
+                  "f8e1e8c5df5c5ef3038ae8d8777d063a8784d2bc460fe0199f07d5c450bb018c",
+                  "f8e1e8c5df5c5ef3038ae8d8777d063a8784d2bc460fe0199f07d5c450bb018c",
+                  "f8e1e8c5df5c5ef3038ae8d8777d063a8784d2bc460fe0199f07d5c450bb018c"
+                ],
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0,
+                "per_body": {
+                  "target": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  },
+                  "far_left": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  },
+                  "far_right": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  },
+                  "far_front": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  }
+                },
+                "scene_content_sha256": [
+                  "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+                  "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+                  "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+                  "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8"
+                ],
+                "initial_observation_sha256": [
+                  "754d0de9e61e43475924f6cd2dbf908c381cbb8956b4a3ce74ede07ca5f675c0",
+                  "fa846810624a216b871a67f6a802a5c0523b71c1f21c7d6e21e6d75921d37cdc",
+                  "8a85ff3e345c80a65a853375cddd494ffb2519bfb706d10f25298c35195c7db7",
+                  "8e16a69df79ce6d7af7bb1219b37bafb0e7a65594d9d03981b2e7827de6b6530"
+                ],
+                "position_tolerance_m": 0.002,
+                "orientation_tolerance_rad": 0.01
+              },
+              "outcomes": {
+                "DIRECT_GRASP": {
+                  "status": "FAILED",
+                  "success": false,
+                  "failure_reason": "NO_LEGAL_GRASP"
+                },
+                "PUSH_GRASP": {
+                  "status": "FAILED",
+                  "success": false,
+                  "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+                },
+                "FLIP_GRASP": {
+                  "status": "FAILED",
+                  "success": false,
+                  "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+                },
+                "VIEW_GRASP": {
+                  "status": "FAILED",
+                  "success": false,
+                  "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+                }
+              },
+              "observed_preparation_retrieval_benefit": false
+            },
+            {
+              "case_id": "C3_2026112201_004_sugar_box",
+              "pair_audit": {
+                "status": "PASS",
+                "pair_status": "VALID_PAIR",
+                "reasons": [],
+                "initial_state_sha256": [
+                  "4b29f2e03229ec295201b63eb93d5024d8d2d0f7c576a965e18b30b560a838b0",
+                  "4b29f2e03229ec295201b63eb93d5024d8d2d0f7c576a965e18b30b560a838b0",
+                  "4b29f2e03229ec295201b63eb93d5024d8d2d0f7c576a965e18b30b560a838b0",
+                  "4b29f2e03229ec295201b63eb93d5024d8d2d0f7c576a965e18b30b560a838b0"
+                ],
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0,
+                "per_body": {
+                  "target": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  },
+                  "visual_occluder": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  },
+                  "far_left": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  },
+                  "far_right": {
+                    "max_position_difference_m": 0.0,
+                    "max_orientation_difference_rad": 0.0
+                  }
+                },
+                "scene_content_sha256": [
+                  "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+                  "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+                  "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+                  "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e"
+                ],
+                "initial_observation_sha256": [
+                  "3a16f91d3b35c420d60d29d20220f6209d1eb07791debf83565dfecef2b7fcc8",
+                  "4d613012524b7633e75c38f6b015d19d4d596a9068b3308b65ad782d2921ef43",
+                  "180e346a0275a5c3cbbe7ab416cd98779cbf9eaa86a4169086d9acb8cde32706",
+                  "c895354d61c1370413ea5568dcfb2a3a6891c7e7aa83c54be277d8130a6a6789"
+                ],
+                "position_tolerance_m": 0.002,
+                "orientation_tolerance_rad": 0.01
+              },
+              "outcomes": {
+                "DIRECT_GRASP": {
+                  "status": "PASS",
+                  "success": true,
+                  "failure_reason": null
+                },
+                "PUSH_GRASP": {
+                  "status": "FAILED",
+                  "success": false,
+                  "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+                },
+                "FLIP_GRASP": {
+                  "status": "FAILED",
+                  "success": false,
+                  "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+                },
+                "VIEW_GRASP": {
+                  "status": "PASS",
+                  "success": true,
+                  "failure_reason": null
+                }
+              },
+              "observed_preparation_retrieval_benefit": false
+            }
+          ],
+          "go_for_remaining_48": false,
+          "NO_GO_REASON": [
+            "No valid same-instance preparation-to-retrieval benefit in this fixed subset"
+          ],
+          "benefit_case_ids": [],
+          "scope": "Fixed 16-run E1 qualification subset; not a formal paper success-rate estimate"
+        }
+      },
+      "args": {
+        "mode": "e1",
+        "protocol": "configs/m1/e1_protocol_v3.json",
+        "output": null,
+        "episodes": 12,
+        "manifest": "outputs/baselines/dataset/manifest.jsonl",
+        "dqn_checkpoint": null,
+        "bc_checkpoint": null,
+        "dp_checkpoint": null,
+        "method": "all",
+        "probe_asset": "ycb:008_pudding_box",
+        "joint_speed": 0.3,
+        "width": 640,
+        "height": 480,
+        "gui": false,
+        "headless": true,
+        "livestream": -1,
+        "enable_cameras": false,
+        "device": "cuda:0",
+        "cpu": false,
+        "verbose": false,
+        "info": false,
+        "experience": "",
+        "kit_args": ""
+      },
+      "record_count_status": "PASS"
+    },
+    {
+      "run_id": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "status": "PASS",
+      "declared_episodes": 12,
+      "recorded_episodes": 12,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097",
+      "command": [
+        "scripts/run_baseline_experiments.py",
+        "--headless",
+        "--mode",
+        "collect",
+        "--episodes",
+        "12"
+      ],
+      "summary": {
+        "mode": "collect",
+        "episodes": 12,
+        "successes": 6,
+        "records_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episodes.jsonl",
+        "status": "PASS",
+        "scope": "Small development baseline chain; not paper performance or final large-scale training"
+      },
+      "args": {
+        "mode": "collect",
+        "protocol": "configs/m1/e1_protocol_v3.json",
+        "output": null,
+        "episodes": 12,
+        "manifest": "outputs/baselines/dataset/manifest.jsonl",
+        "dqn_checkpoint": null,
+        "bc_checkpoint": null,
+        "dp_checkpoint": null,
+        "method": "all",
+        "probe_asset": "ycb:008_pudding_box",
+        "joint_speed": 0.3,
+        "width": 640,
+        "height": 480,
+        "gui": false,
+        "headless": true,
+        "livestream": -1,
+        "enable_cameras": false,
+        "device": "cuda:0",
+        "cpu": false,
+        "verbose": false,
+        "info": false,
+        "experience": "",
+        "kit_args": ""
+      },
+      "record_count_status": "PASS"
+    },
+    {
+      "run_id": "20261124T025108Z_ab7cad4b",
+      "mode": "online",
+      "status": "PASS",
+      "declared_episodes": 4,
+      "recorded_episodes": 4,
+      "directory": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b",
+      "command": [
+        "scripts/run_baseline_experiments.py",
+        "--headless",
+        "--mode",
+        "online",
+        "--episodes",
+        "4"
+      ],
+      "summary": {
+        "mode": "online",
+        "episodes": 4,
+        "successes": 3,
+        "records_file": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episodes.jsonl",
+        "status": "PASS",
+        "scope": "Small development baseline chain; not paper performance or final large-scale training"
+      },
+      "args": {
+        "mode": "online",
+        "protocol": "configs/m1/e1_protocol_v3.json",
+        "output": null,
+        "episodes": 4,
+        "manifest": "outputs/baselines/dataset/manifest.jsonl",
+        "dqn_checkpoint": null,
+        "bc_checkpoint": null,
+        "dp_checkpoint": null,
+        "method": "all",
+        "probe_asset": "ycb:008_pudding_box",
+        "joint_speed": 0.3,
+        "width": 640,
+        "height": 480,
+        "gui": false,
+        "headless": true,
+        "livestream": -1,
+        "enable_cameras": false,
+        "device": "cuda:0",
+        "cpu": false,
+        "verbose": false,
+        "info": false,
+        "experience": "",
+        "kit_args": ""
+      },
+      "record_count_status": "PASS"
+    },
+    {
+      "run_id": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "status": "PASS",
+      "declared_episodes": 12,
+      "recorded_episodes": 12,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690",
+      "command": [
+        "scripts/run_baseline_holdout.py",
+        "--method",
+        "all",
+        "--gui",
+        "--dqn-checkpoint",
+        "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/dqn_online.pt",
+        "--bc-checkpoint",
+        "outputs/baselines/train/bc_demo_v1/model.pt",
+        "--dp-checkpoint",
+        "outputs/baselines/train/dp_demo_v1/model.pt"
+      ],
+      "summary": {
+        "mode": "evaluate",
+        "episodes": 12,
+        "successes": 5,
+        "status": "PASS",
+        "scope": "Same two physical holdout cases per method; small chain test only",
+        "per_method": {
+          "grasp_only": {
+            "episodes": 2,
+            "successes": 1
+          },
+          "heuristic": {
+            "episodes": 2,
+            "successes": 1
+          },
+          "random_valid": {
+            "episodes": 2,
+            "successes": 0
+          },
+          "dqn": {
+            "episodes": 2,
+            "successes": 2
+          },
+          "bc": {
+            "episodes": 2,
+            "successes": 1
+          },
+          "dp": {
+            "episodes": 2,
+            "successes": 0
+          }
+        }
+      },
+      "args": {
+        "protocol": "configs/m1/e1_protocol_v3.json",
+        "output": null,
+        "method": "all",
+        "dqn_checkpoint": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/dqn_online.pt",
+        "bc_checkpoint": "outputs/baselines/train/bc_demo_v1/model.pt",
+        "dp_checkpoint": "outputs/baselines/train/dp_demo_v1/model.pt",
+        "joint_speed": 0.3,
+        "width": 640,
+        "height": 480,
+        "gui": true,
+        "headless": false,
+        "livestream": -1,
+        "enable_cameras": false,
+        "device": "cuda:0",
+        "cpu": false,
+        "verbose": false,
+        "info": false,
+        "experience": "",
+        "kit_args": ""
+      },
+      "record_count_status": "PASS"
+    }
+  ],
+  "pending_campaigns": [],
+  "physical_episodes": [
+    {
+      "campaign": "20261123T102827Z_fc7f02b9",
+      "mode": "probe",
+      "episode_id": "episode_000",
+      "method": "grasp_only",
+      "scene_id": "probe_reuse",
+      "case_id": null,
+      "arm": null,
+      "split": "probe",
+      "object_id": "ycb:008_pudding_box",
+      "seed": 2026112399,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_GRASP",
+      "failure_class": "NO_LEGAL_GRASP",
+      "recording_validation": "NOT_RUN",
+      "transition_count": 0,
+      "zero_action_episode": true,
+      "action_types": [],
+      "wall_s_including_reset": 29.80623554997146,
+      "simulation_time_s": 9.633333835750818,
+      "gpu_device_memory_sampled_peak_mib": null,
+      "gpu_peak_scope": "No peak measured in this historical probe",
+      "actual_disk_bytes": 42438071,
+      "local_directory": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000",
+      "episode_file": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/episode.json"
+    },
+    {
+      "campaign": "20261123T102827Z_fc7f02b9",
+      "mode": "probe",
+      "episode_id": "episode_001",
+      "method": "grasp_only",
+      "scene_id": "probe_reuse",
+      "case_id": null,
+      "arm": null,
+      "split": "probe",
+      "object_id": "ycb:008_pudding_box",
+      "seed": 2026112399,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_GRASP",
+      "failure_class": "NO_LEGAL_GRASP",
+      "recording_validation": "NOT_RUN",
+      "transition_count": 0,
+      "zero_action_episode": true,
+      "action_types": [],
+      "wall_s_including_reset": 29.070068569970317,
+      "simulation_time_s": 9.633333835750818,
+      "gpu_device_memory_sampled_peak_mib": null,
+      "gpu_peak_scope": "No peak measured in this historical probe",
+      "actual_disk_bytes": 42425251,
+      "local_directory": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001",
+      "episode_file": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/episode.json"
+    },
+    {
+      "campaign": "20261123T103216Z_cf3c2efa",
+      "mode": "probe",
+      "episode_id": "episode_000",
+      "method": "grasp_only",
+      "scene_id": "probe_reuse",
+      "case_id": null,
+      "arm": null,
+      "split": "probe",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112399,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 62.01229997200426,
+      "simulation_time_s": 27.833334784954786,
+      "gpu_device_memory_sampled_peak_mib": null,
+      "gpu_peak_scope": "No peak measured in this historical probe",
+      "actual_disk_bytes": 56386042,
+      "local_directory": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000",
+      "episode_file": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/episode.json"
+    },
+    {
+      "campaign": "20261123T103216Z_cf3c2efa",
+      "mode": "probe",
+      "episode_id": "episode_001",
+      "method": "grasp_only",
+      "scene_id": "probe_reuse",
+      "case_id": null,
+      "arm": null,
+      "split": "probe",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112399,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 60.992652162967715,
+      "simulation_time_s": 27.833334784954786,
+      "gpu_device_memory_sampled_peak_mib": null,
+      "gpu_peak_scope": "No peak measured in this historical probe",
+      "actual_disk_bytes": 56392834,
+      "local_directory": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001",
+      "episode_file": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/episode.json"
+    },
+    {
+      "campaign": "20261123T103421Z_40c6d1ae",
+      "mode": "probe",
+      "episode_id": "episode_000",
+      "method": "grasp_only",
+      "scene_id": "probe_reuse",
+      "case_id": null,
+      "arm": null,
+      "split": "probe",
+      "object_id": "ycb:003_cracker_box",
+      "seed": 2026112399,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "INITIAL_UNSTABLE",
+      "failure_class": "INITIAL_UNSTABLE",
+      "recording_validation": "PASS",
+      "transition_count": 0,
+      "zero_action_episode": true,
+      "action_types": [],
+      "wall_s_including_reset": 24.54296442703344,
+      "simulation_time_s": 13.633334044367075,
+      "gpu_device_memory_sampled_peak_mib": 3365,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 31949106,
+      "local_directory": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_000",
+      "episode_file": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_000/episode.json"
+    },
+    {
+      "campaign": "20261123T103421Z_40c6d1ae",
+      "mode": "probe",
+      "episode_id": "episode_001",
+      "method": "grasp_only",
+      "scene_id": "probe_reuse",
+      "case_id": null,
+      "arm": null,
+      "split": "probe",
+      "object_id": "ycb:003_cracker_box",
+      "seed": 2026112399,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "INITIAL_UNSTABLE",
+      "failure_class": "INITIAL_UNSTABLE",
+      "recording_validation": "PASS",
+      "transition_count": 0,
+      "zero_action_episode": true,
+      "action_types": [],
+      "wall_s_including_reset": 24.049086355953477,
+      "simulation_time_s": 13.633334044367075,
+      "gpu_device_memory_sampled_peak_mib": 3367,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 31926819,
+      "local_directory": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_001",
+      "episode_file": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_001/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_000",
+      "method": "DIRECT_GRASP",
+      "scene_id": "Direct_2026112201_004_sugar_box",
+      "case_id": "Direct_2026112201_004_sugar_box",
+      "arm": "DIRECT_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 72.09128198598046,
+      "simulation_time_s": 33.33333507180214,
+      "gpu_device_memory_sampled_peak_mib": 3397,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 59284534,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_001",
+      "method": "PUSH_GRASP",
+      "scene_id": "Direct_2026112201_004_sugar_box",
+      "case_id": "Direct_2026112201_004_sugar_box",
+      "arm": "PUSH_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "PUSH"
+      ],
+      "wall_s_including_reset": 81.47270854504313,
+      "simulation_time_s": 37.60000196099281,
+      "gpu_device_memory_sampled_peak_mib": 4738,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 76528161,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_002",
+      "method": "FLIP_GRASP",
+      "scene_id": "Direct_2026112201_004_sugar_box",
+      "case_id": "Direct_2026112201_004_sugar_box",
+      "arm": "FLIP_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "FLIP"
+      ],
+      "wall_s_including_reset": 88.49626143503701,
+      "simulation_time_s": 41.76666884496808,
+      "gpu_device_memory_sampled_peak_mib": 3760,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 79773523,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_003",
+      "method": "VIEW_GRASP",
+      "scene_id": "Direct_2026112201_004_sugar_box",
+      "case_id": "Direct_2026112201_004_sugar_box",
+      "arm": "VIEW_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "ACTIVE",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 78.69567910896149,
+      "simulation_time_s": 35.10000183060765,
+      "gpu_device_memory_sampled_peak_mib": 3888,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 75345166,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_004",
+      "method": "DIRECT_GRASP",
+      "scene_id": "C1_2026112201_004_sugar_box",
+      "case_id": "C1_2026112201_004_sugar_box",
+      "arm": "DIRECT_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 58.85876852698857,
+      "simulation_time_s": 28.566668156534433,
+      "gpu_device_memory_sampled_peak_mib": 3401,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 59016701,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_005",
+      "method": "PUSH_GRASP",
+      "scene_id": "C1_2026112201_004_sugar_box",
+      "case_id": "C1_2026112201_004_sugar_box",
+      "arm": "PUSH_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "PUSH"
+      ],
+      "wall_s_including_reset": 76.74282177299028,
+      "simulation_time_s": 38.43333533778787,
+      "gpu_device_memory_sampled_peak_mib": 3383,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 82376918,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_006",
+      "method": "FLIP_GRASP",
+      "scene_id": "C1_2026112201_004_sugar_box",
+      "case_id": "C1_2026112201_004_sugar_box",
+      "arm": "FLIP_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "FLIP"
+      ],
+      "wall_s_including_reset": 84.303317021986,
+      "simulation_time_s": 41.73333550989628,
+      "gpu_device_memory_sampled_peak_mib": 3938,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 86863533,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_007",
+      "method": "VIEW_GRASP",
+      "scene_id": "C1_2026112201_004_sugar_box",
+      "case_id": "C1_2026112201_004_sugar_box",
+      "arm": "VIEW_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "failure_class": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "ACTIVE",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 77.90427729702787,
+      "simulation_time_s": 39.23333537951112,
+      "gpu_device_memory_sampled_peak_mib": 3385,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 81234796,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_008",
+      "method": "DIRECT_GRASP",
+      "scene_id": "C2_2026112201_004_sugar_box",
+      "case_id": "C2_2026112201_004_sugar_box",
+      "arm": "DIRECT_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_GRASP",
+      "failure_class": "NO_LEGAL_GRASP",
+      "recording_validation": "PASS",
+      "transition_count": 0,
+      "zero_action_episode": true,
+      "action_types": [],
+      "wall_s_including_reset": 31.819600388000254,
+      "simulation_time_s": 9.633333835750818,
+      "gpu_device_memory_sampled_peak_mib": 4738,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 42631274,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_009",
+      "method": "PUSH_GRASP",
+      "scene_id": "C2_2026112201_004_sugar_box",
+      "case_id": "C2_2026112201_004_sugar_box",
+      "arm": "PUSH_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "PUSH"
+      ],
+      "wall_s_including_reset": 82.49957393796649,
+      "simulation_time_s": 39.333335384726524,
+      "gpu_device_memory_sampled_peak_mib": 4738,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 78292094,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_010",
+      "method": "FLIP_GRASP",
+      "scene_id": "C2_2026112201_004_sugar_box",
+      "case_id": "C2_2026112201_004_sugar_box",
+      "arm": "FLIP_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "FLIP"
+      ],
+      "wall_s_including_reset": 90.24750879401108,
+      "simulation_time_s": 44.10000229999423,
+      "gpu_device_memory_sampled_peak_mib": 3952,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 82131267,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_011",
+      "method": "VIEW_GRASP",
+      "scene_id": "C2_2026112201_004_sugar_box",
+      "case_id": "C2_2026112201_004_sugar_box",
+      "arm": "VIEW_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "ACTIVE"
+      ],
+      "wall_s_including_reset": 44.389281896990724,
+      "simulation_time_s": 15.300000797957182,
+      "gpu_device_memory_sampled_peak_mib": 3953,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 60829575,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_012",
+      "method": "DIRECT_GRASP",
+      "scene_id": "C3_2026112201_004_sugar_box",
+      "case_id": "C3_2026112201_004_sugar_box",
+      "arm": "DIRECT_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 60.43593924801098,
+      "simulation_time_s": 28.466668151319027,
+      "gpu_device_memory_sampled_peak_mib": 3400,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 58696526,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_013",
+      "method": "PUSH_GRASP",
+      "scene_id": "C3_2026112201_004_sugar_box",
+      "case_id": "C3_2026112201_004_sugar_box",
+      "arm": "PUSH_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "PUSH"
+      ],
+      "wall_s_including_reset": 77.07316199701745,
+      "simulation_time_s": 37.60000196099281,
+      "gpu_device_memory_sampled_peak_mib": 4737,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 79529183,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_014",
+      "method": "FLIP_GRASP",
+      "scene_id": "C3_2026112201_004_sugar_box",
+      "case_id": "C3_2026112201_004_sugar_box",
+      "arm": "FLIP_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "FLIP"
+      ],
+      "wall_s_including_reset": 85.90186499099946,
+      "simulation_time_s": 41.76666884496808,
+      "gpu_device_memory_sampled_peak_mib": 3398,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 83360115,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/episode.json"
+    },
+    {
+      "campaign": "20261123T103731Z_f576e557",
+      "mode": "e1",
+      "episode_id": "episode_015",
+      "method": "VIEW_GRASP",
+      "scene_id": "C3_2026112201_004_sugar_box",
+      "case_id": "C3_2026112201_004_sugar_box",
+      "arm": "VIEW_GRASP",
+      "split": "qualification",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "ACTIVE",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 74.5708007980138,
+      "simulation_time_s": 35.600001856684685,
+      "gpu_device_memory_sampled_peak_mib": 3659,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 78690834,
+      "local_directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015",
+      "episode_file": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_000",
+      "method": "grasp_only",
+      "scene_id": "train_Direct_2026112320_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112320,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 77.65383304801071,
+      "simulation_time_s": 37.3666686154902,
+      "gpu_device_memory_sampled_peak_mib": 3409,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 63045453,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_001",
+      "method": "active_grasp",
+      "scene_id": "train_Direct_2026112321_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112321,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "ACTIVE",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 79.58586974698119,
+      "simulation_time_s": 37.03333526477218,
+      "gpu_device_memory_sampled_peak_mib": 3396,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 76860176,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_002",
+      "method": "push_grasp",
+      "scene_id": "train_Direct_2026112322_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112322,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "failure_class": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "PUSH",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 115.271664083004,
+      "simulation_time_s": 58.40000304579735,
+      "gpu_device_memory_sampled_peak_mib": 3398,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 92065416,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_003",
+      "method": "flip_grasp",
+      "scene_id": "train_Direct_2026112323_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112323,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "FLIP"
+      ],
+      "wall_s_including_reset": 85.50110877200495,
+      "simulation_time_s": 42.000002190470695,
+      "gpu_device_memory_sampled_peak_mib": 4737,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 66861025,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_004",
+      "method": "heuristic",
+      "scene_id": "train_Direct_2026112324_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112324,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "failure_class": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "PUSH",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 115.16486346704187,
+      "simulation_time_s": 58.366669710725546,
+      "gpu_device_memory_sampled_peak_mib": 3703,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 91106240,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_005",
+      "method": "random_valid",
+      "scene_id": "train_Direct_2026112325_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112325,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 62.554265713028144,
+      "simulation_time_s": 27.833334784954786,
+      "gpu_device_memory_sampled_peak_mib": 4737,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 56158938,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_006",
+      "method": "grasp_only",
+      "scene_id": "train_Direct_2026112326_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112326,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 60.71221418201458,
+      "simulation_time_s": 27.633334774523973,
+      "gpu_device_memory_sampled_peak_mib": 3404,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 56229480,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_007",
+      "method": "active_grasp",
+      "scene_id": "train_Direct_2026112327_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112327,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "ACTIVE",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 80.08179235900752,
+      "simulation_time_s": 37.06666859984398,
+      "gpu_device_memory_sampled_peak_mib": 3759,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 76913525,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_008",
+      "method": "push_grasp",
+      "scene_id": "train_Direct_2026112328_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112328,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "failure_class": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "PUSH",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 116.33440981502645,
+      "simulation_time_s": 58.30000304058194,
+      "gpu_device_memory_sampled_peak_mib": 4737,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 92311477,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_009",
+      "method": "flip_grasp",
+      "scene_id": "train_Direct_2026112329_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112329,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "FLIP"
+      ],
+      "wall_s_including_reset": 87.11695160099771,
+      "simulation_time_s": 42.000002190470695,
+      "gpu_device_memory_sampled_peak_mib": 3703,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 67190815,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_010",
+      "method": "heuristic",
+      "scene_id": "train_Direct_2026112330_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112330,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 62.177041582996026,
+      "simulation_time_s": 27.800001449882984,
+      "gpu_device_memory_sampled_peak_mib": 3759,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 56934351,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/episode.json"
+    },
+    {
+      "campaign": "20261123T104151Z_50ca4097",
+      "mode": "collect",
+      "episode_id": "episode_011",
+      "method": "random_valid",
+      "scene_id": "train_Direct_2026112331_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112331,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "failure_class": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "PUSH",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 127.23673282598611,
+      "simulation_time_s": 64.43333669379354,
+      "gpu_device_memory_sampled_peak_mib": 3961,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 95485930,
+      "local_directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011",
+      "episode_file": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/episode.json"
+    },
+    {
+      "campaign": "20261124T025108Z_ab7cad4b",
+      "mode": "online",
+      "episode_id": "episode_000",
+      "method": "dqn",
+      "scene_id": "train_Direct_2026112332_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112332,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "PUSH"
+      ],
+      "wall_s_including_reset": 89.73894628201379,
+      "simulation_time_s": 43.6666689440608,
+      "gpu_device_memory_sampled_peak_mib": 3400,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 68561110,
+      "local_directory": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000",
+      "episode_file": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/episode.json"
+    },
+    {
+      "campaign": "20261124T025108Z_ab7cad4b",
+      "mode": "online",
+      "episode_id": "episode_001",
+      "method": "dqn",
+      "scene_id": "train_Direct_2026112333_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112333,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "ACTIVE",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 114.89227296999888,
+      "simulation_time_s": 58.500003051012754,
+      "gpu_device_memory_sampled_peak_mib": 3402,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 93277777,
+      "local_directory": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001",
+      "episode_file": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/episode.json"
+    },
+    {
+      "campaign": "20261124T025108Z_ab7cad4b",
+      "mode": "online",
+      "episode_id": "episode_002",
+      "method": "dqn",
+      "scene_id": "train_Direct_2026112334_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112334,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 61.81475602905266,
+      "simulation_time_s": 27.766668114811182,
+      "gpu_device_memory_sampled_peak_mib": 3707,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 56883785,
+      "local_directory": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002",
+      "episode_file": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/episode.json"
+    },
+    {
+      "campaign": "20261124T025108Z_ab7cad4b",
+      "mode": "online",
+      "episode_id": "episode_003",
+      "method": "dqn",
+      "scene_id": "train_Direct_2026112335_006_mustard_bottle",
+      "case_id": null,
+      "arm": null,
+      "split": "train",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112335,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "ACTIVE",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 117.40538875100901,
+      "simulation_time_s": 59.266669757664204,
+      "gpu_device_memory_sampled_peak_mib": 4741,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop and GraspNet subprocess; not exact allocator peak",
+      "actual_disk_bytes": 95425737,
+      "local_directory": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003",
+      "episode_file": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_000",
+      "method": "grasp_only",
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 75.37069293297827,
+      "simulation_time_s": 31.100001621991396,
+      "gpu_device_memory_sampled_peak_mib": 4069,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 58000979,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_001",
+      "method": "grasp_only",
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "IK_PATH_OR_TRACKING: JOINT_TRACKING_ERROR: 0.034531rad",
+      "failure_class": "IK_PATH_OR_TRACKING",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 56.39712412696099,
+      "simulation_time_s": 20.133334383368492,
+      "gpu_device_memory_sampled_peak_mib": 4414,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 49023097,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_002",
+      "method": "heuristic",
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 77.99329292098992,
+      "simulation_time_s": 31.100001621991396,
+      "gpu_device_memory_sampled_peak_mib": 4135,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 57980017,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_003",
+      "method": "heuristic",
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "PUSH"
+      ],
+      "wall_s_including_reset": 94.78629957401427,
+      "simulation_time_s": 37.86666864156723,
+      "gpu_device_memory_sampled_peak_mib": 4135,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 62842969,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_004",
+      "method": "random_valid",
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "FLIP"
+      ],
+      "wall_s_including_reset": 118.21902185498038,
+      "simulation_time_s": 48.43333585932851,
+      "gpu_device_memory_sampled_peak_mib": 5218,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 85269453,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_005",
+      "method": "random_valid",
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "IK_PATH_OR_TRACKING: JOINT_TRACKING_ERROR: 0.034531rad",
+      "failure_class": "IK_PATH_OR_TRACKING",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 57.80461200600257,
+      "simulation_time_s": 20.133334383368492,
+      "gpu_device_memory_sampled_peak_mib": 4135,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 49005218,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_006",
+      "method": "dqn",
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 78.14609004498925,
+      "simulation_time_s": 31.100001621991396,
+      "gpu_device_memory_sampled_peak_mib": 5474,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 57963092,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_007",
+      "method": "dqn",
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 2,
+      "zero_action_episode": false,
+      "action_types": [
+        "ACTIVE",
+        "GRASP"
+      ],
+      "wall_s_including_reset": 125.58465071895625,
+      "simulation_time_s": 51.500002685934305,
+      "gpu_device_memory_sampled_peak_mib": 4134,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 87320893,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_008",
+      "method": "bc",
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "status": "PASS",
+      "success": true,
+      "failure_reason": null,
+      "failure_class": null,
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 79.0035834920127,
+      "simulation_time_s": 31.100001621991396,
+      "gpu_device_memory_sampled_peak_mib": 4687,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 57987453,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_009",
+      "method": "bc",
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "IK_PATH_OR_TRACKING: JOINT_TRACKING_ERROR: 0.034531rad",
+      "failure_class": "IK_PATH_OR_TRACKING",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "GRASP"
+      ],
+      "wall_s_including_reset": 58.490290286019444,
+      "simulation_time_s": 20.133334383368492,
+      "gpu_device_memory_sampled_peak_mib": 4134,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 49007300,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_010",
+      "method": "dp",
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "ACTIVE"
+      ],
+      "wall_s_including_reset": 50.590465036046226,
+      "simulation_time_s": 15.300000797957182,
+      "gpu_device_memory_sampled_peak_mib": 4697,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 59973901,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/episode.json"
+    },
+    {
+      "campaign": "20261124T025638Z_c38f8690",
+      "mode": "evaluate",
+      "episode_id": "episode_011",
+      "method": "dp",
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "case_id": null,
+      "arm": null,
+      "split": "holdout",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "status": "FAILED",
+      "success": false,
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "failure_class": "NO_LEGAL_CANDIDATE",
+      "recording_validation": "PASS",
+      "transition_count": 1,
+      "zero_action_episode": false,
+      "action_types": [
+        "ACTIVE"
+      ],
+      "wall_s_including_reset": 51.67081063200021,
+      "simulation_time_s": 15.300000797957182,
+      "gpu_device_memory_sampled_peak_mib": 4134,
+      "gpu_peak_scope": "1Hz sampled TOTAL device memory, includes desktop; not exact allocator peak",
+      "actual_disk_bytes": 59099681,
+      "local_directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011",
+      "episode_file": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/episode.json"
+    }
+  ],
+  "physical_results": [
+    {
+      "split": "holdout",
+      "method": "bc",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 1,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "PASS": 1,
+        "FAILED": 1
+      },
+      "failure_taxonomy": {
+        "IK_PATH_OR_TRACKING": 1
+      },
+      "scene_ids": [
+        "holdout_Direct_2026112309_004_sugar_box",
+        "holdout_Direct_2026112310_005_tomato_soup_can"
+      ],
+      "object_ids": [
+        "ycb:004_sugar_box",
+        "ycb:005_tomato_soup_can"
+      ],
+      "seeds": [
+        2026112309,
+        2026112310
+      ],
+      "actual_transitions": 2,
+      "wall_s_including_reset": 137.49387377803214,
+      "simulation_time_s": 51.23333600535989,
+      "simulation_seconds_per_wall_second": 0.3726226819972368,
+      "actual_transitions_per_hour": 52.36596949492864,
+      "actual_disk_bytes": 106994753,
+      "max_sampled_total_device_memory_mib": 4687,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "holdout",
+      "method": "dp",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 0,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "FAILED": 2
+      },
+      "failure_taxonomy": {
+        "NO_LEGAL_CANDIDATE": 2
+      },
+      "scene_ids": [
+        "holdout_Direct_2026112309_004_sugar_box",
+        "holdout_Direct_2026112310_005_tomato_soup_can"
+      ],
+      "object_ids": [
+        "ycb:004_sugar_box",
+        "ycb:005_tomato_soup_can"
+      ],
+      "seeds": [
+        2026112309,
+        2026112310
+      ],
+      "actual_transitions": 2,
+      "wall_s_including_reset": 102.26127566804644,
+      "simulation_time_s": 30.600001595914364,
+      "simulation_seconds_per_wall_second": 0.2992335211546353,
+      "actual_transitions_per_hour": 70.40788365844513,
+      "actual_disk_bytes": 119073582,
+      "max_sampled_total_device_memory_mib": 4697,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "holdout",
+      "method": "dqn",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 2,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "PASS": 2
+      },
+      "failure_taxonomy": {},
+      "scene_ids": [
+        "holdout_Direct_2026112309_004_sugar_box",
+        "holdout_Direct_2026112310_005_tomato_soup_can"
+      ],
+      "object_ids": [
+        "ycb:004_sugar_box",
+        "ycb:005_tomato_soup_can"
+      ],
+      "seeds": [
+        2026112309,
+        2026112310
+      ],
+      "actual_transitions": 3,
+      "wall_s_including_reset": 203.7307407639455,
+      "simulation_time_s": 82.6000043079257,
+      "simulation_seconds_per_wall_second": 0.4054371176298375,
+      "actual_transitions_per_hour": 53.01114578733859,
+      "actual_disk_bytes": 145283985,
+      "max_sampled_total_device_memory_mib": 5474,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "holdout",
+      "method": "grasp_only",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 1,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "PASS": 1,
+        "FAILED": 1
+      },
+      "failure_taxonomy": {
+        "IK_PATH_OR_TRACKING": 1
+      },
+      "scene_ids": [
+        "holdout_Direct_2026112309_004_sugar_box",
+        "holdout_Direct_2026112310_005_tomato_soup_can"
+      ],
+      "object_ids": [
+        "ycb:004_sugar_box",
+        "ycb:005_tomato_soup_can"
+      ],
+      "seeds": [
+        2026112309,
+        2026112310
+      ],
+      "actual_transitions": 2,
+      "wall_s_including_reset": 131.76781705993926,
+      "simulation_time_s": 51.23333600535989,
+      "simulation_seconds_per_wall_second": 0.38881524448458143,
+      "actual_transitions_per_hour": 54.64156696718156,
+      "actual_disk_bytes": 107024076,
+      "max_sampled_total_device_memory_mib": 4414,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "holdout",
+      "method": "heuristic",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 1,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "PASS": 1,
+        "FAILED": 1
+      },
+      "failure_taxonomy": {
+        "NO_LEGAL_CANDIDATE": 1
+      },
+      "scene_ids": [
+        "holdout_Direct_2026112309_004_sugar_box",
+        "holdout_Direct_2026112310_005_tomato_soup_can"
+      ],
+      "object_ids": [
+        "ycb:004_sugar_box",
+        "ycb:005_tomato_soup_can"
+      ],
+      "seeds": [
+        2026112309,
+        2026112310
+      ],
+      "actual_transitions": 2,
+      "wall_s_including_reset": 172.77959249500418,
+      "simulation_time_s": 68.96667026355863,
+      "simulation_seconds_per_wall_second": 0.3991598155062946,
+      "actual_transitions_per_hour": 41.671588039010935,
+      "actual_disk_bytes": 120822986,
+      "max_sampled_total_device_memory_mib": 4135,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "holdout",
+      "method": "random_valid",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 0,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "FAILED": 2
+      },
+      "failure_taxonomy": {
+        "NO_LEGAL_CANDIDATE": 1,
+        "IK_PATH_OR_TRACKING": 1
+      },
+      "scene_ids": [
+        "holdout_Direct_2026112309_004_sugar_box",
+        "holdout_Direct_2026112310_005_tomato_soup_can"
+      ],
+      "object_ids": [
+        "ycb:004_sugar_box",
+        "ycb:005_tomato_soup_can"
+      ],
+      "seeds": [
+        2026112309,
+        2026112310
+      ],
+      "actual_transitions": 2,
+      "wall_s_including_reset": 176.02363386098295,
+      "simulation_time_s": 68.566670242697,
+      "simulation_seconds_per_wall_second": 0.3895310461369549,
+      "actual_transitions_per_hour": 40.90359823889499,
+      "actual_disk_bytes": 134274671,
+      "max_sampled_total_device_memory_mib": 5218,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "probe",
+      "method": "grasp_only",
+      "attempted_episodes": 6,
+      "physical_retrieval_successes": 2,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 4,
+      "episode_status_counts": {
+        "FAILED": 4,
+        "PASS": 2
+      },
+      "failure_taxonomy": {
+        "NO_LEGAL_GRASP": 2,
+        "INITIAL_UNSTABLE": 2
+      },
+      "scene_ids": [
+        "probe_reuse"
+      ],
+      "object_ids": [
+        "ycb:003_cracker_box",
+        "ycb:006_mustard_bottle",
+        "ycb:008_pudding_box"
+      ],
+      "seeds": [
+        2026112399
+      ],
+      "actual_transitions": 2,
+      "wall_s_including_reset": 230.47330703790067,
+      "simulation_time_s": 102.20000533014536,
+      "simulation_seconds_per_wall_second": 0.4434353229171952,
+      "actual_transitions_per_hour": 31.24006025919514,
+      "actual_disk_bytes": 261518123,
+      "max_sampled_total_device_memory_mib": 3367,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "qualification",
+      "method": "DIRECT_GRASP",
+      "attempted_episodes": 4,
+      "physical_retrieval_successes": 3,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 1,
+      "episode_status_counts": {
+        "PASS": 3,
+        "FAILED": 1
+      },
+      "failure_taxonomy": {
+        "NO_LEGAL_GRASP": 1
+      },
+      "scene_ids": [
+        "C1_2026112201_004_sugar_box",
+        "C2_2026112201_004_sugar_box",
+        "C3_2026112201_004_sugar_box",
+        "Direct_2026112201_004_sugar_box"
+      ],
+      "object_ids": [
+        "ycb:004_sugar_box"
+      ],
+      "seeds": [
+        2026112201
+      ],
+      "actual_transitions": 3,
+      "wall_s_including_reset": 223.20559014898026,
+      "simulation_time_s": 100.00000521540642,
+      "simulation_seconds_per_wall_second": 0.4480174763932241,
+      "actual_transitions_per_hour": 48.385884926947654,
+      "actual_disk_bytes": 219629035,
+      "max_sampled_total_device_memory_mib": 4738,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "qualification",
+      "method": "FLIP_GRASP",
+      "attempted_episodes": 4,
+      "physical_retrieval_successes": 0,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "FAILED": 4
+      },
+      "failure_taxonomy": {
+        "NO_LEGAL_CANDIDATE": 4
+      },
+      "scene_ids": [
+        "C1_2026112201_004_sugar_box",
+        "C2_2026112201_004_sugar_box",
+        "C3_2026112201_004_sugar_box",
+        "Direct_2026112201_004_sugar_box"
+      ],
+      "object_ids": [
+        "ycb:004_sugar_box"
+      ],
+      "seeds": [
+        2026112201
+      ],
+      "actual_transitions": 4,
+      "wall_s_including_reset": 348.94895224203356,
+      "simulation_time_s": 169.36667549982667,
+      "simulation_seconds_per_wall_second": 0.48536232710150884,
+      "actual_transitions_per_hour": 41.2667810219188,
+      "actual_disk_bytes": 332128438,
+      "max_sampled_total_device_memory_mib": 3952,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "qualification",
+      "method": "PUSH_GRASP",
+      "attempted_episodes": 4,
+      "physical_retrieval_successes": 0,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "FAILED": 4
+      },
+      "failure_taxonomy": {
+        "NO_LEGAL_CANDIDATE": 4
+      },
+      "scene_ids": [
+        "C1_2026112201_004_sugar_box",
+        "C2_2026112201_004_sugar_box",
+        "C3_2026112201_004_sugar_box",
+        "Direct_2026112201_004_sugar_box"
+      ],
+      "object_ids": [
+        "ycb:004_sugar_box"
+      ],
+      "seeds": [
+        2026112201
+      ],
+      "actual_transitions": 4,
+      "wall_s_including_reset": 317.78826625301735,
+      "simulation_time_s": 152.96667464450002,
+      "simulation_seconds_per_wall_second": 0.481347774252655,
+      "actual_transitions_per_hour": 45.31318972153294,
+      "actual_disk_bytes": 316726356,
+      "max_sampled_total_device_memory_mib": 4738,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "qualification",
+      "method": "VIEW_GRASP",
+      "attempted_episodes": 4,
+      "physical_retrieval_successes": 2,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "PASS": 2,
+        "FAILED": 2
+      },
+      "failure_taxonomy": {
+        "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL": 1,
+        "NO_LEGAL_CANDIDATE": 1
+      },
+      "scene_ids": [
+        "C1_2026112201_004_sugar_box",
+        "C2_2026112201_004_sugar_box",
+        "C3_2026112201_004_sugar_box",
+        "Direct_2026112201_004_sugar_box"
+      ],
+      "object_ids": [
+        "ycb:004_sugar_box"
+      ],
+      "seeds": [
+        2026112201
+      ],
+      "actual_transitions": 7,
+      "wall_s_including_reset": 275.5600391009939,
+      "simulation_time_s": 125.23333986476064,
+      "simulation_seconds_per_wall_second": 0.4544684355298052,
+      "actual_transitions_per_hour": 91.45012492455082,
+      "actual_disk_bytes": 296100371,
+      "max_sampled_total_device_memory_mib": 3953,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "train",
+      "method": "active_grasp",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 2,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "PASS": 2
+      },
+      "failure_taxonomy": {},
+      "scene_ids": [
+        "train_Direct_2026112321_006_mustard_bottle",
+        "train_Direct_2026112327_006_mustard_bottle"
+      ],
+      "object_ids": [
+        "ycb:006_mustard_bottle"
+      ],
+      "seeds": [
+        2026112321,
+        2026112327
+      ],
+      "actual_transitions": 4,
+      "wall_s_including_reset": 159.6676621059887,
+      "simulation_time_s": 74.10000386461616,
+      "simulation_seconds_per_wall_second": 0.46408898888635297,
+      "actual_transitions_per_hour": 90.18732916901584,
+      "actual_disk_bytes": 153773701,
+      "max_sampled_total_device_memory_mib": 3759,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "train",
+      "method": "dqn",
+      "attempted_episodes": 4,
+      "physical_retrieval_successes": 3,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "FAILED": 1,
+        "PASS": 3
+      },
+      "failure_taxonomy": {
+        "NO_LEGAL_CANDIDATE": 1
+      },
+      "scene_ids": [
+        "train_Direct_2026112332_006_mustard_bottle",
+        "train_Direct_2026112333_006_mustard_bottle",
+        "train_Direct_2026112334_006_mustard_bottle",
+        "train_Direct_2026112335_006_mustard_bottle"
+      ],
+      "object_ids": [
+        "ycb:006_mustard_bottle"
+      ],
+      "seeds": [
+        2026112332,
+        2026112333,
+        2026112334,
+        2026112335
+      ],
+      "actual_transitions": 6,
+      "wall_s_including_reset": 383.85136403207434,
+      "simulation_time_s": 189.20000986754894,
+      "simulation_seconds_per_wall_second": 0.49289914689931785,
+      "actual_transitions_per_hour": 56.27178127780502,
+      "actual_disk_bytes": 314148409,
+      "max_sampled_total_device_memory_mib": 4741,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "train",
+      "method": "flip_grasp",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 0,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "FAILED": 2
+      },
+      "failure_taxonomy": {
+        "NO_LEGAL_CANDIDATE": 2
+      },
+      "scene_ids": [
+        "train_Direct_2026112323_006_mustard_bottle",
+        "train_Direct_2026112329_006_mustard_bottle"
+      ],
+      "object_ids": [
+        "ycb:006_mustard_bottle"
+      ],
+      "seeds": [
+        2026112323,
+        2026112329
+      ],
+      "actual_transitions": 2,
+      "wall_s_including_reset": 172.61806037300266,
+      "simulation_time_s": 84.00000438094139,
+      "simulation_seconds_per_wall_second": 0.4866234981405163,
+      "actual_transitions_per_hour": 41.710583379524955,
+      "actual_disk_bytes": 134051840,
+      "max_sampled_total_device_memory_mib": 4737,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "train",
+      "method": "grasp_only",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 2,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "PASS": 2
+      },
+      "failure_taxonomy": {},
+      "scene_ids": [
+        "train_Direct_2026112320_006_mustard_bottle",
+        "train_Direct_2026112326_006_mustard_bottle"
+      ],
+      "object_ids": [
+        "ycb:006_mustard_bottle"
+      ],
+      "seeds": [
+        2026112320,
+        2026112326
+      ],
+      "actual_transitions": 2,
+      "wall_s_including_reset": 138.3660472300253,
+      "simulation_time_s": 65.00000339001417,
+      "simulation_seconds_per_wall_second": 0.46976844891691927,
+      "actual_transitions_per_hour": 52.035887012298836,
+      "actual_disk_bytes": 119274933,
+      "max_sampled_total_device_memory_mib": 3409,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "train",
+      "method": "heuristic",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 1,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "FAILED": 1,
+        "PASS": 1
+      },
+      "failure_taxonomy": {
+        "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL": 1
+      },
+      "scene_ids": [
+        "train_Direct_2026112324_006_mustard_bottle",
+        "train_Direct_2026112330_006_mustard_bottle"
+      ],
+      "object_ids": [
+        "ycb:006_mustard_bottle"
+      ],
+      "seeds": [
+        2026112324,
+        2026112330
+      ],
+      "actual_transitions": 3,
+      "wall_s_including_reset": 177.3419050500379,
+      "simulation_time_s": 86.16667116060853,
+      "simulation_seconds_per_wall_second": 0.48587879517983174,
+      "actual_transitions_per_hour": 60.89931196438161,
+      "actual_disk_bytes": 148040591,
+      "max_sampled_total_device_memory_mib": 3759,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "train",
+      "method": "push_grasp",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 0,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "FAILED": 2
+      },
+      "failure_taxonomy": {
+        "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL": 2
+      },
+      "scene_ids": [
+        "train_Direct_2026112322_006_mustard_bottle",
+        "train_Direct_2026112328_006_mustard_bottle"
+      ],
+      "object_ids": [
+        "ycb:006_mustard_bottle"
+      ],
+      "seeds": [
+        2026112322,
+        2026112328
+      ],
+      "actual_transitions": 4,
+      "wall_s_including_reset": 231.60607389803044,
+      "simulation_time_s": 116.70000608637929,
+      "simulation_seconds_per_wall_second": 0.5038728221685541,
+      "actual_transitions_per_hour": 62.174535225444515,
+      "actual_disk_bytes": 184376893,
+      "max_sampled_total_device_memory_mib": 4737,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    },
+    {
+      "split": "train",
+      "method": "random_valid",
+      "attempted_episodes": 2,
+      "physical_retrieval_successes": 1,
+      "denominator_includes_zero_action_failures": true,
+      "zero_action_episodes": 0,
+      "episode_status_counts": {
+        "PASS": 1,
+        "FAILED": 1
+      },
+      "failure_taxonomy": {
+        "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL": 1
+      },
+      "scene_ids": [
+        "train_Direct_2026112325_006_mustard_bottle",
+        "train_Direct_2026112331_006_mustard_bottle"
+      ],
+      "object_ids": [
+        "ycb:006_mustard_bottle"
+      ],
+      "seeds": [
+        2026112325,
+        2026112331
+      ],
+      "actual_transitions": 3,
+      "wall_s_including_reset": 189.79099853901425,
+      "simulation_time_s": 92.26667147874832,
+      "simulation_seconds_per_wall_second": 0.48614882786330665,
+      "actual_transitions_per_hour": 56.90470087167967,
+      "actual_disk_bytes": 151644868,
+      "max_sampled_total_device_memory_mib": 4737,
+      "memory_note": "1Hz sampled total device use, including desktop/GraspNet; not exact process allocator peak"
+    }
+  ],
+  "training": [
+    {
+      "method": "dqn",
+      "kind": "actual_online_physical_interaction",
+      "directory": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b",
+      "status": "PASS",
+      "implementation": "FROM_SCRATCH candidate-conditioned Double DQN",
+      "curve_rows": 160,
+      "gradient_updates": 160,
+      "curve": {
+        "path": "evidence/baselines/curves/20261124T025108Z_ab7cad4b_dqn_online.csv",
+        "rows": 160,
+        "sha256": "4c338403777438935614406611e75bf26f6dc15d86d5b37ea353aa5eeae5a1b7",
+        "first": {
+          "update": 1,
+          "loss": 0.000910697563085705,
+          "td_abs_mean": 0.037876736372709274,
+          "q_mean": 0.014289080165326595,
+          "target_mean": -0.023587655276060104,
+          "gradient_norm_before_clip": 0.053559310734272,
+          "batch_size": 2,
+          "replay_size": 2,
+          "environment_steps": 2,
+          "epsilon": 0.982,
+          "target_sync": 0
+        },
+        "last": {
+          "update": 160,
+          "loss": 7.179041858762503e-05,
+          "td_abs_mean": 0.010205487720668316,
+          "q_mean": 0.7853148579597473,
+          "target_mean": 0.7856079936027527,
+          "gradient_norm_before_clip": 0.0018177595920860767,
+          "batch_size": 6,
+          "replay_size": 6,
+          "environment_steps": 6,
+          "epsilon": 0.946,
+          "target_sync": 1
+        }
+      },
+      "checkpoint": {
+        "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/dqn_online.pt",
+        "bytes": 445128,
+        "sha256": "4b13a001c6f52145b52e47279bfdcee7f09150d585d4d86a826878e5653599e0"
+      },
+      "checkpoint_validation": {
+        "status": "PASS",
+        "updates": 160,
+        "environment_steps": 6,
+        "replay_transitions": 6,
+        "target_syncs": 8,
+        "restored_legal_action": 2,
+        "training_metadata": {
+          "train_episode_ids": [
+            "episode_000_20261124T025108Z_ab7cad4b",
+            "episode_001_20261124T025108Z_ab7cad4b",
+            "episode_002_20261124T025108Z_ab7cad4b",
+            "episode_003_20261124T025108Z_ab7cad4b"
+          ],
+          "train_scene_ids": [
+            "train_Direct_2026112332_006_mustard_bottle",
+            "train_Direct_2026112333_006_mustard_bottle",
+            "train_Direct_2026112334_006_mustard_bottle",
+            "train_Direct_2026112335_006_mustard_bottle"
+          ],
+          "train_object_ids": [
+            "ycb:006_mustard_bottle"
+          ],
+          "train_seeds": [
+            2026112332,
+            2026112333,
+            2026112334,
+            2026112335
+          ],
+          "source": "actual online physical interactions only",
+          "split": "train",
+          "episodes": 4,
+          "manifest": "outputs/baselines/dataset/manifest.jsonl"
+        }
+      }
+    },
+    {
+      "method": "bc",
+      "kind": "real_data_training",
+      "directory": "outputs/baselines/train/bc_demo_v1",
+      "status": "PASS",
+      "implementation": "FROM_SCRATCH_BC",
+      "curve_rows": 200,
+      "gradient_updates": 200,
+      "curve": {
+        "path": "evidence/baselines/curves/bc_demo_v1_bc.csv",
+        "rows": 200,
+        "sha256": "5102514012b82d5aa67d0d408c292ac08c7d5e09d773d2b79e47285c94ae9167",
+        "first": {
+          "epoch": 1.0,
+          "updates": 1.0,
+          "train_loss": 1.9883064031600952,
+          "validation_loss": 1.2002099752426147,
+          "elapsed_s": 0.5006288439617492
+        },
+        "last": {
+          "epoch": 200.0,
+          "updates": 200.0,
+          "train_loss": 0.3110858201980591,
+          "validation_loss": 1.7498836517333984,
+          "elapsed_s": 0.6513101489981636
+        }
+      },
+      "checkpoint": {
+        "path": "outputs/baselines/train/bc_demo_v1/model.pt",
+        "bytes": 36596,
+        "sha256": "61c9882121b9b7128fa2bcd94af22d61e1eff882373ceef6880daeca217b8d2e"
+      },
+      "checkpoint_validation": {
+        "status": "PASS",
+        "prediction_max_abs_difference": 0.0,
+        "source": "Actual trainer forward/backward and checkpoint prediction roundtrip result; not inferred from checkpoint existence"
+      },
+      "actual_result": {
+        "status": "PASS",
+        "method": "bc",
+        "scope": "Small real-demo training-chain test, not physical policy success",
+        "manifest": "outputs/baselines/dataset/demonstrations_v1.jsonl",
+        "manifest_sha256": "fa5e8f38039c875876dc4c30b35a932156c24e089f929195cc2a01408fe8d4d4",
+        "successful_demo_subset_sha256": "25dcd69a8c41c77bbf9978ba5550087994c2fa4d6835fff8d23faa8ea8f9e11a",
+        "dataset": {
+          "all_successful_train": {
+            "schema_version": "baseline_candidate_v1",
+            "split": "train",
+            "transitions": 8,
+            "episodes": 6,
+            "subset_sha256": "25dcd69a8c41c77bbf9978ba5550087994c2fa4d6835fff8d23faa8ea8f9e11a",
+            "episode_ids": [
+              "episode_000_20261123T104151Z_50ca4097",
+              "episode_001_20261123T104151Z_50ca4097",
+              "episode_005_20261123T104151Z_50ca4097",
+              "episode_006_20261123T104151Z_50ca4097",
+              "episode_007_20261123T104151Z_50ca4097",
+              "episode_010_20261123T104151Z_50ca4097"
+            ],
+            "object_ids": [
+              "ycb:006_mustard_bottle"
+            ],
+            "seeds": [
+              2026112320,
+              2026112321,
+              2026112325,
+              2026112326,
+              2026112327,
+              2026112330
+            ],
+            "action_types": {
+              "GRASP": 6,
+              "ACTIVE": 2
+            },
+            "demonstrator_sources": {
+              "grasp_only_actual_physical_rollout": 2,
+              "active_grasp_actual_physical_rollout": 4,
+              "random_valid_actual_physical_rollout": 1,
+              "heuristic_actual_physical_rollout": 1
+            },
+            "episode_length_histogram": {
+              "1": 4,
+              "2": 2
+            },
+            "observation_shape": [
+              32
+            ],
+            "candidate_shape": [
+              24,
+              24
+            ],
+            "success_episodes": 6,
+            "failure_episodes": 0
+          },
+          "optimization_train": {
+            "schema_version": "baseline_candidate_v1",
+            "split": "train",
+            "transitions": 6,
+            "episodes": 5,
+            "subset_sha256": "297d2339b010821a1f72f6adb19db2226abfe4c0bf2ca4235451e97816f4b677",
+            "episode_ids": [
+              "episode_000_20261123T104151Z_50ca4097",
+              "episode_005_20261123T104151Z_50ca4097",
+              "episode_006_20261123T104151Z_50ca4097",
+              "episode_007_20261123T104151Z_50ca4097",
+              "episode_010_20261123T104151Z_50ca4097"
+            ],
+            "object_ids": [
+              "ycb:006_mustard_bottle"
+            ],
+            "seeds": [
+              2026112320,
+              2026112325,
+              2026112326,
+              2026112327,
+              2026112330
+            ],
+            "action_types": {
+              "GRASP": 5,
+              "ACTIVE": 1
+            },
+            "demonstrator_sources": {
+              "grasp_only_actual_physical_rollout": 2,
+              "random_valid_actual_physical_rollout": 1,
+              "active_grasp_actual_physical_rollout": 2,
+              "heuristic_actual_physical_rollout": 1
+            },
+            "episode_length_histogram": {
+              "1": 4,
+              "2": 1
+            },
+            "observation_shape": [
+              32
+            ],
+            "candidate_shape": [
+              24,
+              24
+            ],
+            "success_episodes": 5,
+            "failure_episodes": 0
+          },
+          "episode_validation": {
+            "schema_version": "baseline_candidate_v1",
+            "split": "train",
+            "transitions": 2,
+            "episodes": 1,
+            "subset_sha256": "344c8ccf2c49266182824d8728b78881b8c41cef1a21f4f924be504bc59c91a8",
+            "episode_ids": [
+              "episode_001_20261123T104151Z_50ca4097"
+            ],
+            "object_ids": [
+              "ycb:006_mustard_bottle"
+            ],
+            "seeds": [
+              2026112321
+            ],
+            "action_types": {
+              "ACTIVE": 1,
+              "GRASP": 1
+            },
+            "demonstrator_sources": {
+              "active_grasp_actual_physical_rollout": 2
+            },
+            "episode_length_histogram": {
+              "2": 1
+            },
+            "observation_shape": [
+              32
+            ],
+            "candidate_shape": [
+              24,
+              24
+            ],
+            "success_episodes": 1,
+            "failure_episodes": 0
+          },
+          "validation_scope": "Held-out episodes from TRAIN objects/seeds; physical holdout is separate and never trained on."
+        },
+        "epochs": 200,
+        "updates": 200,
+        "first_train_loss": 1.9883064031600952,
+        "last_train_loss": 0.3110858201980591,
+        "validation_loss": 1.7498836517333984,
+        "train_candidate_accuracy": 0.8333333333333334,
+        "episode_validation_candidate_accuracy": 0.5,
+        "accuracy_warning": "Static demonstrated-candidate agreement is not physical retrieval success.",
+        "data_readiness": {
+          "successful_train_episodes": 6,
+          "ten_plus_successful_episode_interface_smoke": false,
+          "successful_action_support": {
+            "GRASP": 6,
+            "ACTIVE": 2
+          },
+          "large_scale_training_authorized_by_this_result": false,
+          "reason": "E1 mechanism qualification, demonstration diversity and physical holdout results must be audited separately."
+        },
+        "checkpoint": "outputs/baselines/train/bc_demo_v1/model.pt",
+        "checkpoint_sha256": "61c9882121b9b7128fa2bcd94af22d61e1eff882373ceef6880daeca217b8d2e",
+        "checkpoint_prediction_max_abs_difference": 0.0,
+        "wall_time_s": 0.6767788300057873,
+        "device": "cpu",
+        "timestamp_utc": "2026-11-24T02:51:11.249617+00:00"
+      }
+    },
+    {
+      "method": "bc",
+      "kind": "real_data_training",
+      "directory": "outputs/baselines/train/bc_overfit_v1",
+      "status": "PASS",
+      "implementation": "FROM_SCRATCH_BC",
+      "curve_rows": 2000,
+      "gradient_updates": 2000,
+      "curve": {
+        "path": "evidence/baselines/curves/bc_overfit_v1_bc.csv",
+        "rows": 2000,
+        "sha256": "4b760848d5507dbe528b72cf198557c1fd881623dc0c06fa089a503b9d77ab00",
+        "first": {
+          "epoch": 1.0,
+          "updates": 1.0,
+          "train_loss": 1.9883064031600952,
+          "validation_loss": 1.2002099752426147,
+          "elapsed_s": 0.05662241601385176
+        },
+        "last": {
+          "epoch": 2000.0,
+          "updates": 2000.0,
+          "train_loss": 0.00022103633091319352,
+          "validation_loss": 6.226481914520264,
+          "elapsed_s": 1.7087968850391917
+        }
+      },
+      "checkpoint": {
+        "path": "outputs/baselines/train/bc_overfit_v1/model.pt",
+        "bytes": 36596,
+        "sha256": "f6ee92c839e2b84275b79d9d32dfa9766b1fed7c1a4214b09a98681ea6312d59"
+      },
+      "checkpoint_validation": {
+        "status": "PASS",
+        "prediction_max_abs_difference": 0.0,
+        "source": "Actual trainer forward/backward and checkpoint prediction roundtrip result; not inferred from checkpoint existence"
+      },
+      "actual_result": {
+        "status": "PASS",
+        "method": "bc",
+        "scope": "Small real-demo training-chain test, not physical policy success",
+        "manifest": "outputs/baselines/dataset/demonstrations_v1.jsonl",
+        "manifest_sha256": "fa5e8f38039c875876dc4c30b35a932156c24e089f929195cc2a01408fe8d4d4",
+        "successful_demo_subset_sha256": "25dcd69a8c41c77bbf9978ba5550087994c2fa4d6835fff8d23faa8ea8f9e11a",
+        "dataset": {
+          "all_successful_train": {
+            "schema_version": "baseline_candidate_v1",
+            "split": "train",
+            "transitions": 8,
+            "episodes": 6,
+            "subset_sha256": "25dcd69a8c41c77bbf9978ba5550087994c2fa4d6835fff8d23faa8ea8f9e11a",
+            "episode_ids": [
+              "episode_000_20261123T104151Z_50ca4097",
+              "episode_001_20261123T104151Z_50ca4097",
+              "episode_005_20261123T104151Z_50ca4097",
+              "episode_006_20261123T104151Z_50ca4097",
+              "episode_007_20261123T104151Z_50ca4097",
+              "episode_010_20261123T104151Z_50ca4097"
+            ],
+            "object_ids": [
+              "ycb:006_mustard_bottle"
+            ],
+            "seeds": [
+              2026112320,
+              2026112321,
+              2026112325,
+              2026112326,
+              2026112327,
+              2026112330
+            ],
+            "action_types": {
+              "GRASP": 6,
+              "ACTIVE": 2
+            },
+            "demonstrator_sources": {
+              "grasp_only_actual_physical_rollout": 2,
+              "active_grasp_actual_physical_rollout": 4,
+              "random_valid_actual_physical_rollout": 1,
+              "heuristic_actual_physical_rollout": 1
+            },
+            "episode_length_histogram": {
+              "1": 4,
+              "2": 2
+            },
+            "observation_shape": [
+              32
+            ],
+            "candidate_shape": [
+              24,
+              24
+            ],
+            "success_episodes": 6,
+            "failure_episodes": 0
+          },
+          "optimization_train": {
+            "schema_version": "baseline_candidate_v1",
+            "split": "train",
+            "transitions": 6,
+            "episodes": 5,
+            "subset_sha256": "297d2339b010821a1f72f6adb19db2226abfe4c0bf2ca4235451e97816f4b677",
+            "episode_ids": [
+              "episode_000_20261123T104151Z_50ca4097",
+              "episode_005_20261123T104151Z_50ca4097",
+              "episode_006_20261123T104151Z_50ca4097",
+              "episode_007_20261123T104151Z_50ca4097",
+              "episode_010_20261123T104151Z_50ca4097"
+            ],
+            "object_ids": [
+              "ycb:006_mustard_bottle"
+            ],
+            "seeds": [
+              2026112320,
+              2026112325,
+              2026112326,
+              2026112327,
+              2026112330
+            ],
+            "action_types": {
+              "GRASP": 5,
+              "ACTIVE": 1
+            },
+            "demonstrator_sources": {
+              "grasp_only_actual_physical_rollout": 2,
+              "random_valid_actual_physical_rollout": 1,
+              "active_grasp_actual_physical_rollout": 2,
+              "heuristic_actual_physical_rollout": 1
+            },
+            "episode_length_histogram": {
+              "1": 4,
+              "2": 1
+            },
+            "observation_shape": [
+              32
+            ],
+            "candidate_shape": [
+              24,
+              24
+            ],
+            "success_episodes": 5,
+            "failure_episodes": 0
+          },
+          "episode_validation": {
+            "schema_version": "baseline_candidate_v1",
+            "split": "train",
+            "transitions": 2,
+            "episodes": 1,
+            "subset_sha256": "344c8ccf2c49266182824d8728b78881b8c41cef1a21f4f924be504bc59c91a8",
+            "episode_ids": [
+              "episode_001_20261123T104151Z_50ca4097"
+            ],
+            "object_ids": [
+              "ycb:006_mustard_bottle"
+            ],
+            "seeds": [
+              2026112321
+            ],
+            "action_types": {
+              "ACTIVE": 1,
+              "GRASP": 1
+            },
+            "demonstrator_sources": {
+              "active_grasp_actual_physical_rollout": 2
+            },
+            "episode_length_histogram": {
+              "2": 1
+            },
+            "observation_shape": [
+              32
+            ],
+            "candidate_shape": [
+              24,
+              24
+            ],
+            "success_episodes": 1,
+            "failure_episodes": 0
+          },
+          "validation_scope": "Held-out episodes from TRAIN objects/seeds; physical holdout is separate and never trained on."
+        },
+        "epochs": 2000,
+        "updates": 2000,
+        "first_train_loss": 1.9883064031600952,
+        "last_train_loss": 0.00022103633091319352,
+        "validation_loss": 6.226481914520264,
+        "train_candidate_accuracy": 1.0,
+        "episode_validation_candidate_accuracy": 0.5,
+        "accuracy_warning": "Static demonstrated-candidate agreement is not physical retrieval success.",
+        "data_readiness": {
+          "successful_train_episodes": 6,
+          "ten_plus_successful_episode_interface_smoke": false,
+          "successful_action_support": {
+            "GRASP": 6,
+            "ACTIVE": 2
+          },
+          "large_scale_training_authorized_by_this_result": false,
+          "reason": "E1 mechanism qualification, demonstration diversity and physical holdout results must be audited separately."
+        },
+        "checkpoint": "outputs/baselines/train/bc_overfit_v1/model.pt",
+        "checkpoint_sha256": "f6ee92c839e2b84275b79d9d32dfa9766b1fed7c1a4214b09a98681ea6312d59",
+        "checkpoint_prediction_max_abs_difference": 0.0,
+        "wall_time_s": 1.7153875340009108,
+        "device": "cpu",
+        "timestamp_utc": "2026-11-24T02:54:45.707120+00:00"
+      }
+    },
+    {
+      "method": "dp",
+      "kind": "real_data_training",
+      "directory": "outputs/baselines/train/dp_demo_v1",
+      "status": "PASS",
+      "implementation": "ADAPTED_OFFICIAL_UNET_HIGH_LEVEL_DP_LOCAL_DDPM",
+      "curve_rows": 200,
+      "gradient_updates": 200,
+      "curve": {
+        "path": "evidence/baselines/curves/dp_demo_v1_dp.csv",
+        "rows": 200,
+        "sha256": "a83b3d78139b280912cfa9bbfb6691f24732716071acd2524f038bc4614a724b",
+        "first": {
+          "epoch": 1.0,
+          "updates": 1.0,
+          "train_loss": 1.2023675441741943,
+          "validation_loss": 1.424591064453125,
+          "elapsed_s": 0.06413059099577367
+        },
+        "last": {
+          "epoch": 200.0,
+          "updates": 200.0,
+          "train_loss": 0.8250714540481567,
+          "validation_loss": 1.2019258737564087,
+          "elapsed_s": 1.8841137699782848
+        }
+      },
+      "checkpoint": {
+        "path": "outputs/baselines/train/dp_demo_v1/model.pt",
+        "bytes": 1003334,
+        "sha256": "624345e9fdf955c5ea16f64861dc74fed05d20f480f0ea90be5e1b80a0eb3a6e"
+      },
+      "checkpoint_validation": {
+        "status": "PASS",
+        "prediction_max_abs_difference": 0.0,
+        "source": "Actual trainer forward/backward and checkpoint prediction roundtrip result; not inferred from checkpoint existence"
+      },
+      "actual_result": {
+        "status": "PASS",
+        "method": "dp",
+        "scope": "Small real-demo training-chain test, not physical policy success",
+        "manifest": "outputs/baselines/dataset/demonstrations_v1.jsonl",
+        "manifest_sha256": "fa5e8f38039c875876dc4c30b35a932156c24e089f929195cc2a01408fe8d4d4",
+        "successful_demo_subset_sha256": "25dcd69a8c41c77bbf9978ba5550087994c2fa4d6835fff8d23faa8ea8f9e11a",
+        "dataset": {
+          "all_successful_train": {
+            "schema_version": "baseline_candidate_v1",
+            "split": "train",
+            "transitions": 8,
+            "episodes": 6,
+            "subset_sha256": "25dcd69a8c41c77bbf9978ba5550087994c2fa4d6835fff8d23faa8ea8f9e11a",
+            "episode_ids": [
+              "episode_000_20261123T104151Z_50ca4097",
+              "episode_001_20261123T104151Z_50ca4097",
+              "episode_005_20261123T104151Z_50ca4097",
+              "episode_006_20261123T104151Z_50ca4097",
+              "episode_007_20261123T104151Z_50ca4097",
+              "episode_010_20261123T104151Z_50ca4097"
+            ],
+            "object_ids": [
+              "ycb:006_mustard_bottle"
+            ],
+            "seeds": [
+              2026112320,
+              2026112321,
+              2026112325,
+              2026112326,
+              2026112327,
+              2026112330
+            ],
+            "action_types": {
+              "GRASP": 6,
+              "ACTIVE": 2
+            },
+            "demonstrator_sources": {
+              "grasp_only_actual_physical_rollout": 2,
+              "active_grasp_actual_physical_rollout": 4,
+              "random_valid_actual_physical_rollout": 1,
+              "heuristic_actual_physical_rollout": 1
+            },
+            "episode_length_histogram": {
+              "1": 4,
+              "2": 2
+            },
+            "observation_shape": [
+              32
+            ],
+            "candidate_shape": [
+              24,
+              24
+            ],
+            "success_episodes": 6,
+            "failure_episodes": 0
+          },
+          "optimization_train": {
+            "schema_version": "baseline_candidate_v1",
+            "split": "train",
+            "transitions": 6,
+            "episodes": 5,
+            "subset_sha256": "297d2339b010821a1f72f6adb19db2226abfe4c0bf2ca4235451e97816f4b677",
+            "episode_ids": [
+              "episode_000_20261123T104151Z_50ca4097",
+              "episode_005_20261123T104151Z_50ca4097",
+              "episode_006_20261123T104151Z_50ca4097",
+              "episode_007_20261123T104151Z_50ca4097",
+              "episode_010_20261123T104151Z_50ca4097"
+            ],
+            "object_ids": [
+              "ycb:006_mustard_bottle"
+            ],
+            "seeds": [
+              2026112320,
+              2026112325,
+              2026112326,
+              2026112327,
+              2026112330
+            ],
+            "action_types": {
+              "GRASP": 5,
+              "ACTIVE": 1
+            },
+            "demonstrator_sources": {
+              "grasp_only_actual_physical_rollout": 2,
+              "random_valid_actual_physical_rollout": 1,
+              "active_grasp_actual_physical_rollout": 2,
+              "heuristic_actual_physical_rollout": 1
+            },
+            "episode_length_histogram": {
+              "1": 4,
+              "2": 1
+            },
+            "observation_shape": [
+              32
+            ],
+            "candidate_shape": [
+              24,
+              24
+            ],
+            "success_episodes": 5,
+            "failure_episodes": 0
+          },
+          "episode_validation": {
+            "schema_version": "baseline_candidate_v1",
+            "split": "train",
+            "transitions": 2,
+            "episodes": 1,
+            "subset_sha256": "344c8ccf2c49266182824d8728b78881b8c41cef1a21f4f924be504bc59c91a8",
+            "episode_ids": [
+              "episode_001_20261123T104151Z_50ca4097"
+            ],
+            "object_ids": [
+              "ycb:006_mustard_bottle"
+            ],
+            "seeds": [
+              2026112321
+            ],
+            "action_types": {
+              "ACTIVE": 1,
+              "GRASP": 1
+            },
+            "demonstrator_sources": {
+              "active_grasp_actual_physical_rollout": 2
+            },
+            "episode_length_histogram": {
+              "2": 1
+            },
+            "observation_shape": [
+              32
+            ],
+            "candidate_shape": [
+              24,
+              24
+            ],
+            "success_episodes": 1,
+            "failure_episodes": 0
+          },
+          "validation_scope": "Held-out episodes from TRAIN objects/seeds; physical holdout is separate and never trained on."
+        },
+        "epochs": 200,
+        "updates": 200,
+        "first_train_loss": 1.2023675441741943,
+        "last_train_loss": 0.8250714540481567,
+        "validation_loss": 1.2019258737564087,
+        "train_candidate_accuracy": 0.5,
+        "episode_validation_candidate_accuracy": 0.5,
+        "accuracy_warning": "Static demonstrated-candidate agreement is not physical retrieval success.",
+        "data_readiness": {
+          "successful_train_episodes": 6,
+          "ten_plus_successful_episode_interface_smoke": false,
+          "successful_action_support": {
+            "GRASP": 6,
+            "ACTIVE": 2
+          },
+          "large_scale_training_authorized_by_this_result": false,
+          "reason": "E1 mechanism qualification, demonstration diversity and physical holdout results must be audited separately."
+        },
+        "checkpoint": "outputs/baselines/train/dp_demo_v1/model.pt",
+        "checkpoint_sha256": "624345e9fdf955c5ea16f64861dc74fed05d20f480f0ea90be5e1b80a0eb3a6e",
+        "checkpoint_prediction_max_abs_difference": 0.0,
+        "wall_time_s": 2.199579417007044,
+        "device": "cpu",
+        "timestamp_utc": "2026-11-24T02:51:12.773309+00:00"
+      }
+    }
+  ],
+  "dataset": {
+    "manifest": "outputs/baselines/dataset/manifest.jsonl",
+    "manifest_sha256": "539aa9623c857e9723a723cb1995a6a9b761adbfe20bee9e6b34c8e6cc10865a",
+    "rows": 55,
+    "partitions": {
+      "holdout": {
+        "transitions": 13,
+        "episodes_with_transitions": 12,
+        "success_episodes_with_transitions": 5,
+        "failure_episodes_with_transitions": 7,
+        "object_ids": [
+          "ycb:004_sugar_box",
+          "ycb:005_tomato_soup_can"
+        ],
+        "seeds": [
+          2026112309,
+          2026112310
+        ],
+        "scene_ids": [
+          "holdout_Direct_2026112309_004_sugar_box",
+          "holdout_Direct_2026112310_005_tomato_soup_can"
+        ],
+        "episode_ids": [
+          "episode_000_20261124T025638Z_c38f8690",
+          "episode_001_20261124T025638Z_c38f8690",
+          "episode_002_20261124T025638Z_c38f8690",
+          "episode_003_20261124T025638Z_c38f8690",
+          "episode_004_20261124T025638Z_c38f8690",
+          "episode_005_20261124T025638Z_c38f8690",
+          "episode_006_20261124T025638Z_c38f8690",
+          "episode_007_20261124T025638Z_c38f8690",
+          "episode_008_20261124T025638Z_c38f8690",
+          "episode_009_20261124T025638Z_c38f8690",
+          "episode_010_20261124T025638Z_c38f8690",
+          "episode_011_20261124T025638Z_c38f8690"
+        ],
+        "episode_length_histogram": {
+          "1": 11,
+          "2": 1
+        },
+        "action_types": {
+          "GRASP": 8,
+          "PUSH": 1,
+          "FLIP": 1,
+          "ACTIVE": 3
+        },
+        "sources": {
+          "physical_holdout_not_for_training": 13
+        }
+      },
+      "qualification": {
+        "transitions": 18,
+        "episodes_with_transitions": 15,
+        "success_episodes_with_transitions": 5,
+        "failure_episodes_with_transitions": 10,
+        "object_ids": [
+          "ycb:004_sugar_box"
+        ],
+        "seeds": [
+          2026112201
+        ],
+        "scene_ids": [
+          "C1_2026112201_004_sugar_box",
+          "C2_2026112201_004_sugar_box",
+          "C3_2026112201_004_sugar_box",
+          "Direct_2026112201_004_sugar_box"
+        ],
+        "episode_ids": [
+          "episode_000_20261123T103731Z_f576e557",
+          "episode_001_20261123T103731Z_f576e557",
+          "episode_002_20261123T103731Z_f576e557",
+          "episode_003_20261123T103731Z_f576e557",
+          "episode_004_20261123T103731Z_f576e557",
+          "episode_005_20261123T103731Z_f576e557",
+          "episode_006_20261123T103731Z_f576e557",
+          "episode_007_20261123T103731Z_f576e557",
+          "episode_009_20261123T103731Z_f576e557",
+          "episode_010_20261123T103731Z_f576e557",
+          "episode_011_20261123T103731Z_f576e557",
+          "episode_012_20261123T103731Z_f576e557",
+          "episode_013_20261123T103731Z_f576e557",
+          "episode_014_20261123T103731Z_f576e557",
+          "episode_015_20261123T103731Z_f576e557"
+        ],
+        "episode_length_histogram": {
+          "1": 12,
+          "2": 3
+        },
+        "action_types": {
+          "GRASP": 6,
+          "PUSH": 4,
+          "FLIP": 4,
+          "ACTIVE": 4
+        },
+        "sources": {
+          "DIRECT_GRASP_actual_physical_rollout": 3,
+          "PUSH_GRASP_actual_physical_rollout": 4,
+          "FLIP_GRASP_actual_physical_rollout": 4,
+          "VIEW_GRASP_actual_physical_rollout": 7
+        }
+      },
+      "train": {
+        "transitions": 24,
+        "episodes_with_transitions": 16,
+        "success_episodes_with_transitions": 9,
+        "failure_episodes_with_transitions": 7,
+        "object_ids": [
+          "ycb:006_mustard_bottle"
+        ],
+        "seeds": [
+          2026112320,
+          2026112321,
+          2026112322,
+          2026112323,
+          2026112324,
+          2026112325,
+          2026112326,
+          2026112327,
+          2026112328,
+          2026112329,
+          2026112330,
+          2026112331,
+          2026112332,
+          2026112333,
+          2026112334,
+          2026112335
+        ],
+        "scene_ids": [
+          "train_Direct_2026112320_006_mustard_bottle",
+          "train_Direct_2026112321_006_mustard_bottle",
+          "train_Direct_2026112322_006_mustard_bottle",
+          "train_Direct_2026112323_006_mustard_bottle",
+          "train_Direct_2026112324_006_mustard_bottle",
+          "train_Direct_2026112325_006_mustard_bottle",
+          "train_Direct_2026112326_006_mustard_bottle",
+          "train_Direct_2026112327_006_mustard_bottle",
+          "train_Direct_2026112328_006_mustard_bottle",
+          "train_Direct_2026112329_006_mustard_bottle",
+          "train_Direct_2026112330_006_mustard_bottle",
+          "train_Direct_2026112331_006_mustard_bottle",
+          "train_Direct_2026112332_006_mustard_bottle",
+          "train_Direct_2026112333_006_mustard_bottle",
+          "train_Direct_2026112334_006_mustard_bottle",
+          "train_Direct_2026112335_006_mustard_bottle"
+        ],
+        "episode_ids": [
+          "episode_000_20261123T104151Z_50ca4097",
+          "episode_000_20261124T025108Z_ab7cad4b",
+          "episode_001_20261123T104151Z_50ca4097",
+          "episode_001_20261124T025108Z_ab7cad4b",
+          "episode_002_20261123T104151Z_50ca4097",
+          "episode_002_20261124T025108Z_ab7cad4b",
+          "episode_003_20261123T104151Z_50ca4097",
+          "episode_003_20261124T025108Z_ab7cad4b",
+          "episode_004_20261123T104151Z_50ca4097",
+          "episode_005_20261123T104151Z_50ca4097",
+          "episode_006_20261123T104151Z_50ca4097",
+          "episode_007_20261123T104151Z_50ca4097",
+          "episode_008_20261123T104151Z_50ca4097",
+          "episode_009_20261123T104151Z_50ca4097",
+          "episode_010_20261123T104151Z_50ca4097",
+          "episode_011_20261123T104151Z_50ca4097"
+        ],
+        "episode_length_histogram": {
+          "1": 8,
+          "2": 8
+        },
+        "action_types": {
+          "GRASP": 13,
+          "ACTIVE": 4,
+          "PUSH": 5,
+          "FLIP": 2
+        },
+        "sources": {
+          "grasp_only_actual_physical_rollout": 2,
+          "active_grasp_actual_physical_rollout": 4,
+          "push_grasp_actual_physical_rollout": 4,
+          "flip_grasp_actual_physical_rollout": 2,
+          "heuristic_actual_physical_rollout": 3,
+          "random_valid_actual_physical_rollout": 3,
+          "dqn_actual_physical_rollout": 6
+        }
+      }
+    },
+    "transition_hash_audit": {
+      "status": "PASS",
+      "checked": 55,
+      "bad_paths": []
+    },
+    "train_holdout_overlap": {
+      "object_id": [],
+      "seed": [],
+      "scene_id": [],
+      "episode_id": []
+    },
+    "train_holdout_disjoint_status": "PASS",
+    "BC_DP_successful_demo_subset_sha256": {
+      "bc": [
+        "25dcd69a8c41c77bbf9978ba5550087994c2fa4d6835fff8d23faa8ea8f9e11a"
+      ],
+      "dp": [
+        "25dcd69a8c41c77bbf9978ba5550087994c2fa4d6835fff8d23faa8ea8f9e11a"
+      ]
+    },
+    "BC_DP_same_successful_subset_status": "PASS",
+    "zero_action_episode_note": "Manifest contains transitions only. All failed zero-action episodes remain in the physical episode ledger and denominators.",
+    "actual_policy_tensor_shapes": {
+      "obs": [
+        32
+      ],
+      "candidates": [
+        24,
+        24
+      ],
+      "mask": [
+        24
+      ]
+    },
+    "observation_scope": "Shared RGB-D/proprio/visible-cloud-derived features; no learned raw image encoder or native DP3 point-cloud policy"
+  },
+  "heldout_shared_cases": {
+    "status": "PASS",
+    "scene_ids_by_learned_method": {
+      "dqn": [
+        "holdout_Direct_2026112309_004_sugar_box",
+        "holdout_Direct_2026112310_005_tomato_soup_can"
+      ],
+      "bc": [
+        "holdout_Direct_2026112309_004_sugar_box",
+        "holdout_Direct_2026112310_005_tomato_soup_can"
+      ],
+      "dp": [
+        "holdout_Direct_2026112309_004_sugar_box",
+        "holdout_Direct_2026112310_005_tomato_soup_can"
+      ]
+    },
+    "scope": "All actual attempted heldout episodes including zero-action failures"
+  },
+  "E1_qualification": [
+    {
+      "status": "PASS",
+      "executed": 16,
+      "planned": 16,
+      "arms": [
+        "DIRECT_GRASP",
+        "PUSH_GRASP",
+        "FLIP_GRASP",
+        "VIEW_GRASP"
+      ],
+      "case_order": [
+        "Direct_2026112201_004_sugar_box",
+        "C1_2026112201_004_sugar_box",
+        "C2_2026112201_004_sugar_box",
+        "C3_2026112201_004_sugar_box"
+      ],
+      "outcome_matrix": [
+        [
+          true,
+          false,
+          false,
+          true
+        ],
+        [
+          true,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false,
+          true
+        ]
+      ],
+      "cases": [
+        {
+          "case_id": "Direct_2026112201_004_sugar_box",
+          "pair_audit": {
+            "status": "PASS",
+            "pair_status": "VALID_PAIR",
+            "reasons": [],
+            "initial_state_sha256": [
+              "0affd1e0f297b2afcc82a7a695ec13be2fcbf5397b2476828692987dfcb19591",
+              "0affd1e0f297b2afcc82a7a695ec13be2fcbf5397b2476828692987dfcb19591",
+              "0affd1e0f297b2afcc82a7a695ec13be2fcbf5397b2476828692987dfcb19591",
+              "0affd1e0f297b2afcc82a7a695ec13be2fcbf5397b2476828692987dfcb19591"
+            ],
+            "max_position_difference_m": 0.0,
+            "max_orientation_difference_rad": 0.0,
+            "per_body": {
+              "target": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              },
+              "far_left": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              },
+              "far_right": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              },
+              "far_front": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              }
+            },
+            "scene_content_sha256": [
+              "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+              "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+              "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+              "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805"
+            ],
+            "initial_observation_sha256": [
+              "295dd14a2380e6cc9daa4214693ab08e3b58738fcfc9897749466100f73dc49e",
+              "a671882481cb9905858cd52afef327e92a9419bd4aa08deb289d7efb3743fe43",
+              "2983be04eb6c9e2182f52a08e77767a7dddd86f5b9a76044aab056c391ce6d44",
+              "5596a8335df4a4a9ad3a5d89e29adb6c6a7611cc7dc2640fe136ba72e590fd60"
+            ],
+            "position_tolerance_m": 0.002,
+            "orientation_tolerance_rad": 0.01
+          },
+          "outcomes": {
+            "DIRECT_GRASP": {
+              "status": "PASS",
+              "success": true,
+              "failure_reason": null
+            },
+            "PUSH_GRASP": {
+              "status": "FAILED",
+              "success": false,
+              "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+            },
+            "FLIP_GRASP": {
+              "status": "FAILED",
+              "success": false,
+              "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+            },
+            "VIEW_GRASP": {
+              "status": "PASS",
+              "success": true,
+              "failure_reason": null
+            }
+          },
+          "observed_preparation_retrieval_benefit": false
+        },
+        {
+          "case_id": "C1_2026112201_004_sugar_box",
+          "pair_audit": {
+            "status": "PASS",
+            "pair_status": "VALID_PAIR",
+            "reasons": [],
+            "initial_state_sha256": [
+              "e837af56149c737799c6cb3d318445d534acc63320cf6f2df00cf8ff7adf0165",
+              "e837af56149c737799c6cb3d318445d534acc63320cf6f2df00cf8ff7adf0165",
+              "e837af56149c737799c6cb3d318445d534acc63320cf6f2df00cf8ff7adf0165",
+              "e837af56149c737799c6cb3d318445d534acc63320cf6f2df00cf8ff7adf0165"
+            ],
+            "max_position_difference_m": 0.0,
+            "max_orientation_difference_rad": 1.3877787807814457e-17,
+            "per_body": {
+              "target": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 1.3877787807814457e-17
+              },
+              "left_blocker": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              },
+              "right_blocker": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              },
+              "front_blocker": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              }
+            },
+            "scene_content_sha256": [
+              "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+              "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+              "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+              "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3"
+            ],
+            "initial_observation_sha256": [
+              "305250195cc88b7a2857b11194aefd2827e10c301a97e5bee98d7c1b1ad63344",
+              "04085c7e92c991793b63635cb065432b2ba2c6017f5b02818daab35bf3a3c523",
+              "cd3738c1f1b22fd4914c49d853f9df707d08825f89670b1c05037e6d18f2abe7",
+              "dbc9bb867f05df243d15dc957ba39a627259de9df3ee0ba4e8ffa2fb98067da4"
+            ],
+            "position_tolerance_m": 0.002,
+            "orientation_tolerance_rad": 0.01
+          },
+          "outcomes": {
+            "DIRECT_GRASP": {
+              "status": "PASS",
+              "success": true,
+              "failure_reason": null
+            },
+            "PUSH_GRASP": {
+              "status": "FAILED",
+              "success": false,
+              "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+            },
+            "FLIP_GRASP": {
+              "status": "FAILED",
+              "success": false,
+              "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+            },
+            "VIEW_GRASP": {
+              "status": "FAILED",
+              "success": false,
+              "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL"
+            }
+          },
+          "observed_preparation_retrieval_benefit": false
+        },
+        {
+          "case_id": "C2_2026112201_004_sugar_box",
+          "pair_audit": {
+            "status": "PASS",
+            "pair_status": "VALID_PAIR",
+            "reasons": [],
+            "initial_state_sha256": [
+              "f8e1e8c5df5c5ef3038ae8d8777d063a8784d2bc460fe0199f07d5c450bb018c",
+              "f8e1e8c5df5c5ef3038ae8d8777d063a8784d2bc460fe0199f07d5c450bb018c",
+              "f8e1e8c5df5c5ef3038ae8d8777d063a8784d2bc460fe0199f07d5c450bb018c",
+              "f8e1e8c5df5c5ef3038ae8d8777d063a8784d2bc460fe0199f07d5c450bb018c"
+            ],
+            "max_position_difference_m": 0.0,
+            "max_orientation_difference_rad": 0.0,
+            "per_body": {
+              "target": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              },
+              "far_left": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              },
+              "far_right": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              },
+              "far_front": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              }
+            },
+            "scene_content_sha256": [
+              "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+              "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+              "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+              "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8"
+            ],
+            "initial_observation_sha256": [
+              "754d0de9e61e43475924f6cd2dbf908c381cbb8956b4a3ce74ede07ca5f675c0",
+              "fa846810624a216b871a67f6a802a5c0523b71c1f21c7d6e21e6d75921d37cdc",
+              "8a85ff3e345c80a65a853375cddd494ffb2519bfb706d10f25298c35195c7db7",
+              "8e16a69df79ce6d7af7bb1219b37bafb0e7a65594d9d03981b2e7827de6b6530"
+            ],
+            "position_tolerance_m": 0.002,
+            "orientation_tolerance_rad": 0.01
+          },
+          "outcomes": {
+            "DIRECT_GRASP": {
+              "status": "FAILED",
+              "success": false,
+              "failure_reason": "NO_LEGAL_GRASP"
+            },
+            "PUSH_GRASP": {
+              "status": "FAILED",
+              "success": false,
+              "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+            },
+            "FLIP_GRASP": {
+              "status": "FAILED",
+              "success": false,
+              "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+            },
+            "VIEW_GRASP": {
+              "status": "FAILED",
+              "success": false,
+              "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+            }
+          },
+          "observed_preparation_retrieval_benefit": false
+        },
+        {
+          "case_id": "C3_2026112201_004_sugar_box",
+          "pair_audit": {
+            "status": "PASS",
+            "pair_status": "VALID_PAIR",
+            "reasons": [],
+            "initial_state_sha256": [
+              "4b29f2e03229ec295201b63eb93d5024d8d2d0f7c576a965e18b30b560a838b0",
+              "4b29f2e03229ec295201b63eb93d5024d8d2d0f7c576a965e18b30b560a838b0",
+              "4b29f2e03229ec295201b63eb93d5024d8d2d0f7c576a965e18b30b560a838b0",
+              "4b29f2e03229ec295201b63eb93d5024d8d2d0f7c576a965e18b30b560a838b0"
+            ],
+            "max_position_difference_m": 0.0,
+            "max_orientation_difference_rad": 0.0,
+            "per_body": {
+              "target": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              },
+              "visual_occluder": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              },
+              "far_left": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              },
+              "far_right": {
+                "max_position_difference_m": 0.0,
+                "max_orientation_difference_rad": 0.0
+              }
+            },
+            "scene_content_sha256": [
+              "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+              "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+              "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+              "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e"
+            ],
+            "initial_observation_sha256": [
+              "3a16f91d3b35c420d60d29d20220f6209d1eb07791debf83565dfecef2b7fcc8",
+              "4d613012524b7633e75c38f6b015d19d4d596a9068b3308b65ad782d2921ef43",
+              "180e346a0275a5c3cbbe7ab416cd98779cbf9eaa86a4169086d9acb8cde32706",
+              "c895354d61c1370413ea5568dcfb2a3a6891c7e7aa83c54be277d8130a6a6789"
+            ],
+            "position_tolerance_m": 0.002,
+            "orientation_tolerance_rad": 0.01
+          },
+          "outcomes": {
+            "DIRECT_GRASP": {
+              "status": "PASS",
+              "success": true,
+              "failure_reason": null
+            },
+            "PUSH_GRASP": {
+              "status": "FAILED",
+              "success": false,
+              "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+            },
+            "FLIP_GRASP": {
+              "status": "FAILED",
+              "success": false,
+              "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION"
+            },
+            "VIEW_GRASP": {
+              "status": "PASS",
+              "success": true,
+              "failure_reason": null
+            }
+          },
+          "observed_preparation_retrieval_benefit": false
+        }
+      ],
+      "go_for_remaining_48": false,
+      "NO_GO_REASON": [
+        "No valid same-instance preparation-to-retrieval benefit in this fixed subset"
+      ],
+      "benefit_case_ids": [],
+      "scope": "Fixed 16-run E1 qualification subset; not a formal paper success-rate estimate"
+    }
+  ],
+  "CPU_tests": {
+    "status": "PASS",
+    "count": 69,
+    "log_sha256": "3973f0ee5863e65feb16dbe8e062511dd7403c3d0e252399b3f82b01eb56ed09"
+  },
+  "identity_note": "FROM_SCRATCH nonlearning/DQN/BC; adapted official U-Net high-level DP with independently implemented scheduler; native DP/DP3 and audited published systems NOT_RUN",
+  "readiness": "NOT_READY for next-scale training: audit E1 benefit and actual demonstration diversity separately",
+  "public_storage": "Only compact real metrics/curve CSV/previews/hashes here; large data/checkpoints/videos are local server files, not GitHub downloads"
+}

@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "campaign": "outputs/baselines/campaigns/20261124T025638Z_c38f8690",
+  "registration": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/heldout_preregistration.json",
+  "evaluation_runner_sha256_verified": "cabbcdc8ba76711c396ce1dbfb586c70f792d4478d3450d0ad9e51930e890291",
+  "same_six_methods_and_two_cases": true,
+  "initialization": [
+    {
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "status": "PASS",
+      "errors": [],
+      "methods": [
+        "grasp_only",
+        "heuristic",
+        "random_valid",
+        "dqn",
+        "bc",
+        "dp"
+      ],
+      "max_pairwise_position_m": 0.0,
+      "max_pairwise_orientation_rad": 0.0,
+      "max_camera_K_T_element_difference": 0.0,
+      "unique_actual_initial_input_hashes": 6,
+      "exact_same_initial_masks": true,
+      "exact_same_initial_candidate_arrays": true,
+      "exact_same_initial_candidate_ids": true,
+      "max_initial_observation_feature_difference": 0.00011067651212215424,
+      "max_initial_candidate_feature_difference": 0.0,
+      "note": "Physics/parameters audited; any real rendering hash variation is retained, not replaced with cached synthetic frames"
+    },
+    {
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "status": "PASS",
+      "errors": [],
+      "methods": [
+        "grasp_only",
+        "heuristic",
+        "random_valid",
+        "dqn",
+        "bc",
+        "dp"
+      ],
+      "max_pairwise_position_m": 0.0,
+      "max_pairwise_orientation_rad": 0.0,
+      "max_camera_K_T_element_difference": 0.0,
+      "unique_actual_initial_input_hashes": 6,
+      "exact_same_initial_masks": true,
+      "exact_same_initial_candidate_arrays": true,
+      "exact_same_initial_candidate_ids": true,
+      "max_initial_observation_feature_difference": 0.0,
+      "max_initial_candidate_feature_difference": 0.0,
+      "note": "Physics/parameters audited; any real rendering hash variation is retained, not replaced with cached synthetic frames"
+    }
+  ],
+  "actual_policy_inference": {
+    "grasp_only": {
+      "episodes": 2,
+      "successes": 1,
+      "decisions": 2,
+      "mean_actual_act_wall_s": 7.443150389008224e-05,
+      "max_actual_act_wall_s": 7.805100176483393e-05,
+      "actual_actions": [
+        [
+          "GRASP"
+        ],
+        [
+          "GRASP"
+        ]
+      ]
+    },
+    "heuristic": {
+      "episodes": 2,
+      "successes": 1,
+      "decisions": 2,
+      "mean_actual_act_wall_s": 7.697200635448098e-05,
+      "max_actual_act_wall_s": 7.8133016359061e-05,
+      "actual_actions": [
+        [
+          "GRASP"
+        ],
+        [
+          "PUSH"
+        ]
+      ]
+    },
+    "random_valid": {
+      "episodes": 2,
+      "successes": 0,
+      "decisions": 2,
+      "mean_actual_act_wall_s": 9.819751721806824e-05,
+      "max_actual_act_wall_s": 0.00010860798647627234,
+      "actual_actions": [
+        [
+          "FLIP"
+        ],
+        [
+          "GRASP"
+        ]
+      ]
+    },
+    "dqn": {
+      "episodes": 2,
+      "successes": 2,
+      "decisions": 3,
+      "mean_actual_act_wall_s": 0.00046846831295018393,
+      "max_actual_act_wall_s": 0.0005922429845668375,
+      "actual_actions": [
+        [
+          "GRASP"
+        ],
+        [
+          "ACTIVE",
+          "GRASP"
+        ]
+      ]
+    },
+    "bc": {
+      "episodes": 2,
+      "successes": 1,
+      "decisions": 2,
+      "mean_actual_act_wall_s": 0.0005251390102785081,
+      "max_actual_act_wall_s": 0.0005572260124608874,
+      "actual_actions": [
+        [
+          "GRASP"
+        ],
+        [
+          "GRASP"
+        ]
+      ]
+    },
+    "dp": {
+      "episodes": 2,
+      "successes": 0,
+      "decisions": 2,
+      "mean_actual_act_wall_s": 0.02661683748010546,
+      "max_actual_act_wall_s": 0.027122743951622397,
+      "actual_actions": [
+        [
+          "ACTIVE"
+        ],
+        [
+          "ACTIVE"
+        ]
+      ]
+    }
+  },
+  "scope": "Private evaluator pose comparisons and real act() timing; no oracle state fed to models; no statistical method ranking"
+}

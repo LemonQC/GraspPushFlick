@@ -93,7 +93,8 @@ class M1Environment:
             p=p@ot[:3,:3].T+ot[:3,3]
             region=(p[:,0]>.09)&(p[:,0]<.84)&(abs(p[:,1])<.44)&(p[:,2]>-.008)&(p[:,2]<.28)
             fused.append(p[region])
-        scene_world=remove_observed_robot(np.concatenate(fused),self.scene.model,self.scene.ctrl.joints())
+        opening=float(self.scene.robot.get_joint_positions()[self.scene.ctrl.jaw_indices].sum())
+        scene_world=remove_observed_robot(np.concatenate(fused),self.scene.model,self.scene.ctrl.joints(),opening=opening)
         target,_=pointcloud_from_depth(c['depth_m'],c['rgb'],c['K'],visible.mask['wrist'])
         target=target@t[:3,:3].T+t[:3,3]
         target=target[(target[:,0]>.09)&(target[:,0]<.84)&(abs(target[:,1])<.44)&(target[:,2]>.006)&(target[:,2]<.28)]
@@ -169,14 +170,18 @@ class M1Environment:
         return {'contact_point_m':[float(lo[0]),float((lo[1]+hi[1])/2),z],
                 **({'pivot_axis':[0,1,0],'stroke_m':.18,'speed_m_s':.04} if kind==ActionType.FLIP else {'direction':[1,0,0],'distance_m':.10,'speed_m_s':.04})},source
 
-    def step(self,action):
+    def step(self,action,execution_plan=None):
         action=action if isinstance(action,Action) else Action(action['type'],action.get('parameters',{}))
         self.action_index+=1;start=time.monotonic();sim_start=float(self.scene.world.current_time)
         before=self.oracle_state();begin_row=len(self.scene.rows);output={};error=None
         if action.type!=ActionType.GRASP:self._candidate_catalog={};self._grasp_plans={}
         try:
             p=dict(action.parameters)
-            if action.type==ActionType.ACTIVE:output=execute_view(self.scene.ctrl,self.scene.model,**p)
+            if execution_plan is not None and action.type!=ActionType.GRASP:
+                from apfg.primitives.preparation_motion import execute_preparation
+                if execution_plan['kind']!=action.type.value or execution_plan['parameters']!=p:raise ValueError('Preparation plan/action mismatch')
+                output=execute_preparation(self.scene.ctrl,execution_plan)
+            elif action.type==ActionType.ACTIVE:output=execute_view(self.scene.ctrl,self.scene.model,**p)
             elif action.type==ActionType.PUSH:output=execute_stroke(self.scene.ctrl,**p)
             elif action.type==ActionType.FLIP:output=execute_flip(self.scene.ctrl,**p)
             elif action.type==ActionType.GRASP:

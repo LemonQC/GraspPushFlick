@@ -1,0 +1,3480 @@
+{
+  "schema_version": "baseline_candidate_v1",
+  "created_utc": "2026-11-24T03:21:44.579639+00:00",
+  "manifest_snapshot": {
+    "path": "outputs/baselines/dataset/manifest.jsonl",
+    "exists": true,
+    "rows": 55,
+    "bytes": 40034,
+    "sha256": "539aa9623c857e9723a723cb1995a6a9b761adbfe20bee9e6b34c8e6cc10865a"
+  },
+  "episodes_snapshot": {
+    "path": "outputs/baselines/dataset/episodes_manifest.jsonl",
+    "exists": true,
+    "rows": 44,
+    "bytes": 86884,
+    "sha256": "4c3b9a42ecc46bb1cb6b1cb528ac346f1f2ca3c1454a84923d8e05713f6c5c3c"
+  },
+  "scope": "Data/schema/provenance audit, not physical policy success or a scientific readiness claim",
+  "policy_encoder": "32 common sensor-geometry/proprio features; not an RGB-D visual encoder",
+  "status": "PASS",
+  "data_readiness": "NOT_READY_FEWER_THAN_12_SUCCESSFUL_TRAIN_EPISODES",
+  "snapshot_in_progress": false,
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "episodes": 44,
+    "matched_physical_episodes": 44,
+    "transitions": 55,
+    "validated_transitions": 55,
+    "zero_transition_episodes": 1,
+    "successful_train_episodes": 9,
+    "successful_train_demonstration_transitions": 13
+  },
+  "by_split": {
+    "qualification": {
+      "episodes": 16,
+      "successes": 5,
+      "failures": 11,
+      "transitions": 18,
+      "zero_transition_episodes": 1
+    },
+    "train": {
+      "episodes": 16,
+      "successes": 9,
+      "failures": 7,
+      "transitions": 24,
+      "zero_transition_episodes": 0
+    },
+    "holdout": {
+      "episodes": 12,
+      "successes": 5,
+      "failures": 7,
+      "transitions": 13,
+      "zero_transition_episodes": 0
+    }
+  },
+  "episode_length_histogram": {
+    "1": 31,
+    "2": 12,
+    "0": 1
+  },
+  "action_types": {
+    "GRASP": 27,
+    "PUSH": 10,
+    "FLIP": 7,
+    "ACTIVE": 11
+  },
+  "successful_train_action_support": {
+    "GRASP": 9,
+    "ACTIVE": 4
+  },
+  "demonstrator_sources": {
+    "grasp_only_actual_physical_rollout": 2,
+    "active_grasp_actual_physical_rollout": 4,
+    "random_valid_actual_physical_rollout": 1,
+    "heuristic_actual_physical_rollout": 1,
+    "dqn_actual_physical_rollout": 5
+  },
+  "failure_reasons": {
+    "NO_LEGAL_CANDIDATE_AFTER_PREPARATION": 16,
+    "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL": 5,
+    "NO_LEGAL_GRASP": 1,
+    "IK_PATH_OR_TRACKING: JOINT_TRACKING_ERROR: 0.034531rad": 3
+  },
+  "episode_audits": [
+    {
+      "ledger_row": 0,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000",
+      "episode_manifest_ids": [
+        "episode_000_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "Direct_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "DIRECT_GRASP",
+      "split": "qualification",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "279b47979b27ada3eedc3af292f48092ed45a4797459b07960ad76fb2ec3c728"
+    },
+    {
+      "ledger_row": 1,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001",
+      "episode_manifest_ids": [
+        "episode_001_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "Direct_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "PUSH_GRASP",
+      "split": "qualification",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "b53016ef5ef3b67a967e001b2a07da5168146da3be3826459279cb39184d87bb"
+    },
+    {
+      "ledger_row": 2,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002",
+      "episode_manifest_ids": [
+        "episode_002_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "Direct_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "FLIP_GRASP",
+      "split": "qualification",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "999ab9c031e87b4349aeb60f353f6af07ccf770c38a63bf1728ee1bbc86962ac"
+    },
+    {
+      "ledger_row": 3,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003",
+      "episode_manifest_ids": [
+        "episode_003_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "Direct_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "VIEW_GRASP",
+      "split": "qualification",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "e72459243e5e87d43c72a76fba2e9b3cce6623bd809073fe77acc52d41322051"
+    },
+    {
+      "ledger_row": 4,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004",
+      "episode_manifest_ids": [
+        "episode_004_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "C1_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "DIRECT_GRASP",
+      "split": "qualification",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "bd26ff3139efc25a159e0e1742e70b9e403835792c7ee7b6b3b64819eea7a787"
+    },
+    {
+      "ledger_row": 5,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005",
+      "episode_manifest_ids": [
+        "episode_005_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "C1_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "PUSH_GRASP",
+      "split": "qualification",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "c96f2ae82fcb2e9e25aae36346777fdb73fc50596d39de2416735c1317d037b7"
+    },
+    {
+      "ledger_row": 6,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006",
+      "episode_manifest_ids": [
+        "episode_006_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "C1_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "FLIP_GRASP",
+      "split": "qualification",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "b6a859dfdce66a9c641c6f6a4a3a1f7a327a87cd21135acbe40b1c3d77acde58"
+    },
+    {
+      "ledger_row": 7,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007",
+      "episode_manifest_ids": [
+        "episode_007_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "C1_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "VIEW_GRASP",
+      "split": "qualification",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "f72204572087e822a9c2d80900f821c8960cd9d3c95dab79ad62cce3a40a9d5c"
+    },
+    {
+      "ledger_row": 8,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008",
+      "episode_manifest_ids": [],
+      "scene_id": "C2_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "DIRECT_GRASP",
+      "split": "qualification",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_GRASP",
+      "transitions": 0,
+      "expected_physical_steps": 0,
+      "source_sha256": "166ed9debf6c0005733c895bef1a66699999d131bcf6aa73d1e34b725dd69844"
+    },
+    {
+      "ledger_row": 9,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009",
+      "episode_manifest_ids": [
+        "episode_009_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "C2_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "PUSH_GRASP",
+      "split": "qualification",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "64c7843bec2c8dbcb51c5f8b9a4a5f794631ea6811719b3078853d5efc1bb34a"
+    },
+    {
+      "ledger_row": 10,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010",
+      "episode_manifest_ids": [
+        "episode_010_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "C2_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "FLIP_GRASP",
+      "split": "qualification",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "e55dd6b510bb3d75c860210a7b83aa2c1f1d2c103c26f9d7a1ac252381ac8cc5"
+    },
+    {
+      "ledger_row": 11,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011",
+      "episode_manifest_ids": [
+        "episode_011_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "C2_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "VIEW_GRASP",
+      "split": "qualification",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "05f438c88620df4a963d6f62e18e7f049dc6f347d543549ef44d98c9125b1d24"
+    },
+    {
+      "ledger_row": 12,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012",
+      "episode_manifest_ids": [
+        "episode_012_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "C3_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "DIRECT_GRASP",
+      "split": "qualification",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "e372220893cc4ee1549cd99c89cc1137129cac40dd29c6a732f0f23e4ffc7ac8"
+    },
+    {
+      "ledger_row": 13,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013",
+      "episode_manifest_ids": [
+        "episode_013_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "C3_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "PUSH_GRASP",
+      "split": "qualification",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "9218480e3b103e5bf8b48079c2f837ed9dfa8b3806de62ac8e1f4f71acb68835"
+    },
+    {
+      "ledger_row": 14,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014",
+      "episode_manifest_ids": [
+        "episode_014_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "C3_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "FLIP_GRASP",
+      "split": "qualification",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "d4ccabdb9b23d723fb555d9716dd08170eb730b29cf7a23c026d60c0c1e2f51f"
+    },
+    {
+      "ledger_row": 15,
+      "directory": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015",
+      "episode_manifest_ids": [
+        "episode_015_20261123T103731Z_f576e557"
+      ],
+      "scene_id": "C3_2026112201_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112201,
+      "method": "VIEW_GRASP",
+      "split": "qualification",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "aa5bdc9894b6abec5373ef98cdfdff6b7af0c636d548a6006c1e07ce5d1f7ac3"
+    },
+    {
+      "ledger_row": 16,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000",
+      "episode_manifest_ids": [
+        "episode_000_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112320_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112320,
+      "method": "grasp_only",
+      "split": "train",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "f291872bebf71f0b722e80b1e96685257aec1bdae547eba5bd147d1336678973"
+    },
+    {
+      "ledger_row": 17,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001",
+      "episode_manifest_ids": [
+        "episode_001_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112321_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112321,
+      "method": "active_grasp",
+      "split": "train",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "68b14c31ffc6aac242568f75416c8706f1de78206b8ac8b3e66f5760006595b2"
+    },
+    {
+      "ledger_row": 18,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002",
+      "episode_manifest_ids": [
+        "episode_002_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112322_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112322,
+      "method": "push_grasp",
+      "split": "train",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "fd7176cb65211747f72cdb881d2e19bc49e341fd6844b128400cd6398a097b17"
+    },
+    {
+      "ledger_row": 19,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003",
+      "episode_manifest_ids": [
+        "episode_003_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112323_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112323,
+      "method": "flip_grasp",
+      "split": "train",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "ce5be693bf24a8287d2acad17d52b028a77e390d019a47765d7d2cb1dc6bb855"
+    },
+    {
+      "ledger_row": 20,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004",
+      "episode_manifest_ids": [
+        "episode_004_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112324_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112324,
+      "method": "heuristic",
+      "split": "train",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "1707ea0189623f3f8adc230c563ec721b04a2d99a5298085344eaebb0c24e7d3"
+    },
+    {
+      "ledger_row": 21,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005",
+      "episode_manifest_ids": [
+        "episode_005_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112325_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112325,
+      "method": "random_valid",
+      "split": "train",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "dc91b27b0f862dee6a15a6ce9e595336e1a8c068b07785888ab98263ffcf65ca"
+    },
+    {
+      "ledger_row": 22,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006",
+      "episode_manifest_ids": [
+        "episode_006_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112326_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112326,
+      "method": "grasp_only",
+      "split": "train",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "1a3a3047fa1739d0a2c3ad3c8b4114bf94ad77b4f1769db91b07b58c5623746b"
+    },
+    {
+      "ledger_row": 23,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007",
+      "episode_manifest_ids": [
+        "episode_007_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112327_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112327,
+      "method": "active_grasp",
+      "split": "train",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "53261da6f9c33e1a9f65d0db42823a4bcd525e86e477ec8cc4b9fef59cbd764a"
+    },
+    {
+      "ledger_row": 24,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008",
+      "episode_manifest_ids": [
+        "episode_008_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112328_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112328,
+      "method": "push_grasp",
+      "split": "train",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "afbf6afa04abb20b276fa2e6a1d42b390c269d79b91797f24ce8d115f9cf6cc3"
+    },
+    {
+      "ledger_row": 25,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009",
+      "episode_manifest_ids": [
+        "episode_009_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112329_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112329,
+      "method": "flip_grasp",
+      "split": "train",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "9576cf48a15846515125d8dfe248c34efe18e2f66662cdf24da2dcc8853ac138"
+    },
+    {
+      "ledger_row": 26,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010",
+      "episode_manifest_ids": [
+        "episode_010_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112330_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112330,
+      "method": "heuristic",
+      "split": "train",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "597bbab7de1eb818a1ce627d45bd99cb9168ea60f5bb832822fa4139798f2e55"
+    },
+    {
+      "ledger_row": 27,
+      "directory": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011",
+      "episode_manifest_ids": [
+        "episode_011_20261123T104151Z_50ca4097"
+      ],
+      "scene_id": "train_Direct_2026112331_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112331,
+      "method": "random_valid",
+      "split": "train",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "GRASP_MISS_OR_INCOMPLETE_RETRIEVAL",
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "c9cb470f4c87bf064fdf73d33a110757426b096976a6514567a622e357f4a5e2"
+    },
+    {
+      "ledger_row": 28,
+      "directory": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000",
+      "episode_manifest_ids": [
+        "episode_000_20261124T025108Z_ab7cad4b"
+      ],
+      "scene_id": "train_Direct_2026112332_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112332,
+      "method": "dqn",
+      "split": "train",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "f51df121e3d998df0afd018629ea55a1b5ad6f57cf4bbf90ae042064f3fca1a9"
+    },
+    {
+      "ledger_row": 29,
+      "directory": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001",
+      "episode_manifest_ids": [
+        "episode_001_20261124T025108Z_ab7cad4b"
+      ],
+      "scene_id": "train_Direct_2026112333_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112333,
+      "method": "dqn",
+      "split": "train",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "32b723ff502df93a356cd2b1b7c9b3c58f1d0b1aa596e76243377fe9724c6f03"
+    },
+    {
+      "ledger_row": 30,
+      "directory": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002",
+      "episode_manifest_ids": [
+        "episode_002_20261124T025108Z_ab7cad4b"
+      ],
+      "scene_id": "train_Direct_2026112334_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112334,
+      "method": "dqn",
+      "split": "train",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "7f1370bad88744616ff84484e9006cbddf2b130efcd6571dda2fc7aaa6dc5a83"
+    },
+    {
+      "ledger_row": 31,
+      "directory": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003",
+      "episode_manifest_ids": [
+        "episode_003_20261124T025108Z_ab7cad4b"
+      ],
+      "scene_id": "train_Direct_2026112335_006_mustard_bottle",
+      "object_id": "ycb:006_mustard_bottle",
+      "seed": 2026112335,
+      "method": "dqn",
+      "split": "train",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "37f02481b37635a884ef333fb0ac0526be28fabf47e4c3ba5291ccb01bb2479a"
+    },
+    {
+      "ledger_row": 32,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000",
+      "episode_manifest_ids": [
+        "episode_000_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "method": "grasp_only",
+      "split": "holdout",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "18a0b28d01abaf93ff3366dbc095917c5b1923af537f5226631cf81c15d87588"
+    },
+    {
+      "ledger_row": 33,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001",
+      "episode_manifest_ids": [
+        "episode_001_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "method": "grasp_only",
+      "split": "holdout",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "IK_PATH_OR_TRACKING: JOINT_TRACKING_ERROR: 0.034531rad",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "1d7af93e657aad094af1d2b7f90c23e7cd928468d433c409db20a98d9d530ef6"
+    },
+    {
+      "ledger_row": 34,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002",
+      "episode_manifest_ids": [
+        "episode_002_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "method": "heuristic",
+      "split": "holdout",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "a25d2f47b50d7bde9489f96bc217a1ed110b6f327af8eee8c50bf6ad35ad7c83"
+    },
+    {
+      "ledger_row": 35,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003",
+      "episode_manifest_ids": [
+        "episode_003_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "method": "heuristic",
+      "split": "holdout",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "2b8fafbb7761ddc6b8fc2ebe20ca9e0d9a49d361083c8bb61057c08945dd2e3c"
+    },
+    {
+      "ledger_row": 36,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004",
+      "episode_manifest_ids": [
+        "episode_004_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "method": "random_valid",
+      "split": "holdout",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "a02e557b171fdbda3dc08e585e73b651b375e8352555893509dc46d2d0234379"
+    },
+    {
+      "ledger_row": 37,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005",
+      "episode_manifest_ids": [
+        "episode_005_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "method": "random_valid",
+      "split": "holdout",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "IK_PATH_OR_TRACKING: JOINT_TRACKING_ERROR: 0.034531rad",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "384a3ab30a4c419f6a86163ced905d68e3a6f090bdd3579aa8bbe1848e86ced8"
+    },
+    {
+      "ledger_row": 38,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006",
+      "episode_manifest_ids": [
+        "episode_006_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "method": "dqn",
+      "split": "holdout",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "a81bacf7fa8e605f36db80b3f7b2585448fb67913a14f4816ac8441ba2c820f1"
+    },
+    {
+      "ledger_row": 39,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007",
+      "episode_manifest_ids": [
+        "episode_007_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "method": "dqn",
+      "split": "holdout",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 2,
+      "expected_physical_steps": 2,
+      "source_sha256": "8873394853e60ac02bdce1b65bbadd46a3d44ac1f34f0bd7be766e8c8402f923"
+    },
+    {
+      "ledger_row": 40,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008",
+      "episode_manifest_ids": [
+        "episode_008_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "method": "bc",
+      "split": "holdout",
+      "success": true,
+      "status": "PASS",
+      "failure_reason": null,
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "ef2f5a80bfc5ab96713060f60fd9ffbe91ba8710726304be4ee751fb7728dee5"
+    },
+    {
+      "ledger_row": 41,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009",
+      "episode_manifest_ids": [
+        "episode_009_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "method": "bc",
+      "split": "holdout",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "IK_PATH_OR_TRACKING: JOINT_TRACKING_ERROR: 0.034531rad",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "cdd41b9f9b897c9eec4dd3886f8e7256fda5dc02f4c601972534f01ba6e30efd"
+    },
+    {
+      "ledger_row": 42,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010",
+      "episode_manifest_ids": [
+        "episode_010_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+      "object_id": "ycb:004_sugar_box",
+      "seed": 2026112309,
+      "method": "dp",
+      "split": "holdout",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "67703665f5963b8105544a02869a256da7244ba109dd0465c059370ebedb0831"
+    },
+    {
+      "ledger_row": 43,
+      "directory": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011",
+      "episode_manifest_ids": [
+        "episode_011_20261124T025638Z_c38f8690"
+      ],
+      "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+      "object_id": "ycb:005_tomato_soup_can",
+      "seed": 2026112310,
+      "method": "dp",
+      "split": "holdout",
+      "success": false,
+      "status": "FAILED",
+      "failure_reason": "NO_LEGAL_CANDIDATE_AFTER_PREPARATION",
+      "transitions": 1,
+      "expected_physical_steps": 1,
+      "source_sha256": "0676811fc1b964aca57d8465038690c639644dc31f2440c7404d906bbf180c77"
+    }
+  ],
+  "observations": {
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/decision_00/observation.npz": {
+      "sha256": "9e582e702e5b3dd7b7d7209b5ad00bc19cc3c497c61e9665357ff72652e9cfa6",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.39222222222222,
+          "rgb_standard_deviation": 24.18765859679398
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.24722222222223,
+          "rgb_standard_deviation": 17.791196107924204
+        }
+      },
+      "visible_target_points": 1623,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/decision_00/observation.npz": {
+      "sha256": "605e2a6b9bc7397a89842ff02abf0d52444c0cec5500bf6adecbddc689a35c96",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.49833333333333,
+          "rgb_standard_deviation": 24.062130170318117
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.21555555555557,
+          "rgb_standard_deviation": 17.868195899176783
+        }
+      },
+      "visible_target_points": 1623,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/decision_00/observation.npz": {
+      "sha256": "3b8d841870a9a25a0729e4cd0b814ef8fdcd5d0728d75d8c3257f4b469dbec2e",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.57305555555556,
+          "rgb_standard_deviation": 24.127351850757407
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.3036111111111,
+          "rgb_standard_deviation": 17.912946536696392
+        }
+      },
+      "visible_target_points": 1623,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/decision_00/observation.npz": {
+      "sha256": "1ec295ed35580ff6f0c026d596887577b710f2aee09998a7ca04aac888b71a04",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.40722222222223,
+          "rgb_standard_deviation": 24.11595260531353
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.22944444444445,
+          "rgb_standard_deviation": 17.831312026327364
+        }
+      },
+      "visible_target_points": 1623,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/decision_01/observation.npz": {
+      "sha256": "9710d31d9bc49ff52e958d0855737b48c6c9b5af720a4889a06f414702ea1c8f",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.99833333333333,
+          "rgb_standard_deviation": 24.819716568799805
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.34055555555557,
+          "rgb_standard_deviation": 16.50634961065395
+        }
+      },
+      "visible_target_points": 1343,
+      "measured_scene_points": 311876
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/decision_00/observation.npz": {
+      "sha256": "5feea397cac5a73e5aed5e141a67ff8f53e802795d9242a352066d02983f640d",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.77777777777777,
+          "rgb_standard_deviation": 25.286877482985243
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 136.15027777777777,
+          "rgb_standard_deviation": 31.205482512079964
+        }
+      },
+      "visible_target_points": 1626,
+      "measured_scene_points": 317967
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/decision_00/observation.npz": {
+      "sha256": "a91b58b07af6cf6974d48675eb0ff62c248fd72e9b690595e4f0c12dd2f2a0db",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.67527777777778,
+          "rgb_standard_deviation": 25.258746558382846
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 135.89138888888888,
+          "rgb_standard_deviation": 31.111932924413583
+        }
+      },
+      "visible_target_points": 1626,
+      "measured_scene_points": 317967
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/decision_00/observation.npz": {
+      "sha256": "e158df18ff756429810c62907b6da9bbe2559ba81671e63d59a910fa6ebe0807",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.6261111111111,
+          "rgb_standard_deviation": 25.28048624683756
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 136.22972222222222,
+          "rgb_standard_deviation": 31.127296968890604
+        }
+      },
+      "visible_target_points": 1626,
+      "measured_scene_points": 317967
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/decision_00/observation.npz": {
+      "sha256": "a66d6e3972ece59491b51d393f6330838d99ff7f6ba027740e4da65cda053ed6",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.79055555555556,
+          "rgb_standard_deviation": 25.298452296143473
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 135.9388888888889,
+          "rgb_standard_deviation": 31.212313077603216
+        }
+      },
+      "visible_target_points": 1626,
+      "measured_scene_points": 317967
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/decision_01/observation.npz": {
+      "sha256": "d96d04f58d89243eb68b8bc7553f7cb1a44645005981c74e2d7934abc6e624e0",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 145.05777777777777,
+          "rgb_standard_deviation": 25.92766638073348
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 134.38722222222222,
+          "rgb_standard_deviation": 28.147973146994982
+        }
+      },
+      "visible_target_points": 1345,
+      "measured_scene_points": 311876
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/decision_00/observation.npz": {
+      "sha256": "94c41a3393ef614122203ba2a73d3d3cb28bec4a6f5d743edf99dc3060ef452f",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.74972222222223,
+          "rgb_standard_deviation": 24.423426252736114
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 140.2888888888889,
+          "rgb_standard_deviation": 18.181382079506157
+        }
+      },
+      "visible_target_points": 1541,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/decision_00/observation.npz": {
+      "sha256": "b21041336e5e3b9b30eb90857f3320e2bc5bbc1ef664dc01b3a3e2b4cb8e5417",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.79555555555555,
+          "rgb_standard_deviation": 24.440355567113045
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 140.1327777777778,
+          "rgb_standard_deviation": 18.04534821730937
+        }
+      },
+      "visible_target_points": 1541,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/decision_00/observation.npz": {
+      "sha256": "76b350e1a3ae56d09ad1be1c687553d4d87cbae93e3e080e3a93e1b7d8356d05",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.72833333333332,
+          "rgb_standard_deviation": 24.392543885831635
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 140.23,
+          "rgb_standard_deviation": 17.972181899319356
+        }
+      },
+      "visible_target_points": 1541,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/decision_00/observation.npz": {
+      "sha256": "ce3306817b143158522a5e19d6fd33fda30fd8032559b081596bdbd522289493",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.4086111111111,
+          "rgb_standard_deviation": 25.094764466448837
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.68722222222223,
+          "rgb_standard_deviation": 29.543122024434336
+        }
+      },
+      "visible_target_points": 1623,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/decision_00/observation.npz": {
+      "sha256": "6be7fcc5145bc21800546375ab61904f581ce73ff5cd1205ecae7ee2bc69c2c9",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.50944444444445,
+          "rgb_standard_deviation": 25.044658328722896
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.81472222222223,
+          "rgb_standard_deviation": 29.574038068897817
+        }
+      },
+      "visible_target_points": 1623,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/decision_00/observation.npz": {
+      "sha256": "ca13c8d88073dcb3c92ec76acefa0b01dfa079b7e4497441726da785b6680e6d",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.37944444444443,
+          "rgb_standard_deviation": 25.03784734539609
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.7525,
+          "rgb_standard_deviation": 29.581753373302416
+        }
+      },
+      "visible_target_points": 1623,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/decision_00/observation.npz": {
+      "sha256": "efad60479b7c870131c68a7344ebc24d5a4af9ea37eff1f9933db5131f842878",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.55916666666667,
+          "rgb_standard_deviation": 25.07336677687657
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.70944444444444,
+          "rgb_standard_deviation": 29.451287836814767
+        }
+      },
+      "visible_target_points": 1623,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/decision_01/observation.npz": {
+      "sha256": "6d9304e83624bc8d581c90cb0541572cfb5e28afb0bfd4812649899e68f55302",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.905,
+          "rgb_standard_deviation": 25.753929096137718
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 136.79555555555555,
+          "rgb_standard_deviation": 22.90399970461788
+        }
+      },
+      "visible_target_points": 1343,
+      "measured_scene_points": 311876
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/decision_00/observation.npz": {
+      "sha256": "e2ff9cbcc8f92b9fedef693c8b8c8178a3dba1bda801e7acedcb727781113a30",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.3538888888889,
+          "rgb_standard_deviation": 24.31410853322474
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.6913888888889,
+          "rgb_standard_deviation": 19.451950295361385
+        }
+      },
+      "visible_target_points": 1728,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/decision_00/observation.npz": {
+      "sha256": "9cf615064129f5fdd176e7d7d910c0e16a7e524aeceb5062f7848640600792ae",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.61416666666668,
+          "rgb_standard_deviation": 24.28542702882167
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.87972222222223,
+          "rgb_standard_deviation": 19.59352869162434
+        }
+      },
+      "visible_target_points": 1745,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/decision_01/observation.npz": {
+      "sha256": "01eda39a50dbc551da24def2427e1bdb3595e19f0398d2a6eb7a3c07b0bb15c8",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.96972222222223,
+          "rgb_standard_deviation": 24.876470920900235
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.2811111111111,
+          "rgb_standard_deviation": 20.18508467185304
+        }
+      },
+      "visible_target_points": 1677,
+      "measured_scene_points": 311876
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/decision_00/observation.npz": {
+      "sha256": "4902f0ce21a86a157f2335743c48014a9515548de03dfc3decf33285142d66db",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.54222222222222,
+          "rgb_standard_deviation": 24.231393676513385
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.84416666666667,
+          "rgb_standard_deviation": 19.557874071443564
+        }
+      },
+      "visible_target_points": 1754,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/decision_01/observation.npz": {
+      "sha256": "fff3e8577291b5c4e8eda098a3e52c8b4ff1efa7d0f9a69ffc366ca56aa3d4f6",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 143.43194444444444,
+          "rgb_standard_deviation": 23.36688852955115
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 136.41083333333333,
+          "rgb_standard_deviation": 26.693056616427008
+        }
+      },
+      "visible_target_points": 672,
+      "measured_scene_points": 377198
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/decision_00/observation.npz": {
+      "sha256": "99e3c2375611d5ee3fa94effcfefff73c3ef64fa686b5a760887720d8462415b",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.5677777777778,
+          "rgb_standard_deviation": 24.232848815778862
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.74416666666667,
+          "rgb_standard_deviation": 19.270208566449
+        }
+      },
+      "visible_target_points": 1758,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/decision_00/observation.npz": {
+      "sha256": "17ae69924b607348ceb7ec94f4735e740c282e575771673928cbf43f4ee86362",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.56472222222223,
+          "rgb_standard_deviation": 24.230449849782804
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.69583333333333,
+          "rgb_standard_deviation": 19.268338577256156
+        }
+      },
+      "visible_target_points": 1752,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/decision_01/observation.npz": {
+      "sha256": "80374115cf111f68d4043c495b67bf7ccbcbe079bb66876fcbc271d1800b640c",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 143.09333333333333,
+          "rgb_standard_deviation": 23.24703469740221
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 135.1963888888889,
+          "rgb_standard_deviation": 23.01473050663878
+        }
+      },
+      "visible_target_points": 334,
+      "measured_scene_points": 377127
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/decision_00/observation.npz": {
+      "sha256": "148ad8e7b8d7302822aa24e843872235bfdd0684e14a956fa78913cc94d15ead",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.49055555555555,
+          "rgb_standard_deviation": 24.316739084247256
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.58277777777778,
+          "rgb_standard_deviation": 19.45028800288216
+        }
+      },
+      "visible_target_points": 1730,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/decision_00/observation.npz": {
+      "sha256": "11945865df86bb3f53d62a3db7c5d3c563c720cf038ef0a4048c71bbaf69ab15",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.625,
+          "rgb_standard_deviation": 24.241503379764037
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.7386111111111,
+          "rgb_standard_deviation": 19.58665243543529
+        }
+      },
+      "visible_target_points": 1722,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/decision_00/observation.npz": {
+      "sha256": "b8819b8192e6d37d8f03fd556c15ec5134d4b3389a3493913023333e4cd637b3",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.4322222222222,
+          "rgb_standard_deviation": 24.27603677968039
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.60055555555556,
+          "rgb_standard_deviation": 19.489296199658536
+        }
+      },
+      "visible_target_points": 1757,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/decision_01/observation.npz": {
+      "sha256": "e26d196acb0bbd14566235835af01c4f7d3df64113b7aa24662745f855a93697",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.89666666666668,
+          "rgb_standard_deviation": 24.88621639917701
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.4272222222222,
+          "rgb_standard_deviation": 20.05959823059374
+        }
+      },
+      "visible_target_points": 1725,
+      "measured_scene_points": 311876
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/decision_00/observation.npz": {
+      "sha256": "97eb1e063ccf02f9f6756a0ca8c926647997ab7b4842922443f27799bbe14f92",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.47555555555556,
+          "rgb_standard_deviation": 24.233263691376827
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.69,
+          "rgb_standard_deviation": 19.5916368211881
+        }
+      },
+      "visible_target_points": 1747,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/decision_01/observation.npz": {
+      "sha256": "b7cdfb841c9f20551df116654df325e839e822533f045a551c75ad0bd44a1e89",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 143.21777777777777,
+          "rgb_standard_deviation": 23.19028329939444
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 135.63666666666666,
+          "rgb_standard_deviation": 28.39599326196098
+        }
+      },
+      "visible_target_points": 633,
+      "measured_scene_points": 376989
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/decision_00/observation.npz": {
+      "sha256": "c1192144b7512d7ca125c0bc7c2af61acdca7a653dbaa58463644247c6b7c499",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.43027777777777,
+          "rgb_standard_deviation": 24.22335018875969
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.63055555555556,
+          "rgb_standard_deviation": 19.346996887895724
+        }
+      },
+      "visible_target_points": 1761,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/decision_00/observation.npz": {
+      "sha256": "eda16ee42f9deb4daae996ea5491779b9dcd0d36cae34704e9a230c3d15e9ffa",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.425,
+          "rgb_standard_deviation": 24.281747546024956
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.6238888888889,
+          "rgb_standard_deviation": 19.837567794153955
+        }
+      },
+      "visible_target_points": 1706,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/decision_00/observation.npz": {
+      "sha256": "ddedc98bb6309a66ef0d4bc4d0adc4b8e4e4eef929aabb2c048bafabf360909f",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.44083333333333,
+          "rgb_standard_deviation": 24.325429067244745
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.70333333333335,
+          "rgb_standard_deviation": 19.647258502566377
+        }
+      },
+      "visible_target_points": 1730,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/decision_01/observation.npz": {
+      "sha256": "b76ddb9d92d388d49d46079359dfa3acfff7eea7d89e93bfb9d6ecd146806df5",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 142.57083333333333,
+          "rgb_standard_deviation": 21.86413817634815
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 133.4961111111111,
+          "rgb_standard_deviation": 28.196502667074174
+        }
+      },
+      "visible_target_points": 845,
+      "measured_scene_points": 379337
+    },
+    "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/decision_00/observation.npz": {
+      "sha256": "dff3a18f3f5883a386a1c508e0bf879ba13f059ef9e3ba15f1ec6e1725ed3624",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.33138888888888,
+          "rgb_standard_deviation": 24.318463796143064
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.63583333333332,
+          "rgb_standard_deviation": 19.368327363536356
+        }
+      },
+      "visible_target_points": 1719,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/decision_00/observation.npz": {
+      "sha256": "8eaca7aa2c623f4a9328ecbd7914c73c0fd4a10883ee08c9ac2cb6b2df5147e9",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.45111111111112,
+          "rgb_standard_deviation": 24.242658657115808
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.65416666666667,
+          "rgb_standard_deviation": 19.633407169498962
+        }
+      },
+      "visible_target_points": 1725,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/decision_01/observation.npz": {
+      "sha256": "3777157c1ea5a0828c81f02ec9c2ff5c328910abf4075eb2a3cbf1324a44be39",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 141.22055555555556,
+          "rgb_standard_deviation": 17.801988644287977
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.42888888888888,
+          "rgb_standard_deviation": 20.434378681495687
+        }
+      },
+      "visible_target_points": 1648,
+      "measured_scene_points": 351182
+    },
+    "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/decision_00/observation.npz": {
+      "sha256": "3a46f572ca6fbf3a53fa8c52763f8772f6a844353b2dd3c053dccf04b239d716",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.51277777777779,
+          "rgb_standard_deviation": 24.276642936863215
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.79305555555555,
+          "rgb_standard_deviation": 19.591543147128622
+        }
+      },
+      "visible_target_points": 1730,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/decision_00/observation.npz": {
+      "sha256": "58ef7e169b2c0df787ec09d5f02786b0dd9c01d1d587b86dc0106d5ab2dfcb07",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.42666666666668,
+          "rgb_standard_deviation": 24.321975888301324
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.71472222222224,
+          "rgb_standard_deviation": 19.368072379579164
+        }
+      },
+      "visible_target_points": 1728,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/decision_01/observation.npz": {
+      "sha256": "6847cdff7b3370391e46947f6c01a03b1bc02808b1aed5b1d4b9c45f5b82f2d2",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 140.815,
+          "rgb_standard_deviation": 17.91545569550989
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.11666666666667,
+          "rgb_standard_deviation": 20.340142302572243
+        }
+      },
+      "visible_target_points": 1683,
+      "measured_scene_points": 351182
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/decision_00/observation.npz": {
+      "sha256": "0bf16a7cf3dea7e492abe99c8a61dbe457442e3156268161699089827947ddd5",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.46944444444443,
+          "rgb_standard_deviation": 24.1645553036817
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.475,
+          "rgb_standard_deviation": 18.051667743821714
+        }
+      },
+      "visible_target_points": 1504,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/decision_00/observation.npz": {
+      "sha256": "fe0655b7abdddaa4dbd6b3f9f0c7f77f9fb12b8256dd5b659d3fa0ba05f6406c",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.60777777777778,
+          "rgb_standard_deviation": 24.40203874805809
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.49722222222223,
+          "rgb_standard_deviation": 18.36689331546651
+        }
+      },
+      "visible_target_points": 1029,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/decision_00/observation.npz": {
+      "sha256": "7cfc98b40a62a3f814c1a2fa93937b9c8f516afbffa255a7969fac3811159a34",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.50722222222223,
+          "rgb_standard_deviation": 24.105588403603647
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.48694444444445,
+          "rgb_standard_deviation": 18.118218167150687
+        }
+      },
+      "visible_target_points": 1504,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/decision_00/observation.npz": {
+      "sha256": "d64bc10492e8e2254cf2e52e0a8cd1181670de86e87ba7b61536e5f1077edee6",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.4775,
+          "rgb_standard_deviation": 24.46158086049314
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.54611111111112,
+          "rgb_standard_deviation": 18.548632366142822
+        }
+      },
+      "visible_target_points": 1029,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/decision_00/observation.npz": {
+      "sha256": "6e64eb34c8b4ab27e5bbe31d9ff24b5a8d1af8ce371d1506453d001dfc87ae76",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.54861111111111,
+          "rgb_standard_deviation": 24.07186862672067
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.5325,
+          "rgb_standard_deviation": 17.97017743605592
+        }
+      },
+      "visible_target_points": 1504,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/decision_00/observation.npz": {
+      "sha256": "748e99ad7b3f8ea46ab459f568d94eb01bf3bc202283cec914eba1619cee2f9f",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.25611111111112,
+          "rgb_standard_deviation": 24.461772135061153
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.45083333333332,
+          "rgb_standard_deviation": 18.298825838925662
+        }
+      },
+      "visible_target_points": 1029,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/decision_00/observation.npz": {
+      "sha256": "00a87f3ee1240545e245327273da0708e50ca544e13f458416ea584777c614c2",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.39444444444445,
+          "rgb_standard_deviation": 24.093313323691703
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.49972222222223,
+          "rgb_standard_deviation": 17.989070753919062
+        }
+      },
+      "visible_target_points": 1504,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/decision_00/observation.npz": {
+      "sha256": "08ac4785fc329a339d7fc5924a5ef861ca9eae11791af18d620e63e107e50bae",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.3997222222222,
+          "rgb_standard_deviation": 24.465870784751825
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.4297222222222,
+          "rgb_standard_deviation": 18.340076182155947
+        }
+      },
+      "visible_target_points": 1029,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/decision_01/observation.npz": {
+      "sha256": "b151b05d803c0222517d4641cc687264075b45e06fabbd1c09e8b1c80dea54a5",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 140.84027777777777,
+          "rgb_standard_deviation": 18.11406114138822
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.07166666666666,
+          "rgb_standard_deviation": 19.523116710994458
+        }
+      },
+      "visible_target_points": 1028,
+      "measured_scene_points": 351182
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/decision_00/observation.npz": {
+      "sha256": "6381f5a8a7409294e5533e5d406476eb7056642a60ae2f5936af803a72646bf0",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.5522222222222,
+          "rgb_standard_deviation": 24.11739910326511
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.37222222222223,
+          "rgb_standard_deviation": 18.106423217421906
+        }
+      },
+      "visible_target_points": 1504,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/decision_00/observation.npz": {
+      "sha256": "f0632a7fe62003dd41a8b49f9d11ee0105523d10432a8dd728e45afc2ff9105a",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.25722222222223,
+          "rgb_standard_deviation": 24.5350871894734
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.5886111111111,
+          "rgb_standard_deviation": 18.395845946054987
+        }
+      },
+      "visible_target_points": 1029,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/decision_00/observation.npz": {
+      "sha256": "0dac7e2751a3da74d99a6de62c7e89b19064229fd8bf3358860c2522c154e614",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.51583333333335,
+          "rgb_standard_deviation": 24.12159646400342
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 138.52805555555557,
+          "rgb_standard_deviation": 18.0838722376604
+        }
+      },
+      "visible_target_points": 1504,
+      "measured_scene_points": 318470
+    },
+    "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/decision_00/observation.npz": {
+      "sha256": "ba25439d76afaa78aebe5ee304816abd36717e6965e142b7d299c34562784407",
+      "cameras": {
+        "fixed": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 144.55138888888888,
+          "rgb_standard_deviation": 24.39599519192281
+        },
+        "wrist": {
+          "rgb_shape": [
+            480,
+            640,
+            3
+          ],
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "depth_dtype": "float32",
+          "positive_finite_depth_fraction": 1.0,
+          "mean_rgb": 137.62722222222223,
+          "rgb_standard_deviation": 18.41428892812305
+        }
+      },
+      "visible_target_points": 1029,
+      "measured_scene_points": 318470
+    }
+  },
+  "trajectories": [
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/telemetry.json",
+      "sha256": "b30f5dd879aad8df873d1465633e9136ea06d6e90a7c8ec126519a0b95742d6b",
+      "samples": 1000,
+      "duration_s": 33.30000173673034,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/telemetry.json",
+      "sha256": "f469785b9a3bd3d2c2d123153bdd42f1f46cde0a6ee72135d9e8e0a0ebd3556b",
+      "samples": 1128,
+      "duration_s": 37.56666862592101,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/telemetry.json",
+      "sha256": "078f7bac9627b031d11669b0bfe735f6d767acd3d34cf393502ef019742ecc0b",
+      "samples": 1253,
+      "duration_s": 41.73333550989628,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/telemetry.json",
+      "sha256": "b4361a16ef29cf39a6a76164f04791ae33ce9e7c72272ce4d0bb56db590c1b84",
+      "samples": 1053,
+      "duration_s": 35.06666849553585,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/telemetry.json",
+      "sha256": "5bd620fea8232f14e4415d6737db691153ff6a274ed2f474695f64ad04fb2f66",
+      "samples": 857,
+      "duration_s": 28.53333482146263,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/telemetry.json",
+      "sha256": "eff42c5e8d18f2ff90a4d844f511764daa017dbd375b79f906f0d55809284b6f",
+      "samples": 1153,
+      "duration_s": 38.400002002716064,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/telemetry.json",
+      "sha256": "5679405eb34d6650e18584c4d7a510fa090487cbaa773ded26be2d88c4b5c585",
+      "samples": 1252,
+      "duration_s": 41.700002174824476,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/telemetry.json",
+      "sha256": "bdf5c0535c774f0fb8e11a7b7a806127947a75dfb9d0cc28b1e8cbd83461bb3d",
+      "samples": 1177,
+      "duration_s": 39.200002044439316,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/telemetry.json",
+      "sha256": "0ae40922b90cb4f77a7e0937672a332f67ad70b702fc99e22a7812fbb404f60f",
+      "samples": 1180,
+      "duration_s": 39.30000204965472,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/telemetry.json",
+      "sha256": "c1d48fd054cc125c70c6f2873fe0007c02d8ff68bfa59eec956a12c702ce839f",
+      "samples": 1323,
+      "duration_s": 44.06666896492243,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/telemetry.json",
+      "sha256": "fe120479adb8ff6c83c318a10eb57790ffb7928b209906ad42e52a042499a9dc",
+      "samples": 459,
+      "duration_s": 15.26666746288538,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/telemetry.json",
+      "sha256": "035140f991108597b7310a70d9a704c0e942cdd599d50027db56298010d30aab",
+      "samples": 854,
+      "duration_s": 28.433334816247225,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/telemetry.json",
+      "sha256": "a27e57edea56b6c08fcd387ababa3c0fe2bb0ad79e5ace02aaadcf43609f80fb",
+      "samples": 1128,
+      "duration_s": 37.56666862592101,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/telemetry.json",
+      "sha256": "2750f1d9581eace513a562cfa9f6ee34c11b6972caf994a596b89c651520af9d",
+      "samples": 1253,
+      "duration_s": 41.73333550989628,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/telemetry.json",
+      "sha256": "be030da774f87edab3a6037dcd4481fc821bf1a2eda9fa7822a20381c37568f1",
+      "samples": 1068,
+      "duration_s": 35.56666852161288,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/telemetry.json",
+      "sha256": "7bcccc06c7cdfa84d53626954d50f5165ab5cf0629490f55ae65a186b8620130",
+      "samples": 1121,
+      "duration_s": 37.333335280418396,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/telemetry.json",
+      "sha256": "a34185621bef391001d5475459a01fa3efb39f52cb3150ffc69f74b868e1bf38",
+      "samples": 1111,
+      "duration_s": 37.000001929700375,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/telemetry.json",
+      "sha256": "b9cdcda75d9b98326f4df2a59a786d929397f3054b295e4a0b247440abbf83c0",
+      "samples": 1752,
+      "duration_s": 58.366669710725546,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/telemetry.json",
+      "sha256": "9bcd2b7a86aed79a9f27e131d0dc5783efb4e34b7ee5f73a7caebe8fec174f49",
+      "samples": 1260,
+      "duration_s": 41.96666885539889,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/telemetry.json",
+      "sha256": "0ecbdba2148b12933f0bbefffb1450c851f52df4490225a25b34b119d9ea0039",
+      "samples": 1751,
+      "duration_s": 58.333336375653744,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/telemetry.json",
+      "sha256": "69124142d95a2a2fa22be61837192d1fd157e5841416a87c5bc7c4471ac0c5f0",
+      "samples": 835,
+      "duration_s": 27.800001449882984,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/telemetry.json",
+      "sha256": "b4d202b58400d425e5f66146e5a18b07703921634e7a518cab4ba62c6a93da1d",
+      "samples": 829,
+      "duration_s": 27.60000143945217,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/telemetry.json",
+      "sha256": "379b1dde09a7b2f985e570b77a9bd90d32152b2a8fdaf7b0a0be4f4ca1850ce7",
+      "samples": 1112,
+      "duration_s": 37.03333526477218,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/telemetry.json",
+      "sha256": "385fb032dd08ccfd1328943840d94cce69954f35ae36fe686eba7473ef1c3158",
+      "samples": 1749,
+      "duration_s": 58.26666970551014,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/telemetry.json",
+      "sha256": "d46d52520eb82cc20e7734ea253d4f35d3086d229f3af2cc4dbe87affd1f3917",
+      "samples": 1260,
+      "duration_s": 41.96666885539889,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/telemetry.json",
+      "sha256": "c61acdd31893435a7527c6dd3175c33cc5cc31ebedd9e9281e644813d93ec390",
+      "samples": 834,
+      "duration_s": 27.766668114811182,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/telemetry.json",
+      "sha256": "60b4e268573b92f2d5ac614134c985c9945a21fcf1c71cc11be05fa9d962a054",
+      "samples": 1933,
+      "duration_s": 64.40000335872173,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/telemetry.json",
+      "sha256": "ddb1aa9b2ae985607bf92c86c27a5ffc32e885ffed5b1b56cbe2362a36bc0cde",
+      "samples": 1310,
+      "duration_s": 43.633335608989,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/telemetry.json",
+      "sha256": "70ad6f8b1e4f4b5d6e0530ab4d83de5cdfba30afa5cc763ca4f584901c934563",
+      "samples": 1755,
+      "duration_s": 58.46666971594095,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/telemetry.json",
+      "sha256": "14b57f5306aac9b11b0d46ddc6ec79c69890bd3a5da94d9cee307cd5c96e74bf",
+      "samples": 833,
+      "duration_s": 27.73333477973938,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/telemetry.json",
+      "sha256": "ee859110d90ae920843601055d3f3b76d16fd8a71619539230b8947fb5ea314c",
+      "samples": 1778,
+      "duration_s": 59.2333364225924,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/telemetry.json",
+      "sha256": "129f18acdf57d1402a349af020f10d039d6bd53c45cbd80621138773c7b31df6",
+      "samples": 933,
+      "duration_s": 31.066668286919594,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/telemetry.json",
+      "sha256": "1672f7c4e7d32dc7e1a45f688e66c4c0108c4c5bf56141b68449a24039e9f5ff",
+      "samples": 604,
+      "duration_s": 20.10000104829669,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/telemetry.json",
+      "sha256": "129f18acdf57d1402a349af020f10d039d6bd53c45cbd80621138773c7b31df6",
+      "samples": 933,
+      "duration_s": 31.066668286919594,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/telemetry.json",
+      "sha256": "1fb3712f101dc2711119c915fc765925e4724c8b0cd1826c338b9401b5cbf06e",
+      "samples": 1136,
+      "duration_s": 37.83333530649543,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/telemetry.json",
+      "sha256": "ebfab9116d22a5c675a645e8f2029e7be06483d7972f2e021d869462e8ca323f",
+      "samples": 1453,
+      "duration_s": 48.400002524256706,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/telemetry.json",
+      "sha256": "1672f7c4e7d32dc7e1a45f688e66c4c0108c4c5bf56141b68449a24039e9f5ff",
+      "samples": 604,
+      "duration_s": 20.10000104829669,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/telemetry.json",
+      "sha256": "129f18acdf57d1402a349af020f10d039d6bd53c45cbd80621138773c7b31df6",
+      "samples": 933,
+      "duration_s": 31.066668286919594,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/telemetry.json",
+      "sha256": "58a30cc9742142835a75fdfc1d2e3a1cba7cae25cdcc4ee3924906dbf80a706b",
+      "samples": 1545,
+      "duration_s": 51.4666693508625,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/telemetry.json",
+      "sha256": "129f18acdf57d1402a349af020f10d039d6bd53c45cbd80621138773c7b31df6",
+      "samples": 933,
+      "duration_s": 31.066668286919594,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/telemetry.json",
+      "sha256": "1672f7c4e7d32dc7e1a45f688e66c4c0108c4c5bf56141b68449a24039e9f5ff",
+      "samples": 604,
+      "duration_s": 20.10000104829669,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/telemetry.json",
+      "sha256": "a2e6f59a6cad334a1f5ab55549308e4dac73f3f56cc588fb0c5bdcde93784d6f",
+      "samples": 459,
+      "duration_s": 15.26666746288538,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/telemetry.json",
+      "sha256": "b95992bc14b5217b34a97d014c9e5a99779e6b6fbdf7e9a1890b190ce7ee136e",
+      "samples": 459,
+      "duration_s": 15.26666746288538,
+      "actual_sample_hz": 29.999998435378156,
+      "joint_dimensions": 8,
+      "includes_tcp_and_camera_extrinsics": true,
+      "RGBD_cadence": "RGB-D at macro decision boundaries; no claim of dense synchronized native-DP depth trajectories"
+    }
+  ],
+  "observation_shapes": {
+    "features": [
+      32
+    ],
+    "candidates": [
+      24,
+      24
+    ],
+    "RGB": [
+      480,
+      640,
+      3
+    ],
+    "depth_m": [
+      480,
+      640
+    ]
+  },
+  "boundary_audit": {
+    "status": "PASS",
+    "scope": "Strict saved tensor keys and candidate semantic consistency; no claim that file inspection replaces poison-oracle/source review."
+  },
+  "next_round_large_scale_training_ready": false,
+  "native_DP_data_readiness": "NOT_READY: no dense synchronized RGB-D action-chunk dataset asserted by these macro-decision files"
+}

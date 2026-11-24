@@ -1,0 +1,22 @@
+{
+  "plot": "Actual raw optimizer traces; no synthetic/interpolated experiment data",
+  "matplotlib_version": "3.8.4",
+  "inputs": [
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/training_curve.json",
+      "sha256": "f36d6e8b581f673828bf7c9e044e04722982450cacb7aa95abbdf6766365bfe5"
+    },
+    {
+      "path": "outputs/baselines/train/bc_demo_v1/curve.csv",
+      "sha256": "ecbffc5b9d3f445dec59dd2064ea2e4924a7b588084df9e086d9951f8ebe2609"
+    },
+    {
+      "path": "outputs/baselines/train/dp_demo_v1/curve.csv",
+      "sha256": "bdb95811f82edb470b34d836a14e38ffad27c6a4804affa651c871f8fd77839a"
+    },
+    {
+      "path": "outputs/baselines/train/bc_overfit_v1/curve.csv",
+      "sha256": "38da39bebbb31eec197b0a607b0db10b21ed57914c03082b29d5d1e601336e1a"
+    }
+  ]
+}

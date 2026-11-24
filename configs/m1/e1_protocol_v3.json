@@ -1,0 +1,528 @@
+{
+  "protocol_version": "E1-development-preregister-v3",
+  "status": "NOT_RUN",
+  "scope": "Future E1 development gate, not formal paper evaluation",
+  "supersedes": "e1_protocol_v2.json; earlier frozen files remain unchanged",
+  "pilot_revision_reason": "New parallel_jaw_execution_v1 controller and common observable candidate pool; old control trajectories are not pooled into this E1 comparison.",
+  "families": [
+    "Direct",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "seeds": [
+    2026112201,
+    2026112202
+  ],
+  "target_assets": [
+    "ycb:004_sugar_box",
+    "ycb:005_tomato_soup_can"
+  ],
+  "arms": [
+    "DIRECT_GRASP",
+    "PUSH_GRASP",
+    "FLIP_GRASP",
+    "VIEW_GRASP"
+  ],
+  "information_mode": "RGBD_POLICY",
+  "max_preparation_actions": 1,
+  "max_grasp_attempts": 1,
+  "max_candidates_checked": 8,
+  "thresholds": {
+    "settling_window_s": 1.0,
+    "settling_position_m": 0.002,
+    "settling_rotation_rad": 0.01,
+    "push_displacement_m": 0.03,
+    "flip_non_yaw_deg": 35.0,
+    "flip_horizontal_rotvec_deg": 25.0,
+    "view_max_object_motion_m": 0.002,
+    "target_entire_aabb_min_y_m": 0.3,
+    "minimum_lift_m": 0.1,
+    "bilateral_hold_s": 1.0
+  },
+  "candidate_protocol": "All Track A methods receive the same sensor-derived candidate tensors and legal mask. No family/seed/object GT in model features. Fixed E1 arms constrain first type only; choose parameters within the same shared pool.",
+  "operation_costs": "All physical arm motion and network wall-time logged. Any mandatory re-observation motion must be explicit and charged.",
+  "success": "Entire designated object outside task region, real bilateral grasp, sustained lift/hold, no catastrophic distractor drop. A 6cm/15cm lift alone is not task success.",
+  "labels": "Layout family is only a generation hypothesis. Direct-success cases cannot be called push/flip-necessary. Audit and retain non-qualified scenes.",
+  "failure_retention": true,
+  "statistics": "No success-rate or novelty claim from the separate pilot subset; E2/E3 NOT_RUN",
+  "case_list": [
+    {
+      "case_id": "Direct_2026112201_004_sugar_box",
+      "family": "Direct",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "Direct_2026112201_005_tomato_soup_can",
+      "family": "Direct",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "28f73d559d4ca35f1a13c94f6f51d73a14d8011b725b9bd66bddfb4855150e95",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "Direct_2026112202_004_sugar_box",
+      "family": "Direct",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "52e5cfcc4b5cfb8a608e920a7c7ccb25ff42ebd539403915a80d8015194cfbbb",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "Direct_2026112202_005_tomato_soup_can",
+      "family": "Direct",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "2ce871aeb2b5d35bb97ef2dc21570c2c49fc88e2c095ae44cd6dc98f5878ea6d",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112201_004_sugar_box",
+      "family": "C1",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112201_005_tomato_soup_can",
+      "family": "C1",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "75b7e058c5dc34b00fc6a81a62d0b2c4769f341317b0829ed59d074bd9bf2d82",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112202_004_sugar_box",
+      "family": "C1",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "833e4c1ea9044ca6c6f89eb9e1e53c316112ce81eea57af69bf5b643efb66d6a",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C1_2026112202_005_tomato_soup_can",
+      "family": "C1",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "9817cec10acd26308134cd54cbb163275a63b096f449a817981af7eacc5f2997",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112201_004_sugar_box",
+      "family": "C2",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112201_005_tomato_soup_can",
+      "family": "C2",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "0830a0645211076c8ce014a8ba79bf2a48d0a7060cb14ada70b9e252662058ae",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112202_004_sugar_box",
+      "family": "C2",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "b03b63d67ee22ddda90c6b8b6a18f28e43777f05141c185b188b7f34bb8efc63",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C2_2026112202_005_tomato_soup_can",
+      "family": "C2",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "321009067a5706430ea947deba4c75e0a1efca1a6c6dbf7d182225e959cbef85",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112201_004_sugar_box",
+      "family": "C3",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112201_005_tomato_soup_can",
+      "family": "C3",
+      "seed": 2026112201,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "89171e67caba41617e228f068ca3f4e5864e938a4afe5cb4a54b163b4f01952c",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112202_004_sugar_box",
+      "family": "C3",
+      "seed": 2026112202,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "0a26e9dc616aa15dd3ed53876bafc06e0c4ac9b24d213ffb594c235b740edaa3",
+      "status": "NOT_RUN"
+    },
+    {
+      "case_id": "C3_2026112202_005_tomato_soup_can",
+      "family": "C3",
+      "seed": 2026112202,
+      "target_asset": "ycb:005_tomato_soup_can",
+      "scene_sha256": "409c65e3557ea762837242c9083fa08d453eb44b6c34a6e7caed4d25d98d64c4",
+      "status": "NOT_RUN"
+    }
+  ],
+  "controller_revision": "parallel_jaw_execution_v1",
+  "controller_source_commit": "d51265bc76aab1d1cee45a16995a510d04f61a1b",
+  "schema_version": "baseline_candidate_v1",
+  "observation_dimension": 32,
+  "candidate_dimension": 24,
+  "maximum_legal_action_pool": 24,
+  "maximum_raw_grasp_candidates": 8,
+  "maximum_parallel_jaw_variants_per_raw_grasp": 2,
+  "path_check_samples_per_actual_joint_segment": 7,
+  "preparation_contact_height": "Measured target quantiles with a source closed-finger/table-clearance lower bound; exact implementation must be frozen in preparation_motion.py and candidate_generator.py. No object GT.",
+  "pairing_tolerances": {
+    "all_body_position_m": 0.002,
+    "all_body_orientation_rad": 0.01,
+    "all_initial_stability_required": true,
+    "scene_content_hash_equal": true,
+    "initial_rgbd_input_hashes_recorded": true
+  },
+  "cameras": {
+    "views": [
+      "fixed",
+      "wrist"
+    ],
+    "width": 640,
+    "height": 480,
+    "physics_hz": 480,
+    "sensor_frame_refresh_each_decision": true,
+    "same_initial_view": true
+  },
+  "experiment_gate": "Execute all 16 frozen qualification arms, retain invalid arms. Continue remaining48 only with valid physical pairs and observable preparation-to-complete-retrieval benefit; otherwise NO_GO_REASON.",
+  "qualification_case_order": [
+    "Direct_2026112201_004_sugar_box",
+    "C1_2026112201_004_sugar_box",
+    "C2_2026112201_004_sugar_box",
+    "C3_2026112201_004_sugar_box"
+  ],
+  "qualification_execution_order": [
+    {
+      "case_id": "Direct_2026112201_004_sugar_box",
+      "family": "Direct",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+      "status": "NOT_RUN",
+      "arm": "DIRECT_GRASP",
+      "execution_id": "Direct_2026112201_004_sugar_box__DIRECT_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "Direct_2026112201_004_sugar_box",
+      "family": "Direct",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+      "status": "NOT_RUN",
+      "arm": "PUSH_GRASP",
+      "execution_id": "Direct_2026112201_004_sugar_box__PUSH_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "Direct_2026112201_004_sugar_box",
+      "family": "Direct",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+      "status": "NOT_RUN",
+      "arm": "FLIP_GRASP",
+      "execution_id": "Direct_2026112201_004_sugar_box__FLIP_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "Direct_2026112201_004_sugar_box",
+      "family": "Direct",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "6485487afea0ff00497c018888bbe22e9fd13ae292427a096f696c0a42bcd805",
+      "status": "NOT_RUN",
+      "arm": "VIEW_GRASP",
+      "execution_id": "Direct_2026112201_004_sugar_box__VIEW_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C1_2026112201_004_sugar_box",
+      "family": "C1",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+      "status": "NOT_RUN",
+      "arm": "DIRECT_GRASP",
+      "execution_id": "C1_2026112201_004_sugar_box__DIRECT_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C1_2026112201_004_sugar_box",
+      "family": "C1",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+      "status": "NOT_RUN",
+      "arm": "PUSH_GRASP",
+      "execution_id": "C1_2026112201_004_sugar_box__PUSH_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C1_2026112201_004_sugar_box",
+      "family": "C1",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+      "status": "NOT_RUN",
+      "arm": "FLIP_GRASP",
+      "execution_id": "C1_2026112201_004_sugar_box__FLIP_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C1_2026112201_004_sugar_box",
+      "family": "C1",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "662cda7da72ef70bbb9daab64cbe25504582aafda39e91abdc4328589e0c61f3",
+      "status": "NOT_RUN",
+      "arm": "VIEW_GRASP",
+      "execution_id": "C1_2026112201_004_sugar_box__VIEW_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C2_2026112201_004_sugar_box",
+      "family": "C2",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+      "status": "NOT_RUN",
+      "arm": "DIRECT_GRASP",
+      "execution_id": "C2_2026112201_004_sugar_box__DIRECT_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C2_2026112201_004_sugar_box",
+      "family": "C2",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+      "status": "NOT_RUN",
+      "arm": "PUSH_GRASP",
+      "execution_id": "C2_2026112201_004_sugar_box__PUSH_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C2_2026112201_004_sugar_box",
+      "family": "C2",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+      "status": "NOT_RUN",
+      "arm": "FLIP_GRASP",
+      "execution_id": "C2_2026112201_004_sugar_box__FLIP_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C2_2026112201_004_sugar_box",
+      "family": "C2",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "4a002dab8476bc84bf19d2755cdf84e2a7ab7e812cf3f61ba2d15aac7ad3b1a8",
+      "status": "NOT_RUN",
+      "arm": "VIEW_GRASP",
+      "execution_id": "C2_2026112201_004_sugar_box__VIEW_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C3_2026112201_004_sugar_box",
+      "family": "C3",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+      "status": "NOT_RUN",
+      "arm": "DIRECT_GRASP",
+      "execution_id": "C3_2026112201_004_sugar_box__DIRECT_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C3_2026112201_004_sugar_box",
+      "family": "C3",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+      "status": "NOT_RUN",
+      "arm": "PUSH_GRASP",
+      "execution_id": "C3_2026112201_004_sugar_box__PUSH_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C3_2026112201_004_sugar_box",
+      "family": "C3",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+      "status": "NOT_RUN",
+      "arm": "FLIP_GRASP",
+      "execution_id": "C3_2026112201_004_sugar_box__FLIP_GRASP",
+      "split": "qualification"
+    },
+    {
+      "case_id": "C3_2026112201_004_sugar_box",
+      "family": "C3",
+      "seed": 2026112201,
+      "target_asset": "ycb:004_sugar_box",
+      "scene_sha256": "552bd3705c334d77e90d9fdc3915bb246e4b18306fc52288872d7aca4c39761e",
+      "status": "NOT_RUN",
+      "arm": "VIEW_GRASP",
+      "execution_id": "C3_2026112201_004_sugar_box__VIEW_GRASP",
+      "split": "qualification"
+    }
+  ],
+  "qualification_episodes": 16,
+  "remaining_episodes": 48,
+  "implementation_source_sha256": {
+    "apfg/baselines/schema.py": "18bdfb588999d7526fac8d91378d3f45b2cabf3aab8c14c4508299b19c2f612e",
+    "apfg/baselines/common_env.py": "30f607e7afaf44ae226b64a464df0917eefff53f2228165ce3cf934237aff3ad",
+    "apfg/baselines/candidate_generator.py": "cf24f7b9aebb1b32900c0e49f07a3894c75126971b9b93de84fd50cfbb47baf1",
+    "apfg/baselines/heuristic.py": "6022dd3386b6925c68bb2ad8c4ecfdf7372b72a086de8e733497f8a3709db8d6",
+    "apfg/baselines/reward.py": "d731309d49ef18be40e14960fa297afce98ef205b77f6e6ffe488b5b56e7edaf",
+    "apfg/baselines/evaluation.py": "cdd6e15f95435825f9273353a72ddbc7b90849f3e63c911abaf3e8ae605602df",
+    "apfg/baselines/gpu_lock.py": "b4ee8cb56a2654523739edfd5a603e4ae3aa78b5e29083ad06d9d65223474fa2",
+    "apfg/simulation/m1_env.py": "ce88d3815d68e8264a7bdf93f1c07345906cdb34b7be0c1ea3915bf76f597e48",
+    "apfg/simulation/sr5_hardware.py": "1f09f52e6a84ef7efd8e6469bf606c9dec757a6fb5c8150a94175f4ab9e08e7b",
+    "apfg/primitives/grasp_motion.py": "022803be0fb14c2000449568354b10e0bb6a05c7341d3a73ac5c057307a3fc8d",
+    "apfg/primitives/sr5_control.py": "c8b4f7e0a4045674f2cf3ac81ed638dbfb2c688494b5f506eb223a6203997b5b",
+    "apfg/primitives/m1_actions.py": "7b969bac51bab26f3be235f5c6c511f6ef6fd11a40c4594afd41bce7e5e7afb1",
+    "apfg/primitives/preparation_motion.py": "585afdfb8c3706426830789489ea091c02e8b6c1c4e1913b6e0f99505ef871f3",
+    "apfg/primitives/swept.py": "c06c9f955945b73b4cd92b6c998e3f15c3ebff8e5df4ea737a0e78171eedd5e4",
+    "apfg/perception/m1_observation.py": "47e9545e726a3e170ff2a0e6b70b5a453352846b5ea51e13cc0f6e81a50d99e1",
+    "apfg/perception/graspnet_candidates.py": "a1f0aa45cba65a5bca58ec7174f49fda23aa27ced8f04dfe4cb49bb49ad83536",
+    "apfg/robots/sr5.py": "ba555d50999bd206f0744aa616fedb06684f15a902378317ac300ef777d24bb7",
+    "apfg/scenes/m1.py": "7b5811d79fd17a47edab772b68e8dc794ecdb608c4de58ce83ea5163dd2de06e",
+    "scripts/graspnet_worker.py": "6841becb437995d8d81abd96684a80394b99acab963cc00d3dfd6432eb290e3f",
+    "scripts/run_baseline_experiments.py": "9faf1e0c09689053fb529c283abdc4d00bf07a54a2d98b849876ee19950652b2",
+    "configs/baselines/common.yaml": "92745de643c3349dfec60db3a0b2fa87a0d71d5563ddbf949402a429771fa2bb",
+    "configs/baselines/heuristic.yaml": "c4c6d1737c26740193a2ac9da119168a56eb28c5175da570404a087d9c5123ad",
+    "assets/manifests/object_registry.json": "bf2b26df367308807b5aeaebd70a32c99e6b5168293b1d04a64ce42c9b90292a",
+    "assets/manifests/graspnet_model.json": "981b83770e58178cdf67c4c465f10b1fad9ed8287d197e933b974856376717b0"
+  },
+  "missing_implementation_files": [],
+  "common_configuration_sha256": "92745de643c3349dfec60db3a0b2fa87a0d71d5563ddbf949402a429771fa2bb",
+  "graspnet_checkpoint_sha256": "60680087c61cba2b6791614fef1519071e294f6dcaf99b3f581bb95f7c51a868",
+  "baseline_partitions": {
+    "training": {
+      "object_ids": [
+        "ycb:006_mustard_bottle"
+      ],
+      "asset_probe_status": "PASS_LIMITED_SINGLE_ASSET",
+      "asset_probe_campaign": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa",
+      "asset_probe_result": "2/2 actual full retrieval PASS in one reused Isaac process",
+      "retained_failed_asset_probes": [
+        {
+          "object_id": "ycb:008_pudding_box",
+          "campaign": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9",
+          "episodes": 2,
+          "reason": "NO_LEGAL_GRASP"
+        },
+        {
+          "object_id": "ycb:003_cracker_box",
+          "campaign": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae",
+          "episodes": 2,
+          "reason": "INITIAL_UNSTABLE"
+        }
+      ],
+      "seeds": [
+        2026112320,
+        2026112321,
+        2026112322,
+        2026112323,
+        2026112324,
+        2026112325,
+        2026112326,
+        2026112327,
+        2026112328,
+        2026112329,
+        2026112330,
+        2026112331,
+        2026112332,
+        2026112333,
+        2026112334,
+        2026112335
+      ],
+      "demonstration_seeds": [
+        2026112320,
+        2026112321,
+        2026112322,
+        2026112323,
+        2026112324,
+        2026112325,
+        2026112326,
+        2026112327,
+        2026112328,
+        2026112329,
+        2026112330,
+        2026112331
+      ],
+      "dqn_online_seeds": [
+        2026112332,
+        2026112333,
+        2026112334,
+        2026112335
+      ],
+      "episode_budget": {
+        "demonstrations": 12,
+        "dqn_online": 4,
+        "total": 16
+      },
+      "scope": "Small chain smoke, single train asset; diversity inadequate for next-scale training. Actual manifest determines successful demonstrations; never fabricate success counts."
+    },
+    "heldout": {
+      "cases": [
+        {
+          "scene_id": "holdout_Direct_2026112309_004_sugar_box",
+          "family": "Direct",
+          "seed": 2026112309,
+          "target_asset": "ycb:004_sugar_box"
+        },
+        {
+          "scene_id": "holdout_Direct_2026112310_005_tomato_soup_can",
+          "family": "Direct",
+          "seed": 2026112310,
+          "target_asset": "ycb:005_tomato_soup_can"
+        }
+      ],
+      "same_cases_for": [
+        "DQN",
+        "BC",
+        "DIFFUSION_HIGH_LEVEL"
+      ],
+      "training_label_access": false
+    },
+    "qualification": {
+      "training_label_access": false,
+      "case_ids": [
+        "Direct_2026112201_004_sugar_box",
+        "C1_2026112201_004_sugar_box",
+        "C2_2026112201_004_sugar_box",
+        "C3_2026112201_004_sugar_box"
+      ]
+    },
+    "split_invariants": [
+      "No train/holdout object or seed overlap.",
+      "BC and high-level DP use identical successful transition subset hashes.",
+      "Prior M1/grasp regression episodes are not relabeled as new E1 or new baseline training samples."
+    ]
+  },
+  "frozen_protocol_sha256": "6d4c2c029288d07e948f90256bbab9065275be8bdb2826c0b8bcbaf870d37c19"
+}

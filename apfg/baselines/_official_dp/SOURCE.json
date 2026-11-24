@@ -1,0 +1,40 @@
+{
+  "repository": "https://github.com/real-stanford/diffusion_policy",
+  "commit": "5ba07ac6661db573af695b419a7947ecb704690f",
+  "license": "MIT, Copyright (c) 2023 Columbia Artificial Intelligence and Robotics Lab",
+  "files": [
+    {
+      "upstream_path": "diffusion_policy/model/diffusion/conditional_unet1d.py",
+      "url": "https://raw.githubusercontent.com/real-stanford/diffusion_policy/5ba07ac6661db573af695b419a7947ecb704690f/diffusion_policy/model/diffusion/conditional_unet1d.py",
+      "original_sha256": "8a95014f8aa52ade086f967c9018a66bf0c68f2133969c8f7a8522da01b472ac",
+      "local_name": "conditional_unet1d.py",
+      "local_sha256": "5bb9bf0342737ce2ca6077cf284109edf8cf13e0d5ac531546190bed72285a5e",
+      "changes": "Only package-relative imports and provenance header; trailing whitespace normalized; extra EOF blank line removed for publication, Python AST unchanged",
+      "validated_runtime_local_sha256": "51d4373d75cdf1912465e73ae88f0c05391c751e6ed3ec69e7d08aa78e0f315e"
+    },
+    {
+      "upstream_path": "diffusion_policy/model/diffusion/conv1d_components.py",
+      "url": "https://raw.githubusercontent.com/real-stanford/diffusion_policy/5ba07ac6661db573af695b419a7947ecb704690f/diffusion_policy/model/diffusion/conv1d_components.py",
+      "original_sha256": "ea2aa10e297cf253bc1a1919ba47fe6ae32049b5eaaab292ed9cc145d8d2adc0",
+      "local_name": "conv1d_components.py",
+      "local_sha256": "e04be0aa73869f5780914f2bceb68787d12a7f95ac53e42939969eac806078bf",
+      "changes": "Provenance header only; trailing whitespace normalized"
+    },
+    {
+      "upstream_path": "diffusion_policy/model/diffusion/positional_embedding.py",
+      "url": "https://raw.githubusercontent.com/real-stanford/diffusion_policy/5ba07ac6661db573af695b419a7947ecb704690f/diffusion_policy/model/diffusion/positional_embedding.py",
+      "original_sha256": "2266c75ecc9c9ac8ca126839d39a7bafbdd7af8800d6de903f66815e64cc366c",
+      "local_name": "positional_embedding.py",
+      "local_sha256": "10f7ccc7a71046080634c8c0e44982b74a37a36ec7143258e7519ef9270ea0c8",
+      "changes": "Provenance header only; trailing whitespace normalized"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/real-stanford/diffusion_policy/5ba07ac6661db573af695b419a7947ecb704690f/LICENSE",
+      "original_sha256": "304e99a48271e10820f71a1b86ef395c06c100d7f68dd1d308790d1064fc4d41",
+      "local_name": "LICENSE",
+      "local_sha256": "304e99a48271e10820f71a1b86ef395c06c100d7f68dd1d308790d1064fc4d41",
+      "changes": "Unchanged MIT license"
+    }
+  ]
+}

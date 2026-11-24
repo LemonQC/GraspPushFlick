@@ -1,0 +1,3710 @@
+{
+  "storage": "Server-local artifacts only; no binary upload implied",
+  "files": [
+    {
+      "path": "configs/m1/e1_protocol_v3.json",
+      "bytes": 20235,
+      "sha256": "eca51e3a895a3a7f0e54e25ab94233e11d52870a9abdf5a838821175e425a9e2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/commands.json",
+      "bytes": 1032,
+      "sha256": "f8db9a8504c9250db35fbe70a3ffe89ad60a8ea9de0727026ef678f3330af950"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/contacts.json",
+      "bytes": 3019505,
+      "sha256": "7bb06c613f6a395efb9c5cbbbad31896d1128fdd65675f5451edaf9d77d866f2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/decision_00/candidates.json",
+      "bytes": 13553,
+      "sha256": "df157fe40736462a82f6d41a5a64b6b9b2d296992db3688d8c1ca7a96b43aaed"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/decision_00/observation.npz",
+      "bytes": 7621610,
+      "sha256": "583b8e77956e45fe85fb056ea97280d7d3d5b5568c7a81f1348ae6b583d01c2d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/decision_00/plans.json",
+      "bytes": 35339,
+      "sha256": "14d33bbdae59279ffdf74d0682686b89849174ca68f7999f74e4412fbdec4e61"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/episode.json",
+      "bytes": 6251,
+      "sha256": "c507a25605fbea582fab95350e4551a3388204aac4b5ffb7295de65475b3d721"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/telemetry.json",
+      "bytes": 1816560,
+      "sha256": "77514172351b794d47679fd7dc0732ff9b5a7e126f74ce238292843830aedde7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/videos/m1/fixed.mp4",
+      "bytes": 631477,
+      "sha256": "932274ff2d62339ac4dcfe14236b943dd06b5ab18cdb2c414cd73ccc9259fd80"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/videos/m1/third.mp4",
+      "bytes": 446939,
+      "sha256": "e952bc040c6b3db44f91d08c27db2d4abda659df7148700638fae4fabfcf9969"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/videos/m1/timing.json",
+      "bytes": 37098,
+      "sha256": "8b594b080b41c8af294fb9cdd44980c8a248867c3279db30543822748b90c102"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_000/videos/m1/wrist.mp4",
+      "bytes": 827000,
+      "sha256": "147e8ffa8ecb312d57c0b912afff20ca988bd5784544db1ab9a207afcafcdea6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/commands.json",
+      "bytes": 1032,
+      "sha256": "f8db9a8504c9250db35fbe70a3ffe89ad60a8ea9de0727026ef678f3330af950"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/contacts.json",
+      "bytes": 3019505,
+      "sha256": "7bb06c613f6a395efb9c5cbbbad31896d1128fdd65675f5451edaf9d77d866f2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/decision_00/candidates.json",
+      "bytes": 13553,
+      "sha256": "50f49a4012c79d9603883dbb1fa2f325a007909efe299200590b36bc6e3dc3d3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/decision_00/observation.npz",
+      "bytes": 7627167,
+      "sha256": "dda5ef82cffdb82fd61d7b1c6bc333d962176769b362e34638f9efd6d23ea38e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/decision_00/plans.json",
+      "bytes": 35339,
+      "sha256": "14d33bbdae59279ffdf74d0682686b89849174ca68f7999f74e4412fbdec4e61"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/episode.json",
+      "bytes": 6255,
+      "sha256": "bcce911e57b269961ffc4b3e8b5362c252855f48f8be57e0d68d0538fdd19cad"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/telemetry.json",
+      "bytes": 1816560,
+      "sha256": "77514172351b794d47679fd7dc0732ff9b5a7e126f74ce238292843830aedde7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/videos/m1/fixed.mp4",
+      "bytes": 614823,
+      "sha256": "16367df751a5a07b3d65c004f2b4a515c364bf47a2072db36203f3067282deb1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/videos/m1/third.mp4",
+      "bytes": 445929,
+      "sha256": "7baaee6cd8bd7430a007f25581734a5310729f92878bba2a9cb9c9760c40972a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/videos/m1/timing.json",
+      "bytes": 37093,
+      "sha256": "9d959360c91d50f7071bea85982f90b4452580d9f200fadbd4844f9512b1e966"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episode_001/videos/m1/wrist.mp4",
+      "bytes": 812889,
+      "sha256": "f7f6796ec6c0ab2311bf828020602d9824ec2406ec489881975de9459ff27b80"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/episodes.jsonl",
+      "bytes": 9118,
+      "sha256": "a12791063430f58e54a5bdcb5844b4810242d1b36e73db8a61098dadacac693a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/run_config.json",
+      "bytes": 743,
+      "sha256": "8a83ecd68225bf82ed24817737eae4cbf1ded230cccd964c366a1ea89a31f7e2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T102827Z_fc7f02b9/summary.json",
+      "bytes": 267,
+      "sha256": "491dd0c981c32540ea3cd4fc74e3ead18fe963306c83f43dabe0b167f4d606ef"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/commands.json",
+      "bytes": 10966,
+      "sha256": "3b4bf21a2d72351836a64fa2583c214561ac1fd3e446b7f7f24eaffeb03443dc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/contacts.json",
+      "bytes": 9733785,
+      "sha256": "ca1f37b9605d1a4489f84312f26307ee136124e2db67f708da149f59b5f084c0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/decision_00/candidates.json",
+      "bytes": 16631,
+      "sha256": "11e6b34c4000daa996d1c6f63f89da5acf21ec8c797df06f93774200913cb816"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/decision_00/observation.npz",
+      "bytes": 7623220,
+      "sha256": "d894359a28c362ab808abf86244f5b1b71a98b28a146504a69c46d12fbb41b5b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/decision_00/plans.json",
+      "bytes": 67046,
+      "sha256": "d5041ec02f1443fa8400a170dbc9b05c0f0acb659c92bdd4b314f3de94e5b126"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/episode.json",
+      "bytes": 17575,
+      "sha256": "68924ecb2b189b8f7571b3fc2059bd5f88fb1299d9a401cb7882a044302dfaab"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/telemetry.json",
+      "bytes": 5189344,
+      "sha256": "4dd319d3c785a760cbbe1ab7004bfc064df1c82456b12414cb61c9c2f69810eb"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/transition_00.npz",
+      "bytes": 2263,
+      "sha256": "4108c1a7e4be2aa41280c86e16f928e26c4ce33d2ba3d231211a46025a4b765e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/videos/m1/fixed.mp4",
+      "bytes": 1749685,
+      "sha256": "bac75fac5e7e30f18b9e20ff5a40f2e8a853cc2af80ab05d6f77e839154997b9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/videos/m1/third.mp4",
+      "bytes": 1241779,
+      "sha256": "113a4acf5d754a2acb65b8510d5a371eaeeb1cbb702f4337d30226e447c1e77c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/videos/m1/timing.json",
+      "bytes": 104226,
+      "sha256": "bfa174640d6e66562ffc7cf862a089a62994c7e2fe08f4cad97514d43d76f4af"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_000/videos/m1/wrist.mp4",
+      "bytes": 2650144,
+      "sha256": "58292b3bf88391aaf306379f0f1bf12e51051720a046ed74777388864ac43a42"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/commands.json",
+      "bytes": 10966,
+      "sha256": "3b4bf21a2d72351836a64fa2583c214561ac1fd3e446b7f7f24eaffeb03443dc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/contacts.json",
+      "bytes": 9733785,
+      "sha256": "ca1f37b9605d1a4489f84312f26307ee136124e2db67f708da149f59b5f084c0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/decision_00/candidates.json",
+      "bytes": 16631,
+      "sha256": "1eec4ddeffcb8d3b066e757b2632d6b17f39b9452515490be45597bc8c866a09"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/decision_00/observation.npz",
+      "bytes": 7632871,
+      "sha256": "ae094f861583993fbc17e5abe2e4f663d5dc5810fed4e8e8d8de7b8bfd7cbcba"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/decision_00/plans.json",
+      "bytes": 67046,
+      "sha256": "d5041ec02f1443fa8400a170dbc9b05c0f0acb659c92bdd4b314f3de94e5b126"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/episode.json",
+      "bytes": 17570,
+      "sha256": "850d1ba727b1671458afbf3815564a3fbed51ef5362b4836da585cb7b497a985"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/telemetry.json",
+      "bytes": 5189344,
+      "sha256": "4dd319d3c785a760cbbe1ab7004bfc064df1c82456b12414cb61c9c2f69810eb"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/transition_00.npz",
+      "bytes": 2263,
+      "sha256": "4108c1a7e4be2aa41280c86e16f928e26c4ce33d2ba3d231211a46025a4b765e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/videos/m1/fixed.mp4",
+      "bytes": 1741585,
+      "sha256": "59649a3dfc5bce0b644eadd437ac0faacfb1d4d76c63a2cc7552a4d7b245bd09"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/videos/m1/third.mp4",
+      "bytes": 1237942,
+      "sha256": "2eeefb44b28183b38ec9c3606a7378ea4a038cd7369c2d77e8c69c83df78d3a9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/videos/m1/timing.json",
+      "bytes": 104217,
+      "sha256": "ffee0bc7e069c79fb002d753ef65a5f807aefe726cda485ad95a495e36b278b3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episode_001/videos/m1/wrist.mp4",
+      "bytes": 2644240,
+      "sha256": "55c5042ae82ffdad120d10edc24a4ea53310c160f4d7811b9bc852e91e17a2df"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/episodes.jsonl",
+      "bytes": 21881,
+      "sha256": "b0aa8eb543bbd33d585558ca576f81e1e1d9d42a8a91601bf4d649eab4ae6bc8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/run_config.json",
+      "bytes": 839,
+      "sha256": "5922b1d2a76776a9c1dfac282e37218500076c1ac05180b9fabb926734314e8a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103216Z_cf3c2efa/summary.json",
+      "bytes": 267,
+      "sha256": "c51f85b0f56d2d3c4699f64c2dd73591e816912140edfe215ccf4c200dfc1cb3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_000/commands.json",
+      "bytes": 1031,
+      "sha256": "3051cf775b08924d04d53a1da28c7fe81170aa13e12427954c0e8a074efee0a2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_000/contacts.json",
+      "bytes": 4261461,
+      "sha256": "b51a16e891063eca2120888c0ce9628d7d763a02107f0365a9d2c74484e6f802"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_000/episode.json",
+      "bytes": 6175,
+      "sha256": "5442eb1301a1f22c1dae6a747b49f34ab90fec5530b61a326bddc4f59128958b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_000/telemetry.json",
+      "bytes": 2572777,
+      "sha256": "5d58a9570d746d9eeed9db417a4306da5a7bbc610000b169516deb1e016319f0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_000/videos/m1/fixed.mp4",
+      "bytes": 812094,
+      "sha256": "1ec9a82302ca7b01597ad9b88326966030416cdbf5105a473c0cb89817bf71e7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_000/videos/m1/third.mp4",
+      "bytes": 677692,
+      "sha256": "94f11aaa70a12ea4fa6adee29e420351fc97e14ea6f2865f3844ff3b2c928444"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_000/videos/m1/timing.json",
+      "bytes": 51818,
+      "sha256": "f95bc22307ce9bb5686eafe75e1a1f9d08742addac0d076da1d7d95e649d586e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_000/videos/m1/wrist.mp4",
+      "bytes": 1851678,
+      "sha256": "125f35ff493db71e32bb4c7bad1a08734a8ce9665f00742999e013ade1248d4e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_001/commands.json",
+      "bytes": 1031,
+      "sha256": "3051cf775b08924d04d53a1da28c7fe81170aa13e12427954c0e8a074efee0a2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_001/contacts.json",
+      "bytes": 4261461,
+      "sha256": "b51a16e891063eca2120888c0ce9628d7d763a02107f0365a9d2c74484e6f802"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_001/episode.json",
+      "bytes": 6172,
+      "sha256": "636bb469ca215c0c232e6d04d5535a13133d352188c230ed3352c538ec44b7e1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_001/telemetry.json",
+      "bytes": 2572777,
+      "sha256": "5d58a9570d746d9eeed9db417a4306da5a7bbc610000b169516deb1e016319f0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_001/videos/m1/fixed.mp4",
+      "bytes": 813388,
+      "sha256": "b89fe8a3eaad61cdd71db1cca8fbdc1fbbe92e0357d82ab74b5347e6d4402bba"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_001/videos/m1/third.mp4",
+      "bytes": 679048,
+      "sha256": "4ce787acba156d4d46366bc26aa5dc29d8d0041b72b0374d7d048d563fc04b13"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_001/videos/m1/timing.json",
+      "bytes": 51823,
+      "sha256": "9059f02b9f0ecfd406b4db8c758e8604a1d63643a028f8abc62776132a4b3a05"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episode_001/videos/m1/wrist.mp4",
+      "bytes": 1841964,
+      "sha256": "b1a8af94b78cb884ead9d420c2d95e15f1b0d41360c40d13fba5749dfb7288ba"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/episodes.jsonl",
+      "bytes": 9353,
+      "sha256": "f5bc1619a36a4f036edd84f7abb584e4fb1b25af9b5a3ba4cb87b35500c5cf26"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/run_config.json",
+      "bytes": 833,
+      "sha256": "522dae07032bf847d7159e4055c37200f581879a01f2727b9c06c6459856947d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103421Z_40c6d1ae/summary.json",
+      "bytes": 267,
+      "sha256": "3306b384a68fb7a33e357b8c94d56cc333ab955fb4c181dbc043bf83e83ddba7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/commands.json",
+      "bytes": 11016,
+      "sha256": "fdc0073b331491f8ee17b1d63bf3735589bf71ac5bff92970724023379ac36be"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/contacts.json",
+      "bytes": 11477180,
+      "sha256": "2d5036753850cd648df1379c774e1a8d50335521534ea73269a45ace3825eaa1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/decision_00/candidates.json",
+      "bytes": 16643,
+      "sha256": "95629b9dc736fb3b07b44ffa735aae803badb4d65cc1474bfdfd25795b334dd2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/decision_00/observation.npz",
+      "bytes": 7614926,
+      "sha256": "9e582e702e5b3dd7b7d7209b5ad00bc19cc3c497c61e9665357ff72652e9cfa6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/decision_00/plans.json",
+      "bytes": 67213,
+      "sha256": "f2915921534636d73d0a3426d20139c0ef61ba9f0de419887bcbe28799ddd521"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/episode.json",
+      "bytes": 17751,
+      "sha256": "279b47979b27ada3eedc3af292f48092ed45a4797459b07960ad76fb2ec3c728"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/telemetry.json",
+      "bytes": 6197930,
+      "sha256": "b30f5dd879aad8df873d1465633e9136ea06d6e90a7c8ec126519a0b95742d6b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/transition_00.npz",
+      "bytes": 2260,
+      "sha256": "d3451c86b5ff7edcdd88db5b568c025238286896ca71e6c23eabaf1688cf17f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/videos/m1/fixed.mp4",
+      "bytes": 2054443,
+      "sha256": "f68fbdf5d5ca1627965def90104740e989cfd691eebfabe3064e9754dcbb5ee2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/videos/m1/third.mp4",
+      "bytes": 1496488,
+      "sha256": "d229cfd1e3448e260dce5add762c6bcc9656d8e9653c6b8b7b40117b44e227c9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/videos/m1/timing.json",
+      "bytes": 124587,
+      "sha256": "64c400092ccba2f8e91fc8b6f751b112b2ef8e5ba0d052217358f91943c90b31"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_000/videos/m1/wrist.mp4",
+      "bytes": 2281546,
+      "sha256": "7ece293d1719ce1073f6641660adfd350dc15d9ca7913711fd9265a607cf1b28"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/commands.json",
+      "bytes": 17832,
+      "sha256": "087924e35b2b7a8bcf85aab5df950501bfa52d53db236777b8f47f30545f14cc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/contacts.json",
+      "bytes": 12107730,
+      "sha256": "f053a54ecc2e91de67509e349603b84b0fe93c30b98243301d869b6a04aabda2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/decision_00/candidates.json",
+      "bytes": 16643,
+      "sha256": "b8468d2b1ed43affc26328ff0ea138894a99bd14e8db72b2124ec421f5a1d069"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/decision_00/observation.npz",
+      "bytes": 7622738,
+      "sha256": "605e2a6b9bc7397a89842ff02abf0d52444c0cec5500bf6adecbddc689a35c96"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/decision_00/plans.json",
+      "bytes": 67213,
+      "sha256": "f2915921534636d73d0a3426d20139c0ef61ba9f0de419887bcbe28799ddd521"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/decision_01/candidates.json",
+      "bytes": 11327,
+      "sha256": "dd509ae8b9c148396a46083e9139e4f6a39be99827622265ba510846e26a3a30"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/decision_01/observation.npz",
+      "bytes": 7079733,
+      "sha256": "a4950c48093f98de56d8217da8cd748cf075e86acd3bf47e308aecfafb890953"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/episode.json",
+      "bytes": 15912,
+      "sha256": "b53016ef5ef3b67a967e001b2a07da5168146da3be3826459279cb39184d87bb"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/telemetry.json",
+      "bytes": 7081429,
+      "sha256": "f469785b9a3bd3d2c2d123153bdd42f1f46cde0a6ee72135d9e8e0a0ebd3556b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/transition_00.npz",
+      "bytes": 2618,
+      "sha256": "34a260e7456f1a1b3b87ff672bb1f7bdd9758e4ecb36ad05d50d91de5fa23f71"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/videos/m1/fixed.mp4",
+      "bytes": 2235722,
+      "sha256": "2b435bdaa6c3c6d3a71e0326dda2ed6f4b82b6d23c19d1badc4fbe6195a23cae"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/videos/m1/third.mp4",
+      "bytes": 1673538,
+      "sha256": "b479744468f0b4161aad7a4f3280c3de2f778567a60ae354ce57c99e415a6c51"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/videos/m1/timing.json",
+      "bytes": 140295,
+      "sha256": "9784eaa14269cf45ae5273d73f1ab5acd676f69fc51b79e7d6bebd1d16c39818"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_001/videos/m1/wrist.mp4",
+      "bytes": 3599779,
+      "sha256": "b3d6058098baaef8b0908f94a41bb9fd613abd2a48089f9b22000a6cc86dad65"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/commands.json",
+      "bytes": 22480,
+      "sha256": "780b0f67718a5c97e317b6a7951b5538e13a05da015148575fca09e5aba02f2d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/contacts.json",
+      "bytes": 13119648,
+      "sha256": "12b75577e44551f38749c00d0be32ee930c528efe6c174d6ade3f843bf4f3294"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/decision_00/candidates.json",
+      "bytes": 16643,
+      "sha256": "ba03449cb93c6ae500fccec2b62648fd7559b4d58b72129d79ecf8e21df147b9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/decision_00/observation.npz",
+      "bytes": 7615458,
+      "sha256": "3b8d841870a9a25a0729e4cd0b814ef8fdcd5d0728d75d8c3257f4b469dbec2e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/decision_00/plans.json",
+      "bytes": 67213,
+      "sha256": "f2915921534636d73d0a3426d20139c0ef61ba9f0de419887bcbe28799ddd521"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/decision_01/candidates.json",
+      "bytes": 11313,
+      "sha256": "0a19aba0b2f9d3bfd2b29728da74fa1bedc8e79f2a2de0acd1ea42e473407656"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/decision_01/observation.npz",
+      "bytes": 7117258,
+      "sha256": "bf8275d3511ae4e5c80f02bc27c209420ca4e62618f30fc04aefe3100d18a4fb"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/episode.json",
+      "bytes": 17114,
+      "sha256": "999ab9c031e87b4349aeb60f353f6af07ccf770c38a63bf1728ee1bbc86962ac"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/telemetry.json",
+      "bytes": 7860134,
+      "sha256": "078f7bac9627b031d11669b0bfe735f6d767acd3d34cf393502ef019742ecc0b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/transition_00.npz",
+      "bytes": 2617,
+      "sha256": "a04b11bcebea8ef9d6edc4f4fd349d63ab5e4e776ad36879b27b5657a4d98f1b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/videos/m1/fixed.mp4",
+      "bytes": 2477707,
+      "sha256": "c6d19efd7f485d4c9105c430fbe7fd733ab429524d49b5bfb85ea3a68b3db626"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/videos/m1/third.mp4",
+      "bytes": 1861560,
+      "sha256": "3d89ed0e9c5724f27e884fc60b592b37ce02edf3132f2629d56a3df31a7d94b1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/videos/m1/timing.json",
+      "bytes": 155763,
+      "sha256": "c7b816762dcb151ea5a6e00c9e5b880eafe2df7f182376889508533ca4aad2ab"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_002/videos/m1/wrist.mp4",
+      "bytes": 4492386,
+      "sha256": "f3d0455aa2ffc4e9daaff931be08affd58777865401661dff8595f7ebe3772e2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/commands.json",
+      "bytes": 11945,
+      "sha256": "267ae375a40cdc64578d300b3caf17fac407aa51e2fcc7a56fada6bc7ac7d848"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/contacts.json",
+      "bytes": 11906186,
+      "sha256": "1b12c90c2667903bda1e7bdc403d243cfb53017643f4f7e260b221efa4af1808"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/decision_00/candidates.json",
+      "bytes": 16643,
+      "sha256": "e8eda0f3fcd6edc30d4f1b33693c31be0c8b7876bbabef7eaba29d1cc75165e8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/decision_00/observation.npz",
+      "bytes": 7618900,
+      "sha256": "1ec295ed35580ff6f0c026d596887577b710f2aee09998a7ca04aac888b71a04"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/decision_00/plans.json",
+      "bytes": 67213,
+      "sha256": "f2915921534636d73d0a3426d20139c0ef61ba9f0de419887bcbe28799ddd521"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/decision_01/candidates.json",
+      "bytes": 13982,
+      "sha256": "b0c2626c88700a70deac6686470a8ebfef77e0ea2a3acbf0c72f21bdb43bbddc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/decision_01/observation.npz",
+      "bytes": 7587041,
+      "sha256": "9710d31d9bc49ff52e958d0855737b48c6c9b5af720a4889a06f414702ea1c8f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/decision_01/plans.json",
+      "bytes": 5477,
+      "sha256": "7d3b458866a03c1e175f18e9761c7cfb7b57350c92e5193cfb2aa7262b1308ca"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/episode.json",
+      "bytes": 26886,
+      "sha256": "e72459243e5e87d43c72a76fba2e9b3cce6623bd809073fe77acc52d41322051"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/telemetry.json",
+      "bytes": 6533716,
+      "sha256": "b4361a16ef29cf39a6a76164f04791ae33ce9e7c72272ce4d0bb56db590c1b84"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/transition_00.npz",
+      "bytes": 2717,
+      "sha256": "1f3bc9d077248044015549b86efd96380998383ae02310955ad0fcf2d92bad55"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/transition_01.npz",
+      "bytes": 2219,
+      "sha256": "6baae3a5e27ff8cb7ca1e18a28b2716162b07e900f783153f7f6b45e7532dd8b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/videos/m1/fixed.mp4",
+      "bytes": 2218307,
+      "sha256": "15998eb4de4a9367964b6b8ba92b1655a99530fc3bbf15e0db42ec5c959dd9eb"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/videos/m1/third.mp4",
+      "bytes": 1592434,
+      "sha256": "65ec9b5bd62624827db6558af9984a4cbbbcf140aca2a4f4af5e10167649cea0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/videos/m1/timing.json",
+      "bytes": 131074,
+      "sha256": "66a70c435546d68c7bd9684713286e9ecd4c83d656f1ec198ee2284d99993cd7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_003/videos/m1/wrist.mp4",
+      "bytes": 3468252,
+      "sha256": "12941f88f53d8aff6fe767853208f8ad61e4cfa801581301673e9435ded819ff"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/commands.json",
+      "bytes": 11050,
+      "sha256": "c5d88e860c8ef07aebb86a788504db2e1fbb871de08c8c4ea923a263ed604815"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/contacts.json",
+      "bytes": 10116757,
+      "sha256": "d7e646d1ccd193a4ed62b5e4b6a1c04418afd9221b57037d2b4fcd282692af13"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/decision_00/candidates.json",
+      "bytes": 16481,
+      "sha256": "463b75da2f279a84200b0f1da9dd6b54107a47e2c2fac66795f36e1d2cf96da6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/decision_00/observation.npz",
+      "bytes": 7811032,
+      "sha256": "5feea397cac5a73e5aed5e141a67ff8f53e802795d9242a352066d02983f640d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/decision_00/plans.json",
+      "bytes": 53976,
+      "sha256": "21c8512f9e1e1ddd2633f2517c2172222957beffd7ed80a4d8b6cc8622f93ca4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/episode.json",
+      "bytes": 17873,
+      "sha256": "bd26ff3139efc25a159e0e1742e70b9e403835792c7ee7b6b3b64819eea7a787"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/telemetry.json",
+      "bytes": 5353967,
+      "sha256": "5bd620fea8232f14e4415d6737db691153ff6a274ed2f474695f64ad04fb2f66"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/transition_00.npz",
+      "bytes": 2274,
+      "sha256": "40f2954555ec81ac4163646b18bd76b5a5529535f643529fedd8b07ecef4b8f5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/videos/m1/fixed.mp4",
+      "bytes": 1888221,
+      "sha256": "a080b6404456d738f5aa8fa3f53e14ca5939acae9eb8c238c6287098f12555e0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/videos/m1/third.mp4",
+      "bytes": 1352900,
+      "sha256": "d0242adde2221418f1bf97f0b66cde1750676f34c72daa25993b1a7835cc394d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/videos/m1/timing.json",
+      "bytes": 106949,
+      "sha256": "9a19f0ec3fb66307649e53580d6eb19e62d40ccf4073269f8b12cccaa9d3b19f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_004/videos/m1/wrist.mp4",
+      "bytes": 3716995,
+      "sha256": "18d6d773d373611702c159fdfb2711dfcd12c0275ad6457700ee2bc5f2e07670"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/commands.json",
+      "bytes": 18420,
+      "sha256": "2d4ee43ad2894161fbbf4c149ad4a586e4e6401cc9247eda5c8f38afec1394b7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/contacts.json",
+      "bytes": 14465857,
+      "sha256": "183d3ec32a39928a848af2f52e0bbaf087a4fc17930d83407c197e6d3fa83301"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/decision_00/candidates.json",
+      "bytes": 16481,
+      "sha256": "dc7b61ed329f90c97aab1a5a82b7d61179cbb598a8800ffab3e73f5e1cf1db78"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/decision_00/observation.npz",
+      "bytes": 7811455,
+      "sha256": "a91b58b07af6cf6974d48675eb0ff62c248fd72e9b690595e4f0c12dd2f2a0db"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/decision_00/plans.json",
+      "bytes": 53976,
+      "sha256": "21c8512f9e1e1ddd2633f2517c2172222957beffd7ed80a4d8b6cc8622f93ca4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/decision_01/candidates.json",
+      "bytes": 11278,
+      "sha256": "67ccab248597b80a5169d77dec867fc396256a4eaca74d240b8b6ae19e009776"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/decision_01/observation.npz",
+      "bytes": 7241002,
+      "sha256": "dae82ae4bb7144240afc363b1b2b970d1d2bae71646c92071dee3ac17e17494c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/episode.json",
+      "bytes": 16120,
+      "sha256": "c96f2ae82fcb2e9e25aae36346777fdb73fc50596d39de2416735c1317d037b7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/telemetry.json",
+      "bytes": 7273310,
+      "sha256": "eff42c5e8d18f2ff90a4d844f511764daa017dbd375b79f906f0d55809284b6f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/transition_00.npz",
+      "bytes": 2634,
+      "sha256": "c6d856bf80d0d035611f457828faf5aa5df0f855977bd226b8894e128bcb77e4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/videos/m1/fixed.mp4",
+      "bytes": 2456907,
+      "sha256": "697d27ca9a703bfe2edaf8b6296c7ad00b240899f482837efee1755b9ab9cd7d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/videos/m1/third.mp4",
+      "bytes": 1774864,
+      "sha256": "8ef41f7d4db5f632ee52a26ef20464c18fc246f3ea261f25483fc6fcfe0aebb5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/videos/m1/timing.json",
+      "bytes": 143417,
+      "sha256": "7e0557a9469c1c23d3b126b4d96abb1f91ae9bf1b1346a9b03b67dadfd3bb503"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_005/videos/m1/wrist.mp4",
+      "bytes": 5384040,
+      "sha256": "31bd379e39705006dfde2fde26845db0df00fff7c83cb88cce22e917e67200af"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/commands.json",
+      "bytes": 22445,
+      "sha256": "e5332bb8f48b2f3fe1f991d7be60a3e1b6805ea2401b3c12405231f2c41ad825"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/contacts.json",
+      "bytes": 16406004,
+      "sha256": "c25a9e506cfa27d9391adbf3b899b3f1c0b1f65f6559f17266ae50873de6117d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/decision_00/candidates.json",
+      "bytes": 16481,
+      "sha256": "427bc95e944664a5d127be03337062b0eadd96dc3959ebb0a91e8b4a7c0652fb"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/decision_00/observation.npz",
+      "bytes": 7812349,
+      "sha256": "e158df18ff756429810c62907b6da9bbe2559ba81671e63d59a910fa6ebe0807"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/decision_00/plans.json",
+      "bytes": 53976,
+      "sha256": "21c8512f9e1e1ddd2633f2517c2172222957beffd7ed80a4d8b6cc8622f93ca4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/decision_01/candidates.json",
+      "bytes": 11265,
+      "sha256": "4a2dc7b3a15146f09ab7158031a3b58547cbc0d28895e899a80174ac93f84ad0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/decision_01/observation.npz",
+      "bytes": 7510930,
+      "sha256": "42216908f29db4f1979f31db15e27bb986fe39f8839f8205333ab86a8918df0e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/episode.json",
+      "bytes": 17466,
+      "sha256": "b6a859dfdce66a9c641c6f6a4a3a1f7a327a87cd21135acbe40b1c3d77acde58"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/telemetry.json",
+      "bytes": 7912046,
+      "sha256": "5679405eb34d6650e18584c4d7a510fa090487cbaa773ded26be2d88c4b5c585"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/transition_00.npz",
+      "bytes": 2640,
+      "sha256": "a40c6b8a8f690ce0194f9583ea6b15153b63cd0788b3b52cfc80b0e6db2c8b21"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/videos/m1/fixed.mp4",
+      "bytes": 2646989,
+      "sha256": "19cbf37f0987ae6688e9e48629054bacb3da6908f2899fd1397b65b552aa3649"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/videos/m1/third.mp4",
+      "bytes": 1926985,
+      "sha256": "6030c59c51ef73a0cfb650a71bbacb0aa2a5918ba92289d4bee3f9a7e95ee1c4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/videos/m1/timing.json",
+      "bytes": 155618,
+      "sha256": "32a0100de7993cd7e787646b2963b19e7f47b83f2a371307af09c3d052e4a903"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_006/videos/m1/wrist.mp4",
+      "bytes": 5857527,
+      "sha256": "105fcbd3cf9c828d4b508ca157f68289b7dbc69f418547d83e692af9cfaa32a6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/commands.json",
+      "bytes": 11842,
+      "sha256": "1996bf61e4c164d698075bd991cf1f4604f1454837f67340aecb30b0b790584e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/contacts.json",
+      "bytes": 13092789,
+      "sha256": "6c4d6cc7c8ec05b966bde0b6eef6dbeaf4d7d0d5568aa8139b49018f1468f25c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/decision_00/candidates.json",
+      "bytes": 16481,
+      "sha256": "44761c38bc4c20af5f944c7ea8a0913619b0b66badf4da2aeba1766f7e2c2ff4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/decision_00/observation.npz",
+      "bytes": 7813672,
+      "sha256": "a66d6e3972ece59491b51d393f6330838d99ff7f6ba027740e4da65cda053ed6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/decision_00/plans.json",
+      "bytes": 53976,
+      "sha256": "21c8512f9e1e1ddd2633f2517c2172222957beffd7ed80a4d8b6cc8622f93ca4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/decision_01/candidates.json",
+      "bytes": 13967,
+      "sha256": "41fe05ca5b451db7e6c0860b3ad61773b003c8651106b03ee956eeaa4bf9462c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/decision_01/observation.npz",
+      "bytes": 7779116,
+      "sha256": "d96d04f58d89243eb68b8bc7553f7cb1a44645005981c74e2d7934abc6e624e0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/decision_01/plans.json",
+      "bytes": 5435,
+      "sha256": "b04e29d5b99d3e9da4a529b5c2bccad98ff8bca19e7b972ef773a025c5b7960d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/episode.json",
+      "bytes": 27139,
+      "sha256": "f72204572087e822a9c2d80900f821c8960cd9d3c95dab79ad62cce3a40a9d5c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/telemetry.json",
+      "bytes": 7274945,
+      "sha256": "bdf5c0535c774f0fb8e11a7b7a806127947a75dfb9d0cc28b1e8cbd83461bb3d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/transition_00.npz",
+      "bytes": 2728,
+      "sha256": "3bd2887eb2e9a42117fa0a988fef83986b8001046703f174bc9f7e6708fdebc1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/transition_01.npz",
+      "bytes": 2216,
+      "sha256": "78416263ce9bccebff4c42363f060f427ea7a888197742f334d79823cabe06a5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/videos/m1/fixed.mp4",
+      "bytes": 2653873,
+      "sha256": "e50944efc44c5453648481e31341626bfdbcd953baa97f7b88c061e0c7b83fb5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/videos/m1/third.mp4",
+      "bytes": 1808543,
+      "sha256": "4538f0af0645322937b2b0249f179bb6fcbdc6fe2be38fa34050d8b12534d931"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/videos/m1/timing.json",
+      "bytes": 146383,
+      "sha256": "dcaf62dab28e3f19f04ad1f6bbca7f8c7c25d3a79f07c72da4a8abf321bff1e3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_007/videos/m1/wrist.mp4",
+      "bytes": 5173403,
+      "sha256": "dd4b0b34d60efce9bb7c66bf508a5c7d0f4fdd5a37e777abb2713ee54134bb9f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/commands.json",
+      "bytes": 1032,
+      "sha256": "f8db9a8504c9250db35fbe70a3ffe89ad60a8ea9de0727026ef678f3330af950"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/contacts.json",
+      "bytes": 3019505,
+      "sha256": "845c312b3fc91445043f1f1d74c876e1f954cb948a9f147ec8b01509f34014fb"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/decision_00/candidates.json",
+      "bytes": 13967,
+      "sha256": "c68ce58c222e9b014d05ddb08bcaba01113e20dc2d1364e91c937b9f87a5e167"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/decision_00/observation.npz",
+      "bytes": 7663611,
+      "sha256": "5ecaddedffee21c0ca5d62d92c047398405ad5301700ea16a26a0acce1106bf2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/decision_00/plans.json",
+      "bytes": 61619,
+      "sha256": "5ddabf7385a6fb82dcfabd699f2567cb8062dc03d5748ba2aa40d813a8716d62"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/episode.json",
+      "bytes": 6480,
+      "sha256": "166ed9debf6c0005733c895bef1a66699999d131bcf6aa73d1e34b725dd69844"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/telemetry.json",
+      "bytes": 1811260,
+      "sha256": "86e9afeafbbf2f5b2ac4c8c7f4e40a169a40d12ccae4f767d45a89420e2e853e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/videos/m1/fixed.mp4",
+      "bytes": 604693,
+      "sha256": "c1158915aa60ccb02fcb836f9fa987610a1d87b5af89b764c5c5ba544a6c9e92"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/videos/m1/third.mp4",
+      "bytes": 444227,
+      "sha256": "9cbb82be49fa9ba8f0fa019a1041ac9ed4e1ce0133cedbaaa73c27f127e27fe7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/videos/m1/timing.json",
+      "bytes": 37103,
+      "sha256": "eeddfb9824a90a19079c0a198422ed70a839b3df63bc8841fc32b0badd62aba9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_008/videos/m1/wrist.mp4",
+      "bytes": 855557,
+      "sha256": "4f6328b7ca495e1015157df6bf3291198b5cd4e34e43620fbdb9ff5c5d670daf"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/commands.json",
+      "bytes": 17833,
+      "sha256": "990288ff620db9ae2f2fc84c6bfff0ecebcd99eaee8528282df6cf335d3d42bf"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/contacts.json",
+      "bytes": 12870997,
+      "sha256": "1cd7a0e0e200bed89a312ce449c8a0696aceebdba62fb8fa730934c489598ad4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/decision_00/candidates.json",
+      "bytes": 13967,
+      "sha256": "d5e991e4b61e4b311f12f026499673d8430b5d740fa0f18b1b47a3d3f1db5bbf"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/decision_00/observation.npz",
+      "bytes": 7660407,
+      "sha256": "94c41a3393ef614122203ba2a73d3d3cb28bec4a6f5d743edf99dc3060ef452f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/decision_00/plans.json",
+      "bytes": 61619,
+      "sha256": "5ddabf7385a6fb82dcfabd699f2567cb8062dc03d5748ba2aa40d813a8716d62"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/decision_01/candidates.json",
+      "bytes": 11307,
+      "sha256": "803218ddd11dd080ce65267d79a4b11b64f7ea621f51846dd2b1d9f0c086ca45"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/decision_01/observation.npz",
+      "bytes": 7052192,
+      "sha256": "ff8875f9e6ab7fe96290b0b35d6668f223956dc9853a5e82653b7a35b20bd6f3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/episode.json",
+      "bytes": 15922,
+      "sha256": "64c7843bec2c8dbcb51c5f8b9a4a5f794631ea6811719b3078853d5efc1bb34a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/telemetry.json",
+      "bytes": 7413850,
+      "sha256": "0ae40922b90cb4f77a7e0937672a332f67ad70b702fc99e22a7812fbb404f60f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/transition_00.npz",
+      "bytes": 2551,
+      "sha256": "9340c1f317b4257364e7686d69edb42a03629af53317b84c17dc998f2f8d3a04"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/videos/m1/fixed.mp4",
+      "bytes": 2337795,
+      "sha256": "bdff3c5381d4eaec092412d479d190e8b56b066e074e632cc2793e9302b53e0e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/videos/m1/third.mp4",
+      "bytes": 1749119,
+      "sha256": "bbc57acea2c493b2e45328381b98c34c24018137f320b76c655ef0f35d5520fd"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/videos/m1/timing.json",
+      "bytes": 146745,
+      "sha256": "002c147b1b4d0d30bb23f6b0fde8b5faf95a2aafb056cbd54704e1fd6baf2750"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_009/videos/m1/wrist.mp4",
+      "bytes": 3919163,
+      "sha256": "0ed94b5eb8214a03a2a2d56903adfa561c5aa7b8f9d56c253612a788df1276ea"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/commands.json",
+      "bytes": 22484,
+      "sha256": "550b4e236b64def5474b03677ace585410c051d469d0491d25588486a266202e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/contacts.json",
+      "bytes": 14771965,
+      "sha256": "a018a0dc67fa4a20bad3707d70e0d366f746b329a67f62f565f719053a709d84"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/decision_00/candidates.json",
+      "bytes": 13967,
+      "sha256": "941eebe4702145174efb346159f496caf1d6cffa0bed913b1ce88df60041c62c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/decision_00/observation.npz",
+      "bytes": 7661990,
+      "sha256": "b21041336e5e3b9b30eb90857f3320e2bc5bbc1ef664dc01b3a3e2b4cb8e5417"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/decision_00/plans.json",
+      "bytes": 61619,
+      "sha256": "5ddabf7385a6fb82dcfabd699f2567cb8062dc03d5748ba2aa40d813a8716d62"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/decision_01/candidates.json",
+      "bytes": 11314,
+      "sha256": "0e28201498de777aa25c07d863ebca951c489d94649677d4d71d7eea55425038"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/decision_01/observation.npz",
+      "bytes": 7079908,
+      "sha256": "0f6a03d40dd92cb15f8daf6763ee8914342c36ea0709f8d41ba04c96408511b3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/episode.json",
+      "bytes": 17144,
+      "sha256": "e55dd6b510bb3d75c860210a7b83aa2c1f1d2c103c26f9d7a1ac252381ac8cc5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/telemetry.json",
+      "bytes": 8324447,
+      "sha256": "c1d48fd054cc125c70c6f2873fe0007c02d8ff68bfa59eec956a12c702ce839f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/transition_00.npz",
+      "bytes": 2542,
+      "sha256": "d147b59e21fbdcd0893e2c61046295ca3b0f9474d0b0ffc7344b54ef503885fc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/videos/m1/fixed.mp4",
+      "bytes": 2643674,
+      "sha256": "3c70cbccda872edcf42ba37312245ed339d80fd4a067e652a0fcccc36c842e99"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/videos/m1/third.mp4",
+      "bytes": 1972181,
+      "sha256": "1b5d91016d7393d81a8a7cf4a0ce8805d3fb27e1509c97bd971c73c886c4d5b8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/videos/m1/timing.json",
+      "bytes": 164286,
+      "sha256": "6c4ae31489554c7ad57eec20e8b45474acaafca90ef0b68bdb8d90eaeaf2bc5d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_010/videos/m1/wrist.mp4",
+      "bytes": 4437162,
+      "sha256": "aa4b802886eddf8e0ae908cf44e60abf8a7b5f1dcd00f6c6fb8275d5102dfd83"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/commands.json",
+      "bytes": 2019,
+      "sha256": "5f071cbb9bb50d31f1cb0b4ef7f74db98a64bb56e6291f05474e5925429dd879"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/contacts.json",
+      "bytes": 4837789,
+      "sha256": "7644406efa07ef4f3189acfb5f5d3d79adab03ca1fded8b8d1557644667c6a96"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/decision_00/candidates.json",
+      "bytes": 13967,
+      "sha256": "317c0647b93408b8681916e896e5ad62e281123dfd7638280dc7691e4eef6721"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/decision_00/observation.npz",
+      "bytes": 7663168,
+      "sha256": "76b350e1a3ae56d09ad1be1c687553d4d87cbae93e3e080e3a93e1b7d8356d05"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/decision_00/plans.json",
+      "bytes": 61619,
+      "sha256": "5ddabf7385a6fb82dcfabd699f2567cb8062dc03d5748ba2aa40d813a8716d62"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/decision_01/candidates.json",
+      "bytes": 11319,
+      "sha256": "6e6f4594c9fd3ffd2f6e4b1c9ee82671e368aac9cde26108c6b9d6160637793b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/decision_01/observation.npz",
+      "bytes": 7636385,
+      "sha256": "17bd7f98932d3623e157562566a3b35de8aac350ab4afa5343f3a772c28c6bac"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/episode.json",
+      "bytes": 15635,
+      "sha256": "05f438c88620df4a963d6f62e18e7f049dc6f347d543549ef44d98c9125b1d24"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/telemetry.json",
+      "bytes": 2860330,
+      "sha256": "fe120479adb8ff6c83c318a10eb57790ffb7928b209906ad42e52a042499a9dc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/transition_00.npz",
+      "bytes": 2554,
+      "sha256": "eb60b801639ae986bc2b21a537873c501dfba20b99deedec34d4301126e7e416"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/videos/m1/fixed.mp4",
+      "bytes": 1040417,
+      "sha256": "5d1eef10c2d1142b7d126f559a1851f89cea79f08808f97533754629b164944c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/videos/m1/third.mp4",
+      "bytes": 710168,
+      "sha256": "ad89ac68d585acadb502436f9387e298005f7c2cf32bd54b34973844fd031bc9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/videos/m1/timing.json",
+      "bytes": 57885,
+      "sha256": "673ee9ea512ac31cae267b816420a11a43d8b3b3ba413af685b5719108d0e3a2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_011/videos/m1/wrist.mp4",
+      "bytes": 1511803,
+      "sha256": "9f99492fb457cba085e01410ba22e1da344e217f975033cdbb6ec08fb1401fed"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/commands.json",
+      "bytes": 11041,
+      "sha256": "dcfecc05dbd4a7f342b9560d1973cc0e68aa803244fe4f33653e44239cd5d933"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/contacts.json",
+      "bytes": 9833950,
+      "sha256": "d7f5637ecc9e9a1149921941ec7746e0ddbbdef1bae2b16d31a73f31930080b5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/decision_00/candidates.json",
+      "bytes": 16644,
+      "sha256": "27ba4f4db34debc38e12e89be89baf9976e0e2943d68988ed74f1520c6795ec9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/decision_00/observation.npz",
+      "bytes": 7824848,
+      "sha256": "ce3306817b143158522a5e19d6fd33fda30fd8032559b081596bdbd522289493"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/decision_00/plans.json",
+      "bytes": 67219,
+      "sha256": "ca8a6df133133ff65e91d71823d32b35478d21600a2b951d9da6eef492c91b17"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/episode.json",
+      "bytes": 17741,
+      "sha256": "e372220893cc4ee1549cd99c89cc1137129cac40dd29c6a732f0f23e4ffc7ac8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/telemetry.json",
+      "bytes": 5322419,
+      "sha256": "035140f991108597b7310a70d9a704c0e942cdd599d50027db56298010d30aab"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/transition_00.npz",
+      "bytes": 2263,
+      "sha256": "c17dfbd61122aedbf6b38dc3cf34cf862c3f13815247454ff9af6bcea8749ff9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/videos/m1/fixed.mp4",
+      "bytes": 1864832,
+      "sha256": "66ae11e3f98ca9694151e691f053c6e8fe4016d2937638c6ad187dc63c26c9f2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/videos/m1/third.mp4",
+      "bytes": 1350862,
+      "sha256": "d1b81d1847a16ac222276840393313096481b351485dca008b3ccfc7992858ed"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/videos/m1/timing.json",
+      "bytes": 106565,
+      "sha256": "b9a376ddb941408ea2976463ae56bc54cf3ab90e6ae437d273cbf3dd0ed6463d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_012/videos/m1/wrist.mp4",
+      "bytes": 3255828,
+      "sha256": "540da5441c935cc947340084710798a707eeda3205e533a3970bcd6729703be6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/commands.json",
+      "bytes": 17832,
+      "sha256": "087924e35b2b7a8bcf85aab5df950501bfa52d53db236777b8f47f30545f14cc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/contacts.json",
+      "bytes": 12197980,
+      "sha256": "bcc96d9a6327e47be75bb8caf7a03eb49d6b2a9dd46896878433a9629bfd985e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/decision_00/candidates.json",
+      "bytes": 16644,
+      "sha256": "610392c5d07a9c3a3f89f65eade51e0676cd041a74ee9725f68e8a758abeb233"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/decision_00/observation.npz",
+      "bytes": 7824772,
+      "sha256": "6be7fcc5145bc21800546375ab61904f581ce73ff5cd1205ecae7ee2bc69c2c9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/decision_00/plans.json",
+      "bytes": 67219,
+      "sha256": "ca8a6df133133ff65e91d71823d32b35478d21600a2b951d9da6eef492c91b17"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/decision_01/candidates.json",
+      "bytes": 11327,
+      "sha256": "8662158d011a6af4d9b97394e7b8babf21b284c06c2f5bdf871a8766248437ed"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/decision_01/observation.npz",
+      "bytes": 7314798,
+      "sha256": "42e1bc11651e7cc25723083208a2bb2ae91f20f3293bee529c4c23023ff24649"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/episode.json",
+      "bytes": 15909,
+      "sha256": "9218480e3b103e5bf8b48079c2f837ed9dfa8b3806de62ac8e1f4f71acb68835"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/telemetry.json",
+      "bytes": 7086244,
+      "sha256": "a27e57edea56b6c08fcd387ababa3c0fe2bb0ad79e5ace02aaadcf43609f80fb"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/transition_00.npz",
+      "bytes": 2622,
+      "sha256": "e025605fbf056217ed9d991ab57743897f630208134e316c98ad0b7dd9cb1d48"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/videos/m1/fixed.mp4",
+      "bytes": 2390847,
+      "sha256": "036d6f55091c61d27e9d04b1b960d928d1af3ca53331ad2ba3cfea383883b95e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/videos/m1/third.mp4",
+      "bytes": 1742955,
+      "sha256": "5f469e01f1ef6552d19e4179d46057bc509ab40e4b019e0e71ab58b553214b56"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/videos/m1/timing.json",
+      "bytes": 140324,
+      "sha256": "6811c10d22244e935cdafea12f6fcbd558750a855313be99bf7e455dfacef67a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_013/videos/m1/wrist.mp4",
+      "bytes": 4265435,
+      "sha256": "72528aa7757356dc8339dff5cd3ba723a47a8eab63a15f7d71619de144bda225"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/commands.json",
+      "bytes": 22480,
+      "sha256": "780b0f67718a5c97e317b6a7951b5538e13a05da015148575fca09e5aba02f2d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/contacts.json",
+      "bytes": 13222100,
+      "sha256": "c10414a56083226c867e4ecc9a4d56f50db35f8d67641d111686fad3e1983a32"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/decision_00/candidates.json",
+      "bytes": 16644,
+      "sha256": "61560ba8ca2abd02334749f9d92ef0096d8e07dc602b1c87c4b65bc904f0922a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/decision_00/observation.npz",
+      "bytes": 7814483,
+      "sha256": "ca13c8d88073dcb3c92ec76acefa0b01dfa079b7e4497441726da785b6680e6d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/decision_00/plans.json",
+      "bytes": 67219,
+      "sha256": "ca8a6df133133ff65e91d71823d32b35478d21600a2b951d9da6eef492c91b17"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/decision_01/candidates.json",
+      "bytes": 11332,
+      "sha256": "6c7d7458756db997ad65348249205e780607ba678d6df1d3cf0a95c6a3163b02"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/decision_01/observation.npz",
+      "bytes": 7449965,
+      "sha256": "386cbcdef54a5bf2218374fecda7f7a952b84a0371cbdb5609ab7cc3287d4d98"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/episode.json",
+      "bytes": 17107,
+      "sha256": "d4ccabdb9b23d723fb555d9716dd08170eb730b29cf7a23c026d60c0c1e2f51f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/telemetry.json",
+      "bytes": 7865526,
+      "sha256": "2750f1d9581eace513a562cfa9f6ee34c11b6972caf994a596b89c651520af9d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/transition_00.npz",
+      "bytes": 2625,
+      "sha256": "e083be3e92b3e556a0efa78bffae09e17a409763992cfd03b5e15189f91efe2a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/videos/m1/fixed.mp4",
+      "bytes": 2616126,
+      "sha256": "4b1bcabe1fe8dda7aacf9dc65776f4700aff2a088b4d0119cd5e96b0a314ae62"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/videos/m1/third.mp4",
+      "bytes": 1931824,
+      "sha256": "3c14185e8a4099a55b111b43fad0ff907f112f92caa7a4db73681cfec226626b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/videos/m1/timing.json",
+      "bytes": 155750,
+      "sha256": "0175eb035d20e201988a16528a24dbe2e0eba7d8a6262599083537ae6c820814"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_014/videos/m1/wrist.mp4",
+      "bytes": 5216801,
+      "sha256": "577b568ed94c26aa15cac9bb4e1bd87f15f9a2b4be86c055c5231d3c8258af3f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/commands.json",
+      "bytes": 11962,
+      "sha256": "8621e5fe8d99f906173b380270d83a010fb5c2e32e8189e1a244837a72b43f6f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/contacts.json",
+      "bytes": 12118482,
+      "sha256": "d35d8c01924a97e87e17a45e143d80d774b029d731a6d9e8f9f17e747e4c57c5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/decision_00/candidates.json",
+      "bytes": 16644,
+      "sha256": "8fce921d62c1ac965162a3243dd286d6b16238556a3c16f3a6374b60aeeee085"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/decision_00/observation.npz",
+      "bytes": 7826081,
+      "sha256": "efad60479b7c870131c68a7344ebc24d5a4af9ea37eff1f9933db5131f842878"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/decision_00/plans.json",
+      "bytes": 67219,
+      "sha256": "ca8a6df133133ff65e91d71823d32b35478d21600a2b951d9da6eef492c91b17"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/decision_01/candidates.json",
+      "bytes": 13980,
+      "sha256": "ccddbf33ede911c80ffbe392b50c7aed41abdfde1fe72b736630479f26a0b7af"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/decision_01/observation.npz",
+      "bytes": 7763728,
+      "sha256": "6d9304e83624bc8d581c90cb0541572cfb5e28afb0bfd4812649899e68f55302"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/decision_01/plans.json",
+      "bytes": 5382,
+      "sha256": "495fa60117c7de39e8ab35f8fa2730dd217cda7e61f1ccb3f57081bc78742974"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/episode.json",
+      "bytes": 26881,
+      "sha256": "aa5bdc9894b6abec5373ef98cdfdff6b7af0c636d548a6006c1e07ce5d1f7ac3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/telemetry.json",
+      "bytes": 6633273,
+      "sha256": "be030da774f87edab3a6037dcd4481fc821bf1a2eda9fa7822a20381c37568f1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/transition_00.npz",
+      "bytes": 2720,
+      "sha256": "2e864a68226dc30bc0e97b5c717582e92077c5e30bae4412f4a3554936c03e41"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/transition_01.npz",
+      "bytes": 2219,
+      "sha256": "425b32f14f0c9a96459e3895e3d027a417aed2bf3cfe7d35b74d9d6fccbfb3be"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/videos/m1/fixed.mp4",
+      "bytes": 2453456,
+      "sha256": "998603486987bce4e45bcefd73658ed4d77236de4a0ed71fd6ac1411da33760f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/videos/m1/third.mp4",
+      "bytes": 1688784,
+      "sha256": "4d2663cb798572fc567ca82065fcf818fe867c62ae7d7179f6f84ce1cb694087"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/videos/m1/timing.json",
+      "bytes": 132922,
+      "sha256": "f3cf15446eb7c34348de96c058f867dc35ca59a0c1080ec6d240c35ad4faee0a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episode_015/videos/m1/wrist.mp4",
+      "bytes": 4180710,
+      "sha256": "2add629a71e58fde5ee4f2942f1b159a29b2313100a918cf8c9524deee155002"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/episodes.jsonl",
+      "bytes": 180544,
+      "sha256": "b8ecdd2f690e1eab8050260bc4054a0302b6681b8d108d4359e66e5f99971ac4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/run_config.json",
+      "bytes": 779,
+      "sha256": "5c5505d922bdae8caeb2a40ea027443f41da06d7cfc8408bf247c810974c4998"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T103731Z_f576e557/summary.json",
+      "bytes": 12500,
+      "sha256": "8c578ce02ca2550b633a49bf752fc766a48945717bfa4ec237730be11970895e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/commands.json",
+      "bytes": 10778,
+      "sha256": "440dbb925daf74e05647a6fc9987bb1a474f059633899754d175eccc49993586"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/contacts.json",
+      "bytes": 12798515,
+      "sha256": "b505c7698f16d53a2b918a0ae500fd3b1b6f461b2ae9bc097f095df579e3f04b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/decision_00/candidates.json",
+      "bytes": 16635,
+      "sha256": "e22e63a2811745845c131d1b459e74cd04a46b8bd7ce7be81c7db0500081c267"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/decision_00/observation.npz",
+      "bytes": 7620486,
+      "sha256": "e2ff9cbcc8f92b9fedef693c8b8c8178a3dba1bda801e7acedcb727781113a30"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/decision_00/plans.json",
+      "bytes": 67095,
+      "sha256": "59abb15c61d3de93cb731deff0ce3f39a78bbdbc274b0b04be516563a4acb313"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/episode.json",
+      "bytes": 17716,
+      "sha256": "f291872bebf71f0b722e80b1e96685257aec1bdae547eba5bd147d1336678973"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/telemetry.json",
+      "bytes": 6953751,
+      "sha256": "7bcccc06c7cdfa84d53626954d50f5165ab5cf0629490f55ae65a186b8620130"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/transition_00.npz",
+      "bytes": 2262,
+      "sha256": "a6a927a5825f94265e56d88eb7e30eaf031e628c77c05a56f5344df47ff1115a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/videos/m1/fixed.mp4",
+      "bytes": 2432989,
+      "sha256": "d7443fe878296993c6992e69478c2ddc16b9503968210361261be9c6ce0cbcb3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/videos/m1/third.mp4",
+      "bytes": 1694347,
+      "sha256": "5a758a9e11807675e02c4a26d474ce664615d2fb8c52ee71e3d7ed7f3ee64df4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/videos/m1/timing.json",
+      "bytes": 139507,
+      "sha256": "277c7151aa3ad763a965a15f8dc9db23cf9584e4e3f677907f6ad14d906bfc93"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_000/videos/m1/wrist.mp4",
+      "bytes": 3379792,
+      "sha256": "890923acad03ed37cca49fdab2a1f924481d16507744052fcb2816c6400bd6b2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/commands.json",
+      "bytes": 11921,
+      "sha256": "540a8ae0a04facb351bb8b3a0f5a99e11dd0dd3edddd3778b6b2cee1905d2315"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/contacts.json",
+      "bytes": 12768885,
+      "sha256": "d9d5105d96fc91dd0c5fbecc746167a033475ad990f28ad421887c1166f99e18"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/decision_00/candidates.json",
+      "bytes": 16640,
+      "sha256": "ca9e5c4f67d10b6437ec52f5522d1b5206656cec16b596bbfeb8d1ecdf836403"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/decision_00/observation.npz",
+      "bytes": 7631234,
+      "sha256": "9cf615064129f5fdd176e7d7d910c0e16a7e524aeceb5062f7848640600792ae"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/decision_00/plans.json",
+      "bytes": 67062,
+      "sha256": "6668a8bd81f5055511f942acf1a7eeb7f9c259486ca4115764a7653c6b5bc54e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/decision_01/candidates.json",
+      "bytes": 14003,
+      "sha256": "6aeedaed3688ee32864633b363da5cbae196ab0958094f34fd7e79762b2b01c0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/decision_01/observation.npz",
+      "bytes": 7609299,
+      "sha256": "01eda39a50dbc551da24def2427e1bdb3595e19f0398d2a6eb7a3c07b0bb15c8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/decision_01/plans.json",
+      "bytes": 5457,
+      "sha256": "7ff8a7227469508f5ca3d384f4da3ee98adaed18411d8a459f59ebc243d56cf8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/episode.json",
+      "bytes": 27014,
+      "sha256": "68b14c31ffc6aac242568f75416c8706f1de78206b8ac8b3e66f5760006595b2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/telemetry.json",
+      "bytes": 6894280,
+      "sha256": "a34185621bef391001d5475459a01fa3efb39f52cb3150ffc69f74b868e1bf38"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/transition_00.npz",
+      "bytes": 2717,
+      "sha256": "34f89ce7fb93a011ef0d042d4c417a71c7f0fc90761b816aef20bbc2f76989f4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/transition_01.npz",
+      "bytes": 2217,
+      "sha256": "4bf658dc326410d008c1f21dc7c2f05106c01988a2f88f3806f92fd3d55af7a3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/videos/m1/fixed.mp4",
+      "bytes": 2328153,
+      "sha256": "b5a0a3593f549ec2ad45de877fd0c5bdd039e9047cc8a7e3fd282ef3c24e3c03"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/videos/m1/third.mp4",
+      "bytes": 1641340,
+      "sha256": "26921f68ae732d46479033600df4bd93f200ac62217b663d5bdbad109745fc51"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/videos/m1/timing.json",
+      "bytes": 138250,
+      "sha256": "5d43ea00aef6d94921617632db9791a460c38f4e78cfe05efed137e40bcb53cb"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_001/videos/m1/wrist.mp4",
+      "bytes": 3507089,
+      "sha256": "8160d700b2f7ee1c38902f33afa7c12a32f02e97569b3a16bfdd2626737b1f4f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/commands.json",
+      "bytes": 27776,
+      "sha256": "a1d9d918311c9ad1a4b5dd294c7d06d238e56bf76ddc99231e84f34f8812edf5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/contacts.json",
+      "bytes": 19028015,
+      "sha256": "7ea1409bf42951317dc88a403ef6d9b816d7894b90cbdf8536071db4375785a7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/decision_00/candidates.json",
+      "bytes": 16657,
+      "sha256": "5f9194a880f98bd36b05894a4ef55d94a9b320be16c86b40790a268fefc1610e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/decision_00/observation.npz",
+      "bytes": 7630991,
+      "sha256": "4902f0ce21a86a157f2335743c48014a9515548de03dfc3decf33285142d66db"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/decision_00/plans.json",
+      "bytes": 67190,
+      "sha256": "aea2f4f7c2ad19b5e106c6a77774048d72d7ed6843a5407654374805ccda6d63"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/decision_01/candidates.json",
+      "bytes": 14003,
+      "sha256": "510e938c32a315069aa9016f5ded5342888fcff4e413b7a8e06e034c61a54ee1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/decision_01/observation.npz",
+      "bytes": 7146297,
+      "sha256": "fff3e8577291b5c4e8eda098a3e52c8b4ff1efa7d0f9a69ffc366ca56aa3d4f6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/decision_01/plans.json",
+      "bytes": 5402,
+      "sha256": "c2cab9077c557094cb066d5f3eb62f79276735516cb0e1fef152a824dfd9b0a7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/episode.json",
+      "bytes": 27119,
+      "sha256": "fd7176cb65211747f72cdb881d2e19bc49e341fd6844b128400cd6398a097b17"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/telemetry.json",
+      "bytes": 10988178,
+      "sha256": "b9cdcda75d9b98326f4df2a59a786d929397f3054b295e4a0b247440abbf83c0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/transition_00.npz",
+      "bytes": 2703,
+      "sha256": "8e935800f05d07a3b221f1c04d44d64349dbba667b482585810b776c5c5ea3dd"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/transition_01.npz",
+      "bytes": 2200,
+      "sha256": "9b6e85395d0b5fd395bb3396cd479fbb6708c9303ecf95a3d3518c6e2976b8fd"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/videos/m1/fixed.mp4",
+      "bytes": 3516086,
+      "sha256": "79032bf07aef904fafa811cff675564b3d0a4d8fff912c8b4b264252a0441618"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/videos/m1/third.mp4",
+      "bytes": 2604805,
+      "sha256": "ce1c356c88e84114024c44819bbec8c786702d819e7c2eda8c289dff3b325fbc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/videos/m1/timing.json",
+      "bytes": 217110,
+      "sha256": "9b3bc9a6ab5a672ab13fd8740be26bdf432e9e08508af2127b2f7361bbfe8d8e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_002/videos/m1/wrist.mp4",
+      "bytes": 5603888,
+      "sha256": "a6623ceeb8836204693be688093833f25d4852aab1619bbac56cd05c87d15075"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/commands.json",
+      "bytes": 22432,
+      "sha256": "8dc483f8b03b7e12214cd6dbda2851fa8baa4927fea7c1b01b13a4365c5abe5e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/contacts.json",
+      "bytes": 13847724,
+      "sha256": "6c60ec969677d33c2375d5633d47d6de4f03e3c035d118baab4190403fcb1c83"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/decision_00/candidates.json",
+      "bytes": 16608,
+      "sha256": "25c8d7961a11b7b74b556a53bbcd02dff02b7442c8ce398813f0973f63700804"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/decision_00/observation.npz",
+      "bytes": 7635947,
+      "sha256": "99e3c2375611d5ee3fa94effcfefff73c3ef64fa686b5a760887720d8462415b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/decision_00/plans.json",
+      "bytes": 66961,
+      "sha256": "4e0b4c5287f98c3900a39f6c4152cf7ccb2e7ca212ed7efb3c896ee38c7841a9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/decision_01/candidates.json",
+      "bytes": 2151,
+      "sha256": "1aac6177c9d9601218a49b326dfab1a04632e2ccda07fad8754536b3225415db"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/decision_01/observation.npz",
+      "bytes": 1180868,
+      "sha256": "046b7431361134698ec4c6660a8e58986df2d7f9cbf8336dbf3cdabeac458bf3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/decision_01/plans.json",
+      "bytes": 19,
+      "sha256": "4ad6f3e594ffb2366c39efb4c08f4fa6ea8e1084131d64196c663e6f1f41469e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/episode.json",
+      "bytes": 17121,
+      "sha256": "ce5be693bf24a8287d2acad17d52b028a77e390d019a47765d7d2cb1dc6bb855"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/telemetry.json",
+      "bytes": 7903055,
+      "sha256": "9bcd2b7a86aed79a9f27e131d0dc5783efb4e34b7ee5f73a7caebe8fec174f49"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/transition_00.npz",
+      "bytes": 2415,
+      "sha256": "af83dfe665f8f40796dd043f6dcd3fc9d9706d2705abcae6d83f161a08e88fe4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/videos/m1/fixed.mp4",
+      "bytes": 2540632,
+      "sha256": "63c20aa977ff5bc7209927bdfae4378083e95850d3ac05762a3c91f73dcfe5c8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/videos/m1/third.mp4",
+      "bytes": 1879065,
+      "sha256": "263ab6189ebc44526a01e866a03447b815473df3e02158861c2aa1d62779cb25"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/videos/m1/timing.json",
+      "bytes": 156539,
+      "sha256": "e3c8bcb7ef5b33020abf6e04327e82fe18e4388165f11d45dfffc6c42f3360a9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_003/videos/m1/wrist.mp4",
+      "bytes": 3614015,
+      "sha256": "5701747bbe7f87f72e65d8b16b572d515f777cbc176ebc09510ef1accca47d51"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/commands.json",
+      "bytes": 27806,
+      "sha256": "e2fd86369563227d794de685348d4af165ca69b434c13c831876b3f1530d3eb1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/contacts.json",
+      "bytes": 18910395,
+      "sha256": "8ff1d20ef1c88fec7f6ea20b4f794f838396832ba0897923740ed9aa05a02083"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/decision_00/candidates.json",
+      "bytes": 16644,
+      "sha256": "b8e976aa3165edb04e9762a8ab7a49ee4e2dfc89d23b1d9d5c96f5139765d278"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/decision_00/observation.npz",
+      "bytes": 7628798,
+      "sha256": "17ae69924b607348ceb7ec94f4735e740c282e575771673928cbf43f4ee86362"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/decision_00/plans.json",
+      "bytes": 67007,
+      "sha256": "81fe35b892c1fc5a16ea9e30b574400dc705cfd24826ea874c0338e34e88c331"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/decision_01/candidates.json",
+      "bytes": 14005,
+      "sha256": "7dc14be23d4f195b96a1d260d59b64a7ddba955f0148ae67ddc5a18b2e8c3874"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/decision_01/observation.npz",
+      "bytes": 7036320,
+      "sha256": "80374115cf111f68d4043c495b67bf7ccbcbe079bb66876fcbc271d1800b640c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/decision_01/plans.json",
+      "bytes": 5406,
+      "sha256": "b29ca4960061e99a49c9687ffa935c0e67805345693727324680f694f7de79cd"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/episode.json",
+      "bytes": 27107,
+      "sha256": "1707ea0189623f3f8adc230c563ec721b04a2d99a5298085344eaebb0c24e7d3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/telemetry.json",
+      "bytes": 10961949,
+      "sha256": "0ecbdba2148b12933f0bbefffb1450c851f52df4490225a25b34b119d9ea0039"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/transition_00.npz",
+      "bytes": 2702,
+      "sha256": "241ff702be60790c881fe98bcc651b3772f3f8bca78f246245d2095a2518f52c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/transition_01.npz",
+      "bytes": 2200,
+      "sha256": "eb2cdac891e7e10856eff354263ddac5bffa46dcf728ebd418f0becc4e688df9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/videos/m1/fixed.mp4",
+      "bytes": 3475348,
+      "sha256": "90645db5500cbb7bbf9f1440e09187f15da0771fab824cfbec4871036d43c718"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/videos/m1/third.mp4",
+      "bytes": 2586847,
+      "sha256": "908b201be478bd08b6594b9bfe82b882a14b74ad95416f0fde03fa72c4c14773"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/videos/m1/timing.json",
+      "bytes": 217044,
+      "sha256": "92857eba6b8863ae0ffb1f2947e5ea0bd4fbdfbf9ebec4128bf40e8273164a0b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_004/videos/m1/wrist.mp4",
+      "bytes": 5331856,
+      "sha256": "8c865d3ad931a27e3723a408323f63d211ecc82d7401822989ead1da66fd039c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/commands.json",
+      "bytes": 11002,
+      "sha256": "0b0952033db08fad815574fd23930c16a3d9c865c80008b46929676b5ee79f6d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/contacts.json",
+      "bytes": 9572137,
+      "sha256": "0e9944adb5301207d155ba72e77ee507958240b6b6aeada44cdd2d00dd2d494e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/decision_00/candidates.json",
+      "bytes": 16631,
+      "sha256": "5cecaf2ea8704b90d60e4e626d5793e96bab695d77e5e851e13cd719aa36eeeb"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/decision_00/observation.npz",
+      "bytes": 7626065,
+      "sha256": "148ad8e7b8d7302822aa24e843872235bfdd0684e14a956fa78913cc94d15ead"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/decision_00/plans.json",
+      "bytes": 67054,
+      "sha256": "5adad271c268bebeef0b66ea1619938a69080c646277428ffb94c7097673fe22"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/episode.json",
+      "bytes": 17731,
+      "sha256": "dc91b27b0f862dee6a15a6ce9e595336e1a8c068b07785888ab98263ffcf65ca"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/telemetry.json",
+      "bytes": 5181280,
+      "sha256": "69124142d95a2a2fa22be61837192d1fd157e5841416a87c5bc7c4471ac0c5f0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/transition_00.npz",
+      "bytes": 2264,
+      "sha256": "7af83f71ce2f2d39363dc1a5d86558d87dd3058ddaf99d77f5318deabb1aef8e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/videos/m1/fixed.mp4",
+      "bytes": 1758294,
+      "sha256": "3298d5c2622fce6ada133988a2e15f989a3bbe60228c263d2ca6d92d9d0da448"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/videos/m1/third.mp4",
+      "bytes": 1243038,
+      "sha256": "b13d169dea900a72a94c2d2136ea0fe327797087fffaaffd822f55fe3c2dbf93"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/videos/m1/timing.json",
+      "bytes": 104221,
+      "sha256": "ebd0a6ff049860e5aa5aeaeed43b58f60114219be6cf83e13b3f1d106f7f0c71"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_005/videos/m1/wrist.mp4",
+      "bytes": 2559606,
+      "sha256": "0998da0c5309ccf1bb28ee0dc95c64bd179544e04638a8f278c199fd101d0709"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/commands.json",
+      "bytes": 10955,
+      "sha256": "33341717ec497477c3dd5a46222033c9989b8ddf734f460f4ebe32177ec9d402"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/contacts.json",
+      "bytes": 9491685,
+      "sha256": "943503b89322626c9fdc6d667a85437fd039731a8b0c14613b272eab495792d9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/decision_00/candidates.json",
+      "bytes": 16632,
+      "sha256": "b9fa56ab7987714ad6579ad0edd20bd9794d91f5a3359a7c7c1166e2c79e56ad"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/decision_00/observation.npz",
+      "bytes": 7634470,
+      "sha256": "11945865df86bb3f53d62a3db7c5d3c563c720cf038ef0a4048c71bbaf69ab15"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/decision_00/plans.json",
+      "bytes": 67017,
+      "sha256": "4398e775bf4a67e5682acf81d75d78be321c721c490b14a52be716f7440bb2d6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/episode.json",
+      "bytes": 17719,
+      "sha256": "1a3a3047fa1739d0a2c3ad3c8b4114bf94ad77b4f1769db91b07b58c5623746b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/telemetry.json",
+      "bytes": 5146754,
+      "sha256": "b4d202b58400d425e5f66146e5a18b07703921634e7a518cab4ba62c6a93da1d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/transition_00.npz",
+      "bytes": 2262,
+      "sha256": "e86eed1f26ce9aecc201734f3d1c3c111402b8caed4bfaf8d265f510a060e811"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/videos/m1/fixed.mp4",
+      "bytes": 1766361,
+      "sha256": "28261dc76bf96a87894dfcc2799c8874b5c904f29f511e5ddf3ee5f242594f4a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/videos/m1/third.mp4",
+      "bytes": 1224474,
+      "sha256": "49978eaf23c7284182a8e6ec209abd8392f91e64b372434f9539886e43984d23"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/videos/m1/timing.json",
+      "bytes": 103464,
+      "sha256": "6d2782da1a7d0b9cff8b51df64dfcc0f7f9de3cefe95c15662a80f3d31b65c49"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_006/videos/m1/wrist.mp4",
+      "bytes": 2741160,
+      "sha256": "573ff8e087331c66e2cf36fc108cfa6fb89c3e67e5e1e39d926f7672d3384f0e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/commands.json",
+      "bytes": 11931,
+      "sha256": "5434731255c2d276f6952d0e7fc11817e1e8364e8a3a80ddd0a64abce19cba80"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/contacts.json",
+      "bytes": 12835398,
+      "sha256": "f7f4f82b95fee8bf61f24e0a543da63599db6741779691f406ea3c4a89516c03"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/decision_00/candidates.json",
+      "bytes": 16642,
+      "sha256": "d2d691ed0d47371dfb57b636725153033effe7983a81b8a24cf2bc867f4c2b5e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/decision_00/observation.npz",
+      "bytes": 7629664,
+      "sha256": "b8819b8192e6d37d8f03fd556c15ec5134d4b3389a3493913023333e4cd637b3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/decision_00/plans.json",
+      "bytes": 67040,
+      "sha256": "25e369136c26b9ad3057f3b6b5678e8592d56ab698ff9eb3a118a1561bba8ab1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/decision_01/candidates.json",
+      "bytes": 13978,
+      "sha256": "fc0aec15c3509e34e4e438af38ef30757cdb90fcc8618215ef8c7667c643210a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/decision_01/observation.npz",
+      "bytes": 7607857,
+      "sha256": "e26d196acb0bbd14566235835af01c4f7d3df64113b7aa24662745f855a93697"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/decision_01/plans.json",
+      "bytes": 5473,
+      "sha256": "e1166dae15f3d494fa9200ae5793be1c984a688945e75967f9f043bdabbf233a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/episode.json",
+      "bytes": 26930,
+      "sha256": "53261da6f9c33e1a9f65d0db42823a4bcd525e86e477ec8cc4b9fef59cbd764a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/telemetry.json",
+      "bytes": 6887865,
+      "sha256": "379b1dde09a7b2f985e570b77a9bd90d32152b2a8fdaf7b0a0be4f4ca1850ce7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/transition_00.npz",
+      "bytes": 2718,
+      "sha256": "fb4e4099a3edfd552faea89ec73bc407b60367691125fe667f736371ad8cc863"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/transition_01.npz",
+      "bytes": 2217,
+      "sha256": "8cd5d5ad96849bc5a6dd977ad7ad8c8ffd3a3d86af5bdd5693163421636c143a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/videos/m1/fixed.mp4",
+      "bytes": 2339757,
+      "sha256": "1e4ac2cc911fc410ea08d96a36294f9916a337d17bb17a6d2d6b3c33e81dbf18"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/videos/m1/third.mp4",
+      "bytes": 1647962,
+      "sha256": "8c3143bcd0ab0f41df6c36f203f532029cd736fbaf2f294f3d2039a0db35e85a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/videos/m1/timing.json",
+      "bytes": 138355,
+      "sha256": "6539303367cd235a21795881af6bf81906df16bc0766bb53b39476bcfaa978b6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_007/videos/m1/wrist.mp4",
+      "bytes": 3499627,
+      "sha256": "ac703bf780fc6c6ab5c8140a23983996a649d5aa085e1b00a91bcfb213c2da3e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/commands.json",
+      "bytes": 27797,
+      "sha256": "f144c74db13c83fe8b217868848f615ef5d0cb4c200a6c15cca2ef85dd2b9334"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/contacts.json",
+      "bytes": 18998623,
+      "sha256": "8f31707e4a41f0482b86c1677d6005dbfe392cee035dc919700cbb2dee9c8e58"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/decision_00/candidates.json",
+      "bytes": 16639,
+      "sha256": "5838ddb2ddc9458ded95c64328f49d880ce2b90e42aed7a1cb6dcca2f20dae60"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/decision_00/observation.npz",
+      "bytes": 7625421,
+      "sha256": "97eb1e063ccf02f9f6756a0ca8c926647997ab7b4842922443f27799bbe14f92"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/decision_00/plans.json",
+      "bytes": 67048,
+      "sha256": "51cff18e97ac87a760b571124121d43a666c1277ae77316133b81190f343eb07"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/decision_01/candidates.json",
+      "bytes": 13994,
+      "sha256": "5486f72720c6308d829a7267ca16dc17d3d4d842d17edd12b993b19e4a2ebced"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/decision_01/observation.npz",
+      "bytes": 7213551,
+      "sha256": "b7cdfb841c9f20551df116654df325e839e822533f045a551c75ad0bd44a1e89"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/decision_01/plans.json",
+      "bytes": 5402,
+      "sha256": "d0414c411fb13159c63fcd227e3915b426942e677b756441002c00ced69ace59"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/episode.json",
+      "bytes": 27106,
+      "sha256": "afbf6afa04abb20b276fa2e6a1d42b390c269d79b91797f24ce8d115f9cf6cc3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/telemetry.json",
+      "bytes": 10956221,
+      "sha256": "385fb032dd08ccfd1328943840d94cce69954f35ae36fe686eba7473ef1c3158"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/transition_00.npz",
+      "bytes": 2702,
+      "sha256": "25727b5923239bd4d94e65e81e2cb9f22d084f8384e4530768f9c687677cc7bd"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/transition_01.npz",
+      "bytes": 2200,
+      "sha256": "ae05a461f05fefde67f1ae896d2a3ada71fca9e9320fb58dc70ade6cfcfcaefe"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/videos/m1/fixed.mp4",
+      "bytes": 3494405,
+      "sha256": "1606b838e7108212048defaf0812c67931f492cb9871b3fd345744227487df91"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/videos/m1/third.mp4",
+      "bytes": 2578601,
+      "sha256": "ca6525cf3e14617da5f3dfeebcefc4a56457dcc4c3166ec66fb16ebe998801cb"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/videos/m1/timing.json",
+      "bytes": 216745,
+      "sha256": "e1113b7f8422c275c6854dc06093ab9214d66c3a5f478327b7bf5abad5f7d994"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_008/videos/m1/wrist.mp4",
+      "bytes": 5778606,
+      "sha256": "9a69a1eaf4526eb4d29d1bc132e320a50c4cd951131db9cb3df0977078cce2fe"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/commands.json",
+      "bytes": 22465,
+      "sha256": "9e1d23a5e78faf0b8d4e0aacf17da1611464afdb018ad9731f1252dbca29ac67"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/contacts.json",
+      "bytes": 13348804,
+      "sha256": "7410a90aea8b01f9e300a6e5451b4123ac0132ad169396c54393a207767800db"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/decision_00/candidates.json",
+      "bytes": 16637,
+      "sha256": "8249b047c89967c2b77a4748fb55acfc50484533c26868288d57da8eb913db9c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/decision_00/observation.npz",
+      "bytes": 7625701,
+      "sha256": "c1192144b7512d7ca125c0bc7c2af61acdca7a653dbaa58463644247c6b7c499"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/decision_00/plans.json",
+      "bytes": 67868,
+      "sha256": "80ab18c846e71a9aae47ac00e1c70c8f874ebe3526028e9402bea9fbcbb69b13"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/decision_01/candidates.json",
+      "bytes": 2150,
+      "sha256": "4522f2ff0ee3812b8ff9589dbbd988ce3551cd84daa7a89bbed56641fa82d15d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/decision_01/observation.npz",
+      "bytes": 1851939,
+      "sha256": "18ec5531a2ea40e9907aba6efdd3171964dac2cd41cdfa4ee388b125c39a84bc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/decision_01/plans.json",
+      "bytes": 19,
+      "sha256": "4ad6f3e594ffb2366c39efb4c08f4fa6ea8e1084131d64196c663e6f1f41469e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/episode.json",
+      "bytes": 17132,
+      "sha256": "9576cf48a15846515125d8dfe248c34efe18e2f66662cdf24da2dcc8853ac138"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/telemetry.json",
+      "bytes": 7922004,
+      "sha256": "d46d52520eb82cc20e7734ea253d4f35d3086d229f3af2cc4dbe87affd1f3917"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/transition_00.npz",
+      "bytes": 2413,
+      "sha256": "f6cee040a5e3108fe123ec651eccd105464515920bcac6154cdd65195bda7754"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/videos/m1/fixed.mp4",
+      "bytes": 2511635,
+      "sha256": "e6af35a22ca8603a6dad952912e7bc989e597add8cd46850e97ce54579a79bdf"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/videos/m1/third.mp4",
+      "bytes": 1848279,
+      "sha256": "d9746f98beedefe607ea145d42b6970452fec3c3d46c7d1fc76b47ecd96210ac"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/videos/m1/timing.json",
+      "bytes": 156555,
+      "sha256": "fb9e2ace13317f6c39f7fc1fd3a4bcce3698590f7c7b559b04daa78b0b8cfebc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_009/videos/m1/wrist.mp4",
+      "bytes": 3806881,
+      "sha256": "7811d25f9ec55e5ce878dded50128d27ea7f7e220e5c6f109aef4a48e1652ffd"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/commands.json",
+      "bytes": 10937,
+      "sha256": "8a74a1d5593738ae7ada6400a5d3f6a4c66ae32d5b6f172bd3e8b6044dfa92a8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/contacts.json",
+      "bytes": 10252862,
+      "sha256": "fa9374188e607b2f8187213feb4a2b66a5077c184c7e021284f035f5f1f1b5fa"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/decision_00/candidates.json",
+      "bytes": 16621,
+      "sha256": "0a6c60c12102d2afea8ef611d1bb4330e7f40041f35a3e8f18d25b7f1cceecd6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/decision_00/observation.npz",
+      "bytes": 7627766,
+      "sha256": "eda16ee42f9deb4daae996ea5491779b9dcd0d36cae34704e9a230c3d15e9ffa"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/decision_00/plans.json",
+      "bytes": 67095,
+      "sha256": "6f16f7af74b31d0d4ef49aa9493b719edea9dea9656bf41122fda79fa13a3416"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/episode.json",
+      "bytes": 17669,
+      "sha256": "597bbab7de1eb818a1ce627d45bd99cb9168ea60f5bb832822fa4139798f2e55"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/telemetry.json",
+      "bytes": 5189728,
+      "sha256": "c61acdd31893435a7527c6dd3175c33cc5cc31ebedd9e9281e644813d93ec390"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/transition_00.npz",
+      "bytes": 2263,
+      "sha256": "c85a513e1bd864b925f6aba00a0801a02950d97705a6acdc445d63885293cfc9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/videos/m1/fixed.mp4",
+      "bytes": 1746723,
+      "sha256": "6b15caf00a1068b3e7fd2aa381c092af667c511c5b8ecb95de40e4bab2c6bf3f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/videos/m1/third.mp4",
+      "bytes": 1238533,
+      "sha256": "e07f3373ccbf2bf971809b0ba1251e36c8eee76940b27b03745b1bc756d90f27"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/videos/m1/timing.json",
+      "bytes": 104087,
+      "sha256": "a9b9eb4638dc9650942b960427b467eaf497bbdde713905b2f2e28f30adee5c6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_010/videos/m1/wrist.mp4",
+      "bytes": 2678039,
+      "sha256": "3fcec399860a1c900e75c519b27ab6134112eea01e0942de8330cde1229aa642"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/commands.json",
+      "bytes": 27871,
+      "sha256": "1cc75097c4debd46fab073cb513d089086affe220d1d1b28f92f9c622c8122b1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/contacts.json",
+      "bytes": 20674952,
+      "sha256": "bf530cd7335bb204f50dbf3f56e5fcfe0adc7afb2b20b81c39bc923b0b6ba8f5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/decision_00/candidates.json",
+      "bytes": 16658,
+      "sha256": "1e33bac8d22717f6dd77b83a54d78c7b49e44b95a48501ebdd1dbbbba2197bbe"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/decision_00/observation.npz",
+      "bytes": 7631647,
+      "sha256": "ddedc98bb6309a66ef0d4bc4d0adc4b8e4e4eef929aabb2c048bafabf360909f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/decision_00/plans.json",
+      "bytes": 67114,
+      "sha256": "3518bc13961da0f6f3d59f915bd76c6d60e7f75a654c633868fa844a50a382c1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/decision_01/candidates.json",
+      "bytes": 14028,
+      "sha256": "4dd8d1f2fe0b1af880658dde3e56dbf49d4b1c06aa28d5a1b6cf1ebb69f29bd6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/decision_01/observation.npz",
+      "bytes": 7134085,
+      "sha256": "b76ddb9d92d388d49d46079359dfa3acfff7eea7d89e93bfb9d6ecd146806df5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/decision_01/plans.json",
+      "bytes": 5411,
+      "sha256": "83e397986500a8ba49753390ce4408f5fced2f45135371d7b928f5fb05a4468e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/episode.json",
+      "bytes": 27092,
+      "sha256": "c9cb470f4c87bf064fdf73d33a110757426b096976a6514567a622e357f4a5e2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/telemetry.json",
+      "bytes": 12098826,
+      "sha256": "60b4e268573b92f2d5ac614134c985c9945a21fcf1c71cc11be05fa9d962a054"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/transition_00.npz",
+      "bytes": 2699,
+      "sha256": "7ada50eec3760ef5718425d3b7017dca786f8d0664c7cad0d439944bf6b3dfb2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/transition_01.npz",
+      "bytes": 2200,
+      "sha256": "0764a897ed7cd5786d9957a836660a376db81dcb29d80a025e95406e9fef2b6e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/videos/m1/fixed.mp4",
+      "bytes": 3807066,
+      "sha256": "d7dde4967d1438eaa787d13cfabb522ae947e69f10189588e4b070423d955d4b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/videos/m1/third.mp4",
+      "bytes": 2850441,
+      "sha256": "1db25d0c8ca1950a5a207720a7c3572466ac88d8ec745736b30035265ab93459"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/videos/m1/timing.json",
+      "bytes": 239448,
+      "sha256": "c84fe555b8fbd1d1c19519007b63eac09222673a3fc33b20d85cf0c0cf6540c7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episode_011/videos/m1/wrist.mp4",
+      "bytes": 5813250,
+      "sha256": "ba07c5f0fb4f68ca1a83b5071d5714e98882a31b93935acc9b80c6aad7a03cf2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/episodes.jsonl",
+      "bytes": 163764,
+      "sha256": "4ed9dd8b3aa648a34231b339012411f86927dd771813109741f8fed81f43c327"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/run_config.json",
+      "bytes": 817,
+      "sha256": "14b1c5be38d623be345c74c42f602b77c03b6c43f3b242e9c771e2f7ab8930b7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261123T104151Z_50ca4097/summary.json",
+      "bytes": 270,
+      "sha256": "55eb3e7eb25ddf25cda24873d68f3c890371af7db63f5ccec58711de56c38264"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/dqn_online.pt",
+      "bytes": 445128,
+      "sha256": "4b13a001c6f52145b52e47279bfdcee7f09150d585d4d86a826878e5653599e0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/commands.json",
+      "bytes": 18395,
+      "sha256": "fae7b87dfaa1fbb350de250909d63b92569a66a2be2cba38a0cd2989194526c2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/contacts.json",
+      "bytes": 14001725,
+      "sha256": "db7c92e5153045ae30c06f86ecd5dcbdf2f3d177251538c9b82c11e598bc6ced"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/decision_00/candidates.json",
+      "bytes": 16637,
+      "sha256": "3fa3c3ab0bbf318b7758406924cfc9c1a8a58f555264bf1ca851248203dad44c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/decision_00/observation.npz",
+      "bytes": 7627083,
+      "sha256": "dff3a18f3f5883a386a1c508e0bf879ba13f059ef9e3ba15f1ec6e1725ed3624"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/decision_00/plans.json",
+      "bytes": 66896,
+      "sha256": "423ca211f935417c931c1ac978c91e938b16e99abeab92c8db41fb7a5e5703ca"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/decision_01/candidates.json",
+      "bytes": 2151,
+      "sha256": "4a36cf109fef3175fda299e6d1a1166b776e69a45ae625d1de182089fc5b5b78"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/decision_01/observation.npz",
+      "bytes": 1913009,
+      "sha256": "944908016d2d90cbfca5d50a0b78c29a3d04b863742db4204eec171ac2ca7561"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/decision_01/plans.json",
+      "bytes": 19,
+      "sha256": "4ad6f3e594ffb2366c39efb4c08f4fa6ea8e1084131d64196c663e6f1f41469e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/episode.json",
+      "bytes": 15936,
+      "sha256": "f51df121e3d998df0afd018629ea55a1b5ad6f57cf4bbf90ae042064f3fca1a9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/telemetry.json",
+      "bytes": 8222059,
+      "sha256": "ddb1aa9b2ae985607bf92c86c27a5ffc32e885ffed5b1b56cbe2362a36bc0cde"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/transition_00.npz",
+      "bytes": 2423,
+      "sha256": "a581a33f8ee850d8c1c898df4339f758fba0802990ea5770c4362f3231748439"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/videos/m1/fixed.mp4",
+      "bytes": 2608564,
+      "sha256": "7024c05823ad83fb76296c809ed398fdac565540d72b40a8f5ff8e6850cd3b8b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/videos/m1/third.mp4",
+      "bytes": 1931624,
+      "sha256": "34affcd7f48c1966c69a2f7b0e3a665993550f282707d5aaf2224afebcea3a27"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/videos/m1/timing.json",
+      "bytes": 162739,
+      "sha256": "0191981b1acf1bf208b0edf21b0ca9bf972d7e288c4c7a03b697731efeeb0648"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_000/videos/m1/wrist.mp4",
+      "bytes": 3992184,
+      "sha256": "e5fb164ed650257c89259dee7d41b848bc8845ec4f643e9e7b63fa998551c41b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/commands.json",
+      "bytes": 11920,
+      "sha256": "865380f9b92d53a51f6721c6c3de33b96aa258f71f63c370a33040d65c723daa"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/contacts.json",
+      "bytes": 19761061,
+      "sha256": "23f88781d14af90da838976012bc063fd372633fafa6545781914d4328e75afe"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/decision_00/candidates.json",
+      "bytes": 16618,
+      "sha256": "4d26a932c616807cb27aa426ab25a5e64e0d5efe1fe545cb209df80f04a0ed9f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/decision_00/observation.npz",
+      "bytes": 7630667,
+      "sha256": "8eaca7aa2c623f4a9328ecbd7914c73c0fd4a10883ee08c9ac2cb6b2df5147e9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/decision_00/plans.json",
+      "bytes": 66992,
+      "sha256": "b25bb89e7e31c6317a2702aa784c390c19ac54546e76a7caa3f22f3b3cb39d8b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/decision_01/candidates.json",
+      "bytes": 13998,
+      "sha256": "d0f49613448582cb39d70ee2e05cfa6653719dcae1d6c733e4436a16dff5f5d0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/decision_01/observation.npz",
+      "bytes": 8193854,
+      "sha256": "3777157c1ea5a0828c81f02ec9c2ff5c328910abf4075eb2a3cbf1324a44be39"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/decision_01/plans.json",
+      "bytes": 5474,
+      "sha256": "6147d97bd99082a345904b7671b8be7e3690fd83efce12b52661177de05d2966"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/episode.json",
+      "bytes": 26853,
+      "sha256": "32b723ff502df93a356cd2b1b7c9b3c58f1d0b1aa596e76243377fe9724c6f03"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/telemetry.json",
+      "bytes": 10899821,
+      "sha256": "70ad6f8b1e4f4b5d6e0530ab4d83de5cdfba30afa5cc763ca4f584901c934563"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/transition_00.npz",
+      "bytes": 2718,
+      "sha256": "4355205ad05b47e2a718510e8f69e472293bba4877f8b25819ceae5fa81ff117"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/transition_01.npz",
+      "bytes": 2218,
+      "sha256": "7d49cd7c677e3cacbcbcdb4638751dd66f26394a212c997caaa4c9626a88ff6e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/videos/m1/fixed.mp4",
+      "bytes": 3501269,
+      "sha256": "1a6d41a6edd740f4e6dcdaf4b35d6517f1a73971a9848eeea043b5872e87b309"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/videos/m1/third.mp4",
+      "bytes": 2595587,
+      "sha256": "9d70e6cc9f0fd20986ef059e9d8a28fe799f6727dd96aa0f81e51620cb349365"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/videos/m1/timing.json",
+      "bytes": 217480,
+      "sha256": "315386762d64044e0af4c5b37151876e226c49a5cdbfd613a882c0b2eec44a16"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_001/videos/m1/wrist.mp4",
+      "bytes": 5470508,
+      "sha256": "b36dc5681573e7e12c7cd6c7f083dfb406ad4c0941339a10cb212a6d2f20f85b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/commands.json",
+      "bytes": 10969,
+      "sha256": "9d106b924f98415dd419b81201e8e09129a88ad3246173f823f0dbace400dd1e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/contacts.json",
+      "bytes": 10237681,
+      "sha256": "d069a25141053a046be95d5e8d474ff4452b2ff354040a79482348adc2a23e3a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/decision_00/candidates.json",
+      "bytes": 16658,
+      "sha256": "7c6c00905cb2462d1bee3c359cbbee3442dd558cf10dcf1daaaf4a00c91eb136"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/decision_00/observation.npz",
+      "bytes": 7637432,
+      "sha256": "3a46f572ca6fbf3a53fa8c52763f8772f6a844353b2dd3c053dccf04b239d716"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/decision_00/plans.json",
+      "bytes": 67048,
+      "sha256": "673080eb8f894e6833d024a8697f15c1be6d9883f4afe3866e91106c4e33e0a4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/episode.json",
+      "bytes": 17726,
+      "sha256": "7f1370bad88744616ff84484e9006cbddf2b130efcd6571dda2fc7aaa6dc5a83"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/telemetry.json",
+      "bytes": 5191098,
+      "sha256": "14b57f5306aac9b11b0d46ddc6ec79c69890bd3a5da94d9cee307cd5c96e74bf"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/transition_00.npz",
+      "bytes": 2263,
+      "sha256": "b9d9d27347735157981698143b0d906d30b810f0e907b83b699046f31b41bac2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/videos/m1/fixed.mp4",
+      "bytes": 1741160,
+      "sha256": "5de4c9b4f3f0b9e2748cbfc8ab5cf08feda8e51f39749aae8146c3e9b928d440"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/videos/m1/third.mp4",
+      "bytes": 1238701,
+      "sha256": "32ef6377ef51561cc7b8ac9686d6feeda0c09da6a610456db54bcf405a0659e6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/videos/m1/timing.json",
+      "bytes": 103960,
+      "sha256": "66d13fca53efe5c9bf04d0fde0cd68ff7224244cffc45e64bf1e9a793e77e7de"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_002/videos/m1/wrist.mp4",
+      "bytes": 2618723,
+      "sha256": "6284ebdbb715439ab67cf80e5b510b78edd19a3cd0db043a9f397109600c2d1b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/commands.json",
+      "bytes": 11936,
+      "sha256": "f5f3f323882c5ae7c1a9aed8fa364dd5e4821c07eb7d03fe8f71bf5549de9662"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/contacts.json",
+      "bytes": 21358173,
+      "sha256": "deb0b49cdbdede3f415cd3b934a6b0ae9e4725a0f57ac652c2de171ca38873ce"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/decision_00/candidates.json",
+      "bytes": 16642,
+      "sha256": "1a246dc9cb2dce506795ecc69aab8307283260e1be547d3473f94e8c2cb842f3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/decision_00/observation.npz",
+      "bytes": 7625449,
+      "sha256": "58ef7e169b2c0df787ec09d5f02786b0dd9c01d1d587b86dc0106d5ab2dfcb07"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/decision_00/plans.json",
+      "bytes": 67010,
+      "sha256": "38e41465bbe030a9d024dc5303457c291b92839a77ee7e2967093a94afb7909c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/decision_01/candidates.json",
+      "bytes": 13999,
+      "sha256": "0e777b93d6a78fa0ae23ea113c22b2ae3aae21d99364a33ecca67ba8a65ea566"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/decision_01/observation.npz",
+      "bytes": 8195775,
+      "sha256": "6847cdff7b3370391e46947f6c01a03b1bc02808b1aed5b1d4b9c45f5b82f2d2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/decision_01/plans.json",
+      "bytes": 5485,
+      "sha256": "92fdc7b58d44421ee5c026b95c53fb7e9edf7cb610dd10a4e0084f9933db53ce"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/episode.json",
+      "bytes": 26929,
+      "sha256": "37f02481b37635a884ef333fb0ac0526be28fabf47e4c3ba5291ccb01bb2479a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/telemetry.json",
+      "bytes": 11047902,
+      "sha256": "ee859110d90ae920843601055d3f3b76d16fd8a71619539230b8947fb5ea314c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/transition_00.npz",
+      "bytes": 2719,
+      "sha256": "44c03bf00286cdf3f830bb60c9f15fdb334d7f54b61c1735591112dce4004671"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/transition_01.npz",
+      "bytes": 2219,
+      "sha256": "84da2e510f30195b1de9a987b444b80ab383ab4ac02a2b742b952a7062a8ba5e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/videos/m1/fixed.mp4",
+      "bytes": 3510994,
+      "sha256": "c0b071a21f038f74b0cc66106db4af17c911f9ced6aac47ff27bfb0473fae632"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/videos/m1/third.mp4",
+      "bytes": 2621717,
+      "sha256": "d05f0851857b1bc8fe0a40d1563f9af96a34de2debaec2e2f1233d1e7a336f91"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/videos/m1/timing.json",
+      "bytes": 220359,
+      "sha256": "16dcccb3aa595f0ecc69abaf17c3769a2d53ee25097390df5794b7b0d9af9ae1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episode_003/videos/m1/wrist.mp4",
+      "bytes": 5791775,
+      "sha256": "7c38a1ef5c9cd72477fb20fb7d32aa6ea260c7053e6f77a866dc27fdccf12da8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/episodes.jsonl",
+      "bytes": 53358,
+      "sha256": "49c13164dde5962893a5a206c12990c35e553bfe905dc4bc6895e9075c9d5c8e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/run_config.json",
+      "bytes": 813,
+      "sha256": "5719a1002f9e6863f66eb9fd13f388fe57a8930fee8c154eba5b587ca4072096"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/summary.json",
+      "bytes": 268,
+      "sha256": "81190410836ef59bcd89429370b49134432a2c9c7afc50bbda4f978624de3412"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025108Z_ab7cad4b/training_curve.json",
+      "bytes": 55012,
+      "sha256": "f36d6e8b581f673828bf7c9e044e04722982450cacb7aa95abbdf6766365bfe5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/commands.json",
+      "bytes": 10980,
+      "sha256": "e34380e8eb40e65ab1ad70b21bc1c54c4fbec24dc54898e47d34172d0e694c43"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/contacts.json",
+      "bytes": 10711208,
+      "sha256": "2ca29ca06aabdd27449e0ff37c5ed64b7887ec4d8265628d9c071ecaf290e775"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/decision_00/candidates.json",
+      "bytes": 16476,
+      "sha256": "3a0c84c15fbb25f9825fa52874df5a0a1acbef21ae0673cd47cf06783bb89cd4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/decision_00/observation.npz",
+      "bytes": 7462149,
+      "sha256": "0bf16a7cf3dea7e492abe99c8a61dbe457442e3156268161699089827947ddd5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/decision_00/plans.json",
+      "bytes": 53887,
+      "sha256": "63dac79d47e9c01238ea6c7853c7ea8d31eb0980530d2312435bbf3bb3eff2a3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/episode.json",
+      "bytes": 17958,
+      "sha256": "18a0b28d01abaf93ff3366dbc095917c5b1923af537f5226631cf81c15d87588"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/policy_inference.json",
+      "bytes": 228,
+      "sha256": "84be3b93272f2c8ca17b318ee90c2391e49786d44122950438b0c16a1c3ef9e6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/telemetry.json",
+      "bytes": 5779813,
+      "sha256": "129f18acdf57d1402a349af020f10d039d6bd53c45cbd80621138773c7b31df6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/transition_00.npz",
+      "bytes": 2275,
+      "sha256": "57bca4b6a1965bef5b001eee31e7571846dc318b6e23ba8fe1972f640f99ca5f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/videos/m1/fixed.mp4",
+      "bytes": 1922553,
+      "sha256": "ea08f2919f52c4bbe0e9c58293436b5434d320565c4821cdd7d689e6d414442c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/videos/m1/third.mp4",
+      "bytes": 1402766,
+      "sha256": "b73843636357a948be3aa749d26fdf19ba19a01863e8d9190dc336dd8ccefae8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/videos/m1/timing.json",
+      "bytes": 116289,
+      "sha256": "2ddae91c2db8258964ad9032d371f5678a27f825c06d41b8663b645e2514d1ac"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_000/videos/m1/wrist.mp4",
+      "bytes": 2681986,
+      "sha256": "525929ce9b854464e5559c8e133426ad52d7948538fc672482bf45c56d11c1e0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/commands.json",
+      "bytes": 7937,
+      "sha256": "cc6d10abe5a08f5144076289f393efe82a7fd3340cf66cd960137c38b26c0d2c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/contacts.json",
+      "bytes": 6317890,
+      "sha256": "f69a01efc319a1a6dbecf4f5c17a7a3a267a270027a61f8780e03920cd1a1d19"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/decision_00/candidates.json",
+      "bytes": 16565,
+      "sha256": "0df2aee3291b047091a16d3f23b6f58bfde2993351b9e584c423e79856f13b64"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/decision_00/observation.npz",
+      "bytes": 7445623,
+      "sha256": "fe0655b7abdddaa4dbd6b3f9f0c7f77f9fb12b8256dd5b659d3fa0ba05f6406c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/decision_00/plans.json",
+      "bytes": 67087,
+      "sha256": "4ae32226a544d43c3481605536e495037c50df48dfdef016629ad2a983f9188b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/episode.json",
+      "bytes": 18150,
+      "sha256": "1d7af93e657aad094af1d2b7f90c23e7cd928468d433c409db20a98d9d530ef6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/policy_inference.json",
+      "bytes": 229,
+      "sha256": "2f2b2fb470b7dec6b1caac9cc0b8c92bd61bac5bf10b205837bb98efca67be1d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/telemetry.json",
+      "bytes": 3769725,
+      "sha256": "1672f7c4e7d32dc7e1a45f688e66c4c0108c4c5bf56141b68449a24039e9f5ff"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/transition_00.npz",
+      "bytes": 2260,
+      "sha256": "bce700fc74e781f6fc4e7abce2838db6aa862a635c124ffedab6080331721ad0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/videos/m1/fixed.mp4",
+      "bytes": 1259612,
+      "sha256": "4446e8781fa4189ae64635836f66b426f740ab54d92acb8ec1146b083546120e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/videos/m1/third.mp4",
+      "bytes": 911244,
+      "sha256": "da1e6a8f059f91e86943bfbddb946517d85cac1c4884b2d8be4499a38472c4f1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/videos/m1/timing.json",
+      "bytes": 75714,
+      "sha256": "f928f0a1c5cbe3e7ada54d6c0303a4c2affd9f998648e0be601c1a5ff99a8272"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_001/videos/m1/wrist.mp4",
+      "bytes": 1900859,
+      "sha256": "72cb1889034241411fd17e48c588cc69c07f51efb17596a9eb911b143c4624e4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/commands.json",
+      "bytes": 10980,
+      "sha256": "e34380e8eb40e65ab1ad70b21bc1c54c4fbec24dc54898e47d34172d0e694c43"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/contacts.json",
+      "bytes": 10711208,
+      "sha256": "2ca29ca06aabdd27449e0ff37c5ed64b7887ec4d8265628d9c071ecaf290e775"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/decision_00/candidates.json",
+      "bytes": 16476,
+      "sha256": "e3a18fe30fd71fdc3ba9f0cc34124c1aa541ccb52bcd936a8aa7c238492738e5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/decision_00/observation.npz",
+      "bytes": 7464305,
+      "sha256": "7cfc98b40a62a3f814c1a2fa93937b9c8f516afbffa255a7969fac3811159a34"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/decision_00/plans.json",
+      "bytes": 53887,
+      "sha256": "63dac79d47e9c01238ea6c7853c7ea8d31eb0980530d2312435bbf3bb3eff2a3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/episode.json",
+      "bytes": 17955,
+      "sha256": "a25d2f47b50d7bde9489f96bc217a1ed110b6f327af8eee8c50bf6ad35ad7c83"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/policy_inference.json",
+      "bytes": 225,
+      "sha256": "9cf5693d2c64effca3d3ae351af2e72c2778346a72a49d7f19ecbfd821889854"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/telemetry.json",
+      "bytes": 5779813,
+      "sha256": "129f18acdf57d1402a349af020f10d039d6bd53c45cbd80621138773c7b31df6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/transition_00.npz",
+      "bytes": 2274,
+      "sha256": "58a688fd214138741f7f5870318a138314af4f3a3a59ba6c15fa7f33edf81c7a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/videos/m1/fixed.mp4",
+      "bytes": 1906523,
+      "sha256": "8101df81424ef0758bbca7a43ea548a192a2a9036bec1e1d7dd4ff53f4a95bbe"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/videos/m1/third.mp4",
+      "bytes": 1398321,
+      "sha256": "f2d859a4e4321c45aeb6b0793b13ccf4b08edc714d2944a535e1c20f85744293"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/videos/m1/timing.json",
+      "bytes": 116295,
+      "sha256": "3978cbe327f394921bc630a5f4381d8177963023aa4f8da5b057cdf3feaddb0a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_002/videos/m1/wrist.mp4",
+      "bytes": 2667376,
+      "sha256": "27627edce019077bd6ea330e6ab55ad16e68c4d58be827f339e1f1bc4cbaae2e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/commands.json",
+      "bytes": 17833,
+      "sha256": "48e6af1e78b03760bd651c31230d380e09432a7425c864b0961cd1d508f5e7ec"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/contacts.json",
+      "bytes": 12612383,
+      "sha256": "fe707c354e2a20cee07e8d58783a96ddcae32dd7944f0eb14860305ae24c88c9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/decision_00/candidates.json",
+      "bytes": 16565,
+      "sha256": "01b0ab7f8cf8bb3608a975d8ec36ef469f7304e276a044978f38c4c15ccd282b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/decision_00/observation.npz",
+      "bytes": 7446711,
+      "sha256": "d64bc10492e8e2254cf2e52e0a8cd1181670de86e87ba7b61536e5f1077edee6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/decision_00/plans.json",
+      "bytes": 67087,
+      "sha256": "4ae32226a544d43c3481605536e495037c50df48dfdef016629ad2a983f9188b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/decision_01/candidates.json",
+      "bytes": 2152,
+      "sha256": "dcff160bd316d93d31cd51e53149bba8b2bcf162b0f9c8fae68239814a68ddb1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/decision_01/observation.npz",
+      "bytes": 1004081,
+      "sha256": "28596a6203ce824d15833372bf2448714231b041ba301e6f53614dfb9ab71faf"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/decision_01/plans.json",
+      "bytes": 19,
+      "sha256": "4ad6f3e594ffb2366c39efb4c08f4fa6ea8e1084131d64196c663e6f1f41469e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/episode.json",
+      "bytes": 16283,
+      "sha256": "2b8fafbb7761ddc6b8fc2ebe20ca9e0d9a49d361083c8bb61057c08945dd2e3c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/policy_inference.json",
+      "bytes": 228,
+      "sha256": "d01d4459a5748a3874ee80cee7df81d6839f6bdf72235c1a6d0d837011944238"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/telemetry.json",
+      "bytes": 7164499,
+      "sha256": "1fb3712f101dc2711119c915fc765925e4724c8b0cd1826c338b9401b5cbf06e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/transition_00.npz",
+      "bytes": 2419,
+      "sha256": "6ede551f85d51b5b9fe97d8ef497bdf08ac73275c37de979c6a36018aebdc36d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/videos/m1/fixed.mp4",
+      "bytes": 2240217,
+      "sha256": "a49c6344938238157729f01aa39776cfa8b6cf999891418e028c63406caf558a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/videos/m1/third.mp4",
+      "bytes": 1676682,
+      "sha256": "df835a84b863f2e153fffda0c0ec20136db9d843b7d23b07c5caa84afd520ab6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/videos/m1/timing.json",
+      "bytes": 141298,
+      "sha256": "5b4b8fe38aa665f70a74cfcd9d1aaf77aaf7ae68bf915021a641ffdde22bee5f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_003/videos/m1/wrist.mp4",
+      "bytes": 3278860,
+      "sha256": "e926d33e3fa39237d0a19e8db3001fc4c5352cede7bbf95c9f1e4f6892fcdeb0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/commands.json",
+      "bytes": 23109,
+      "sha256": "4c6c46b97e457f0dab4c96bb2966f8a467fa8820850f4a79bdc5f7fd06541851"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/contacts.json",
+      "bytes": 17066630,
+      "sha256": "ee45d176e887b130edfd942cca45c562087c837c9a8b6f4854ce9e0dbe0f8476"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/decision_00/candidates.json",
+      "bytes": 16476,
+      "sha256": "b320a7bfa4d0cf8c2631aa8a59c801c95e3f7aac62d49d630c0a04257fc5dfc0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/decision_00/observation.npz",
+      "bytes": 7459458,
+      "sha256": "6e64eb34c8b4ab27e5bbe31d9ff24b5a8d1af8ce371d1506453d001dfc87ae76"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/decision_00/plans.json",
+      "bytes": 53887,
+      "sha256": "63dac79d47e9c01238ea6c7853c7ea8d31eb0980530d2312435bbf3bb3eff2a3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/decision_01/candidates.json",
+      "bytes": 11368,
+      "sha256": "0324570590eac91fb16ce47d96e85896e9aea6593f8555f16d928cd343436d30"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/decision_01/observation.npz",
+      "bytes": 6909811,
+      "sha256": "ff799cb8dfe231b48319c08ecfd6984f0acbe4d0c1468ab42811c65e01ff8e19"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/episode.json",
+      "bytes": 17386,
+      "sha256": "a02e557b171fdbda3dc08e585e73b651b375e8352555893509dc46d2d0234379"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/policy_inference.json",
+      "bytes": 232,
+      "sha256": "4caaa84851be0cff751ef35fc4d7ba3f0694e59e478ba6784acb441461468e63"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/telemetry.json",
+      "bytes": 9117193,
+      "sha256": "ebfab9116d22a5c675a645e8f2029e7be06483d7972f2e021d869462e8ca323f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/transition_00.npz",
+      "bytes": 2646,
+      "sha256": "231f8e0b67992cac7a2dd609ff3b0e69854bb4b8ab6a07024d6774f543e585f0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/videos/m1/fixed.mp4",
+      "bytes": 2821477,
+      "sha256": "d1263912cb76775f12e5b1ce5f2f7e4e3dbe5e872441e3fbbc3717aee9d589fd"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/videos/m1/third.mp4",
+      "bytes": 2134417,
+      "sha256": "b4103853cbaf03ebe6b998fbec5d7b8e220a8457d8c42aef8f02e81d9388249e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/videos/m1/timing.json",
+      "bytes": 180351,
+      "sha256": "86e1ba8344866f7021de5d9c4dc474830adbadd09a980a197457a0f029931ef6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_004/videos/m1/wrist.mp4",
+      "bytes": 4987199,
+      "sha256": "82f7eded75d185154a460f8d814b7fc7de46eedffe9e29b400203bb3e70c60dc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/commands.json",
+      "bytes": 7937,
+      "sha256": "cc6d10abe5a08f5144076289f393efe82a7fd3340cf66cd960137c38b26c0d2c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/contacts.json",
+      "bytes": 6317890,
+      "sha256": "f69a01efc319a1a6dbecf4f5c17a7a3a267a270027a61f8780e03920cd1a1d19"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/decision_00/candidates.json",
+      "bytes": 16565,
+      "sha256": "f9a287c350edd6ba62e8a2ac2792c70b8a488a86e5988ded7ddb33127a50079c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/decision_00/observation.npz",
+      "bytes": 7442516,
+      "sha256": "748e99ad7b3f8ea46ab459f568d94eb01bf3bc202283cec914eba1619cee2f9f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/decision_00/plans.json",
+      "bytes": 67087,
+      "sha256": "4ae32226a544d43c3481605536e495037c50df48dfdef016629ad2a983f9188b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/episode.json",
+      "bytes": 18152,
+      "sha256": "384a3ab30a4c419f6a86163ced905d68e3a6f090bdd3579aa8bbe1848e86ced8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/policy_inference.json",
+      "bytes": 231,
+      "sha256": "2421d373ef7bb85699ee360acae2698aeba046db6e4bc843db30b453af58fbd3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/telemetry.json",
+      "bytes": 3769725,
+      "sha256": "1672f7c4e7d32dc7e1a45f688e66c4c0108c4c5bf56141b68449a24039e9f5ff"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/transition_00.npz",
+      "bytes": 2260,
+      "sha256": "bce700fc74e781f6fc4e7abce2838db6aa862a635c124ffedab6080331721ad0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/videos/m1/fixed.mp4",
+      "bytes": 1260387,
+      "sha256": "f7faff23ccda7d720d5e9dac55aefe70006369dfd72e47c7080b62169bca2905"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/videos/m1/third.mp4",
+      "bytes": 912810,
+      "sha256": "badb7132c2e744ccbf748a31edaae859595890d44b8067e0cb20ce96d2a7b2b0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/videos/m1/timing.json",
+      "bytes": 75727,
+      "sha256": "e5c6c892a47a18ddb5bbef93159362e353b5f4cbdc1b695610304e846b823693"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_005/videos/m1/wrist.mp4",
+      "bytes": 1897496,
+      "sha256": "f76b2566156a58c572711e517226831e8500978d3b21559600c09dd7b14bb9dc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/commands.json",
+      "bytes": 10980,
+      "sha256": "e34380e8eb40e65ab1ad70b21bc1c54c4fbec24dc54898e47d34172d0e694c43"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/contacts.json",
+      "bytes": 10711208,
+      "sha256": "2ca29ca06aabdd27449e0ff37c5ed64b7887ec4d8265628d9c071ecaf290e775"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/decision_00/candidates.json",
+      "bytes": 16476,
+      "sha256": "542c760ecc1d25fc754dd5b5d4aacf6208b3af33b41755a70e6c73e5795416b1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/decision_00/observation.npz",
+      "bytes": 7460252,
+      "sha256": "00a87f3ee1240545e245327273da0708e50ca544e13f458416ea584777c614c2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/decision_00/plans.json",
+      "bytes": 53887,
+      "sha256": "63dac79d47e9c01238ea6c7853c7ea8d31eb0980530d2312435bbf3bb3eff2a3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/episode.json",
+      "bytes": 17945,
+      "sha256": "a81bacf7fa8e605f36db80b3f7b2585448fb67913a14f4816ac8441ba2c820f1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/policy_inference.json",
+      "bytes": 221,
+      "sha256": "7b9aedf5885f669a685bffeb12fb07c896c61b5bfedc3898994d3775bb0e8a16"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/telemetry.json",
+      "bytes": 5779813,
+      "sha256": "129f18acdf57d1402a349af020f10d039d6bd53c45cbd80621138773c7b31df6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/transition_00.npz",
+      "bytes": 2274,
+      "sha256": "206d86c808c0863d35f3b2e974327dec81456a1610c52782146d0504bf488553"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/videos/m1/fixed.mp4",
+      "bytes": 1900962,
+      "sha256": "6912b44f2f26e12a0c764fb912b0595c50798d6359df5539fddfd9d7e3f3af4b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/videos/m1/third.mp4",
+      "bytes": 1399713,
+      "sha256": "2caa70b9274984f0e167fd41e7eb829aeff6b6f6ea20e80ee4fc47e5fa4f16ff"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/videos/m1/timing.json",
+      "bytes": 116274,
+      "sha256": "2b28981d32aedbc05bc16596795c8eff6efaeae657581a1e6760ae2e20f43572"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_006/videos/m1/wrist.mp4",
+      "bytes": 2662200,
+      "sha256": "adc28edf97f2fafcf5142717f1cdf5c0ab7b85095afb25fa22fcc322cb04d74a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/commands.json",
+      "bytes": 11881,
+      "sha256": "f727db327109c3c638d53a57436b4e7f39b783a78c0f6bebce52d513db3dd52d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/contacts.json",
+      "bytes": 17851984,
+      "sha256": "0e9fdf16af118abd919576c8fa11b92eb2fc5f5fffd01aef59f7377d63dea1ea"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/decision_00/candidates.json",
+      "bytes": 16565,
+      "sha256": "ff4f28bdee82150cf03619d4ffc03f87f0516943e251a6bebeebbeb735ab2036"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/decision_00/observation.npz",
+      "bytes": 7443290,
+      "sha256": "08ac4785fc329a339d7fc5924a5ef861ca9eae11791af18d620e63e107e50bae"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/decision_00/plans.json",
+      "bytes": 67087,
+      "sha256": "4ae32226a544d43c3481605536e495037c50df48dfdef016629ad2a983f9188b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/decision_01/candidates.json",
+      "bytes": 13873,
+      "sha256": "db50faf7c9ec1346485a9d59ea1688ca92631f1730c813888d2c067440c59edd"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/decision_01/observation.npz",
+      "bytes": 8028525,
+      "sha256": "b151b05d803c0222517d4641cc687264075b45e06fabbd1c09e8b1c80dea54a5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/decision_01/plans.json",
+      "bytes": 5372,
+      "sha256": "65a683fe7ff7e3a8bbbc38f76c5a4c892e20b12b3bd5b1e77d3e2bfe6d908aaf"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/episode.json",
+      "bytes": 27345,
+      "sha256": "8873394853e60ac02bdce1b65bbadd46a3d44ac1f34f0bd7be766e8c8402f923"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/policy_inference.json",
+      "bytes": 439,
+      "sha256": "fcfe65428ef1e0d7a57a28c5a734530ec59320afc1edbfe8e12b29c8aad7817e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/telemetry.json",
+      "bytes": 9579549,
+      "sha256": "58a30cc9742142835a75fdfc1d2e3a1cba7cae25cdcc4ee3924906dbf80a706b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/transition_00.npz",
+      "bytes": 2713,
+      "sha256": "7d882befa379d83be1fbd3f2e0fa99fcdb8e536256c272fc6d7e0c15483f9228"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/transition_01.npz",
+      "bytes": 2215,
+      "sha256": "a6c7178cae981e54fcfd53e89e8eb48424b5dd0558a96ceb39de26402536cbd5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/videos/m1/fixed.mp4",
+      "bytes": 3042634,
+      "sha256": "7c6dcb2fc48040e28fc29a678a06b4e25465c1e11acfe2b7d6aab59b106d683a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/videos/m1/third.mp4",
+      "bytes": 2273180,
+      "sha256": "a934d7f9612c9f505f5abec4eba35680ae77589a243d70f674e0609b995ff70e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/videos/m1/timing.json",
+      "bytes": 191634,
+      "sha256": "81ba3902028a638c621802eb50dfbd53a682f1ed8b7e408be6e48700c6ff784b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_007/videos/m1/wrist.mp4",
+      "bytes": 4803341,
+      "sha256": "4d5772a08c67e902f13497e0ac2014542a8e130cc92df96fc14b04a8b54da85e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/commands.json",
+      "bytes": 10980,
+      "sha256": "e34380e8eb40e65ab1ad70b21bc1c54c4fbec24dc54898e47d34172d0e694c43"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/contacts.json",
+      "bytes": 10711208,
+      "sha256": "2ca29ca06aabdd27449e0ff37c5ed64b7887ec4d8265628d9c071ecaf290e775"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/decision_00/candidates.json",
+      "bytes": 16476,
+      "sha256": "ad156db1c1476b97c5d5a80afacdebd36c3cec6c2b9fcadf7ec0419b367fd30b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/decision_00/observation.npz",
+      "bytes": 7457788,
+      "sha256": "6381f5a8a7409294e5533e5d406476eb7056642a60ae2f5936af803a72646bf0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/decision_00/plans.json",
+      "bytes": 53887,
+      "sha256": "63dac79d47e9c01238ea6c7853c7ea8d31eb0980530d2312435bbf3bb3eff2a3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/episode.json",
+      "bytes": 17943,
+      "sha256": "ef2f5a80bfc5ab96713060f60fd9ffbe91ba8710726304be4ee751fb7728dee5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/policy_inference.json",
+      "bytes": 220,
+      "sha256": "66ccc18ffa7ae438d62f09d2cb464d7c6bbf5777030bd339b876850a3ee4f9e5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/telemetry.json",
+      "bytes": 5779813,
+      "sha256": "129f18acdf57d1402a349af020f10d039d6bd53c45cbd80621138773c7b31df6"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/transition_00.npz",
+      "bytes": 2274,
+      "sha256": "46221921d467197ad4801ec6e87c60f7a07cfb1e3688798ad7af63f21583e135"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/videos/m1/fixed.mp4",
+      "bytes": 1914077,
+      "sha256": "b6a5b41c2db37070ae1eefcb216ad66171730b06d7d3626ece9dbee0b39b74b5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/videos/m1/third.mp4",
+      "bytes": 1398018,
+      "sha256": "49d1b71ede966afb59e61c982e05a0ac136726adbee1fe2b014bcc5bff3c8a9b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/videos/m1/timing.json",
+      "bytes": 116290,
+      "sha256": "ac3f8d4193eca914f9a9d1ac561e30e015f49439ef07afb9acb2b1f1345084b2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_008/videos/m1/wrist.mp4",
+      "bytes": 2659335,
+      "sha256": "4d09b01a0ce9e1e10eedc3f996c80cc04edfae62e6bda1e824fcb55a8cb0da7d"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/commands.json",
+      "bytes": 7937,
+      "sha256": "cc6d10abe5a08f5144076289f393efe82a7fd3340cf66cd960137c38b26c0d2c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/contacts.json",
+      "bytes": 6317890,
+      "sha256": "f69a01efc319a1a6dbecf4f5c17a7a3a267a270027a61f8780e03920cd1a1d19"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/decision_00/candidates.json",
+      "bytes": 16565,
+      "sha256": "fa7c0d05ef509885d883f36557f5a42d16d5f98941cb03f1b16afaf52c1b2efc"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/decision_00/observation.npz",
+      "bytes": 7441932,
+      "sha256": "f0632a7fe62003dd41a8b49f9d11ee0105523d10432a8dd728e45afc2ff9105a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/decision_00/plans.json",
+      "bytes": 67087,
+      "sha256": "4ae32226a544d43c3481605536e495037c50df48dfdef016629ad2a983f9188b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/episode.json",
+      "bytes": 18132,
+      "sha256": "cdd41b9f9b897c9eec4dd3886f8e7256fda5dc02f4c601972534f01ba6e30efd"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/policy_inference.json",
+      "bytes": 221,
+      "sha256": "a5025306d1d90ae7964f1116c012f6e6c77f9e7ccfba59824f433ab88aed6642"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/telemetry.json",
+      "bytes": 3769725,
+      "sha256": "1672f7c4e7d32dc7e1a45f688e66c4c0108c4c5bf56141b68449a24039e9f5ff"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/transition_00.npz",
+      "bytes": 2260,
+      "sha256": "bce700fc74e781f6fc4e7abce2838db6aa862a635c124ffedab6080331721ad0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/videos/m1/fixed.mp4",
+      "bytes": 1255799,
+      "sha256": "979c4dc2bbb4af049a07a9ff39b0db8ba4ed6e30f429dd1d04dbb15cb1531e9a"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/videos/m1/third.mp4",
+      "bytes": 915521,
+      "sha256": "aa0818e9753b958366d29cb0581679dda26d07525b87c83c429e674019721ba4"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/videos/m1/timing.json",
+      "bytes": 75713,
+      "sha256": "8188467110b6717955ef8b91d63bf3231e4842ffb9cbf12148330f861d65a1a5"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_009/videos/m1/wrist.mp4",
+      "bytes": 1908590,
+      "sha256": "7cfac3d5b53e81a0fe4bd4886df9ee761f8748f538bff0df254820e2b00011ef"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/commands.json",
+      "bytes": 2019,
+      "sha256": "5f071cbb9bb50d31f1cb0b4ef7f74db98a64bb56e6291f05474e5925429dd879"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/contacts.json",
+      "bytes": 4837789,
+      "sha256": "41084f257805c37eb79a5c0684e7e8a16cf9ae805dd78b1c63eee90e1810c9b2"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/decision_00/candidates.json",
+      "bytes": 16476,
+      "sha256": "dfd1b1771bd1742cd408f056aff2ebe3b4a1b8edf1e6d1b3e26266dee7600205"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/decision_00/observation.npz",
+      "bytes": 7461355,
+      "sha256": "0dac7e2751a3da74d99a6de62c7e89b19064229fd8bf3358860c2522c154e614"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/decision_00/plans.json",
+      "bytes": 53887,
+      "sha256": "63dac79d47e9c01238ea6c7853c7ea8d31eb0980530d2312435bbf3bb3eff2a3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/decision_01/candidates.json",
+      "bytes": 11374,
+      "sha256": "d450d15ca81dcaa02985628537d60ae43c0bc3d87d7cb23b7a054858c1e7dba0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/decision_01/observation.npz",
+      "bytes": 7483357,
+      "sha256": "ae7c7aaabdae04ebddc5fc58661e255ba272fd37f7d2f223ad3d2f72874ce764"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/episode.json",
+      "bytes": 15901,
+      "sha256": "67703665f5963b8105544a02869a256da7244ba109dd0465c059370ebedb0831"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/policy_inference.json",
+      "bytes": 219,
+      "sha256": "04981cd50d96955a4965e64f0ab6666a11f87edf0b896d2baa2809c439c77173"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/telemetry.json",
+      "bytes": 2862068,
+      "sha256": "a2e6f59a6cad334a1f5ab55549308e4dac73f3f56cc588fb0c5bdcde93784d6f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/transition_00.npz",
+      "bytes": 2653,
+      "sha256": "7c1fb206364272e5a26481773ef7db066879e1b68abee3f36a4a5ad634b0731b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/videos/m1/fixed.mp4",
+      "bytes": 1022143,
+      "sha256": "9caf9ea34d24db878e2e8990a3018da4861241e4e54f9939cf43941b441f8ebd"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/videos/m1/third.mp4",
+      "bytes": 700284,
+      "sha256": "d5005c08a55e99489cfab7a48c49a1d7d12c0827f2546f06c8a10b099cc57aa1"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/videos/m1/timing.json",
+      "bytes": 57916,
+      "sha256": "f815554e3dc299a4605ef857d3de8c199aa680e1ad0e1098a60af2d1811578d9"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_010/videos/m1/wrist.mp4",
+      "bytes": 1485381,
+      "sha256": "beff591ca467234c2fc9734e5e9d1ccb28a8804e62a9b3db6ac2327ea33941e3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/commands.json",
+      "bytes": 2019,
+      "sha256": "5f071cbb9bb50d31f1cb0b4ef7f74db98a64bb56e6291f05474e5925429dd879"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/contacts.json",
+      "bytes": 4845135,
+      "sha256": "150699160c021fa94a64778422670dd752d3e32409c269a6ebfa4f37006adc1f"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/decision_00/candidates.json",
+      "bytes": 16565,
+      "sha256": "6f2e3079a7f11c9248a287dc3153d8741d669c81b9ea9cab63585b4ac8213bba"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/decision_00/observation.npz",
+      "bytes": 7449042,
+      "sha256": "ba25439d76afaa78aebe5ee304816abd36717e6965e142b7d299c34562784407"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/decision_00/plans.json",
+      "bytes": 67087,
+      "sha256": "4ae32226a544d43c3481605536e495037c50df48dfdef016629ad2a983f9188b"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/decision_01/candidates.json",
+      "bytes": 11318,
+      "sha256": "4c328a4c2727502aade6db1136d988cd7d8e180f8658c94425ab9c1fc5283293"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/decision_01/observation.npz",
+      "bytes": 7468511,
+      "sha256": "4815235d2126ecf13d4b0f1d426630dae49fc17a1fc6a047e6e9f96d91c3c0db"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/decision_01/plans.json",
+      "bytes": 83,
+      "sha256": "5446cb88f7a3d81efc7ec6ff7ec0bfa0b388442972d15b83fb292d43883442f8"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/episode.json",
+      "bytes": 15961,
+      "sha256": "0676811fc1b964aca57d8465038690c639644dc31f2440c7404d906bbf180c77"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/policy_inference.json",
+      "bytes": 220,
+      "sha256": "613c9686aa553ec2efadccf23cc94c10b165aabe118e4d4bd2006707d27cf764"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/telemetry.json",
+      "bytes": 2872388,
+      "sha256": "b95992bc14b5217b34a97d014c9e5a99779e6b6fbdf7e9a1890b190ce7ee136e"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/transition_00.npz",
+      "bytes": 2635,
+      "sha256": "b515f268b01cd20c869b2261dc6123a69da638744957f3caa79727e84b712529"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/videos/m1/fixed.mp4",
+      "bytes": 1015950,
+      "sha256": "9e4d4727ebbbff3230804023893dec75b34fcec2c110cf42f4bff13241b756b3"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/videos/m1/third.mp4",
+      "bytes": 697915,
+      "sha256": "1a50cecfaa92c2e71c184c108a5a56146e04a3f9f30892c9eb626a6d2977646c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/videos/m1/timing.json",
+      "bytes": 57906,
+      "sha256": "7cd50869c9202a29674197713d873dabb18673a45db33934eba70d176a60dde0"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episode_011/videos/m1/wrist.mp4",
+      "bytes": 1377451,
+      "sha256": "6f542db3c0efe87b2fe0e0d9e5c0f7c91edbab8c5fcdd1d924780d16c85c4db7"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/episodes.jsonl",
+      "bytes": 136337,
+      "sha256": "628c116ac7f28ca95c1ab021f8f3a07211b0c55983f02b0dcd4d51c8ec631748"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/heldout_preregistration.json",
+      "bytes": 3864,
+      "sha256": "f5edc5464be42b7ff006cca86d2425ca3c12989c7d7fa2da09ff3753eeb00d2c"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/run_config.json",
+      "bytes": 1005,
+      "sha256": "8c56c23bf81d17a61056ddffd6ea9faec2a75fab9d366a9812d0b5c6395a5992"
+    },
+    {
+      "path": "outputs/baselines/campaigns/20261124T025638Z_c38f8690/summary.json",
+      "bytes": 575,
+      "sha256": "c57175ea1c81996713444210f4d1bb54bab3f7b69014f31ca2356f56987e6f09"
+    },
+    {
+      "path": "outputs/baselines/dataset/manifest.jsonl",
+      "bytes": 40034,
+      "sha256": "539aa9623c857e9723a723cb1995a6a9b761adbfe20bee9e6b34c8e6cc10865a"
+    },
+    {
+      "path": "outputs/baselines/train/bc_demo_v1/config.json",
+      "bytes": 357,
+      "sha256": "e71298eb96aa1843d51b39d1fa71fe6e550311a27d45a074e44222811a7ac3ee"
+    },
+    {
+      "path": "outputs/baselines/train/bc_demo_v1/curve.csv",
+      "bytes": 13021,
+      "sha256": "ecbffc5b9d3f445dec59dd2064ea2e4924a7b588084df9e086d9951f8ebe2609"
+    },
+    {
+      "path": "outputs/baselines/train/bc_demo_v1/dataset_manifest.json",
+      "bytes": 3278,
+      "sha256": "b52590b3dd7a4e1eeb0aae68e7cc25ab4a97aa3ca1f4b1ecf1b07ecc18de80da"
+    },
+    {
+      "path": "outputs/baselines/train/bc_demo_v1/model.pt",
+      "bytes": 36596,
+      "sha256": "61c9882121b9b7128fa2bcd94af22d61e1eff882373ceef6880daeca217b8d2e"
+    },
+    {
+      "path": "outputs/baselines/train/bc_demo_v1/result.json",
+      "bytes": 4995,
+      "sha256": "530ea4e6ea5afbee11bacb287b5afec88de6e3055ab67bd3591353ed2cb265d7"
+    },
+    {
+      "path": "outputs/baselines/train/bc_demo_v1/training_state.pt",
+      "bytes": 79426,
+      "sha256": "1aa370b41a13845408b11dd7117b9f22e1d1aec1696a916621ef6286c19046c1"
+    },
+    {
+      "path": "outputs/baselines/train/bc_overfit_v1/config.json",
+      "bytes": 361,
+      "sha256": "d83097c5afbde1856a0407c4c741fd15a485123d0a07ac671616de0ee0d5d164"
+    },
+    {
+      "path": "outputs/baselines/train/bc_overfit_v1/curve.csv",
+      "bytes": 136722,
+      "sha256": "38da39bebbb31eec197b0a607b0db10b21ed57914c03082b29d5d1e601336e1a"
+    },
+    {
+      "path": "outputs/baselines/train/bc_overfit_v1/dataset_manifest.json",
+      "bytes": 3278,
+      "sha256": "b52590b3dd7a4e1eeb0aae68e7cc25ab4a97aa3ca1f4b1ecf1b07ecc18de80da"
+    },
+    {
+      "path": "outputs/baselines/train/bc_overfit_v1/model.pt",
+      "bytes": 36596,
+      "sha256": "f6ee92c839e2b84275b79d9d32dfa9766b1fed7c1a4214b09a98681ea6312d59"
+    },
+    {
+      "path": "outputs/baselines/train/bc_overfit_v1/result.json",
+      "bytes": 4988,
+      "sha256": "3fbd5f8b41b198ba1d82e0963daec72025d3778aaa3a7a74fae9c09f7d25810d"
+    },
+    {
+      "path": "outputs/baselines/train/bc_overfit_v1/training_state.pt",
+      "bytes": 79426,
+      "sha256": "e27d373ad7be3315193b2c3db234a4df52d70b1c19ae9a584aebcaf0642a89b9"
+    },
+    {
+      "path": "outputs/baselines/train/dp_demo_v1/config.json",
+      "bytes": 357,
+      "sha256": "d7db34b9eaf71f80cb950d2f115096a6d3273dab5a8be4a6bf72dcc8c50ac024"
+    },
+    {
+      "path": "outputs/baselines/train/dp_demo_v1/curve.csv",
+      "bytes": 12948,
+      "sha256": "bdb95811f82edb470b34d836a14e38ffad27c6a4804affa651c871f8fd77839a"
+    },
+    {
+      "path": "outputs/baselines/train/dp_demo_v1/dataset_manifest.json",
+      "bytes": 3278,
+      "sha256": "b52590b3dd7a4e1eeb0aae68e7cc25ab4a97aa3ca1f4b1ecf1b07ecc18de80da"
+    },
+    {
+      "path": "outputs/baselines/train/dp_demo_v1/model.pt",
+      "bytes": 1003334,
+      "sha256": "624345e9fdf955c5ea16f64861dc74fed05d20f480f0ea90be5e1b80a0eb3a6e"
+    },
+    {
+      "path": "outputs/baselines/train/dp_demo_v1/result.json",
+      "bytes": 4979,
+      "sha256": "161b6cba6c98ba9ef8cee0d515ec33797ec31e679d91c214d08e418310f8ecc2"
+    },
+    {
+      "path": "outputs/baselines/train/dp_demo_v1/training_state.pt",
+      "bytes": 2019572,
+      "sha256": "cb527f392e5343f3d6591dd19c3dfe8ed12617084290e9e8c0cd1e6c3e8a22a8"
+    }
+  ]
+}
