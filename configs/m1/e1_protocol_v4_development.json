@@ -110,5 +110,27 @@
       "planned": 1
     }
   ],
-  "new_gate": "Single C3 Active benefit found; C1 and C2 successful preparation instances still permit Direct. Do not launch large training; redesign and prospectively freeze a formal protocol."
+  "new_gate": "Single C3 Active benefit found; C1 and C2 successful preparation instances still permit Direct. Do not launch large training; redesign and prospectively freeze a formal protocol.",
+  "user_scope_correction_2026_11_24": {
+    "reference": "https://arxiv.org/html/2606.30474v1",
+    "requested_mechanism": "Non-prehensile object reorientation that improves graspability, not an unnecessary rotation or an obstacle-only push",
+    "preserve_unrestricted_6dof_grasp_capability": true,
+    "current_C2_necessity_qualification": "FAILED_DIRECT_ALREADY_PASSES",
+    "current_C2_use": "Physical primitive / sensor tracking regression only; not Flip-necessary task evidence",
+    "pinch_roll_identity": "PREHENSILE_REORIENTATION; excluded from GOMP-style non-prehensile Flip evidence",
+    "do_not_solve_by": [
+      "Silently disabling side grasps",
+      "Artificial initial supports that already expose grasp surfaces",
+      "Counting any >35deg rotation as preparation benefit",
+      "Calling one failed GraspNet inference proof that no direct 6DoF grasp exists"
+    ],
+    "future_qualification": [
+      "Initial stable support genuinely obstructs robust direct grasp execution under the declared unchanged 6DoF controller and candidate budget",
+      "Pushing/sliding control does not obtain the same benefit without support/orientation change",
+      "Non-prehensile contact changes support/orientation, followed by stable release, sensor reassociation and real complete extraction",
+      "Same initial scene, cameras, controller, costs and all failures retained"
+    ],
+    "formal_GOMP_reproduction": "NOT_RUN",
+    "new_physics_this_correction": "NOT_RUN"
+  }
 }
